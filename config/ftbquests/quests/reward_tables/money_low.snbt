@@ -1,0 +1,12 @@
+{
+	id: "4FCD7B797515E30C"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ count: 32, item: "lightmanscurrency:coin_copper", weight: 60.0f }
+		{ count: 16, item: "lightmanscurrency:coin_iron", weight: 20.0f }
+		{ count: 4, item: "lightmanscurrency:coin_gold", weight: 15.0f }
+		{ count: 2, item: "lightmanscurrency:coin_emerald", weight: 10.0f }
+	]
+	title: "money_low"
+}

@@ -1,0 +1,9 @@
+# A tool list to disabled tools.
+# Support regex. example: minecraft:.*_axe, it match all minecraft axe.
+# Default: All Vanilla Tools
+tools:
+
+# The text will show on disabled tool's Tooltip
+# Support Translation Text
+tooltip: tooltip.disable_tools
+

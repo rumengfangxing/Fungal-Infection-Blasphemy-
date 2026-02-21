@@ -1,0 +1,29 @@
+{
+	id: "14D8038DC0338DA1"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		item_name: "真菌"
+		string_id: "3"
+	}
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{ count: 3, item: "spore:hardening_agent", weight: 20.0f }
+		{ count: 3, item: "spore:sharpening_agent", weight: 20.0f }
+		{ count: 3, item: "spore:integrating_agent", weight: 20.0f }
+		{ count: 8, item: "spore:biomass", weight: 25.0f }
+		{ item: "spore:fungal_burger", weight: 8.0f }
+		{ item: "spore:symbiotic_reagent", weight: 2.0f }
+		{ item: "spore:cryogenic_reagent", weight: 2.0f }
+		{ item: "spore:gastric_reagent", weight: 2.0f }
+		{ item: "spore:corrosive_reagent", weight: 2.0f }
+		{ item: "spore:serrated_reagent", weight: 2.0f }
+		{ item: "spore:voracious_reagent", weight: 2.0f }
+	]
+	title: "真菌"
+}

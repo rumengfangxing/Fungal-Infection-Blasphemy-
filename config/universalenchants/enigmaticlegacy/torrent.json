@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:trident",
+    "goety_revelation:gungnir"
+  ],
+  "incompatible": [
+    "minecraft:bane_of_arthropods",
+    "minecraft:impaling",
+    "minecraft:smite",
+    "enigmaticlegacy:wrath",
+    "minecraft:sharpness"
+  ]
+}

@@ -1,0 +1,1 @@
+const $UUIDUtil = Java.loadClass('net.minecraft.core.UUIDUtil')

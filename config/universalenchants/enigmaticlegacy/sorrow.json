@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:armor",
+    "enigmaticaddons:evil_dagger"
+  ],
+  "incompatible": [
+    "enigmaticaddons:redemption_curse"
+  ]
+}

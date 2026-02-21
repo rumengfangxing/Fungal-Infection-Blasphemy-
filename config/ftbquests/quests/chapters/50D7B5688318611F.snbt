@@ -1,0 +1,476 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "50D7B5688318611F"
+	group: "21B93F40B013EE45"
+	icon: "cuisinedelight:mixed_pasta"
+	id: "50D7B5688318611F"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:textures/mob_effect/instant_health.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:textures/mob_effect/strength.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:textures/mob_effect/night_vision.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:textures/mob_effect/saturation.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"民以食为天"
+				"就送你份剩菜来开启你的厨神之路吧"
+			]
+			icon: "cuisinedelight:meat_platter"
+			id: "674166E54366A99F"
+			rewards: [{
+				id: "5DE5580817005743"
+				item: {
+					Count: 1
+					id: "cuisinedelight:meat_platter"
+					tag: {
+						CookedFoodData: {
+							entries: [
+								{
+									burnt: 0b
+									itemSize: 8
+									overcooked: 0b
+									raw: 0b
+									stack: {
+										Count: 1b
+										id: "spore:mutated_fiber"
+									}
+								}
+								{
+									burnt: 0b
+									itemSize: 8
+									overcooked: 0b
+									raw: 0b
+									stack: {
+										Count: 1b
+										id: "spore:mutated_fiber"
+									}
+								}
+								{
+									burnt: 0b
+									itemSize: 8
+									overcooked: 0b
+									raw: 0b
+									stack: {
+										Count: 1b
+										id: "spore:mutated_fiber"
+									}
+								}
+								{
+									burnt: 0b
+									itemSize: 1
+									overcooked: 0b
+									raw: 0b
+									stack: {
+										Count: 1b
+										id: "spore:armor_fragment"
+									}
+								}
+								{
+									burnt: 0b
+									itemSize: 2
+									overcooked: 0b
+									raw: 0b
+									stack: {
+										Count: 1b
+										id: "spore:mutated_heart"
+									}
+								}
+								{
+									burnt: 0b
+									itemSize: 0
+									overcooked: 0b
+									raw: 0b
+									stack: {
+										Count: 1b
+										id: "enigmaticlegacy:soul_dust"
+									}
+								}
+								{
+									burnt: 0b
+									itemSize: 0
+									overcooked: 0b
+									raw: 0b
+									stack: {
+										Count: 1b
+										id: "spore:nerves"
+									}
+								}
+								{
+									burnt: 0b
+									itemSize: 1
+									overcooked: 0b
+									raw: 0b
+									stack: {
+										Count: 1b
+										id: "enigmaticaddons:ichoroot"
+									}
+								}
+							]
+							glowstone: 0
+							nutrition: 13
+							redstone: 0
+							score: 100
+							size: 10
+							total: 28
+							types: [
+								"VEG"
+								"MEAT"
+							]
+						}
+						display: {
+							Name: "{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"text\":\"一份吃剩的预制菜\"}],\"text\":\"\"}"
+						}
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "16523313D0B69537"
+				type: "checkmark"
+			}]
+			title: "开启你的厨神之旅"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["674166E54366A99F"]
+			description: [
+				"将炒锅放置于热源(火，岩浆块，炉灶）上，或给炒锅附魔火焰附加放置于地"
+				"将食材右键加入"
+			]
+			id: "2BA20AB3CC128E38"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00FB5C3369C98E88"
+				table_id: 5859545525528796691L
+				type: "random"
+			}]
+			tasks: [{
+				id: "141C221352631BD9"
+				item: {
+					Count: 1
+					id: "cuisinedelight:cuisine_skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BA20AB3CC128E38"]
+			description: [
+				"当锅中放置食材后"
+				"我们注意到屏幕左侧出现了仪表盘"
+				"使用锅铲翻炒可以重置翻炒指针，延缓食物的生熟指针(均匀受热)"
+				"保持所有指针不到达红色区域"
+				"在指针全部指在黄色区域时出锅，即是最完美的菜品"
+			]
+			id: "596C8F480B53FB12"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "174FEC17299878F5"
+				table_id: 5859545525528796691L
+				type: "random"
+			}]
+			tasks: [{
+				id: "448FBBA005825D45"
+				item: "cuisinedelight:spatula"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BA20AB3CC128E38"]
+			description: [
+				"待到合适时机，用盘子接取你的菜品"
+				""
+				"拿着你的亲手炒的菜给朋友尝尝吧！"
+			]
+			id: "7F3C09AB4CE10F73"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "141010E7FC972E87"
+				table_id: 5859545525528796691L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1738BB9D0CC4658E"
+				item: "cuisinedelight:plate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["674166E54366A99F"]
+			description: [
+				"炒菜并不是一个简单的过程"
+				"面对这些食材，你被允许发挥自己天马行空的想象力"
+				"当然，也不是胡乱炒"
+				"掌握食材间精准的配比，把握好火候，时机，是一个合格厨师所需具备的素养"
+			]
+			icon: "minecraft:clock"
+			id: "3FF8A53ECB674F2D"
+			rewards: [{
+				id: "2DAB494F4D68CB51"
+				item: {
+					Count: 1
+					id: "minecraft:written_book"
+					tag: {
+						author: "rumengfangxing"
+						pages: [
+							"{\"text\":\"很管饱的炒肉\\n突变纤维，数量随意\\n\\n能活死人肉白骨的炒肉\\n突变纤维*2，突变心脏*1\\n\\n比眼药水好用\\n突变纤维*1，神经*1\\n\\n堪比大力丸\\n肌腱*2\"}"
+							"{\"text\":\"吃了感觉身子骨硬朗多了\\n甲质残片*1 突变心脏*1 突变纤维*1\"}"
+						]
+						title: "几道简单小菜"
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "462F2D22FFE6CA74"
+				type: "checkmark"
+			}]
+			title: "科学？科技饮食！"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			description: ["生命恢复5"]
+			id: "683920E2C92FE379"
+			tasks: [{
+				id: "3BDE540D463082C6"
+				item: "spore:mutated_heart"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			description: ["活力迸发5"]
+			id: "42C0327791FC52A5"
+			tasks: [{
+				id: "1A5F5F47DD2CFAB5"
+				item: "enigmaticaddons:ichoroot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			description: ["分量特足"]
+			id: "55F397BF190C6F07"
+			tasks: [{
+				id: "590E8EAB400828DC"
+				item: "spore:mutated_fiber"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			description: ["饱和"]
+			id: "73C826F19F4BFCC5"
+			tasks: [{
+				id: "6860A6EE18B3C93C"
+				item: "spore:biomass"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"凛寒气场III"
+				""
+				"小心别刚放下去就化了"
+			]
+			id: "0254782E4E7C7D4E"
+			tasks: [{
+				id: "27098DA45C69F92B"
+				item: "goety:ice_cube"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"冻结之心II"
+				"小心别刚放下去就化了"
+			]
+			id: "6B12CFD677C7FBA2"
+			tasks: [{
+				id: "2977CFC3B90CF600"
+				item: "minecraft:blue_ice"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			description: ["菌群共生II"]
+			id: "661458C575C3B43D"
+			tasks: [{
+				id: "1A41315899E4ECA2"
+				item: "spore:living_core"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			description: ["菌群共生5 &c菌丝感染II&r"]
+			id: "4C5BC412B34918DC"
+			tasks: [{
+				id: "48F0BD6D57340251"
+				item: "spore:symbiotic_reagent"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			description: ["力量4 跳跃提升III"]
+			id: "1FFDEDBADBACACE2"
+			tasks: [{
+				id: "280590885F4BC957"
+				item: "spore:tendons"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			description: ["狂化5"]
+			id: "6184A14EF5536DFC"
+			tasks: [{
+				id: "3B716535B1EBF10A"
+				item: "spore_addon:primevalreagent"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			description: ["攀爬"]
+			id: "2A73D882E1626B00"
+			tasks: [{
+				id: "1AA518356406E3F0"
+				item: "goety:spider_egg"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			description: ["抗性III"]
+			id: "08B6A5BAE11E6C0A"
+			tasks: [{
+				id: "5A56F7CD48B22B68"
+				item: "spore:armor_fragment"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			description: ["水下呼吸"]
+			id: "19C178B4D76A9641"
+			tasks: [{
+				id: "7DCDF917B808E1BC"
+				item: "spore:alveolic_sack"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			description: ["缓降   迅捷III"]
+			id: "3BF4F9F01FAA355E"
+			tasks: [{
+				id: "4DF5A51A358AD2D0"
+				item: "spore:wing_membrane"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"夜视   急迫II"
+				""
+				"比较容易炒糊"
+			]
+			id: "3D3E05931C06A074"
+			tasks: [{
+				id: "465B24BFA4721F07"
+				item: "spore:nerves"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			description: ["生命提升20"]
+			id: "02E8D33E356FA424"
+			tasks: [{
+				id: "27C65790DD3EC19E"
+				item: "fib:essenceoflife"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.5d
+		}
+		{
+			description: ["灵魂护甲5"]
+			id: "56E183DB1A2BF8E1"
+			tasks: [{
+				id: "6775C68E51774C72"
+				item: "enigmaticlegacy:soul_dust"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.5d
+		}
+	]
+	title: "好好吃饭"
+}

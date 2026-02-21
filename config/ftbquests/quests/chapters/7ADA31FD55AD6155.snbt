@@ -1,0 +1,569 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "7ADA31FD55AD6155"
+	group: "21B93F40B013EE45"
+	hide_quest_until_deps_complete: true
+	icon: "lightmanscurrency:coinpile_gold"
+	id: "7ADA31FD55AD6155"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"货币体系是经济的核心"
+				""
+				"也是一切基于交易产生的关系的前提"
+				""
+				"这个世界的货币体系，由维度意志承担公信力"
+				""
+				"本章节简单把经济关系分为三类"
+				"且发散了两两相交的可能玩法"
+			]
+			id: "3D8CE0333D7EE683"
+			tasks: [{
+				id: "07577733800E8FF3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			title: "货币"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D8CE0333D7EE683"]
+			description: [
+				"拥有自己的网店"
+				"学会网络购物"
+			]
+			icon: "lightmanscurrency:portable_terminal"
+			id: "3C62CD103C42B2D8"
+			tasks: [{
+				id: "6A83F87CDC40DF60"
+				type: "checkmark"
+			}]
+			title: "成为商人和顾客"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D8CE0333D7EE683"]
+			description: ["理财达人"]
+			icon: "lightmanscurrency:coin_chest_bank_upgrade"
+			id: "6BF6E5C80A3EB609"
+			tasks: [{
+				id: "7D81023F95A412CC"
+				type: "checkmark"
+			}]
+			title: "成为银行家"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D8CE0333D7EE683"]
+			description: ["原始资本积累"]
+			icon: "easy_villagers:villager"
+			id: "2882C47A824C3E78"
+			tasks: [{
+				id: "3D92B5B5FDFAE962"
+				type: "checkmark"
+			}]
+			title: "成为资本家"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3C62CD103C42B2D8"
+				"6BF6E5C80A3EB609"
+			]
+			description: ["给朋友最好的礼物是一张绑定了自己账户的银行卡"]
+			id: "5789E7787B29E53B"
+			tasks: [{
+				id: "62BBD50B26692B12"
+				item: "lightmanscurrency:atm_card"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3C62CD103C42B2D8"
+				"2882C47A824C3E78"
+			]
+			description: [
+				"自动采购，自动补货"
+				"以及最可能用到的自动出售(比如从ae输出物品到该终端自动卖钱)"
+			]
+			id: "4B4AD4343B258AB4"
+			tasks: [{
+				id: "5AA4EACB93575BFA"
+				item: "lightmanscurrency:item_trader_interface"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6BF6E5C80A3EB609"
+				"2882C47A824C3E78"
+			]
+			description: [
+				"允许你构筑实体店"
+				"不过并不见得安全哦，注意安保"
+			]
+			id: "33C5B10750355957"
+			tasks: [{
+				id: "18C6D58213118F29"
+				item: "lightmanscurrency:cash_register"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2882C47A824C3E78"]
+			description: [
+				"放两个村民"
+				"提供充足的食物"
+				"便会源源不断提供人口"
+			]
+			id: "442C9BED9B8EDF04"
+			tasks: [{
+				id: "629778C266385294"
+				item: "easy_villagers:breeder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2882C47A824C3E78"]
+			description: [
+				"对村民的报价不满意？"
+				"一款功德机"
+				"需要放入虚弱药水 金苹果 以及待转化的村民"
+			]
+			id: "075420F10FF7560C"
+			tasks: [{
+				id: "41BB7D6972A3FFC1"
+				item: "easy_villagers:converter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2882C47A824C3E78"]
+			description: ["可以放人进去自动种菜收菜"]
+			id: "585F549830AAD947"
+			tasks: [{
+				id: "3680687A9BF7ECB5"
+				item: "easy_villagers:farmer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2882C47A824C3E78"]
+			description: ["小村民长大的地方"]
+			id: "634F723904624D03"
+			tasks: [{
+				id: "4F91EF03564B7D0B"
+				item: "easy_villagers:incubator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2882C47A824C3E78"]
+			description: [
+				"虚空生铁机，需要一个村民启动"
+				"但产速太慢铁来源太多也许没什么大用"
+			]
+			id: "0D027A203DBC638E"
+			tasks: [{
+				id: "248F976675BC600E"
+				item: "easy_villagers:iron_farm"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2882C47A824C3E78"]
+			description: [
+				"一个很安全的交易所"
+				"完成任务后可在下方查看工作方块"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "63FEF33015DAA27D"
+			tasks: [{
+				id: "6B5A1EC158795945"
+				item: "easy_villagers:trader"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2882C47A824C3E78"]
+			description: ["自动买村民的东西"]
+			hide_dependency_lines: true
+			id: "7D9EF3947B7A66A1"
+			tasks: [{
+				id: "3F269B6F108E900D"
+				item: "easy_villagers:auto_trader"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3C62CD103C42B2D8"]
+			description: ["你可以通过该方块配置自己的网店"]
+			id: "18E6705973910853"
+			tasks: [{
+				id: "3DBDF7F38F89E491"
+				item: "lightmanscurrency:item_trader_server_sml"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3C62CD103C42B2D8"]
+			description: ["右键打开淘宝+转转"]
+			id: "2914D0E0762763A5"
+			tasks: [{
+				id: "53332872064CC810"
+				item: "lightmanscurrency:portable_gem_terminal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6BF6E5C80A3EB609"]
+			description: [
+				"随身钱包，可以继续升级"
+				"使用起来还算舒服，除了ftb任务的提交货币需要把货币提出到物品栏"
+				"其它操作均可丝滑兼容"
+			]
+			id: "47C16298363C038E"
+			tasks: [{
+				id: "1899C1155A1C5F45"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:wallet_gold"
+					tag: {
+						AutoConvert: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6BF6E5C80A3EB609"]
+			description: [
+				"右键访问银行"
+				""
+				"现在在银行存款会有较低的利息收益"
+				"银行可以直接给对应账户打款"
+				"你可以创建团队银行"
+			]
+			id: "4C2EF5BCD194BB49"
+			tasks: [{
+				id: "17B9530F5DDA81BC"
+				item: "lightmanscurrency:portable_atm"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["盔甲匠 钻石和铁的回收"]
+			id: "46ECAA98CF3AEF3E"
+			tasks: [{
+				id: "001687F064A039E1"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["屠夫 低价提供肉食"]
+			id: "44DF166BCFEB4699"
+			tasks: [{
+				id: "57656D1F26EB5858"
+				item: "minecraft:smoker"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["制图师 低价卖点旗帜或者展示框"]
+			id: "577368C5090414C3"
+			tasks: [{
+				id: "6A3748F5DDDDB885"
+				item: "minecraft:cartography_table"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["牧师 回收金锭 售出红石 青金石 末影珍珠"]
+			id: "191CA41542A02CAF"
+			tasks: [{
+				id: "104E06B0570D791E"
+				item: "minecraft:brewing_stand"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["农民 低价出售苹果 金胡萝卜"]
+			id: "5F9D49DBBF06D4AD"
+			tasks: [{
+				id: "1FADB874ECE9F7AB"
+				item: "minecraft:composter"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["渔夫 别想了，线回收价低得可怜"]
+			id: "143D9A3960E556AE"
+			tasks: [{
+				id: "6C4CF9640B2FFADF"
+				item: "minecraft:barrel"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["制箭师 别想了，木棍什么的回收价也低得可怜"]
+			id: "6ABEAE83687C4327"
+			tasks: [{
+				id: "61D068F4205FB783"
+				item: "minecraft:fletching_table"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["皮匠 低价出售皮革制品，缺皮革了可以买点用砧板拆"]
+			id: "4839586236E20B13"
+			tasks: [{
+				id: "0F394433A0B8309D"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["图书管理员 出售各种附魔书，满级出售命名牌"]
+			id: "27BE0A4AAEAE9676"
+			tasks: [{
+				id: "59BC8E1210F50F0D"
+				item: "minecraft:lectern"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["石匠 低价卖建材，建筑党福音"]
+			id: "0B6B7F1D2503C38D"
+			tasks: [{
+				id: "6E51D006EB30EBBF"
+				item: "minecraft:stonecutter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["牧羊人 低价出售各色羊毛"]
+			id: "6EAE6C4CB9483FDA"
+			tasks: [{
+				id: "7E3640FF4BC70B80"
+				item: "minecraft:loom"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["工具匠 回收铁锭，其它物品价格不太公道"]
+			id: "71E753E08BB4D55B"
+			tasks: [{
+				id: "7AFFE90BFDE5BFA7"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["武器匠 回收铁锭，其它物品价格不太公道"]
+			id: "3BCDAC7FE1AE5649"
+			tasks: [{
+				id: "1762569BF0416F72"
+				item: "minecraft:grindstone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["海洋学家 低价海洋之心 三叉戟 鹦鹉螺壳 以及出售一些海洋相关的物品，值得一看"]
+			id: "02B2929DBB50D14F"
+			tasks: [{
+				id: "17DEE20AC5E2A0F8"
+				item: "morevillagers:oceanography_table"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["下界学家 回收金锭 一些下界的石材"]
+			id: "0A1E76C1C2613987"
+			tasks: [{
+				id: "2A06E16D7A40493A"
+				item: "morevillagers:decayed_workbench"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["林业员 树苗回收"]
+			id: "65043DA0B3F7B9E4"
+			tasks: [{
+				id: "60FDA820E1F4A090"
+				item: "morevillagers:woodworking_table"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["结构工程师 出售较多红石物品，回收红石粉和红石火把"]
+			id: "7D6A5EA0BA0A2AC3"
+			tasks: [{
+				id: "02EAD16DC57D0BC1"
+				item: "morevillagers:blueprint_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["末地学家 回收末地石 低价出售幻翼膜，龙息，龙首 值得一看"]
+			id: "017BCAC08FA4CE3E"
+			tasks: [{
+				id: "575ABC669297DF66"
+				item: "morevillagers:purpur_altar"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["花匠 可以以公道价格买到蜜脾和蜂蜜瓶还有蜂巢，回收花盆"]
+			id: "5824F50DC6EC93A3"
+			tasks: [{
+				id: "6DD8C440070B2C01"
+				item: "morevillagers:gardening_table"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["猎人 出售掉落物相关素材，包括发酵蛛眼，粘液球，岩浆膏，烈焰棒，恶魂之泪甚至兔子脚 值得一看"]
+			id: "6A10D12DEF6716F7"
+			tasks: [{
+				id: "319D9BAC05A79A4F"
+				item: "morevillagers:hunting_post"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["矿工 回收深板岩，一些粗矿，前期推荐"]
+			id: "304349636369EF94"
+			tasks: [{
+				id: "0F636A5C3FC119D6"
+				item: "morevillagers:mining_bench"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["银行家 低价卖一些交易方块，但金钱修补附魔书价格极高，建议想办法打折"]
+			id: "2E2224D741DA582D"
+			tasks: [{
+				id: "681E5B53C745F95C"
+				item: "lightmanscurrency:atm"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["收银员 出售各种乱七八糟的无用物品，且价格极度不合理"]
+			id: "45F44BDEC635A6A2"
+			tasks: [{
+				id: "6FA447CC9BA36096"
+				item: "lightmanscurrency:cash_register"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.0d
+		}
+	]
+	title: "玩转经济"
+}

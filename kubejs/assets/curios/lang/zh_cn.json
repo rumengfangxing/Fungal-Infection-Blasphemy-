@@ -1,0 +1,8 @@
+{
+	"curios.identifier.organ":"器官",
+    "curios.modifiers.organ": "装备在器官槽时：",
+	"curios.identifier.skill":"技巧",
+	"curios.modifiers.skill": "装备在技巧槽时：",
+	"curios.identifier.blood":"血液",
+	"curios.modifiers.blood": "装备在血液槽时："
+}

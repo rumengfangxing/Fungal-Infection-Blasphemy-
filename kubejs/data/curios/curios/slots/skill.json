@@ -1,0 +1,5 @@
+{
+  "order": 250,
+  "icon": "curios:slot/empty_skill_slot",
+  "validators": ["curios:tag"]
+}

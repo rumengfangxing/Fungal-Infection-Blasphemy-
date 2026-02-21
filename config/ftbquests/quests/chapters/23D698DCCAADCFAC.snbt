@@ -1,0 +1,143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "23D698DCCAADCFAC"
+	group: "7C3CC28B4F4C38EC"
+	icon: "minecraft:writable_book"
+	id: "23D698DCCAADCFAC"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:item/writable_book"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:item/missing_item"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "enigmaticaddons:item/unused/annihilating_sword"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 3.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"这个版本大概耗费了我三个月的所有空余时间"
+				"emmm做包真的需要投入很多很多"
+				"我所做的这些只是这个包的冰山一角，不过我希望能通过这个雏形的发布"
+				"在我不多的时间里更好地扶正制作方向"
+				""
+				"作者其实年纪很小，就是应该好好学习的年纪"
+				"这应该是为数不多想做好的东西了"
+				"就这样，一起加油"
+				"qq测试群号1033440771"
+				"入群答案:如梦有点菜"
+			]
+			id: "7D1CEB3523062476"
+			rewards: [{
+				id: "32BEBCF238A0AF7A"
+				table_id: 5750388060807619340L
+				team_reward: false
+				type: "random"
+			}]
+			tasks: [{
+				id: "49A6801D94D6E0EA"
+				type: "checkmark"
+			}]
+			title: "关于做包的一些想法"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"在主要内容还没完成的现在您可以体验到的内容如下:"
+				"1与真菌正面对抗的生存挑战"
+				"2对巫法的探索"
+				"3基建"
+				"4在服务器体验交易系统"
+			]
+			id: "42727D21689138CF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A85EB59D0DFFCF7"
+				table_id: 5750388060807619340L
+				type: "random"
+			}]
+			tasks: [{
+				id: "07E1FAB9197B8883"
+				type: "checkmark"
+			}]
+			title: "测试版本我可以游玩什么？"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"建议先想办法尽快离开主世界"
+				"开局直奔矿洞下矿"
+				""
+				"如果你想在主世界逗留"
+				"请找一处刷怪密度较低的区域，准备好必要的可循环的物资，搭高一百格进行短暂的空岛生存谋求发育"
+				"tip:&e天空村庄&r似乎是个好去处"
+			]
+			id: "07803CEA1A1EACE9"
+			tasks: [{
+				id: "31F8D1B77FA1BAF0"
+				type: "checkmark"
+			}]
+			title: "生存策略"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"迂回战斗"
+				"在&c没有足够的战力前&r切忌直接上垒"
+				""
+				"如果在面对危险时有一次性道具"
+				"请不要吝惜，这往往会使你失去更多"
+			]
+			id: "386C645A495FE3EB"
+			tasks: [{
+				id: "1F3A67A732C02954"
+				type: "checkmark"
+			}]
+			title: "战斗策略"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"留意四周防止被&c偷袭"
+				"&r"
+				"不建议在死亡后&c不做任何准备使用/back&r"
+				"&1饰品栏会保留&r"
+				"如果你的基地被真菌占领，请不要反复/back投喂"
+				"冒险总是需要一定取舍的，等你有一定能力了，该是你的还是你的"
+			]
+			id: "37E31F6B7D3D4943"
+			tasks: [{
+				id: "7D90290844D78747"
+				type: "checkmark"
+			}]
+			title: "探索策略"
+			x: 3.0d
+			y: 3.0d
+		}
+	]
+	title: "说明&c【附游玩策略】"
+}

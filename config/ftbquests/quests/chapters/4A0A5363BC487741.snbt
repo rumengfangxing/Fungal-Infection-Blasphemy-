@@ -1,0 +1,881 @@
+{
+	autofocus_id: "56A8DBCAD360212D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4A0A5363BC487741"
+	group: "5E6271B05BEA90F3"
+	icon: "enigmaticaddons:bless_ring"
+	id: "4A0A5363BC487741"
+	images: [
+		{
+			dependency: "56A8DBCAD360212D"
+			height: 8.0d
+			image: "enigmaticlegacy:textures/unused/cursed_ring_iron.png"
+			order: 1
+			rotation: 0.0d
+			width: 8.0d
+			x: -7.5d
+			y: -3.5d
+		}
+		{
+			dependency: "1980502AB09D99A2"
+			height: 8.0d
+			image: "enigmaticaddons:item/bless_ring"
+			order: 2
+			rotation: 0.0d
+			width: 8.0d
+			x: -7.5d
+			y: -3.5d
+		}
+		{
+			dependency: "56A8DBCAD360212D"
+			height: 32.0d
+			image: "goety:block/haunted_glass_tinted/haunted_glass_solo"
+			order: -2
+			rotation: 0.0d
+			width: 32.0d
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependency: "1980502AB09D99A2"
+			height: 32.0d
+			image: "goety:block/marble_wind_blower_top"
+			order: -1
+			rotation: 0.0d
+			width: 32.0d
+			x: -6.5d
+			y: 1.5d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6C63885E6C1712D5"]
+			description: [
+				"&4当你选择踏上亵渎之道时，神已经注意到了你，向你降下了七种诅咒"
+				"但是，降下诅咒的同时，你附带上了神性。而这个章节，将引你走上救赎"
+			]
+			icon: {
+				Count: 1
+				id: "enigmaticlegacy:cursed_ring"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:protection"
+						lvl: 4s
+					}]
+					RepairCost: 1
+				}
+			}
+			id: "56A8DBCAD360212D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "70800266654711FE"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "019A5B8D50476347"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6683A1464B36BD22"
+				title: "亵渎之罪"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E204F8EFA1B384A"]
+			description: [
+				"在主世界的&9地牢&r宝箱中获取（&9要塞&r、&9地牢&r、&9废弃矿井等&r）"
+				""
+				"也可由&e大地之心碎片&r*&b8&r合成"
+			]
+			id: "3A706552C079C1BE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5382C18A3D91BB25"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "391DB89EF93CE608"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A7E2284230CCAE0"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "5D930F3A82AB82B0"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:earth_heart"
+					tag: {
+						isTainted: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E204F8EFA1B384A"]
+			description: ["前往&9下界&r"]
+			id: "001F38B7CCAE5369"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "22A8BDE7A760A03F"
+				title: "&c下界"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["001F38B7CCAE5369"]
+			description: ["在&9下界&r的宝箱中获得"]
+			id: "5A9CA3E52DF33EBD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5725F56808B1E67A"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "358FBF6BD928CDEA"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "37250F191262E77C"
+				item: "enigmaticaddons:ichor_droplet"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["001F38B7CCAE5369"]
+			description: [""]
+			id: "409324332E938DAF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4937CAE698CE5E39"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "480E1C9C07C95F1A"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:nether/summon_wither"
+				criterion: ""
+				id: "606D6F4CED482647"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1E204F8EFA1B384A"]
+			description: ["前往&9末地&r"]
+			id: "1AA618B212673547"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E85998D7F641CF0"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75016819DEDC21D5"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:end_portal_frame"
+				id: "220FBE685597EC07"
+				title: "&d末地"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1AA618B212673547"]
+			description: [
+				"获得&e星尘&r"
+				""
+				"在&9末地城&r的箱子里获取"
+			]
+			hide_dependency_lines: true
+			id: "484C334096DC8BB0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "642B23E2BA9F6EAA"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "073A2E7D6BED37F3"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39CF2D2736DF4256"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "enigmaticlegacy:main/astral_dust"
+				criterion: ""
+				id: "4EBCAF122C76D3E7"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6F2808BDE3E3FD40"
+				"5A9CA3E52DF33EBD"
+				"3A706552C079C1BE"
+			]
+			description: ["&e大地之心&r+&e恶魂之泪&r+&e灵液滴&r*&b2&r+&e萤石粉&r*&b2&r+&e恶魂之泪&r合成"]
+			hide_dependency_lines: true
+			id: "1DDA11CFFA680429"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A75063FE11B9FE3"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "16781A19CB5ADF39"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4601E904CD331631"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "32B7168AC1E76E8F"
+				item: "enigmaticaddons:pure_heart"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"484C334096DC8BB0"
+				"6F2808BDE3E3FD40"
+			]
+			description: ["&e星尘&r*&b4&r+&e海洋之心&r+&e下界之星&r+&e烈焰粉&r*&b2&r+&e末影之眼&r合成"]
+			hide_dependency_lines: true
+			id: "047A29F7541FDFE3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "730D034B902D248F"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5067897C45C261A0"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "74C71E58FF5567AB"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6A34BB5DC2B652E3"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:cosmic_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"484C334096DC8BB0"
+				"047A29F7541FDFE3"
+				"1DDA11CFFA680429"
+				"488D619AEC70E17A"
+			]
+			description: [
+				"在&9背包&r中携带该物品&c死亡&r，你所佩戴的&c七咒之戒&r将会转变为&6救赎之戒&r。"
+				""
+				"&e寰宇之心&r+&e纯净之心&r*&b3&r+&e邪恶之石&r+&e星尘&r*&b4&r合成"
+				"&c若你身负极限诅咒(极限模式)，需寻求雷霆之力涤除杂质（将神圣之石丢在地上，使用雷霆轰击即可）&r"
+			]
+			id: "6FBDD1B86198FA94"
+			rewards: [
+				{
+					id: "47AB14BD795D348D"
+					item: "lightmanscurrency:coin_diamond"
+					type: "item"
+				}
+				{
+					id: "76B0DC5046545020"
+					item: "enigmaticlegacy:ichor_bottle"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "07ACC5D2DAA3C1A8"
+				item: "enigmaticaddons:bless_stone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6FBDD1B86198FA94"]
+			description: [
+				"不要同时戴！不要同时戴！"
+				"会变得不幸"
+			]
+			id: "1980502AB09D99A2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0355D12625762DB1"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+				{
+					id: "4CFDBFD902E03AA6"
+					item: "enigmaticlegacy:cursed_ring"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "enigmaticaddons:main/bless_ring"
+				criterion: ""
+				id: "22DB269BCF11C61D"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A706552C079C1BE"]
+			description: [
+				"&e扭曲之心&r"
+				""
+				"&e大地之心&r+&e烈焰粉&r*&b2&r+&e恶魂之泪&r+&e红石粉&r*&b2&r+&e末影之眼&r合成"
+			]
+			id: "703A434E5D813D3D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "78DB42BB8FC4EEE5"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3423CC2FFE58767B"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2332FEF8F5887A8D"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "enigmaticlegacy:main/twisted_heart"
+				criterion: ""
+				id: "4C032D238573B415"
+				type: "advancement"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["409324332E938DAF"]
+			description: [
+				"承受&c诅咒&r的情况下击败&b凋灵&r掉落&b1-4&r个"
+				"8个为一组"
+			]
+			id: "7E0CEA10B4189644"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "45513E9BE91AC500"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A16E59891389216"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2697ED2A911BAEC4"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "13621C826D5FB3DA"
+				item: "enigmaticlegacy:evil_essence"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["409324332E938DAF"]
+			id: "6F2808BDE3E3FD40"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "582F2A76F3779555"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "270143B282F8AB55"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "560F3DF1DD36DCF2"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"703A434E5D813D3D"
+				"7E0CEA10B4189644"
+			]
+			description: ["&e海晶砂砾&r*&b2&r+&e邪恶精粹&r*&b2&r+&e熔岩桶&r*&b2&r+&e石头&r+&e下界之星&r+&e扭曲之心&r合成"]
+			hide_dependency_lines: true
+			id: "488D619AEC70E17A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "215A2913C45A1639"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F3590B3CE40EF0C"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A96131E64596E0E"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "593A3E55A90A5F3C"
+				item: "enigmaticlegacy:cursed_stone"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["56A8DBCAD360212D"]
+			description: ["这条路线将带你彻底摆脱&c七咒之戒&r的&c诅咒&r"]
+			hide_until_deps_complete: true
+			id: "1E204F8EFA1B384A"
+			tasks: [{
+				id: "4CFC1B3F730B0EF9"
+				title: "&c修正你的诅咒"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["56A8DBCAD360212D"]
+			description: ["通过&e饰品&r和&e道具&r削弱你的诅咒"]
+			hide_until_deps_complete: true
+			id: "17BD7318B5494048"
+			rewards: [{
+				id: "604FBF483A333119"
+				item: "enigmaticaddons:antique_bag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E4C7DCF1A4A70BC"
+				title: "&c削弱你的诅咒"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["18558FDD2A0A1DEA"]
+			id: "2C2765FBBB354C4B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "64B93ECEE39EB3C0"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6963284E8DE46489"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2373BCE8D0DB1240"
+				item: "enigmaticlegacy:animal_guidebook"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2C2765FBBB354C4B"]
+			id: "7812C8F2E8C92D97"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1EFD5C9F45A6F2B1"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58C14B88CA28ABC5"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "451370BFFE94D6E6"
+				item: "enigmaticaddons:ode_to_living"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40043F9CE3EF7747"]
+			id: "349B3EE01FC31E9D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0CE429F98D0A1607"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "51D2D3FC9AF6FD71"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "263A1415BF675045"
+				item: "enigmaticaddons:earth_promise"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DC72E9846C3E8A3"]
+			description: ["以另一种方式削弱&6第四诅咒&r"]
+			id: "7ABC9EB66437888D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68103433CF4AC6C8"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40EB02EE4AFD2F00"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "3714EA03CAC01995"
+				item: "enigmaticaddons:false_justice"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DC72E9846C3E8A3"]
+			id: "44223DCADAD8EE3A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68F7B764155C0F7F"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "149217C8489E09BB"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "36BCE8D974C7A67E"
+				item: "enigmaticlegacy:the_twist"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DC72E9846C3E8A3"]
+			id: "0A75D2986E5B0EB1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "543DCBE56C08AEAE"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "13B395F1604A1020"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "4CDECD6356F08F12"
+				item: "enigmaticaddons:the_bless"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["44223DCADAD8EE3A"]
+			id: "5827BA4F1BB007CA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "42AC4B2A54599BBC"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E9EDBF1AF0AD9B0"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "08BA9E6E289B26FD"
+				item: "enigmaticlegacy:the_infinitum"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["17BD7318B5494048"]
+			hide_until_deps_complete: true
+			id: "40043F9CE3EF7747"
+			tasks: [{
+				id: "18996488FFFED3FB"
+				title: "&b第一诅咒"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17BD7318B5494048"]
+			hide_until_deps_complete: true
+			id: "18558FDD2A0A1DEA"
+			tasks: [{
+				id: "267FE5F0FF522877"
+				title: "&b第二诅咒"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["17BD7318B5494048"]
+			hide_until_deps_complete: true
+			id: "4DC72E9846C3E8A3"
+			tasks: [{
+				id: "65D31765311F7FDF"
+				title: "&b第四诅咒"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["17BD7318B5494048"]
+			hide_until_deps_complete: true
+			id: "260B3B34DD6F24BA"
+			tasks: [{
+				id: "6B0D7F7FC6F7F41C"
+				title: "&b第五诅咒"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0420324C9C3EA0A0"]
+			id: "6EE470A921840FC3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "40B8D8E3333F6894"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21EC02CA18E33A1D"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "254F60F315B66EA2"
+				item: "enigmaticaddons:scorched_charm"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["260B3B34DD6F24BA"]
+			id: "0C9A027BF9ACFE9A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "04CE5CE08CE01C4D"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5198CE5A4CCC207B"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0B86DF9F7D44DC79"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:infernal_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["260B3B34DD6F24BA"]
+			id: "0420324C9C3EA0A0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "14C88F6A30CC55CF"
+					table_id: 6915865581086723551L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "491E3D8180FC7FCE"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "62F6F102FDE4FC10"
+				item: "enigmaticlegacy:blazing_core"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 3.0d
+		}
+	]
+	title: "•&e救赎"
+}

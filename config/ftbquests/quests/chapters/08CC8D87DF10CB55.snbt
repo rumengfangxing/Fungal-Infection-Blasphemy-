@@ -1,0 +1,151 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_repeatable_quest: true
+	filename: "08CC8D87DF10CB55"
+	group: "79300EFB8D8A68FC"
+	icon: "minecraft:observer"
+	id: "08CC8D87DF10CB55"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: false
+			id: "46BF8D194200227F"
+			tasks: [{
+				advancement: "goety:goety/craft_cursed_ingot"
+				criterion: ""
+				id: "3D9ACA8AE221D83E"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: false
+			id: "2526032F5F6FA5D4"
+			tasks: [{
+				advancement: "goety:goety/craft_dark_ingot"
+				criterion: ""
+				id: "171531436747A5F5"
+				type: "advancement"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: false
+			id: "0FF11110C118ED72"
+			tasks: [{
+				advancement: "goety:goety/craft_empty_focus"
+				criterion: ""
+				id: "392A70D0021390D6"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: false
+			id: "4C1717C9AD85A23A"
+			tasks: [{
+				id: "2DF6012445C61D3F"
+				item: "goety_revelation:apocalyptium_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: false
+			id: "59938C0F9072962C"
+			tasks: [{
+				advancement: "goety:goety/craft_magic_emerald"
+				criterion: ""
+				id: "1490591FBD52F4D9"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: false
+			id: "703FEE711F32B4C5"
+			tasks: [{
+				id: "73C64F4C17B7619D"
+				item: "enigmaticlegacy:etherium_ore"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: false
+			id: "6C1C75B1C9446CDF"
+			tasks: [{
+				id: "257EED08B3A5DD89"
+				item: "goety_revelation:broken_halo"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: false
+			id: "4F682CBADA23415F"
+			tasks: [
+				{
+					id: "6715757D08F7BFF4"
+					item: "minecraft:netherite_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5692DD7934636D20"
+					item: "minecraft:netherite_scrap"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: false
+			id: "0E319B7FB0C4E86F"
+			rewards: [{
+				auto: "no_toast"
+				command: "/setblock ~ ~-3 ~ torchmaster:megatorch replace"
+				elevate_perms: true
+				id: "412BCAC7452F6D99"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "091D52CA7E3F564F"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			id: "273D4C0209F0D778"
+			rewards: [{
+				command: "/summon spore:vanguard ~ ~1 ~ {Attributes: [{Name:\"spore:ballistic\",Base:15.0d},{Name:\"spore:corrosives\",Base:15.0d},{Name:\"spore:grinding\",Base:15.0d},{Name:\"goety_revelation:resistance\",Base:1.5d},{Name:\"spore:laceration\",Base:15.0d},{Name:\"spore:localization\",Base:15.0d},{Name:\"spore:rejuvenation\",Base:15.0d},{Name:\"spore:toxicity\",Base:15.0d},{Name:\"goety_revelation:armor_penetration\",Base:2.0d},{Name:\"attributeslib:prot_pierce\",Base:20.0d}, {Name: \"minecraft:generic.max_health\", Base: 6666.0d}],ActiveEffects: [{Id:0,Amplifier:0b,Duration:2147483647,Ambient:1b,ShowParticles:1b,ShowIcon:1b,\"forge:id\":\"goetydelight:the_pale_messenger\"},{\"forge:id\":\"goety:fire_trail\",Amplifier:0b,Duration:2147483647,Ambient:1b,ShowParticles:1b,ShowIcon:1b},{Id:12,Amplifier:0b,Duration:2147483647,Ambient:1b,ShowParticles:1b,ShowIcon:1b}]}"
+				id: "7E46543FC369520C"
+				type: "command"
+			}]
+			tasks: [{
+				id: "533E9E5663118D5F"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+	]
+	title: "检测"
+}

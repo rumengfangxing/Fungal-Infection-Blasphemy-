@@ -1,0 +1,194 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "none"
+	filename: "19BEDC24F7814E97"
+	group: "3940671EEBB12B1A"
+	icon: {
+		Count: 1
+		id: "goety_revelation:halo_of_the_end"
+		tag: {
+			Enchantments: [{
+				id: "minecraft:binding_curse"
+				lvl: 1s
+			}]
+		}
+	}
+	id: "19BEDC24F7814E97"
+	images: [
+		{
+			dependency: "35B752C22CBB7706"
+			height: 16.0d
+			image: "goety_revelation:item/quietus_star"
+			order: 1
+			rotation: 0.0d
+			width: 16.0d
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependency: "35B752C22CBB7706"
+			height: 64.0d
+			image: "enigmaticlegacy:block/star_fabric"
+			order: -1
+			rotation: 0.0d
+			width: 64.0d
+			x: 8.0d
+			y: 4.0d
+		}
+	]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"388B595CCBC1FFA2"
+				"5CA810FAE07ABC4C"
+				"2CBFCBE8A6917823"
+				"5053765AC7B65719"
+				"543043AB36A94B59"
+				"052295AE8A41BF40"
+				"51E7195113D9FAA0"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "35B752C22CBB7706"
+			size: 8.0d
+			tasks: [{
+				id: "0835A0484FF95E63"
+				item: {
+					Count: 1
+					id: "goety_revelation:halo_of_the_end"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:binding_curse"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C7FF7A85A248AD2"]
+			id: "052295AE8A41BF40"
+			invisible: true
+			size: 2.0d
+			tasks: [{
+				id: "29090CC11F642BF0"
+				item: {
+					Count: 1
+					id: "goety_revelation:mystery_fragment"
+					tag: {
+						fragment: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1C7FF7A85A248AD2"]
+			id: "2CBFCBE8A6917823"
+			invisible: true
+			size: 2.0d
+			tasks: [{
+				id: "321E2E3EC2F503DE"
+				item: {
+					Count: 1
+					id: "goety_revelation:mystery_fragment"
+					tag: {
+						fragment: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C7FF7A85A248AD2"]
+			id: "388B595CCBC1FFA2"
+			invisible: true
+			size: 2.0d
+			tasks: [{
+				id: "382440FE15589009"
+				item: {
+					Count: 1
+					id: "goety_revelation:mystery_fragment"
+					tag: {
+						fragment: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C7FF7A85A248AD2"]
+			id: "5CA810FAE07ABC4C"
+			invisible: true
+			size: 2.0d
+			tasks: [{
+				id: "15CA236447A2D051"
+				item: {
+					Count: 1
+					id: "goety_revelation:mystery_fragment"
+					tag: {
+						fragment: 3
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1C7FF7A85A248AD2"]
+			id: "5053765AC7B65719"
+			size: 3.0d
+			tasks: [{
+				id: "4ED986BAC6E21DA2"
+				item: "goety_revelation:eternal_watch"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1C7FF7A85A248AD2"]
+			id: "51E7195113D9FAA0"
+			size: 3.0d
+			tasks: [{
+				id: "5D886049B6399233"
+				item: "goety_revelation:dimensional_will"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1C7FF7A85A248AD2"]
+			id: "543043AB36A94B59"
+			size: 3.0d
+			tasks: [{
+				id: "7DB3F34C423D8985"
+				item: {
+					Count: 1
+					id: "goety_revelation:the_needle"
+					tag: {
+						isRealNeedle: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+	]
+	title: "终末的神之言"
+}

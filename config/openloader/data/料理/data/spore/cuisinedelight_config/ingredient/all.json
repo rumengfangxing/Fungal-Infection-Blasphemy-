@@ -1,0 +1,405 @@
+{
+  "entries": [
+    {
+      "type": "MEAT",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "spore:mutated_fiber"
+        }
+      ],
+      "max_time": 360,
+      "min_time": 100,
+      "nutrition": 16,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.6,
+      "size": 8,
+      "stir_time": 60
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "minecraft:resistance",
+          "level": 2,
+          "time": 24000
+        }
+      ],
+      "ingredient": {
+        "item": "spore:armor_fragment"
+      },
+      "max_time": 240,
+      "min_time": 120,
+      "nutrition": 6,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0.8,
+      "size": 1,
+      "stir_time": 80
+    },
+    {
+      "type": "MEAT",
+      "effects": [
+        {
+          "effect": "minecraft:strength",
+          "level": 3,
+          "time": 24000
+        },
+        {
+          "effect": "minecraft:jump_boost",
+          "level": 2,
+          "time": 24000
+        }
+      ],
+      "ingredient": {
+        "item": "spore:tendons"
+      },
+      "max_time": 240,
+      "min_time": 120,
+      "nutrition": 12,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.6,
+      "size": 3,
+      "stir_time": 80
+    },
+    {
+      "type": "MEAT",
+      "effects": [
+        {
+          "effect": "minecraft:regeneration",
+          "level": 4,
+          "time": 6000
+        }
+      ],
+      "ingredient": {
+        "item": "spore:mutated_heart"
+      },
+      "max_time": 240,
+      "min_time": 120,
+      "nutrition": 24,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.6,
+      "size": 2,
+      "stir_time": 80
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "spore:symbiosis",
+          "level": 1,
+          "time": 9000
+        }
+      ],
+      "ingredient": {
+        "item": "spore:living_core"
+      },
+      "max_time": 240,
+      "min_time": 120,
+      "nutrition": 36,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.6,
+      "size": 1,
+      "stir_time": 80
+    },
+    {
+      "type": "MEAT",
+      "effects": [
+        {
+          "effect": "minecraft:speed",
+          "level": 2,
+          "time": 24000
+        },
+        {
+          "effect": "minecraft:slow_falling",
+          "level": 0,
+          "time": 6000
+        }
+      ],
+      "ingredient": {
+        "item": "spore:wing_membrane"
+      },
+      "max_time": 240,
+      "min_time": 120,
+      "nutrition": 12,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.6,
+      "size": 2,
+      "stir_time": 80
+    },
+    {
+      "type": "MEAT",
+      "effects": [
+        {
+          "effect": "minecraft:night_vision",
+          "level": 0,
+          "time": 24000
+        },
+        {
+          "effect": "minecraft:haste",
+          "level": 1,
+          "time": 24000
+        }
+      ],
+      "ingredient": {
+        "item": "spore:nerves"
+      },
+      "max_time": 180,
+      "min_time": 40,
+      "nutrition": 18,
+      "overcook_penalty": 1.0,
+      "raw_penalty": 0.4,
+      "size": 0,
+      "stir_time": 80
+    },
+    {
+      "type": "MEAT",
+      "effects": [
+        {
+          "effect": "minecraft:water_breathing",
+          "level": 3,
+          "time": 24000
+        }
+      ],
+      "ingredient": {
+        "item": "spore:alveolic_sack"
+      },
+      "max_time": 240,
+      "min_time": 120,
+      "nutrition": 12,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.6,
+      "size": 2,
+      "stir_time": 80
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "spore:symbiosis",
+          "level": 4,
+          "time": 12000
+        },
+        {
+          "effect": "spore:mycelium_ef",
+          "level": 1,
+          "time": 1800
+        }
+      ],
+      "ingredient": {
+        "item": "spore:alveolic_sack"
+      },
+      "max_time": 240,
+      "min_time": 0,
+      "nutrition": 8,
+      "overcook_penalty": 1.0,
+      "raw_penalty": 0.0,
+      "size": 0,
+      "stir_time": 80
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "spore:symbiosis",
+          "level": 4,
+          "time": 12000
+        },
+        {
+          "effect": "spore:mycelium_ef",
+          "level": 1,
+          "time": 1200
+        }
+      ],
+      "ingredient": {
+        "item": "spore:symbiotic_reagent"
+      },
+      "max_time": 240,
+      "min_time": 0,
+      "nutrition": 128,
+      "overcook_penalty": 1.0,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 100
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "spore_addon:frenzy",
+          "level": 4,
+          "time": 12000
+        }
+      ],
+      "ingredient": {
+        "item": "spore_addon:primevalreagent"
+      },
+      "max_time": 240,
+      "min_time": 0,
+      "nutrition": 128,
+      "overcook_penalty": 1.0,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 100
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "spore_addon:antibody",
+          "level": 4,
+          "time": 36000
+        }
+      ],
+      "ingredient": {
+        "item": "spore_addon:incompletevaccine"
+      },
+      "max_time": 240,
+      "min_time": 0,
+      "nutrition": 128,
+      "overcook_penalty": 1.0,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 100
+    },
+    {
+      "type": "MEAT",
+      "effects": [
+        {
+          "effect": "minecraft:saturation",
+          "level": 0,
+          "time": 200
+        }
+      ],
+      "ingredient": {
+        "item": "spore:biomass"
+      },
+      "max_time": 240,
+      "min_time": 80,
+      "nutrition": 32,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.6,
+      "size": 3,
+      "stir_time": 80
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "minecraft:health_boost",
+          "level": 19,
+          "time": 144000
+        }
+      ],
+      "ingredient": {
+        "item": "fib:essenceoflife"
+      },
+      "max_time": 240,
+      "min_time": 40,
+      "nutrition": 32768,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.6,
+      "size": 1,
+      "stir_time": 80
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "enigmaticaddons:frozen_heart",
+          "level":2,
+          "time": 1200
+        }
+      ],
+      "ingredient": {
+        "item": "minecraft:blue_ice"
+      },
+      "max_time": 20,
+      "min_time": 0,
+      "nutrition": 0,
+      "overcook_penalty": 1.0,
+      "raw_penalty": 0.0,
+      "size": 0,
+      "stir_time": 80
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "goety:frosty_aura",
+          "level":2,
+          "time": 1200
+        }
+      ],
+      "ingredient": {
+        "item": "goety:ice_cube"
+      },
+      "max_time": 20,
+      "min_time": 0,
+      "nutrition": 0,
+      "overcook_penalty": 1.0,
+      "raw_penalty": 0.0,
+      "size": 0,
+      "stir_time": 80
+    },
+    {
+      "type": "MEAT",
+      "effects": [
+        {
+          "effect": "goety:climbing",
+          "level":0,
+          "time": 12000
+        }
+      ],
+      "ingredient": {
+        "item": "goety:spider_egg"
+      },
+      "max_time": 240,
+      "min_time": 40,
+      "nutrition": 6,
+      "overcook_penalty": 0.4,
+      "raw_penalty": 4.0,
+      "size": 1,
+      "stir_time": 80
+    },
+    {
+      "type": "NONE",
+      "effects": [
+        {
+          "effect": "goety:soul_armor",
+          "level":4,
+          "time": 1200
+        }
+      ],
+      "ingredient": {
+        "item": "enigmaticlegacy:soul_dust"
+      },
+      "max_time": 240,
+      "min_time": 0,
+      "nutrition": 0,
+      "overcook_penalty": 1.0,
+      "raw_penalty": 0.0,
+      "size": 0,
+      "stir_time": 80
+    },
+    {
+      "type": "VEG",
+      "effects": [
+        {
+          "effect": "attributeslib:vitality",
+          "level":4,
+          "time": 1200
+        }
+      ],
+      "ingredient": {
+        "item": "enigmaticaddons:ichoroot"
+      },
+      "max_time": 240,
+      "min_time": 40,
+      "nutrition": 12,
+      "overcook_penalty": 0.4,
+      "raw_penalty": 0.1,
+      "size": 1,
+      "stir_time": 80
+    }
+]
+}

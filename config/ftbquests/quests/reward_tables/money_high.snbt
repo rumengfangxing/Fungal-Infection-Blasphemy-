@@ -1,0 +1,12 @@
+{
+	id: "5555879BCDFDA572"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ count: 16, item: "lightmanscurrency:coin_gold", weight: 60.0f }
+		{ count: 8, item: "lightmanscurrency:coin_emerald", weight: 25.0f }
+		{ count: 2, item: "lightmanscurrency:coin_diamond", weight: 10.0f }
+		{ item: "lightmanscurrency:coin_netherite", weight: 5.0f }
+	]
+	title: "money_high"
+}

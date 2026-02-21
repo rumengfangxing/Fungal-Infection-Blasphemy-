@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:crossbow",
+    "enigmaticaddons:dragon_bow",
+    "enigmaticaddons:evil_dagger",
+    "$minecraft:bow"
+  ],
+  "incompatible": [
+    "enigmaticlegacy:sharpshooter"
+  ]
+}

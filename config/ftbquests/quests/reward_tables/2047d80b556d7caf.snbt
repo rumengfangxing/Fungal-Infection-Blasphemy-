@@ -1,0 +1,68 @@
+{
+	id: "2047D80B556D7CAF"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{
+			command: "/curios add accessory @s 1"
+			elevate_perms: true
+			title: "添加一个配饰"
+			type: "command"
+		}
+		{
+			command: "/curios add back @s 1"
+			elevate_perms: true
+			title: "添加一个背饰"
+			type: "command"
+		}
+		{
+			command: "/curios add belt @s 1"
+			elevate_perms: true
+			title: "添加一个腰带"
+			type: "command"
+		}
+		{
+			command: "/curios add body @s 1"
+			elevate_perms: true
+			title: "添加一个胸饰"
+			type: "command"
+		}
+		{
+			command: "/curios add charm @s 1"
+			elevate_perms: true
+			title: "添加一个护符"
+			type: "command"
+		}
+		{
+			command: "/curios add feet @s 1"
+			elevate_perms: true
+			title: "添加一个足部"
+			type: "command"
+		}
+		{
+			command: "/curios add hands @s 1"
+			elevate_perms: true
+			title: "添加一个手饰"
+			type: "command"
+		}
+		{
+			command: "/curios add head @s 1"
+			elevate_perms: true
+			title: "添加一个首饰"
+			type: "command"
+		}
+		{
+			command: "/curios add necklace @s 1"
+			elevate_perms: true
+			title: "添加一个项链"
+			type: "command"
+		}
+		{
+			command: "/curios add ring @s 1"
+			elevate_perms: true
+			title: "添加一个戒指"
+			type: "command"
+		}
+	]
+	title: "自选饰品栏位"
+}

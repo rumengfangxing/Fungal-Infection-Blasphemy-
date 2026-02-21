@@ -1,0 +1,606 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4BACDB26566F5BC9"
+	group: "3940671EEBB12B1A"
+	icon: "minecraft:clock"
+	id: "4BACDB26566F5BC9"
+	images: [{
+		height: 1.5d
+		image: "refinedstorage:block/network_transmitter/cutouts/light_blue"
+		rotation: 0.0d
+		width: 1.5d
+		x: -11.5d
+		y: 0.5d
+	}]
+	order_index: 0
+	quest_links: [
+		{
+			id: "5B2BAF60C7CFDFE6"
+			linked_quest: "504A6FC37622FD9D"
+			x: -19.5d
+			y: 4.0d
+		}
+		{
+			id: "1C0099038443FF72"
+			linked_quest: "2C745FADE1D26A80"
+			x: -23.0d
+			y: 1.5d
+		}
+		{
+			id: "27DA0239A6DDE368"
+			linked_quest: "10329BC2D854B5DB"
+			x: -23.0d
+			y: 2.5d
+		}
+		{
+			id: "27E7A5E532D75EE8"
+			linked_quest: "7397D86F44BB5A1C"
+			x: -23.0d
+			y: 3.5d
+		}
+	]
+	quests: [
+		{
+			description: [
+				"本页面并无任何任务相关项，真正内容在注明主线的章节"
+				""
+				"如果你对自己要做什么一无所知或者一知半解"
+				"你可以跟从本页面的任务进行游玩"
+				"以访问维度划分阶段，每个阶段的对应的一些物品会显示在维度任务下方"
+				""
+				"本章节几乎没有前置，如果有出现前置，仅表示关联关系"
+				""
+				"对物品有疑惑可把鼠标光标移到物品上按&ectrl+r跳转百科查看"
+				"&r"
+			]
+			icon: "minecraft:writable_book"
+			id: "4D5E7ECA7D0640EC"
+			tasks: [{
+				id: "1375F1E3FB7F071E"
+				type: "checkmark"
+			}]
+			title: "说明"
+			x: -23.0d
+			y: 0.5d
+		}
+		{
+			description: ["赔个礼"]
+			id: "74484FAFD6831730"
+			rewards: [{
+				id: "30C23B74ABA9F0A2"
+				item: "enigmaticdice:divine_shield"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "077BD66CDB9B009F"
+				title: "咳咳，此版本有点仓促了这块来不及写"
+				type: "checkmark"
+			}]
+			x: -25.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"主世界"
+				"你在这里看到的并不是美景"
+				"你的直觉告诉你"
+				"得&c尽快离开这里&r"
+				"或者做好直面它们的准备"
+			]
+			id: "1B2E85EB664BD9D7"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "3DA86835C587A34B"
+				title: "访问主世界"
+				type: "dimension"
+			}]
+			x: -21.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"手持右键查看网店"
+				"可以在救助会领取低保，购买一些装备工具"
+				"可以将材料和矿物售出赚钱"
+				"还可以玩老虎机(珍爱钱包，远离赌博)"
+			]
+			id: "105140568DB4466B"
+			tasks: [{
+				id: "34A470FB5542A1D7"
+				item: "lightmanscurrency:portable_gem_terminal"
+				type: "item"
+			}]
+			x: -20.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["504A6FC37622FD9D"]
+			description: [
+				"新手武器"
+				"v键近战 左键飞刀"
+			]
+			id: "2501DC69BE6E1828"
+			tasks: [{
+				id: "130E6C1511CA794D"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 5
+						GunFireMode: "SEMI"
+						GunId: "emxarms:emx_tknife"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			x: -20.5d
+			y: 4.0d
+		}
+		{
+			description: ["挖掘矿物，收集基本的资源或兑换为货币"]
+			id: "2FDA3749104218D5"
+			tasks: [{
+				id: "1D1B6DA3E174AB8E"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -20.5d
+			y: 5.0d
+		}
+		{
+			description: ["或许那里会是个不错的休息地"]
+			id: "3C7C3FBAE3E1DDB2"
+			tasks: [{
+				id: "1529A53EC97D5DC8"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: -19.5d
+			y: 5.0d
+		}
+		{
+			description: ["真正的&c炼狱&r"]
+			id: "194F1F8A0DA09855"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "0F64DE9DD0A86DFD"
+				title: "访问下界"
+				type: "dimension"
+			}]
+			x: -15.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"在这里可以收集一些神秘遗物的物品"
+				""
+				"也可以使用炽热号角挑战凋灵死灵法师"
+			]
+			id: "4C8BF3FBE61E8E80"
+			tasks: [{
+				icon: "minecraft:red_nether_bricks"
+				id: "298262EFCB038E9A"
+				structure: "minecraft:fortress"
+				title: "访问下界堡垒"
+				type: "structure"
+			}]
+			x: -15.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"它们真的很有钱！！！"
+				"快去多抢几家"
+			]
+			id: "63B452B97AB842FA"
+			tasks: [{
+				icon: "minecraft:polished_blackstone_bricks"
+				id: "2D74EB3D06326795"
+				structure: "minecraft:bastion_remnant"
+				title: "访问下界堡垒"
+				type: "structure"
+			}]
+			x: -15.5d
+			y: 3.0d
+		}
+		{
+			description: ["拥有附魔之后你的战斗力大幅提升"]
+			id: "00051342F49556E8"
+			tasks: [{
+				id: "1F80BEB1AC2B5B35"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: -20.5d
+			y: 6.5d
+		}
+		{
+			description: ["允许选择魔咒"]
+			id: "5731F9FBB3164D35"
+			tasks: [{
+				id: "68C6F24305B6A023"
+				item: "enchantinginfuser:enchanting_infuser"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 6.5d
+		}
+		{
+			description: [
+				"允许你随意修改物品的附魔属性"
+				"超出附魔等级上限的操作无法进行"
+			]
+			id: "6A8F71A0B1C455E5"
+			tasks: [{
+				id: "6052835A4F66C427"
+				item: "enchantinginfuser:advanced_enchanting_infuser"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 6.5d
+		}
+		{
+			description: ["提供强力的护甲属性"]
+			id: "61BE0B3247A41762"
+			tasks: [{
+				id: "1A4D055218CAF1B9"
+				item: "goety:iron_hide_focus"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"次数盾"
+				"七咒玩家的福音"
+			]
+			id: "70078007A4B69F6F"
+			tasks: [{
+				id: "1D2FA3009AC801E4"
+				item: "goety:bulwark_focus"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"弹射位移，极大提高机动性"
+				"并且使用后的一次落地无摔落伤害"
+			]
+			id: "78D005D7BF7354AC"
+			tasks: [{
+				id: "6371FCAA65935815"
+				item: "goety:launch_focus"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"药酿是强力道具"
+				"你可以试试用药酿与巫毒娃娃的组合"
+				"来&c击败无法正面击败的单位&r"
+			]
+			id: "2EC8BA6EC1EFAC7D"
+			rewards: [{
+				id: "52A429B73005641D"
+				item: "goety:taglock_kit"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CD291E1B331F5F1"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:witches_brew"
+					}
+				}
+				type: "item"
+			}]
+			x: -18.5d
+			y: 5.5d
+		}
+		{
+			description: ["灌伤必备"]
+			id: "1AFFAA673A3F5CEA"
+			tasks: [{
+				id: "06E18AEC01EA5776"
+				item: "goety:weakening_focus"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"与铁皮类似，且可与铁皮聚晶效果叠加"
+				"在该状态下攻击你的生物会遭受&1冰寒侵蚀之苦&r"
+				""
+				"你的仆从也会被施加此效果(和真菌打军团战的希望之一)"
+			]
+			id: "210A17017206B83E"
+			tasks: [{
+				id: "728CA59BEC4ADC6D"
+				item: "goety:chilling_focus"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"治疗法术是必不可少的"
+				"额，不过嘛咱有七咒就是来玩命的，可能用不上"
+				""
+				"如果你要体验仆从相关的玩法，在战斗后方使用附魔范围的治疗可以很好维持军团战斗力"
+			]
+			id: "4CDBB14784991387"
+			tasks: [{
+				id: "253056FE222A9C99"
+				item: "goety:soul_heal_focus"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"物资过于丰厚"
+				"底下有一处密室"
+				"自行寻找进入方法"
+			]
+			id: "091CABB23A6A5AF5"
+			tasks: [{
+				icon: "goety_revelation:broken_halo"
+				id: "106FBF162AD75244"
+				structure: "goety_revelation:church"
+				title: "访问绯红教堂"
+				type: "structure"
+			}]
+			x: -14.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"右键传送到&2主世界"
+				"&r坐标为传送前坐标"
+			]
+			id: "0BA73A22D3A39EDC"
+			tasks: [{
+				id: "6E2F147252049D09"
+				item: "fib:overworld_key"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"右键传送到&4下界&r"
+				"坐标为传送前坐标"
+			]
+			id: "4829EFE51701EAEF"
+			tasks: [{
+				id: "6C0601E631F8DD47"
+				item: "fib:the_nether_key"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"右键传送到&b冰封之地"
+				"&r坐标为传送前坐标"
+			]
+			id: "381BED9AD0EB1762"
+			tasks: [{
+				id: "6CFC6FCAB8A49E06"
+				item: "fib:frozen_key"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0BA73A22D3A39EDC"
+				"4829EFE51701EAEF"
+			]
+			description: [
+				"利用这两把钥匙，配合搭建下界传送门"
+				"你可以反复缩放你的坐标以8倍"
+				""
+				"使用钥匙从&4下界&r传送到&2主世界&r→坐标不变→搭建传送门进入&4下界&r→坐标缩小8倍"
+				"使用钥匙从&2主世界&r传送到&4下界&r→坐标不变→搭建传送门进&2入主世界&r→坐标放大8倍"
+				""
+				"使用这种方法跑图，可以避免不必要的加载，也可以快速脱离危险区"
+			]
+			icon: "minecraft:writable_book"
+			id: "313B97BCEF899F23"
+			tasks: [{
+				id: "3CE33C47EBF189AB"
+				type: "checkmark"
+			}]
+			title: "小巧思"
+			x: -15.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"在访问前，请确保你有回去的方法"
+				""
+				"这里&1不会&5自然生成&r&1真菌且真菌生物的活性降低&r，你可以在这里放心搭建自己的基地"
+				"地下是成片的深谙之域"
+			]
+			id: "7325B7B210AB3EE6"
+			tasks: [{
+				dimension: "new_dimensions:frozen_land_dimension"
+				id: "17376F6DF0C11E9E"
+				title: "访问冰封之地"
+				type: "dimension"
+			}]
+			x: -11.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"因为地下都是深谙之域的缘故"
+				"远古城市密布"
+			]
+			id: "6798FAD5DD23A7BE"
+			tasks: [{
+				id: "0B4244ED2DE729A7"
+				structure: "minecraft:ancient_city"
+				title: "访问远古城市"
+				type: "structure"
+			}]
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			id: "44A96BCCCF7A5CCE"
+			tasks: [{
+				id: "50126C7519ECD517"
+				item: "minecraft:recovery_compass"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			description: ["死亡的阴影逐渐离远"]
+			id: "059EFC4919FD0E4B"
+			tasks: [{
+				id: "2ABB73CF5735FEB8"
+				item: "goety:arca"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"可以关注一下商店那一块的战备章节"
+				"及时更新迭代护甲对游戏体验提升很有帮助"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4B96BAD86C5A48ED"
+			tasks: [{
+				id: "01BC36B8E5EE8076"
+				type: "checkmark"
+			}]
+			title: "护甲"
+			x: -20.5d
+			y: 7.5d
+		}
+		{
+			id: "617A0069D5A1D5CB"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "340CB48DFCB5A816"
+				type: "kill"
+				value: 1L
+			}]
+			x: -15.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["617A0069D5A1D5CB"]
+			description: ["恶意图腾会保护好你的周全"]
+			hide_dependency_lines: true
+			id: "18E9C871B6465CE7"
+			rewards: [{
+				id: "574E6C19557455A2"
+				item: "enigmaticlegacy:evil_essence"
+				type: "item"
+			}]
+			shape: "none"
+			size: 3.0d
+			tasks: [{
+				id: "7FEC89C5C573D2B1"
+				item: "enigmaticaddons:totem_of_malice"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"完成以上内容"
+				"你基本已经获得了在各个维度自由探索的能力"
+				""
+				"可以专心去完成其它主线了"
+			]
+			icon: "minecraft:writable_book"
+			id: "24F3A4B014F06450"
+			tasks: [{
+				id: "3B4F1C729387CF43"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: 4.5d
+		}
+		{
+			id: "381EFCDEC650CDB2"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "0368B3475C2B086D"
+				title: "访问末地"
+				type: "dimension"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"右键传送到&e末地&r"
+				"坐标为传送前坐标"
+			]
+			id: "3681071DA7337650"
+			tasks: [{
+				id: "2F95127F6EEA22F6"
+				item: "fib:the_end_key"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"你可以在这里寻求迷迭香小姐的庇护😉"
+				"探险家指南针搜rhode"
+			]
+			id: "6CAA5F6ACC664A1A"
+			tasks: [{
+				id: "1F040612431DC5DA"
+				structure: "torchesbecomesunlight:rhode_island_office"
+				type: "structure"
+			}]
+			title: "发现罗德岛给事处"
+			x: -18.5d
+			y: 6.5d
+		}
+	]
+	title: "流程模式【&c非必要但建议查看&r】"
+}

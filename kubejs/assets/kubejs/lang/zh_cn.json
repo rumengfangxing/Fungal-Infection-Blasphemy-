@@ -1,0 +1,30 @@
+{
+	"key.categories.kubejs": "菌染亵渎",
+	"key.kubejs.skill_fungified_health": "真菌化技能: 极速代谢",
+
+	"skill.fungified.health.failed.stage": "超进化后才能使用极速代谢",
+	"skill.fungified.health.failed.cooldown": "距下一次可极速代谢还有 %1$ss 冷却时间",
+	"skill.fungified.health.failed.biomass": "生物质不足 %1$s 无法极速代谢",
+	"skill.fungified.health.success": "极速代谢完毕,注意物质积累状态",
+
+	"command.fungified.stage": "§6已将 %1$s §6的真菌化阶段设置为 %2$d",
+	"command.fungified.biomass": "§6已将 %1$s §6的生物质设置为 %2$d",
+	"command.fungified.evolution": "§6已将 %1$s §6的进化值设置为 %2$d",
+
+	"stage.fungified.1": "真菌体",
+	"stage.fungified.2": "进化体",
+	"stage.fungified.3": "超进化",
+	"stage.fungified.4": "灾厄",
+	"stage.fungified.5": "类心智",
+
+	"gui.fungified.biomass.text": "生物质: %1$s",
+	"gui.fungified.evolution.text": "当前: %1$s §f进化度: %2$s/%3$s",
+	"gui.fungified.hunger.text": "§l饥饿...吞食....血肉.....",
+
+	"item.default.tooltip.shift_hint": "§6按 [Shift] 查看更多信息",
+	"item.default.tooltip.ctrl_hint": "§6按 [Ctrl] 查看更多信息",
+	"item.default.tooltip.alt_hint": "§6按 [Alt] 查看更多信息",
+	
+	"item.goety.undeath_potion.tip.failed": "你已是真菌生物,无法变为巫妖"
+
+}

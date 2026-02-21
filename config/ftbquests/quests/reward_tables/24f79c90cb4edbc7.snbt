@@ -1,0 +1,20 @@
+{
+	id: "24F79C90CB4EDBC7"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{
+			command: "/gamerule doInsomnia true"
+			elevate_perms: true
+			title: "开启幻翼生成"
+			type: "command"
+		}
+		{
+			command: "/gamerule doInsomnia false"
+			elevate_perms: true
+			title: "关闭幻翼生成"
+			type: "command"
+		}
+	]
+	title: "幻翼生成"
+}

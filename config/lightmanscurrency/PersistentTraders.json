@@ -1,0 +1,997 @@
+{
+  "Traders": [
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "shop_recycle_spore",
+      "Name": "回收商店(spore)",
+      "OwnerName": "维度意志",
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:mutated_fiber",
+            "Count": 16
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:mutated_heart",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:claw_fragment",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:armor_fragment",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:wing_membrane",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:cerebrum",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:alveolic_sack",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:altered_spleen",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:corrosive_sack",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:organoid_membrane",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:tendons",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:innards",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:sickle_fragment",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:fang",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:spike",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:shield_fragment",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:tumor",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:frozen_decayed_biomass",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:decayed_torso",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:biomass",
+            "Count": 16
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore_addon:primevalreagent",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "spore:skull_soup",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "shop_recycle_minecraft",
+      "Name": "回收商店(minecraft)",
+      "OwnerName": "维度意志",
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:emerald",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:ender_pearl",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:copper_ingot",
+            "Count": 16
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:iron_ingot",
+            "Count": 8
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:gold_ingot",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:diamond",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:lapis_lazuli",
+            "Count": 16
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:redstone",
+            "Count": 16
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:netherite_ingot",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:nether_star",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:ghast_tear",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:blaze_rod",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:echo_shard",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:dragon_breath",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "easy_villagers:villager",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          },
+          "IgnoreNBT": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "shop_help",
+      "Name": "救助会",
+      "OwnerName": "村民救助会",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:bread",
+            "Count": 16
+          },
+          "Price": {
+            "Free": true,
+            "type": "lightmanscurrency:null"
+          },
+          "Rules": [
+            {
+              "Limit": 1,
+              "ForgetTime": 3600000,
+              "Type": "lightmanscurrency:player_trade_limit"
+            }
+          ]
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:splash_potion",
+            "Count": 2,
+            "Tag": "{Potion:\"minecraft:strong_healing\"}"
+          },
+          "Price": {
+            "Free": true,
+            "type": "lightmanscurrency:null"
+          },
+          "Rules": [
+            {
+              "Limit": 1,
+              "ForgetTime": 3600000,
+              "Type": "lightmanscurrency:player_trade_limit"
+            }
+          ]
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:campfire",
+            "Count": 4
+          },
+          "DisplayName": "营火会给附近玩家提供生命恢复",
+          "Price": {
+            "Free": true,
+            "type": "lightmanscurrency:null"
+          },
+          "Rules": [
+            {
+              "Limit": 1,
+              "ForgetTime": 3600000,
+              "Type": "lightmanscurrency:player_trade_limit"
+            }
+          ]
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:diamond_sword",
+            "Count": 1,
+            "Tag": "{Damage:0,Enchantments:[{id:\"minecraft:sharpness\",lvl:2s},{id:\"minecraft:unbreaking\",lvl:1s}],RepairCost:0,display:{Name:'{\"text\":\"§e村好剑\"}'}}"
+          },
+          "DisplayName": "村好剑",
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:diamond_pickaxe",
+            "Count": 1,
+            "Tag": "{Damage:0,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s},{id:\"minecraft:efficiency\",lvl:3s}],RepairCost:0,display:{Name:'{\"text\":\"§e全村最好的镐\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:diamond_helmet",
+            "Count": 1,
+            "Tag": "{Damage:0,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s},{id:\"minecraft:protection\",lvl:2s}],RepairCost:0,Trim:{material:\"minecraft:lapis\",pattern:\"minecraft:raiser\"},display:{Name:'{\"text\":\"§e全村最好的头盔\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:diamond_chestplate",
+            "Count": 1,
+            "Tag": "{Damage:0,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s},{id:\"minecraft:protection\",lvl:2s}],RepairCost:0,Trim:{material:\"minecraft:redstone\",pattern:\"minecraft:raiser\"},display:{Name:'{\"text\":\"§e全村最好的胸甲\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:diamond_leggings",
+            "Count": 1,
+            "Tag": "{Damage:0,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s},{id:\"minecraft:protection\",lvl:2s}],RepairCost:0,Trim:{material:\"minecraft:emerald\",pattern:\"minecraft:raiser\"},display:{Name:'{\"text\":\"§e全村最好的裤子\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:diamond_boots",
+            "Count": 1,
+            "Tag": "{Damage:0,Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s},{id:\"minecraft:protection\",lvl:2s}],RepairCost:0,Trim:{material:\"minecraft:emerald\",pattern:\"minecraft:raiser\"},display:{Name:'{\"text\":\"§e全村最好的鞋子\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:enchanted_golden_apple",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "BARTER",
+          "SellItem": {
+            "ID": "minecraft:netherite_sword",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:8.0d,AttributeName:\"minecraft:generic.attack_damage\",Operation:0,Slot:\"mainhand\",UUID:[I;-1320776492,268650215,-2017526522,-1573760514]},{Amount:1.5d,AttributeName:\"minecraft:generic.attack_damage\",Operation:1,Slot:\"mainhand\",UUID:[I;963090649,-2031466068,-1126144236,2141022558]},{Amount:-2.4d,AttributeName:\"minecraft:generic.attack_speed\",Operation:0,Slot:\"mainhand\",UUID:[I;-321319977,-950382732,-1380795387,-1975771320]},{Amount:2.0d,AttributeName:\"minecraft:generic.attack_speed\",Operation:1,Slot:\"mainhand\",UUID:[I;-1281989988,1300120562,-1524042320,-1850822537]}],Damage:0,Enchantments:[{id:\"enigmaticlegacy:slayer\",lvl:5},{id:\"goety:soul_eater\",lvl:10},{id:\"goety_revelation:reality_piercer\",lvl:5},{id:\"minecraft:unbreaking\",lvl:5},{id:\"\",lvl:0}],display:{Lore:['{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"text\":\"浸染\"},{\"color\":\"gold\",\"text\":\"使徒之血\"},{\"color\":\"white\",\"text\":\"的宝剑，已然具有\"},{\"color\":\"red\",\"text\":\"神性\"}],\"text\":\"\"}'],Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"obfuscated\":true,\"text\":\"11\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"不洁\"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"村好剑\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"染血\"},{\"strikethrough\":true,\"obfuscated\":true,\"color\":\"white\",\"text\":\"11\"}],\"text\":\"\"}'}}"
+          },
+          "DisplayName": "先将村好剑锻造成下界合金剑再兑换",
+          "BarterItem": {
+            "ID": "minecraft:netherite_sword",
+            "Count": 1,
+            "Tag": "{Damage:0,Enchantments:[{id:\"minecraft:sharpness\",lvl:2s},{id:\"minecraft:unbreaking\",lvl:1s}],RepairCost:0,display:{Name:'{\"text\":\"§e村好剑\"}'}}"
+          },
+          "BarterItem2": {
+            "ID": "goety:unholy_blood",
+            "Count": 1
+          }
+        },
+        {
+          "TradeType": "BARTER",
+          "SellItem": {
+            "ID": "minecraft:netherite_sword",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:16.0d,AttributeName:\"minecraft:generic.attack_damage\",Operation:0,Slot:\"mainhand\",UUID:[I;-1320776492,268650215,-2017526522,-1573760514]},{Amount:1.5d,AttributeName:\"minecraft:generic.attack_damage\",Operation:1,Slot:\"mainhand\",UUID:[I;963090649,-2031466068,-1126144236,2141022558]},{Amount:-1.0d,AttributeName:\"minecraft:generic.attack_speed\",Operation:0,Slot:\"mainhand\",UUID:[I;-321319977,-950382732,-1380795387,-1975771320]},{Amount:2.0d,AttributeName:\"minecraft:generic.attack_speed\",Operation:1,Slot:\"mainhand\",UUID:[I;-1281989988,1300120562,-1524042320,-1850822537]}],Damage:0,Enchantments:[{id:\"enigmaticlegacy:slayer\",lvl:10},{id:\"goety:soul_eater\",lvl:20},{id:\"goety_revelation:reality_piercer\",lvl:10},{id:\"minecraft:unbreaking\",lvl:10},{id:\"minecraft:looting\",lvl:10},{id:\"minecraft:smite\",lvl:10},{id:\"minecraft:sweeping\",lvl:5},{id:\"\",lvl:0}],HideFlags:1,display:{Lore:['{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"text\":\"完全的\"},{\"color\":\"gold\",\"text\":\"神性造物\"},{\"text\":\"，当之无愧的\"},{\"color\":\"gold\",\"text\":\"神器\"}],\"text\":\"\"}','{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"color\":\"dark_gray\",\"text\":\"(附魔提示已隐藏)\"}],\"text\":\"\"}'],Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"obfuscated\":true,\"color\":\"red\",\"text\":\"11\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"至纯\"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"村好剑\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"浸染\"},{\"obfuscated\":true,\"color\":\"red\",\"text\":\"11\"}],\"text\":\"\"}'}}"
+          },
+          "BarterItem": {
+            "ID": "minecraft:netherite_sword",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:8.0d,AttributeName:\"minecraft:generic.attack_damage\",Operation:0,Slot:\"mainhand\",UUID:[I;-1320776492,268650215,-2017526522,-1573760514]},{Amount:1.5d,AttributeName:\"minecraft:generic.attack_damage\",Operation:1,Slot:\"mainhand\",UUID:[I;963090649,-2031466068,-1126144236,2141022558]},{Amount:-2.4d,AttributeName:\"minecraft:generic.attack_speed\",Operation:0,Slot:\"mainhand\",UUID:[I;-321319977,-950382732,-1380795387,-1975771320]},{Amount:2.0d,AttributeName:\"minecraft:generic.attack_speed\",Operation:1,Slot:\"mainhand\",UUID:[I;-1281989988,1300120562,-1524042320,-1850822537]}],Damage:0,Enchantments:[{id:\"enigmaticlegacy:slayer\",lvl:5},{id:\"goety:soul_eater\",lvl:10},{id:\"goety_revelation:reality_piercer\",lvl:5},{id:\"minecraft:unbreaking\",lvl:5},{id:\"\",lvl:0}],display:{Lore:['{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"text\":\"浸染\"},{\"color\":\"gold\",\"text\":\"使徒之血\"},{\"color\":\"white\",\"text\":\"的宝剑，已然具有\"},{\"color\":\"red\",\"text\":\"神性\"}],\"text\":\"\"}'],Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"obfuscated\":true,\"text\":\"11\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"不洁\"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"村好剑\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"染血\"},{\"strikethrough\":true,\"obfuscated\":true,\"color\":\"white\",\"text\":\"11\"}],\"text\":\"\"}'}}"
+          },
+          "BarterItem2": {
+            "ID": "goety:unholy_blood",
+            "Count": 1,
+            "Tag": "{Pure:1b}"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "shop_recycle_goety",
+      "Name": "回收商店(goety)",
+      "OwnerName": "维度意志",
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "goety:cursed_ingot",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "goety:dark_ingot",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "goety:magic_emerald",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 2
+              },
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 6
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "goety:empty_focus",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              },
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 6
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "goety_revelation:ascension_halo",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_diamond",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "goety_revelation:broken_halo",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_diamond",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    }
+  ],
+  "Auctions": []
+}

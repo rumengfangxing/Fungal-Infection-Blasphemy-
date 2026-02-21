@@ -1,0 +1,29 @@
+{
+	id: "33391506C731EEC8"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{
+			command: "/spore:erase_the_fungus"
+			elevate_perms: true
+			team_reward: false
+			title: "清除所有真菌生物"
+			type: "command"
+		}
+		{
+			command: "/say 快来救我！我在出生点！@a"
+			elevate_perms: true
+			team_reward: false
+			title: "大声呼救"
+			type: "command"
+		}
+		{
+			command: "/say 出生点一切安好"
+			elevate_perms: true
+			team_reward: false
+			title: "一切安全"
+			type: "command"
+		}
+	]
+	title: "观察周围环境，做出选择"
+}

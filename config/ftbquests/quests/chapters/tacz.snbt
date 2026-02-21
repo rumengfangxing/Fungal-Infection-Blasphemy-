@@ -1,0 +1,115 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tacz"
+	group: "21B93F40B013EE45"
+	icon: {
+		Count: 1
+		id: "tacz:modern_kinetic_gun"
+		tag: {
+			GunCurrentAmmoCount: 9
+			GunFireMode: "SEMI"
+			GunId: "tacz:deagle_golden"
+			HasBulletInBarrel: 1b
+		}
+	}
+	id: "4C9213AEDD007B2D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"加入tacz只是为了优化玩法，丰富玩家的选择"
+				"很显然，在本包tacz并不合题，因此强度也完全不够用，只能在前期起到帮助作用"
+				"相应的，尽可能地降低了弹药成本"
+				"助游玩愉快"
+			]
+			id: "504A6FC37622FD9D"
+			rewards: [
+				{
+					id: "08FA716490228C37"
+					item: {
+						Count: 1
+						id: "lrtactical:melee"
+						tag: {
+							MeleeWeaponId: "delta_wt:silencefd"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "3D7BE4C21E37867C"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 17
+							GunFireMode: "SEMI"
+							GunId: "applied_armorer:niklas_pistol_semi_union"
+							HasBulletInBarrel: 1b
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 128
+					id: "2D688813EB15EE58"
+					item: {
+						Count: 1
+						id: "tacz:ammo"
+						tag: {
+							AmmoId: "tacz_unidict:pistol"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1691CEBB4488E344"
+					item: {
+						Count: 1
+						id: "lrtactical:melee"
+						tag: {
+							MeleeWeaponId: "ab_wt:hands"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "14E9AE80B930A9CC"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"轮椅霰弹，前期可做"
+				"为你的生存提供一些小小的帮助"
+			]
+			id: "4BE50FF7900D1125"
+			tasks: [{
+				id: "0737E2A605641E29"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 5
+						GunFireMode: "SEMI"
+						GunId: "tacz:spas_12"
+						HasBulletInBarrel: 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	title: "TACZ"
+}

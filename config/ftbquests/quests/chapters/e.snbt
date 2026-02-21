@@ -1,0 +1,840 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	default_repeatable_quest: true
+	disable_toast: true
+	filename: "e"
+	group: "1EBC22E93EF9B621"
+	icon: {
+		Count: 1
+		id: "lightmanscurrency:coin_gold"
+		tag: {
+			Enchantments: [{
+				id: "minecraft:protection"
+				lvl: 4s
+			}]
+			RepairCost: 1
+		}
+	}
+	id: "0EBAE1BD76B7E293"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["禁止使用连点器喵~"]
+			disable_toast: true
+			icon: "lightmanscurrency:coin_copper"
+			id: "5EA52369D63B8DDD"
+			rewards: [{
+				auto: "enabled"
+				count: 2
+				id: "228E06A25155FA9A"
+				item: "lightmanscurrency:coin_copper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					disable_toast: true
+					id: "0ADA73C756C94293"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					id: "56D6EE6EE9CEF10C"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					id: "670DBC98A784C710"
+					type: "checkmark"
+				}
+			]
+			title: "挖矿"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			icon: "minecraft:emerald"
+			id: "4EF8703A93B06504"
+			rewards: [{
+				auto: "enabled"
+				id: "59928B656C675FB6"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "1CE3D030580FB292"
+				item: { Count: 2, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			icon: { Count: 32, id: "minecraft:copper_ingot" }
+			id: "0ABB7063CAC1D07C"
+			rewards: [{
+				auto: "enabled"
+				count: 32
+				id: "5FD1FC110E2D53E2"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55D79AD5C7E8FF4A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			icon: { Count: 16, id: "minecraft:iron_ingot" }
+			id: "2A4A6C9E84506714"
+			rewards: [{
+				auto: "enabled"
+				count: 16
+				id: "114DBE965D786648"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "412C9BEC9F006E46"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			icon: { Count: 8, id: "minecraft:gold_ingot" }
+			id: "735C1B9766C10F93"
+			rewards: [{
+				auto: "enabled"
+				count: 8
+				id: "379CE75296CA2227"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "27FAED3D8EE71C94"
+				item: { Count: 2, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			icon: { Count: 2, id: "minecraft:diamond" }
+			id: "2E3CE627DB59F7D4"
+			rewards: [{
+				auto: "enabled"
+				count: 2
+				id: "1EF62B2BDAB84B51"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F14E4FA56F1C935"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			icon: { Count: 32, id: "minecraft:lapis_lazuli" }
+			id: "40340FAE054B73F2"
+			rewards: [{
+				auto: "enabled"
+				count: 32
+				id: "05BF120350A3584E"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F7FB05E2DEFD04F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			icon: { Count: 32, id: "minecraft:redstone" }
+			id: "4EDBD9BA3B30FAF7"
+			rewards: [{
+				auto: "enabled"
+				count: 32
+				id: "6CE713A46A113D87"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7368BF928C6A313E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CD9378D81C581FF"]
+			icon: "spore:mutated_heart"
+			id: "1A67C9FC04F8D06A"
+			rewards: [{
+				auto: "enabled"
+				id: "765364E32BCD6656"
+				item: "spore:mutated_heart"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "7B8752F7312321EE"
+				item: { Count: 2, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61EE6DA0C11BBE4A"]
+			icon: "spore:altered_spleen"
+			id: "13E89259DC898653"
+			rewards: [{
+				auto: "enabled"
+				id: "6EAA28EF10AE6789"
+				item: "spore:altered_spleen"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "59E889006EF7FD26"
+				item: { Count: 2, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D98E78E75AC71CE"]
+			icon: "spore:cerebrum"
+			id: "0FD05516363C1E5E"
+			rewards: [{
+				auto: "enabled"
+				id: "47E048D44285DC21"
+				item: "spore:cerebrum"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "4F1BE4CF31BB46BC"
+				item: { Count: 4, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61E3C61E01575D6D"]
+			icon: "spore:alveolic_sack"
+			id: "1DC88B0664659385"
+			rewards: [{
+				auto: "enabled"
+				id: "1025474829B45E5D"
+				item: "spore:alveolic_sack"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "58C949B6780CEE43"
+				item: { Count: 2, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["73E2E861BA3F4BEB"]
+			icon: "spore:corrosive_sack"
+			id: "1C3356798E615573"
+			rewards: [{
+				auto: "enabled"
+				id: "1B31C922BB2A5B0B"
+				item: "spore:corrosive_sack"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "3A13CE9EAD35EC19"
+				item: { Count: 4, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C66DF30D6F50550"]
+			icon: "spore:armor_fragment"
+			id: "1E3A0D2F94F4F08A"
+			rewards: [{
+				auto: "enabled"
+				id: "446DE1B774C1BE28"
+				item: "spore:armor_fragment"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "55A7AE161CD160F2"
+				item: { Count: 2, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FA4FEE63191D977"]
+			icon: "spore:claw_fragment"
+			id: "7F46097265387AC1"
+			rewards: [{
+				auto: "enabled"
+				id: "177C7BE8C93BDBC3"
+				item: "spore:claw_fragment"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "1676194C6CC4D2C3"
+				item: { Count: 2, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01B39E502C24C332"]
+			icon: "spore:organoid_membrane"
+			id: "5BDE4F03C2726E7E"
+			rewards: [{
+				auto: "enabled"
+				id: "3803ED3F082F2634"
+				item: "spore:organoid_membrane"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "266AC623902B58D5"
+				item: { Count: 2, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F8B9241E2D381B0"]
+			icon: { Count: 2, id: "spore:mutated_fiber" }
+			id: "61653E185AA11CDA"
+			rewards: [{
+				auto: "enabled"
+				count: 2
+				id: "1575C77726146C96"
+				item: "spore:mutated_fiber"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A4F0E90AA4C3A95"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F97263D8B3B1338"]
+			icon: "spore:wing_membrane"
+			id: "54672904E447A136"
+			rewards: [{
+				auto: "enabled"
+				id: "2216A476903351E2"
+				item: "spore:wing_membrane"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "38AD817A98259DCA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D9ACA8AE221D83E"]
+			icon: { Count: 8, id: "goety:cursed_ingot" }
+			id: "3EC515967C762319"
+			rewards: [{
+				auto: "enabled"
+				count: 8
+				id: "59890E49E2F32662"
+				item: "goety:cursed_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0438858762C07732"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["392A70D0021390D6"]
+			icon: "goety:empty_focus"
+			id: "0027B9830BDE9514"
+			rewards: [{
+				auto: "enabled"
+				count: 4
+				id: "3E54ED250BCBFB13"
+				item: "goety:empty_focus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B608ADF8AA6A01C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C1717C9AD85A23A"]
+			hide_until_deps_complete: true
+			icon: "goety_revelation:apocalyptium_ingot"
+			id: "200C372EE4099EDE"
+			rewards: [{
+				auto: "enabled"
+				id: "4E478B4944B9AA00"
+				item: "goety_revelation:apocalyptium_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70E1C1A7559486C3"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1490591FBD52F4D9"]
+			icon: "goety:magic_emerald"
+			id: "1383BDC4769F2DC9"
+			rewards: [{
+				id: "2AC45B4E3AEFCD16"
+				item: "goety:magic_emerald"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "3069883B94C0D353"
+				item: { Count: 3, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3A706552C079C1BE"]
+			icon: {
+				Count: 1
+				id: "enigmaticlegacy:earth_heart"
+				tag: { }
+			}
+			id: "22291999220495C6"
+			rewards: [{
+				auto: "enabled"
+				id: "514FE02FFAB8B150"
+				item: {
+					Count: 1
+					id: "enigmaticlegacy:earth_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "6DF26F2367C28BE6"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4C032D238573B415"]
+			icon: "enigmaticlegacy:twisted_heart"
+			id: "3B677C4F93723127"
+			rewards: [{
+				auto: "enabled"
+				id: "6748C91EEDC2670A"
+				item: "enigmaticlegacy:twisted_heart"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "0DE9A7CA64B2300D"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1DDA11CFFA680429"]
+			icon: "enigmaticaddons:pure_heart"
+			id: "355264040361A954"
+			rewards: [{
+				auto: "enabled"
+				id: "1F509E077E572125"
+				item: "enigmaticaddons:pure_heart"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "0F57DDB812A80DAE"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["484C334096DC8BB0"]
+			icon: "enigmaticlegacy:astral_dust"
+			id: "28A33DE53CF5C86E"
+			rewards: [{
+				id: "10D9228D9C50FFB5"
+				item: "enigmaticlegacy:astral_dust"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "2BB01DA88E53BE21"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5A9CA3E52DF33EBD"]
+			icon: "enigmaticaddons:ichor_droplet"
+			id: "7FDC0426660B4B95"
+			rewards: [{
+				id: "5A16EAEFE8113207"
+				item: "enigmaticaddons:ichor_droplet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32BA05ACDCB109D5"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["703FEE711F32B4C5"]
+			icon: "enigmaticlegacy:etherium_ore"
+			id: "4CDDC301112DC1C7"
+			rewards: [{
+				id: "3C2DF6BEEE3EEEC2"
+				item: "enigmaticlegacy:etherium_ore"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "5910926F83B4F333"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"值得一提的是"
+				"在末日"
+				"&c人性应被重新定义&r"
+			]
+			icon: "easy_villagers:villager"
+			id: "6190CFEB848DFEEB"
+			rewards: [{
+				auto: "enabled"
+				id: "1080F27ECD48FF56"
+				item: "easy_villagers:villager"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66CC018D08EC8E41"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			icon: "artifacts:villager_hat"
+			id: "1895F136D6109459"
+			rewards: [{
+				auto: "enabled"
+				id: "0100948B3E381648"
+				item: "artifacts:villager_hat"
+				type: "item"
+			}]
+			tasks: [{
+				id: "164B6C5FD4E5130C"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			icon: "minecraft:amethyst_block"
+			id: "73A8FBB6C44982EE"
+			rewards: [{
+				auto: "enabled"
+				id: "6E172DC0FF30CA71"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5548A37FBF6AC7D1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: ["补充你意外丢失的生命值上限"]
+			icon: "enigmaticlegacy:soul_crystal"
+			id: "575B9EE3D7539861"
+			rewards: [{
+				auto: "enabled"
+				id: "3032F6723A052815"
+				item: "enigmaticlegacy:soul_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2DDCD20C486B91E1"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			description: ["购买5分钟时间"]
+			icon: {
+				Count: 1
+				id: "tiab:time_in_a_bottle"
+				tag: { }
+			}
+			id: "7ED4F98523A2997C"
+			rewards: [{
+				auto: "enabled"
+				command: "/tiab addTime 300"
+				elevate_perms: true
+				id: "5A5B0B143BAFBCE4"
+				type: "command"
+			}]
+			subtitle: "5min"
+			tasks: [{
+				id: "6ADA583606D56577"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			description: ["购买30分钟时间"]
+			icon: {
+				Count: 1
+				id: "tiab:time_in_a_bottle"
+				tag: { }
+			}
+			id: "07F0427DF0E003D6"
+			rewards: [{
+				auto: "enabled"
+				command: "/tiab addTime 1800"
+				elevate_perms: true
+				id: "1EDD317F5032C5BA"
+				type: "command"
+			}]
+			subtitle: "30min"
+			tasks: [{
+				id: "249FCD672A2F5DF6"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			description: ["购买3小时时间"]
+			icon: {
+				Count: 1
+				id: "tiab:time_in_a_bottle"
+				tag: { }
+			}
+			id: "0D53F2BA3B6FCFC2"
+			rewards: [{
+				auto: "enabled"
+				command: "/tiab addTime 10800"
+				elevate_perms: true
+				id: "412A3586033E383E"
+				type: "command"
+			}]
+			subtitle: "3h"
+			tasks: [{
+				id: "1CFC3B7882C206C4"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			description: ["购买24小时时间"]
+			icon: {
+				Count: 1
+				id: "tiab:time_in_a_bottle"
+				tag: { }
+			}
+			id: "2D0877F18FEB5893"
+			rewards: [{
+				auto: "enabled"
+				command: "/tiab addTime 86400"
+				elevate_perms: true
+				id: "5624C9A71D75584F"
+				type: "command"
+			}]
+			subtitle: "1d"
+			tasks: [{
+				id: "4FE6F593D1AD9A3C"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			can_repeat: false
+			description: [
+				"注意"
+				"/reload 之后添加时间会失效"
+				"不要因此浪费钱"
+				"重启游戏或服务器可解决问题"
+			]
+			id: "7FACD7A7F27E8B91"
+			rewards: [{
+				id: "60688501AD8B0DA5"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "3679E1E10C77546E"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5F3C28F4A169E49C"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "goety_revelation:revelation"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7F90A84E20E44802"
+			rewards: [{
+				auto: "enabled"
+				id: "3582B539556D053F"
+				item: {
+					Count: 1
+					id: "goety_revelation:revelation"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "345C835F8A0FFD71"
+				item: "goety_revelation:ascension_halo"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"在危险地带扩展领地的必需品"
+				"半径256格，禁止怪物自然生成"
+			]
+			icon: "torchmaster:megatorch"
+			id: "1C673EB08EDA628D"
+			rewards: [{
+				id: "67EE9A2C093F6EAB"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				count: 2L
+				id: "62E29D981B98D925"
+				item: { Count: 2, id: "lightmanscurrency:coin_netherite" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			icon: "artifacts:cross_necklace"
+			id: "5560ECBB1411AE6D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4CC2BF2286575862"
+				table_id: 2326065275749629103L
+				title: "自选饰品栏位"
+				type: "choice"
+			}]
+			size: 2.0d
+			tasks: [{
+				count: 2L
+				id: "772D88AEC1FC9965"
+				item: { Count: 2, id: "lightmanscurrency:coinpile_netherite" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+	]
+	title: "基本"
+}

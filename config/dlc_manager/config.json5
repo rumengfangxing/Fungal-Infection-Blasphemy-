@@ -1,0 +1,30 @@
+{
+  "paths": {
+    "dlcRoot": "DLC",
+    "taczRoot": "tacz",
+    "resourcepackRoot": "resourcepacks",
+    "datapackRoot": "datapacks"
+  },
+  "ui": {
+    "isEnableAllButtonShown": true,
+    "isConfigButtonShown": false,
+    "isUButtomShown": true,
+    "isUpdateManagerOn": true,
+    "isSelfUpdateAutoCheckOn": true,
+    "isPresetFuncOn": true,
+    "serverSupport": true,
+    "titleAnchor": "auto",
+    "titleOffsetX": 0,
+    "titleOffsetY": 0,
+    "titleWidth": 0,
+    "titleHeight": 0
+  },
+  "downloads": {
+    "maxConcurrentDownloads": 5,
+    "maxSegmentsPerFile": 4,
+    "minSegmentMB": 20,
+    "maxRetryCount": 5,
+    "connectTimeoutSeconds": 10,
+    "taskTimeoutSeconds": 60
+  }
+}

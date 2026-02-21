@@ -1,0 +1,459 @@
+
+#饰品重铸 - 配置文件
+[general]
+
+	#自动检测设置
+	[general.autoDetect]
+		#是否自动检测所有支持Curios API的饰品
+		#启用后,所有Curios饰品都可以获得随机属性并支持重铸
+		enableCuriosAutoDetect = true
+
+	#显示设置
+	[general.display]
+		#启用Curios饰品属性提示信息处理
+		#true - 合并显示(多个相同属性的槽位会合并在一起显示)
+		#false - Curios默认处理(每个槽位单独显示属性)
+		enableCustomTooltip = true
+		#是否在Curios属性显示部分隐藏本模组的修饰符属性
+		#true - 隐藏本模组添加的修饰符属性
+		#false - 显示本模组添加的修饰符属性
+		hideModifierAttributes = true
+		#是否使用修饰符的自定义提示框
+		#true - 使用自定义提示框显示修饰符名称和属性
+		#false - 使用原版Curios的属性显示方式
+		useModifierTooltip = true
+
+	#概率设置
+	[general.probability]
+		#饰品获得修饰符的概率 (0.0 - 1.0)
+		#默认值: 1.0 (100%概率)
+		#设置为 0.0 表示永远不会获得修饰符
+		#设置为 1.0 表示总是获得修饰符
+		#Range: 0.0 ~ 1.0
+		modifierApplyProbability = 1.0
+
+	#全局重铸设置
+	[general.globalReforge]
+		#是否启用全局重铸设置
+		enabled = false
+		#重铸所需物品
+		requiredItem = "minecraft:diamond"
+		#重铸所需经验等级
+		#min：0  max：2147483647
+		#Range: > 0
+		experienceCost = 5
+		#重铸所需材料数量
+		#min：0  max：2147483647
+		#Range: > 0
+		materialCost = 1
+
+	#修饰符书设置
+	[general.modifierBook]
+		#使用修饰符书所需的经验等级
+		#Range: > 0
+		experienceCost = 5
+
+	#可重铸物品设置
+	[general.modifiableItems]
+		#可重铸物品列表
+		#格式说明：物品ID|重铸材料|经验消耗|材料消耗
+		#示例格式:
+		#items = [
+		#    "artifacts:cross_necklace|minecraft:diamond|5|1",
+		#    "artifacts:feral_claws|minecraft:diamond|10|2"
+		#]
+		items = []
+
+	#黑名单设置
+	[general.blacklist]
+		#自动检测黑名单
+		#在这里添加不想被自动检测的物品ID
+		#即使物品支持Curios，也不会被自动添加到重铸系统中
+		#格式：每行一个物品ID，每个ID都需要用引号包裹，用逗号分隔
+		#示例格式：
+		#items = [
+		#    "minecraft:bundle",
+		#    "sophisticatedbackpacks:backpack",
+		#    "somemod:someitem"
+		#]
+		items = []
+
+	#修饰符设置
+	[general.modifiers]
+
+		#修饰符列表
+		#
+		#=== 格式说明 ===
+		#格式：修饰符ID|显示名称|颜色|属性列表|权重
+		#属性列表格式：属性ID,数值,操作类型#属性ID2,数值2,操作类型2
+		#- 修饰符ID：用于内部识别的唯一标识符
+		#- 显示名称：游戏中显示的名称
+		#- 颜色：使用Minecraft的颜色代码（如AQUA, LIGHT_PURPLE等）
+		#- 属性列表：用#分隔的多个属性配置
+		#- 权重：修饰符出现的概率权重
+		#
+		#=== 修饰符ID说明 ===
+		#在配置中，每个修饰符都需要一个唯一的ID作为标识符
+		#例如："tank": { "name": "坦克", ... }
+		#其中 "tank" 是修饰符ID，"坦克" 是游戏中显示的名称
+		#
+		#ID命名规则：
+		#1. 必须是唯一的
+		#2. 建议使用小写字母
+		#3. 可以包含字母、数字和下划线
+		#4. 不要使用空格和特殊字符
+		#5. 建议使用有意义的英文单词
+		#
+		#正确示例：
+		#"fire_resistance" - { "name": "烈焰守护" }
+		#"swift_striker"  - { "name": "快速打击" }
+		#"nature_boost"   - { "name": "自然之力" }
+		#
+		#错误示例：
+		#"123"         - 不要用纯数字
+		#"修饰符"      - 不要用中文作为ID
+		#"my modifier" - 不要包含空格
+		#
+		#=== 权重说明 ===
+		#3.0 - 常见修饰符（约54.5%概率）
+		#2.0 - 优秀修饰符（约36.4%概率）
+		#1.0 - 稀有修饰符（约18.2%概率）
+		#0.5 - 史诗修饰符（约9.1%概率）
+		#
+		#=== 可用颜色 ===
+		#BLACK       - 黑色        DARK_BLUE   - 深蓝色
+		#DARK_GREEN  - 深绿色      DARK_AQUA   - 深青色
+		#DARK_RED    - 深红色      DARK_PURPLE - 深紫色
+		#GOLD        - 金色        GRAY        - 灰色
+		#DARK_GRAY   - 深灰色      BLUE        - 蓝色
+		#GREEN       - 绿色        AQUA        - 青色
+		#RED         - 红色        LIGHT_PURPLE- 淡紫色
+		#YELLOW      - 黄色        WHITE       - 白色
+		#
+		#=== 操作类型 ===
+		#ADDITION       - 加法，直接增加或减少数值
+		#MULTIPLY_BASE  - 基础乘法，基于基础值的百分比增减
+		#MULTIPLY_TOTAL - 总值乘法，基于最终值的百分比增减
+		#
+		#=== 可用属性ID ===
+		#属性ID格式: modid:attribute_name
+		#例如: minecraft:generic.max_health 或 somemod:special_attribute
+		#你可以使用任何已安装模组注册的属性,只需要提供正确的属性ID即可
+		#游戏中可以通过指令 /listattributes 查看到所有已注册的属性ID
+		#
+		#基础属性：
+		#minecraft:generic.max_health           - 最大生命值
+		#minecraft:generic.follow_range         - 跟随范围
+		#minecraft:generic.knockback_resistance - 击退抗性 (0.0-1.0, 1.0为完全免疫)
+		#minecraft:generic.movement_speed       - 移动速度
+		#minecraft:generic.flying_speed         - 飞行速度
+		#minecraft:generic.attack_damage        - 攻击伤害
+		#minecraft:generic.attack_knockback     - 击退强度
+		#minecraft:generic.attack_speed         - 攻击速度
+		#minecraft:generic.armor                - 护甲值
+		#minecraft:generic.armor_toughness      - 护甲韧性
+		#minecraft:generic.luck                 - 幸运值
+		#
+		#Forge属性：
+		#forge:swim_speed            - 游泳速度
+		#forge:entity_gravity        - 实体重力
+		#forge:block_reach           - 方块交互距离
+		#forge:entity_reach          - 实体交互距离
+		#forge:nametag_distance      - 名称标签显示距离
+		#forge:step_height_addition  - 步高增加
+		#
+		#本模组属性：
+		#baublesreforked:jump_strength  -跳跃力
+		#baublesreforked:life_steal     -吸血
+		#
+		#默认修饰符设置
+		[general.modifiers.defaultModifierSettings]
+			#是否启用默认修饰符
+			enabled = true
+
+		#自定义修饰符设置
+		[general.modifiers.customModifiers]
+			#自定义修饰符列表
+			#在这里添加你的自定义修饰符
+			#格式：修饰符ID|显示名称|颜色|属性列表|权重
+			#属性列表格式：属性ID,数值,操作类型#属性ID2,数值2,操作类型2
+			#示例格式:
+			#modifiers = [
+			#    "mystic|神秘|LIGHT_PURPLE|minecraft:generic.max_health,2.0,ADDITION#minecraft:generic.luck,1.0,ADDITION|1.0",
+			#    "agile|灵巧|AQUA|minecraft:generic.movement_speed,0.2,MULTIPLY_BASE#minecraft:generic.attack_speed,0.1,MULTIPLY_BASE|2.0"
+			#]
+			modifiers = []
+
+		#默认修饰符配置
+		[general.modifiers.defaultModifiers]
+
+			[general.modifiers.defaultModifiers.healthy]
+				value = "healthy|生机|GREEN|minecraft:generic.max_health,2.0,ADDITION|3.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.armored]
+				value = "armored|装甲|GRAY|minecraft:generic.armor,1.0,ADDITION|3.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.powerful]
+				value = "powerful|力量|RED|minecraft:generic.attack_damage,0.1,MULTIPLY_BASE|3.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.swift]
+				value = "swift|迅捷|YELLOW|minecraft:generic.attack_speed,0.05,MULTIPLY_BASE|3.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.quick]
+				value = "quick|敏捷|AQUA|minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|3.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.steady]
+				value = "steady|稳固|DARK_GRAY|minecraft:generic.knockback_resistance,0.05,ADDITION|3.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.lucky_basic]
+				value = "lucky_basic|幸运|GREEN|minecraft:generic.luck,0.5,ADDITION|3.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.tough]
+				value = "tough|坚韧|DARK_GREEN|minecraft:generic.armor_toughness,1.0,ADDITION|3.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.jumper]
+				value = "jumper|跳跃|AQUA|baublesreforked:jump_strength,0.3,MULTIPLY_BASE|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.focused]
+				value = "focused|专注|LIGHT_PURPLE|minecraft:generic.attack_speed,0.05,MULTIPLY_BASE#minecraft:generic.luck,0.5,ADDITION|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.aquatic]
+				value = "aquatic|水灵|DARK_AQUA|forge:swim_speed,0.15,MULTIPLY_BASE#minecraft:generic.movement_speed,0.05,MULTIPLY_BASE|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.reach]
+				value = "reach|延伸|BLUE|forge:block_reach,1.0,ADDITION#forge:entity_reach,1.0,ADDITION|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.nimble]
+				value = "nimble|轻盈|YELLOW|forge:step_height_addition,0.3,ADDITION#minecraft:generic.movement_speed,0.05,MULTIPLY_BASE|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.battle_master]
+				value = "battle_master|战斗大师|RED|minecraft:generic.attack_damage,0.05,MULTIPLY_BASE#minecraft:generic.attack_speed,0.05,MULTIPLY_BASE|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.defender]
+				value = "defender|防御者|GRAY|minecraft:generic.armor,1.0,ADDITION#minecraft:generic.knockback_resistance,0.05,ADDITION|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.sprinter]
+				value = "sprinter|疾跑者|AQUA|forge:step_height_addition,0.2,ADDITION#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.durable]
+				value = "durable|耐久|DARK_GRAY|minecraft:generic.armor_toughness,0.5,ADDITION#minecraft:generic.max_health,2.0,ADDITION|2.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.advanced_jumper]
+				value = "advanced_jumper|灵跃|LIGHT_PURPLE|baublesreforked:jump_strength,0.5,MULTIPLY_BASE#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.vampiric]
+				value = "vampiric|吸血|DARK_RED|baublesreforked:life_steal,0.1,ADDITION#minecraft:generic.armor,-0.5,ADDITION#minecraft:generic.attack_damage,0.1,MULTIPLY_BASE#minecraft:generic.max_health,1.0,ADDITION|1.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.scholar]
+				value = "scholar|学者|AQUA|forge:block_reach,0.5,ADDITION#forge:entity_reach,0.5,ADDITION#minecraft:generic.luck,1.0,ADDITION|1.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.hunter]
+				value = "hunter|猎手|DARK_GREEN|minecraft:generic.armor,-0.5,ADDITION#minecraft:generic.attack_damage,0.1,MULTIPLY_BASE#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|1.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.warrior]
+				value = "warrior|战士|RED|minecraft:generic.armor,1.0,ADDITION#minecraft:generic.attack_damage,0.15,MULTIPLY_BASE#minecraft:generic.movement_speed,-0.03,MULTIPLY_BASE|1.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.guardian]
+				value = "guardian|守护|BLUE|minecraft:generic.armor,2.0,ADDITION#minecraft:generic.knockback_resistance,0.1,ADDITION#minecraft:generic.movement_speed,-0.05,MULTIPLY_BASE|1.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.super_jumper]
+				value = "super_jumper|跃天|GOLD|baublesreforked:jump_strength,1.0,MULTIPLY_BASE#minecraft:generic.armor,-1.0,ADDITION#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|0.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.paladin]
+				value = "paladin|圣骑士|GOLD|minecraft:generic.armor,1.0,ADDITION#minecraft:generic.attack_damage,0.05,MULTIPLY_BASE#minecraft:generic.luck,0.5,ADDITION#minecraft:generic.max_health,2.0,ADDITION#minecraft:generic.movement_speed,-0.05,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.berserker]
+				value = "berserker|狂战士|DARK_RED|minecraft:generic.attack_damage,0.15,MULTIPLY_BASE#minecraft:generic.attack_speed,0.1,MULTIPLY_BASE#minecraft:generic.max_health,-1.0,ADDITION#minecraft:generic.movement_speed,0.05,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.rogue]
+				value = "rogue|盗贼|DARK_GRAY|forge:entity_reach,0.5,ADDITION#minecraft:generic.armor,-1.0,ADDITION#minecraft:generic.attack_speed,0.1,MULTIPLY_BASE#minecraft:generic.movement_speed,0.15,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.monk]
+				value = "monk|武僧|YELLOW|forge:step_height_addition,0.5,ADDITION#minecraft:generic.armor,-0.5,ADDITION#minecraft:generic.attack_speed,0.15,MULTIPLY_BASE#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.samurai]
+				value = "samurai|武士|GRAY|minecraft:generic.armor,-0.5,ADDITION#minecraft:generic.attack_damage,0.1,MULTIPLY_BASE#minecraft:generic.attack_speed,0.1,MULTIPLY_BASE#minecraft:generic.movement_speed,0.05,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.frost]
+				value = "frost|霜冻|AQUA|forge:swim_speed,0.15,MULTIPLY_BASE#minecraft:generic.armor,2.0,ADDITION#minecraft:generic.attack_speed,-0.1,MULTIPLY_BASE#minecraft:generic.knockback_resistance,0.1,ADDITION|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.flame]
+				value = "flame|烈焰|RED|minecraft:generic.attack_damage,0.15,MULTIPLY_BASE#minecraft:generic.attack_speed,0.05,MULTIPLY_BASE#minecraft:generic.max_health,-1.0,ADDITION#minecraft:generic.movement_speed,0.05,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.thunder]
+				value = "thunder|雷霆|YELLOW|minecraft:generic.armor,-1.0,ADDITION#minecraft:generic.attack_damage,0.05,MULTIPLY_BASE#minecraft:generic.attack_speed,0.15,MULTIPLY_BASE#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.earth]
+				value = "earth|大地|DARK_GREEN|minecraft:generic.armor,1.5,ADDITION#minecraft:generic.knockback_resistance,0.1,ADDITION#minecraft:generic.max_health,3.0,ADDITION#minecraft:generic.movement_speed,-0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.wind]
+				value = "wind|疾风|WHITE|forge:entity_gravity,-0.05,ADDITION#minecraft:generic.armor,-1.0,ADDITION#minecraft:generic.attack_speed,0.1,MULTIPLY_BASE#minecraft:generic.movement_speed,0.15,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.glass_cannon]
+				value = "glass_cannon|玻璃大炮|LIGHT_PURPLE|minecraft:generic.armor,-2.0,ADDITION#minecraft:generic.attack_damage,0.25,MULTIPLY_BASE#minecraft:generic.attack_speed,0.1,MULTIPLY_BASE#minecraft:generic.max_health,-2.0,ADDITION|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.juggernaut]
+				value = "juggernaut|主宰|GOLD|minecraft:generic.armor,2.0,ADDITION#minecraft:generic.attack_speed,-0.1,MULTIPLY_BASE#minecraft:generic.knockback_resistance,0.1,ADDITION#minecraft:generic.max_health,4.0,ADDITION#minecraft:generic.movement_speed,-0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.assassin]
+				value = "assassin|刺客|DARK_RED|minecraft:generic.armor,-1.5,ADDITION#minecraft:generic.attack_damage,0.3,MULTIPLY_BASE#minecraft:generic.attack_speed,0.15,MULTIPLY_BASE#minecraft:generic.max_health,-3.0,ADDITION#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.titan]
+				value = "titan|泰坦|DARK_GRAY|minecraft:generic.armor,3.0,ADDITION#minecraft:generic.attack_damage,-0.05,MULTIPLY_BASE#minecraft:generic.attack_speed,-0.15,MULTIPLY_BASE#minecraft:generic.knockback_resistance,0.15,ADDITION#minecraft:generic.max_health,6.0,ADDITION#minecraft:generic.movement_speed,-0.15,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.storm]
+				value = "storm|风暴|AQUA|forge:swim_speed,0.15,MULTIPLY_BASE#minecraft:generic.armor,-1.0,ADDITION#minecraft:generic.attack_damage,-0.05,MULTIPLY_BASE#minecraft:generic.attack_speed,0.2,MULTIPLY_BASE#minecraft:generic.max_health,-2.0,ADDITION#minecraft:generic.movement_speed,0.2,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.cursed]
+				value = "cursed|诅咒|DARK_PURPLE|minecraft:generic.luck,-0.5,ADDITION#minecraft:generic.max_health,-1.0,ADDITION#minecraft:generic.movement_speed,-0.05,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.heavy]
+				value = "heavy|沉重|DARK_GRAY|minecraft:generic.armor,1.0,ADDITION#minecraft:generic.attack_speed,-0.05,MULTIPLY_BASE#minecraft:generic.movement_speed,-0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.fragile]
+				value = "fragile|脆弱|GRAY|minecraft:generic.armor,-1.0,ADDITION#minecraft:generic.attack_damage,0.1,MULTIPLY_BASE#minecraft:generic.max_health,-1.0,ADDITION|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.clumsy]
+				value = "clumsy|笨拙|DARK_GRAY|forge:block_reach,-0.5,ADDITION#minecraft:generic.attack_speed,-0.1,MULTIPLY_BASE#minecraft:generic.movement_speed,-0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.unlucky]
+				value = "unlucky|不幸|DARK_PURPLE|minecraft:generic.attack_speed,-0.05,MULTIPLY_BASE#minecraft:generic.luck,-1.0,ADDITION#minecraft:generic.movement_speed,-0.05,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.acrobat]
+				value = "acrobat|杂技|YELLOW|forge:entity_gravity,-0.05,ADDITION#forge:step_height_addition,0.5,ADDITION#minecraft:generic.max_health,-1.0,ADDITION#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.tank]
+				value = "tank|坦克|BLUE|minecraft:generic.armor,2.0,ADDITION#minecraft:generic.armor_toughness,1.0,ADDITION#minecraft:generic.knockback_resistance,0.05,ADDITION#minecraft:generic.max_health,4.0,ADDITION#minecraft:generic.movement_speed,-0.03,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.duelist]
+				value = "duelist|决斗者|GOLD|minecraft:generic.armor,1.0,ADDITION#minecraft:generic.attack_damage,0.1,MULTIPLY_BASE#minecraft:generic.attack_speed,0.1,MULTIPLY_BASE#minecraft:generic.movement_speed,-0.05,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.scout]
+				value = "scout|斥候|GREEN|forge:entity_reach,1.0,ADDITION#minecraft:generic.luck,0.5,ADDITION#minecraft:generic.max_health,-1.0,ADDITION#minecraft:generic.movement_speed,0.15,MULTIPLY_BASE|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.warlock]
+				value = "warlock|术士|DARK_PURPLE|forge:entity_reach,1.0,ADDITION#minecraft:generic.armor,-1.0,ADDITION#minecraft:generic.attack_damage,0.1,MULTIPLY_BASE#minecraft:generic.luck,0.5,ADDITION|1.0"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.celestial]
+				value = "celestial|天界|LIGHT_PURPLE|forge:step_height_addition,0.5,ADDITION#minecraft:generic.armor,1.0,ADDITION#minecraft:generic.luck,0.5,ADDITION#minecraft:generic.max_health,2.0,ADDITION#minecraft:generic.movement_speed,0.05,MULTIPLY_BASE|0.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.demonic]
+				value = "demonic|恶魔|DARK_RED|minecraft:generic.armor,-1.0,ADDITION#minecraft:generic.attack_damage,0.15,MULTIPLY_BASE#minecraft:generic.attack_speed,0.1,MULTIPLY_BASE#minecraft:generic.luck,-0.5,ADDITION#minecraft:generic.max_health,2.0,ADDITION|0.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.dragon]
+				value = "dragon|龙魂|GOLD|forge:entity_gravity,-0.05,ADDITION#minecraft:generic.armor,1.0,ADDITION#minecraft:generic.attack_damage,0.15,MULTIPLY_BASE#minecraft:generic.max_health,3.0,ADDITION#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|0.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.angel]
+				value = "angel|天使|WHITE|forge:entity_gravity,-0.05,ADDITION#minecraft:generic.armor,1.5,ADDITION#minecraft:generic.luck,1.0,ADDITION#minecraft:generic.max_health,3.0,ADDITION#minecraft:generic.movement_speed,0.1,MULTIPLY_BASE|0.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+
+			[general.modifiers.defaultModifiers.ancient]
+				value = "ancient|远古|DARK_AQUA|minecraft:generic.armor,2.0,ADDITION#minecraft:generic.attack_damage,0.1,MULTIPLY_BASE#minecraft:generic.luck,0.5,ADDITION#minecraft:generic.max_health,4.0,ADDITION#minecraft:generic.movement_speed,-0.05,MULTIPLY_BASE|0.5"
+				#设置为 false 以禁用此修饰符
+				enabled = true
+

@@ -1,0 +1,20 @@
+{
+	id: "3F6A1D69530F22CB"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{
+			command: "/gamerule keepInventory true"
+			elevate_perms: true
+			title: "开启死亡不掉落"
+			type: "command"
+		}
+		{
+			command: "/gamerule keepInventory false"
+			elevate_perms: true
+			title: "关闭死亡不掉落"
+			type: "command"
+		}
+	]
+	title: "死亡不掉落"
+}

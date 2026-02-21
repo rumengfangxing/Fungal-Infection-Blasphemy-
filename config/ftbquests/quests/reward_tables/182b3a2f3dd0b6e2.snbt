@@ -1,0 +1,53 @@
+{
+	id: "182B3A2F3DD0B6E2"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		item_name: "经验"
+		string_id: "5"
+	}
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			type: "xp"
+			weight: 15.0f
+			xp: 100
+		}
+		{
+			type: "xp"
+			weight: 15.0f
+			xp: 50
+		}
+		{
+			type: "xp"
+			weight: 25.0f
+			xp: 30
+		}
+		{
+			type: "xp_levels"
+			weight: 20.0f
+			xp_levels: 1
+		}
+		{
+			type: "xp_levels"
+			weight: 10.0f
+			xp_levels: 3
+		}
+		{
+			type: "xp_levels"
+			weight: 6.0f
+			xp_levels: 5
+		}
+		{
+			type: "xp_levels"
+			weight: 3.0f
+			xp_levels: 10
+		}
+	]
+	title: "经验奖励"
+}

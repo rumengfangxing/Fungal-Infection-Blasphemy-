@@ -1,0 +1,871 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1623EDFED9589526"
+	group: "3940671EEBB12B1A"
+	hide_quest_until_deps_complete: true
+	icon: "goety_revelation:broken_halo"
+	id: "1623EDFED9589526"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6C1C75B1C9446CDF"]
+			description: [
+				"无论你是意外获得了这个环，还是从使徒手中强行拿下了这个环"
+				"此刻，你已经正式开始接触到&c神性"
+				"&r"
+				"可惜的是，这个破碎的环上&c神性&r已经荡然无存"
+				"但是，不妨碍你研究这个曾经&4容纳神性&r的奇妙物质"
+				"当然，还有这个使徒不慎被打掉的花哨帽子"
+			]
+			icon: "goety_revelation:broken_halo"
+			id: "1E011CD21DA34ECD"
+			rewards: [
+				{
+					id: "1B72D4E2F45CAF17"
+					item: "goety:unholy_hat"
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "30687EA24DC502B7"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "3D7840F7D560879E"
+				type: "checkmark"
+			}]
+			title: "神性研究"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E011CD21DA34ECD"]
+			description: [
+				"携带&c神性&r的血液"
+				"不易于直接使用"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			id: "509A78A73108FA26"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7529910A772AFD8C"
+				table_id: 6148969969489913202L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1FD8A727E54DEF5B"
+				item: "goety:unholy_blood"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["509A78A73108FA26"]
+			description: [
+				"有趣的是，村民似乎掌握了血液浸取的工艺"
+				"在世界(网络)交易中，你可以委托他们使你的武器带有&c神性&r"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_sword"
+				tag: {
+					Damage: 0
+					Enchantments: [
+						{
+							id: "minecraft:sharpness"
+							lvl: 2s
+						}
+						{
+							id: "minecraft:unbreaking"
+							lvl: 1s
+						}
+					]
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"§e村好剑\"}"
+					}
+				}
+			}
+			id: "4B8730F6650BC566"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40388B40F9EC6FDC"
+				table_id: 6148969969489913202L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "6EEE6D21243D2073"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_sword"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:sharpness"
+									lvl: 2s
+								}
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"§e村好剑\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A2BDB6AD209538F"
+					item: "goety:unholy_blood"
+					type: "item"
+				}
+			]
+			title: "浸血之剑"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["509A78A73108FA26"]
+			description: [
+				"在下界击败使徒可获得"
+				"友情提示，那里是使徒的地盘"
+			]
+			hide_dependency_lines: true
+			id: "22CEC1363D3C8917"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4490FEDEE68B02AB"
+				table_id: 6148969969489913202L
+				type: "random"
+			}]
+			tasks: [{
+				id: "73D0B6DAF4CB64B3"
+				item: {
+					Count: 1
+					id: "goety:unholy_blood"
+					tag: {
+						Pure: 1b
+					}
+				}
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"22CEC1363D3C8917"
+				"4B8730F6650BC566"
+			]
+			description: ["获得完全继承&c神性&r的武器"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_sword"
+				tag: {
+					AttributeModifiers: [
+						{
+							Amount: 8.0d
+							AttributeName: "minecraft:generic.attack_damage"
+							Operation: 0
+							Slot: "mainhand"
+							UUID: [I;
+								-1320776492
+								268650215
+								-2017526522
+								-1573760514
+							]
+						}
+						{
+							Amount: 1.5d
+							AttributeName: "minecraft:generic.attack_damage"
+							Operation: 1
+							Slot: "mainhand"
+							UUID: [I;
+								963090649
+								-2031466068
+								-1126144236
+								2141022558
+							]
+						}
+						{
+							Amount: -2.4d
+							AttributeName: "minecraft:generic.attack_speed"
+							Operation: 0
+							Slot: "mainhand"
+							UUID: [I;
+								-321319977
+								-950382732
+								-1380795387
+								-1975771320
+							]
+						}
+						{
+							Amount: 2.0d
+							AttributeName: "minecraft:generic.attack_speed"
+							Operation: 1
+							Slot: "mainhand"
+							UUID: [I;
+								-1281989988
+								1300120562
+								-1524042320
+								-1850822537
+							]
+						}
+					]
+					Damage: 0
+					Enchantments: [
+						{
+							id: "enigmaticlegacy:slayer"
+							lvl: 5
+						}
+						{
+							id: "goety:soul_eater"
+							lvl: 10
+						}
+						{
+							id: "goety_revelation:reality_piercer"
+							lvl: 5
+						}
+						{
+							id: "minecraft:unbreaking"
+							lvl: 5
+						}
+						{
+							id: ""
+							lvl: 0
+						}
+					]
+					display: {
+						Lore: ["{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"text\":\"浸染\"},{\"color\":\"gold\",\"text\":\"使徒之血\"},{\"color\":\"white\",\"text\":\"的宝剑，已然具有\"},{\"color\":\"red\",\"text\":\"神性\"}],\"text\":\"\"}"]
+						Name: "{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"obfuscated\":true,\"text\":\"11\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"不洁\"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"村好剑\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"染血\"},{\"strikethrough\":true,\"obfuscated\":true,\"color\":\"white\",\"text\":\"11\"}],\"text\":\"\"}"
+					}
+				}
+			}
+			id: "0B7653A4B57DE564"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "69896422B4A75725"
+				table_id: 6148969969489913202L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "57024434DC65DC41"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_sword"
+						tag: {
+							AttributeModifiers: [
+								{
+									Amount: 8.0d
+									AttributeName: "minecraft:generic.attack_damage"
+									Operation: 0
+									Slot: "mainhand"
+									UUID: [I;
+										-1320776492
+										268650215
+										-2017526522
+										-1573760514
+									]
+								}
+								{
+									Amount: 1.5d
+									AttributeName: "minecraft:generic.attack_damage"
+									Operation: 1
+									Slot: "mainhand"
+									UUID: [I;
+										963090649
+										-2031466068
+										-1126144236
+										2141022558
+									]
+								}
+								{
+									Amount: -2.4d
+									AttributeName: "minecraft:generic.attack_speed"
+									Operation: 0
+									Slot: "mainhand"
+									UUID: [I;
+										-321319977
+										-950382732
+										-1380795387
+										-1975771320
+									]
+								}
+								{
+									Amount: 2.0d
+									AttributeName: "minecraft:generic.attack_speed"
+									Operation: 1
+									Slot: "mainhand"
+									UUID: [I;
+										-1281989988
+										1300120562
+										-1524042320
+										-1850822537
+									]
+								}
+							]
+							Damage: 0
+							Enchantments: [
+								{
+									id: "enigmaticlegacy:slayer"
+									lvl: 5
+								}
+								{
+									id: "goety:soul_eater"
+									lvl: 10
+								}
+								{
+									id: "goety_revelation:reality_piercer"
+									lvl: 5
+								}
+								{
+									id: "minecraft:unbreaking"
+									lvl: 5
+								}
+								{
+									id: ""
+									lvl: 0
+								}
+							]
+							display: {
+								Lore: ["{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"text\":\"浸染\"},{\"color\":\"gold\",\"text\":\"使徒之血\"},{\"color\":\"white\",\"text\":\"的宝剑，已然具有\"},{\"color\":\"red\",\"text\":\"神性\"}],\"text\":\"\"}"]
+								Name: "{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"obfuscated\":true,\"text\":\"11\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"不洁\"},{\"bold\":true,\"color\":\"yellow\",\"text\":\"村好剑\"},{\"italic\":true,\"strikethrough\":true,\"color\":\"dark_red\",\"text\":\"染血\"},{\"strikethrough\":true,\"obfuscated\":true,\"color\":\"white\",\"text\":\"11\"}],\"text\":\"\"}"
+							}
+						}
+					}
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "7997351DFC272A54"
+					item: {
+						Count: 1
+						id: "goety:unholy_blood"
+						tag: {
+							Pure: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "至纯浸染"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B7653A4B57DE564"]
+			description: [
+				"你可以进一步把武器放在锻造台上锻造加工"
+				"这并不会使神性消失"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:smithing_table"
+			id: "688B0985ECFE2A28"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2AAB54D099231BCC"
+				table_id: 6148969969489913202L
+				type: "random"
+			}]
+			tasks: [{
+				id: "55380160320CE9AC"
+				type: "checkmark"
+			}]
+			title: "工艺"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["18F55ED8002CD3D6"]
+			description: [
+				"在主世界首次击败&c亚波伦&r后，你离成功只差一步之遥"
+				""
+				"这是你们的首次对决"
+				"富有纪念意义"
+				"不再像以前那样吝啬，这次它象征神权的印记大大方方的留给了你"
+				"或许可以说是像烫手山芋一样抛给了你？"
+			]
+			hide_dependency_lines: true
+			id: "5F3C28F4A169E49C"
+			rewards: [
+				{
+					id: "4E922845F528C4AA"
+					item: "goety_revelation:doom_medal"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "50E382DA72EA3D3C"
+					item: {
+						Count: 1
+						id: "goety_revelation:revelation"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "184909CE516BA115"
+					item: {
+						Count: 1
+						id: "tarotcards:judgement"
+						tag: { }
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "goety_revelation:kill_apollyon"
+				criterion: ""
+				id: "1FFB47A88AEF4473"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["22CEC1363D3C8917"]
+			hide_dependency_lines: true
+			id: "23BBD1455BB03C22"
+			rewards: [{
+				id: "27655E155BA12E7C"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D6BF3FE35FE42BD"
+				item: "goety:forbidden_scroll"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23BBD1455BB03C22"]
+			hide_dependency_lines: true
+			id: "79BBB9C1242DDF88"
+			rewards: [{
+				id: "69BF7D71EC16AFCC"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F0205307A236C7D"
+				item: "goety:shadow_essence"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["79BBB9C1242DDF88"]
+			hide_dependency_lines: true
+			id: "1FC0698F8E35263F"
+			rewards: [{
+				id: "5A560FE65CC3E256"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "428A3B3C013C0DC5"
+				item: "goety:heart_of_the_night"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1FC0698F8E35263F"]
+			hide_dependency_lines: true
+			id: "36BBB529CEA15538"
+			rewards: [{
+				id: "174C5A66CF38F64F"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "2EF3CB391F5ADED9"
+				item: "goety:soul_ruby"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36BBB529CEA15538"]
+			hide_dependency_lines: true
+			id: "6C00634643A090F2"
+			rewards: [{
+				id: "33632EF4B96D4893"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F45F0B6BEB218D6"
+				item: "goety:crone_hat"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C00634643A090F2"]
+			hide_dependency_lines: true
+			id: "6FD0E67A712A8A95"
+			rewards: [{
+				id: "6F7A317CAC4ADABB"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "1BB4C018D57C31A8"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6FD0E67A712A8A95"]
+			hide_dependency_lines: true
+			id: "2430B53327DB76AB"
+			rewards: [{
+				id: "2DCAD7489E03E335"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "368ECEE4853EE32B"
+				item: "minecraft:dragon_breath"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6FD0E67A712A8A95"]
+			hide_dependency_lines: true
+			id: "18F55ED8002CD3D6"
+			rewards: [{
+				id: "15D5EC0F8473DC27"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E9BEF1D38E752A0"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5F3C28F4A169E49C"]
+			description: [
+				"拥有神性的完整之环"
+				"(巫妖玩家不要戴，会碎)"
+			]
+			hide_dependency_lines: true
+			id: "6D528F4E651C4F29"
+			rewards: [{
+				id: "021999EA1B8B8B3E"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C6157581742E1D9"
+				item: "goety_revelation:ascension_halo"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D528F4E651C4F29"]
+			description: ["在下界基岩上层生成，坐标666 128 666，+-6660 128 +-6660，+-66600 128 +-66600，+-666000 128 666000，共13个。"]
+			hide_dependency_lines: true
+			id: "5E2A84B0E3461A60"
+			rewards: [
+				{
+					id: "49CFF5B561C026E6"
+					item: "goety_revelation:god_forging_scroll"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "18BAF7F48533A945"
+					item: "enigmaticdice:enigmatic_die"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1018898069ECAFAB"
+				structure: "goety_revelation:church"
+				type: "structure"
+			}]
+			title: "绯红教堂"
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E2A84B0E3461A60"]
+			hide_dependency_lines: true
+			id: "2170628E74E2A7CE"
+			rewards: [{
+				id: "4A01426A7EFBAA66"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "234C24EB6400764E"
+				item: "goety_revelation:god_forging_scroll"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2170628E74E2A7CE"]
+			hide_dependency_lines: true
+			id: "23482C5055818711"
+			rewards: [{
+				id: "1EA8223027AC8FF8"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "58868981CEE5E255"
+				item: "goety_revelation:apocalyptium_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["23482C5055818711"]
+			hide_dependency_lines: true
+			id: "3B22CEC4F6399350"
+			rewards: [{
+				id: "06F48B82AC8BC84D"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C28B6DD019808BB"
+				item: "goety_revelation:apocalyptium_upgrade_smithing_template"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3B22CEC4F6399350"]
+			description: [
+				"神灵金属之刃"
+				"甚至可以砍死创造玩家"
+			]
+			hide_dependency_lines: true
+			id: "283841AD79B91CBF"
+			rewards: [{
+				id: "288B079833C75CB7"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "10C79763C58F62D6"
+				item: {
+					Count: 1
+					id: "goety_revelation:valettein"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6D528F4E651C4F29"]
+			description: [
+				"神？真的可以成为神吗？"
+				""
+				"你在犹豫些什么，我们从一开始不就是想成为神吗？"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "goety_revelation:halo_of_the_end"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:binding_curse"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "1C7FF7A85A248AD2"
+			rewards: [{
+				id: "1B9613BED7EE2C33"
+				item: "enigmaticdice:enigmatic_die"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "083348A73BA14754"
+				type: "checkmark"
+			}]
+			title: "终末的谣言"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C7FF7A85A248AD2"]
+			description: [
+				"如果一切都准备好了，那就该去找祂讨个说法了"
+				""
+				"在下界挑战&c亚波伦&r"
+			]
+			hide_dependency_lines: true
+			id: "4EC07876B6209BEA"
+			tasks: [{
+				id: "215D550303F72756"
+				type: "checkmark"
+			}]
+			title: "直面神明"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EC07876B6209BEA"]
+			id: "5B223468A75A75D2"
+			tasks: [{
+				id: "3D2A57601A88A451"
+				title: "未完待续"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"伴随着这份神位的"
+				"还有无尽的责任和孤独的岁月"
+				""
+				"你将为一切&8画上句号&r"
+			]
+			id: "4CFD09430330540E"
+			invisible: true
+			rewards: [{
+				id: "338C4DE71CCDEF76"
+				item: "goety_revelation:blessing_scroll"
+				team_reward: false
+				type: "item"
+			}]
+			shape: "none"
+			size: 8.0d
+			tasks: [{
+				id: "757B23E18206856A"
+				item: {
+					Count: 1
+					id: "goety_revelation:halo_of_the_end"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:binding_curse"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4CFD09430330540E"]
+			description: [
+				"本来应该是审判的"
+				"但是审判容易砍出一堆假死实体"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "goetydelight:starless_night"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2A6C1BA8C0877FAF"
+			rewards: [{
+				id: "202527B89AD3FD85"
+				item: {
+					Count: 1
+					id: "goetydelight:starless_night"
+					tag: {
+						Damage: 0
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			shape: "none"
+			size: 6.0d
+			tasks: [
+				{
+					consume_items: true
+					count: 2L
+					id: "0366C62C8E23D6A7"
+					item: { Count: 2, id: "goety_revelation:apocalyptium_ingot" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "0B9490D33219FDC5"
+					item: "goety_revelation:ascension_halo"
+					type: "item"
+				}
+				{
+					id: "2F35EBC6EDEBE2AE"
+					item: "enigmaticlegacy:the_cube"
+					type: "item"
+				}
+			]
+			title: "无星之夜"
+			x: 16.0d
+			y: -3.0d
+		}
+	]
+	title: "神性研究&c【主线】"
+}

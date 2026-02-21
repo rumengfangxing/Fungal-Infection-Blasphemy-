@@ -1,0 +1,467 @@
+{
+	autofocus_id: "6F354055653032FC"
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	default_repeatable_quest: true
+	filename: "4A855FCACFD9624D"
+	group: "1EBC22E93EF9B621"
+	icon: "lightmanscurrency:slot_machine"
+	id: "4A855FCACFD9624D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:experience_bottle"
+			id: "3EB30272F98019DF"
+			rewards: [{
+				auto: "enabled"
+				id: "207C7DF9B3E84E59"
+				table_id: 1741549655483791074L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4261FEF6E6C7A721"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2BBA53F5F6B8113D"]
+			icon: "spore:living_core"
+			id: "0F65B3FC439276A6"
+			rewards: [{
+				auto: "enabled"
+				id: "385498BA72BF20EC"
+				table_id: 1501954383077936545L
+				type: "random"
+			}]
+			tasks: [{
+				id: "39D17C65BB59BB58"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2526032F5F6FA5D4"]
+			icon: "goety:dark_ingot"
+			id: "64ED2B01F6100446"
+			rewards: [{
+				auto: "enabled"
+				id: "0E3EB29EC87F90C8"
+				table_id: 7004806172613356162L
+				type: "random"
+			}]
+			tasks: [{
+				id: "46BCA9F61E86352E"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			icon: { Count: 100, id: "minecraft:experience_bottle" }
+			id: "3FE7D6615E956C17"
+			rewards: [{
+				auto: "enabled"
+				count: 100
+				id: "4C8A6B2A30FEA276"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "5"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "30FBAF8CF2CC5AFA"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			icon: { Count: 10, id: "minecraft:experience_bottle" }
+			id: "2B4B707463193BCD"
+			rewards: [{
+				auto: "enabled"
+				count: 10
+				id: "3033FB1DC1FC9121"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "5"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B07F8466C187230"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2BBA53F5F6B8113D"]
+			icon: { Count: 10, id: "spore:living_core" }
+			id: "279EA5B1475DEDF3"
+			rewards: [{
+				auto: "enabled"
+				count: 10
+				id: "39275404F95C8D1C"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "3"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "512495171931C8F4"
+					item: "lightmanscurrency:coin_emerald"
+					type: "item"
+				}
+				{
+					id: "4BA557630A27AA50"
+					item: "lightmanscurrency:coin_diamond"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BBA53F5F6B8113D"]
+			icon: { Count: 100, id: "spore:living_core" }
+			id: "0A210A1F3599EFA6"
+			rewards: [{
+				auto: "enabled"
+				count: 100
+				id: "4E988F82BD239EE8"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "3"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "597271B748EADEA3"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2526032F5F6FA5D4"]
+			icon: { Count: 10, id: "goety:dark_ingot" }
+			id: "51D322C0F7F55305"
+			rewards: [{
+				auto: "enabled"
+				count: 10
+				id: "797FF18440A07720"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "2"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "58DB44B7AFE9F7FC"
+					item: "lightmanscurrency:coin_emerald"
+					type: "item"
+				}
+				{
+					id: "510F2A991299A500"
+					item: "lightmanscurrency:coin_diamond"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2526032F5F6FA5D4"]
+			icon: { Count: 100, id: "goety:dark_ingot" }
+			id: "6AF23B258E8FF4EA"
+			rewards: [{
+				auto: "enabled"
+				count: 100
+				id: "00E9E87F36F1CA1B"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "2"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "7B44798C2AF27D49"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"可以进行单抽，十连抽，百连抽"
+				"奖励表可在单抽任务奖励中查看"
+				""
+				"部分抽奖被锁定说明前置任务未完成"
+				"抽奖任务的前置基于奖池物品是否曾被获取过"
+				"请积极推进主线"
+			]
+			id: "199A577C1530DA4B"
+			tasks: [{
+				id: "077C5E7FC0E5AA40"
+				title: "抽奖说明"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "goety:fell_blade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "35F29F5018F9134B"
+			rewards: [{
+				auto: "enabled"
+				id: "7120CA2E51556324"
+				table_id: 3014144800512916319L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7AD1882051FD4F67"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 10
+				id: "goety:fell_blade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6F354055653032FC"
+			rewards: [{
+				auto: "enabled"
+				count: 10
+				id: "3958C34BC57F8345"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "1"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "3CAFC37E2362DB18"
+					item: "lightmanscurrency:coin_emerald"
+					type: "item"
+				}
+				{
+					id: "0E8A858CCE27460E"
+					item: "lightmanscurrency:coin_diamond"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 100
+				id: "goety:fell_blade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "590BB49A2503EBB2"
+			rewards: [{
+				auto: "enabled"
+				count: 100
+				id: "0B378A0C97CF1CEF"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "1"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "23871DAEC49BE246"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3A706552C079C1BE"
+				"7E0CEA10B4189644"
+				"5A9CA3E52DF33EBD"
+				"484C334096DC8BB0"
+			]
+			icon: "enigmaticlegacy:astral_dust"
+			id: "75B921D698B6E7BD"
+			rewards: [{
+				auto: "enabled"
+				id: "14031F45320CAA71"
+				table_id: 6915865581086723551L
+				type: "random"
+			}]
+			tasks: [{
+				count: 2L
+				id: "69D34A67DBA43323"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3A706552C079C1BE"
+				"7E0CEA10B4189644"
+				"5A9CA3E52DF33EBD"
+				"484C334096DC8BB0"
+			]
+			icon: { Count: 10, id: "enigmaticlegacy:astral_dust" }
+			id: "419C838FBD27606B"
+			rewards: [{
+				auto: "enabled"
+				count: 10
+				id: "330CE1531BF2B05F"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "4"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "31198D0D6E31DC96"
+				item: { Count: 3, id: "lightmanscurrency:coin_diamond" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3A706552C079C1BE"
+				"7E0CEA10B4189644"
+				"5A9CA3E52DF33EBD"
+				"484C334096DC8BB0"
+			]
+			icon: { Count: 100, id: "enigmaticlegacy:astral_dust" }
+			id: "7032294C4E42C5B2"
+			rewards: [{
+				auto: "enabled"
+				count: 100
+				id: "1DA8914D2A4EA244"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "4"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2DB3C90A02C06A5B"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			icon: "enigmaticdice:enigmatic_die"
+			id: "5A66934F54C6183F"
+			rewards: [{
+				auto: "enabled"
+				id: "36AADE342DB319EC"
+				item: "enigmaticdice:enigmatic_die"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A961A5C3EEE38EB"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			icon: { Count: 10, id: "enigmaticdice:enigmatic_die" }
+			id: "4755E2D3FB85A241"
+			rewards: [{
+				auto: "enabled"
+				count: 10
+				id: "3B72DF4F2AA3934F"
+				item: "enigmaticdice:enigmatic_die"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "5900D9F18A34CC3D"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.0d
+		}
+	]
+	title: "抽奖！"
+}

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:bow",
+    "spore:syringe_gun",
+    "$minecraft:crossbow"
+  ],
+  "incompatible": []
+}

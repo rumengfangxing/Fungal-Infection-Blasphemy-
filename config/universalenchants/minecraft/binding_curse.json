@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:wearable",
+    "enigmaticaddons:evil_dagger",
+    "$minecraft:universal_enchants_horse_armor"
+  ],
+  "incompatible": [
+    "enigmaticlegacy:eternal_binding",
+    "enigmaticaddons:redemption_curse"
+  ]
+}

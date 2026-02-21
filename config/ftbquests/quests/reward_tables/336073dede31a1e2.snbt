@@ -1,0 +1,11 @@
+{
+	id: "336073DEDE31A1E2"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{ item: "fib:skill_economize" }
+		{ item: "fib:skill_rapid_continuous_shooting" }
+		{ item: "fib:skill_dexterity" }
+	]
+	title: "技巧三选一"
+}

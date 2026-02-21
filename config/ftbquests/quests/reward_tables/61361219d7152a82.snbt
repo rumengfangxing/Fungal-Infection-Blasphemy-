@@ -1,0 +1,37 @@
+{
+	id: "61361219D7152A82"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		item_name: "巫法材料"
+		string_id: "2"
+	}
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ count: 4, item: "goety:cursed_ingot", weight: 10.0f }
+		{ item: "goety:dark_ingot", weight: 3.0f }
+		{ item: "goety:shadow_essence" }
+		{ count: 2, item: "goety:dark_fabric", weight: 5.0f }
+		{ count: 2, item: "goety:magic_fabric", weight: 5.0f }
+		{ count: 2, item: "goety:occult_fabric", weight: 5.0f }
+		{ count: 2, item: "goety:spirit_fabric", weight: 5.0f }
+		{ count: 2, item: "goety:gale_fabric", weight: 5.0f }
+		{ count: 2, item: "goety:chill_fabric", weight: 5.0f }
+		{ item: "goety:unholy_fabric" }
+		{ count: 2, item: "goety:empty_focus", weight: 10.0f }
+		{ item: "goety:animation_core" }
+		{ item: "goety:hunger_core", weight: 5.0f }
+		{ item: "goety:wind_core", weight: 5.0f }
+		{ item: "goety:mystic_core", weight: 5.0f }
+		{ item: "goety:ominous_orb", weight: 5.0f }
+		{ count: 3, item: "goety:forbidden_piece", weight: 5.0f }
+		{ count: 2, item: "goety:magic_emerald", weight: 10.0f }
+		{ item: "goety:soul_emerald", weight: 5.0f }
+	]
+	title: "巫法材料"
+}

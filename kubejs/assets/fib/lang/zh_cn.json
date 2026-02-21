@@ -1,0 +1,79 @@
+{
+	"mod.fib.name": "§c菌染亵渎",
+
+	"item.fib.fungified_potion": "菌染静脉注射试剂",
+	"item.fib.fungified_potion.tooltip.shift_hint": "§6按 [Shift] 查看设定信息",
+	"item.fib.fungified_potion.tooltip.ctrl_hint": "§6按 [Ctrl] 查看属性信息",
+	"item.fib.fungified_potion.tooltip.alt_hint": "§6按 [Alt] 查看冲突信息",
+	"item.fib.fungified_potion.tooltip.1": "你意识到，人类的力量是有极限的，那么",
+	"item.fib.fungified_potion.tooltip.2": "§c§l来加入光荣的进化吧！",
+	"item.fib.fungified_potion.tooltip.shift.1": "黑暗秘典都未曾涉及的物品，与巫妖相对，这是生命进化到极端层面的产物。",
+	"item.fib.fungified_potion.tooltip.shift.2": "§c§l你把生命当成什么了？",
+	"item.fib.fungified_potion.tooltip.ctrl.1": "§c§l你在担心什么？",
+	"item.fib.fungified_potion.tooltip.alt.1": "巫妖状态下无法启用真菌模式，真菌模式下无法启用巫妖模式",
+	"item.fib.fungified_potion.tip.failed.lichdom": "巫妖无法进化为真菌生物",
+	"item.fib.fungified_potion.tip.failed.already": "你已经是真菌生物了",
+	"item.fib.fungified_potion.tip.success": "§c§l你已成为真正的顶级掠食者",
+	
+	"item.fib.concentrated_biomass":"浓缩生物质",
+    "item.fib.thestarofliferhythm": "生命律动之星",
+    "item.fib.essenceoflife": "生命精华",
+    "item.fib.part_of_armistice":"休战协议",
+    "item.fib.armistice":"休战书",
+
+    "item.fib.fib_logo": "§cFIB看板娘",
+    "item.fib.fib_logo.tooltip.1": "一位传奇大法师的碎片(是的，人民碎片)，她和一位传奇工匠有着一段不朽的神话",
+	"item.fib.fib_logo.message": "§6豪赤！",
+	
+    "item.fib.life_active_syringe": "生命活性物质注射器",
+	"item.fib.life_active_syringe.tooltip.shift_hint": "§c按 [Shift] 查看攻击施加给目标的效果",
+	"item.fib.life_active_syringe.tooltip.shift.1": "  §a生命恢复20 (30s)",
+	"item.fib.life_active_syringe.tooltip.shift.2": "  §a活力迸发10 (20s)",
+	
+    "item.fib.skill_heavy_bow": "技巧:重弓",
+    "item.fib.skill_powerful_shooting": "技巧:强力射击",
+    "item.fib.skill_rapid_continuous_shooting": "技巧:快速连射",
+	
+    "item.fib.skill_economize": "技巧:节流",
+    "item.fib.skill_expediency": "技巧:速吟",
+    "item.fib.skill_forbidden_spell": "技巧:禁咒",
+    "item.fib.skill_potent": "技巧:强效",
+	
+    "item.fib.skill_atrocity": "通用技巧:暴行",
+    "item.fib.skill_atrocity.tooltip.shift_hint": "§c按 [Shift] 查看攻击施加给目标的效果",
+	"item.fib.skill_atrocity.tooltip.shift.1": "  §c重伤2 (8s)",
+    "item.fib.skill_crit": "通用技巧:暴击",
+    "item.fib.skill_dexterity": "通用技巧:灵巧",
+    "item.fib.skill_pierce": "通用技巧:穿透",
+
+    "item.fib.frozen_key": "§9冰封之钥",
+    "item.fib.overworld_key": "§a主界之钥",
+    "item.fib.the_end_key": "§e末地之钥",
+    "item.fib.the_nether_key": "§c下界之钥",
+
+	
+	"block.fib.timeless_sand": "§8时之沙",
+    
+
+    "item.spore.bezerk_syringe.tooltip.shift_hint": "§6按 [Shift] 查看佩戴时获得效果",
+    "item.spore.bezerk_syringe.tooltip.shift.1": "  §a急迫1 (常驻)",
+    "item.spore.bezerk_syringe.tooltip.shift.2": "  §a力量1 (常驻)",
+
+    "item.spore.charred_syringe.tooltip.shift_hint": "§6按 [Shift] 查看佩戴时获得效果",
+    "item.spore.charred_syringe.tooltip.shift.1": "  §a抗火1 (常驻)",
+
+    "item.spore.drowned_syringe.tooltip.shift_hint": "§6按 [Shift] 查看佩戴时获得效果",
+    "item.spore.drowned_syringe.tooltip.shift.1": "  §a夜视1 (常驻)",
+    "item.spore.drowned_syringe.tooltip.shift.2": "  §a水下呼吸1 (常驻)",
+
+    "item.spore.rotten_syringe.tooltip.shift_hint": "§c按 [Shift] 查看攻击施加给目标的效果",
+    "item.spore.rotten_syringe.tooltip.shift.1": "  §c凋零3 (5s)",
+
+    "item.spore.toxic_syringe.tooltip.shift_hint": "§c按 [Shift] 查看攻击施加给目标的效果",
+    "item.spore.toxic_syringe.tooltip.shift.1": "  §c中毒2 (5s)",
+
+    "item.enigmaticdice.permafrost.tooltip.ctrl_hint": "§6按 [Ctrl] 查看手持时获得效果",
+    "item.enigmaticdice.permafrost.tooltip.ctrl.1": "  §a凛寒气场3 (常驻)",
+    "item.enigmaticdice.permafrost.tooltip.alt_hint": "§c按 [Alt] 查看攻击施加给目标的效果",
+    "item.enigmaticdice.permafrost.tooltip.alt.1": "  §c冰冻3 (15s)"
+}

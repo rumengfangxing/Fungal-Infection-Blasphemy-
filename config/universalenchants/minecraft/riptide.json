@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:trident",
+    "goety_revelation:gungnir"
+  ],
+  "incompatible": [
+    "minecraft:loyalty",
+    "minecraft:channeling"
+  ]
+}

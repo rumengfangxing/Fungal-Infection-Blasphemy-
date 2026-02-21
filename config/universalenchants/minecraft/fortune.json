@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:digger",
+    "ae2:annihilation_plane",
+    "goety:burrowing_focus",
+    "goety:dark_scythe",
+    "goety:dark_metal_scythe",
+    "goety:death_scythe",
+    "goety:great_hammer",
+    "goety:bonehead_hammer",
+    "goety:stormlander",
+    "goety:philosophers_mace",
+    "spore:armads",
+    "spore:maul",
+    "spore:combat_pickaxe",
+    "spore:scythe",
+    "spore:combat_shovel",
+    "spore:halberd"
+  ],
+  "incompatible": [
+    "minecraft:silk_touch"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:trident",
+    "spore:infected_spear",
+    "spore:knife",
+    "goety_revelation:gungnir"
+  ],
+  "incompatible": [
+    "minecraft:riptide"
+  ]
+}

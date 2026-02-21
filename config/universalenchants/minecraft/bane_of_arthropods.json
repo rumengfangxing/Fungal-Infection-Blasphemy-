@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:weapon",
+    "goety:dark_scythe",
+    "goety:dark_metal_scythe",
+    "goety:death_scythe",
+    "goety:great_hammer",
+    "goety:bonehead_hammer",
+    "goety:stormlander",
+    "goety:fanged_dagger",
+    "goety:philosophers_mace",
+    "goety:hungry_dagger",
+    "farmersdelight:skillet",
+    "farmersdelight:flint_knife",
+    "farmersdelight:iron_knife",
+    "farmersdelight:diamond_knife",
+    "farmersdelight:netherite_knife",
+    "farmersdelight:golden_knife",
+    "enigmaticlegacy:the_acknowledgment",
+    "enigmaticlegacy:the_twist",
+    "enigmaticlegacy:the_infinitum",
+    "enigmaticlegacy:eldritch_pan",
+    "cuisinedelight:cuisine_skillet",
+    "enigmaticaddons:astral_spear",
+    "enigmaticaddons:the_bless",
+    "enigmaticaddons:evil_dagger",
+    "enigmaticaddons:disaster_sword",
+    "goety_revelation:gungnir",
+    "$minecraft:universal_enchants_axe",
+    "$minecraft:trident"
+  ],
+  "incompatible": [
+    "minecraft:impaling",
+    "minecraft:smite",
+    "enigmaticlegacy:torrent",
+    "enigmaticlegacy:wrath",
+    "enigmaticlegacy:slayer"
+  ]
+}

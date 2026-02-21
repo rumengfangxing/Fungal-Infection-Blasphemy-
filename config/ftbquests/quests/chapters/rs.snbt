@@ -1,0 +1,392 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	default_repeatable_quest: true
+	filename: "rs"
+	group: "1EBC22E93EF9B621"
+	icon: "refinedstorage:controller"
+	id: "7782861D0AC04920"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "refinedstorage:controller"
+			id: "7CE3EB0FAE70B39E"
+			rewards: [{
+				id: "6A3BB45F32EFD1E2"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			tasks: [{
+				id: "15633B852E453979"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			icon: { Count: 32, id: "refinedstorage:cable" }
+			id: "24E638386FC743A5"
+			rewards: [{
+				count: 32
+				id: "715F84082995B2B7"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			tasks: [{
+				id: "566368F513B0C6D4"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			icon: "refinedstorage:disk_drive"
+			id: "50EA1F595AF44468"
+			rewards: [{
+				id: "37BFF7A060D9DDF6"
+				item: "refinedstorage:disk_drive"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3ECB3E8832A934C7"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			icon: "refinedstorage:wireless_transmitter"
+			id: "1C4BDBBF28368067"
+			rewards: [{
+				id: "34096C1858966E78"
+				item: "refinedstorage:wireless_transmitter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "544D3DF18038AF27"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			icon: "refinedstorage:importer"
+			id: "466BA7A43E43355D"
+			rewards: [{
+				auto: "enabled"
+				id: "61F4441EC923CCC8"
+				item: "refinedstorage:importer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68C8A47560CC1928"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			icon: "refinedstorage:exporter"
+			id: "746F32A0C3CFCFF9"
+			rewards: [{
+				auto: "enabled"
+				id: "7DE81579A1050DAA"
+				item: "refinedstorage:exporter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59899992D009533E"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			icon: "refinedstorage:destructor"
+			id: "11821C55E54DBF37"
+			rewards: [{
+				auto: "enabled"
+				id: "4D52F63687654AC3"
+				item: "refinedstorage:destructor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "556F788DF2F72191"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			icon: { Count: 4, id: "refinedstorage:external_storage" }
+			id: "1523219D017C12E2"
+			rewards: [{
+				auto: "enabled"
+				count: 4
+				id: "177CD605B00089EE"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79F449173E40C1BB"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			icon: "refinedstorage:crafting_grid"
+			id: "3BA9E74E6CEE749C"
+			rewards: [{
+				id: "713B53E919F6ABAA"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D21AD40528C0951"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			icon: "rsinfinitybooster:infinity_card"
+			id: "326723664B8DE909"
+			rewards: [{
+				id: "0535334AB54B4036"
+				item: "rsinfinitybooster:infinity_card"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "0513856198FDC8AB"
+				item: { Count: 2, id: "lightmanscurrency:coin_diamond" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			icon: "rsinfinitybooster:dimension_card"
+			id: "6741D0853A9377A9"
+			rewards: [{
+				id: "250CE028049361FA"
+				item: "rsinfinitybooster:dimension_card"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "0A56198A7FB63753"
+				item: { Count: 2, id: "lightmanscurrency:coin_diamond" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			icon: "refinedstorageaddons:wireless_crafting_grid"
+			id: "751360EEE836067E"
+			rewards: [{
+				id: "36B516C6A6C76793"
+				item: "refinedstorageaddons:wireless_crafting_grid"
+				type: "item"
+			}]
+			tasks: [{
+				id: "396362277081F9D2"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "refinedstorage:portable_grid"
+				tag: { }
+			}
+			id: "0D7DFE5BE7401724"
+			rewards: [{
+				id: "416D78FCA7FE1CA6"
+				item: {
+					Count: 1
+					id: "refinedstorage:portable_grid"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "3E54FF2582188B91"
+				item: { Count: 2, id: "lightmanscurrency:coin_diamond" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			icon: { Count: 16, id: "refinedstorage:storage_housing" }
+			id: "2668EC014BC1DB08"
+			rewards: [{
+				count: 16
+				id: "0A9A849FCFD22794"
+				item: "refinedstorage:storage_housing"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69261F60EA6FD9B7"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			icon: "refinedstorage:1k_storage_part"
+			id: "415A8DFA8B3308B3"
+			rewards: [{
+				id: "4DBA04B6857D9684"
+				item: "refinedstorage:1k_storage_part"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "214E38C4EAE0F7FD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			icon: "refinedstorage:4k_storage_part"
+			id: "1A0B829EA0C25D88"
+			rewards: [{
+				id: "078BEDB877A23BF8"
+				item: "refinedstorage:4k_storage_part"
+				type: "item"
+			}]
+			tasks: [{
+				id: "330EE9848DACDAB7"
+				item: "lightmanscurrency:coinpile_gold"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			icon: "refinedstorage:16k_storage_part"
+			id: "087F39E4120DE32F"
+			rewards: [{
+				id: "520EEE4C3D9167D0"
+				item: "refinedstorage:16k_storage_part"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "40AD8333742B2FD7"
+				item: "lightmanscurrency:coinpile_gold"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			icon: "refinedstorage:64k_storage_part"
+			id: "1D77F23862728E11"
+			rewards: [{
+				id: "05544CDFF79D9D88"
+				item: "refinedstorage:64k_storage_part"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "27C63D054799C745"
+				item: "lightmanscurrency:coinpile_emerald"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			icon: "extrastorage:storagepart_256k"
+			id: "757F544E8F46741E"
+			rewards: [{
+				id: "4D526578FE3BD7C4"
+				item: "extrastorage:storagepart_256k"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "56203161A0BCD477"
+				item: "lightmanscurrency:coinpile_emerald"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			icon: "extrastorage:storagepart_1024k"
+			id: "3DE377C1F7E1BD4E"
+			rewards: [{
+				id: "7BA4483E63D9C7AC"
+				item: "extrastorage:storagepart_1024k"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "2D304088E084EF37"
+				item: "lightmanscurrency:coinpile_diamond"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			icon: "extrastorage:storagepart_4096k"
+			id: "66F1D94327F97AA9"
+			rewards: [{
+				id: "10512A6405E65107"
+				item: "extrastorage:storagepart_4096k"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "1D9997D8E53F6A47"
+				item: "lightmanscurrency:coinpile_netherite"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			icon: "extrastorage:storagepart_16384k"
+			id: "284CF4CC1BDD0950"
+			rewards: [{
+				id: "3915103A5336ECFC"
+				item: "extrastorage:storagepart_16384k"
+				type: "item"
+			}]
+			tasks: [{
+				count: 5L
+				id: "34A5539B476F6EF2"
+				item: "lightmanscurrency:coinpile_netherite"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+	]
+	title: "RS"
+}

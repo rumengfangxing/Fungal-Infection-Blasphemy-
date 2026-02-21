@@ -1,0 +1,1055 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7F9682119D10E505"
+	group: "3940671EEBB12B1A"
+	icon: "goety:dark_hat"
+	id: "7F9682119D10E505"
+	images: [{
+		height: 2.0d
+		image: "minecraft:block/soul_campfire_fire"
+		rotation: 0.0d
+		width: 2.0d
+		x: 4.0d
+		y: 2.5d
+	}]
+	order_index: 2
+	quest_links: [{
+		id: "469B8425BBE3C271"
+		linked_quest: "7397D86F44BB5A1C"
+		x: 4.0d
+		y: 4.0d
+	}]
+	quests: [
+		{
+			description: ["此章节将引领你成为巫师"]
+			id: "48D80C63E99F94AD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3362D7D7461CA25E"
+				table_id: 3014144800512916319L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7E360A1A64E49815"
+				item: "goety:dark_hat"
+				type: "item"
+			}]
+			title: "诡厄巫法"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["282B9CB4D17DE4A9"]
+			description: ["主副手持有法杖，长按右键可释放设定的法术"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 1
+						slot: 0
+					}
+				}
+				id: "goety:dark_wand"
+				tag: {
+					cap: {
+						Items: [ ]
+						Size: 1
+						slot: 0
+					}
+				}
+			}
+			id: "2BC5F081D8DBA13A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "122BD2FA1F30FAB3"
+				table_id: 7004806172613356162L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1E3CF3C6D33BC14A"
+				title: "法杖"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["282B9CB4D17DE4A9"]
+			description: [
+				"手持法杖按下x键可以选择物品栏、聚晶包里的聚晶填充到法杖里以释放法术"
+				"聚晶可以被附魔以强化法术的效果"
+			]
+			hide_until_deps_complete: true
+			icon: "goety:arrow_rain_focus"
+			id: "74C8DFB389159227"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "657D9D2A659D7E40"
+				table_id: 3014144800512916319L
+				type: "random"
+			}]
+			tasks: [{
+				id: "78E280BC937F02C7"
+				type: "checkmark"
+			}]
+			title: "聚晶"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["282B9CB4D17DE4A9"]
+			description: [
+				"你可以简单的理解为蓝条"
+				"灵魂能量储存与根之图腾，灵魂图腾，或灵魂方舟中"
+				"前两个可以在快捷栏或饰品栏中生效，而灵魂方舟放置下来才能生效"
+				"存储上限递增"
+				""
+				"灵魂能量的获取："
+				"1击杀生物，不同生物提供的灵魂能量并不相同"
+				"2冰火收集器，通过通入红石信号灼烧其上的生物来榨取灵魂能量(低效）"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "goety:totem_of_souls"
+				tag: {
+					"Max Souls": 30000
+					Souls: 0
+				}
+			}
+			id: "095640485498C3DD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "56A4952A93C5DFE6"
+				table_id: 3014144800512916319L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0A77CCCD1141E6BD"
+				type: "checkmark"
+			}]
+			title: "灵魂能量"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E360A1A64E49815"]
+			description: ["以下几个附属任务将教会你如何简单使用法术战斗"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "282B9CB4D17DE4A9"
+			tasks: [{
+				id: "5D08CEA20877B7E1"
+				type: "checkmark"
+			}]
+			title: "战斗方式"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E360A1A64E49815"]
+			description: ["巫师合成物品和召唤生物的一种重要方式"]
+			hide_until_deps_complete: true
+			icon: "goety:dark_altar"
+			id: "770C036F8FF7FF67"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "278ACBB819507840"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CDF066EA6C6AF2B"
+					table_id: 7004806172613356162L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "61DFB9CA7B503BB2"
+				type: "checkmark"
+			}]
+			title: "仪式"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["770C036F8FF7FF67"]
+			description: [
+				"仪式的核心无非就这三个"
+				"&b诅咒之笼  黑暗祭坛  祭坛基座&r"
+				"&e诅咒之笼&r:放于黑暗祭坛之下，可以在其中右键放入&l根之图腾、灵魂图腾、绑定了灵魂方舟的连接水晶(右键灵魂方舟以绑定)&r来供能"
+				"&e祭坛基座&r:可以在其上放置仪式所需的素材"
+				"&e黑暗祭坛&r:在放置完所有素材并确保其它条件满足时，放入仪式核心物品(在jei配方页显示在中心的物品)启动仪式"
+				""
+				"仪式的组成高度个性，以下为一些实例，你可以根据个人的喜欢搭建自己的仪式"
+				"{image:ftbquests:textures/picture/002.png width:200 height:100 align:center}"
+			]
+			hide_until_deps_complete: true
+			icon: "goety:pedestal"
+			id: "48A62C7C727E2903"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2E2A7F2AA132DC23"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BAB20F4C09C3558"
+					table_id: 7004806172613356162L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "5F5C9054FCEB6464"
+				type: "checkmark"
+			}]
+			title: "仪式的核心"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["770C036F8FF7FF67"]
+			description: [
+				"仪式的种类繁多，使用仪式需要满足不同的仪式种类"
+				"同时仪式种类条件的满足也是高度自由，你可以根据个人喜欢摆放，而且不同仪式可以叠加摆放"
+				"&l&a（以下文本仅供参考，不用着急理解，可以先翻到下面看图例）"
+				"&r&r&e魔法仪式&r：16个书架、1个附魔台、1个放置了书与笔的讲台"
+				"&e冰霜仪式&r：16个任意变种的冰，8个雪块，4盏极寒冰灯"
+				"&e深渊仪式&r：16个任意变种的海晶石，16个任意变种的花岗岩，4海晶灯"
+				"&e末地仪式&r：必须要在末地，16个虚空方块，64个末地石砖，32个任意类型的紫珀方块"
+				"&e活力仪式&r：15个梯子、15个铁轨、1个雕刻过的南瓜"
+				"&e锻造仪式&r：1个充满熔岩的炼药锅、2个熔炉、1个任意受损程度的铁砧"
+				"&e大地仪式&r：1个锻造台，8个紫水晶块，16个深板岩类方块"
+				"&e死灵仪式&r：16个非木质的台阶、16个幽匿块、8个非空花盆、时间在夜晚"
+				"&e天空仪式&r：祭坛y坐标大于128，或8个大理石方块，16个玉瓷砖，4个平滑金块"
+				"&e风暴仪式&r：黑暗祭坛已达成天空仪式条件，祭坛上方无方块遮挡、天气为雷暴、4个避雷针、20个锁链、12个任何种类的铜块"
+				"&e安息仪式&r：8个哭泣的黑曜石、16个黑曜石、4个灵魂火"
+				"&e进阶下界仪式&r：必须在下界中，8个任意种类的玄武岩，16个任意种类的黑石，4块荧石"
+				"&e专家下界仪式&r：必须在下界中，32块下界砖块/红色下界砖块，8个下界疣，4个凋灵骷髅头颅"
+				""
+				"如图是安息仪式的变种，以及安息仪式和魔法仪式的叠加摆放"
+				"{image:ftbquests:textures/picture/003.png width:200 height:125 align:center}"
+			]
+			hide_until_deps_complete: true
+			icon: "goety:animation_core"
+			id: "610349263D150D7A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D09BA7178481DDD"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "798818D0A5890CBE"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "526D43A66A042508"
+					table_id: 7004806172613356162L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7EC08E95DC8E28DE"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "5943CA239E29E18E"
+				title: "仪式的种类"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["770C036F8FF7FF67"]
+			description: [
+				"一些仪式需要额外的条件"
+				"1献祭：在把核心物品放在黑暗祭坛上后，需要在周围击杀特定生物来启动仪式"
+				"2前置：阅读某某卷轴后才可以进行该仪式"
+				""
+				"补充一些仪式的特性"
+				"1若仪式为武器装备的进阶，则会保留nbt（类似锻造台）"
+				"2一些仪式可以影响到世界，如调整天气为雷雨"
+				"3一些仪式可以触发生物的生成"
+			]
+			hide_until_deps_complete: true
+			icon: "goety:forbidden_scroll"
+			id: "15F94BD3CB196A34"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6A7470550A0C93CA"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6AC2A0C62CEB2775"
+					table_id: 7004806172613356162L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "55054E146D2EE2AE"
+				type: "checkmark"
+			}]
+			title: "一些特殊仪式"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["48D80C63E99F94AD"]
+			description: [
+				"建议优先探索"
+				""
+				"合成&e灵魂方舟&r&c必须经过&r的遗迹"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:sculk_catalyst"
+			id: "16A0EE941BE69085"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "08B09BD202A70450"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "440E5C18D9810957"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "605B53E15A8E74A6"
+				structure: "minecraft:ancient_city"
+				type: "structure"
+			}]
+			title: "发现远古城市"
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["48D80C63E99F94AD"]
+			description: [
+				"巫婆住的破烂小屋"
+				"一楼桌子上有水晶球，触摸召唤巫婆"
+				"若水晶球已经是触发过的状态"
+				"在&b小屋范围内&r，手持重生锚对水晶球右键以重新激活"
+			]
+			hide_dependency_lines: true
+			icon: "goety:crystal_ball"
+			id: "67C27A67F54B8A11"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "11B6B2DB24520C0B"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "528CADD97E7CDB2E"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "34AC7AFB780E9342"
+				structure: "goety:blighted_shack"
+				type: "structure"
+			}]
+			title: "找到腐烂小屋"
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["48D80C63E99F94AD"]
+			description: [
+				"在林地府邸&b室内&r使用黑暗卷轴"
+				"召唤灾厄宰相进行挑战"
+			]
+			hide_dependency_lines: true
+			icon: "goety:dark_scroll"
+			id: "26A8C054F66CC8A7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "699CEC3F77F3513E"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4978CD2E26B42D57"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "756B07FE2D7C54C7"
+				structure: "minecraft:mansion"
+				type: "structure"
+			}]
+			title: "抵达林地府邸"
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["67C27A67F54B8A11"]
+			id: "22B865BF97B0B7BC"
+			rewards: [
+				{
+					id: "07909C35E68440ED"
+					item: "goety:crone_hat"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "04D46C7E1F42EE09"
+					item: "goety:crystal_ball"
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4647BFA57D576FA4"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5909C4BEBB7FD1E1"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "goety:crone"
+				id: "14C104C7971326C9"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["16A0EE941BE69085"]
+			id: "4DF41AE0EAF0C65A"
+			rewards: [
+				{
+					count: 2
+					id: "29C1A4D18B498C63"
+					item: "minecraft:echo_shard"
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75D41B9D6F6B2486"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27C688AF0F1D87EE"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "7D22914CC7201303"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["26A8C054F66CC8A7"]
+			id: "07660ED582ED242A"
+			rewards: [
+				{
+					id: "6C8EE7E3646CA7E9"
+					item: "goety:soul_ruby"
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4177CA46574DDC89"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6636E513D2F2FF8A"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+			]
+			tasks: [{
+				entity: "goety:vizier"
+				id: "06BEE1BCC75B98ED"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["4DF41AE0EAF0C65A"]
+			hide_dependency_lines: true
+			id: "374737A89F6FCF4B"
+			rewards: [{
+				auto: "enabled"
+				id: "0C079E2BA4F1FDC5"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "399A8B3ECDB2BE56"
+				type: "kill"
+				value: 5L
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["22B865BF97B0B7BC"]
+			id: "64136299A5407D42"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53C32D4E63557197"
+				table_id: 5750388060807619340L
+				type: "random"
+			}]
+			tasks: [{
+				id: "439638325C9C97D4"
+				item: "goety:crone_hat"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["07660ED582ED242A"]
+			id: "35B7746F72A416ED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D788779EFD12114"
+				table_id: 5750388060807619340L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2216F3960C1C7D82"
+				item: "goety:soul_ruby"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4DF41AE0EAF0C65A"]
+			id: "611A39B89351458E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DE615ABBBAE74C5"
+				table_id: 5750388060807619340L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1B8136CC11BF4F42"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["611A39B89351458E"]
+			description: ["合成灵魂方舟最为困难的一步"]
+			id: "5D03523082E6C7C8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "202E7EB04E586F64"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5CD253F8A00753E0"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FE1EC2A03395B94"
+					table_id: 7004806172613356162L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "01832F81728F6514"
+				item: "minecraft:recovery_compass"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"锻造仪式合成"
+				"具体可看jei配方"
+			]
+			icon: "goety:arca"
+			id: "29C282903D23D6F8"
+			rewards: [
+				{
+					count: 16
+					id: "16C6C8F0373F013F"
+					item: "goety:soul_transfer"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1692B6F39E7BFE3D"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "390FFFFA7E077D79"
+					table_id: 7004806172613356162L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C44E96B1BD9BC28"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+			]
+			size: 3.0d
+			tasks: [
+				{
+					id: "54EEF41104FA1D4E"
+					item: "minecraft:recovery_compass"
+					type: "item"
+				}
+				{
+					id: "13ED390953CD2A71"
+					item: "minecraft:lodestone"
+					type: "item"
+				}
+				{
+					id: "24D0250CE2A8667B"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "2E5FC7F5D2B81FC6"
+					item: "minecraft:dark_prismarine"
+					type: "item"
+				}
+				{
+					id: "4F5F5330BA1FBEA9"
+					item: {
+						Count: 1
+						id: "goety:totem_of_souls"
+						tag: {
+							"Max Souls": 30000
+							Souls: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0968537924F33289"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "07878B3EE2243679"
+					item: "minecraft:respawn_anchor"
+					type: "item"
+				}
+				{
+					id: "39D7657607FED071"
+					item: "goety:cursed_cage"
+					type: "item"
+				}
+			]
+			title: "灵魂方舟"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			description: ["需要仪式召唤的敌人"]
+			id: "3D18690B6AF30E7D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "192E58A16AD56E7B"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07813B871B3F2E83"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0ECDCED73D3E0FDD"
+				item: "goety:dark_altar"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3D18690B6AF30E7D"]
+			description: [
+				"墓穴石需要在&b墓穴&r结构获取"
+				"灵质可通过击杀野外生成的幽灵获取"
+				"安息仪式召唤"
+				""
+				"孤魂尸鬼在玩家拥有高能量灵魂方舟时会尝试生成在玩家周围"
+				"你也可以收集较多的灵魂能量存入灵魂方舟挂机等待它的到来(个人维度不生成)"
+			]
+			icon: "minecraft:spawner"
+			id: "6D4A1370010830A7"
+			rewards: [
+				{
+					id: "7AAB92124305F370"
+					item: "goety:shadow_essence"
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "35BE438C4CA4C1C6"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F10B81E29EB5A5C"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E3F44A4ECDD4369"
+					table_id: 7004806172613356162L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					entity: "goety:wight"
+					id: "74FFAE15F0C06D0C"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "3EE2DB84282BEC2A"
+					item: "goety:crypt_stone"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7379D2E7E1581428"
+					item: "goety:ectoplasm"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "孤魂尸鬼"
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6D4A1370010830A7"]
+			id: "4A1FF8217C57EFE2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "67ED37D5523C08B3"
+				table_id: 5750388060807619340L
+				type: "random"
+			}]
+			tasks: [{
+				id: "53AD86CC200A94F2"
+				item: "goety:shadow_essence"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3D18690B6AF30E7D"]
+			id: "0F27D5DED4FF6BC0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D2DD201CDE88B17"
+				table_id: 6148969969489913202L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "goety:goety/kill_a_apostle"
+				criterion: ""
+				id: "449F86461E3AEF63"
+				type: "advancement"
+			}]
+			title: "使徒"
+			x: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0F27D5DED4FF6BC0"]
+			description: [
+				"击杀使徒小概率获得"
+				""
+				"也可通过雷暴仪式。。。"
+				"一系列麻烦的方式获得"
+				""
+				"推进真菌任务也可获得"
+				""
+				"&c神性&r黯淡之物，但可以肯定其曾经承载过&c神性&r的事实"
+			]
+			id: "46D904174DEB4FF6"
+			rewards: [
+				{
+					id: "4C862ED3E88EF9EE"
+					item: {
+						Count: 1
+						id: "tarotcards:death"
+						tag: { }
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D4975110FBB1E21"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "24C7BEEE3FEE9668"
+				item: "goety_revelation:broken_halo"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["29C282903D23D6F8"]
+			description: [
+				"在满月之夜(在下界传送门上放置暗影信标可锁定时间为满月之夜)"
+				"且玩家拥有灵魂方舟"
+				"喝下这瓶万灵药"
+				"你将化身巫妖"
+				"（极限模式别把自己存档喝没了）"
+				""
+				"现在，村民不会再仇视巫妖了"
+				"(为了防止各种浪费和以后还要做麻烦，再送一瓶)"
+			]
+			icon: "goety:undeath_potion"
+			id: "3111BA413D438853"
+			rewards: [
+				{
+					id: "1198547354765DEE"
+					item: "goety:undeath_potion"
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E74E9944C10D994"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+			]
+			size: 3.0d
+			tasks: [
+				{
+					id: "2ECE5DF6CF4FC38B"
+					item: "goety:undeath_potion"
+					type: "item"
+				}
+				{
+					id: "476E6281AB939EE4"
+					item: "goety:night_beacon"
+					type: "item"
+				}
+			]
+			title: "万灵药"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"你可以合成捕捉笼右键带走刷怪笼"
+				""
+				"将捕捉后的捕捉笼右键空的诅咒之笼则可以复现刷怪笼"
+				""
+				"送你几个，冒险愉快"
+			]
+			icon: "goety:flame_capture"
+			id: "2F38FC542CC612A3"
+			rewards: [{
+				count: 2
+				id: "3F93820E31F1FDF2"
+				item: "goety:flame_capture"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "0B7FA9F9C11C8AC8"
+				type: "checkmark"
+			}]
+			title: "捕捉笼"
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			description: ["现在刷怪笼可以合成了"]
+			id: "09B5B9C50EB40F4F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "294AC5EE54573D58"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2847248F6369A7E7"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "310E14C090174BF6"
+				item: "minecraft:spawner"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["09B5B9C50EB40F4F"]
+			description: [
+				"可以合成"
+				"手持右键刷怪笼以配置"
+				"大大优化刷怪体验"
+			]
+			id: "3802E02A5BC6565F"
+			tasks: [{
+				id: "0F1F454EECDE0FC8"
+				item: {
+					Count: 1
+					id: "spawnermod:spawner_key"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3802E02A5BC6565F"]
+			description: ["现在你可以用红石信号控制刷怪笼的工作"]
+			id: "07A061AF1124EC52"
+			tasks: [{
+				id: "6486D09798959DA5"
+				type: "checkmark"
+			}]
+			title: "红石控制"
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			description: ["合成刷怪蛋的重要材料"]
+			id: "2EFF989E8B118F65"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "45289F27EDF0AF87"
+				table_id: 5750388060807619340L
+				type: "random"
+			}]
+			tasks: [{
+				id: "235CEF32F6F6CD47"
+				item: "enigmaticlegacy:soul_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2EFF989E8B118F65"]
+			description: [
+				"现在刷怪蛋可以直接合成"
+				""
+				"更强大生物的刷怪蛋需仪式合成"
+			]
+			icon: "minecraft:cow_spawn_egg"
+			id: "4B6F83190107703C"
+			tasks: [{
+				id: "4D21E60008589AEB"
+				type: "checkmark"
+			}]
+			title: "刷怪蛋"
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4B6F83190107703C"]
+			description: [
+				"由下界之星和一些物品合成获得"
+				""
+				"用于更强大生物刷怪蛋的仪式素材"
+			]
+			id: "454D450125715459"
+			tasks: [{
+				id: "260602C81487DD4D"
+				item: "fib:essenceoflife"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.0d
+		}
+	]
+	title: "巫师&c【主线】"
+}

@@ -1,0 +1,1794 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4FC5D470FAFB44D4"
+	group: "3940671EEBB12B1A"
+	hide_quest_until_deps_visible: true
+	icon: "spore:blomfung"
+	id: "4FC5D470FAFB44D4"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6C63885E6C1712D5"]
+			description: [
+				"当下最重要的，是在这片大地上活下去"
+				"克服这些真菌带来的种种困难"
+				"了解真菌相关信息请完成扫描器相关任务"
+				"获取扫描器需先完成聚合物任务"
+			]
+			id: "58BBC7DF8D40B060"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "36A2301C8D98D35B"
+					table_id: 7004806172613356162L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "161BA2013754F608"
+					table_id: 3014144800512916319L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05EBDBC861A26790"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "099CD19CD11BAE60"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EB96AE60ABC20C2"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "4EE0A5551709C3DC"
+				title: "生存"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58BBC7DF8D40B060"]
+			description: ["用于定位群系，如沙滩，海洋等"]
+			icon: {
+				Count: 1
+				id: "naturescompass:naturescompass"
+				tag: { }
+			}
+			id: "10329BC2D854B5DB"
+			rewards: [
+				{
+					id: "14A6C360B020973A"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "28DDD7908EA0852E"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3081E89FD9F6BE91"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "4459EE8CB99A71FE"
+				title: "自然罗盘"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["58BBC7DF8D40B060"]
+			description: ["用于定位结构，如各种遗迹"]
+			icon: {
+				Count: 1
+				id: "explorerscompass:explorerscompass"
+				tag: { }
+			}
+			id: "7397D86F44BB5A1C"
+			rewards: [
+				{
+					id: "6687C1B8646B8F17"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E9155B0B6D4D036"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "14603F229D4FF99E"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "36F7C1CBCA716DC6"
+				title: "结构罗盘"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"58BBC7DF8D40B060"
+				"4EAFE6A4E09F3D9A"
+			]
+			description: [
+				"解构你的敌人，让他们成为可知之物"
+				"击杀真菌后获得特殊战利品，在&e物品栏&r鼠标拿起扫描器移到在可扫描物品上(显示&c需要进一步扫描&r的物品）右键即可"
+				"也可用于扫描敌人"
+				"手持右键可选取30格内离自己最近的真菌生物查看状态"
+			]
+			id: "11C49BEFEDEE957A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "662FD3A4699E466C"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C61331AF01CB4EB"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "61F0C4D093D2D0BC"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:scanning_world"
+				criterion: ""
+				id: "138464EC801711B6"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58BBC7DF8D40B060"]
+			description: [
+				"一种生物防害材料，可用于制作对付真菌的物品"
+				"合成获得"
+			]
+			id: "7B28162EBAF70538"
+			rewards: [
+				{
+					count: 4
+					id: "48B0A66C359BF795"
+					item: "spore:compound"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "067965CE9C7448CB"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39B07DD313784923"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "466D9F52AE6B5270"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2DA027E6C89F6698"
+				item: "spore:compound"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"58BBC7DF8D40B060"
+				"4EAFE6A4E09F3D9A"
+			]
+			description: [
+				"真菌模组的工作台"
+				"用于合成真菌相关物品，武器，装备"
+			]
+			id: "5A509F240543853C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "34988C84DE9F85E2"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7EDDCB4FFE2D64C9"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7ECD6C5F660A07C1"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "3DCEAADDEA3EE3BE"
+				item: "spore:surgery_table"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: ["大部分真菌生物掉落"]
+			id: "5A74A900C198C9AA"
+			rewards: [
+				{
+					count: 4
+					id: "42AD6B8C23021CF4"
+					item: "spore:mutated_heart"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "725921B6238B05E8"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_3"
+				criterion: ""
+				icon: "spore:mutated_heart"
+				id: "7CD9378D81C581FF"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: ["大部分真菌生物掉落"]
+			id: "51F50FB2559D627A"
+			rewards: [
+				{
+					count: 4
+					id: "19FA6B0F0F8F81F5"
+					item: "spore:mutated_fiber"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B2FB95B540E614F"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_4"
+				criterion: ""
+				icon: "spore:mutated_fiber"
+				id: "7F8B9241E2D381B0"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: [
+				"击杀 菌染唤魔者以及它的爪子 菌骑士 侵袭者 舔食者 邪灵 激跃者 咆哮者 追迹者 巫猎饕 棘刺者 潜猎者 食腐鹫 纳克拉雅 菌主 幽灵 保育体 林中鹿菌 审判者 长舌魔 邪菌术士 食人魔 铁斧投手 获取"
+				"&4普遍拥有爪类器官"
+			]
+			id: "03D5FD008D99D2C3"
+			rewards: [
+				{
+					count: 4
+					id: "2C2F62B551868736"
+					item: "spore:claw_fragment"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E451245138A9611"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7ACB167EDFA4CB24"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_1"
+				criterion: ""
+				icon: "spore:claw_fragment"
+				id: "3FA4FEE63191D977"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: [
+				"击杀菌染卫道士 菌染唤魔者 侵袭者 舔食者 邪灵 激跃者 杀戮者 喷吐者 咆哮者 追迹者 蛮兽 巫猎鹫 棘刺者 潜猎者 食腐鹫 纳克拉雅 守护者 窜扰者 菌主 幽灵 拥孢体 僭主体 保育体 蜂巢思维 林中鹿菌 审判者 长舌魔 邪菌术士 食人魔 铁斧投手 获取"
+				"&4普遍拥有甲壳覆盖"
+			]
+			id: "7F278F18807029F0"
+			rewards: [
+				{
+					count: 4
+					id: "1B94433B429A57B0"
+					item: "spore:armor_fragment"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "322F57A9AE7D9953"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F1ED0050254E800"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_2"
+				criterion: ""
+				icon: "spore:armor_fragment"
+				id: "5C66DF30D6F50550"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: [
+				"击杀邪灵 食腐鹫 获取"
+				"&4普遍拥有翅膀且兼具飞行能力"
+			]
+			id: "4C28E7B1368D577F"
+			rewards: [
+				{
+					count: 4
+					id: "30556677553F2978"
+					item: "spore:wing_membrane"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CF8421B71D13B2C"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_5"
+				criterion: ""
+				id: "1F97263D8B3B1338"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: [
+				"击杀菌染村民 菌染女巫 菌染掠夺者 菌染卫道士 菌染唤魔者 疫病者 撕裂者 菌染憎恶 激跃者 杀戮者 喷吐者 咆哮者 追迹者 蛮兽 酿毒体 蜂巢思维 林中鹿菌 铁斧投手 获取"
+				"&4普遍拥有高级功能，富有智慧，通常为人型"
+			]
+			id: "2EC4798EA113CE89"
+			rewards: [
+				{
+					count: 4
+					id: "394027E1F83A1730"
+					item: "spore:cerebrum"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39AAAD23E1FF118D"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_6"
+				criterion: ""
+				id: "1D98E78E75AC71CE"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: [
+				"击杀舔食者 长舌魔 获取"
+				"&4无明显特征，需注意获取怪物"
+			]
+			id: "2D39737546F26FAC"
+			rewards: [
+				{
+					count: 4
+					id: "7FB7FDF8B125F8E4"
+					item: "spore:alveolic_sack"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "626B86F2E6B7D258"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_7"
+				criterion: ""
+				id: "61E3C61E01575D6D"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: [
+				"击杀喷吐者 僭主体 获取"
+				"&4兼具毒性和远程攻击，小心且优先应对"
+			]
+			id: "73E2E861BA3F4BEB"
+			rewards: [
+				{
+					count: 4
+					id: "7C7FEE740F8853C9"
+					item: "spore:corrosive_sack"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "429ADBF7B85255ED"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_9"
+				criterion: ""
+				id: "1589F734232E12BD"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: [
+				"击杀追迹者 酿毒体 林中鹿菌 获取"
+				"&4无明显特征，可能与毒性有关"
+			]
+			id: "713EB2D3EFA1388A"
+			rewards: [
+				{
+					count: 4
+					id: "1D83FCCA1285DE78"
+					item: "spore:altered_spleen"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "56C9C1D94EC2ECA6"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_8"
+				criterion: ""
+				id: "61EE6DA0C11BBE4A"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: [
+				"击杀菌囊 哨戒体 拥孢体 僭主体 酿毒体 保育体 灾厄重构体 蜂巢思维 获取"
+				"&4通常被限制了行动能力，具有较强功能性"
+			]
+			id: "012BCCF80CEE22D8"
+			rewards: [
+				{
+					count: 4
+					id: "0B633C3CCF77DFD4"
+					item: "spore:organoid_membrane"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "36051F783216DD5C"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				advancement: "spore:anatomy_act_10"
+				criterion: ""
+				id: "01B39E502C24C332"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["138464EC801711B6"]
+			id: "1F3C9DAAAFB177CE"
+			rewards: [
+				{
+					id: "3C80F02CD1FC2965"
+					item: {
+						Count: 1
+						id: "minecraft:written_book"
+						tag: {
+							author: "rumengfangxing"
+							pages: [
+								"{\"text\":\"菌染人类 \\n纤维 心脏\\n菌染尸壳\\n纤维 心脏\\n菌染村民\\n心脏 大脑 纤维 脊椎碎片\\n菌染女巫\\n纤维 大脑 脊柱碎片\\n菌染掠夺者\\n纤维 心脏 大脑 脊柱碎片\\n菌染卫道士\\n纤维 心脏 大脑 脊碎 甲片\"}"
+								"{\"text\":\"菌染唤魔者\\n纤维 甲片 爪片 心脏 大脑 \\n脊碎 以及它的爪子 \\n甲片 纤维 爪片\\n菌染流浪商人\\n纤维 心脏 大脑 脊碎\\n菌染溺尸\\n纤维 心脏\\n菌染冒险家\\n心脏 纤维\\n疫病者\\n纤维 心脏 碎片 大脑\"}"
+								"{\"text\":\"撕裂者\\n纤维 心脏 大脑\\n菌染憎恶\\n纤维 心脏 肿瘤 大脑\\n畸尾婴\\n纤维 心脏 肿瘤\\n菌骑士\\n纤维 碎片 心脏 利爪\\n侵袭者\\n纤维 甲片 心脏 利爪 肿瘤\\n内脏 肌腱\\n舔食者\\n纤维 甲片 利齿 利爪 心脏\\n肺泡\"}"
+								"{\"text\":\"邪灵\\n纤维 甲片 利爪 心脏 翼膜\\n激跃者\\n纤维 内脏 甲片 心脏 利爪 大脑 脊碎 肌腱\\n杀戮者\\n纤维 甲片 心脏 大脑 脊碎\\n镰刀碎片\\n喷吐者\\n纤维 甲片 心脏 大脑 脊碎\\n腐化肺泡\\n咆哮者\\n纤维 爪片 甲片 心脏 大脑 脊碎 \"}"
+								"{\"text\":\"追迹者\\n纤维 甲片 心脏 利爪 大脑\\n脊碎 脾脏\\n蛮兽\\n纤维 内脏 大脑 甲片 心脏 \\n脊碎 肌腱\\n巫猎饕\\n纤维 甲片 心脏 爪片 内脏 肿瘤\\n酗酒者\\n纤维 心脏 肿瘤\\n棘刺者\\n纤维 尖刺 骨头 甲片 心脏 爪片\"}"
+								"{\"text\":\"潜猎者\\n纤维 甲片 心脏 利爪\\n食腐鹫\\n纤维 甲片 爪片 心脏 翼膜\\n深潜者\\n纤维 心脏 肿瘤\\n纳克拉雅\\n纤维 利齿 心脏 甲片 肿瘤\\n守护者\\n纤维 心脏 甲碎 盾碎\\n窜扰者\\n纤维 甲片 心脏 肿瘤\"}"
+								"{\"text\":\"菌主\\n纤维 甲片 心脏 利爪 内脏\\n肿瘤 肌腱\\n幽灵\\n纤维 甲片 心脏 爪片 内脏 \\n肿瘤 肌腱\\n菌染构造体\\n纤维 心脏 内脏 肿瘤 肌腱\\n菌囊\\n纤维 器官膜\\n哨戒体\\n纤维 警戒者之眼 器官膜 心脏\"}"
+								"{\"text\":\"拥孢体\\n纤维 器官膜 甲片 心脏\\n僭主体\\n纤维 甲片 器官膜 心脏 腐泡\\n酿毒体\\n纤维 器官膜 心脏 大脑 脊碎 脾脏\\n保育体\\n纤维 器官膜 甲片 心脏 利爪 肿瘤 内脏 肌腱\\n妄念体 \\n纤维 器官膜\"}"
+								"{\"text\":\"灾厄重构体\\n纤维 器官膜\\n蜂巢思维\\n纤维 甲片 器官膜 心脏 大脑 脊碎 脑组织残块\\n以及各种重要方块\\n林中鹿菌\\n纤维 利齿 甲片 心脏 利爪\\n大脑 脊碎 脾脏\\n审判者\\n纤维 甲片 心脏 利爪\\n长舌魔\\n纤维 利齿 甲片 心脏 利爪\\n肺泡\"}"
+								"{\"text\":\"邪菌术士\\n纤维 甲片 心脏 利爪\\n食人魔\\n纤维 甲片 心脏 爪片\\n铁斧投手\\n纤维 甲片 心脏 利爪 大脑\\n脊碎\"}"
+							]
+							title: "真菌掉落物总览"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0F18F1E4FB0461F3"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6759031AFFCBCC21"
+				title: "真菌掉落物总览"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"03D5FD008D99D2C3"
+				"713EB2D3EFA1388A"
+				"012BCCF80CEE22D8"
+				"2EC4798EA113CE89"
+				"7F278F18807029F0"
+				"5A74A900C198C9AA"
+				"51F50FB2559D627A"
+				"4C28E7B1368D577F"
+				"2D39737546F26FAC"
+				"73E2E861BA3F4BEB"
+			]
+			description: [
+				"生物链锯剑有助于真菌生物战利品的获取（真菌生物的掉落受不到抢夺的加成，且无论是否被玩家击杀都会掉落）"
+				"低温注射器（修改后伤害大幅提高，可以大幅削弱真菌生物的强度，适合用于强力单位）"
+			]
+			hide_dependency_lines: true
+			id: "2BBA53F5F6B8113D"
+			rewards: [
+				{
+					id: "4B0A3EB3F5C235BA"
+					item: {
+						Count: 1
+						id: "spore:reaver"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "4D4A1ED71876718A"
+					item: {
+						Count: 1
+						id: "spore:pci"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "258BCC509F8A701E"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E5EE7F9E9BB7350"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "5FBEF9F2C93CF324"
+				title: "成为真菌科研大师"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B28162EBAF70538"]
+			description: ["由聚合物粉烧炼而来"]
+			hide_dependent_lines: true
+			id: "4EAFE6A4E09F3D9A"
+			rewards: [
+				{
+					count: 4
+					id: "2182A31ECE461252"
+					item: "spore:compound_plate"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "375413015F8B8A9E"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "68854482112FABB8"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "01A87B41AA5F5CF0"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "317A16850D384003"
+					table_id: 5750388060807619340L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "47AF4FF80B372730"
+				item: "spore:compound_plate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4EAFE6A4E09F3D9A"]
+			id: "4F1E2D8AF84B90A9"
+			rewards: [
+				{
+					count: 4
+					id: "19DBD45B1215F2C6"
+					item: "spore:circuit_board"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F0A436DCD3DA8EC"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5DB7ACCDE6060912"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "028B7A3B1C6398E1"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "5B47916D3C25B130"
+				item: "spore:circuit_board"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4EAFE6A4E09F3D9A"]
+			description: [
+				"&c&l真 菌 杀 手&r"
+				"修改后，&b更大的作用范围&r（64格半径），&b略微提升伤害&r"
+				"开机要注意观察工作状态，&c若被菌丝覆盖则无法工作&r，需拆掉重放"
+			]
+			id: "77B706DBC7D9984E"
+			rewards: [
+				{
+					count: 8
+					id: "3F0411E38C0833B3"
+					item: "spore:ice_canister"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5177390C55E8FEDF"
+					item: {
+						Count: 1
+						id: "spore:cdu"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09B5032DC82235E9"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D0A28F8D367FDB6"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "561D678005E4F84A"
+				item: {
+					Count: 1
+					id: "spore:cdu"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F1E2D8AF84B90A9"]
+			description: [
+				"传奇开盒器，监测心智位置，需要放入大脑，变异的心脏，内脏*2启动"
+				"&c有20%概率把自己的位置暴露给心智"
+			]
+			id: "4192D10EB52AA49F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E78AC524DDEFDE1"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "43C644ECFA7E0581"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "350F2561C4EFA7C9"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "01A8154957D0B28F"
+				item: {
+					Count: 1
+					id: "spore:zoaholic"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F1E2D8AF84B90A9"]
+			description: ["&c不推荐使用，会莫名其妙&4吞物品&r"]
+			id: "3ACF3E6745AA340E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "007621B3903328B3"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "33377C341702D9B6"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F3D968F29FE4D42"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "147F4DDFBEA381BA"
+				item: {
+					Count: 1
+					id: "spore:incubator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5A509F240543853C"]
+			description: [
+				"鼠标拖动右键真菌装备武器突变"
+				"可作为饰品装备"
+				""
+				"注射枪可以便利你对血液的获取"
+				"但通过注射枪发射空注射器获取血液的概率只有50%"
+			]
+			icon: "spore:syringe"
+			id: "636F93A9D94E5938"
+			rewards: [
+				{
+					count: 8
+					id: "0A8EFC5A72BDC107"
+					item: "spore:syringe"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "23AD66B6464B1BA1"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2329456C3DCDD970"
+					table_id: 5859545525528796691L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A57FF73427D7110"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "7F4E86FC76F2F3D5"
+				title: "注射器"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["636F93A9D94E5938"]
+			description: [
+				"+15%生命偷取"
+				"武器突变（固定生命偷取，减武器面板属性）"
+			]
+			id: "0E1955D27DFA8D3E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43075046F5D1E213"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1AADEA891E929D23"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "6DF04D1361E05F4C"
+				item: "spore:vampiric_syringe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["636F93A9D94E5938"]
+			description: [
+				"击退+100%"
+				"武器突变（增加击退）"
+			]
+			id: "629D1E82F523EFEA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "45B2661C1D032748"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A3FEE0089897F16"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "1D17C1DDBDF9246A"
+				item: "spore:calcified_syringe"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["636F93A9D94E5938"]
+			description: [
+				"获得力量，急迫效果"
+				"攻击攻速+10%"
+				"武器突变（攻击给予自身力量，饱和，速度中的一个效果）"
+			]
+			id: "5B0F3F9FA1BA1D0C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68C3FE659DDECD8A"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "015F4FCF1BF445D1"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "5ED8170276C05F4B"
+				item: "spore:bezerk_syringe"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["636F93A9D94E5938"]
+			description: ["攻击时附带中毒II*5秒"]
+			id: "0F308E99DA599B48"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6568B182D326D2F2"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "78EE454EAC26AB3A"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "238CEBB9242F0F90"
+				item: "spore:toxic_syringe"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["636F93A9D94E5938"]
+			description: [
+				"攻击时附带凋零III*5秒"
+				"武器突变（攻击附带凋零）"
+			]
+			id: "785FBB3FE13F1362"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1BC25E02983BBE77"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "177241C7E5ADE46C"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "43D3FF1495299F87"
+				item: "spore:rotten_syringe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["636F93A9D94E5938"]
+			description: [
+				"常驻伤害吸收1"
+				"护甲值+20%"
+				"护甲突变（加护甲值，但是减移速）"
+			]
+			id: "4373945DD5A73F06"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "25241A1F7DF85824"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4496FB3D091D49BC"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "0E769305255E45EF"
+				item: "spore:reinforced_syringe"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["636F93A9D94E5938"]
+			description: [
+				"获得水下呼吸，夜视效果"
+				"护甲突变（水下呼吸）"
+			]
+			id: "4C8C8828BBB20300"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59AE275EAFFE2FA1"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1226ECB28768E16B"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "7E0C6849E7BAA87B"
+				item: "spore:drowned_syringe"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["636F93A9D94E5938"]
+			description: [
+				"获得防火效果"
+				"护甲突变（火焰伤害减免）"
+			]
+			id: "7B7C9DF8D6507B65"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "30A2D278EE7C80C5"
+					table_id: 1501954383077936545L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "019ABC28B540E784"
+					table_id: 1741549655483791074L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "55F6A93493DC9DDE"
+				item: "spore:charred_syringe"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"0F308E99DA599B48"
+				"0E1955D27DFA8D3E"
+				"4373945DD5A73F06"
+				"4C8C8828BBB20300"
+				"7B7C9DF8D6507B65"
+				"5B0F3F9FA1BA1D0C"
+				"785FBB3FE13F1362"
+				"629D1E82F523EFEA"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"仪式合成"
+				"你将拥有一定真菌生物的特性"
+				"不用担心，&b你依旧是你"
+				"&r5个进化阶段"
+				"真菌体→进化体→超进化→灾厄→类心智"
+				""
+				"各项&e属性提升&r，对&c寒冷&r的抵抗力大幅下降"
+				"获得两个计数条"
+				"①生物质 ②进化点"
+				"&c生物质每30秒下降1点，需要进食获得&r，随进化阶段提高生物质计数上限提高"
+				""
+				"获取:"
+				"腐生质&e+1&r FIB看板娘&e+10&r 浓缩生物质&e+100&r"
+				""
+				"进化点需要杀戮获取，达到上限自动进化到下一阶段"
+				""
+				"当达到超进化阶段以后，允许你使用按键(默认H)&c消耗100生物质&r激活&2极速代谢&r技能"
+				"&e立即清除所有负面效果，生命值立刻回满&r，&1冷却120秒&r"
+			]
+			id: "6EF0F27467D73016"
+			rewards: [{
+				id: "4304D47CE0D7B208"
+				item: "fib:concentrated_biomass"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DA5A983BFF446A7"
+				item: "fib:fungified_potion"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["11C49BEFEDEE957A"]
+			description: ["后续任务小括号为进化分支"]
+			hide_dependency_lines: true
+			id: "2D35BBA39A4C9DF5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5B308E6AC9592C60"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "146378901B36C651"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "1E6AE2804DA6A0AF"
+				title: "真菌进化学(供参考研究和辅助游玩,除蜂巢思维路线无特殊奖励）"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D35BBA39A4C9DF5"]
+			description: [
+				"菌染人类 → ①邪灵；②舔食者；③菌骑士 → 审判者；④侵袭者"
+				"该线主要收益，利爪残片，护甲碎片，翼膜，肺泡囊"
+			]
+			id: "5C47C62781B75EF2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F35BCA549D98457"
+				table_id: 1741549655483791074L
+				type: "random"
+			}]
+			tasks: [{
+				id: "761C57EBD039DC4A"
+				title: "菌染人类线"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D35BBA39A4C9DF5"]
+			description: [
+				"菌染村民 → 喷吐者、杀戮者、激跃者"
+				"菌染女巫→ 巫猎饕"
+				"菌染掠夺者 → ①咆哮者；②追迹者 → 林中鹿菌；③蛮兽 → 食人魔"
+				"菌染卫道士 → 铁斧投手"
+				"菌染唤魔者 → 邪菌术士"
+				"主要收获：大脑，腐蚀性囊，脾脏，护甲碎片"
+			]
+			id: "61F0D1DF8BCF4A19"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4108BB0FEB1FB35B"
+				table_id: 1741549655483791074L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3789B5EADD889FA8"
+				title: "村民，掠夺者线"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D35BBA39A4C9DF5"]
+			description: [
+				"任意低级感染生物（概率性） → 窜扰者 → 菌主 → 肉囊（召唤关系，非进化） → 蜂巢思维"
+				"&c该路线会成为你的梦魇"
+				"主要收获:器官膜，其它战利品均有产出"
+			]
+			id: "3C8F6BCB619AB17D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36F9BDEED9D93F6F"
+				table_id: 1741549655483791074L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7888E38C038AE17B"
+				title: "通用，蜂巢思维路线"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C8F6BCB619AB17D"]
+			description: [
+				"&4&c&l棋 逢 对 手&r"
+				"菌群的绝对核心，一旦盯上你你就会陷入无休止的恶梦"
+				"https://www.mcmod.cn/item/716381.html"
+				"简要概况"
+				"1所在区块&c&l强制加载&r&r(现在不会强加载了)"
+				"2持续召唤真菌生物，并&c&l直接投放于锁定的玩家&r&r"
+				"3召唤&c&l灾厄级生物&r&r"
+				"4&c&l地形破坏&r&r"
+			]
+			icon: "spore:hive_spawn"
+			id: "6721031E1843A9B1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "168D019A51DF6938"
+				table_id: 1741549655483791074L
+				type: "random"
+			}]
+			tasks: [{
+				id: "16E17651A06EF246"
+				title: "蜂巢思维"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6721031E1843A9B1"]
+			description: [
+				"当你看到&c“&l忍受吧&r”&r意味着&c世界上有心智诞生&r"
+				"当你看到&c“&l准备好&r”&r意味着&c灾厄开始酝酿&r"
+				"当你看到&c“&l我来了&r”&r意味着&c灾厄酝酿完毕，随时会有大难临头的可能&r"
+				"你可以通过找到并击杀灾厄构建者来扼杀灾厄的产生"
+			]
+			id: "21063CCC909F0650"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5DE8E7B69AD51F07"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "787B7CB345B2ADCF"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "551DCD1B34D07B41"
+				title: "准备好"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6721031E1843A9B1"]
+			description: [
+				"&4当同一维度同时存在3个(调整为2个)蜂巢思维，将会对真菌全局加强&r"
+				"同时&c&l灾厄解锁特殊能力&r&r"
+			]
+			id: "4DBB76AA8413D6EB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BD64FB33BC3B6E3"
+				table_id: 1741549655483791074L
+				type: "random"
+			}]
+			tasks: [{
+				id: "14E4695E4BA0A253"
+				title: "联合心智"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"经过调整，本包&c真菌数值大大加强&r，同时&b巫法和真菌的装备也有加强&r。"
+				"前期不要试图近战与真菌战斗(会很惨）"
+				"对真菌的生存逻辑进行了一定改善，&1团队规模降低&r，但&c进化速度加快&r"
+			]
+			id: "3C8B1A78F8A8A01D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "79B8438B614DF151"
+				table_id: 5750388060807619340L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1F2080C0D684C198"
+				title: "友情提示"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21063CCC909F0650"]
+			description: ["击杀菌城重炮"]
+			id: "426D3096978986AF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1CCEF62363512231"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2D8F90C630E84EC3"
+					table_id: 2326065275749629103L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			tasks: [{
+				advancement: "spore:howitzer"
+				criterion: ""
+				id: "49683202879D4A34"
+				type: "advancement"
+			}]
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21063CCC909F0650"]
+			description: ["击杀噬袭魔"]
+			id: "41D055B25E2BD73D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "69BF5E29C80861EE"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BD1AB1A07095A25"
+					table_id: 2326065275749629103L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			tasks: [{
+				advancement: "spore:hohlfresser"
+				criterion: ""
+				id: "5C29A2A5071E3B1A"
+				type: "advancement"
+			}]
+			x: 14.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21063CCC909F0650"]
+			description: ["击杀强袭魔"]
+			id: "69AB82CE7061C6DA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "145FBE23FD520F14"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21ED86482E9982C4"
+					table_id: 2326065275749629103L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			tasks: [{
+				advancement: "spore:sieger"
+				criterion: ""
+				id: "319BC1318C58797A"
+				type: "advancement"
+			}]
+			x: 14.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21063CCC909F0650"]
+			description: ["击杀菌械空堡"]
+			id: "15766043BACDE344"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "69F9888602770DA8"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "79DD1B8787EAE1C2"
+					table_id: 2326065275749629103L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			tasks: [{
+				advancement: "spore:hindenburg"
+				criterion: ""
+				id: "4E335020882F6C6B"
+				type: "advancement"
+			}]
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["21063CCC909F0650"]
+			description: ["击杀凝袭魔"]
+			id: "1EFE3A3E1E85A2FF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "00B9879C3117A73C"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "57F94F236567AD30"
+					table_id: 2326065275749629103L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			tasks: [{
+				advancement: "spore:gazen"
+				criterion: ""
+				id: "09407E908B87EB75"
+				type: "advancement"
+			}]
+			x: 14.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6721031E1843A9B1"]
+			description: [
+				"&c&l你击败了菌群的首脑&r"
+				"你接下来将面临&e抉择&r"
+				"&c不对，为什么会掉下这个&r"
+				"&k&c111111111111111111111&r"
+			]
+			hide_dependency_lines: true
+			id: "6E80379C1EECA6A4"
+			rewards: [
+				{
+					id: "555A96EB55F4314A"
+					item: "lightmanscurrency:coin_netherite"
+					type: "item"
+				}
+				{
+					id: "074E41B0184A0ADC"
+					item: "goety_revelation:broken_halo"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "5872C4E27A7DE158"
+					item: "goety:unholy_blood"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "spore:proto"
+				id: "0476917964B343B8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&c征服"
+			x: 16.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A509F240543853C"]
+			description: [
+				"在手术台合成真菌相关武器工具装备时，添加到右上栏位"
+				"提供在区间内浮动的百分比面板属性提升"
+				"尖锐→攻击伤害"
+				"硬化→耐久值"
+				"整合→附魔能力"
+			]
+			icon: "spore:hardening_agent"
+			id: "6BA3559A9F3150B9"
+			rewards: [
+				{
+					id: "13BE85F3560D861E"
+					item: "spore:hardening_agent"
+					type: "item"
+				}
+				{
+					id: "4972B2172D3FEE9D"
+					item: "spore:sharpening_agent"
+					type: "item"
+				}
+				{
+					id: "6870706FA5CF8B59"
+					item: "spore:integrating_agent"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3D7B41D7FCB1B0FB"
+				title: "催化剂"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6E80379C1EECA6A4"]
+			description: [
+				"Strike(突袭）机制"
+				"将脑组织残块放置，使用打火石点燃"
+				"依据周围所有&c菌类生物的强度&r，结算并开始突袭"
+				"突袭获得的战利品几乎为真菌所有战利品"
+			]
+			hide_dependency_lines: true
+			id: "284BB4FDD4DA5C42"
+			rewards: [
+				{
+					count: 3
+					id: "3FB73E75B96EAE9A"
+					item: "spore:brain_remnants"
+					type: "item"
+				}
+				{
+					id: "4158EFB31E97C819"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5797955BD81559E6"
+					table_id: 1501954383077936545L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3551613C909639B6"
+					table_id: 1741549655483791074L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6ABDD762BF0A1972"
+				title: "更为简单的战利品获取"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"选择提交该任务后，你将直接跃升为感染生物"
+				""
+				"代价是一枚金币"
+				"以及&c自动穿上一整套绑定诅咒且无法破坏的皮革套装(还会顶掉现有装备)&r"
+				""
+				"一旦死亡，感染模式将会失效"
+				"启用该任务会很大程度改变你的游玩策略，慎重选择"
+			]
+			icon: "fib:fungified_potion"
+			id: "2C745FADE1D26A80"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/fungified_stage set @p 1"
+					elevate_perms: true
+					icon: "spore:living_core"
+					id: "52FA1C9A1CAF6A0A"
+					title: "进化"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/item replace entity @p armor.head with minecraft:leather_helmet{Enchantments:[{id:\"minecraft:binding_curse\",lvl:1}],Unbreakable:1} 1"
+					elevate_perms: true
+					icon: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "7671766777304B1A"
+					title: "头盔"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/item replace entity @p armor.chest with minecraft:leather_chestplate{Enchantments:[{id:\"minecraft:binding_curse\",lvl:1}],Unbreakable:1} 1"
+					elevate_perms: true
+					icon: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "35D0208ED6DE455B"
+					title: "胸甲"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/item replace entity @p armor.legs with minecraft:leather_leggings{Enchantments:[{id:\"minecraft:binding_curse\",lvl:1}],Unbreakable:1} 1"
+					elevate_perms: true
+					icon: {
+						Count: 1
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "1901C844E5E9E57C"
+					title: "护腿"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/item replace entity @p armor.feet with minecraft:leather_boots{Enchantments:[{id:\"minecraft:binding_curse\",lvl:1}],Unbreakable:1} 1"
+					elevate_perms: true
+					icon: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "2EB6D59C2B45CB63"
+					title: "靴子"
+					type: "command"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				consume_items: true
+				id: "4E579CB55E35C50D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			title: "抢先体验感染模式?"
+			x: -9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["21063CCC909F0650"]
+			description: ["击杀沉渊魔"]
+			id: "6FA27A76E2713C61"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4B1E3B11144F3B5A"
+					table_id: 6148969969489913202L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5AF02484BD91C921"
+					table_id: 2326065275749629103L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			tasks: [{
+				advancement: "spore:kraken"
+				criterion: ""
+				id: "401F34E561BDEEB5"
+				type: "advancement"
+			}]
+			x: 16.0d
+			y: -1.5d
+		}
+	]
+	title: "真菌&c【主线】"
+}

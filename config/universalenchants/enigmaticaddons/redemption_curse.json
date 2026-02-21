@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:armor",
+    "enigmaticaddons:evil_dagger"
+  ],
+  "incompatible": [
+    "spore:mutagenic_reactant",
+    "enigmaticlegacy:eternal_binding",
+    "enigmaticlegacy:sorrow",
+    "spore:unwavering_nature",
+    "minecraft:binding_curse",
+    "minecraft:vanishing_curse",
+    "enigmaticlegacy:nemesis"
+  ]
+}

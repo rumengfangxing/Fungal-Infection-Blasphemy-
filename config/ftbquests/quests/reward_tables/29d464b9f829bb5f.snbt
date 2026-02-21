@@ -1,0 +1,45 @@
+{
+	id: "29D464B9F829BB5F"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		item_name: "巫法战利品"
+		string_id: "1"
+	}
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ count: 4, item: "goety:savage_tooth", weight: 10.0f }
+		{ count: 4, item: "goety:spider_egg", weight: 20.0f }
+		{ count: 2, item: "goety:venomous_fang", weight: 10.0f }
+		{ count: 8, item: "goety:ectoplasm", weight: 20.0f }
+		{ count: 2, item: "goety:forbidden_piece", weight: 5.0f }
+		{ item: "goety:treasure_pouch", weight: 5.0f }
+		{
+			item: {
+				Count: 1
+				id: "goety:fell_blade"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "goety:witch_hat", weight: 10.0f }
+		{ item: "goety:warlock_sash", weight: 10.0f }
+		{
+			item: {
+				Count: 1
+				id: "goety:infernal_tome"
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 10.0f
+		}
+	]
+	title: "巫法战利品材料"
+}

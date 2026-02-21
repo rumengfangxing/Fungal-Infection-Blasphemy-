@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:weapon",
+    "goety:biting_focus",
+    "goety:shredding_focus",
+    "goety:dark_scythe",
+    "goety:dark_metal_scythe",
+    "goety:death_scythe",
+    "goety:great_hammer",
+    "goety:bonehead_hammer",
+    "goety:stormlander",
+    "goety:fanged_dagger",
+    "goety:philosophers_mace",
+    "goety:hungry_dagger",
+    "goety:sculk_devourer",
+    "goety:black_crystal",
+    "farmersdelight:skillet",
+    "cuisinedelight:cuisine_skillet",
+    "goety_revelation:gungnir",
+    "enigmaticlegacy:the_infinitum",
+    "enigmaticlegacy:eldritch_pan",
+    "enigmaticaddons:astral_spear",
+    "enigmaticaddons:the_bless",
+    "enigmaticaddons:evil_dagger",
+    "enigmaticaddons:disaster_sword"
+  ],
+  "incompatible": []
+}

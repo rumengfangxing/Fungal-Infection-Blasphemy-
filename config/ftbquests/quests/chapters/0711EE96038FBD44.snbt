@@ -1,0 +1,249 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_repeatable_quest: true
+	filename: "0711EE96038FBD44"
+	group: "7C3CC28B4F4C38EC"
+	icon: "minecraft:command_block"
+	id: "0711EE96038FBD44"
+	images: [{
+		height: 1.0d
+		image: "minecraft:block/command_block_back"
+		rotation: 0.0d
+		width: 1.0d
+		x: -3.5d
+		y: -3.0d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			icon: "minecraft:cactus"
+			id: "6DADB4113A0826CC"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/kill @e[type=item]"
+					elevate_perms: true
+					id: "2A85B213247B043A"
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/say 清理了掉落物"
+					elevate_perms: true
+					id: "1C91F563B670FF4B"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "78F77A42B7151810"
+				title: "清理掉落物"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "530971AFC12EF3DB"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/kill @p"
+					elevate_perms: true
+					id: "74D10023DF129A00"
+					team_reward: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/say 要求维度意志赐予死亡"
+					elevate_perms: true
+					id: "0E91E8B6F91FE0CE"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "763E920C1E476379"
+				title: "杀死自己"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "2490FC2C66B5515A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3DE31BCB85F7E1E1"
+					table_id: 4569497110123061963L
+					type: "choice"
+				}
+				{
+					auto: "enabled"
+					command: "/say 修改了死亡掉落的规则"
+					elevate_perms: true
+					id: "37F6F4315B1F44CD"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "398E314C5E2DC5D4"
+				title: "启用死亡不掉落"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			icon: "goety:lightning_focus"
+			id: "399653CE6425FBED"
+			rewards: [
+				{
+					command: "/summon minecraft:lightning_bolt ~ ~ ~"
+					elevate_perms: true
+					id: "46E7B5290E5F3721"
+					title: "召唤一道雷击"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/say 请求一道天雷"
+					elevate_perms: true
+					id: "68F031E19FDABB4B"
+					type: "command"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "65A2A6D1B9F32FA3"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			title: "召唤一道雷击"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			id: "7E0DB1B9C1C5D5C7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5516FD906A8EC41A"
+					table_id: 2663769850313104327L
+					type: "choice"
+				}
+				{
+					auto: "enabled"
+					command: "/say 修改了幻翼生成规则"
+					elevate_perms: true
+					id: "61F99ABF04E17726"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "301CEACB44AF54A5"
+				title: "开关幻翼生成"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			icon: "enigmaticlegacy:soul_crystal"
+			id: "5E193FE9720D9FBC"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/kill @e[type=enigmaticlegacy:permanent_item_entity]"
+					elevate_perms: true
+					id: "5C2F6C523985CBB5"
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/say 清理了地图上散落的灵魂水晶"
+					elevate_perms: true
+					id: "7139E9451CE49823"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "03EFA3DC17DCC2A8"
+				type: "checkmark"
+			}]
+			title: "清理散落的灵魂水晶"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: ["原地向上瞬移150格，可以用于快速来到地狱基岩顶(别摔死了）"]
+			icon: "minecraft:feather"
+			id: "4EFF6131F4C28C7B"
+			rewards: [{
+				auto: "enabled"
+				command: "/tp @p ~ ~150 ~"
+				elevate_perms: true
+				id: "107C6656872BC07F"
+				team_reward: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "64732C62E51519E1"
+				item: "goety:void_bottle"
+				type: "item"
+			}]
+			title: "祝我破鼎！"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F3C28F4A169E49C"]
+			description: ["暴力破解终末谜题"]
+			icon: "goety_revelation:puzzle_item"
+			id: "0B49E27588C7653A"
+			rewards: [{
+				auto: "enabled"
+				command: "/goety revelation solvePuzzle @p"
+				elevate_perms: true
+				icon: "goety_revelation:puzzle_item"
+				id: "7BA12BFC51AA759A"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "714ED52DBD5AB997"
+					item: { Count: 5, id: "lightmanscurrency:coin_netherite" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "047264FE53B098C9"
+					item: { Count: 3, id: "goety_revelation:ascension_halo" }
+					type: "item"
+				}
+			]
+			title: "暴力破解终末谜题"
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "控制台"
+}

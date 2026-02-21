@@ -1,0 +1,433 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "42F53572FEB33010"
+	group: "7C3CC28B4F4C38EC"
+	icon: "enigmaticlegacy:cursed_ring"
+	id: "42F53572FEB33010"
+	images: [{
+		dependency: "051D31D37E809B8B"
+		height: 16.0d
+		image: "enigmaticlegacy:item/abyssal_heart"
+		rotation: 0.0d
+		width: 16.0d
+		x: 0.0d
+		y: 2.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"技巧:新添加的饰品栏位"
+				"可装备技巧强化自身能力"
+				"节流：减少30%各种途径的灵魂能量消耗(巫法相关）"
+				"快速连射：蓄力时间加快125%，自动连射启用"
+				"灵巧:+50%移速游泳速度，潜行值+0.5（缩小50%仇恨范围）,台阶高度+1"
+			]
+			id: "7B89F191D246A52B"
+			rewards: [
+				{
+					id: "6003F5E3DF8CB7DB"
+					item: "minecraft:totem_of_undying"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "4E5AC6C014AC9A6D"
+					item: "lightmanscurrency:coin_gold"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0E24484C83544294"
+					item: {
+						Count: 1
+						id: "lightmanscurrency:wallet_gold"
+						tag: {
+							AutoConvert: 1b
+							Items: [ ]
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00D91C20B86C2227"
+					table_id: 3702086294746276322L
+					team_reward: false
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "348A046024F0A83C"
+					table_id: 3691004488462757576L
+					team_reward: false
+					type: "choice"
+				}
+				{
+					id: "13F541D4DD36ACBD"
+					item: "confluence:tabi"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "enigmaticlegacy:main/cursed_ring"
+				criterion: ""
+				icon: "enigmaticlegacy:cursed_ring"
+				id: "253E962BB8D9C1A8"
+				title: "感谢游玩"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A1643DDE66AAC33"]
+			description: [
+				"&4保持警惕，你随时可能直面死亡"
+				"以出生点为中心&1256格范围&r内可能暂时是安全的"
+			]
+			icon: "spore:living_core"
+			id: "195197DA5A8EFF5F"
+			rewards: [
+				{
+					id: "1CD9A05C6A4FD8A5"
+					table_id: 5859545525528796691L
+					team_reward: false
+					type: "random"
+				}
+				{
+					id: "7D85A24B2F9075C5"
+					table_id: 1741549655483791074L
+					team_reward: false
+					type: "random"
+				}
+				{
+					id: "5C09FBE28EC1B43A"
+					item: "confluence:radar"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0F3287A0758B03BE"
+				stat: "minecraft:sprint_one_cm"
+				title: "奔跑吧"
+				type: "stat"
+				value: 100
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["195197DA5A8EFF5F"]
+			description: [
+				"第一次击杀怪物"
+				"后面几页按键分类"
+				"{@pagebreak}"
+				"基础"
+				"W/A/S/D基础移动（前后左右）"
+				"空格基础跳跃"
+				"左 Shift潜行"
+				"左键攻击 / 破坏；永恒枪械工坊・射击"
+				"右键使用 / 交互/放置；永恒枪械工坊・瞄准"
+				"E物品栏"
+				"F副手交换"
+				"Q丢弃物品"
+				"1-9快捷栏切换"
+				"E物品栏"
+				"T聊天栏"
+				"/输入命令"
+				"F5切换视角"
+				"F11切换全屏"
+				"F2截图"
+				"L进度界面"
+				"M打开世界地图"
+				"]打开设置"
+				""
+				"{@pagebreak}"
+				"巫法"
+				"C打开聚晶包"
+				"X打开聚晶轮盘"
+				"shift+r巫妖吸引"
+				"shift+m巫妖夜视"
+				""
+				""
+				"{@pagebreak}"
+				"辅助"
+				"+快速路径点"
+				"shift+新建路径点"
+				"ctrl+r百科搜索"
+				"F4灵魂出窍"
+				"；打开钱包"
+				"~启用连锁挖矿"
+				"ctrl+g打开无线终端"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "540AE7834E7C31DB"
+			rewards: [
+				{
+					id: "0BA180B2EF6EA0ED"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "goety:black_book"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "23184349C7F21558"
+					item: "goety:dark_wand"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "02C7B1218DAD97DF"
+					item: "goety:focus_bag"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "5430B64569CEA0BA"
+					item: "goety:arrow_rain_focus"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "629ACE1B7E56013B"
+					item: {
+						Count: 1
+						id: "goety:totem_of_roots"
+						tag: {
+							"Max Souls": 100
+							Souls: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "6EFA3FD6C61278BE"
+					table_id: 5859545525528796691L
+					team_reward: false
+					type: "random"
+				}
+				{
+					id: "132E805F694AC35B"
+					table_id: 5750388060807619340L
+					team_reward: false
+					type: "random"
+				}
+				{
+					id: "48C7E04E863D1D29"
+					item: "goety:ice_spike_focus"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "15FD9A5FF126A132"
+					item: "goety:whirlwind_focus"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:adventure/kill_a_mob"
+					criterion: ""
+					id: "14FE7BFB85FCD3CB"
+					optional_task: true
+					type: "advancement"
+				}
+				{
+					advancement: "spore:inf_mobs"
+					criterion: ""
+					id: "27D0F6CFEF8E7CC2"
+					optional_task: true
+					type: "advancement"
+				}
+			]
+			title: "成为猎手"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C63885E6C1712D5"]
+			description: ["收集足够你存活的物资"]
+			id: "5A1643DDE66AAC33"
+			rewards: [
+				{
+					count: 64
+					id: "4C14532E67F4E743"
+					item: "minecraft:oak_log"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "2DA654FCD9FCEC55"
+					table_id: 1741549655483791074L
+					team_reward: false
+					type: "random"
+				}
+				{
+					id: "2737C1CAC5D1696E"
+					item: {
+						Count: 1
+						id: "refinedstorage:portable_grid"
+						tag: { }
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1B0C25AB33C170BC"
+					item: "refinedstorage:1k_storage_disk"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4BBD315326586F03"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B89F191D246A52B"]
+			description: [
+				"真菌侵染了各个维度，昔日平安喜乐的一切已不复存在"
+				"重重危难之下，你盯上了高天之上无动于衷的神明"
+				"&4攫取祂的权柄，成为神。即便无法达到，也要拉祂到这生灵炼狱之中"
+			]
+			icon: "minecraft:writable_book"
+			id: "6C63885E6C1712D5"
+			rewards: [
+				{
+					id: "18D2014CE656E254"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7CFCDA4272ACD620"
+					item: "minecraft:bread"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 3
+					id: "032A74A160C1B77F"
+					item: {
+						Count: 1
+						id: "enigmaticlegacy:ultimate_potion"
+						tag: {
+							EnigmaticPotion: "ultimate_invisibility"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1B097BA90ACC294F"
+					item: "lightmanscurrency:portable_gem_terminal"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "273B221B79FBA89B"
+					item: "lightmanscurrency:portable_atm"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "34DFAC545DFAB80A"
+					item: "sophisticatedbackpacks:backpack"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "50151BCC6D07880E"
+					item: "confluence:feral_claws"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6000D42855A22044"
+				title: "主要内容"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"540AE7834E7C31DB"
+				"7B89F191D246A52B"
+			]
+			icon: "goety:dark_robe"
+			id: "051D31D37E809B8B"
+			rewards: [
+				{
+					id: "6F60C595EE1C9668"
+					item: "goety:dark_hat"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "38E211166B43ECE3"
+					item: "goety:dark_robe"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "2EC51ECBAB421474"
+					table_id: 7004806172613356162L
+					team_reward: false
+					type: "random"
+				}
+				{
+					id: "06C0DFD08779D1BF"
+					table_id: 5750388060807619340L
+					team_reward: false
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0215F598F7ACE1B5"
+				title: "踏出成为巫师的第一步"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+	]
+	title: "•&d前途黑暗"
+}

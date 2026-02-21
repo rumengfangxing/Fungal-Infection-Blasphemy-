@@ -1,0 +1,44 @@
+{
+	id: "5FFA171AAB064DDF"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		item_name: "神秘遗物"
+		string_id: "4"
+	}
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ count: 4, item: "enigmaticaddons:earth_heart_fragment", weight: 50.0f }
+		{
+			item: {
+				Count: 1
+				id: "enigmaticlegacy:earth_heart"
+				tag: { }
+			}
+			weight: 5.0f
+		}
+		{ item: "enigmaticlegacy:evil_essence", weight: 5.0f }
+		{ item: "enigmaticaddons:ichor_droplet", weight: 5.0f }
+		{ item: "enigmaticlegacy:astral_dust", weight: 5.0f }
+		{ item: "enigmaticaddons:bless_amplifier", weight: 15.0f }
+		{ item: "enigmaticlegacy:ichor_bottle" }
+		{
+			item: {
+				Count: 1
+				id: "enigmaticaddons:artificial_flower"
+				tag: { }
+			}
+		}
+		{ item: "enigmaticlegacy:mending_mixture", weight: 8.0f }
+		{ item: "enigmaticlegacy:astral_fruit" }
+		{ item: "enigmaticlegacy:forbidden_fruit" }
+		{ item: "enigmaticlegacy:unholy_grail" }
+		{ item: "enigmaticlegacy:redemption_potion" }
+	]
+	title: "神秘遗物"
+}
