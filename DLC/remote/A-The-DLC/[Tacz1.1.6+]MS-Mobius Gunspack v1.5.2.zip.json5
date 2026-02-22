@@ -1,0 +1,24 @@
+{
+  "curseforge_projectid": "",
+  "curseforge_fileid": "",
+  "modrinth_projectid": "",
+  "modrinth_versionid": "",
+  "directUrl": "https://mediafilez.forgecdn.net/files/7307/823/%5BTacz1.1.6%2B%5DMS-Mobius%20Gunspack%20v1.5.2.zip",
+  "priority": "modrinth",
+  "dlc_identifier": "MS",
+  "type": "gunpack",
+  "file_name": "[Tacz1.1.6+]MS-Mobius Gunspack v1.5.2.zip",
+  "isInList": true,
+  "isHidden": false,
+  "AllowEnableByAll": true,
+  "dependencies": "",
+  "conflicts": "",
+  "DisplayName": {
+    "en_us": "MS-Mobius Gunspack",
+    "zh_cn": "MS-莫比乌斯重启 枪械附属包"
+  },
+  "tip": {
+    "en_us": "MS-Mobius Gunspack",
+    "zh_cn": "MS-莫比乌斯重启 枪械附属包"
+  }
+}
