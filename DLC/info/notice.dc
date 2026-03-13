@@ -8,8 +8,8 @@ ShowFrequency = "perlaunchmanager"
 
 [Subhead]
   enabled = "true"
-  en_us = "Made by X_X"
-  zh_cn = "by：某不知名下界传送门"
+  en_us = "Made by rumengfangxing"
+  zh_cn = "by：如梦方醒"
 
 [Contents]
   en_us = ""
@@ -17,4 +17,5 @@ ShowFrequency = "perlaunchmanager"
 官方讨论群：[854637057](https://qm.qq.com/q/wGvf5NDvZ6)，可以直接点击跳转链接
 §a[百科站网址](https://www.mcmod.cn/modpack/1294.html)
 """
+
 
