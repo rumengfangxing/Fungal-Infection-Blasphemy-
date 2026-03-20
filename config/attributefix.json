@@ -55,6 +55,17 @@
         "value": 2048
       }
     },
+    "taa:inaccuracy_sneak": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:prot_shred": {
       "enabled": false,
       "min": {
@@ -242,17 +253,6 @@
         "value": 2147483647
       }
     },
-    "forge:entity_reach": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "goety:frost_potency": {
       "enabled": false,
       "min": {
@@ -262,6 +262,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "forge:entity_reach": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "touhou_little_maid:maid_trident_cooldown": {
@@ -319,6 +330,17 @@
         "value": 2147483647
       }
     },
+    "ending_library:extra_exhaustion_increase": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 20,
+        "value": 20
+      }
+    },
     "taa:explosion_destroy_blocknew": {
       "enabled": false,
       "min": {
@@ -330,7 +352,29 @@
         "value": 3
       }
     },
+    "taa:inaccuracy_aim": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "taa:pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "ending_library:natural_regeneration_increase": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -350,6 +394,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "taa:inaccuracy_move": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "taa:reload_time": {
@@ -704,17 +759,6 @@
         "value": 64
       }
     },
-    "attributeslib:mining_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "goety:casting_speed": {
       "enabled": false,
       "min": {
@@ -724,6 +768,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "attributeslib:mining_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "caelus:fall_flying": {
@@ -803,6 +858,28 @@
         "value": 1
       }
     },
+    "taa:inaccuracy_stand": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "taa:recoil_pitch": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "goety_revelation:frost_power": {
       "enabled": false,
       "min": {
@@ -858,17 +935,6 @@
         "value": 1024
       }
     },
-    "taa:silencenew": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "goety:spell_velocity": {
       "enabled": false,
       "min": {
@@ -878,6 +944,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "taa:silencenew": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "attributeslib:overheal": {
@@ -1188,6 +1265,17 @@
         "value": 10000
       }
     },
+    "taa:recoil_yaw": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "taa:explosion_damage": {
       "enabled": false,
       "min": {
@@ -1320,6 +1408,17 @@
         "value": 2048
       }
     },
+    "ending_library:multi_jump": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:crit_damage": {
       "enabled": false,
       "min": {
@@ -1386,6 +1485,17 @@
         "value": 2048
       }
     },
+    "goety:nether_potency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "taa:bullet_gundamage_shotgun": {
       "enabled": false,
       "min": {
@@ -1406,17 +1516,6 @@
       "max": {
         "default": 100,
         "value": 100
-      }
-    },
-    "goety:nether_potency": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
       }
     },
     "minecraft:generic.attack_damage": {
@@ -1505,6 +1604,17 @@
       "max": {
         "default": 32767,
         "value": 32767
+      }
+    },
+    "taa:inaccuracy_lie": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "spore:ballistic": {
@@ -1606,6 +1716,17 @@
         "value": 1
       }
     },
+    "goety:wind_potency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "touhou_little_maid:maid_pickup_range": {
       "enabled": false,
       "min": {
@@ -1626,17 +1747,6 @@
       "max": {
         "default": 1000000,
         "value": 1000000
-      }
-    },
-    "goety:wind_potency": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
       }
     },
     "attributeslib:arrow_damage": {
@@ -1703,6 +1813,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "ending_library:camera_distance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "goety:necromancy_potency": {

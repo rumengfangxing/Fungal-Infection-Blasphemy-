@@ -360,13 +360,13 @@
 	#钨钢电池
 	#Range: 0.0 ~ 2.147483647E9
 	wulfrum_battery = 0.035
-	#最大记入的击杀数
+	#归一石最大记入的击杀数
 	#Range: > 0
 	the_community_kill_count = 20
 	#天体洋葱所能提供的最大配饰栏位
 	#Range: 6 ~ 100
 	over_max_accessories = 8
-	#每个击杀数的增长幅度
+	#归一石每个击杀数的增长幅度（废弃）
 	the_community_up_number = 1.0
 	#叶绿箭袋系列弹射物追踪概率
 	#Range: 0.0 ~ 1.0
@@ -577,6 +577,39 @@
 	#法力花系列法力病削减
 	#Range: 0.0 ~ 2.147483647E9
 	mana_sickness_down = 0.25
+	#铁魔法召唤伤害普通随从收益
+	#Range: 0.0 ~ 2550000.0
+	iron_summon_damage = 0.5
+	#铁魔法召唤伤害泰拉召唤师收益
+	#Range: 0.0 ~ 2550000.0
+	iron_summon_damage_terra = 0.25
+	#叶绿箭袋系列弹射物追踪范围
+	#Range: 0.0 ~ 2550000.0
+	track_range = 16.0
+	#核子之源随从数量
+	#Range: 0.0 ~ 2550000.0
+	nucleogenesis_number = 4.0
+	#凝胶充能电池随从数量
+	#Range: 0.0 ~ 2550000.0
+	jelly_charged_battery_number = 1.0
+	#玷星之源随从数量
+	#Range: 0.0 ~ 2550000.0
+	star_tainted_generator_number = 2.0
+	#诅咒随从数量
+	#Range: 0.0 ~ 2550000.0
+	statis_curse_number = 3.0
+	#祝福随从数量
+	#Range: 0.0 ~ 2550000.0
+	statis_blessing_number = 2.0
+	#死灵卷轴随从数量
+	#Range: 0.0 ~ 2550000.0
+	necromantic_scroll_number = 1.0
+	#大力士甲虫随从击退
+	#Range: 0.0 ~ 2550000.0
+	hercules_beetle_k_number = 2.0
+	#矮人项链随从数量
+	#Range: 0.0 ~ 2550000.0
+	pygmy_necklace_number = 1.0
 
 [goety]
 	#黑暗聚晶提升幅度
