@@ -351,13 +351,13 @@
       "is_enabled": true,
       "health_bonus": {
         "__default": 0.0,
-        "expert": 0.15,
-        "master": 0.3
+        "expert": 0.3,
+        "master": 0.7
       },
       "damage_bonus": {
         "__default": 0.0,
-        "expert": 0.1,
-        "master": 0.2
+        "expert": 0.15,
+        "master": 0.3
       },
       "excluded_mobs": []
     },

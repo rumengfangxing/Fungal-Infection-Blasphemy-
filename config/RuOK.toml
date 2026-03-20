@@ -47,7 +47,7 @@ VisibleCulling = true
 EntityRenderPerformance = false
 CullMode = "COMPATIBILITY"
 ParticleFastCollision = false
-CullBlockEntity = true
+CullBlockEntity = false
 CullEntity = true
 CullParticle = true
 
