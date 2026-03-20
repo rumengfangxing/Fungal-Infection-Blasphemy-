@@ -822,17 +822,17 @@
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
-				id: "goetydelight:starless_night"
+				id: "ltc2:fouroseven_latiao_club"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "2A6C1BA8C0877FAF"
 			rewards: [{
-				id: "202527B89AD3FD85"
+				id: "644137FCB46264BA"
 				item: {
 					Count: 1
-					id: "goetydelight:starless_night"
+					id: "ltc2:fouroseven_latiao_club"
 					tag: {
 						Damage: 0
 					}
@@ -862,7 +862,7 @@
 					type: "item"
 				}
 			]
-			title: "无星之夜"
+			title: "肆零柒-辣棒"
 			x: 16.0d
 			y: -3.0d
 		}

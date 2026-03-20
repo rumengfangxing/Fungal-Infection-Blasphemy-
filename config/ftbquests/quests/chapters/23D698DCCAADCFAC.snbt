@@ -8,14 +8,6 @@
 	images: [
 		{
 			height: 1.0d
-			image: "minecraft:item/writable_book"
-			rotation: 0.0d
-			width: 1.0d
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			height: 1.0d
 			image: "ftblibrary:item/missing_item"
 			rotation: 0.0d
 			width: 1.0d
@@ -34,34 +26,6 @@
 	order_index: 2
 	quest_links: [ ]
 	quests: [
-		{
-			description: [
-				"这个版本大概耗费了我三个月的所有空余时间"
-				"emmm做包真的需要投入很多很多"
-				"我所做的这些只是这个包的冰山一角，不过我希望能通过这个雏形的发布"
-				"在我不多的时间里更好地扶正制作方向"
-				""
-				"作者其实年纪很小，就是应该好好学习的年纪"
-				"这应该是为数不多想做好的东西了"
-				"就这样，一起加油"
-				"qq测试群号1033440771"
-				"入群答案:如梦有点菜"
-			]
-			id: "7D1CEB3523062476"
-			rewards: [{
-				id: "32BEBCF238A0AF7A"
-				table_id: 5750388060807619340L
-				team_reward: false
-				type: "random"
-			}]
-			tasks: [{
-				id: "49A6801D94D6E0EA"
-				type: "checkmark"
-			}]
-			title: "关于做包的一些想法"
-			x: 0.0d
-			y: 0.0d
-		}
 		{
 			description: [
 				"在主要内容还没完成的现在您可以体验到的内容如下:"

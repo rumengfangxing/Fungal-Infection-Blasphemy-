@@ -22,12 +22,6 @@
 			y: 4.0d
 		}
 		{
-			id: "1C0099038443FF72"
-			linked_quest: "2C745FADE1D26A80"
-			x: -23.0d
-			y: 1.5d
-		}
-		{
 			id: "27DA0239A6DDE368"
 			linked_quest: "10329BC2D854B5DB"
 			x: -23.0d

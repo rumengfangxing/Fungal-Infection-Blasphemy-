@@ -49,7 +49,6 @@
 					Parent: {
 						Items: [ ]
 						Size: 1
-						slot: 0
 					}
 				}
 				id: "goety:dark_wand"
@@ -57,7 +56,6 @@
 					cap: {
 						Items: [ ]
 						Size: 1
-						slot: 0
 					}
 				}
 			}

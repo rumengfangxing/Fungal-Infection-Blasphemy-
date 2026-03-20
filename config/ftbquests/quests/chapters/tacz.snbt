@@ -39,21 +39,6 @@
 					type: "item"
 				}
 				{
-					id: "3D7BE4C21E37867C"
-					item: {
-						Count: 1
-						id: "tacz:modern_kinetic_gun"
-						tag: {
-							GunCurrentAmmoCount: 17
-							GunFireMode: "SEMI"
-							GunId: "applied_armorer:niklas_pistol_semi_union"
-							HasBulletInBarrel: 1b
-						}
-					}
-					team_reward: false
-					type: "item"
-				}
-				{
 					count: 128
 					id: "2D688813EB15EE58"
 					item: {
@@ -73,6 +58,21 @@
 						id: "lrtactical:melee"
 						tag: {
 							MeleeWeaponId: "ab_wt:hands"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0DD25BAB84C03FC0"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 6
+							GunFireMode: "SEMI"
+							GunId: "tacz:m1911"
+							HasBulletInBarrel: 1b
 						}
 					}
 					team_reward: false

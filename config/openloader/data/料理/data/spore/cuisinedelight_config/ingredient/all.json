@@ -222,46 +222,6 @@
       "stir_time": 100
     },
     {
-      "type": "NONE",
-      "effects": [
-        {
-          "effect": "spore_addon:frenzy",
-          "level": 4,
-          "time": 12000
-        }
-      ],
-      "ingredient": {
-        "item": "spore_addon:primevalreagent"
-      },
-      "max_time": 240,
-      "min_time": 0,
-      "nutrition": 128,
-      "overcook_penalty": 1.0,
-      "raw_penalty": 0.0,
-      "size": 1,
-      "stir_time": 100
-    },
-    {
-      "type": "NONE",
-      "effects": [
-        {
-          "effect": "spore_addon:antibody",
-          "level": 4,
-          "time": 36000
-        }
-      ],
-      "ingredient": {
-        "item": "spore_addon:incompletevaccine"
-      },
-      "max_time": 240,
-      "min_time": 0,
-      "nutrition": 128,
-      "overcook_penalty": 1.0,
-      "raw_penalty": 0.0,
-      "size": 1,
-      "stir_time": 100
-    },
-    {
       "type": "MEAT",
       "effects": [
         {

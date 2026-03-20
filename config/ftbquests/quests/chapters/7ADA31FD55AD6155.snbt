@@ -564,6 +564,18 @@
 			x: -3.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["63FEF33015DAA27D"]
+			description: ["伟大，无需多盐"]
+			id: "15BF709EEE20BBBE"
+			tasks: [{
+				id: "1BD739CE77919D08"
+				item: "ltc2:latiao_oven"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.0d
+		}
 	]
 	title: "玩转经济"
 }
