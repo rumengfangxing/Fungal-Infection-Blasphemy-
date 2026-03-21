@@ -561,6 +561,7 @@
 			rewards: [{
 				id: "604FBF483A333119"
 				item: "enigmaticaddons:antique_bag"
+				team_reward: false
 				type: "item"
 			}]
 			tasks: [{

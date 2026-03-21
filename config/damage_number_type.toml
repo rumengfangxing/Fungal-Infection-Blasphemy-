@@ -239,6 +239,20 @@
 			format = ""
 			append = ""
 
+	[tag."forge:is_acid"]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[tag."forge:is_acid".icon]
+			item = ""
+			tex = ""
+
+		[tag."forge:is_acid".format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[tag."goety:wanting_damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "[NO-VALUE]"
@@ -491,6 +505,20 @@
 			format = ""
 			append = ""
 
+	[tag."ltc2:is_hot_damage"]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[tag."ltc2:is_hot_damage".icon]
+			item = ""
+			tex = ""
+
+		[tag."ltc2:is_hot_damage".format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[tag."goety:magic_fire"]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "[NO-VALUE]"
@@ -543,6 +571,20 @@
 			tex = ""
 
 		[tag."forge:is_magic".format]
+			prepend = ""
+			format = ""
+			append = ""
+
+	[tag."netherexp:can_disrupt_underground_ecto_slabs"]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[tag."netherexp:can_disrupt_underground_ecto_slabs".icon]
+			item = ""
+			tex = ""
+
+		[tag."netherexp:can_disrupt_underground_ecto_slabs".format]
 			prepend = ""
 			format = ""
 			append = ""
@@ -701,6 +743,20 @@
 			format = ""
 			append = ""
 
+	[tag."minecraft:panic_causes"]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[tag."minecraft:panic_causes".icon]
+			item = ""
+			tex = ""
+
+		[tag."minecraft:panic_causes".format]
+			prepend = ""
+			format = ""
+			append = ""
+
 [sys]
 	randomColorForTag = false
 	randomColorForType = false
@@ -820,6 +876,36 @@
 			prepend = ""
 			format = ""
 			append = ""
+
+	[type.ltc2]
+
+		[type.ltc2.ender_chain]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.ltc2.ender_chain.icon]
+				item = ""
+				tex = ""
+
+			[type.ltc2.ender_chain.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.ltc2.hot]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.ltc2.hot.icon]
+				item = ""
+				tex = ""
+
+			[type.ltc2.hot.format]
+				prepend = ""
+				format = ""
+				append = ""
 
 	[type.knight_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
@@ -1004,6 +1090,134 @@
 			prepend = ""
 			format = ""
 			append = ""
+
+	[type.create]
+
+		[type.create.crush]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.crush.icon]
+				item = ""
+				tex = ""
+
+			[type.create.crush.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.create.fan_fire]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.fan_fire.icon]
+				item = ""
+				tex = ""
+
+			[type.create.fan_fire.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.create.mechanical_drill]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.mechanical_drill.icon]
+				item = ""
+				tex = ""
+
+			[type.create.mechanical_drill.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.create.potato_cannon]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.potato_cannon.icon]
+				item = ""
+				tex = ""
+
+			[type.create.potato_cannon.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.create.mechanical_saw]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.mechanical_saw.icon]
+				item = ""
+				tex = ""
+
+			[type.create.mechanical_saw.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.create.fan_lava]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.fan_lava.icon]
+				item = ""
+				tex = ""
+
+			[type.create.fan_lava.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.create.run_over]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.run_over.icon]
+				item = ""
+				tex = ""
+
+			[type.create.run_over.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.create.cuckoo_surprise]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.cuckoo_surprise.icon]
+				item = ""
+				tex = ""
+
+			[type.create.cuckoo_surprise.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.create.mechanical_roller]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.create.mechanical_roller.icon]
+				item = ""
+				tex = ""
+
+			[type.create.mechanical_roller.format]
+				prepend = ""
+				format = ""
+				append = ""
 
 	[type.tickdamage]
 		#Color of the damage number. [NO-VALUE] to use default color.
@@ -2303,6 +2517,120 @@
 				format = ""
 				append = ""
 
+	[type.biomancy]
+
+		[type.biomancy.spike_fall_on]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.spike_fall_on.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.spike_fall_on.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.biomancy.tooth_projectile]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.tooth_projectile.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.tooth_projectile.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.biomancy.chest_bite]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.chest_bite.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.chest_bite.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.biomancy.slash]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.slash.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.slash.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.biomancy.primordial_spikes]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.primordial_spikes.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.primordial_spikes.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.biomancy.spike_impale]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.spike_impale.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.spike_impale.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.biomancy.bleed]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.bleed.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.bleed.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.biomancy.corrosive_acid]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.corrosive_acid.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.corrosive_acid.format]
+				prepend = ""
+				format = ""
+				append = ""
+
 	[type.outOfWorld]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "[NO-VALUE]"
@@ -2414,4 +2742,34 @@
 			prepend = ""
 			format = ""
 			append = ""
+
+	[type.createaddition]
+
+		[type.createaddition.tesla_coil]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.createaddition.tesla_coil.icon]
+				item = ""
+				tex = ""
+
+			[type.createaddition.tesla_coil.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.createaddition.barbed_wire]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.createaddition.barbed_wire.icon]
+				item = ""
+				tex = ""
+
+			[type.createaddition.barbed_wire.format]
+				prepend = ""
+				format = ""
+				append = ""
 

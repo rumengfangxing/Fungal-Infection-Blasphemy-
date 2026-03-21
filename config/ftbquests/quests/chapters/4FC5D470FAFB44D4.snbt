@@ -75,6 +75,7 @@
 						id: "naturescompass:naturescompass"
 						tag: { }
 					}
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -115,6 +116,7 @@
 						id: "explorerscompass:explorerscompass"
 						tag: { }
 					}
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -771,6 +773,7 @@
 					count: 8
 					id: "3F0411E38C0833B3"
 					item: "spore:ice_canister"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -781,6 +784,7 @@
 						id: "spore:cdu"
 						tag: { }
 					}
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -899,6 +903,7 @@
 					count: 8
 					id: "0A8EFC5A72BDC107"
 					item: "spore:syringe"
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -1596,16 +1601,19 @@
 				{
 					id: "13BE85F3560D861E"
 					item: "spore:hardening_agent"
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "4972B2172D3FEE9D"
 					item: "spore:sharpening_agent"
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "6870706FA5CF8B59"
 					item: "spore:integrating_agent"
+					team_reward: false
 					type: "item"
 				}
 			]
@@ -1632,6 +1640,7 @@
 					count: 3
 					id: "3FB73E75B96EAE9A"
 					item: "spore:brain_remnants"
+					team_reward: false
 					type: "item"
 				}
 				{

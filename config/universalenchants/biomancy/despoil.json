@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:biomancy_weapon",
+    "enigmaticlegacy:the_infinitum",
+    "enigmaticlegacy:eldritch_pan",
+    "enigmaticaddons:astral_spear",
+    "enigmaticaddons:the_bless",
+    "enigmaticaddons:disaster_sword"
+  ],
+  "incompatible": [
+    "minecraft:silk_touch"
+  ]
+}

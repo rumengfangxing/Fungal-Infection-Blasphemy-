@@ -59,23 +59,6 @@
 			y: 0.5d
 		}
 		{
-			description: ["赔个礼"]
-			id: "74484FAFD6831730"
-			rewards: [{
-				id: "30C23B74ABA9F0A2"
-				item: "enigmaticdice:divine_shield"
-				team_reward: false
-				type: "item"
-			}]
-			tasks: [{
-				id: "077BD66CDB9B009F"
-				title: "咳咳，此版本有点仓促了这块来不及写"
-				type: "checkmark"
-			}]
-			x: -25.0d
-			y: 0.5d
-		}
-		{
 			description: [
 				"主世界"
 				"你在这里看到的并不是美景"

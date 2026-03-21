@@ -373,6 +373,7 @@
 		}
 		{
 			dependencies: ["3D9ACA8AE221D83E"]
+			hide_until_deps_complete: true
 			icon: { Count: 8, id: "goety:cursed_ingot" }
 			id: "3EC515967C762319"
 			rewards: [{
@@ -392,6 +393,7 @@
 		}
 		{
 			dependencies: ["392A70D0021390D6"]
+			hide_until_deps_complete: true
 			icon: "goety:empty_focus"
 			id: "0027B9830BDE9514"
 			rewards: [{
@@ -430,6 +432,7 @@
 		}
 		{
 			dependencies: ["1490591FBD52F4D9"]
+			hide_until_deps_complete: true
 			icon: "goety:magic_emerald"
 			id: "1383BDC4769F2DC9"
 			rewards: [{
@@ -475,6 +478,7 @@
 		}
 		{
 			dependencies: ["4C032D238573B415"]
+			hide_until_deps_complete: true
 			icon: "enigmaticlegacy:twisted_heart"
 			id: "3B677C4F93723127"
 			rewards: [{
@@ -548,6 +552,7 @@
 		}
 		{
 			dependencies: ["703FEE711F32B4C5"]
+			hide_until_deps_complete: true
 			icon: "enigmaticlegacy:etherium_ore"
 			id: "4CDDC301112DC1C7"
 			rewards: [{

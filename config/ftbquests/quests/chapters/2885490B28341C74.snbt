@@ -83,8 +83,8 @@
 			image: "goety_revelation:item/stars/cosmic_7"
 			rotation: -45.0d
 			width: 2.0d
-			x: -4.0d
-			y: -4.5d
+			x: -3.0d
+			y: -1.5d
 		}
 	]
 	order_index: 2
@@ -214,6 +214,7 @@
 					type: "item"
 				}
 			]
+			title: "皮革内衬"
 			x: -14.5d
 			y: -6.5d
 		}
@@ -321,6 +322,7 @@
 					type: "item"
 				}
 			]
+			title: "皮革内衬"
 			x: -12.5d
 			y: -6.5d
 		}
@@ -428,6 +430,7 @@
 					type: "item"
 				}
 			]
+			title: "皮革内衬"
 			x: -10.5d
 			y: -6.5d
 		}
@@ -535,6 +538,7 @@
 					type: "item"
 				}
 			]
+			title: "皮革内衬"
 			x: -8.5d
 			y: -6.5d
 		}
@@ -858,6 +862,7 @@
 					type: "item"
 				}
 			]
+			title: "聚合物夹板"
 			x: -14.5d
 			y: -4.5d
 		}
@@ -1182,6 +1187,7 @@
 					type: "item"
 				}
 			]
+			title: "聚合物夹板"
 			x: -12.5d
 			y: -4.5d
 		}
@@ -1506,6 +1512,7 @@
 					type: "item"
 				}
 			]
+			title: "聚合物夹板"
 			x: -10.5d
 			y: -4.5d
 		}
@@ -1830,6 +1837,7 @@
 					type: "item"
 				}
 			]
+			title: "聚合物夹板"
 			x: -8.5d
 			y: -4.5d
 		}
@@ -2217,6 +2225,7 @@
 					type: "item"
 				}
 			]
+			title: "&e轻捷"
 			x: -12.5d
 			y: -2.5d
 		}
@@ -2499,6 +2508,7 @@
 					type: "item"
 				}
 			]
+			title: "&e轻捷"
 			x: -10.5d
 			y: -2.5d
 		}
@@ -2886,6 +2896,7 @@
 					type: "item"
 				}
 			]
+			title: "&e轻捷"
 			x: -8.5d
 			y: -2.5d
 		}
@@ -3168,6 +3179,7 @@
 					type: "item"
 				}
 			]
+			title: "&e轻捷"
 			x: -6.5d
 			y: -2.5d
 		}
@@ -3414,6 +3426,7 @@
 					type: "item"
 				}
 			]
+			title: "重装"
 			x: -12.5d
 			y: -1.0d
 		}
@@ -3762,6 +3775,7 @@
 					type: "item"
 				}
 			]
+			title: "&8特种"
 			x: -12.5d
 			y: 0.5d
 		}
@@ -4127,6 +4141,7 @@
 					type: "item"
 				}
 			]
+			title: "巫术回响"
 			x: -12.5d
 			y: 2.0d
 		}
@@ -4475,6 +4490,7 @@
 					type: "item"
 				}
 			]
+			title: "&c活体覆层"
 			x: -12.5d
 			y: 3.5d
 		}
@@ -4721,6 +4737,7 @@
 					type: "item"
 				}
 			]
+			title: "重装"
 			x: -10.5d
 			y: -1.0d
 		}
@@ -5069,6 +5086,7 @@
 					type: "item"
 				}
 			]
+			title: "&8特种"
 			x: -10.5d
 			y: 0.5d
 		}
@@ -5435,6 +5453,7 @@
 					type: "item"
 				}
 			]
+			title: "巫术回响"
 			x: -10.5d
 			y: 2.0d
 		}
@@ -5784,6 +5803,7 @@
 					type: "item"
 				}
 			]
+			title: "&c活体覆层"
 			x: -10.5d
 			y: 3.5d
 		}
@@ -6135,6 +6155,7 @@
 					type: "item"
 				}
 			]
+			title: "重装"
 			x: -8.5d
 			y: -1.0d
 		}
@@ -6588,6 +6609,7 @@
 					type: "item"
 				}
 			]
+			title: "&8特种"
 			x: -8.5d
 			y: 0.5d
 		}
@@ -7059,6 +7081,7 @@
 					type: "item"
 				}
 			]
+			title: "巫术回响"
 			x: -8.5d
 			y: 2.0d
 		}
@@ -7513,6 +7536,7 @@
 					type: "item"
 				}
 			]
+			title: "&c活体覆层"
 			x: -8.5d
 			y: 3.5d
 		}
@@ -7759,6 +7783,7 @@
 					type: "item"
 				}
 			]
+			title: "重装"
 			x: -6.5d
 			y: -1.0d
 		}
@@ -8107,6 +8132,7 @@
 					type: "item"
 				}
 			]
+			title: "&8特种"
 			x: -6.5d
 			y: 0.5d
 		}
@@ -8473,6 +8499,7 @@
 					type: "item"
 				}
 			]
+			title: "巫术回响"
 			x: -6.5d
 			y: 2.0d
 		}
@@ -8822,6 +8849,7 @@
 					type: "item"
 				}
 			]
+			title: "&c活体覆层"
 			x: -6.5d
 			y: 3.5d
 		}
@@ -9252,6 +9280,7 @@
 					type: "item"
 				}
 			]
+			title: "&c加装骨翼"
 			x: -4.0d
 			y: 3.5d
 		}

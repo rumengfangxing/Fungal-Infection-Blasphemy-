@@ -369,7 +369,7 @@
 				{
 					id: "34DFAC545DFAB80A"
 					item: "sophisticatedbackpacks:backpack"
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{

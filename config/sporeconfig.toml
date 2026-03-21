@@ -346,7 +346,7 @@
 		"Should the mound spread foliage and infect blocks?" = true
 		#Default 900
 		#Range: > 1
-		"Sets Mound Ageing Cooldown" = 900
+		"Sets Mound Ageing Cooldown" = 600
 		#Default 80
 		#Range: > 1
 		"Sets the range in which a mound checks for feedable blocks" = 80
@@ -377,7 +377,7 @@
 		"Sets Scamper Armor" = 3.0
 		#Default 600
 		#Range: > 1
-		"Sets Scamper Age" = 600
+		"Sets Scamper Age" = 200
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Scamper Damage" = 6.0

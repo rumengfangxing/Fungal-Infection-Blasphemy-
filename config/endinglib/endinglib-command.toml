@@ -4,7 +4,7 @@
 	#若<0则表示禁用了此命令
 	#/endinglib命令的权限要求
 	#Range: 0 ~ 6
-	RootCommandPermission = -1
+	RootCommandPermission = 0
 	#/endinglib camera命令的权限要求
 	#Range: -1 ~ 6
 	CameraPermission = 2

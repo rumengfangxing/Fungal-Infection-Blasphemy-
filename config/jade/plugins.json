@@ -56,6 +56,16 @@
     "model_variant.locked": false,
     "paygate": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "extrastorage": {
     "crafter": true,
     "advanced_crafter": true
