@@ -1,0 +1,21 @@
+ServerEvents.recipes(event => {
+    event.custom({
+        "type":"biomancy:decomposing" ,
+        "ingredient":{
+            "count":1,
+            "item":"spore:mutated_fiber"
+        },
+        "nutrientsCost":1,
+        "processingTime":60,
+        "results":[
+            {
+                "countRange":{
+                    "type":"uniform",
+                    "max":4,
+                    "min":2
+                },
+                "item":"spore:biomass"
+            }
+        ]
+    })
+})
