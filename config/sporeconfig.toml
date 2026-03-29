@@ -8,7 +8,7 @@
 	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:specter", "spore:inf_construct", "spore:scamper"]
 
 [Spawns]
-	"mob|weight|minimum|maximum" = ["spore:inf_human|40|2|5", "spore:inf_drowned|5|1|2", "spore:inf_pillager|20|1|3", "spore:inf_villager|20|1|3", "spore:inf_player|10|1|2", "spore:inf_wanderer|12.5|1|2", "spore:inf_witch|7.5|1|2", "spore:mound|0.001|1|1", "spore:inf_hazmat|5|1|1"]
+	"mob|weight|minimum|maximum" = ["spore:inf_human|40|2|5", "spore:inf_drowned|5|1|2", "spore:inf_pillager|20|1|3", "spore:inf_villager|20|1|3", "spore:inf_player|10|1|2", "spore:inf_wanderer|12.5|1|2", "spore:inf_witch|7.5|1|2", "spore:mound|0.001|1|1", "spore:inf_hazmat|5|1|1", "spore:scavenger|3|2|2", "spore:claw|5|3|3"]
 	"Mobs that spawn in laboratory type structures" = ["spore:inf_hazmat|70|2|5", "spore:saugling|15|1|2", "spore:inebriater|30|2|3", "spore:inf_player|20|1|2", "spore:plagued|15|1|2", "spore:lacerator|20|1|3", "spore:biobloob|10|1|2"]
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true

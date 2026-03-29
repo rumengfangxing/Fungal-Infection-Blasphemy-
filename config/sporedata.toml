@@ -82,10 +82,10 @@
 ["Structure data"]
 	#Default 5
 	#Range: > 0
-	"Biomass Lump minimal kills" = 1
+	"Biomass Lump minimal kills" = 5
 	#Default 40
 	#Range: > 0
-	"Reconstructed Mind Block kills" = 40
+	"Reconstructed Mind Block kills" = 20
 	#Default 32
 	#Range: > 0
 	"The range of the overgrown spawner" = 64
