@@ -12,23 +12,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			icon: "minecraft:experience_bottle"
-			id: "3EB30272F98019DF"
-			rewards: [{
-				auto: "enabled"
-				id: "207C7DF9B3E84E59"
-				table_id: 1741549655483791074L
-				type: "random"
-			}]
-			tasks: [{
-				id: "4261FEF6E6C7A721"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -5.0d
-		}
-		{
 			dependencies: ["2BBA53F5F6B8113D"]
 			icon: "spore:living_core"
 			id: "0F65B3FC439276A6"
@@ -63,54 +46,6 @@
 			}]
 			x: -6.0d
 			y: -1.0d
-		}
-		{
-			icon: { Count: 100, id: "minecraft:experience_bottle" }
-			id: "3FE7D6615E956C17"
-			rewards: [{
-				auto: "enabled"
-				count: 100
-				id: "4C8A6B2A30FEA276"
-				item: {
-					Count: 1
-					id: "ftbquests:lootcrate"
-					tag: {
-						type: "5"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "30FBAF8CF2CC5AFA"
-				item: "lightmanscurrency:coin_diamond"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -5.0d
-		}
-		{
-			icon: { Count: 10, id: "minecraft:experience_bottle" }
-			id: "2B4B707463193BCD"
-			rewards: [{
-				auto: "enabled"
-				count: 10
-				id: "3033FB1DC1FC9121"
-				item: {
-					Count: 1
-					id: "ftbquests:lootcrate"
-					tag: {
-						type: "5"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "5B07F8466C187230"
-				item: "lightmanscurrency:coin_emerald"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -5.0d
 		}
 		{
 			dependencies: ["2BBA53F5F6B8113D"]
@@ -440,7 +375,7 @@
 				item: "lightmanscurrency:coin_diamond"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -6.0d
 			y: -5.0d
 		}
 		{
@@ -459,7 +394,7 @@
 				item: "lightmanscurrency:coin_netherite"
 				type: "item"
 			}]
-			x: 3.5d
+			x: -4.0d
 			y: -5.0d
 		}
 	]

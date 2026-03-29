@@ -1,0 +1,374 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "168DCBA96A04A82A"
+	group: "5C833F73A01412E2"
+	icon: "create:wrench"
+	id: "168DCBA96A04A82A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["游玩机械动力有啥不会的，第一步就是鼠标挪到物品上按w思索"]
+			id: "57249BF5B2CCE749"
+			rewards: [
+				{
+					id: "213928156BFB843A"
+					item: "create:wrench"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "77253D387AE92609"
+					item: "create:goggles"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2DA2782B06967405"
+				type: "checkmark"
+			}]
+			title: "开始机械动力"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["57249BF5B2CCE749"]
+			icon: "minecraft:andesite"
+			id: "6D4B15FEAF5DC5F5"
+			rewards: [
+				{
+					count: 16
+					id: "7103970E8B6BA81C"
+					item: "minecraft:andesite"
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3CEBE4DA3EA9442C"
+					table_id: 1232780217930405337L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "2A05AA849B57CCDE"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00A90D46797E048C"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6D4B15FEAF5DC5F5"]
+			description: ["绝大多数机械所需的素材"]
+			icon: "create:andesite_alloy"
+			id: "2DE5F68F4334939D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57EBCBEA24956023"
+				table_id: 1232780217930405337L
+				team_reward: false
+				type: "choice"
+			}]
+			tasks: [
+				{
+					id: "11AA8442CBA2DEFF"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "55B9C059FDF9F678"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2DE5F68F4334939D"]
+			description: [
+				"主手锤子右手锭"
+				"就可以把锭敲成板了"
+			]
+			icon: "create:iron_sheet"
+			id: "55F6901FAB49F603"
+			tasks: [
+				{
+					id: "10E933CD1C077654"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F9A881C586F3DBC"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "00C733B4AF9DD374"
+					item: "create:hand_crank"
+					type: "item"
+				}
+				{
+					id: "2317FC60D96ACE01"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2DE5F68F4334939D"]
+			hide_dependency_lines: true
+			icon: "create:gearbox"
+			id: "3E2D25A42C00A11A"
+			tasks: [
+				{
+					id: "2E44DB520CF5CA2C"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					id: "62AFD5FBDB5F6D07"
+					item: "create:vertical_gearbox"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2DE5F68F4334939D"]
+			id: "6B37B138CD4E516C"
+			tasks: [{
+				id: "5B530412716E271C"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2DE5F68F4334939D"]
+			hide_dependency_lines: true
+			id: "0F98A33D0449717E"
+			tasks: [{
+				id: "55AF2480A687D78D"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2DE5F68F4334939D"]
+			id: "105761AE3BBA8C34"
+			tasks: [{
+				id: "25DB0D7C35246229"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"使用空的烈焰人燃烧室右键烈焰人或者烈焰人刷怪笼"
+				"可以捕捉烈焰人得到烈焰人燃烧室"
+			]
+			id: "39683B512167F318"
+			rewards: [{
+				count: 4
+				id: "6CAB92E04BC7537E"
+				item: "create:empty_blaze_burner"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E79D1EE67D03067"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["39683B512167F318"]
+			description: ["满足一些加工的温度要求"]
+			id: "3579A6D26A5F675E"
+			tasks: [{
+				id: "3E47BCC4FA7CDA72"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3579A6D26A5F675E"
+				"1625184406C84D4C"
+			]
+			description: [
+				"黄铜时代！"
+				"拥有黄铜，你便迈入了工程师的进阶阶段"
+				"可以制作高级机械"
+			]
+			id: "201A6F6DC1B19AA8"
+			tasks: [{
+				id: "6838A0904431D885"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2DE5F68F4334939D"]
+			description: ["动力搅拌所需的工作方块"]
+			icon: "create:mechanical_mixer"
+			id: "1625184406C84D4C"
+			tasks: [
+				{
+					id: "18BC9D83BD94EAF8"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "6DAB11768D2845FB"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2DE5F68F4334939D"]
+			description: ["动力切割所需的工作方块"]
+			id: "7DFBD68D72C9BA15"
+			tasks: [{
+				id: "311154C36BD41512"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			id: "6D4C2473CA859A60"
+			tasks: [{
+				id: "4CFB9DAD21B0974A"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6D4C2473CA859A60"]
+			id: "093FAB7FA06AD641"
+			tasks: [{
+				id: "5C3ACEA367E4598E"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"093FAB7FA06AD641"
+				"55F6901FAB49F603"
+			]
+			id: "0C2D37EAF80A18BF"
+			tasks: [{
+				id: "219F9F57E69B512E"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3579A6D26A5F675E"]
+			description: [
+				"蓝火烈焰人！"
+				"超级加热"
+			]
+			id: "4D04723712FD7DA0"
+			rewards: [{
+				count: 8
+				id: "12CD02B6ED7A7C0E"
+				item: "create:blaze_cake"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "741F753AAB127DFB"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			description: ["铜在机械动力中主要承担液体（流体）相关的玩法"]
+			icon: "minecraft:copper_ingot"
+			id: "537B86D0B0ADB0EF"
+			tasks: [
+				{
+					id: "4E0E8148B6B62199"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "734FEA2FE66F7849"
+					item: "create:copper_casing"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["201A6F6DC1B19AA8"]
+			icon: "create:brass_casing"
+			id: "228D5D6BD0C064A9"
+			tasks: [
+				{
+					id: "0448DF5AE026470B"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "770A2D251C0D6DA3"
+					item: "create:brass_casing"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -4.5d
+		}
+	]
+	title: "机械动力"
+}

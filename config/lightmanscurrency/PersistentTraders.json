@@ -991,6 +991,1052 @@
           }
         }
       ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "create_a",
+      "Name": "工业援助商店",
+      "OwnerName": "维度意志",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:crushing_wheel",
+            "Count": 2
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 4
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:brass_funnel",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:mechanical_arm",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:blaze_burner",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createaddition:large_connector",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 5
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createdieselgenerators:diesel_bucket",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createaddition:gold_spool",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:rotation_speed_controller",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createaddition:modular_accumulator",
+            "Count": 1,
+            "Tag": "{BlockEntityTag:{EnergyCapacity:40000000,EnergyContent:{energy:40000000},ForgeCaps:{},Height:1,LastKnownPos:{X:51,Y:75,Z:103},Size:1,id:\"createaddition:modular_accumulator\"},display:{Lore:['\"(+NBT)\"']}}"
+          },
+          "DisplayName": "有电量的电池哦",
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:smart_chute",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createaddition:electric_motor",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              },
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:mechanical_crafter",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:mechanical_press",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:mechanical_drill",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:mechanical_mixer",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:mechanical_saw",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:mechanical_harvester",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "create_b",
+      "Name": "城防援助商店",
+      "OwnerName": "维度意志",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "sentrymechanicalarm:sentry_mechanical_arm",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 3
+              },
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createaddition:tesla_coil",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createdieselgenerators:chemical_sprayer",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 2
+              },
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createdieselgenerators:chemical_sprayer_lighter",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 2
+              },
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 4
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createdieselgenerators:chemical_turret",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 3
+              },
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "createaddition:barbed_wire",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "create:potato_cannon",
+            "Count": 1,
+            "Tag": "{Damage:0}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              },
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "gupiao_in",
+      "Name": "入股",
+      "OwnerName": "维度意志",
+      "Rules": [
+        {
+          "Duration": 180000,
+          "Fluctuation": 90,
+          "Type": "lightmanscurrency:price_fluctuation"
+        },
+        {
+          "Limit": 10,
+          "ForgetTime": 900000,
+          "Type": "lightmanscurrency:player_trade_limit"
+        }
+      ],
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"green\",\"text\":\"农贸工作社\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"aqua\",\"text\":\"村民保护协会\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"yellow\",\"text\":\"工程事务所\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"dark_aqua\",\"text\":\"生物研究所\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"yellow\",\"text\":\"乌萨斯帝国给事处\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"aqua\",\"text\":\"罗德岛制药公司\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"light_purple\",\"text\":\"飞升教会\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_diamond",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"blue\",\"text\":\"真菌研究所\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_diamond",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"red\",\"text\":\"联合研究所\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_netherite",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "gupiao_out",
+      "Name": "抛售股票",
+      "OwnerName": "维度意志",
+      "Rules": [
+        {
+          "Duration": 180000,
+          "Fluctuation": 90,
+          "Type": "lightmanscurrency:price_fluctuation"
+        }
+      ],
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"green\",\"text\":\"农贸工作社\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"aqua\",\"text\":\"村民保护协会\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"yellow\",\"text\":\"工程事务所\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"dark_aqua\",\"text\":\"生物研究所\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"yellow\",\"text\":\"乌萨斯帝国给事处\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"aqua\",\"text\":\"罗德岛制药公司\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 3
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"light_purple\",\"text\":\"飞升教会\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_diamond",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"blue\",\"text\":\"真菌研究所\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_diamond",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecraft:paper",
+            "Count": 1,
+            "Tag": "{AttributeModifiers:[{Amount:1.0d,AttributeName:\"minecraft:generic.luck\",Operation:0,Slot:\"mainhand\",UUID:[I;1679314496,21187582,-2040306375,-514327102]}],display:{Name:'{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"red\",\"text\":\"联合研究所\"}],\"text\":\"\"}'}}"
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_netherite",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "create_c",
+      "Name": "工业产品回收",
+      "OwnerName": "维度意志",
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create:andesite_alloy_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create:brass_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create:railway_casing",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              },
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 6
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create:blaze_cake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create:experience_block",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              },
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create:precision_mechanism",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create_enchantment_industry:hyper_experience_bottle",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 1
+              },
+              {
+                "Coin": "lightmanscurrency:coin_copper",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create:electron_tube",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              },
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "create:sturdy_sheet",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "fib:cooling_unit",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 2
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "fib:pressed_powder",
+            "Count": 10
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 3
+              },
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 8
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "fib:primer",
+            "Count": 40
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              },
+              {
+                "Coin": "lightmanscurrency:coin_iron",
+                "Amount": 5
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
     }
   ],
   "Auctions": []
