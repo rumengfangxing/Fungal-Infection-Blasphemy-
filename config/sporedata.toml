@@ -94,7 +94,7 @@
 	"The range of the Outpost watcher" = 96
 	#Default 300
 	#Range: > 0
-	"Reconstructed Mind Distance from a proto hivemind" = 128
+	"Reconstructed Mind Distance from a proto hivemind" = 192
 
 ["Block infection"]
 	"Blocks and their infected counterparts" = ["minecraft:grass_block|minecraft:mycelium", "minecraft:netherrack|spore:infested_netherrack", "minecraft:end_stone|spore:infested_end_stone", "minecraft:soul_sand|spore:infested_soul_sand", "minecraft:soul_soil|spore:infested_soul_sand"]
