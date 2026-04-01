@@ -5,7 +5,7 @@ event.shapeless(
             'fib:gunpowder',
             'minecraft:redstone',
             'minecraft:redstone',
-            'minecraft:redstone'
+            'minecraft:blaze_powder'
         ]
     );
 });

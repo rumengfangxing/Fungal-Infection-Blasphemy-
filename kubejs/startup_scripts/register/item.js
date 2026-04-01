@@ -23,6 +23,7 @@ StartupEvents.registry('item', event => {
     event.create('fib:unfinished_energy_tank')
     event.create('fib:small_casing')
 	event.create('fib:casing')
+	event.create('fib:small_piece_of_paper')
 		
 	// 食物
 	event.create('fib:fib_logo').food(food => {

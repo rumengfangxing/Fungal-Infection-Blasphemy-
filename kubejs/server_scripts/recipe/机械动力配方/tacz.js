@@ -18,13 +18,15 @@ ServerEvents.recipes(event =>{
 
     //动力切割
     //弹头
-    create.cutting(Item.of('fib:bullet_head',16),'create:brass_nugget');
+    create.cutting(Item.of('fib:bullet_head',16),'create:copper_nugget');
     //弹壳
     create.cutting(Item.of('fib:casing',10),'create:brass_nugget');
     //小型弹壳
     create.cutting(Item.of('fib:small_casing',12),'create:brass_nugget');
     //狙击枪子弹弹壳
     create.cutting(Item.of('fib:sniper_rifle_bullet_casing',8),'create:brass_nugget');
+    //小纸片
+    create.cutting(Item.of('fib:small_piece_of_paper',8),'minecraft:paper')
 
     //动力合成
     //一堆铁球
@@ -82,15 +84,16 @@ ServerEvents.recipes(event =>{
         A:'create:andesite_alloy',
     });
     //高爆外壳
-    create.mechanical_crafting(Item.of('fib:high_explosive_casing',8),[
+    create.mechanical_crafting(Item.of('fib:high_explosive_casing',10),[
         "LAL",
         "TYT",
-        " T ",
+        "LDL",
     ],{
         T:'create:iron_sheet',
         Y:'fib:pressed_powder',
         L:'minecraft:iron_nugget',
         A:'create:andesite_alloy',
+        D:'fib:primer',
     });
     //序列组装
     //能量罐
@@ -129,6 +132,7 @@ ServerEvents.recipes(event =>{
     ],
       'fib:casing',
     [
+      create.deploying(casing,[casing,'fib:primer']),
       create.deploying(casing,[casing,'fib:gunpowder']),
       create.deploying(casing,[casing,'fib:gunpowder']),
       create.deploying(casing,[casing,'fib:bullet_head']),
@@ -143,6 +147,7 @@ ServerEvents.recipes(event =>{
     ],
       'fib:small_casing',
     [
+      create.deploying(small_casing,[small_casing,'fib:primer']),
       create.deploying(small_casing,[small_casing,'fib:gunpowder']),
       create.deploying(small_casing,[small_casing,'fib:small_pinch_of_gunpowder']),
       create.deploying(small_casing,[small_casing,'fib:bullet_head']),
@@ -157,6 +162,7 @@ ServerEvents.recipes(event =>{
     ],
       'fib:sniper_rifle_bullet_casing',
     [
+      create.deploying(sniper_rifle_bullet_casing,[sniper_rifle_bullet_casing,'fib:primer']),
       create.deploying(sniper_rifle_bullet_casing,[sniper_rifle_bullet_casing,'fib:gunpowder']),
       create.deploying(sniper_rifle_bullet_casing,[sniper_rifle_bullet_casing,'fib:gunpowder']),
       create.deploying(sniper_rifle_bullet_casing,[sniper_rifle_bullet_casing,'fib:gunpowder']),
@@ -173,8 +179,9 @@ ServerEvents.recipes(event =>{
       'create:brass_nugget',
     [
       create.deploying(shotgun_shell_housing,[shotgun_shell_housing,'fib:shotgun_paper_tube']),
+      create.deploying(shotgun_shell_housing,[shotgun_shell_housing,'fib:primer']),
       create.deploying(shotgun_shell_housing,[shotgun_shell_housing,'fib:gunpowder']),
-      create.deploying(shotgun_shell_housing,[shotgun_shell_housing,'minecraft:paper']),
+      create.deploying(shotgun_shell_housing,[shotgun_shell_housing,'fib:small_piece_of_paper']),
       create.deploying(shotgun_shell_housing,[shotgun_shell_housing,'fib:shot_pellets']),
       create.pressing(shotgun_shell_housing,shotgun_shell_housing),
       create.pressing(shotgun_shell_housing,shotgun_shell_housing),
