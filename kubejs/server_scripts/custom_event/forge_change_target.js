@@ -1,14 +1,23 @@
+/**
+ * @param {Internal.LivingChangeTargetEvent} event
+ */
 global.ForgeLivingChangeTargetEvent = event => {
 	handleSporeIgnoreFungifiedPlayer(event)
 }
 
+/**
+ * @param {Internal.LivingChangeTargetEvent} event
+ */
 function handleSporeIgnoreFungifiedPlayer(event) {
-	const mob = event.entity
-	const target = event.originalTarget
+    const { entity, newTarget, originalTarget } = event
 
-	if (!isSporeMob(mob)) return
-	if (!target || !target.isPlayer()) return
-	if (getFungifiedStage(target) == 0) return
+    if (!isSporeMob(entity)) return
 
-	event.setNewTarget(null)
+    if (!newTarget || !newTarget.isPlayer()) return
+	if (!originalTarget) return
+
+    if (entity.lastHurtByMob === newTarget || entity.lastHurtByMob === originalTarget) return
+    
+    if (getFungifiedStage(newTarget) <= 0) return
+    event.setNewTarget(null)
 }

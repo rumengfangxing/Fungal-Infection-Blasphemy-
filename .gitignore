@@ -3,6 +3,7 @@
 /.vscode/
 /crash-reports/
 /config/dlc_manager/
+/config/worldedit/
 /config/yes_steve_model/cache/
 /config/yes_steve_model/builtin/
 /CustomSkinLoader/
@@ -14,6 +15,7 @@
 /saves/
 /local/
 /xaero/
+/XaeroWaypoints_*/
 /natives-windows-x86_64/
 /PCL/
 /versions/
@@ -37,6 +39,7 @@
 /usernamecache.json
 /options.txt
 /config/oculus.properties
+/config/embeddium-fingerprint.json
 /setup_github_repo.bat
 /setup_github_repo.ps1
 /setup_github_repo.state.json

@@ -78,6 +78,5 @@ function checkAndEquipCursedRing(player) {
 	if (stacks.getSlots() <= 0) return
 	const stack = stacks.getStackInSlot(0)
 	if (!stack.isEmpty() && stack.id === 'enigmaticlegacy:cursed_ring') return
-    if (!stack.isEmpty() && stack.id === 'enigmaticaddons:bless_ring') return
 	stacks.setStackInSlot(0, Item.of('enigmaticlegacy:cursed_ring'))
 }
