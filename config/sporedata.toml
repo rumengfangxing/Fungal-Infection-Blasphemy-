@@ -46,7 +46,7 @@
 	"Sieger Tail" = ["spore:mutated_fiber|100|10|25", "spore:armor_fragment|100|3|10", "spore:tumor|100|7|22"]
 	"Gazen Tongue" = ["spore:mutated_fiber|100|5|14", "spore:tumor|100|1|4"]
 	"Howitzer Leg loot" = ["spore:mutated_fiber|100|10|25", "spore:armor_fragment|100|6|17", "spore:tumor|100|7|22", "spore:tendons|70|6|12"]
-	"Proto Hivemind" = ["spore:mutated_fiber|100|10|20", "spore:armor_fragment|80|4|14", "spore:organoid_membrane|80|4|8", "spore:mutated_heart|80|1|6", "spore:cerebrum|100|2|11", "spore:spine_fragment|80|2|8"]
+	"Proto Hivemind" = ["spore:mutated_fiber|100|10|20", "spore:armor_fragment|80|4|14", "spore:organoid_membrane|80|4|8", "spore:mutated_heart|80|1|6", "spore:cerebrum|100|2|11", "spore:spine_fragment|80|2|8", "goety_revelation:broken_halo|100|1|1", "goety:forbidden_fragment|100|0|2"]
 	Verwa = ["spore:mutated_fiber|70|2|5", "spore:organoid_membrane|80|1|2"]
 	Womb = ["spore:mutated_fiber|70|2|5", "spore:organoid_membrane|80|1|2"]
 	Delusioner = ["spore:mutated_fiber|70|2|5", "spore:organoid_membrane|80|1|3"]
@@ -68,16 +68,23 @@
 	Vanguard = ["spore:mutated_fiber|80|5|17", "minecraft:emerald_block|50|1|2", "spore:armor_fragment|80|2|9", "spore:mutated_heart|10|1|3", "spore:claw_fragment|80|6|9", "spore:innards|50|1|2", "spore:tumor|100|4|8", "spore:tendons|60|3|7", "minecraft:arrow|60|3|7"]
 	Chemist = ["spore:mutated_fiber|800|1|3", "spore:mutated_heart|10|1|1", "spore:tumor|100|4|8"]
 	Graken = ["spore:mutated_fiber|100|33|75", "spore:armor_fragment|100|15|38", "spore:mutated_heart|70|3|7", "spore:cerebrum|70|4|9", "spore:spine_fragment|56|7|15"]
+	Gargoyle = ["spore:mutated_fiber|80|3|13", "spore:armor_fragment|50|2|4", "spore:claw_fragment|80|1|3", "spore:mutated_heart|10|1|1", "spore:wing_membrane|60|1|4"]
+	Conductor = ["spore:mutated_fiber|800|1|3", "spore:mutated_heart|10|1|1", "spore:cerebrum|100|1|1"]
+	Stahlmorder = ["spore:mutated_fiber|100|10|45", "spore:acidic_gland|50|1|1", "spore:ligaments|100|1|1", "spore:armor_fragment|100|10|25", "spore:mutated_heart|70|1|5", "spore:tumor|100|6|23", "spore:cerebrum|70|2|7", "spore:spine_fragment|56|4|14", "spore:claw|30|3|12", "spore:claw_fragment|56|15|45"]
+	Leviathan = ["spore:mutated_fiber|100|33|75", "spore:acidic_gland|100|1|1", "spore:fins|100|1|1", "spore:corrosive_sack|100|3|8", "spore:armor_fragment|100|15|38", "spore:mutated_heart|70|3|7", "spore:cerebrum|70|4|9", "spore:spine_fragment|56|7|15"]
+	"Stahlmorder Blade loot" = ["spore:mutated_fiber|100|5|15", "spore:armor_fragment|100|3|14", "spore:tumor|100|1|4", "spore:tendons|70|6|12", "spore:claw|100|3|12", "spore:claw_fragment|100|15|45"]
+	"Hive Tumor" = ["spore:mutated_fiber|100|10|20", "spore:organoid_membrane|80|4|8", "spore:mutated_heart|80|1|6", "spore:cerebrum|100|2|5"]
+	Groberfub = ["spore:mutated_fiber|70|5|16", "spore:armor_fragment|80|6|12", "spore:mutated_heart|50|1|1", "spore:claw_fragment|80|5|15", "spore:tendons|60|3|7"]
 
 [Others]
 	"Infected Player possible names" = ["The_Harbinger69", "ABucketOfFriedChicken", "LoneGuy", "cheesepuff", "Sire_AwfulThe1st", "Azami", "Deyvid", "Dany_Why", "Technoblade", "Ike", "Hypnotizd", "That_Insane_Guy", "JhonOK22", "Tabcaps", "WhisperFire26", "ButtonHatBoy", "Gistique", "BigXplosion", "Atomiclbomb", "Mad_Dog", "Ripley", "gregTheTyrant", "Joker_de_Coeur", "xXFuryXx", "Nova69", "Belladonna", "Entity", "Keymind", "Whisper", "Helldwin", "ExeedingSky74", "Flash62724", "Hank_o", "JWT114", "DawnsSlayers", "Dr_Pilot_MOO", "NexouuZ", "Mr_Door12323", "PedroHenrry", "TVGuy", "ThatGardener", "TheCaramelGuy", "TokenOni420", "lightigivhi", "CODATOWER", "mrlambert6", "SyrCrypt", "KaratFeng", "Toasteroni", "UnmeiHa", "AllToAshes", "0dna"]
 	#Items|chance of giving
-	"Head Slot" = ["minecraft:leather_helmet|50", "minecraft:iron_helmet|20", "minecraft:chainmail_helmet|20"]
-	"Chest Slot" = ["minecraft:leather_chestplate|50", "minecraft:iron_chestplate|20", "minecraft:chainmail_chestplate|20"]
-	"Legs Slot" = ["minecraft:leather_leggings|50", "minecraft:iron_leggings|20", "minecraft:chainmail_leggings|20"]
-	"Boots Slot" = ["minecraft:leather_boots|50", "minecraft:iron_boots|20", "minecraft:chainmail_boots|20"]
-	"MainHand Slot" = ["minecraft:stone_sword|50", "minecraft:stone_axe|20", "minecraft:bow|25", "minecraft:pickaxe|20", "minecraft:iron_sword|30"]
-	"OffHand Slot" = ["minecraft:torch|50", "minecraft:shield|30", "minecraft:flint_and_steel|30", "minecraft:bow|45"]
+	"Head Slot" = ["minecraft:leather_helmet|50", "minecraft:iron_helmet|20", "minecraft:chainmail_helmet|20", "biomancy:acolyte_armor_helmet|20"]
+	"Chest Slot" = ["minecraft:leather_chestplate|50", "minecraft:iron_chestplate|20", "minecraft:chainmail_chestplate|20", "biomancy:acolyte_armor_chestplate|20"]
+	"Legs Slot" = ["minecraft:leather_leggings|50", "minecraft:iron_leggings|20", "minecraft:chainmail_leggings|20", "biomancy:acolyte_armor_leggings|20"]
+	"Boots Slot" = ["minecraft:leather_boots|50", "minecraft:iron_boots|20", "minecraft:chainmail_boots|20", "biomancy:acolyte_armor_boots|20"]
+	"MainHand Slot" = ["minecraft:stone_sword|50", "minecraft:stone_axe|20", "minecraft:bow|25", "minecraft:pickaxe|20", "minecraft:iron_sword|30", "biomancy:ravenous_claws|20", "biomancy:despoil_sickle|20"]
+	"OffHand Slot" = ["minecraft:torch|50", "minecraft:shield|30", "minecraft:flint_and_steel|30", "minecraft:bow|45", "biomancy:thorn_shield|20", "biomancy:ravenous_claws|10"]
 
 ["Structure data"]
 	#Default 5
@@ -103,7 +110,7 @@
 	"Blocks and their cleaned counterparts" = ["spore:infested_stone|minecraft:stone", "minecraft:mycelium|minecraft:dirt", "spore:infested_dirt|minecraft:dirt", "spore:infested_deepslate|minecraft:deepslate", "spore:infested_sand|minecraft:sand", "spore:infested_gravel|minecraft:gravel", "spore:infested_netherrack|minecraft:netherrack", "spore:infested_end_stone|minecraft:end_stone", "spore:infested_soul_sand|minecraft:soul_sand", "spore:infested_red_sand|minecraft:red_sand", "spore:infested_clay|minecraft:clay", "spore:infested_cobblestone|minecraft:cobblestone", "spore:infested_cobbled_deepslate|minecraft:cobbled_deepslate", "spore:infested_laboratory_block|spore:lab_block", "spore:infested_laboratory_block1|spore:lab_block1", "spore:infested_laboratory_block2|spore:lab_block2", "spore:infested_laboratory_block3|spore:lab_block3"]
 	#Default 20
 	#Range: > 0
-	Range = 64
+	Range = 36
 	#Default 5
 	#Range: 0.0 ~ 1.7976931348623157E308
 	Damage = 8.0
