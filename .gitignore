@@ -47,3 +47,5 @@
 /setup_github_repo.state.json
 
 **/__pycache__/
+track_large_files_lfs.bat
+track_large_files_lfs.ps1
