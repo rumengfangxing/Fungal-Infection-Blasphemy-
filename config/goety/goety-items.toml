@@ -339,10 +339,10 @@
 		hammerDurability = 2500
 		#How fast it takes to fully swing a Hammers. The lower the number the slower it takes to recharge, Default: 0.5
 		#Range: 0.0 ~ 1.7976931348623157E308
-		hammerAttackSpeed = 0.5
+		hammerAttackSpeed = 0.75
 		#How much base damage Hammers deals, the damage added depends on material the hammer is made off (ie. Iron = 2.0), Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		hammerBaseDamage = 5.0
+		hammerBaseDamage = 24.0
 
 	["Tools & Weapons"."Philosopher's Mace"]
 		#Define the Enchantability for Philosopher's Mace, higher number the better, Default: 20
@@ -352,7 +352,7 @@
 		philosophersMacePersist = true
 		#How much damage Philosopher's Mace deals, Default: 9.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		philosophersMaceDamage = 9.0
+		philosophersMaceDamage = 14.0
 		#How many uses before the Philosopher's Mace breaks, Default: 128
 		#Range: > 1
 		philosophersMaceDurability = 128
@@ -388,7 +388,7 @@
 		bladeOfEnderEnchantability = 20
 		#How much damage Blade of Ender deals, Default: 9.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		bladeOfEnderDamage = 9.0
+		bladeOfEnderDamage = 16.0
 		#How fast it takes to fully swing a Blade of Ender. The lower the number the slower it takes to recharge, Default: 1.2
 		#Range: 0.0 ~ 1.7976931348623157E308
 		bladeOfEnderAttackSpeed = 1.2
@@ -420,7 +420,7 @@
 	["Tools & Weapons".Scythes]
 		#How much damage Death Scythe deals, the configured number is added to Scythe Base Damage, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		deathScytheDamage = 4.0
+		deathScytheDamage = 6.0
 		#How many uses before Death Scythe breaks, Default: 444
 		#Range: > 1
 		deathScytheDurability = 444
@@ -431,7 +431,7 @@
 		scytheAttackSpeed = 0.6
 		#The chance, by percentage, of Sapped being amplified after hitting affected with Death Scythe, Default: 20
 		#Range: > 0
-		deathScytheSappedDuration = 20
+		deathScytheSappedDuration = 30
 		#Whether tools don't break but no longer benefits, Default: true
 		deathScythePersist = true
 		#Amount of Soul Energy Scythes gives when hitting mob(s), Default: 1
@@ -439,7 +439,7 @@
 		darkScytheSouls = 1
 		#How much base damage Scythes deals, the damage added depends on material the scythe is made off (ie. Iron = 2.0), Default: 4.5
 		#Range: 1.0 ~ 1.7976931348623157E308
-		scytheBaseDamage = 4.5
+		scytheBaseDamage = 6.0
 		#Define the Enchantability for Death Scythe, higher number the better, Default: 22
 		#Range: > 1
 		deathScytheEnchantability = 22

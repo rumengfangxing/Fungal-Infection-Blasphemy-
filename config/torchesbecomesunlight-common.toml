@@ -236,7 +236,7 @@
 		[server.tools.halberd]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 60.0
+			attack_damage = 30.0
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
 			requirements_1 = 10
@@ -247,73 +247,73 @@
 		[server.tools.shield]
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
-			requirements_1 = 10
+			requirements_1 = 6
 
 		[server.tools.scratch]
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
-			requirements_1 = 60
+			requirements_1 = 40
 
 		[server.tools.winter_pass]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 18.0
+			attack_damage = 9.0
 			#skill1 numerical requirements
 			#Range: 0 ~ 100
-			requirements1 = 50
+			requirements1 = 30
 
 		[server.tools.ice_broadsword]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 30.0
+			attack_damage = 15.0
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
-			requirements_1 = 35
+			requirements_1 = 15
 
 		[server.tools.fire_steel]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 24.0
+			attack_damage = 12.0
 
 		[server.tools.sankta_ring]
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
-			requirements_1 = 5
+			requirements_1 = 3
 
 		[server.tools.phantom_grasp]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 12.0
+			attack_damage = 6.0
 			#skill1 numerical requirements
 			#Range: 0 ~ 100
-			requirements1 = 20
+			requirements1 = 10
 
 		[server.tools.sacred_halberd]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 72.0
+			attack_damage = 36.0
 			#skill light numerical requirements
 			#Range: 0 ~ 100
 			light_requirements = 10
 			#skill wind numerical requirements
 			#Range: 0 ~ 100
-			wind_requirements = 70
+			wind_requirements = 50
 
 		[server.tools.sacred_gun]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 30.0
+			attack_damage = 15.0
 			#skill numerical requirements
 			#Range: 0 ~ 100
-			requirements = 60
+			requirements = 30
 
 		[server.tools.machete]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 42.0
+			attack_damage = 21.0
 			#skill numerical requirements
 			#Range: 0 ~ 100
-			requirements = 45
+			requirements = 20
 
 	[server.global_setting]
 		#Whether living can talk

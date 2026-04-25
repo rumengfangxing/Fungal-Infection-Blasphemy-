@@ -58,10 +58,10 @@
 ["Flesh Exoskeleton"]
 	#Default 0
 	#Range: > 0
-	"Armor Toughness" = 2
+	"Armor Toughness" = 3
 	#Default 0
 	#Range: > 0
-	"Armor Knockback Resistance" = 4
+	"Armor Knockback Resistance" = 1
 
 	["Flesh Exoskeleton".Helmet]
 		#Default 2
@@ -163,7 +163,7 @@
 	#Default false
 	"Turn off the system?" = false
 	#Default true
-	"Should we play songs in the minecraft menu?" = true
+	"Should we play songs in the minecraft menu?" = false
 
 ["Living Guns"]
 	#Default 5
@@ -174,7 +174,7 @@
 	"Mist Maker Durability" = 800
 	#Default 8
 	#Range: > 1
-	"Bile Blaster Damage" = 36
+	"Bile Blaster Damage" = 40
 	#Default 15
 	#Range: > 1
 	"Acidic Assassin Damage" = 75
@@ -1144,7 +1144,7 @@
 		"Sentient Mobs targeted by the Hivetumor" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
 		#Default 128
 		#Range: > 1
-		"Sets the linking range" = 128
+		"Sets the linking range" = 800
 		#Default 1200
 		#Range: > 1
 		"Time before it grows back into a hivemind" = 1200
@@ -1285,12 +1285,12 @@
 	"Armor Toughness" = 2
 	#Default 0
 	#Range: > 0
-	"Armor Knockback Resistance" = 4
+	"Armor Knockback Resistance" = 0
 
 	["Plated Exoskeleton".Helmet]
 		#Default 4
 		#Range: > 1
-		"Helmet Protection" = 12
+		"Helmet Protection" = 8
 		#Default 350
 		#Range: > 1
 		"Helmet Durability" = 1200
@@ -1298,7 +1298,7 @@
 	["Plated Exoskeleton".Leggings]
 		#Default 6
 		#Range: > 1
-		"Leggings Protection" = 20
+		"Leggings Protection" = 12
 		#Default 400
 		#Range: > 1
 		"Leggings Durability" = 1300
@@ -1309,12 +1309,12 @@
 		"Boots Durability" = 800
 		#Default 3
 		#Range: > 1
-		"Boots Protection" = 10
+		"Boots Protection" = 6
 
 	["Plated Exoskeleton".Chestplate]
 		#Default 8
 		#Range: > 1
-		"Chestplate Protection" = 26
+		"Chestplate Protection" = 14
 		#Default 500
 		#Range: > 1
 		"Chestplate Durability" = 1400
@@ -1333,10 +1333,10 @@
 ["Living Exoskeleton"]
 	#Default 1
 	#Range: > 0
-	"Armor Toughness" = 2
+	"Armor Toughness" = 3
 	#Default 1
 	#Range: > 0
-	"Armor Knockback Resistance" = 4
+	"Armor Knockback Resistance" = 1
 
 	["Living Exoskeleton".Helmet]
 		#Default 4
@@ -1385,94 +1385,94 @@
 
 	["Weapons and Tools OwO".Shield]
 		#Default 1000
-		Durability = 500
+		Durability = 1500
 		#Default 5
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Scythe]
 		#Default 750
-		Durability = 500
+		Durability = 1500
 		#Default 10
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".PSI]
 		#Default 25
-		"Max charge" = 175
+		"Max charge" = 125
 		#Default 3
 		#Range: > 1
-		"Damage Multiplier" = 3
+		"Damage Multiplier" = 5
 		#Default 300
-		Durability = 500
+		Durability = 1500
 		#Default 6
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Pickaxe]
 		#Default 1000
-		Durability = 500
+		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".BattleAxe]
 		#Default 750
-		Durability = 500
+		Durability = 1500
 		#Default 15
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Bow]
 		#Default 350
 		"Bow Durability" = 700
 		#Default 5
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 		#Default 1.0
 		"Bow Range Damage Modifier" = 1.2
 
 	["Weapons and Tools OwO".Chakram]
 		#Default 600
-		Durability = 500
+		Durability = 1500
 		#Default 10
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Rapier]
 		#Default 750
-		Durability = 500
+		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Halberd]
 		#Default 750
-		Durability = 500
+		Durability = 1500
 		#Default 11
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Maul]
 		#Default 1000
-		Durability = 500
+		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Sickle]
 		#Default 600
-		Durability = 500
+		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO"."Syringe Gun"]
 		#Default 300
-		Durability = 500
+		Durability = 1500
 		#Default 5
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO"."Weapon Agents data"]
 		#Toughness increase 3
@@ -1493,62 +1493,62 @@
 
 	["Weapons and Tools OwO".Knife]
 		#Default 250
-		Durability = 500
+		Durability = 1500
 		#Default 6
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Mace]
 		#Default 600
-		Durability = 500
+		Durability = 1500
 		#Default 14
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO"."Combat Shovel"]
 		#Default 1000
-		Durability = 500
+		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Cleaver]
 		#Default 750
-		Durability = 500
+		Durability = 1500
 		Decapitation = ["minecraft:skeleton|minecraft:skeleton_skull", "minecraft:wither_skeleton|minecraft:wither_skeleton_skull", "minecraft:zombie|minecraft:zombie_head", "minecraft:creeper|minecraft:creeper_head", "minecraft:piglin|minecraft:piglin_head"]
 		#Default 14
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".GreatSword]
 		#Default 2
 		#Range: > 1
-		Toughness = 1
+		Toughness = 2
 		#Default 8
 		#Range: > 1
-		Armor = 16
+		Armor = 12
 		#Default 750
-		Durability = 500
+		Durability = 1500
 		#Default 12
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Saber]
 		#Default 750
-		Durability = 500
+		Durability = 1500
 		#Default 10
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO"."Gas Masks"]
 		"Gas masks" = ["spore:gas_mask", "spore:inf_up_helmet"]
 
 	["Weapons and Tools OwO".Spear]
 		#Default 600
-		Durability = 500
+		Durability = 1500
 		#Default 11
 		#Range: > 1
-		Damage = 22
+		Damage = 17
 
 	["Weapons and Tools OwO".Reaver]
 		"Loot from basic evolved infected" = ["spore:claw_fragment|40", "spore:mutated_fiber|40", "spore:armor_fragment|45", "spore:tumor|20"]
@@ -1556,9 +1556,9 @@
 		"Loot from basic hyper infected" = ["spore:claw_fragment|60", "spore:mutated_fiber|50", "spore:armor_fragment|15", "spore:tumor|35"]
 		#Default 300
 		#Range: > 1
-		Durability = 500
+		Durability = 1500
 		"Loot from calamities" = ["spore:claw_fragments|100", "spore:mutated_fiber|100", "spore:tumor|100", "spore:armor_fragment|100"]
 		#Default 6
-		Damage = 22
+		Damage = 17
 		"Loot from basic infected" = ["spore:claw_fragment|10", "spore:mutated_fiber|30", "minecraft:string|15"]
 
