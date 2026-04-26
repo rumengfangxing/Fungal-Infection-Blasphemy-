@@ -39,6 +39,13 @@
     "item.fib.small_casing": "小型弹壳",
     "item.fib.casing": "弹壳",
     "item.fib.small_piece_of_paper":"小纸片",
+    "item.fib.t1_equipment_module":"T1装备组件",
+    "item.fib.t2_equipment_module":"T2装备组件",
+    "item.fib.bio_equipment_module":"生化装备组件",
+    "item.fib.h._a._equipment_module":"重装装备组件",
+    "item.fib.spec_equipment_module":"特种装备组件",
+    "item.fib.echo_equipment_module":"回响装备组件",
+    "item.fib.avi_equipment_module":"魔翎装备组件",
 
     "item.fib.fib_logo": "§cFIB看板娘",
     "item.fib.fib_logo.tooltip.1": "一位传奇大法师的碎片(是的，人民碎片)，她和一位传奇工匠有着一段不朽的神话",
