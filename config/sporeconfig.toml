@@ -66,7 +66,7 @@
 	["Flesh Exoskeleton".Helmet]
 		#Default 2
 		#Range: > 1
-		"Helmet Protection" = 12
+		"Helmet Protection" = 4
 		#Default 350
 		#Range: > 1
 		"Helmet Durability" = 1200
@@ -74,7 +74,7 @@
 	["Flesh Exoskeleton".Leggings]
 		#Default 5
 		#Range: > 1
-		"Leggings Protection" = 20
+		"Leggings Protection" = 10
 		#Default 400
 		#Range: > 1
 		"Leggings Durability" = 1300
@@ -85,12 +85,12 @@
 		"Boots Durability" = 800
 		#Default 2
 		#Range: > 1
-		"Boots Protection" = 10
+		"Boots Protection" = 4
 
 	["Flesh Exoskeleton".Chestplate]
 		#Default 6
 		#Range: > 1
-		"Chestplate Protection" = 26
+		"Chestplate Protection" = 9
 		#Default 500
 		#Range: > 1
 		"Chestplate Durability" = 1400
