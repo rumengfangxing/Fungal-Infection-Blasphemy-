@@ -125,10 +125,10 @@
 	accumulator_max_input = 50000
 	#Accumulator max multiblock height.
 	#Range: 1 ~ 8
-	accumulator_max_height = 8
+	accumulator_max_height = 5
 	#Accumulator max multiblock width.
 	#Range: 1 ~ 8
-	accumulator_max_width = 5
+	accumulator_max_width = 3
 
 #Rolling Mill
 [rolling_mill]
