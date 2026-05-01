@@ -63,7 +63,7 @@ const H = 'fib:t2_equipment_module'
     ],
       'fib:t2_equipment_module',
     [
-      create.deploying(H,[H,'spore:compound_plate']),
+      create.deploying(H,[H,'create:sturdy_sheet']),
       create.filling(H,[H,Fluid.lava(1000)]),
       create.pressing(H,H),
     ])
