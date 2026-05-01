@@ -55,6 +55,7 @@
     "item.fib.spec_equipment_module.tooltip.1":"§c可以和任意状态下的对应护甲组装，小心重复组装浪费组件",
     "item.fib.echo_equipment_module.tooltip.1":"§c可以和任意状态下的对应护甲组装，小心重复组装浪费组件",
     "item.fib.avi_equipment_module.tooltip.1":"§c可以和任意状态下的对应护甲组装，小心重复组装浪费组件",
+    "item.fib.ru_meng.tooltip.1":"§5神秘放鸽男",
 
     "item.fib.fib_logo": "§cFIB看板娘",
     "item.fib.fib_logo.tooltip.1": "一位传奇大法师的碎片(是的，人民碎片)，她和一位传奇工匠有着一段不朽的神话",
@@ -88,6 +89,8 @@
 
 	
 	"block.fib.timeless_sand": "§8时之沙",
+    "block.fib.radio_station": "电台",
+    "block.fib.ru_meng":"§5如梦玩偶",
     
 
     "item.spore.bezerk_syringe.tooltip.shift_hint": "§6按 [Shift] 查看佩戴时获得效果",
