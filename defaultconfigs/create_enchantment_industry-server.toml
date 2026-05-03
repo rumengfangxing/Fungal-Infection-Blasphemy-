@@ -2,21 +2,21 @@
 #The Tank Capacity of the Disenchanter
 #[@cui:RequiresReload:server]
 #Range: > 0
-disenchanterTankCapacity = 1000
+disenchanterTankCapacity = 20000
 #.
 #The Tank Capacity of the Copier
 #[@cui:RequiresReload:server]
 #Range: > 0
-copierTankCapacity = 4000
+copierTankCapacity = 40000
 #.
 #The Tank Capacity of the Blaze Enchanter
 #[@cui:RequiresReload:server]
 #Range: > 0
-blazeEnchanterTankCapacity = 2000
+blazeEnchanterTankCapacity = 20000
 #.
 #The Maximum Extended Levels beyond Enchantment's Max Level that can be reached through Hyper-Enchanting
 #Range: > 0
-maxHyperEnchantingLevelExtension = 6
+maxHyperEnchantingLevelExtension = 255
 #.
 #The Chance of whether Deployer-killed entities will drop Experience Nugget
 #Range: 0.0 ~ 1.0
