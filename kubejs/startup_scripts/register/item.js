@@ -27,7 +27,7 @@ StartupEvents.registry('item', event => {
 	event.create('fib:t1_equipment_module')
 	event.create('fib:t2_equipment_module')
 	event.create('fib:bio_equipment_module')
-	event.create('fib:bio_equipment_module_0')
+	event.create('fib:bio_equipment_module_0').glow(true)
 	event.create('fib:h_a_equipment_module')
 	event.create('fib:spec_equipment_module')
 	event.create('fib:echo_equipment_module')

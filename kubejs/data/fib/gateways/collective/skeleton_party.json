@@ -1,0 +1,158 @@
+{
+	"size": "large",
+	"color": "#b4b4b4",
+	"waves": [
+		{
+			"entities": [
+				{
+					"entity": "minecraft:skeleton",
+					"count": 5
+				}
+			],
+			"modifiers": [
+				{"attribute":"minecraft:generic.max_health","operation":"MULTIPLY_TOTAL","value":0.5},
+				{"attribute":"minecraft:generic.attack_damage","operation":"MULTIPLY_TOTAL","value":0.2},
+				{"attribute":"attributeslib:arrow_damage","operation":"MULTIPLY_TOTAL","value":0.5},
+				{"attribute":"attributeslib:arrow_velocity","operation":"MULTIPLY_TOTAL","value":0.5}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "goety:skull_lord",
+					"rolls": 2
+				}
+			],
+			"max_wave_time": 500,
+			"setup_time": 50
+		},
+		{
+			"entities": [
+				{
+					"entity": "minecraft:skeleton",
+					"count": 5
+				}
+			],
+			"modifiers": [
+				{"attribute":"minecraft:generic.max_health","operation":"MULTIPLY_TOTAL","value":0.8},
+				{"attribute":"minecraft:generic.attack_damage","operation":"MULTIPLY_TOTAL","value":0.46},
+				{"attribute":"attributeslib:arrow_damage","operation":"MULTIPLY_TOTAL","value":1.0},
+				{"attribute":"attributeslib:arrow_velocity","operation":"MULTIPLY_TOTAL","value":1.0}
+			],
+			"rewards": [
+				{
+					"type": "gateways:stack",
+					"stack": {
+						"item": "gateways:gate_pearl",
+						"count": 1,
+						"nbt": {
+							"gateway": "fib:collective/skeleton_party"
+						}
+					}
+				},
+				{
+					"type": "gateways:entity_loot",
+					"entity": "goety:skull_lord",
+					"rolls": 4
+				}
+			],
+			"max_wave_time": 500,
+			"setup_time": 50
+		},
+		{
+			"entities": [
+				{"entity":"minecraft:skeleton","count":5},
+				{"entity":"minecraft:skeleton_horse","count":2,"nbt":"{SkeletonTrap:1b}"}
+			],
+			"modifiers": [
+				{"attribute":"minecraft:generic.max_health","operation":"MULTIPLY_TOTAL","value":1.1},
+				{"attribute":"minecraft:generic.attack_damage","operation":"MULTIPLY_TOTAL","value":0.72},
+				{"attribute":"attributeslib:arrow_damage","operation":"MULTIPLY_TOTAL","value":1.5},
+				{"attribute":"attributeslib:arrow_velocity","operation":"MULTIPLY_TOTAL","value":1.5}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "goety:skull_lord",
+					"rolls": 8
+				}
+			],
+			"max_wave_time": 500,
+			"setup_time": 50
+		},
+		{
+			"entities": [
+				{"entity":"minecraft:skeleton","count":5},
+				{"entity":"minecraft:skeleton_horse","count":3,"nbt":"{SkeletonTrap:1b}"},
+				{"entity":"minecraft:stray","count":3}
+			],
+			"modifiers": [
+				{"attribute":"minecraft:generic.max_health","operation":"MULTIPLY_TOTAL","value":1.4},
+				{"attribute":"minecraft:generic.attack_damage","operation":"MULTIPLY_TOTAL","value":0.98},
+				{"attribute":"attributeslib:arrow_damage","operation":"MULTIPLY_TOTAL","value":2.0},
+				{"attribute":"attributeslib:arrow_velocity","operation":"MULTIPLY_TOTAL","value":2.0}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "goety:skull_lord",
+					"rolls": 12
+				}
+			],
+			"max_wave_time": 500,
+			"setup_time": 50
+		},
+		{
+			"entities": [
+				{"entity":"minecraft:skeleton","count":5},
+				{"entity":"minecraft:skeleton_horse","count":5,"nbt":"{SkeletonTrap:1b}"},
+				{"entity":"minecraft:stray","count":5}
+			],
+			"modifiers": [
+				{"attribute":"minecraft:generic.max_health","operation":"MULTIPLY_TOTAL","value":1.7},
+				{"attribute":"minecraft:generic.attack_damage","operation":"MULTIPLY_TOTAL","value":1.24},
+				{"attribute":"attributeslib:arrow_damage","operation":"MULTIPLY_TOTAL","value":2.5},
+				{"attribute":"attributeslib:arrow_velocity","operation":"MULTIPLY_TOTAL","value":2.5}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "goety:skull_lord",
+					"rolls": 16
+				}
+			],
+			"max_wave_time": 500,
+			"setup_time": 50
+		},
+		{
+			"entities": [
+				{"entity":"minecraft:skeleton","count":5},
+				{"entity":"minecraft:skeleton_horse","count":6,"nbt":"{SkeletonTrap:1b}"},
+				{"entity":"minecraft:stray","count":6}
+			],
+			"modifiers": [
+				{"attribute":"minecraft:generic.max_health","operation":"MULTIPLY_TOTAL","value":2.0},
+				{"attribute":"minecraft:generic.attack_damage","operation":"MULTIPLY_TOTAL","value":1.5},
+				{"attribute":"attributeslib:arrow_damage","operation":"MULTIPLY_TOTAL","value":3.0},
+				{"attribute":"attributeslib:arrow_velocity","operation":"MULTIPLY_TOTAL","value":3.0}
+			],
+			"rewards": [
+				{
+					"type": "gateways:entity_loot",
+					"entity": "goety:skull_lord",
+					"rolls": 32
+				}
+			],
+			"max_wave_time": 500,
+			"setup_time": 50
+		}
+	],
+	"failures": [
+		{
+			"type": "gateways:explosion",
+			"strength": 6,
+			"fire": true,
+			"block_damage": true
+		}
+	],
+	"spawn_algorithm": "gateways:inward_spiral"
+}

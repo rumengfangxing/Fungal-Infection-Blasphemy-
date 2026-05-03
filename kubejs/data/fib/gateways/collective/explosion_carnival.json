@@ -1,0 +1,177 @@
+{
+	"size": "large",
+	"color": "#1b7b09",
+	"waves": [
+		{
+			"entities": [
+				{
+					"entity": "minecraft:creeper",
+					"count": 3,
+					"nbt": "{Fuse:20, ExplosionRadius:3}"
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.5
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.3
+				}
+			],
+			"max_wave_time": 400,
+			"setup_time": 100
+		},
+		{
+			"entities": [
+				{
+					"entity": "minecraft:creeper",
+					"count": 4,
+					"nbt": "{Fuse:15, ExplosionRadius:3}"
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.8
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.4
+				}
+			],
+			"max_wave_time": 400,
+			"setup_time": 90
+		},
+		{
+			"entities": [
+				{
+					"entity": "minecraft:creeper",
+					"count": 5,
+					"nbt": "{powered:1b, Fuse:10, ExplosionRadius:4}"
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 1.2
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.5
+				}
+			],
+			"max_wave_time": 400,
+			"setup_time": 80
+		},
+		{
+			"entities": [
+				{
+					"entity": "minecraft:creeper",
+					"count": 6,
+					"nbt": "{powered:1b, Fuse:8, ExplosionRadius:4}"
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 1.5
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 0.8
+				}
+			],
+			"max_wave_time": 400,
+			"setup_time": 70
+		},
+		{
+			"entities": [
+				{
+					"entity": "minecraft:creeper",
+					"count": 7,
+					"nbt": "{powered:1b, Fuse:6, ExplosionRadius:4}"
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 2
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 1
+				}
+			],
+			"max_wave_time": 400,
+			"setup_time": 60
+		},
+		{
+			"entities": [
+				{
+					"entity": "minecraft:creeper",
+					"count": 8,
+					"nbt": "{powered:1b, Fuse:3, ExplosionRadius:4}"
+				}
+			],
+			"modifiers": [
+				{
+					"attribute": "minecraft:generic.movement_speed",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 3
+				},
+				{
+					"attribute": "minecraft:generic.attack_damage",
+					"operation": "MULTIPLY_TOTAL",
+					"value": 2
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:stack",
+					"stack": {
+						"item": "gateways:gate_pearl",
+						"count": 1,
+						"nbt": {
+							"gateway": "fib:collective/explosion_carnival"
+						}
+					}
+				},
+				{
+					"type": "gateways:entity_loot",
+					"entity": "minecraft:creeper",
+					"rolls": 128
+				},
+				{
+					"type": "gateways:stack",
+					"stack": {
+						"item": "fib:ru_meng",
+						"count": 1
+					}
+				}
+			],
+			"max_wave_time": 400,
+			"setup_time": 50
+		}
+	],
+	"failures": [
+		{
+			"type": "gateways:explosion",
+			"strength": 6,
+			"fire": true,
+			"block_damage": true
+		}
+	],
+	"spawn_algorithm": "gateways:inward_spiral"
+}

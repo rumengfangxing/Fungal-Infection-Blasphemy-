@@ -22,7 +22,7 @@ function handleFungifiedPlayerAttack(event) {
 
 	event.amount *= FUNGIFIED_DAMAGE_MUL * amplifier + 1
 
-	if (duration >= 30 * 20 && duration < 40 * 20 && amplifier < 5) {
+	if (duration >= 30 * 20 && duration < 40 * 20 && amplifier < 10) {
 		duration = 8 * 20
 		amplifier += 1
 	} else {

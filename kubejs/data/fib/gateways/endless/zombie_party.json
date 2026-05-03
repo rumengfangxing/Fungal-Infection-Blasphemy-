@@ -1,0 +1,75 @@
+{
+    "type": "gateways:endless",
+	"size": "large",
+	"color": "#a8b4dd",
+	"base_wave": {
+        "entities": [
+        {
+            "entity": "minecraft:zombie",
+            "count": 5
+        }
+        ],
+        "rewards": [{
+            "type": "gateways:entity_loot",
+            "entity": "minecraft:zombie",
+            "rolls": 6
+        }],
+        "max_wave_time": 400,
+        "setup_time": 50
+     },
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 2,
+                "max": 10
+            },
+            "entities": [
+            {
+                "entity": "minecraft:zombie",
+                "count": 2
+            },
+            {
+                "entity": "minecraft:husk",
+                "count": 1
+            }
+        ],
+            "rewards": [{
+                "type": "gateways:entity_loot",
+                "entity": "minecraft:zombie",
+                "rolls": 8
+            }],
+            "max_wave_time": -20,
+            "setup_time": -10
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 2,
+                "max": 20
+            },
+            "modifiers": [{
+                "attribute": "generic.max_health",
+                "operation": "multiply_total",
+                "value": 0.20
+            },{
+                "attribute": "generic.attack_speed",
+                "operation": "multiply_total",
+                "value": 0.1
+            },{
+                "attribute": "generic.attack_damage",
+                "operation": "multiply_total",
+                "value": 0.1
+            }]
+        }
+    ],
+    "failures": [
+        {
+			"type": "gateways:explosion",
+			"strength": 6,
+			"fire": true,
+			"block_damage": true
+		}
+    ],
+    "spawn_algorithm": "gateways:inward_spiral"
+}
