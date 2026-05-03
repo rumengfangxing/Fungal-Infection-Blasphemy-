@@ -1,0 +1,58 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ftb"
+	group: "7C3CC28B4F4C38EC"
+	icon: "majruszsdifficulty:warden_treasure_bag"
+	id: "0BE82DD6387D06A1"
+	images: [{
+		height: 1.0d
+		image: "lightmanscurrency:textures/gui/icons/collect_coins.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: 0.0d
+		y: -1.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"正在重写ing...."
+			"太久没发新版本了，做的新内容的任务引导还没写好"
+			"在这里概述一下"
+			""
+			"及时更新了一些模组"
+			"现在机械动力有完整的制作心智的路径"
+			"添加了装备组件，可以制作大部分装备的各种变体"
+			"添加了一些传送门珍珠"
+			""
+			""
+			"这个版本可以说是引导最难受的一个版本了"
+		]
+		icon: "minecraft:writable_book"
+		id: "0500FAA7BA009FC6"
+		rewards: [
+			{
+				exclude_from_claim_all: true
+				id: "56A94C484FBB0BEB"
+				table_id: 2326065275749629103L
+				team_reward: false
+				type: "choice"
+			}
+			{
+				id: "21C917F4F3597EEB"
+				item: "lightmanscurrency:coin_emerald"
+				team_reward: false
+				type: "item"
+			}
+		]
+		tasks: [{
+			id: "33D672DFA25C49D8"
+			type: "checkmark"
+		}]
+		title: "为什么任务如此稀烂？"
+		x: 0.5d
+		y: -0.5d
+	}]
+	title: "ftb任务。"
+}

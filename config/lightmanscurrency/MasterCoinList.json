@@ -63,7 +63,7 @@
         },
         {
           "Coin": "lightmanscurrency:coin_emerald",
-          "exchangeRate": 5,
+          "exchangeRate": 10,
           "initial": {
             "translate": "item.lightmanscurrency.coin_emerald.initial"
           },
@@ -73,7 +73,7 @@
         },
         {
           "Coin": "lightmanscurrency:coin_diamond",
-          "exchangeRate": 5,
+          "exchangeRate": 10,
           "initial": {
             "translate": "item.lightmanscurrency.coin_diamond.initial"
           },
@@ -83,7 +83,7 @@
         },
         {
           "Coin": "lightmanscurrency:coin_netherite",
-          "exchangeRate": 5,
+          "exchangeRate": 10,
           "initial": {
             "translate": "item.lightmanscurrency.coin_netherite.initial"
           },

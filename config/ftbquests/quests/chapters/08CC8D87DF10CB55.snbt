@@ -98,13 +98,11 @@
 				{
 					id: "6715757D08F7BFF4"
 					item: "minecraft:netherite_ingot"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5692DD7934636D20"
 					item: "minecraft:netherite_scrap"
-					optional_task: true
 					type: "item"
 				}
 			]

@@ -248,14 +248,12 @@
 					advancement: "minecraft:adventure/kill_a_mob"
 					criterion: ""
 					id: "14FE7BFB85FCD3CB"
-					optional_task: true
 					type: "advancement"
 				}
 				{
 					advancement: "spore:inf_mobs"
 					criterion: ""
 					id: "27D0F6CFEF8E7CC2"
-					optional_task: true
 					type: "advancement"
 				}
 			]

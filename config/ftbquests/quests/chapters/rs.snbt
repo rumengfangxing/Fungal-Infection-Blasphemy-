@@ -7,7 +7,7 @@
 	group: "1EBC22E93EF9B621"
 	icon: "refinedstorage:controller"
 	id: "7782861D0AC04920"
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

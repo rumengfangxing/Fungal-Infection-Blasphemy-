@@ -780,13 +780,11 @@
 				{
 					id: "3EE2DB84282BEC2A"
 					item: "goety:crypt_stone"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7379D2E7E1581428"
 					item: "goety:ectoplasm"
-					optional_task: true
 					type: "item"
 				}
 			]
