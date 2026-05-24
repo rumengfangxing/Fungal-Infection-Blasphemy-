@@ -7,7 +7,6 @@ ServerEvents.recipes(event => {
 const removeRecipeIds = [
     'goety:focus/illusion_focus',
     'torchmaster:megatorch',
-    'inqui:cleaner',
 //冗余子弹,弹药素材配方删除
     'emxarms:ammo/402x31rip',
     'tacz:ammo/68x51fury',

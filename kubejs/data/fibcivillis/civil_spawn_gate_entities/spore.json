@@ -1,0 +1,8 @@
+{
+  "entries": [
+    { "blacklist": ["spore:inf_human","spore:inf_player","spore:inf_villager","spore:inf_wanderer",
+    "spore:inf_witch","spore:inf_pillager","spore:inf_drowned","spore:inf_husk","spore:inf_hazmat",
+    "spore:inf_diseased_villager","spore:inf_vindicator","spore:inf_evoker","spore:scent","spore:claw",
+    "spore:tendril","spore:mound"] }
+  ]
+}

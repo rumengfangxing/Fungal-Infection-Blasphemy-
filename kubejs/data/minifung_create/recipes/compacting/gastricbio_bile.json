@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "spore:gastric_biomass_block"
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "fluid": "spore:bile"
+    }
+  ]
+}

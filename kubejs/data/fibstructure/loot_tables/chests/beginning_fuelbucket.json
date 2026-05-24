@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "createdieselgenerators:diesel_bucket",
+          "weight": 2 
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createdieselgenerators:ethanol_bucket",
+          "weight": 8 
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createaddition:seed_oil_bucket",
+          "weight": 8 
+        }
+      ],
+      "rolls":12.0
+    }
+  ]
+}

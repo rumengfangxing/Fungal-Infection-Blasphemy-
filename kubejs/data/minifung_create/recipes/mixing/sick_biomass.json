@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    }
+  ],
+  "results": [
+    {
+      "item": "spore:sicken_biomass_block"
+    }
+  ]
+}

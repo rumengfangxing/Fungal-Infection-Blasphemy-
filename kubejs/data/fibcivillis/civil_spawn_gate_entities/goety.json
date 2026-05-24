@@ -1,0 +1,5 @@
+{
+  "entries": [
+    { "blacklist": ["goety:web_spider","goety:icy_spider","goety:wraith","goety:reaper"] }
+  ]
+}

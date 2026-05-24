@@ -1,0 +1,46 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "spore:membrane_block"
+    }
+  ],
+  "processingTime": 75,
+  "results": [
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "chance": 0.25,
+      "item": "spore:biomass"
+    },
+    {
+      "chance": 0.075,
+      "item": "spore:mutated_fiber"
+    },
+    {
+      "chance": 0.005,
+      "item": "spore:armor_fragment"
+    },
+    {
+      "chance": 0.1,
+      "item": "spore:wing_membrane"
+    },
+    {
+      "chance": 0.015,
+      "item": "spore:mutated_heart"
+    },
+    {
+      "chance": 0.05,
+      "item": "spore:organoid_membrane"
+    },
+    {
+      "chance": 0.05,
+      "item": "spore:nerves"
+    },
+    {
+      "chance": 0.02,
+      "item": "spore:tumor"
+    }
+  ]
+}

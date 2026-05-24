@@ -1,0 +1,121 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:dispenser"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "spore:cdu"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:dispenser"
+        },
+        [
+          {
+            "item": "spore:compound_plate"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "minecraft:dispenser"
+        }
+      ]
+    },
+
+        {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:dispenser"
+        },
+        [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "minecraft:dispenser"
+        }
+      ]
+    },
+        {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:dispenser"
+        },
+        [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "minecraft:dispenser"
+        }
+      ]
+    },
+            {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:dispenser"
+        },
+        [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "minecraft:dispenser"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:dispenser"
+        },
+        [
+          {
+            "item": "spore:compound_plate"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "minecraft:dispenser"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:dispenser"
+        }
+      ],
+      "results": [
+        {
+          "item":"minecraft:dispenser"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "minecraft:dispenser"
+  }
+}

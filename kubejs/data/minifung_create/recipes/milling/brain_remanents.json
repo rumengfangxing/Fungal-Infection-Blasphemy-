@@ -1,0 +1,18 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "spore:brain_remnants"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "item": "spore:cerebrum"
+    },
+    {
+      "chance": 0.5,
+      "item": "spore:vigil_eye"
+    }
+  ]
+}

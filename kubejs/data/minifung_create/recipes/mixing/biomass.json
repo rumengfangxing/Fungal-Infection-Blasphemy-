@@ -1,0 +1,13 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "spore:biomass", "count": 4
+    }
+  ],
+  "results": [
+    {
+      "item": "spore:biomass_block"
+    }
+  ]
+}

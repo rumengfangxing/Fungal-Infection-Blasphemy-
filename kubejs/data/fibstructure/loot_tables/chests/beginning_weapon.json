@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{GunCurrentAmmoCount:0,GunFireMode:\"SEMI\",GunId:\"bf1:sw_model3\",HasBulletInBarrel:1b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{GunCurrentAmmoCount:0,GunFireMode:\"SEMI\",GunId:\"tacz:deagle\",HasBulletInBarrel:0b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{GunCurrentAmmoCount:0,GunFireMode:\"SEMI\",GunId:\"tacz:deagle_golden\",HasBulletInBarrel:0b}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lrtactical:melee",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,MeleeWeaponId:\"lrtactical:baseball_bat\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lrtactical:melee",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:0,MeleeWeaponId:\"bf1:sledge_hammer\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lrtactical:melee",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{MeleeWeaponId:\"delta_wt:silencefd\"}"
+            }
+          ]
+        }
+      ],
+      "rolls": 5.0
+    }
+  ]
+}

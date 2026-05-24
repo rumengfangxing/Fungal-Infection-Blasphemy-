@@ -1,0 +1,103 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:portable_grid",
+          "weight": 1,
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:1k_storage_disk",
+          "weight": 1,
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 4.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:storage_housing",
+          "weight": 1,
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:1k_storage_part",
+          "weight": 1,
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:external_storage",
+          "weight": 1,
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

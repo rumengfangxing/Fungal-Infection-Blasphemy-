@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    }
+  ],
+  "results": [
+    {
+      "item": "spore:rooted_mycelium"
+    }
+  ]
+}

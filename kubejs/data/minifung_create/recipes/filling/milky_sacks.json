@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "spore:alveolic_sack"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:milk"
+    }
+  ],
+  "results": [
+    {
+      "item": "spore:milky_sack"
+    }
+  ]
+}

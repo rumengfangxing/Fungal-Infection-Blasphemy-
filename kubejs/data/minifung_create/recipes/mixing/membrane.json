@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:mutated_fiber"
+    }
+  ],
+  "results": [
+    {
+      "item": "spore:membrane_block"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 6.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tacz:ammo",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AmmoId:\"tacz_unidict:pistol\"}"
+            },
+            {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 16.0,
+                    "min": 6.0
+                  },
+                  "function": "minecraft:set_count"
+                }
+          ]
+        }
+      ]
+    }
+  ]
+}
