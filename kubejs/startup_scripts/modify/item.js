@@ -2,10 +2,10 @@ ItemEvents.modification(event => {
     // 一直吃
     Ingredient.all.itemIds.forEach((id) => {
         event.modify(id, (item) => {
-            if (item.foodProperties == null) return
-            item.foodProperties = (properties) => {
+            if (item.getFoodProperties() == null) return
+            item.setFoodProperties((properties) => {
                 properties.alwaysEdible()
-            }
+            })
         })
     })
 
