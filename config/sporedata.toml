@@ -75,6 +75,7 @@
 	"Stahlmorder Blade loot" = ["spore:mutated_fiber|100|5|15", "spore:armor_fragment|100|3|14", "spore:tumor|100|1|4", "spore:tendons|70|6|12", "spore:claw|100|3|12", "spore:claw_fragment|100|15|45"]
 	"Hive Tumor" = ["spore:mutated_fiber|100|10|20", "spore:organoid_membrane|80|4|8", "spore:mutated_heart|80|1|6", "spore:cerebrum|100|2|5"]
 	Groberfub = ["spore:mutated_fiber|70|5|16", "spore:armor_fragment|80|6|12", "spore:mutated_heart|50|1|1", "spore:claw_fragment|80|5|15", "spore:tendons|60|3|7"]
+	Gorgon = ["spore:mutated_fiber|70|1|5", "spore:armor_fragment|80|2|6", "spore:mutated_heart|10|1|1", "spore:claw_fragment|80|6|9", "spore:innards|50|1|1", "spore:tumor|100|2|4"]
 
 [Others]
 	"Infected Player possible names" = ["The_Harbinger69", "ABucketOfFriedChicken", "LoneGuy", "cheesepuff", "Sire_AwfulThe1st", "Azami", "Deyvid", "Dany_Why", "Technoblade", "Ike", "Hypnotizd", "That_Insane_Guy", "JhonOK22", "Tabcaps", "WhisperFire26", "ButtonHatBoy", "Gistique", "BigXplosion", "Atomiclbomb", "Mad_Dog", "Ripley", "gregTheTyrant", "Joker_de_Coeur", "xXFuryXx", "Nova69", "Belladonna", "Entity", "Keymind", "Whisper", "Helldwin", "ExeedingSky74", "Flash62724", "Hank_o", "JWT114", "DawnsSlayers", "Dr_Pilot_MOO", "NexouuZ", "Mr_Door12323", "PedroHenrry", "TVGuy", "ThatGardener", "TheCaramelGuy", "TokenOni420", "lightigivhi", "CODATOWER", "mrlambert6", "SyrCrypt", "KaratFeng", "Toasteroni", "UnmeiHa", "AllToAshes", "0dna"]
@@ -104,16 +105,13 @@
 	"Reconstructed Mind Distance from a proto hivemind" = 192
 
 ["Block infection"]
-	"Blocks and their infected counterparts" = ["minecraft:grass_block|minecraft:mycelium", "minecraft:netherrack|spore:infested_netherrack", "minecraft:end_stone|spore:infested_end_stone", "minecraft:soul_sand|spore:infested_soul_sand", "minecraft:soul_soil|spore:infested_soul_sand"]
+	"Blocks and their infected counterparts" = ["minecraft:grass_block|minecraft:mycelium", "minecraft:netherrack|spore:infested_netherrack", "minecraft:end_stone|spore:infested_end_stone", "minecraft:soul_sand|spore:infested_soul_sand", "minecraft:soul_soil|spore:infested_soul_sand", "biomancy:malignant_flesh|spore:rooted_biomass", "biomancy:primal_orifice|spore:gastric_biomass_block", "biomancy:bloomlight|minecraft:shroomlight", "biomancy:primal_flesh|spore:biomass_block", "minecraft:bone_block|spore:fungal_shell"]
 
 ["Cryogenic machine parameters"]
 	"Blocks and their cleaned counterparts" = ["spore:infested_stone|minecraft:stone", "minecraft:mycelium|minecraft:dirt", "spore:infested_dirt|minecraft:dirt", "spore:infested_deepslate|minecraft:deepslate", "spore:infested_sand|minecraft:sand", "spore:infested_gravel|minecraft:gravel", "spore:infested_netherrack|minecraft:netherrack", "spore:infested_end_stone|minecraft:end_stone", "spore:infested_soul_sand|minecraft:soul_sand", "spore:infested_red_sand|minecraft:red_sand", "spore:infested_clay|minecraft:clay", "spore:infested_cobblestone|minecraft:cobblestone", "spore:infested_cobbled_deepslate|minecraft:cobbled_deepslate", "spore:infested_laboratory_block|spore:lab_block", "spore:infested_laboratory_block1|spore:lab_block1", "spore:infested_laboratory_block2|spore:lab_block2", "spore:infested_laboratory_block3|spore:lab_block3"]
 	#Default 20
 	#Range: > 0
 	Range = 36
-	#Default 5
-	#Range: 0.0 ~ 1.7976931348623157E308
-	Damage = 8.0
 	#Default 12000
 	#Range: > 0
 	Ammo = 60000

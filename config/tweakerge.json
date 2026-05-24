@@ -120,16 +120,16 @@
       "keys": "LEFT_ALT"
     },
     "flyPreset1": {
-      "keys": "KP_1"
+      "keys": ""
     },
     "flyPreset2": {
-      "keys": "KP_2"
+      "keys": ""
     },
     "flyPreset3": {
-      "keys": "KP_3"
+      "keys": ""
     },
     "flyPreset4": {
-      "keys": "KP_4"
+      "keys": ""
     },
     "freeCameraPlayerInputs": {
       "keys": ""
@@ -214,7 +214,7 @@
     }
   },
   "Internal": {
-    "flySpeedPreset": 0,
+    "flySpeedPreset": 1,
     "gammaValueOriginal": 1.0,
     "hotbarScrollCurrentRow": 3,
     "slimeBlockSlipperinessOriginal": 0.800000011920929,
@@ -862,7 +862,7 @@
       "keys": ""
     },
     "tweakFastRightClick": {
-      "keys": ""
+      "keys": "KP_2"
     },
     "tweakFillCloneLimit": {
       "keys": ""

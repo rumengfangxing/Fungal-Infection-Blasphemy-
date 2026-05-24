@@ -8,12 +8,12 @@
 	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:specter", "spore:inf_construct", "spore:scamper"]
 
 [Spawns]
-	"mob|weight|minimum|maximum" = ["spore:inf_human|40|2|5", "spore:inf_drowned|5|1|2", "spore:inf_pillager|20|1|3", "spore:inf_villager|20|1|3", "spore:inf_player|10|1|2", "spore:inf_wanderer|12.5|1|2", "spore:inf_witch|7.5|1|2", "spore:mound|0.001|1|1", "spore:inf_hazmat|5|1|1", "spore:scavenger|3|2|2", "spore:claw|5|3|3"]
+	"mob|weight|minimum|maximum" = ["spore:inf_human|25|2|5", "spore:inf_drowned|5|1|2", "spore:inf_pillager|10|1|3", "spore:inf_villager|10|1|3", "spore:inf_player|10|1|2", "spore:inf_wanderer|10|1|2", "spore:inf_witch|10|1|2", "spore:mound|0.001|1|1", "spore:inf_hazmat|5|1|1", "spore:scavenger|3|2|2", "spore:inf_vindicator|15|1|1"]
 	"Mobs that spawn in laboratory type structures" = ["spore:inf_hazmat|70|2|5", "spore:saugling|15|1|2", "spore:inebriater|30|2|3", "spore:inf_player|20|1|2", "spore:plagued|15|1|2", "spore:lacerator|20|1|3", "spore:biobloob|10|1|2"]
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true
 	#Default minecraft:is_overworld
-	"Dictates in what biome the infected spawn" = ["minecraft:is_overworld", "minecraft:is_the_nether"]
+	"Dictates in what biome the infected spawn" = ["minecraft:is_overworld", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:nether_wastes", "minecraft:the_end"]
 	#Default 40
 	MobCap = 24
 	#Default forge:is_cold,minecraft:deep_dark
@@ -66,7 +66,7 @@
 	["Flesh Exoskeleton".Helmet]
 		#Default 2
 		#Range: > 1
-		"Helmet Protection" = 4
+		"Helmet Protection" = 12
 		#Default 350
 		#Range: > 1
 		"Helmet Durability" = 1200
@@ -74,7 +74,7 @@
 	["Flesh Exoskeleton".Leggings]
 		#Default 5
 		#Range: > 1
-		"Leggings Protection" = 10
+		"Leggings Protection" = 20
 		#Default 400
 		#Range: > 1
 		"Leggings Durability" = 1300
@@ -85,12 +85,12 @@
 		"Boots Durability" = 800
 		#Default 2
 		#Range: > 1
-		"Boots Protection" = 4
+		"Boots Protection" = 10
 
 	["Flesh Exoskeleton".Chestplate]
 		#Default 6
 		#Range: > 1
-		"Chestplate Protection" = 9
+		"Chestplate Protection" = 26
 		#Default 500
 		#Range: > 1
 		"Chestplate Durability" = 1400
@@ -311,7 +311,7 @@
 
 	[Mobs.Tendril]
 		#Default true
-		"Should tendrils go to spawners ?" = false
+		"Should tendrils go to spawners ?" = true
 		#Default true
 		"Should tendrils go to food containers ?" = true
 		#Default true
@@ -521,6 +521,20 @@
 		"Mobs that are summoned for water support" = ["spore:gazenbreacher"]
 		"Mobs that are summoned for ground support" = ["spore:sieger", "spore:howitzer"]
 
+	[Mobs.Gorgon]
+		#Default 10
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gorgon Armor" = 10.0
+		#Default 8
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gorgon Damage" = 8.0
+		#Default 50 
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gorgon Max health" = 50.0
+		#Default 2
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gorgon Ranged Damage" = 2.0
+
 	[Mobs.Inebrieter]
 		"Buffs the Inebrieter might give to its patient" = ["minecraft:regeneration|300|1", "minecraft:resistance|400|0", "minecraft:speed|200|1"]
 		#Default 7
@@ -578,7 +592,7 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Proto Armor" = 15.0
 		#Default true
-		"Should the hivemind generate a chunkloader at its location?" = false
+		"Should the hivemind generate a chunkloader at its location?" = true
 
 	[Mobs.Mephetic]
 		#Default 6
@@ -1282,15 +1296,15 @@
 ["Plated Exoskeleton"]
 	#Default 1
 	#Range: > 0
-	"Armor Toughness" = 2
+	"Armor Toughness" = 3
 	#Default 0
 	#Range: > 0
-	"Armor Knockback Resistance" = 0
+	"Armor Knockback Resistance" = 1
 
 	["Plated Exoskeleton".Helmet]
 		#Default 4
 		#Range: > 1
-		"Helmet Protection" = 8
+		"Helmet Protection" = 12
 		#Default 350
 		#Range: > 1
 		"Helmet Durability" = 1200
@@ -1298,7 +1312,7 @@
 	["Plated Exoskeleton".Leggings]
 		#Default 6
 		#Range: > 1
-		"Leggings Protection" = 12
+		"Leggings Protection" = 20
 		#Default 400
 		#Range: > 1
 		"Leggings Durability" = 1300
@@ -1309,12 +1323,12 @@
 		"Boots Durability" = 800
 		#Default 3
 		#Range: > 1
-		"Boots Protection" = 6
+		"Boots Protection" = 10
 
 	["Plated Exoskeleton".Chestplate]
 		#Default 8
 		#Range: > 1
-		"Chestplate Protection" = 14
+		"Chestplate Protection" = 26
 		#Default 500
 		#Range: > 1
 		"Chestplate Durability" = 1400
@@ -1381,25 +1395,25 @@
 		#Default 350
 		"Crossbow Durability" = 700
 		#Default 1.0
-		"Crossbow Range Damage Modifier" = 1.2
+		"Crossbow Range Damage Modifier" = 1.4
 
 	["Weapons and Tools OwO".Shield]
 		#Default 1000
 		Durability = 1500
 		#Default 5
 		#Range: > 1
-		Damage = 17
+		Damage = 10
 
 	["Weapons and Tools OwO".Scythe]
 		#Default 750
 		Durability = 1500
 		#Default 10
 		#Range: > 1
-		Damage = 17
+		Damage = 20
 
 	["Weapons and Tools OwO".PSI]
 		#Default 25
-		"Max charge" = 125
+		"Max charge" = 80
 		#Default 3
 		#Range: > 1
 		"Damage Multiplier" = 5
@@ -1407,28 +1421,28 @@
 		Durability = 1500
 		#Default 6
 		#Range: > 1
-		Damage = 17
+		Damage = 10
 
 	["Weapons and Tools OwO".Pickaxe]
 		#Default 1000
 		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 17
+		Damage = 16
 
 	["Weapons and Tools OwO".BattleAxe]
 		#Default 750
 		Durability = 1500
 		#Default 15
 		#Range: > 1
-		Damage = 17
+		Damage = 34
 
 	["Weapons and Tools OwO".Bow]
 		#Default 350
 		"Bow Durability" = 700
 		#Default 5
 		#Range: > 1
-		Damage = 17
+		Damage = 8
 		#Default 1.0
 		"Bow Range Damage Modifier" = 1.2
 
@@ -1437,42 +1451,42 @@
 		Durability = 1500
 		#Default 10
 		#Range: > 1
-		Damage = 17
+		Damage = 20
 
 	["Weapons and Tools OwO".Rapier]
 		#Default 750
 		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 17
+		Damage = 16
 
 	["Weapons and Tools OwO".Halberd]
 		#Default 750
 		Durability = 1500
 		#Default 11
 		#Range: > 1
-		Damage = 17
+		Damage = 24
 
 	["Weapons and Tools OwO".Maul]
 		#Default 1000
 		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 17
+		Damage = 16
 
 	["Weapons and Tools OwO".Sickle]
 		#Default 600
 		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 17
+		Damage = 16
 
 	["Weapons and Tools OwO"."Syringe Gun"]
 		#Default 300
 		Durability = 1500
 		#Default 5
 		#Range: > 1
-		Damage = 17
+		Damage = 10
 
 	["Weapons and Tools OwO"."Weapon Agents data"]
 		#Toughness increase 3
@@ -1496,21 +1510,21 @@
 		Durability = 1500
 		#Default 6
 		#Range: > 1
-		Damage = 17
+		Damage = 10
 
 	["Weapons and Tools OwO".Mace]
 		#Default 600
 		Durability = 1500
 		#Default 14
 		#Range: > 1
-		Damage = 17
+		Damage = 30
 
 	["Weapons and Tools OwO"."Combat Shovel"]
 		#Default 1000
 		Durability = 1500
 		#Default 9
 		#Range: > 1
-		Damage = 17
+		Damage = 16
 
 	["Weapons and Tools OwO".Cleaver]
 		#Default 750
@@ -1518,12 +1532,12 @@
 		Decapitation = ["minecraft:skeleton|minecraft:skeleton_skull", "minecraft:wither_skeleton|minecraft:wither_skeleton_skull", "minecraft:zombie|minecraft:zombie_head", "minecraft:creeper|minecraft:creeper_head", "minecraft:piglin|minecraft:piglin_head"]
 		#Default 14
 		#Range: > 1
-		Damage = 17
+		Damage = 30
 
 	["Weapons and Tools OwO".GreatSword]
 		#Default 2
 		#Range: > 1
-		Toughness = 2
+		Toughness = 4
 		#Default 8
 		#Range: > 1
 		Armor = 12
@@ -1531,14 +1545,14 @@
 		Durability = 1500
 		#Default 12
 		#Range: > 1
-		Damage = 17
+		Damage = 28
 
 	["Weapons and Tools OwO".Saber]
 		#Default 750
 		Durability = 1500
 		#Default 10
 		#Range: > 1
-		Damage = 17
+		Damage = 20
 
 	["Weapons and Tools OwO"."Gas Masks"]
 		"Gas masks" = ["spore:gas_mask", "spore:inf_up_helmet"]
@@ -1548,7 +1562,7 @@
 		Durability = 1500
 		#Default 11
 		#Range: > 1
-		Damage = 17
+		Damage = 24
 
 	["Weapons and Tools OwO".Reaver]
 		"Loot from basic evolved infected" = ["spore:claw_fragment|40", "spore:mutated_fiber|40", "spore:armor_fragment|45", "spore:tumor|20"]
@@ -1559,6 +1573,6 @@
 		Durability = 1500
 		"Loot from calamities" = ["spore:claw_fragments|100", "spore:mutated_fiber|100", "spore:tumor|100", "spore:armor_fragment|100"]
 		#Default 6
-		Damage = 17
+		Damage = 9
 		"Loot from basic infected" = ["spore:claw_fragment|10", "spore:mutated_fiber|30", "minecraft:string|15"]
 
