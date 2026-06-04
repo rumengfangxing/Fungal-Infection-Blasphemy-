@@ -8,7 +8,7 @@ function initBiomassHud() {
             h: 16,
             alignX: 'left',
             alignY: 'bottom',
-            texture: 'kubejs:textures/gui/biomass_bar.png',
+            texture: 'kubejs:textures/gui/biomass_bar_background.png',
             visible: false
         }, biomassBarOverlay: {
             type: 'rectangle',
@@ -20,6 +20,16 @@ function initBiomassHud() {
             alignX: 'left',
             alignY: 'bottom',
             texture: 'kubejs:textures/gui/biomass_bar_overlay.png',
+            visible: false
+        }, biomassBarTentacle: {
+            type: 'rectangle',
+            x: 12,
+            y: -3,
+            w: 160,
+            h: 16,
+            alignX: 'left',
+            alignY: 'bottom',
+            texture: 'kubejs:textures/gui/biomass_bar_tentacle.png',
             visible: false
         }, biomassBarCountText: {
             type: 'text',
@@ -37,16 +47,16 @@ function updateBiomassHud(biomass, max, stage) {
 	const percent = biomass / max
     Client.player.paint({ 
 		biomassBarBackGround: { 
-			visible: stage != 0  
-		}, 
-		biomassBarOverlay: {
+			visible: stage !== 0
+		}, biomassBarOverlay: {
             w: 154 * percent,
-            u1: 1 * percent,
-			visible: stage != 0  
-		}, 
-		biomassBarCountText: { 
+            u1: percent,
+			visible: stage !== 0
+		}, biomassBarTentacle: {
+            visible: percent > 0.5
+        }, biomassBarCountText: {
 			text: Text.translate('gui.fungified.biomass.text', biomass.toString()).string,
-			visible: stage != 0 
+			visible: stage !== 0
 		} 
 	})
 }
