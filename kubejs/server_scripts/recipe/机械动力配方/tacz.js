@@ -3,28 +3,28 @@ ServerEvents.recipes(event =>{
     //搅拌
     //湿润火药
     create.mixing(Item.of('fib:moist_gunpowder',28),
-    [Fluid.water(250),Item.of('minecraft:gunpowder',2),'minecraft:charcoal']);
+    [Fluid.water(250),Item.of('minecraft:gunpowder',2),'minecraft:charcoal'])
     //散弹纸筒
     create.mixing(Item.of('fib:shotgun_paper_tube',10),
-    [Fluid.water(250),Item.of('minecraft:paper',10),'minecraft:honeycomb','minecraft:red_dye']);
+    [Fluid.water(250),Item.of('minecraft:paper',10),'minecraft:honeycomb','minecraft:red_dye'])
 
     //压块
     //压制火药
-    create.compacting('fib:pressed_powder',Item.of('fib:gunpowder',4));
+    create.compacting('fib:pressed_powder',Item.of('fib:gunpowder',4))
 
     //烟熏
     //火药
-    event.smoking('fib:gunpowder','fib:moist_gunpowder',0,20*5);
+    event.smoking('fib:gunpowder','fib:moist_gunpowder',0,20*5)
 
     //动力切割
     //弹头
-    create.cutting(Item.of('fib:bullet_head',16),'create:copper_nugget');
+    create.cutting(Item.of('fib:bullet_head',16),'create:copper_nugget')
     //弹壳
-    create.cutting(Item.of('fib:casing',10),'create:brass_nugget');
+    create.cutting(Item.of('fib:casing',10),'create:brass_nugget')
     //小型弹壳
-    create.cutting(Item.of('fib:small_casing',12),'create:brass_nugget');
+    create.cutting(Item.of('fib:small_casing',12),'create:brass_nugget')
     //狙击枪子弹弹壳
-    create.cutting(Item.of('fib:sniper_rifle_bullet_casing',8),'create:brass_nugget');
+    create.cutting(Item.of('fib:sniper_rifle_bullet_casing',8),'create:brass_nugget')
     //小纸片
     create.cutting(Item.of('fib:small_piece_of_paper',8),'minecraft:paper')
 

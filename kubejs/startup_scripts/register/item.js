@@ -33,6 +33,8 @@ StartupEvents.registry('item', event => {
 	event.create('fib:echo_equipment_module')
 	event.create('fib:avi_equipment_module')
 	event.create('fib:uncompleted_module')
+	event.create('fib:saltpeter')
+	event.create('fib:putrid_substance')
 
 
 

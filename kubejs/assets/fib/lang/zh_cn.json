@@ -41,6 +41,8 @@
     "item.fib.small_casing": "小型弹壳",
     "item.fib.casing": "弹壳",
     "item.fib.small_piece_of_paper":"小纸片",
+    "item.fib.putrid_substance":"腐臭物质",
+    "item.fib.saltpeter":"硝石",
     "item.fib.t1_equipment_module":"T1装备组件",
     "item.fib.t2_equipment_module":"T2装备组件",
     "item.fib.bio_equipment_module":"生化装备组件",
@@ -95,6 +97,13 @@
     "block.fib.radio_station": "电台",
     "block.fib.ru_meng":"§5如梦玩偶",
     
+
+    "fluid.fib.magazine_gas":"杂质燃气",
+    "fluid.fib.liquid_ammonia":"液氨",
+    "item.fib.liquid_ammonia_bucket":"液氨桶",
+    "fluid.fib.bad_liquid":"糟糕液体",
+    "item.fib.bad_liquid_bucket":"装有糟糕液体的桶",
+
 
     "item.spore.bezerk_syringe.tooltip.shift_hint": "§6按 [Shift] 查看佩戴时获得效果",
     "item.spore.bezerk_syringe.tooltip.shift.1": "  §a急迫1 (常驻)",

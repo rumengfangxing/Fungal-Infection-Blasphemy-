@@ -1,5 +1,27 @@
 ServerEvents.recipes(event =>{
     const create = event.recipes.create
+
+//压块
+
+create.compacting(
+  [Fluid.of('liquid_ammonia',50),
+   Fluid.of('createdieselgenerators:biodiesel',500),
+   Fluid.water(250)],
+   Fluid.of('magazine_gas',500))
+
+//石磨
+
+create.milling([Item.of('fib:saltpeter').withChance(0.65),
+  Item.of('fib:saltpeter').withChance(0.2)],
+  'sandstone')
+
+//粉碎
+
+create.crushing([Item.of('fib:saltpeter').withChance(0.8),
+  Item.of('fib:saltpeter').withChance(0.25),
+  Item.of('fib:saltpeter').withChance(0.25)],
+  'sandstone')
+
 //序列组装
 //T1装备组件-羽毛
 const T101 = 'create:iron_sheet'

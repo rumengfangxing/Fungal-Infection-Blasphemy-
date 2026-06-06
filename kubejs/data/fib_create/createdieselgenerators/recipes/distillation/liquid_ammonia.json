@@ -1,0 +1,21 @@
+{
+  "type": "createdieselgenerators:distillation",
+  "ingredients": [
+    {
+      "fluid": "fib:bad_liquid",
+      "amount": 500
+    }
+  ],
+  "heatRequirement": "superheated",
+  "processingTime": 240,
+  "results": [
+    {
+      "fluid": "createdieselgenerators:biodiesel",
+      "amount": 75
+    },
+    {
+      "fluid": "fib:liquid_ammonia",
+      "amount": 450
+    }
+  ]
+}
