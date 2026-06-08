@@ -71,7 +71,7 @@
       "rarity": 20
     },
     "minecraft_skyfall_training": {
-      "enabled": true,
+      "enabled": false,
       "requiredMod": "minecraft",
       "rarity": 20
     },
@@ -96,7 +96,7 @@
       "rarity": 20
     },
     "minecraft_teleport_monsters_to_player": {
-      "enabled": true,
+      "enabled": false,
       "requiredMod": "minecraft",
       "rarity": 20
     },
@@ -121,12 +121,12 @@
       "rarity": 20
     },
     "minecraft_curse_binding": {
-      "enabled": true,
+      "enabled": false,
       "requiredMod": "minecraft",
       "rarity": 20
     },
     "enigmaticlegacy_eternal_binding": {
-      "enabled": true,
+      "enabled": false,
       "requiredMod": "enigmaticlegacy",
       "rarity": 100
     },

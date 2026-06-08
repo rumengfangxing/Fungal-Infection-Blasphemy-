@@ -16,22 +16,22 @@ enigmaticDieDropChance = 0.005
 #Example: If set to 10, then after 60 minutes of total playtime, the player may have earned up to 6 dice from mobs.
 #Set to 0 to disable the limitation entirely.
 #Range: 0 ~ 100000
-mobDiceTimeInterval = 10
+mobDiceTimeInterval = 5
 #Chance for Enigmatic Die to drop from a block when broken by a player.
 #For example, a value of 0.001 means a 0.1% chance to drop.
 #Range: 0.0 ~ 1.0
-enigmaticDieBlockDropChance = 0.001
+enigmaticDieBlockDropChance = 0.005
 #Defines the time requirement (in minutes) for earning Enigmatic Dice from breaking blocks.
 #This is NOT a cooldown.
 #For every X minutes the player spends in the world, they are allowed to obtain 1 die from blocks.
 #Example: If set to 10, then after 60 minutes of total playtime, the player may have earned up to 6 dice from blocks.
 #Set to 0 to disable the limitation entirely.
 #Range: 0 ~ 100000
-blockDiceTimeInterval = 10
+blockDiceTimeInterval = 5
 #Chance for Enigmatic Die to appear in a chest.
 #Value is between 0.0 and 1.0. For example, 0.1 means a 10% chance.
 #Range: 0.0 ~ 1.0
-enigmaticDieChestChance = 0.1
+enigmaticDieChestChance = 0.2
 #Radius within which the structure is searched for during the 'minecraft_teleport_to_structure' event. Default is 100.
 #Higher values search further but may impact performance.
 #Range: 1 ~ 10000
@@ -51,15 +51,15 @@ biomeVerticalStep = 128
 #Percentage of target's max health reduced per hit by Unequal Exchange sword.
 #Example: 0.10 = 10% of target's max health.
 #Range: 0.0 ~ 1.0
-unequalExchangeTargetHealthReduction = 0.1
+unequalExchangeTargetHealthReduction = 0.15
 #Percentage of player's max health reduced per hit by Unequal Exchange sword.
 #Example: 0.20 = 20% of player's max health.
 #Range: 0.0 ~ 1.0
-unequalExchangePlayerHealthReduction = 0.2
+unequalExchangePlayerHealthReduction = 0.14
 #Percentage reduction of player's stats (armor, speed, etc.) per hit by Unequal Exchange sword.
 #Example: 0.20 = 20% reduction.
 #Range: 0.0 ~ 1.0
-unequalExchangeStatDebuff = 0.2
+unequalExchangeStatDebuff = 0.15
 #Duration of the Unequal Exchange debuff (stat reduction) in seconds.
 #Each hit refreshes this timer.
 #Range: 0 ~ 10000
@@ -70,14 +70,14 @@ unequalExchangeAttackDamage = 1.0
 unequalExchangeAttackSpeed = 1.6
 #Extra magic damage of Soul Eater's charged attack per HP spent.
 #Range: 0.0 ~ 100.0
-soulEaterChargedAttackDamagePerHP = 2.5
+soulEaterChargedAttackDamagePerHP = 5
 #The duration of the effect of a charged Soul Eater attack (in seconds).
 #Range: 0 ~ 100000
 soulEaterChargeDuration = 60
 #Percent of killed enemy's max HP restored to the player.
 #Example: 0.1 = 10% of target's max HP.
 #Range: 0.0 ~ 1.0
-soulEaterHealPercentOnKill = 0.1
+soulEaterHealPercentOnKill = 0.2
 #Percent of killed enemy's max HP added to player's max HP as bonus.
 #Example: 0.1 = +10% max HP of killed enemy.
 #Range: 0.0 ~ 1.0
@@ -88,7 +88,7 @@ soulEaterMaxHealthBuffDuration = 300
 #Maximum multiplier for player's max HP from Soul Eater.
 #Example: 1.0 = Player's max HP can be increased up to 100%.
 #Range: 0.0 ~ 100.0
-soulEaterMaxHealthMultiplierLimit = 1.0
+soulEaterMaxHealthMultiplierLimit = 50.0
 #Soul Eater Attack Damage.
 soulEaterAttackDamage = 10.0
 #Soul Eater Attack Speed.
@@ -148,30 +148,30 @@ permafrostAttackSpeed = 2.0
 permafrostAttackDebuffDuration = 600
 #Maximum number of Permafrost stacks applied from attacks.
 #Range: > 0
-permafrostAttackMaxStacks = 10
+permafrostAttackMaxStacks = 20
 #Movement/Flying speed reduction per Permafrost stack applied from attacks (0.05 = 5% slower).
 #Range: 0.0 ~ 1.0
 permafrostAttackReductionPerStack = 0.05
 #Radius of the Permafrost aura effect in blocks.
 #Range: 0 ~ 32
-permafrostAuraRadius = 5
+permafrostAuraRadius = 8
 #Duration of the Permafrost aura debuff in ticks. (1 second = 20 ticks)
 #Range: > 0
 permafrostAuraDebuffDuration = 100
 #Movement/Flying speed reduction factor from Permafrost aura. (0.2 = 20% slower)
 #Range: 0.0 ~ 1.0
-permafrostAuraReductionFactor = 0.2
+permafrostAuraReductionFactor = 0.35
 #Crucible Of Rile Attack Damage.
 crucibleOfRileAttackDamage = 16.0
 #Crucible Of Rile Attack Speed.
 crucibleOfRileAttackSpeed = 1.4
 #Crucible Of Rile: health threshold at or below which enemies can be executed.
-crucibleOfRileExecuteThreshold = 5.0
+crucibleOfRileExecuteThreshold = 8.0
 #Crucible Of Rile: ability cooldown in ticks. (1 second = 20 ticks)
 #Range: > 0
 crucibleOfRileCooldown = 400
 #Crucible Of Rile: aggro radius of the ability, in blocks.
-crucibleOfRileAggroRadius = 16.0
+crucibleOfRileAggroRadius = 64.0
 #Crucible Of Rile: whether the ability should aggro players (forcing them to look at the item user).
 crucibleOfRileAggroPlayers = true
 #Crucible Of Rile: duration of the forced aggro (camera lock) effect in ticks. (1 second = 20 ticks)
@@ -184,7 +184,7 @@ crucibleOfRileArmorBuffValue = 0.5
 crucibleOfRileArmorBuffDuration = 100
 #Crucible Of Rile: number of hits the player must take before triggering a counterattack.
 #Range: > 1
-crucibleOfRileHitsForCounterattack = 5
+crucibleOfRileHitsForCounterattack = 1
 #Crucible Of Rile: radius of the counterattack, in blocks.
 crucibleOfRileCounterattackRadius = 3.5
 #Permanent armor bonus (percent as fraction) per unique killed enemy type. (0.01 = +1%)
