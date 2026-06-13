@@ -266,7 +266,7 @@ def dc_value(value: object) -> str:
 
 def strip_config_extension(name: str) -> str:
     low = (name or "").lower()
-    for suffix in (".dc", ".json5", ".json"):
+    for suffix in (".dc",):
         if low.endswith(suffix):
             return name[: -len(suffix)]
     return name
@@ -275,11 +275,11 @@ def strip_config_extension(name: str) -> str:
 def detect_remote_required_kind(path: str) -> str | None:
     normalized = normalize_relpath(path).lower()
     parts = [p for p in normalized.split("/") if p]
-    if len(parts) < 2 or not parts[-1].endswith((".dc", ".json5", ".json")):
+    if len(parts) < 2 or not parts[-1].endswith(".dc"):
         return None
     kind: str | None = None
     for seg in parts[:-1]:
-        if seg in {"remote", "required", "info"}:
+        if seg in {"remote", "required", "info", "preset"}:
             kind = seg
     return kind
 
@@ -345,6 +345,51 @@ def parse_scalar(token: str):
         return raw
 
 
+def is_multiline_value_start(raw: str) -> bool:
+    stripped = (raw or "").strip()
+    return stripped in {"[", "{"}
+
+
+def collect_multiline_value(lines: list[str], index: int, raw: str) -> tuple[str, int]:
+    stripped = (raw or "").strip()
+    if not is_multiline_value_start(stripped):
+        return raw, index
+    open_char = stripped
+    close_char = "]" if open_char == "[" else "}"
+    depth = 0
+    chunks: list[str] = []
+    in_string: str | None = None
+    escaped = False
+    i = index
+
+    while i < len(lines):
+        chunk = raw if i == index else lines[i].strip()
+        chunks.append(chunk)
+        for ch in chunk:
+            if escaped:
+                escaped = False
+                continue
+            if ch == "\\" and in_string is not None:
+                escaped = True
+                continue
+            if ch in {"'", '"'}:
+                if in_string is None:
+                    in_string = ch
+                elif in_string == ch:
+                    in_string = None
+                continue
+            if in_string is not None:
+                continue
+            if ch == open_char:
+                depth += 1
+            elif ch == close_char:
+                depth -= 1
+                if depth <= 0:
+                    return "\n".join(chunks), i
+        i += 1
+    return "\n".join(chunks), i - 1
+
+
 def extract_key_value(text: str, keys: list[str]):
     if not text or not keys:
         return None
@@ -354,7 +399,14 @@ def extract_key_value(text: str, keys: list[str]):
             rf'(?im)^\s*(?:"{re.escape(key)}"|\'{re.escape(key)}\'|{re.escape(key)})\s*[:=]\s*(.+?)\s*$'
         )
         for m in pattern.finditer(text):
-            value = parse_scalar(m.group(1))
+            token = m.group(1)
+            if is_multiline_value_start(token):
+                lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+                for index, line in enumerate(lines):
+                    if line == m.group(0):
+                        token, _ = collect_multiline_value(lines, index, token)
+                        break
+            value = parse_scalar(token)
     return value
 
 
@@ -425,6 +477,7 @@ def parse_dc_flat_map(text: str) -> dict[str, object]:
                     i += 1
             value: object = "\n".join(chunks)
         else:
+            rhs, i = collect_multiline_value(lines, i, rhs)
             value = parse_scalar(rhs)
         path = ".".join([*section, key]) if section else key
         out[path] = value
@@ -443,17 +496,33 @@ def parse_object_block_values(text: str, object_key: str) -> dict[str, object]:
     if match is None:
         return out
     body = match.group(1) or ""
-    pair = re.compile(
-        r'(?im)^\s*(?:"([^"\\]*(?:\\.[^"\\]*)*)"|\'([^\'\\]*(?:\\.[^\'\\]*)*)\'|([A-Za-z0-9_.-]+))\s*[:=]\s*(.+?)\s*,?\s*$'
-    )
-    for m in pair.finditer(body):
+    lines = body.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#") or stripped.startswith("//"):
+            i += 1
+            continue
+        m = re.match(
+            r'^\s*(?:"([^"\\]*(?:\\.[^"\\]*)*)"|\'([^\'\\]*(?:\\.[^\'\\]*)*)\'|([A-Za-z0-9_.-]+))\s*[:=]\s*(.*?)\s*,?\s*$',
+            line,
+        )
+        if not m:
+            i += 1
+            continue
         if m.group(1) is not None:
             key = bytes(m.group(1), "utf-8").decode("unicode_escape")
         elif m.group(2) is not None:
             key = m.group(2)
         else:
             key = m.group(3) or ""
-        out[f"{object_key}.{key}"] = parse_scalar(m.group(4))
+        rhs, i = collect_multiline_value(lines, i, (m.group(4) or "").strip())
+        rhs = rhs.rstrip()
+        if rhs.endswith(","):
+            rhs = rhs[:-1].rstrip()
+        out[f"{object_key}.{key}"] = parse_scalar(rhs)
+        i += 1
     return out
 
 
@@ -473,6 +542,7 @@ def parse_legacy_flat_map(text: str, path: str) -> dict[str, object]:
         "isInList",
         "isHidden",
         "AllowEnableByAll",
+        "enable",
         "dependencies",
         "conflicts",
         "alarm",
@@ -506,7 +576,14 @@ def canonicalize_config_map(raw: dict[str, object], path: str) -> dict[str, obje
             identifier = value.strip()
             break
     if not identifier:
-        identifier = strip_config_extension(Path(path).name)
+        normalized = normalize_relpath(path)
+        parts = [p for p in normalized.split("/") if p]
+        if "preset" in parts:
+            preset_index = parts.index("preset")
+            if preset_index + 1 < len(parts):
+                identifier = strip_config_extension("/".join(parts[preset_index + 1 :]))
+        if not identifier:
+            identifier = strip_config_extension(Path(path).name)
     canonical["basic.identifier"] = identifier
 
     basic_keys = {
@@ -518,6 +595,7 @@ def canonicalize_config_map(raw: dict[str, object], path: str) -> dict[str, obje
         "ishidden": "isHidden",
         "redirecturl": "RedirectUrl",
         "allowenablebyall": "AllowEnableByAll",
+        "enable": "enable",
         "dependencies": "dependencies",
         "conflicts": "conflicts",
         "alarm": "alarm",
@@ -585,10 +663,17 @@ def build_auto_update_ops(
     from_ref: str,
     to_ref: str,
     add_paths: list[str],
-) -> tuple[dict[str, dict[str, object]], dict[str, dict[str, object]], dict[str, dict[str, object]], set[str]]:
+) -> tuple[
+    dict[str, dict[str, object]],
+    dict[str, dict[str, object]],
+    dict[str, dict[str, object]],
+    dict[str, dict[str, object]],
+    set[str],
+]:
     remote_updates: dict[str, dict[str, object]] = {}
     required_updates: dict[str, dict[str, object]] = {}
     info_updates: dict[str, dict[str, object]] = {}
+    preset_updates: dict[str, dict[str, object]] = {}
     converted_paths: set[str] = set()
 
     for path in add_paths:
@@ -615,13 +700,15 @@ def build_auto_update_ops(
             target = remote_updates
         elif kind == "required":
             target = required_updates
+        elif kind == "preset":
+            target = preset_updates
         else:
             target = info_updates
         bucket = target.setdefault(identifier, {})
         bucket.update(fields)
         converted_paths.add(path)
 
-    return remote_updates, required_updates, info_updates, converted_paths
+    return remote_updates, required_updates, info_updates, preset_updates, converted_paths
 
 
 def render_update_dc(
@@ -638,6 +725,7 @@ def render_update_dc(
     remote_updates: dict[str, dict[str, object]],
     required_updates: dict[str, dict[str, object]],
     info_updates: dict[str, dict[str, object]],
+    preset_updates: dict[str, dict[str, object]],
 ) -> str:
     lines: list[str] = []
     same_base = base.strip() == base_new.strip()
@@ -676,7 +764,7 @@ def render_update_dc(
             lines.pop()
     if not add_paths and not del_paths:
         lines.append("  [del]")
-    if remote_updates or required_updates or info_updates:
+    if remote_updates or required_updates or info_updates or preset_updates:
         lines.append("")
         lines.append("[update]")
         if remote_updates:
@@ -704,6 +792,17 @@ def render_update_dc(
                 lines.append("")
             lines.append("  [info]")
             for identifier, fields in info_updates.items():
+                lines.append(f"    {dc_quote(identifier)}:")
+                for key, value in fields.items():
+                    lines.append(f"      {key} = {dc_value(value)}")
+                lines.append("")
+            if lines and lines[-1] == "":
+                lines.pop()
+        if preset_updates:
+            if remote_updates or required_updates or info_updates:
+                lines.append("")
+            lines.append("  [preset]")
+            for identifier, fields in preset_updates.items():
                 lines.append(f"    {dc_quote(identifier)}:")
                 for key, value in fields.items():
                     lines.append(f"      {key} = {dc_value(value)}")
@@ -760,18 +859,18 @@ def main() -> int:
         "server": "Server",
         "universal": "Universal",
     }[args.platform]
-    version_pair = f"{args.base_new}+{args.dlc_new}"
-    release_tag = f"{args.base}+{args.dlc}/{args.base_new}+{args.dlc_new}"
+    version_pair = f"{args.base_new}_{args.dlc_new}"
+    release_tag = f"{args.base}_{args.dlc}-{args.base_new}_{args.dlc_new}"
 
     add_or_modify, deleted = parse_diff(args.from_ref, args.to_ref)
     add_paths, del_paths = filter_paths(add_or_modify, deleted)
     add_paths, del_paths, same_mod_name_paths = filter_same_mod_filename_paths(args.from_ref, args.to_ref, add_paths, del_paths)
-    remote_updates, required_updates, info_updates, converted_paths = build_auto_update_ops(args.from_ref, args.to_ref, add_paths)
+    remote_updates, required_updates, info_updates, preset_updates, converted_paths = build_auto_update_ops(args.from_ref, args.to_ref, add_paths)
     if converted_paths:
         add_paths = [p for p in add_paths if p not in converted_paths]
         del_paths = [p for p in del_paths if p not in converted_paths]
 
-    if not add_paths and not del_paths and not remote_updates and not required_updates and not info_updates:
+    if not add_paths and not del_paths and not remote_updates and not required_updates and not info_updates and not preset_updates:
         print("No changed files after filtering; nothing to package.", file=sys.stderr)
         return 2
 
@@ -801,6 +900,7 @@ def main() -> int:
         remote_updates=remote_updates,
         required_updates=required_updates,
         info_updates=info_updates,
+        preset_updates=preset_updates,
     )
     (stage_dir / "update.dc").write_text(update_dc, encoding="utf-8")
     copy_added_files(args.to_ref, add_paths, stage_dir)
@@ -844,6 +944,7 @@ def main() -> int:
     print(f"update_remote_count={len(remote_updates)}")
     print(f"update_required_count={len(required_updates)}")
     print(f"update_info_count={len(info_updates)}")
+    print(f"update_preset_count={len(preset_updates)}")
     print(f"summary_path={summary_path.as_posix()}")
     print(f"changelog_path={changelog_path.as_posix()}")
     print(f"release_notes_path={notes_path.as_posix()}")
