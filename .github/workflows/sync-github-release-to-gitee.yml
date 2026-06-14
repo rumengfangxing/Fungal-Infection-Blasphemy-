@@ -14,7 +14,7 @@ on:
         options:
           - "true"
           - "false"
-        default: "true"
+        default: "false"
       sync_all:
         description: "Sync all GitHub releases"
         required: true
@@ -76,7 +76,7 @@ jobs:
           SYNC_ALL: ${{ inputs.sync_all }}
           GITEE_USERNAME_VAR: ${{ vars.GITEE_USERNAME }}
           GITEE_REPO_VAR: ${{ vars.GITEE_REPO }}
-          SYNC_FILE_VAR: ${{ vars.SYNC_FILE }}
+          GITEE_SYNC_FILE_VAR: ${{ vars.GITEE_SYNC_FILE }}
           OVERWRITE_ASSETS: ${{ inputs.overwrite_assets }}
         run: |
           python - <<'PY'
@@ -95,7 +95,7 @@ jobs:
           sync_all = os.environ.get("SYNC_ALL", "false").strip().lower() == "true"
           gitee_owner = (os.environ.get("GITEE_USERNAME_VAR", "") or "").strip()
           gitee_repo = (os.environ.get("GITEE_REPO_VAR", "") or "").strip()
-          sync_file_var = os.environ.get("SYNC_FILE_VAR", "").strip().lower()
+          sync_file_var = os.environ.get("GITEE_SYNC_FILE_VAR", "").strip().lower()
           overwrite_assets = os.environ.get("OVERWRITE_ASSETS", "true").strip().lower() == "true"
           output_path = os.environ.get("GITHUB_OUTPUT", "").strip()
 
@@ -109,7 +109,7 @@ jobs:
           elif sync_file_var in ("true", "false"):
               sync_files = sync_file_var == "true"
           else:
-              sync_files = True
+              sync_files = False
 
           gh_headers = {
               "Accept": "application/vnd.github+json",
@@ -119,6 +119,12 @@ jobs:
               gh_headers["Authorization"] = f"Bearer {gh_token}"
 
           gh_base = "https://api.github.com"
+
+          def release_sort_key(item):
+              return (
+                  (item.get("published_at") or item.get("created_at") or "").strip(),
+                  (item.get("tag_name") or "").strip(),
+              )
 
           def load_target_releases():
               if sync_all:
@@ -136,7 +142,7 @@ jobs:
                       if len(items) < 100:
                           break
                       page += 1
-                  return all_items
+                  return sorted(all_items, key=release_sort_key)
 
               if target_tag:
                   url = f"{gh_base}/repos/{source_repo}/releases/tags/{target_tag}"
@@ -192,6 +198,39 @@ jobs:
           total_skipped = 0
           synced_tags = []
 
+          def parse_tag_target_pair(tag_name):
+              tag_name = (tag_name or "").strip()
+              pair_delimiters = ["+", "_", "@", "~", " "]
+
+              def parse_pair(value):
+                  value = (value or "").strip()
+                  for delimiter in pair_delimiters:
+                      if delimiter == " ":
+                          parts = value.split()
+                          if len(parts) == 2 and parts[0].strip() and parts[1].strip():
+                              return parts[0].strip(), parts[1].strip()
+                          continue
+                      index = value.find(delimiter)
+                      if 0 < index < len(value) - len(delimiter):
+                          left = value[:index].strip()
+                          right = value[index + len(delimiter):].strip()
+                          if left and right:
+                              return left, right
+                  return None
+
+              if "/" in tag_name:
+                  parsed = parse_pair(tag_name.split("/", 1)[1])
+                  if parsed:
+                      return parsed
+              for index, ch in enumerate(tag_name):
+                  if ch != "-" or index <= 0 or index >= len(tag_name) - 1:
+                      continue
+                  old_pair = parse_pair(tag_name[:index])
+                  new_pair = parse_pair(tag_name[index + 1:])
+                  if old_pair and new_pair:
+                      return new_pair
+              return parse_pair(tag_name)
+
           for gh_release in gh_releases:
               tag_name = (gh_release.get("tag_name") or "").strip()
               if not tag_name:
@@ -200,13 +239,9 @@ jobs:
               release_name = (gh_release.get("name") or tag_name).strip()
               release_body = (gh_release.get("body") or "").strip()
               if not release_body:
-                  target_pair = tag_name.split("/", 1)[1] if "/" in tag_name else tag_name
-                  base_ver = ""
-                  dlc_ver = ""
-                  if "+" in target_pair:
-                      base_ver, dlc_ver = target_pair.split("+", 1)
-                  else:
-                      base_ver = target_pair
+                  target_pair = parse_tag_target_pair(tag_name)
+                  base_ver = target_pair[0] if target_pair else tag_name
+                  dlc_ver = target_pair[1] if target_pair else ""
                   release_body = "\n".join([
                       "version:",
                       f"base:{base_ver.strip()}",
