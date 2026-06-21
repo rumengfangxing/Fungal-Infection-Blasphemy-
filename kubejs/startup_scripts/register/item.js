@@ -61,6 +61,10 @@ StartupEvents.registry('item', event => {
 		.rarity('epic')
 		.maxDamage(5)
 		.attackDamageBaseline(1)
+	event.create('fib:time_sword', 'sword')
+		.rarity('epic')
+		.maxDamage(16)
+		.attackDamageBaseline(6)
 	
 
 	//维度传送物品

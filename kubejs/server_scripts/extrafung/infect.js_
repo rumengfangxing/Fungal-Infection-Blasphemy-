@@ -1,0 +1,167 @@
+// ===================== 全局配置 =====================
+const GLOBAL_CFG = {
+    scriptEnable: true,
+    excludePlayerSelfConvert: true,
+    debugLog: true
+};
+
+// ===================== 自定义条件函数库 =====================
+// 入参固定：(killer击杀者, deadEntity死亡实体, source伤害源, level世界)
+// return true=满足条件  false=不满足
+const ConditionLib = {
+    // 条件A：击杀者主手拿着钻石剑
+    condSword(killer, deadEntity, source, level) {
+        const mainItem = killer.getMainHandItem();
+        return mainItem.id === "minecraft:diamond_sword";
+    },
+
+    // 条件B：击杀者当前血量大于自身一半最大血量
+    condKillerHpMoreHalf(killer, deadEntity, source, level) {
+        const maxHp = killer.getMaxHealth();
+        const curHp = killer.getHealth();
+        return curHp > maxHp / 2;
+    },
+
+    // 条件C：僵尸死亡位置Y坐标小于60
+    condDeathUnderY60(killer, deadEntity, source, level) {
+        return deadEntity.getY() < 60;
+    }
+};
+
+// ===================== 转化规则数组 =====================
+// 格式：[原实体ID, 目标实体ID, 附加NBT, [必须全部满足的条件列表]]
+// 三条僵尸独立规则，满足哪条就触发哪条转化
+const CONVERT_RULES = [
+    // 规则1：满足【手持钻石剑】→ 转 nuclea,已验证有效,主手武器类条件
+    //[
+    //    "minecraft:zombie",
+    //    "spore:nuclea",
+    //    "",
+    //    ["condSword"]
+    //],
+    // 规则2：满足【击杀者血量过半】→ 转 nuclea
+    [
+        "minecraft:zombie",
+        "spore:nuclea",
+        "",
+        ["condKillerHpMoreHalf"]
+    ],
+    // 规则3：满足【死亡Y<60】→ 转 nuclea
+    [
+        "minecraft:zombie",
+        "spore:nuclea",
+        "",
+        ["condDeathUnderY60"]
+    ]
+];
+
+/**
+ * 遍历所有规则，返回第一个满足全部条件的规则
+ */
+function getSatisfiedRule(deadEntityId, killer, deadEntity, source, level) {
+    for (const rule of CONVERT_RULES) {
+        const srcId = rule[0];
+        if (srcId !== deadEntityId) continue;
+
+        const condNames = rule[3];
+        let allOk = true;
+        for (const cName of condNames) {
+            const fn = ConditionLib[cName];
+            if (typeof fn !== "function") {
+                if (GLOBAL_CFG.debugLog) console.log(`[条件错误] 不存在条件函数: ${cName}`);
+                allOk = false;
+                break;
+            }
+            // 修复：移除 ... 展开运算符，手动传四个参数
+            if (!fn(killer, deadEntity, source, level)) {
+                if (GLOBAL_CFG.debugLog) console.log(`[不满足] 条件 ${cName}`);
+                allOk = false;
+                break;
+            }
+        }
+        if (allOk) return rule;
+    }
+    return null;
+}
+
+// ===================== 死亡事件主逻辑 =====================
+EntityEvents.death(event => {
+    if (!GLOBAL_CFG.scriptEnable) return;
+    const { entity: deadEntity, source, level } = event;
+    if (level.isClientSide()) return;
+
+    // 获取击杀者
+    let killer = null;
+    if (source.player) killer = source.player;
+    else if (source.attacker) killer = source.attacker;
+    else if (source.directEntity) killer = source.directEntity;
+
+    if (killer == null || !killer.isLiving()) {
+        if (GLOBAL_CFG.debugLog) console.log("[调试] 无有效活体击杀者，跳过转化");
+        return;
+    }
+
+    if (deadEntity.isPlayer() && GLOBAL_CFG.excludePlayerSelfConvert) {
+        if (GLOBAL_CFG.debugLog) console.log("[调试] 死亡对象是玩家，已配置跳过");
+        return;
+    }
+
+    const deadEntityId = deadEntity.type.toString();
+    const matchRule = getSatisfiedRule(deadEntityId, killer, deadEntity, source, level);
+
+    if (!matchRule) {
+        if (GLOBAL_CFG.debugLog) console.log(`[调试] ${deadEntityId} 没有任意一条满足条件的转化规则`);
+        return;
+    }
+
+    const [_, targetId, nbtStr] = matchRule;
+    if (GLOBAL_CFG.debugLog) {
+        console.log(`[转化触发] ${deadEntityId} → ${targetId}`);
+    }
+
+    const newEntity = level.createEntity(targetId);
+    if (!newEntity) {
+        if (GLOBAL_CFG.debugLog) {
+            console.log(`[转化警告] 实体ID ${targetId} 不存在，跳过转化`);
+        }
+        return;
+    }
+
+    newEntity.setPos(deadEntity.getX(), deadEntity.getY(), deadEntity.getZ());
+    newEntity.setCustomName(deadEntity.getCustomName());
+
+    try {
+        newEntity.finalizeSpawn(
+            level,
+            level.getCurrentDifficultyAt(deadEntity.blockPosition()),
+            'conversion',
+            null,
+            null
+        );
+    } catch (e) {
+        if (GLOBAL_CFG.debugLog) console.log("[调试] 跳过实体finalizeSpawn初始化:" + e);
+    }
+
+    try {
+        const extraNbt = NBT.parseJSON(nbtStr);
+        let fullTag = newEntity.serializeNBT();
+        fullTag.merge(extraNbt);
+        newEntity.deserializeNBT(fullTag);
+    } catch (nbtErr) {
+        if (GLOBAL_CFG.debugLog) {
+            console.log("[NBT解析失败] 内容:" + nbtStr + " 错误:" + nbtErr);
+        }
+    }
+
+    newEntity.spawn();
+    deadEntity.discard();
+});
+
+// 外部手动调用函数
+global.manualTriggerSwordConvert = function(victim, killerEntity) {
+    if (victim == null || killerEntity == null) return;
+    if (!victim.isLiving() || !killerEntity.isLiving()) return;
+    const damageSource = killerEntity.damageSources().mobAttack(killerEntity);
+    const fakeDeathEvent = new Java.type("net.minecraftforge.event.entity.living.LivingDeathEvent")(victim, damageSource);
+    EntityEvents.post(fakeDeathEvent);
+};

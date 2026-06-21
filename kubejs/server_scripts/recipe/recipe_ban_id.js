@@ -63,6 +63,8 @@ const removeRecipeIds = [
     'sentry:sequenced_assembly/assembly/762x25',
     'tacz:ammo/556x45',
     'sentry:sequenced_assembly/assembly/556x45',
-    'emxarms:ammo/339x57'
-//冗余子弹，素材删除完毕
+    'emxarms:ammo/339x57',
+//柴油动力虚空木屑配方
+    'createdieselgenerators:compression_molding/stick',
+    'createdieselgenerators:crushing/wood_chip_ladders'
 ]

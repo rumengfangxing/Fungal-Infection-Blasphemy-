@@ -35,7 +35,7 @@ const itemRightHandlers = {
 	// 传送用
     'fib:frozen_key': function(event) {
         const { player } = event
-        const targetDim = 'new_dimensions:frozen_land_dimension'
+        const targetDim = 'fib_dimensions:frozen_land_dimension'
         if (player.level.dimension == targetDim) return
         player.teleportTo(targetDim, player.x, player.y, player.z, 0, 0)
     },
@@ -56,5 +56,22 @@ const itemRightHandlers = {
         const targetDim = 'minecraft:the_nether'
         if (player.level.dimension == targetDim) return
         player.teleportTo(targetDim, player.x, player.y, player.z, 0, 0)
-    }
+    },
+	//时空之剑
+    /*'fib:time_sword': function(event) {
+    const { player, level } = event
+    const fixedX = player.x
+    const fixedY = player.y
+    const fixedZ = player.z
+    const posStr = `${fixedX},${fixedY},${fixedZ}`
+
+    // 打上标记+降速
+    level.runCommandSilent(`tag @e[distance=..16,x=${fixedX},y=${fixedY},z=${fixedZ}] add time_slow_tag`)
+    level.runCommandSilent(`setTickrate entity @e[tag=time_slow_tag] 5`)
+
+    level.schedule(60, () => {
+        level.runCommandSilent(`setTickrate entity @e[tag=time_slow_tag] 20`)
+        level.runCommandSilent(`tag @e[tag=time_slow_tag] remove time_slow_tag`)
+    })
+},*/
 }

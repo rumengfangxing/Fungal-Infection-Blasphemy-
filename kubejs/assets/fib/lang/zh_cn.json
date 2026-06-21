@@ -70,6 +70,11 @@
 	"item.fib.life_active_syringe.tooltip.shift_hint": "§c按 [Shift] 查看攻击施加给目标的效果",
 	"item.fib.life_active_syringe.tooltip.shift.1": "  §a生命恢复20 (30s)",
 	"item.fib.life_active_syringe.tooltip.shift.2": "  §a活力迸发10 (20s)",
+
+    "item.fib.time_sword": "时光之剑",
+	"item.fib.time_sword.tooltip.shift_hint": "§c按 [Shift] 查看特殊效果",
+	"item.fib.time_sword.tooltip.shift.1": "  §a右键使用使周围16格范围所有生物的时间流速被限制为四分之一",
+	"item.fib.time_sword.tooltip.shift.2": "  §c30秒后,时光之剑将会回收周围的异常的时间",
 	
     "item.fib.skill_heavy_bow": "技巧:重弓",
     "item.fib.skill_powerful_shooting": "技巧:强力射击",

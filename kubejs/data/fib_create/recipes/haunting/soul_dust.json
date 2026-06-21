@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_sand"
+    }
+  ],
+  "results": [
+    {
+      "item": "enigmaticlegacy:soul_dust"
+    }
+  ]
+}
