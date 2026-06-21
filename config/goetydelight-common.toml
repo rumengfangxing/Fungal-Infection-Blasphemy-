@@ -1,65 +1,110 @@
 #A list of blacklisted items that will be hidden from creative tabs and prevent drops
+#物品黑名单列表，这些物品将从创造模式标签页隐藏并阻止掉落
 blacklistedItems = ["goetydelight:roasted_corpse_maggots", "goetydelight:corpse_maggot", "goetydelight:rotten_corpse_maggot_feast", "goetydelight:rotten_corpse_maggot_feast_block"]
 #Effect radius for the cake item
+#皇家蛋糕的效果半径
 #Range: 1.0 ~ 256.0
 cakeEffectRadius = 32.0
 #Whether bosses are affected by Polarice item
+#Boss是否北极刨冰影响
 polariceAffectsBosses = false
 #Maximum health threshold for entities to be affected by Polarice item (in half-hearts)
+#实体受北极刨冰影响的最大生命值阈值（单位：半颗心）
 #Range: 1.0 ~ 3.4028234663852886E38
 polariceHealthThreshold = 50.0
 #The cooldown for Polarice item to use
+#北极刨冰的使用冷却时间（tick）
 #Range: > 300
 polarice_cooldown = 1800
 #The number of Polarice item can affect
+#北极刨冰可以影响的实体数量
 #Range: > 1
 polarice_count = 10
 #A list of items that cannot be copied by Metamorphic Scent Grass
+#幻味草无法复制的物品黑名单
 MetamorphicScentGrassCopyBlacklist = ["goety_revelation:ascension_hard_candy", "enigmaticdelicacy:abyssal_stew", "enigmaticlegacy:forbidden_fruit", "goetydelight:pure_drink", "goetydelight:tainted_drink", "goetydelight:snap_unholy_tripe", "goetydelight:ancient_enchanted_golden_apple", "goetydelight:lichs_chaos_stew", "l2complements:life_essence", "l2complements:totemic_apple", "l2complements:enchanted_totemic_apple", "hmag:insomnia_fruit", "artifacts:everlasting_beef", "artifacts:eternal_steak", "born_in_chaos_v1:eternal_candy", "avaritia_delight:infinity_apple", "avaritia_delight:slice_of_endless_cake", "avaritia_delight:infinity_taco", "avaritia_delight:pasta_with_cosmic_meatballs", "avaritia_delight:infinity_large_hamburger", "minecraft:apple"]
 #Duration multiplier for Metamorphic Scent Grass effect (0.0 to 1.0)
+#幻味草效果持续时间倍率（0.0-1.0）
 #Range: 0.0 ~ 1.0
 metamorphicScentGrassDurationMultiplier = 0.2
 #Amplifier multiplier for Metamorphic Scent Grass effect (0.0 to 1.0)
+#幻味草效果等级倍率（0.0-1.0）
 #Range: 0.0 ~ 1.0
 metamorphicScentGrassAmplifierMultiplier = 0.3
 #The maximum number of effects that can be copied by Metamorphic Scent Grass (0-64)
+#幻味草可复制的最大效果数量（0-64）
 #Range: 0 ~ 64
 metamorphicScentGrassCopyCount = 1
 #A list of items that cannot be copied by Metamorphic Scent Fruit
+#幻味果无法复制的物品黑名单
 MetamorphicScentFruitCopyBlacklist = ["goety_revelation:ascension_hard_candy", "enigmaticdelicacy:abyssal_stew", "enigmaticlegacy:forbidden_fruit", "goetydelight:pure_drink", "goetydelight:tainted_drink", "goetydelight:snap_unholy_tripe", "goetydelight:ancient_enchanted_golden_apple", "goetydelight:lichs_chaos_stew", "l2complements:life_essence", "l2complements:totemic_apple", "l2complements:enchanted_totemic_apple", "hmag:insomnia_fruit", "artifacts:everlasting_beef", "artifacts:eternal_steak", "born_in_chaos_v1:eternal_candy", "avaritia_delight:infinity_apple", "avaritia_delight:slice_of_endless_cake", "avaritia_delight:infinity_taco", "avaritia_delight:pasta_with_cosmic_meatballs", "avaritia_delight:infinity_large_hamburger", "minecraft:apple"]
 #The maximum number of effects that can be copied by Metamorphic Scent Fruit (1-64)
+#幻味果可复制的最大效果数量（1-64）
 #Range: 1 ~ 12
 metamorphicScentFruitCopyCount = 1
 #Damage increase per level of Soul Affix enchantment
-#Range: 1.0 ~ 1.7976931348623157E308
+#灵魂附加附魔每级增加的伤害值
+#Range: 0.0 ~ 1.7976931348623157E308
 soulAffixDamagePerLevel = 1.0
 #Soul energy cost per level of Soul Affix enchantment
+#灵魂附加附魔每级消耗的灵魂能量
 #Range: > 1
 soulAffixSoulCostPerLevel = 10
 #Disable Soul Mending enchantment entirely
+#完全禁用灵魂修补附魔
 disableSoulMending = false
 #Disable Soul Healing enchantment entirely
+#完全禁用溢魂弥躯附魔
 disableSoulHealing = false
 #Disable Soul Affix enchantment entirely
+#完全禁用灵魂附加附魔
 disableSoulAffix = false
 #A list of items that cannot be enchanted with Soul Mending
+#无法附魔灵魂修补的物品列表
 soulRepairBlacklist = []
 #A list of items that cannot be enchanted with Soul Healing
+#无法附魔溢魂弥躯的物品列表
 soulHealBlacklist = []
 #A list of items that cannot be enchanted with Soul Affix
+#无法附魔灵魂附加的物品列表
 soulAffixBlacklist = []
 #Whether to enable compatibility with goety_revelation mod
+#是否启用与goety_revelation模组的兼容性
 enableGoetyRevelationCompatibility = true
 #Movement speed multiplier when Shift key is pressed
+#按下Shift键时的移动速度倍率
 #Range: 0.0 ~ 1.7976931348623157E308
 shiftSpeedMultiplier = 2.0
 #Damage multiplier in LivingHurtEvent
+#LivingHurtEvent中的伤害倍率
 #Range: 0.0 ~ 1.7976931348623157E308
 livingHurtDamageMultiplier = 2.0
 #General damage multiplier in LivingDamageEvent
+#LivingDamageEvent中的一般伤害倍率
 #Range: 0.0 ~ 1.7976931348623157E308
 livingDamageGeneralMultiplier = 2.0
 #Backstab damage multiplier in LivingDamageEvent
+#LivingDamageEvent中的背刺伤害倍率
 #Range: 0.0 ~ 1.7976931348623157E308
 livingDamageBackstabMultiplier = 3.0
+#Boost percentage per stack of Lich's Chaos Stew for minions (0.15 = 15%)
+#巫妖乱炖每层为仆从提供的加成百分比（0.15 = 15%）
+#Range: 0.0 ~ 1.0
+lichChaosStewBoostPercentage = 0.15
+#Maximum stack count for Lich's Chaos Stew effect
+#巫妖乱炖效果的最大叠加层数
+#Range: 1 ~ 20
+lichStewMaxCount = 6
+#Boost percentage per stack of Night Heart Pea Soup for minions (0.05 = 5%)
+#暗夜之心豌豆汤每层为仆从提供的加成百分比（0.05 = 5%）
+#Range: 0.0 ~ 1.0
+nightHeartPeaSoupBoostPercentage = 0.05
+#Maximum stack count for Night Heart Pea Soup effect
+#暗夜之心豌豆汤效果的最大叠加层数
+#Range: 1 ~ 30
+nightPeaSoupMaxCount = 12
+#Player model scale settings (format: playerName=scale)
+#玩家模型缩放设置（格式：玩家名称=缩放比例）
+#注：请勿在高版本ysm中使用该功能（2.6.2版本可用，2.6.5版本不可用）
+playerModelScales = ["Steve=1.0", "Alex=1.0", "wu1wu2=1.0"]
 

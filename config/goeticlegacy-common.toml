@@ -1,0 +1,1320 @@
+
+#════════════════════════════════════
+# 暗夜立方内容物被动效果
+#════════════════════════════════════
+#---- 典籍 ----
+#---- 兽友指南（原生存者卷轴效果）----
+[animal_guidebook]
+	#伤害转移比例公式分母 K（反比例 ratio = servantCount / (servantCount + K)）
+	#值越大，同等仆从数下转移比例越低。
+	#[默认: 3.0]
+	#Range: 0.1 ~ 100.0
+	ratioDivisor = 3.0
+	#伤害转移的最大作用半径（格） [默认: 24.0]
+	#Range: 1.0 ~ 256.0
+	maxRadius = 24.0
+
+#---- 黑暗秘典 ----
+[black_book]
+	#灵魂再生比率加成（0-100，表示百分比） [默认: 0.2]
+	#Range: 0.0 ~ 100.0
+	soulRegenRatio = 0.05
+
+#---- 虚伪审判 ----
+[false_justice]
+	#真实伤害率加成（0.2 = +20% 真实伤害比率） [默认: 0.2]
+	#Range: 0.0 ~ 100.0
+	trueDamageRatio = 0.2
+	#玩家造成伤害的倍率 [默认: 0.8]
+	#Range: 0.0 ~ 100.0
+	playerDamageMultiplier = 0.8
+	#仆从受到伤害的倍率 [默认: 1.5]
+	#Range: 0.0 ~ 100.0
+	servantDamageMultiplier = 1.5
+
+#---- 野猎手册 ----
+[hunter_guidebook]
+	#伤害转移的最大作用距离（格） [默认: 24.0]
+	#Range: 1.0 ~ 256.0
+	maxDistance = 24.0
+	#携带兽友指南时向玩家转移的伤害倍率 [默认: 0.5]
+	#Range: 0.0 ~ 1.0
+	damageFactorWithAnimalBook = 0.5
+
+#
+#╔═══════════════════════════════════════════════════════════╗
+#║                   生灵颂词 机制总览                      ║
+#╚═══════════════════════════════════════════════════════════╝
+#
+#【核心行为】
+#玩家与己方仆从之间双向共享正面药水效果（MobEffect）。
+#同步方向：玩家→仆从 和 仆从→玩家，双方的效果都会向对方传播。
+#
+#【触发频率】
+#每 5 tick（0.25 秒）检测一次，但每个 (源, 目标, 效果) 组合
+#有独立的冷却（syncCooldownTicks），冷却期内不会重复同步同一效果。
+#默认冷却 100 tick（5 秒），可防止 buff 被无限刷新。
+#
+#【等级处理】
+#共享时等级 = 向上取整减半：(originalAmplifier + 1) / 2
+#例如：源效果 V级(amp=4) → 共享后 III级(amp=2)
+#      源效果 II级(amp=1) → 共享后 I级(amp=0)
+#      源效果 I级(amp=0) → 共享后 I级(amp=0)
+#
+#共享后的等级受 maxSharedAmplifier 封顶（默认 amp=3，即 IV级）。
+#注意：amplifier 值 0=I级, 1=II级, 2=III级, 3=IV级，以此类推。
+#
+#【时长处理】
+#共享后的时长 = max(minDuration, originalDuration / 2)，
+#即原有时长减半，但不低于 minDuration（默认 20 tick = 1 秒）。
+#若原效果为无限时长（-1），则共享后仍为无限。
+#
+#【灵魂消耗】
+#任意一个同步方向实际发生了效果共享时，消耗 soulCostPerTick 点灵魂能量。
+#（默认为 5 点灵魂能量每次）
+#
+#【过滤层（按顺序执行）】
+#第一层 — 来源过滤（effectSourceFilter）：
+#  按效果所属的命名空间（namespace）过滤。
+#  四种模式见下方配置说明，默认 unrestricted 不限制。
+#
+#第二层 — 黑名单过滤（effectBlacklist）：
+#  按具体的效果 ID 排除，精确匹配 ResourceLocation。
+#  默认黑名单：minecraft:invisibility, speed, jump_boost, slow_falling
+#  留空 [] 则不禁任何效果。
+#
+#第三层 — I 级效果过滤（shareLevelOne）：
+#  设为 false 时，amplifier=0（I 级）的效果不会被共享。
+#  这在不想传播低级 buff（如 I 级力量、I 级速度）时很有用。
+#  默认 true（I 级也共享）。
+#
+#【防递归】
+#若目标已有同种效果且 amplifier >= 即将共享的等级，则跳过同步。
+#这防止了玩家↔仆从之间不断互相传播导致的死循环。
+#
+#═══════════════════════════════════════════════════════════
+[ode_to_living]
+	#每 tick 同步效果时消耗的灵魂能量 [默认: 5]
+	#Range: 0 ~ 10000
+	soulCostPerTick = 5
+	#共享效果的持续时间（ticks） [默认: 200 = 10秒]
+	#Range: 20 ~ 72000
+	sharedDuration = 200
+	#时长减半后最短保留的时间（ticks） [默认: 20 = 1秒]
+	#Range: 1 ~ 72000
+	minDuration = 20
+	#共享药水效果的最大 amplifier 等级（0=I级，3=IV级），超过此值的会被压制到上限 [默认: 3]
+	#Range: 0 ~ 255
+	maxSharedAmplifier = 3
+	#是否共享 amplifier=0（I级）的药水效果。
+	#false 时仅同步 II 级及以上的效果，I 级效果不会共享。
+	#[默认: true]
+	shareLevelOne = true
+	#共享效果的来源过滤模式。可选值：
+	#  unrestricted — 无限制，共享所有来源的药水效果（默认）
+	#  minecraft — 仅共享 minecraft 命名空间的原版药水效果
+	#  goety — 仅共享 goety 命名空间的药水效果
+	#  vanilla — 仅共享 minecraft + goety 命名空间的药水效果
+	#
+	#选择后，不在白名单命名空间内的药水效果不会被共享。
+	#此配置为热重载，修改后无需重启服务器。
+	#[默认: "unrestricted"]
+	effectSourceFilter = "unrestricted"
+	#禁止共享的药水效果 ID 列表（ResourceLocation 格式），
+	#填入模组命名空间 ID 即可，例如: ["minecraft:invisibility"]
+	#留空则不禁止任何效果 [默认: ["minecraft:invisibility", "minecraft:speed", "minecraft:jump_boost", "minecraft:slow_falling"]]
+	effectBlacklist = ["minecraft:invisibility", "minecraft:speed", "minecraft:jump_boost", "minecraft:slow_falling"]
+
+[ode_to_living_sync_cooldown]
+	#同步冷却机制的冷却时长（ticks，20 ticks = 1 秒）
+	#每次效果同步后，必须等待冷却期满才能再次同步同一效果。
+	#防止 buff 被不断刷新至永续。
+	#[默认: 100 = 5 秒]
+	#Range: 1 ~ 72000
+	syncCooldownTicks = 100
+
+#---- 血腥狩猎手册（狂战士）----
+[sanguinary_handbook]
+	#仆从最终伤害加成（ADDITION） [默认: 0.60 = +60%]
+	#Range: 0.0 ~ 100.0
+	servantFinalDamageBonus = 0.6
+	#仆从伤害抗性削减（负值=受到的伤害增加） [默认: -0.60 = -60%]
+	#Range: -1.0 ~ 0.0
+	servantDamageReductionPenalty = -0.6
+	#每点缺失生命值比率提供的伤害加成 [默认: 0.35]
+	#Range: 0.0 ~ 100.0
+	berserkMissingHealthFactor = 0.35
+	#伤害加成生效的最大距离（格） [默认: 40]
+	#Range: 1 ~ 256
+	maxDistance = 40
+	#触发吸血的血量阈值（玩家血量比例） [默认: 0.20 = 20%]
+	#Range: 0.0 ~ 1.0
+	leechingThreshold = 0.2
+	#吸血效果等级 [默认: 0 = I 级]
+	#Range: 0 ~ 255
+	leechingAmplifier = 0
+
+#---- 蜘蛛标本册 ----
+[spider_specimen_book]
+	#毒手效果等级 [默认: 0]
+	#Range: 0 ~ 255
+	venomousAmplifier = 0
+	#RALLIED 效果等级 [默认: 3]
+	#Range: 0 ~ 255
+	ralliedAmplifier = 3
+	#IRON_HIDE 效果等级 [默认: 1]
+	#Range: 0 ~ 255
+	ironHideAmplifier = 1
+
+#---- 启示之证 ----
+[the_acknowledgment]
+	#攻击使目标着火的秒数 [默认: 5]
+	#Range: 0 ~ 100
+	fireSeconds = 5
+	#仆从受到的伤害系数（1.0 = 无减伤，0.95 = 减伤 5%） [默认: 0.95]
+	#Range: 0.0 ~ 1.0
+	servantDamageReduction = 0.95
+	#「启示之审判」每级伤害放大系数。
+	#公式：damage *= 1 + (amplifier + 1) × 此值
+	#原 SAPPED 效果每级 +20%，此处默认 0.20 ≈ SAPPED 的 1/4
+	#[默认: 0.20]
+	#Range: 0.0 ~ 10.0
+	judgmentDamagePerLevel = 0.2
+
+#---- 恩惠之典 ----
+[the_bless]
+	#攻击使目标着火的秒数 [默认: 8]
+	#Range: 0 ~ 100
+	fireSeconds = 8
+	#腐蚀概率分母（1/x，默认 6 = 16.7%） [默认: 6]
+	#Range: 1 ~ 100
+	corrosionChanceDenominator = 6
+	#腐蚀效果时长（ticks） [默认: 80]
+	#Range: 1 ~ 72000
+	corrosionDuration = 80
+	#玩家额外无敌帧 [默认: 15]
+	#Range: 0 ~ 200
+	playerInvulExtra = 15
+	#仆从额外无敌帧 [默认: 15]
+	#Range: 0 ~ 200
+	servantInvulExtra = 15
+
+#---- 无止之言（重做：全局属性加成）----
+#
+#[重做说明]
+#不再检查具体饰品联动，直接给予玩家一小堆全局百分比属性加成。
+#所有加成无条件生效，无需额外物品。
+#
+#属性清单：
+#  护甲              +5%  (MULTIPLY_BASE)
+#  韧性              +5%  (MULTIPLY_BASE)
+#  最大生命值        +5%  (MULTIPLY_BASE)
+#  魔法伤害乘数      +5%  (ADDITION)
+#  最终伤害乘数      +3%  (ADDITION)
+#  仆从最终伤害      +5%  (ADDITION)
+#  仆从无敌帧削减    +3   (ADDITION)
+#  击退抗性          +0.2 (ADDITION)
+[the_infinitum]
+	#护甲加成（MULTIPLY_BASE） [默认: 0.05 = +5%]
+	#Range: 0.0 ~ 10.0
+	armorBonus = 0.05
+	#韧性加成（MULTIPLY_BASE） [默认: 0.05 = +5%]
+	#Range: 0.0 ~ 10.0
+	toughnessBonus = 0.05
+	#最大生命值加成（MULTIPLY_BASE） [默认: 0.05 = +5%]
+	#Range: 0.0 ~ 10.0
+	maxHealthBonus = 0.05
+	#魔法伤害乘数加成（ADDITION） [默认: 0.05 = +5%]
+	#Range: 0.0 ~ 10.0
+	magicDamageBonus = 0.05
+	#最终伤害乘数加成（ADDITION） [默认: 0.03 = +3%]
+	#Range: 0.0 ~ 10.0
+	finalDamageBonus = 0.03
+	#仆从最终伤害加成（ADDITION） [默认: 0.05 = +5%]
+	#Range: 0.0 ~ 10.0
+	servantFinalDamageBonus = 0.05
+	#仆从无敌帧削减（ADDITION） [默认: 3]
+	#Range: 0 ~ 100
+	servantInvulReduction = 3
+	#击退抗性（ADDITION） [默认: 0.2]
+	#Range: 0.0 ~ 1.0
+	knockbackResistance = 0.2
+
+#---- 倒转之启 ----
+[the_twist]
+	#对高血量目标（血量大于阈值时）的伤害倍率 [默认: 1.5]
+	#Range: 0.0 ~ 100.0
+	hugeHealthDamageMultiplier = 1.5
+	#高血量判定阈值（目标最大生命 / 玩家最大生命） [默认: 5.0]
+	#Range: 1.0 ~ 1000.0
+	hugeHealthThreshold = 5.0
+
+#---- 女巫酿造学 ----
+[witches_brew]
+	#「巧手」效果等级 [默认: 0]
+	#Range: 0 ~ 255
+	bottlingAmplifier = 0
+
+#---- 虚无之书 ----
+[void_tome]
+	#额外槽位数量 [默认: 2]
+	#Range: 0 ~ 10
+	bonusSlots = 2
+
+#---- 卷轴（内容物被动）----
+#---- 不洁卷轴 ----
+[unholy_scroll_content]
+	#仆从伤害乘数公式前系数（乘法模式 MULTIPLY_BASE） [默认: 2.5]
+	#Range: 0.0 ~ 100.0
+	servantDamageCoefficient = 2.5
+	#仆从伤害乘数公式分母 [默认: 60.0]
+	#Range: 1.0 ~ 10000.0
+	servantDamageDivisor = 60.0
+	#仆从无敌帧削减公式前系数（乘法模式 MULTIPLY_BASE） [默认: 0.85]
+	#Range: 0.0 ~ 100.0
+	servantInvulCoefficient = 0.85
+	#仆从无敌帧削减公式分母 [默认: 100.0]
+	#Range: 1.0 ~ 10000.0
+	servantInvulDivisor = 100.0
+
+#---- 万钧之护卷轴 ----
+[thunder_scroll_content]
+	#闪电链基础跳跃次数 [默认: 4]
+	#Range: 1 ~ 100
+	baseJumps = 4
+	#闪电链基础索敌半径 [默认: 6.0]
+	#Range: 1.0 ~ 128.0
+	baseRadius = 6.0
+	#闪电链基础伤害倍率 [默认: 0.8]
+	#Range: 0.0 ~ 100.0
+	baseDamageMultiplier = 0.8
+	#每次跳跃伤害衰减倍率 [默认: 0.7]
+	#Range: 0.0 ~ 1.0
+	chainDecay = 0.7
+	#水中跳跃时的伤害衰减倍率 [默认: 0.9]
+	#Range: 0.0 ~ 1.0
+	waterDecay = 0.9
+	#雷雨天半径额外增加量 [默认: 1.5]
+	#Range: 0.0 ~ 64.0
+	thunderRadiusBonus = 1.5
+	#雷雨天跳跃次数乘数 [默认: 1.5]
+	#Range: 1.0 ~ 10.0
+	thunderJumpsMultiplier = 1.5
+	#雷雨天伤害倍率乘数 [默认: 1.25]
+	#Range: 0.0 ~ 10.0
+	thunderDamageMultiplier = 1.25
+	#持风暴法杖时跳跃次数乘数 [默认: 1.25]
+	#Range: 1.0 ~ 10.0
+	staffJumpsMultiplier = 1.25
+	#持风暴法杖时半径乘数 [默认: 1.25]
+	#Range: 1.0 ~ 10.0
+	staffRadiusMultiplier = 1.25
+	#持风暴法杖时伤害倍率乘数 [默认: 1.25]
+	#Range: 0.0 ~ 10.0
+	staffDamageMultiplier = 1.25
+
+#---- 无尽贪婪卷轴 ----
+[avarice_scroll_content]
+	#looting = floor(luck / divisor) [默认: 2.5]
+	#Range: 0.5 ~ 100.0
+	luckToLootingDivisor = 2.5
+	#与 enigmaticaddons:avarice_ring 联动时仆从伤害加成倍率（相对于原版玩家伤害加成）。
+	#原版公式：damage *= 1 + getDamageBoost(player)
+	#仆从公式：damage *= 1 + getDamageBoost(player) × servantDamageMultiplier
+	#默认 0.5 表示仆从获得原版玩家伤害加成的一半效果。设为 1.0 则与原版一致。
+	#[默认: 0.5]
+	#Range: 0.0 ~ 10.0
+	servantDamageMultiplier = 0.5
+	#囚犯仆从获得的急迫效果等级（0=急迫I, 1=IE, 2=III级, ...）
+	#[默认: 2 = III级]
+	#Range: 0 ~ 255
+	prisonerHasteAmplifier = 2
+	#囚犯仆从获得的急迫效果时长（ticks，每10 tick刷新）
+	#[默认: 40]
+	#Range: 10 ~ 72000
+	prisonerHasteDuration = 40
+
+#---- 建筑师的青睐 ----
+[cosmic_scroll]
+	#以太护盾触发阈值倍率 [默认: 1.5]
+	#Range: 0.0 ~ 100.0
+	shieldThresholdMultiplier = 1.5
+	#复活冷却时间（秒） [默认: 600 = 10分钟]
+	#Range: 0 ~ 100000
+	reviveCooldownSeconds = 600
+	#幸运值加成 [默认: 3.0]
+	#Range: 0.0 ~ 100.0
+	luckBonus = 3.0
+	#额外槽位数量 [默认: 1]
+	#Range: 0 ~ 10
+	bonusSlots = 1
+
+#---- 恩赐卷轴 ----
+[blessing_scroll]
+	#闪避率：每幸运值增加的比例 [默认: 0.015]
+	#Range: 0.0 ~ 1.0
+	dodgeLuckFactor = 0.015
+	#触发概率基础部分 [默认: 0.20]
+	#Range: 0.0 ~ 1.0
+	triggerChanceBase = 0.2
+	#触发概率增益幅度 [默认: 0.4]
+	#Range: 0.0 ~ 1.0
+	triggerChanceScale = 0.4
+	#触发概率增益分母（指数衰减） [默认: 40.0]
+	#Range: 1.0 ~ 1000.0
+	triggerChanceDivisor = 40.0
+	#效果等级第一档幸运门槛 [默认: 18]
+	#Range: 0 ~ 1000
+	effectLevelThreshold1 = 18
+	#效果等级第二档幸运门槛 [默认: 42]
+	#Range: 0 ~ 1000
+	effectLevelThreshold2 = 42
+	#效果等级第三档幸运门槛 [默认: 72]
+	#Range: 0 ~ 1000
+	effectLevelThreshold3 = 72
+	#触发冷却（毫秒） [默认: 600 = 0.6秒]
+	#Range: 0 ~ 100000
+	cooldownMillis = 600
+
+#---- 无知诅咒卷轴 ----
+[cursed_xp_scroll]
+	#伤害加成上限（百分比） [默认: 100.0]
+	#Range: 0.0 ~ 10000.0
+	damageBoostLimit = 100.0
+	#经验等级上限（超过后不再提升） [默认: 1000]
+	#Range: 1 ~ 100000
+	xpLevelUpperLimit = 1000
+	#玩家伤害加成系数（基础加成的倍数） [默认: 0.25]
+	#Range: 0.0 ~ 10.0
+	playerDamageFactor = 0.25
+	#仆从伤害加成系数（基础加成的倍数） [默认: 1.0]
+	#Range: 0.0 ~ 10.0
+	servantDamageFactor = 1.0
+
+#---- 死后召回卷轴 ----
+[escape_scroll]
+	#免死后缚骨效果时长（ticks） [默认: 6000 = 5分钟]
+	#Range: 1 ~ 72000
+	cooldownTicks = 6000
+	#免死后仆从随机传送半径（格） [默认: 32]
+	#Range: 1 ~ 256
+	teleportRadius = 32
+
+#---- 千咒卷轴 ----
+[cursed_scroll]
+	#每次攻击触发诅咒削弱的概率 (0.0~1.0) [默认: 0.5]
+	#Range: 0.0 ~ 1.0
+	triggerChance = 0.5
+	#基础每次削减比例 (0.0~1.0) [默认: 0.01]
+	#Range: 0.0 ~ 1.0
+	basePerHit = 0.01
+	#基础削减封顶比例 (0.0~1.0) [默认: 0.10]
+	#Range: 0.0 ~ 1.0
+	baseCap = 0.1
+	#参与强度计算的诅咒数上限 [默认: 20]
+	#Range: 1 ~ 100
+	maxEffectiveCurses = 20
+	#sqrt 衰减曲线乘数 [默认: 0.35]
+	#Range: 0.0 ~ 1.0
+	sqrtMultiplier = 0.35
+
+#---- 创造者的恩赐（数值已削弱30%） ----
+[fabulous_scroll]
+	#风之法杖加成倍数 [默认: 1.20]
+	#Range: 0.0 ~ 10.0
+	staffBonusMultiplier = 1.2
+	#摔落缓冲气垫半径 [默认: 1.50]
+	#Range: 0.0 ~ 100.0
+	cushionRadius = 1.5
+	#缓冲气垫持续时长（ticks） [默认: 85]
+	#Range: 1 ~ 72000
+	cushionDuration = 85
+	#死亡风爆半径 [默认: 3.0]
+	#Range: 0.0 ~ 100.0
+	windHornRadius = 3.0
+	#死亡风爆持续时长（ticks） [默认: 5]
+	#Range: 1 ~ 72000
+	windHornDuration = 5
+	#死亡风爆伤害基础值 [默认: 1]
+	#Range: 0 ~ 10000
+	windHornPotency = 1
+	#仆从受伤时生成龙卷风概率 [默认: 0.20]
+	#Range: 0.0 ~ 1.0
+	cycloneChance = 0.2
+	#龙卷风基础伤害 [默认: 2]
+	#Range: 0 ~ 10000
+	cyclonePotency = 2
+	#龙卷风持续时长（ticks） [默认: 350]
+	#Range: 1 ~ 72000
+	cycloneDuration = 350
+	#龙卷风基础半径 [默认: 0.90]
+	#Range: 0.0 ~ 100.0
+	cycloneRadius = 0.9
+	#仆从受伤时吹飞周围敌人概率 [默认: 0.08]
+	#Range: 0.0 ~ 1.0
+	windBlastChance = 0.08
+	#吹飞范围 [默认: 2]
+	#Range: 1 ~ 100
+	windBlastRange = 2
+	#玩家攻击触发风刃概率 [默认: 0.30]
+	#Range: 0.0 ~ 1.0
+	playerRazorChance = 0.3
+	#玩家风刃伤害比例（相对攻击伤害） [默认: 0.35]
+	#Range: 0.0 ~ 100.0
+	playerRazorDamageRatio = 0.35
+	#玩家风刃半径 [默认: 0.55]
+	#Range: 0.0 ~ 100.0
+	playerRazorRadius = 0.55
+	#仆从攻击触发风刃概率 [默认: 0.40]
+	#Range: 0.0 ~ 1.0
+	servantRazorChance = 0.4
+	#仆从风刃伤害比例（相对攻击伤害） [默认: 0.70]
+	#Range: 0.0 ~ 100.0
+	servantRazorDamageRatio = 0.7
+	#仆从风刃半径 [默认: 0.55]
+	#Range: 0.0 ~ 100.0
+	servantRazorRadius = 0.55
+	#摔落伤害倍率（0=完全免疫） [默认: 0.0]
+	#Range: 0.0 ~ 1.0
+	fallDamageMultiplier = 0.0
+	#════════════════════════════════════
+	# 龙卷风数量上限
+	#════════════════════════════════════
+	#
+	#同一玩家同时存在的龙卷风数量上限。
+	#防止仆从高频受伤时刷出过多龙卷风（有玩家反馈刷到1400+）。
+	#设为 0 或负数表示不限制。 [默认: 10]
+	#Range: 0 ~ 1000
+	cycloneMaxCount = 10
+
+#---- 天堂之礼（重做：灵魂飞行） ----
+#
+#消耗灵魂能量获得创造飞行能力。
+#每秒消耗 = maxSoulEnergy × soulCostPercentPerSecond + soulCostFixedPerSecond
+#灵魂能量不足时自动取消飞行状态。
+[heaven_scroll]
+	#每秒消耗灵魂能量的百分比（0.01 = 1% 最大灵魂能量）
+	#计算公式：消耗量 = maxSoulEnergy × soulCostPercentPerSecond + soulCostFixedPerSecond
+	#取值范围：0.0~1.0 [默认: 0.01 = 1%]
+	#Range: 0.0 ~ 1.0
+	soulCostPercentPerSecond = 0.0
+	#每秒消耗固定灵魂能量值
+	#计算公式：消耗量 = maxSoulEnergy × soulCostPercentPerSecond + soulCostFixedPerSecond
+	#取值范围：0~100000 [默认: 100]
+	#Range: 0 ~ 100000
+	soulCostFixedPerSecond = 50
+	#消耗检查间隔（ticks，20 = 1秒）
+	#数值越小消耗越平滑，但CPU开销略大
+	#[默认: 10 = 每半秒消耗一次]
+	#Range: 1 ~ 100
+	checkInterval = 20
+
+#════════════════════════════════════
+# 暗夜契约卷轴配置
+#════════════════════════════════════
+#
+#核心机制：与暗夜立方共鸣，所有效果仅在夜晚激活状态下生效
+#- 夜色强度：随夜晚时间推移而增强的动态数值（0-1之间）
+#- 午夜爆发：每天0:00触发的短时间强力增益窗口
+#- 假夜晚：通过主动技能创造的夜晚状态，提供额外收益
+#- 月相系统：不同月相提供差异化的增益效果
+#
+[night_scroll]
+	#夜色强度指数系数
+	#- 计算公式：boosted = strength^power
+	#- 值越小，曲线越平缓，低强度时收益更高
+	#- 值越大，曲线越陡峭，高强度时收益更高
+	#- 推荐范围：0.5-0.9 [默认: 0.7]
+	#Range: 0.0 ~ 10.0
+	nightStrengthPower = 0.7
+	#夜色强度最低保底值
+	#- 防止夜色强度过低时完全无效
+	#- 取值范围：0.0-1.0 [默认: 0.35]
+	#Range: 0.0 ~ 1.0
+	nightStrengthMin = 0.35
+	#午夜Buff效果持续时间（内部使用，无需调整）
+	#- 该效果每刻都会重新添加，时长仅需保证不中断即可
+	#Range: 1 ~ 72000
+	buffDuration = 40
+	#午夜Buff效果等级（核心配置）
+	#- 0 = I级, 1 = II级, 2 = III级, 3 = IV级
+	#- 等级越高，增益效果越强
+	#- 推荐范围：0-5 [默认: 3 = IV级]
+	#Range: 0 ~ 255
+	buffAmplifier = 3
+	#假夜晚斗志效果持续时间（内部使用，无需调整）
+	#- 该效果每刻都会重新添加，时长仅需保证不中断即可
+	#Range: 1 ~ 72000
+	rallyingDuration = 60
+	#假夜晚斗志效果等级（核心配置）
+	#- 0 = I级, 1 = II级, 2 = III级
+	#- 推荐范围：0-3 [默认: 2 = III级]
+	#Range: 0 ~ 255
+	rallyingAmplifier = 2
+	#基于夜色强度的最终伤害加成系数
+	#- 实际加成 = 配置值 × 当前夜色强度
+	#- 例如：配置0.15，夜色强度0.8 → 实际加成12%
+	#- 取值范围：0.0-100.0 [默认: 0.15 = 最大15%加成]
+	#Range: 0.0 ~ 100.0
+	finalDamageMultiplier = 0.15
+	#夜色下的真实伤害转化比例（受夜色强度影响）
+	#- 将部分伤害转化为无视防御的真实伤害
+	#- 实际值 = 配置值 × 夜色强度
+	#- 例如：0.10 × 0.8 = 8%转化为真伤
+	#- 取值范围：0.0-1.0 [默认: 0.10 = 最大10%]
+	#Range: 0.0 ~ 1.0
+	trueDamageRatio = 0.1
+	#午夜爆发时的额外最终伤害加成（固定值）
+	#- 在午夜0:00时刻额外提供的伤害加成
+	#- 不与夜色强度相乘，直接叠加
+	#- 取值范围：0.0-100.0 [默认: 0.25 = +25%]
+	#Range: 0.0 ~ 100.0
+	finalDamageMultiplierMidnight = 0.25
+	#夜色下魔法攻击无敌帧削减 [默认: 2.0 ticks]
+	#Range: 0.0 ~ 100.0
+	magicInvulBonus = 2.0
+	#夜色下生命恢复间隔（ticks） [默认: 60 = 3秒]
+	#Range: 1 ~ 1200
+	nightHealInterval = 60
+	#夜色下每次恢复最大生命值的百分比 [默认: 0.02 = 2%]
+	#Range: 0.0 ~ 1.0
+	nightHealPercent = 0.02
+	#手持无名魔杖时的魔法伤害乘数加成
+	#- 仅在主手或副手持有无名魔杖时生效
+	#- 例如：0.15 = +15%魔法伤害
+	#- 取值范围：0.0-100.0 [默认: 0.15 = +15%]
+	#Range: 0.0 ~ 100.0
+	magicDamageMultiplierStaff = 0.15
+	#佩戴完整无名套装时的仆从减伤率
+	#- 需要同时佩戴无名披风和无名王冠
+	#- 例如：0.10 = 仆从受到的伤害减少10%
+	#- 取值范围：0.0-1.0 [默认: 0.10 = 10%]
+	#Range: 0.0 ~ 1.0
+	servantDamageReductionNameless = 0.1
+	#夜晚状态下玩家受伤倍率
+	#- 值越小，减伤越多
+	#- 例如：0.85 = 受到85%伤害（减伤15%）
+	#- 取值范围：0.0-1.0 [默认: 0.85 = 减伤15%]
+	#Range: 0.0 ~ 1.0
+	playerHurtMultiplier = 0.85
+	#假夜晚状态下的额外受伤倍率（在夜晚减伤基础上叠加）
+	#- 计算公式：最终受伤 = 原始伤害 × playerHurtMultiplier × fakeNightHurtMultiplier
+	#- 例如：0.85 × 0.80 = 0.68，即总减伤32%
+	#- 取值范围：0.0-1.0 [默认: 0.80]
+	#Range: 0.0 ~ 1.0
+	fakeNightHurtMultiplier = 0.8
+
+#---- 暴戾之咒 ----
+[violence_scroll]
+	#攻击触发虚空震击概率 [默认: 0.30]
+	#Range: 0.0 ~ 1.0
+	voidShockChance = 0.3
+	#每层诅咒伤害增幅 [默认: 0.15]
+	#Range: 0.0 ~ 10.0
+	curseDamageFactor = 0.15
+	#虚空震击额外半径 [默认: 0.4]
+	#Range: 0.0 ~ 100.0
+	voidShockExtraRadius = 0.4
+	#仆从受伤触发增益概率 [默认: 0.20]
+	#Range: 0.0 ~ 1.0
+	servantBuffChance = 0.2
+	#仆从增益基础时长（ticks） [默认: 50]
+	#Range: 1 ~ 72000
+	servantBuffBaseDuration = 50
+	#每层诅咒增加时长（ticks） [默认: 15]
+	#Range: 1 ~ 72000
+	servantBuffDurationPerCurse = 15
+	#攻击触发虚空炸弹概率 [默认: 0.12]
+	#Range: 0.0 ~ 1.0
+	voidBombChance = 0.12
+
+#---- 永恒智慧卷轴 ----
+[xp_scroll]
+	#洞悉效果等级 [默认: 2]
+	#Range: 0 ~ 255
+	insightAmplifier = 2
+
+#---- 失色卷轴 ----
+[fading_scroll]
+	#清除仇恨的间隔时间（ticks，20 ticks = 1秒） [默认: 300 = 15秒]
+	#Range: 20 ~ 72000
+	clearAggroIntervalTicks = 300
+	#清除仇恨的作用半径（格） [默认: 32.0]
+	#Range: 1.0 ~ 256.0
+	clearAggroRadius = 32.0
+
+#---- 寻猎者卷轴 ----
+[hunter_scroll]
+	#对仆从类目标的额外伤害倍率（4.0 = +400%） [默认: 4.0]
+	#Range: 0.0 ~ 1000.0
+	damageMultiplier = 4.0
+
+#---- 探索者卷轴 ----
+[explorer_scroll]
+	#触发额外战利品发放的概率（0.0~1.0） [默认: 0.75]
+	#Range: 0.0 ~ 1.0
+	triggerChance = 0.75
+	#是否启用箱子战利品二次发放 [默认: true]
+	enableChestLootBonus = true
+
+#---- 生存者卷轴（原魔像之心效果）----
+[survivor_scroll]
+	#护甲加成（ADDITION） [默认: 6.0]
+	#Range: 0.0 ~ 100.0
+	armorBonus = 6.0
+	#盔甲韧性加成（ADDITION） [默认: 6.0]
+	#Range: 0.0 ~ 100.0
+	toughnessBonus = 6.0
+	#受到近战伤害倍率 [默认: 0.80 = 减伤20%]
+	#Range: 0.0 ~ 10.0
+	meleeDamageMultiplier = 0.8
+
+#---- 术石 ----
+#---- 天使之祝 ----
+[angel_blessing]
+	#飞行时长（ticks） [默认: 100 = 5秒]
+	#Range: 1 ~ 72000
+	flyTime = 100
+	#完整周期（ticks） [默认: 400 = 20秒]
+	#Range: 1 ~ 72000
+	fullCycle = 400
+	#飞行时挖掘速度倍率 [默认: 5.0]
+	#Range: 1.0 ~ 100.0
+	digSpeedBoost = 5.0
+
+#---- 烈阳之核 ----
+[blazing_core]
+	#下界仆从护甲加成（ADDITION） [默认: 6.0]
+	#Range: 0.0 ~ 100.0
+	servantArmorBonus = 6.0
+	#下界仆从盔甲韧性加成（ADDITION） [默认: 6.0]
+	#Range: 0.0 ~ 100.0
+	servantToughnessBonus = 6.0
+	#攻击/被攻击触发下界法术的概率（0.0~1.0） [默认: 0.30 = 30%]
+	#Range: 0.0 ~ 1.0
+	spellProcChance = 0.3
+
+#---- 创造之心 ----
+[enigmatic_item]
+	#飞行时挖掘速度倍率 [默认: 5.0]
+	#Range: 1.0 ~ 100.0
+	digSpeedBoost = 5.0
+
+#---- 以太核心 ----
+[etherium_core]
+	#以太护盾阈值倍率 [默认: 1.35]
+	#Range: 0.0 ~ 10.0
+	shieldThresholdMultiplier = 1.35
+	#护盾启动持续时间（ticks） [默认: 35]
+	#Range: 1 ~ 72000
+	shieldDuration = 35
+	#护甲加成倍率（MULTIPLY_BASE） [默认: 0.15 = +15%]
+	#Range: 0.0 ~ 10.0
+	armorBonus = 0.15
+	#盔甲韧性加成倍率（MULTIPLY_BASE） [默认: 0.25 = +25%]
+	#Range: 0.0 ~ 10.0
+	toughnessBonus = 0.25
+
+#---- 星云之眼 ----
+[eye_of_nebula]
+	#魔法伤害加成（ADDITION） [默认: 0.50 = +50%]
+	#Range: 0.0 ~ 10.0
+	magicDamageBonus = 0.5
+	#魔法伤害无敌帧削减 [默认: 3]
+	#Range: 0 ~ 100
+	magicInvulReduction = 3
+	#受到魔法伤害倍率 [默认: 0.55 = -45%]
+	#Range: 0.0 ~ 10.0
+	magicDamageTakenMultiplier = 0.55
+
+#---- 忘却冰晶 ----
+[forgotten_ice]
+	#寒蔽效果等级 [默认: 1]
+	#Range: 0 ~ 255
+	chillHideAmplifier = 1
+	#冰霜仆从攻击力加成（MULTIPLY_TOTAL） [默认: 0.45 = +45%]
+	#Range: 0.0 ~ 10.0
+	frostDamageMultiplier = 0.45
+	#冰霜仆从护甲加成（ADDITION） [默认: 4.5]
+	#Range: 0.0 ~ 100.0
+	frostArmorBonus = 4.5
+	#冰霜仆从生命值加成（MULTIPLY_TOTAL） [默认: 0.15 = +15%]
+	#Range: 0.0 ~ 10.0
+	frostHealthMultiplier = 0.15
+	#冰霜仆从盔甲韧性加成（ADDITION） [默认: 2.0]
+	#Range: 0.0 ~ 100.0
+	frostArmorToughness = 2.0
+	#仆从冰冻伤害倍率 [默认: 1.15]
+	#Range: 0.0 ~ 10.0
+	servantFreezeDamageMultiplier = 1.15
+	#冰冻效果时长（ticks） [默认: 50]
+	#Range: 1 ~ 72000
+	freezingDuration = 50
+	#硬冻结触发概率 [默认: 0.10]
+	#Range: 0.0 ~ 1.0
+	hardFreezeChance = 0.1
+	#硬冻结时长（ticks） [默认: 80]
+	#Range: 1 ~ 72000
+	hardFreezeDuration = 80
+	#硬冻结等级 [默认: 1]
+	#Range: 0 ~ 255
+	hardFreezeAmplifier = 1
+
+#---- 魔像之心（buff→shielded+iron_hide）----
+[golem_heart]
+	#是否启用 buff→iron_hide（二分之一等级） [默认: true]
+	enableIronHide = true
+
+#---- 虚幻冥灯 ----
+[illusion_lantern]
+	#每件装备消耗灵魂能量 [默认: 6]
+	#Range: 1 ~ 10000
+	armorCost = 6
+	#亡灵中立血量阈值（倍率） [默认: 4.5]
+	#Range: 1.0 ~ 100.0
+	neutralHealthThreshold = 4.5
+	#是否仅对亡灵仆从自动装备盔甲 [默认: false = 所有仆从均可装备]
+	onlyUndead = false
+
+#---- 失落引擎 ----
+[lost_engine]
+	#傀儡护甲加成（MULTIPLY_TOTAL） [默认: 0.75 = +75%]
+	#Range: 0.0 ~ 10.0
+	golemArmorMultiplier = 0.75
+	#傀儡韧性加成（MULTIPLY_TOTAL） [默认: 0.75 = +75%]
+	#Range: 0.0 ~ 10.0
+	golemToughnessMultiplier = 0.75
+	#傀儡击退抗性（ADDITION） [默认: 0.40]
+	#Range: 0.0 ~ 1.0
+	golemKnockbackResistance = 0.4
+	#傀儡攻击伤害加成（MULTIPLY_TOTAL） [默认: 0.35 = +35%]
+	#Range: 0.0 ~ 10.0
+	golemDamageMultiplier = 0.35
+	#仆从攻击无敌帧削减 [默认: 10]
+	#Range: 0 ~ 100
+	servantInvulReduction = 10
+
+#---- 海洋意志 ----
+[ocean_stone]
+	#深渊仆从护甲加成（ADDITION） [默认: 6.0]
+	#Range: 0.0 ~ 100.0
+	servantArmorBonus = 6.0
+	#深渊仆从盔甲韧性加成（ADDITION） [默认: 6.0]
+	#Range: 0.0 ~ 100.0
+	servantToughnessBonus = 6.0
+
+#---- 复苏之叶 ----
+[revival_leaf]
+	#玩家血量低于25%时，每0.5秒回复的最大生命百分比 [默认: 0.03 = 3%]
+	#Range: 0.0 ~ 1.0
+	lowHpPlayerHealPercent = 0.03
+	#仆从血量低于25%时，每0.5秒回复的最大生命百分比 [默认: 0.08 = 8%]
+	#Range: 0.0 ~ 1.0
+	lowHpServantHealPercent = 0.08
+	#光合作用等级 [默认: 3]
+	#Range: 0 ~ 255
+	photosynthesisAmplifier = 3
+	#暗兽抗性提升上限（amplifier） [默认: 2]
+	#Range: 0 ~ 255
+	maxResistanceLevel = 2
+	#暗兽额外抗性等级 [默认: 1]
+	#Range: 0 ~ 255
+	extraResistanceLevel = 1
+	#暗兽力量提升上限（amplifier） [默认: 3]
+	#Range: 0 ~ 255
+	maxStrengthLevel = 3
+	#暗兽额外力量等级 [默认: 1]
+	#Range: 0 ~ 255
+	extraStrengthLevel = 1
+	#暗兽生命恢复提升上限（amplifier） [默认: 2]
+	#Range: 0 ~ 255
+	maxRegenLevel = 2
+	#暗兽额外生命恢复等级 [default: 1]
+	#Range: 0 ~ 255
+	extraRegenLevel = 1
+
+#---- 非欧立方（重做）----
+#
+#[重做说明]
+#移除原版即死级伤害取消和免死效果。
+#新增效果：全局内容物属性增强——所有其他暗夜立方内容物提供的
+#属性加成（如魔法伤害、仆从伤害、护甲等）乘以该系数。
+#清除负面效果保留不变。
+#
+#配置值说明：
+#  1.20 = 所有内容物属性 +20%
+#  1.50 = 所有内容物属性 +50%
+#  2.00 = 所有内容物属性翻倍
+#  1.00 = 关闭增强效果（仅保留清负面）
+[the_cube]
+	#全局内容物属性增强倍率 [默认: 1.50 = +50%]
+	#所有其他内容物的 applyAttributes() 提供的属性值乘以该系数。
+	#Range: 1.0 ~ 5.0
+	contentBoostMultiplier = 1.5
+
+#---- 虚空珍珠（重做） ----
+[void_pearl]
+	#免死触发概率（虚空传送） [默认: 0.35]
+	#Range: 0.0 ~ 1.0
+	undeadProbability = 0.35
+	#免死后凋零时长（ticks） [默认: 240]
+	#Range: 1 ~ 72000
+	immortalWitherDuration = 240
+	#免死后凋零等级 [默认: 2]
+	#Range: 0 ~ 255
+	immortalWitherAmplifier = 2
+	#免死后缓慢时长（ticks） [默认: 240]
+	#Range: 1 ~ 72000
+	immortalSlowDuration = 240
+	#免死后缓慢等级 [默认: 2]
+	#Range: 0 ~ 255
+	immortalSlowAmplifier = 2
+	#虚空传送距离（格） [默认: 32]
+	#Range: 8 ~ 128
+	blinkRange = 32
+	#受伤触发虚空震爆的基础概率 [默认: 0.25]
+	#Range: 0.0 ~ 1.0
+	shockwaveChance = 0.25
+	#Shockwave 伤害系数（= 受伤伤害 × 此值） [默认: 0.5]
+	#Range: 0.0 ~ 10.0
+	shockwaveDamageRatio = 0.5
+	#Shockwave 爆炸半径 [默认: 4.0]
+	#Range: 1.0 ~ 64.0
+	shockwaveRadius = 4.0
+	#Weakening 作用半径 [默认: 7.0]
+	#Range: 1.0 ~ 64.0
+	weakeningRadius = 7.0
+	#Weakening 削弱时长（秒） [默认: 8]
+	#Range: 1 ~ 120
+	weakeningDuration = 8
+
+#════════════════════════════════════
+# 暗夜立方（饰品本体 + 主动技能）
+#════════════════════════════════════
+#---- 暗夜立方 ----
+[night_cube]
+	#常驻魔法伤害乘数加成 [默认: 0.05]
+	#Range: 0.0 ~ 10.0
+	magicDamageBonus = 0.05
+	#夜色下最终伤害乘数（满月时最高，对玩家和仆从均生效） [默认: 0.10]
+	#Range: 0.0 ~ 10.0
+	finalDamageMultiplier = 0.1
+	#非主世界激活「假夜晚」状态时长（ticks） [默认: 1200 = 60秒]
+	#Range: 1 ~ 72000
+	fakeNightDurationTicks = 1200
+	#主动技能冷却时间（ticks） [默认: 3600 = 180秒]
+	#Range: > 0
+	cooldownTicks = 3600
+	#夜晚起始 gameTime（mod 24000） [默认: 13000]
+	#Range: 0 ~ 24000
+	nightStart = 13000
+	#夜晚结束 gameTime（mod 24000） [默认: 23000]
+	#Range: 0 ~ 24000
+	nightEnd = 23000
+	#午夜判定起始 gameTime [默认: 17500]
+	#Range: 0 ~ 24000
+	midnightStart = 17500
+	#午夜判定结束 gameTime [默认: 18500]
+	#Range: 0 ~ 24000
+	midnightEnd = 18500
+	#════════════════════════════════════
+	# 容器系统配置
+	#════════════════════════════════════
+	#暗夜立方最大页数（每页3个槽位） [默认: 3，范围: 1-30]
+	#支持旧存档兼容，但是如果改小，之前存档超出当前最大页数的暗夜立方仍然保留
+	#Range: 1 ~ 30
+	maxPages = 3
+	#新创建的暗夜立方初始解锁的槽位数 [默认: 0，范围: 0-10]
+	#0 = 无初始槽位（需要通过献祭解锁第一个槽位）
+	#最好不要把初始槽位设置的比MAX_PAGE*3还要大
+	#注意：此配置仅影响新创建的暗夜立方，已有存档不受影响
+	#Range: 0 ~ 10
+	initialUnlockedSlots = 0
+	#════════════════════════════════════
+	# 巫妖额外槽位配置
+	#════════════════════════════════════
+	#是否启用巫妖玩家的额外槽位增益 [默认: true]
+	enableLichBonusSlots = true
+	#巫妖玩家获得的额外槽位数量 [默认: 1，范围: 0-10]
+	#注意：实际槽位数还受限于总功能槽数上限
+	#Range: 0 ~ 10
+	lichBonusSlotCount = 1
+	#════════════════════════════════════
+	# 七咒之戒检查配置
+	#════════════════════════════════════
+	#是否启用七咒之戒资格检查 [默认: true]
+	#启用后，ICursed 物品需要佩戴七咒之戒才能放入/生效
+	#IEldritch 物品还需要七咒之戒佩戴时间 ≥ 99.5%
+	#关闭后可让所有物品无限制使用
+	requireCurseCheck = true
+	#════════════════════════════════════
+	# 飞行保护黑名单
+	#════════════════════════════════════
+	#
+	#当暗夜立方被卸下或所有飞行内容物被移除时，
+	#如果玩家饰品槽中佩戴了此列表中的物品，则不清除飞行状态。
+	#用于兼容那些「无法卸下」的飞行道具（如 goety_revelation:halo_of_the_end）。
+	#
+	#格式："modid:item_id"，每行一个
+	#示例：
+	#  "goety_revelation:halo_of_the_end"
+	#  "some_mod:another_flight_item"
+	flightProtectionBlacklist = ["goety_revelation:halo_of_the_end"]
+	#════════════════════════════════════
+	# 新月隐身效果
+	#════════════════════════════════════
+	#
+	#新月（moonPhase=4）时是否给予玩家隐身效果。
+	#关闭后可避免新月期间装备频繁闪烁的视觉干扰。 [默认: true]
+	enableMoonInvisibility = true
+	#════════════════════════════════════
+	# 献祭配方配置
+	#════════════════════════════════════
+	#
+	#献祭配方列表，格式："modid:item_id;maxTimes;slotsPerSacrifice"
+	#- modid:item_id: 物品注册名（必填）
+	#- maxTimes: 最大献祭次数（0=无限次）
+	#- slotsPerSacrifice: 每次献祭解锁的槽位数（至少1）
+	#
+	#示例：
+	#  "enigmaticaddons:void_tome;5;1"  → 虚无之书，最多5次，每次1槽
+	#  "minecraft:nether_star;0;3"      → 下界之星，无限次，每次3槽
+	#  "somemod:special_scroll;1;15"    → 某mod的卷轴，1次全解锁
+	sacrificeRecipes = ["goety:void_echo;1;1", "goety:night_beacon;1;1", "goety:ominous_orb;1;1", "enigmaticlegacy:ichor_bottle;1;1", "enigmaticlegacy:forbidden_fruit;1;1"]
+
+#---- 时间加速 ----
+[night_cube_active]
+	#每次 tick 推进的额外 gameTime 数值 [默认: 80]
+	#Range: 1 ~ 100000
+	overworldTimeFactor = 80
+	#随机刻加速的作用半径（方块） [默认: 4]
+	#Range: 1 ~ 64
+	randTickRadius = 4
+	#每个受加速方块每轮额外执行 randomTick 的次数 [默认: 4]
+	#Range: 1 ~ 100
+	randTickBonus = 4
+	#随机刻加速的触发间隔（tick） [默认: 2]
+	#Range: 1 ~ 200
+	randTickInterval = 2
+	#时间加速倍率上限（clamp 上界） [默认: 1000]
+	#Range: 2 ~ 100000
+	timeFlowMaxFactor = 1000
+	#是否启用实体加速（训练 + 挖矿） [默认: true]
+	enableEntityAccel = true
+	#实体加速的搜索半径（方块），影响范围内的训练实体和囚犯 [默认: 16]
+	#Range: 1 ~ 64
+	entityAccelRadius = 16
+	#每轮实体加速的额外 tick 数 [默认: 1]
+	#与 randTickInterval 共享触发间隔，entityAccelBonus=1 且 interval=2 时，
+	#训练约加速 5 倍，挖矿约加速 27 倍
+	#Range: 1 ~ 20
+	entityAccelBonus = 1
+
+#════════════════════════════════════
+# 其他饰品
+#════════════════════════════════════
+#---- 不洁卷轴 ----
+[unholy_scroll]
+	#是否自动检测当前环境下全部法术数量作为卷轴上限（启用后忽略下方的 maxSpells） [默认: true]
+	enableAutoMaxSpells = true
+	#卷轴可记录的最大法术数量（当 enableAutoMaxSpells=false 时生效） [默认: 300]
+	#Range: 1 ~ 10000
+	maxSpells = 300
+	#按住 Shift 时显示最近记录的条数 [默认: 5]
+	#Range: 1 ~ 50
+	recentDefaultCount = 5
+	#按 Alt 翻页查看法术总表时每页的条数 [默认: 12]
+	#Range: 1 ~ 100
+	altPageSize = 12
+	#是否启用聚晶槽菜单（UI 上显示 Focus 按钮并允许打开） [默认: true]
+	enableFocusMenu = true
+	#幸运/魔法伤害最大增益系数 [默认: 1.4 = 140%]
+	#Range: 0.0 ~ 100.0
+	luckBonusCoefficient = 1.4
+	#幸运/魔法伤害增益曲线指数（<1 前期发力，=1 线性，>1 后期发力） [默认: 1.3]
+	#影响公式：增益 = 系数 * (已收集/总数)^指数
+	#推荐值：0.7(前期快) / 1.0(线性) / 1.3(后期快)
+	#Range: 0.1 ~ 3.0
+	luckBonusExponent = 1.3
+	#幸运/巫术伤害公式分母（已废弃，改用幂函数曲线） [默认: 80.0]
+	#Range: 1.0 ~ 10000.0
+	luckBonusDivisor = 80.0
+	#法术流派 Potency 增益公式系数（饱和曲线，上限3级） [默认: 3.0]
+	#Range: 0.0 ~ 10.0
+	potencyCoefficient = 3.0
+	#法术流派 Potency 增益公式分母（前期发力，调小至15） [默认: 15.0]
+	#Range: 1.0 ~ 10000.0
+	potencyDivisor = 15.0
+	#法术流派 Discount 增益公式系数（饱和曲线，上限50%折扣） [默认: 0.5]
+	#Range: 0.0 ~ 1.0
+	discountCoefficient = 0.5
+	#法术流派 Discount 增益公式分母（前期发力，调小至20） [默认: 20.0]
+	#Range: 1.0 ~ 10000.0
+	discountDivisor = 20.0
+	#总灵魂消耗 Soul Discount 最大折扣上限（线性增长） [默认: 0.3]
+	#Range: 0.0 ~ 1.0
+	soulDiscountCoefficient = 0.3
+	#总灵魂消耗 Soul Discount 每1%折扣需要的灵魂点数（线性） [默认: 33333.33，100万灵魂达30%上限]
+	#Range: 1.0 ~ 1.0E7
+	soulDiscountDivisor = 33333.33
+	#总施法时长 Cast Time Discount 最大折扣上限（线性增长） [默认: 0.2]
+	#Range: 0.0 ~ 1.0
+	castTimeDiscountCoefficient = 0.2
+	#总施法时长 Cast Time Discount 每1%折扣需要的tick数（线性） [默认: 5000.0，10万tick/5千秒达20%上限]
+	#Range: 1.0 ~ 1.0E7
+	castTimeDiscountDivisor = 5000.0
+
+#---- 红宝石戒指 ----
+[ruby_ring]
+	#魔法攻击无敌帧削减量 [默认: 5.0]
+	#Range: 0.0 ~ 100.0
+	magicInvulReduction = 5.0
+
+#---- 翡翠护符 ----
+[jade_amulet]
+	#魔法伤害乘数加成 [默认: 0.15]
+	#Range: 0.0 ~ 10.0
+	magicDamageMultiplier = 0.15
+
+#---- 幽匿之心 ----
+[sculk_heart]
+	#音波基础伤害 [默认: 10.0]
+	#Range: 0.0 ~ 100.0
+	sonicBoomBaseDamage = 10.0
+	#每级 Potency 增加的基础伤害 [默认: 2.0]
+	#Range: 0.0 ~ 50.0
+	sonicBoomPotencyPerLevel = 2.0
+	#音波射程（格） [默认: 15]
+	#Range: 1 ~ 64
+	sonicBoomRange = 15
+	#空手伤害加成（固定值） [默认: 8.0]
+	#Range: 0.0 ~ 50.0
+	unarmedDamageBonus = 8.0
+	#每次击杀获得的最大灵魂能量百分比 [默认: 1.0]
+	#Range: 0.0 ~ 100.0
+	soulGainPercent = 1.0
+	#幽匿脉络最大扩散量 [默认: 1]
+	#Range: 0 ~ 10
+	sculkSpreadAmount = 1
+	#经验值转化为扩散量的除数，扩散量 = 经验 / 除数（向上取整，不超过上限） [默认: 7]
+	#Range: 1 ~ 1000
+	sculkXpDivisor = 7
+	#死后是否召唤监守者 [默认: true]
+	summonWardenOnDeath = true
+	#仆从死亡时召唤监守者的概率 [默认: 0.05]
+	#Range: 0.0 ~ 1.0
+	summonWardenChance = 0.05
+	#召唤的监守者消失时间（tick） [默认: 2400 = 120秒]
+	#Range: 100 ~ 72000
+	wardenDespawnTicks = 2400
+
+#════════════════════════════════════
+# 附魔
+#════════════════════════════════════
+#---- 破势 ----
+[breaking_stance]
+	#每级附魔提供的仆从无敌帧削减加成 [默认: 0.5]
+	#Range: 0.0 ~ 100.0
+	bonusPerLevel = 0.5
+
+#---- 戍卫 ----
+[bulwark]
+	#戍卫减伤公式的基数。减伤比例 = level / (base + level)。
+	#类似原版护甲递减曲线，低级收益高，高级自然衰减，永不触及 100%。
+	#
+	#示例 (base=20):
+	#  1 级 ≈ 4.8%    5 级 = 20%
+	#  10 级 ≈ 33.3%  20 级 = 50%
+	#
+	#范围: 1.0 ~ 1000.0  [默认: 20.0]
+	#Range: 1.0 ~ 1000.0
+	bulwarkBaseArmor = 20.0
+
+#---- 咒术增幅 ----
+[wand_power]
+	#每级附魔提供的魔法伤害乘数加成 [默认: 0.05]
+	#Range: 0.0 ~ 10.0
+	magicDamageBonusPerLevel = 0.05
+
+#════════════════════════════════════
+# 战斗机制
+#════════════════════════════════════
+#---- 无敌帧削减跳过条件 ----
+[invul_reduction]
+	#当攻击者主手或副手武器携带 goety_revelation:reality_piercer 附魔时，是否跳过本模组的无敌帧削减（让该附魔自己处理穿透）
+	#需要安装 goety_revelation 模组 [默认: true]
+	skipWhenRealityPiercer = true
+
+#════════════════════════════════════
+# 替代品卷轴重铸配置
+#════════════════════════════════════
+#---- 替代品卷轴 ----
+#控制仪式产出的打标研究卷轴的随机分配机制。
+#
+[substitute_config]
+	#每张卷轴允许的最大重铸次数。
+	#0 = 不允许重铸（旧行为：已有标签即退化）
+	#1 = 允许重铸一次（默认）
+	#N = 允许重铸 N 次
+	#[默认: 1]
+	#Range: 0 ~ 100
+	maxRerolls = 1
+	#仪式根据 craftType 偏好某类 content 时的权重。
+	#每次随机时，有 preferenceWeight 的概率从偏好的类型（典籍/卷轴/术石）中选取，
+	#剩余概率从其他类型中选取。
+	#0.0 = 完全均匀随机（无偏好），
+	#0.7 = 70% 概率选偏好类型（默认），
+	#1.0 = 强制只从偏好类型中选取。
+	#[默认: 0.7]
+	#Range: 0.0 ~ 1.0
+	preferenceWeight = 0.7
+
+#════════════════════════════════════
+# 仆从配置
+#════════════════════════════════════
+#控制是否启用来自不同模组的仆从类型
+#注意：即使启用，也需要对应模组已安装才会生效
+#
+[servant_config]
+	#是否启用 Iron's Spells and Spellbooks 模组的法术召唤物作为仆从
+	#需要安装 irons_spellbooks 模组 [默认: true]
+	enableIronSpellsServants = true
+	#是否启用 Modular Golems 模组的傀儡作为仆从
+	#需要安装 modulargolems 模组 [默认: true]
+	enableModularGolemsServants = true
+	#是否启用原版可驯服动物作为仆从
+	#也包括车万女仆[默认: true]
+	enableVanillaTameableServants = true
+	#是否禁止 Goety 的 Prisoner 开采以太矿石
+	#Prisoner 的采矿是全自动零成本的，效率极高
+	#启用后将阻止 Prisoner 将以太矿纳入采矿列表
+	#[默认: false]（不禁止）
+	disablePrisonerMiningEtheriumOre = false
+
+#════════════════════════════════════
+# 预制建筑
+#════════════════════════════════════
+#蓝图按照三个层级注入战利品表：
+#  Tier 1 - 原版箱子（*:chests/*，不含 goety）
+#  Tier 2 - Goety 系列箱子（命名空间含 goety）
+#  Tier 3 - 宝藏袋 / 自定义战利品表
+#
+#爆率计算公式：
+#  每个蓝图按自身 dropWeight 参与加权随机，
+#  概率 = 该蓝图dropWeight / (所有蓝图dropWeight之和 + emptyWeight)
+#  其中 emptyWeight = 总权重 * (1 - chance) / chance
+#
+#示例：dropWeight=20 的蓝图在 5% 爆率下：
+#  假设总权重=100 → emptyWeight=1900 → 单蓝图概率 ≈ 20/2000 ≈ 1%
+#
+#建议值：
+#  vanillaChestChance:  0.05 (5%)  → 平均 20 个箱子出 1 张
+#  goetyChestChance:    0.15 (15%) → 平均 6-7 个箱子出 1 张
+#  treasurePouchChance: 0.66 (66%) → 平均 1.5 个袋子出 1 张
+#
+[prefab_loot]
+	#Tier 1: 原版箱子的蓝图爆率 (0.0=关闭, 1.0=必出)
+	#作用于所有命名空间不含 "goety" 且路径以 chests/ 开头的战利品表
+	#[默认: 0.05]
+	#Range: 0.0 ~ 1.0
+	vanillaChestChance = 0.05
+	#Tier 2: Goety 系列箱子的蓝图爆率 (0.0=关闭, 1.0=必出)
+	#作用于命名空间含 "goety" 且路径以 chests/ 开头的战利品表
+	#[默认: 0.1]
+	#Range: 0.0 ~ 1.0
+	goetyChestChance = 0.1
+	#Tier 3: 宝藏袋/自定义战利品表的蓝图爆率 (0.0=关闭, 1.0=必出)
+	#作用于下方 treasurePouchIds 列表中的战利品表 ID
+	#[默认: 0.45]
+	#Range: 0.0 ~ 1.0
+	treasurePouchChance = 0.45
+	#═══════════════════════════════════════════════
+	# 宝藏袋战利品表 ID 列表
+	#═══════════════════════════════════════════════
+	#
+	#在此列表中的战利品表 ID 会应用 Tier 3 的爆率。
+	#格式："modid:path"，一行一个。
+	#
+	#默认值：
+	#  "goety:gameplay/treasure_pouch" — Goety 宝藏袋
+	#
+	#你可以加入其他模组的宝藏袋/奖励袋 ID：
+	#  "irons_spellbooks:gameplay/reward_pouch"
+	#  "cataclysm:gameplay/loot_bag"
+	#
+	treasurePouchIds = ["goety:gameplay/treasure_pouch"]
+
+#控制哪些实体类型可以被预制建筑系统捕获（创建蓝图/收回建筑时）。
+#格式: modid:entity_type，例如 minecraft:painting
+#
+#支持的实体必须是不依赖运行时状态的纯装饰实体。
+#白名单外的实体在快照时将被忽略，避免 NBT 残留导致崩溃。
+[prefab_entity]
+	#可被预制建筑蓝图捕获的实体列表。
+	#默认包含：原版画/物品展示框/荧光展示框/盔甲架 + Goety 的 haunted 版本
+	#添加其他模组实体前请确认其 NBT 不包含动态引用（UUID、Passengers 等）
+	capturableEntities = ["minecraft:item_frame", "minecraft:glow_item_frame", "minecraft:painting", "minecraft:armor_stand", "goety:haunted_painting", "goety:haunted_armor_stand"]
+
+#---- 预制建筑通用配置 ----
+#控制 CREATE 捕获模式、动画速度、灵魂消耗等。
+#
+[prefab_config]
+	#CREATE 捕获模式允许的最大单轴尺寸（方块数）。
+	#注意：实际可创建的方块数受灵魂能量上限制约（soulCostRatioCap）。
+	#增大此值会增加预览网络包大小和动画时长。
+	#[默认: 64] [范围: 16 ~ 256]
+	#Range: 16 ~ 256
+	maxCreateSize = 128
+	#生存模式下 CREATE 捕获的最大单轴尺寸（方块数）。
+	#创造模式不受此限制（使用上方 maxCreateSize）。
+	#[默认: 48] [范围: 8 ~ 128]
+	#Range: 8 ~ 128
+	survivalMaxCreateSize = 48
+	#部署/收回动画每 tick 最多处理的方块数。
+	#增大此值可加快大建筑动画速度，但会增加每 tick 的服务端开销。
+	#20 = 原版默认速度，120 ≈ 5 分钟处理 240k 方块。
+	#[默认: 120] [范围: 20 ~ 500]
+	#Range: 20 ~ 500
+	maxBlocksPerTick = 120
+	#每放置一个非空气方块消耗的灵魂能量倍率。
+	#最终消耗 = ceil(方块数 × 此值)，再受 soulCostRatioCap 限制。
+	#[默认: 0.5] [范围: 0.01 ~ 10.0]
+	#Range: 0.01 ~ 10.0
+	soulCostPerBlock = 0.5
+	#动画目标总时长（tick，20 tick = 1 秒）。
+	#小建筑快速完成，大建筑渐近趋向此值。6000 = 5 分钟。
+	#[默认: 6000] [范围: 600 ~ 24000]
+	#Range: 600 ~ 24000
+	targetJobTicks = 6000
+	#预览包切换为外轮廓模式的方块数阈值。
+	#当非空气方块数超过此值时，预览只发送建筑表面方块以减小包体积。
+	#设为 0 强制始终外轮廓；设为极大值禁用外轮廓。
+	#[默认: 5000] [范围: 0 ~ 1000000]
+	#Range: 0 ~ 1000000
+	previewOutlineThreshold = 5000
+	#单次部署的灵魂消耗占玩家最大灵魂能量的比例上限。
+	#eg. 0.8 = 最多消耗 80% 的灵魂上限。此值独立于 maxCreateSize，
+	#即使配置允许更大的选区，灵魂消耗也不会超过此上限。
+	#[默认: 0.8] [范围: 0.1 ~ 1.0]
+	#Range: 0.1 ~ 1.0
+	soulCostRatioCap = 1.0
+
+#════════════════════════════════════
+# 初始建筑（Starter）
+#════════════════════════════════════
+#---- 初始建筑（Starter） ----
+#新玩家首次登录时自动获得的预制建筑蓝图。
+#
+[starter_config]
+	#发放模式：
+	#  "all"    — 给予 starters/ 目录下的所有初始建筑
+	#  "random" — 随机选择一个初始建筑（默认）
+	#  "none"   — 禁用初始建筑发放
+	#[默认: random]
+	starterMode = "random"
+	#初始建筑模板存放目录（相对于 config/）
+	#此目录下的 .nbt 或 .schematic 文件将作为初始建筑发放。
+	#首次运行时自动从 JAR 内置 resources 复制示例模板。
+	#[默认: goeticlegacy/starters]
+	starterPath = "goeticlegacy/starters"
+

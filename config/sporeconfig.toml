@@ -8,12 +8,12 @@
 	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:specter", "spore:inf_construct", "spore:scamper"]
 
 [Spawns]
-	"mob|weight|minimum|maximum" = ["spore:inf_human|25|2|5", "spore:inf_drowned|5|1|2", "spore:inf_pillager|10|1|3", "spore:inf_villager|10|1|3", "spore:inf_player|10|1|2", "spore:inf_wanderer|10|1|2", "spore:inf_witch|10|1|2", "spore:mound|0.001|1|1", "spore:inf_hazmat|5|1|1", "spore:scavenger|3|2|2", "spore:inf_vindicator|15|1|1"]
+	"mob|weight|minimum|maximum" = ["spore:inf_human|25|2|5", "spore:inf_drowned|5|1|2", "spore:inf_pillager|10|1|3", "spore:inf_villager|10|1|3", "spore:inf_player|10|1|2", "spore:inf_wanderer|10|1|2", "spore:inf_witch|10|1|2", "spore:inf_hazmat|5|1|1", "spore:inf_vindicator|15|1|1", "spore:inf_husk|25|2|5", "spore:bairn|10|1|2", "spore:saugling|10|1|1"]
 	"Mobs that spawn in laboratory type structures" = ["spore:inf_hazmat|70|2|5", "spore:saugling|15|1|2", "spore:inebriater|30|2|3", "spore:inf_player|20|1|2", "spore:plagued|15|1|2", "spore:lacerator|20|1|3", "spore:biobloob|10|1|2"]
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true
 	#Default minecraft:is_overworld
-	"Dictates in what biome the infected spawn" = ["minecraft:is_overworld", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:nether_wastes", "minecraft:the_end"]
+	"Dictates in what biome the infected spawn" = ["minecraft:is_overworld", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:nether_wastes", "minecraft:the_end", "minecraft:is_nether"]
 	#Default 40
 	MobCap = 24
 	#Default forge:is_cold,minecraft:deep_dark
@@ -103,7 +103,7 @@
 	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
 	#Default true
 	"Should attack other mobs?" = true
-	"Mobs that will target infected" = ["minecraft:iron_golem", "minecraft:snow_golem", "guardvillagers:guard", "roamers:roamer", "torchesbecomesunlight:mangler", "torchesbecomesunlight:patrol_captain", "torchesbecomesunlight:fallen_snowpriest", "torchesbecomesunlight:tainted_carcass", "torchesbecomesunlight:distorted_caster", "torchesbecomesunlight:red", "torchesbecomesunlight:patriot", "torchesbecomesunlight:frost_nova", "torchesbecomesunlight:pursuer", "torchesbecomesunlight:gun_knight_patriot", "torchesbecomesunlight:rosmontis", "torchesbecomesunlight:shield_guard", "torchesbecomesunlight:pathfinder_ballistarius", "torchesbecomesunlight:yeti_ice_leaver", "torchesbecomesunlight:turret"]
+	"Mobs that will target infected" = ["minecraft:iron_golem", "minecraft:snow_golem", "guardvillagers:guard", "roamers:roamer", "torchesbecomesunlight:mangler", "torchesbecomesunlight:patrol_captain", "torchesbecomesunlight:fallen_snowpriest", "torchesbecomesunlight:tainted_carcass", "torchesbecomesunlight:distorted_caster", "torchesbecomesunlight:red", "torchesbecomesunlight:patriot", "torchesbecomesunlight:frost_nova", "torchesbecomesunlight:pursuer", "torchesbecomesunlight:gun_knight_patriot", "torchesbecomesunlight:rosmontis", "torchesbecomesunlight:shield_guard", "torchesbecomesunlight:pathfinder_ballistarius", "torchesbecomesunlight:yeti_ice_leaver", "torchesbecomesunlight:turret", "torchesbecomesunlight:war_phantom", "torchesbecomesunlight:tactical_defender", "torchesbecomesunlight:gravestone"]
 
 [Compatibilities]
 	#Default true

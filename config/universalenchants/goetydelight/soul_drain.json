@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:weapon",
+    "goety:dark_scythe",
+    "goety:dark_metal_scythe",
+    "goety:death_scythe",
+    "goety:great_hammer",
+    "goety:bonehead_hammer",
+    "goety:stormlander",
+    "goety:fanged_dagger",
+    "goety:philosophers_mace",
+    "goety:hungry_dagger",
+    "farmersdelight:skillet",
+    "cuisinedelight:cuisine_skillet",
+    "goety_revelation:gungnir",
+    "enigmaticlegacy:the_infinitum",
+    "enigmaticlegacy:eldritch_pan",
+    "biomancy:ravenous_claws",
+    "ltc2:copper_latiao_club",
+    "ltc2:iron_latiao_club",
+    "ltc2:gold_latiao_club",
+    "ltc2:diamond_latiao_club",
+    "ltc2:netherite_latiao_club",
+    "ltc2:hotaurum_latiao_club",
+    "ltc2:fouroseven_latiao_club",
+    "lrtactical:melee",
+    "enigmaticaddons:astral_spear",
+    "enigmaticaddons:the_bless",
+    "enigmaticaddons:evil_dagger",
+    "enigmaticaddons:disaster_sword"
+  ],
+  "incompatible": [
+    "goetydelight:soul_affix"
+  ]
+}

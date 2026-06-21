@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:vanishable",
+    "goeticlegacy:ruby_ring",
+    "goeticlegacy:jade_amulet"
+  ],
+  "incompatible": []
+}

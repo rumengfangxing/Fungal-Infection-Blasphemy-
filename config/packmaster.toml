@@ -1,0 +1,81 @@
+
+#Pack Master Configuration
+[general]
+	#Root directory for dump output, relative to game directory
+	output_root = "packmaster_dumps"
+	#Pretty-print JSON output
+	pretty_json = true
+	#Generate index.json files for each dataset
+	include_indexes = true
+	#Generate checksums.json for quick diffing
+	include_checksums = true
+	#Maximum threads for parallel dump operations
+	#Range: 1 ~ 64
+	max_parallelism = 6
+	#Automatically dump all data when a world loads
+	dump_on_world_load = false
+
+#Security settings for HTTP API (Phase 3)
+[security]
+	#Only allow HTTP connections from localhost
+	localhost_only = true
+	#Enable HTTP API for serving dumps
+	allow_http_api = false
+	#Require authentication token for HTTP API
+	token_required = true
+
+#Lag diagnostics settings (requires dev_mode + allow_lag_commands)
+[lag_diagnostics]
+	#Enable developer mode (required for lag diagnostics)
+	dev_mode = false
+	#Allow lag diagnostic commands (requires dev_mode)
+	allow_lag_commands = false
+	#Minimum operator permission level for lag commands
+	#Range: 0 ~ 4
+	require_op_level = 2
+	#Default duration in seconds for lag report
+	#Range: 1 ~ 300
+	lag_report_default_duration_seconds = 10
+	#Maximum allowed duration in seconds for lag report
+	#Range: 1 ~ 600
+	lag_report_max_duration_seconds = 60
+	#Default top-N entity/BE types shown in lag report
+	#Range: 1 ~ 200
+	lag_report_default_top_n = 10
+	#Maximum allowed top-N for lag report
+	#Range: 1 ~ 500
+	lag_report_max_top_n = 50
+	#Default chunk scan radius
+	#Range: 1 ~ 32
+	lag_chunk_scan_default_radius = 6
+	#Maximum allowed chunk scan radius
+	#Range: 1 ~ 64
+	lag_chunk_scan_max_radius = 12
+	#Default duration in seconds for lag watch
+	#Range: 1 ~ 600
+	lag_watch_default_duration_seconds = 30
+	#Maximum allowed duration in seconds for lag watch
+	#Range: 1 ~ 1200
+	lag_watch_max_duration_seconds = 300
+	#Default spike threshold in milliseconds for lag watch
+	#Range: 1 ~ 1000
+	lag_watch_default_threshold_ms = 50
+	#Minimum allowed spike threshold in milliseconds
+	#Range: 1 ~ 100
+	lag_watch_min_threshold_ms = 5
+	#Size of the tick-time ring buffer in ticks
+	#Range: 100 ~ 12000
+	lag_ring_buffer_size_ticks = 1200
+	#Maximum number of entity/BE types tracked in snapshots
+	#Range: 10 ~ 1000
+	lag_snapshot_max_types = 200
+
+#Audit system settings
+[audit]
+	#Automatically run full audit when a world loads
+	audit_on_world_load = false
+	#List of auditor IDs to run (remove an entry to disable that auditor)
+	enabled_auditors = ["skill_gates", "treasure_bags", "armor_sets", "item_tags", "tooltip_sync", "legacy_content", "mod_versions"]
+	#Include audit report in dump output alongside manifest.json
+	include_audit_in_dumps = true
+

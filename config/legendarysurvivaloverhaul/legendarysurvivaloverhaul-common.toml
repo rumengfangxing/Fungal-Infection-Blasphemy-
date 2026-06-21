@@ -521,7 +521,7 @@
 			# The limbs will be healed when the player is at max health.
 			" Passive Limb Regeneration On Full Health" = true
 			# The limbs will be healed when the player is under one of the mentioned effect, the most damaged limb first.
-			"Passive Limb Regeneration On Effects" = ["minecraft:regeneration", "farmersdelight:comfort","attributeslib:vitality","spore:symbiosis"]
+			"Passive Limb Regeneration On Effects" = ["minecraft:regeneration", "farmersdelight:comfort", "attributeslib:vitality", "spore:symbiosis"]
 			# Whether the amplification of the effect increase the limb regeneration speed.
 			# The speed increase follows the same logic as the Regeneration Effect Amplification :
 			#    Amplifier 1 -> tick timer /2, Amplifier 2 -> tick timer /4, ...
@@ -584,7 +584,7 @@
 			# Whether the First Aid Supplies exhaust food when healing limbs, such as the other healing items.
 			"First Aid Supplies Exhausts Food" = true
 			# The First Aid Supplies will heal limbs faster when the player is under one of the mentioned effect.
-			"First Aid Supplies Boosted On Effects" = ["minecraft:regeneration", "farmersdelight:comfort","attributeslib:vitality","spore:symbiosis"]
+			"First Aid Supplies Boosted On Effects" = ["minecraft:regeneration", "farmersdelight:comfort", "attributeslib:vitality", "spore:symbiosis"]
 			# How much the First Aid Supplies tick timer is multiplied when boosted. 
 			# A value of 1 would deactivate the speed boost. 0.5 makes the heal twice faster.
 			#Range: 0.1 ~ 1.0

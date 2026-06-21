@@ -372,6 +372,30 @@
 	maxBottlingLevel = 5
 
 ["Modded Capacity"]
+	#How much Capacity is given for second level, Default: 2
+	#Range: > 0
+	level2Capacity = 2
+	#How much Capacity is given for seventh level, Default: 8
+	#Range: > 0
+	level7Capacity = 8
+	#How much Capacity is given for first level, Default: 2
+	#Range: > 0
+	level1Capacity = 2
+	#How much Capacity is given for third level, Default: 2
+	#Range: > 0
+	level3Capacity = 2
+	#How much Capacity is given for sixth level, Default: 8
+	#Range: > 0
+	level6Capacity = 8
+	#How much Capacity is given initially, Default: 4
+	#Range: > 1
+	initialCapacity = 4
+	#How much Capacity is given for fourth level, Default: 2
+	#Range: > 0
+	level4Capacity = 2
+	#How much Capacity is given for fifth level, Default: 4
+	#Range: > 0
+	level5Capacity = 4
 
 	["Modded Capacity"."Status Effects"]
 		#Bottling Extra Capacity, Default: 4
@@ -425,6 +449,9 @@
 		#Explosive Extra Capacity, Default: 2
 		#Range: > 0
 		explosiveCapacity = 2
+		#Void Touched Extra Capacity, Default: 4
+		#Range: > 0
+		voidTouchedCapacity = 4
 		#Nyctophobia Extra Capacity, Default: 4
 		#Range: > 0
 		nyctophobiaCapacity = 4

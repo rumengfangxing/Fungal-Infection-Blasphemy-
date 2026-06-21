@@ -2,7 +2,7 @@
 [advanced_infuser]
 	#Can the enchanting infuser repair items using levels in addition to enchanting.
 	#Allowed Values: EVERYTHING, TOOLS_AND_ARMOR, NOTHING
-	allow_repairing = "TOOLS_AND_ARMOR"
+	allow_repairing = "EVERYTHING"
 	#Allow enchantments on an already enchanted item to be increased / removed.
 	#Allowed Values: UNENCHANTED, ALL, FULL_DURABILITY
 	allow_modifying_enchantments = "ALL"
@@ -101,7 +101,7 @@
 [normal_infuser]
 	#Can the enchanting infuser repair items using levels in addition to enchanting.
 	#Allowed Values: EVERYTHING, TOOLS_AND_ARMOR, NOTHING
-	allow_repairing = "NOTHING"
+	allow_repairing = "TOOLS_AND_ARMOR"
 	#Allow enchantments on an already enchanted item to be increased / removed.
 	#Allowed Values: UNENCHANTED, ALL, FULL_DURABILITY
 	allow_modifying_enchantments = "UNENCHANTED"
@@ -134,7 +134,7 @@
 	[normal_infuser.repair]
 		#Cost multiplier in levels for each repair step, result will be rounded up.
 		#Range: 0.0 ~ 1.7976931348623157E308
-		repair_step_multiplier = 2.0
+		repair_step_multiplier = 5.0
 		#How many percentage points of an items total durability a single repair will restore.
 		#Range: 0.1 ~ 1.0
 		repair_percentage_step = 0.25

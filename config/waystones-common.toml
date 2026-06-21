@@ -1,7 +1,7 @@
 
 [inventoryButton]
 	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.
-	inventoryButton = ""
+	inventoryButton = "ANY"
 	#The x position of the warp button in the inventory.
 	warpButtonX = 58
 	#The y position of the warp button in the inventory.
@@ -15,15 +15,15 @@
 	#The multiplier applied to the cooldown when teleporting to a global waystone via inventory button or warp stone.
 	globalWaystoneCooldownMultiplier = 1.0
 	#The cooldown between usages of the warp stone in seconds. This is bound to the player, not the item, so multiple warp stones share the same cooldown.
-	warpStoneCooldown = 30
+	warpStoneCooldown = 0
 	#The time in ticks that it takes to use a warp stone. This is the charge-up time when holding right-click.
-	warpStoneUseTime = 32
+	warpStoneUseTime = 16
 	#The time in ticks that it takes to use a warp plate. This is the time the player has to stand on top for.
 	warpPlateUseTime = 20
 	#The time in ticks it takes to use a scroll. This is the charge-up time when holding right-click.
 	scrollUseTime = 32
 	#The cooldown between usages of the inventory button in seconds.
-	inventoryButtonCooldown = 300
+	inventoryButtonCooldown = 0
 
 [worldGen]
 	#Set to 'DEFAULT' to only generate the normally textured waystones. Set to 'MOSSY' or 'SANDY' to generate all as that variant. Set to 'BIOME' to make the style depend on the biome it is generated in.
@@ -68,7 +68,7 @@
 	#Set to true if players should be able to teleport between waystones by simply right-clicking a waystone.
 	allowWaystoneToWaystoneTeleport = true
 	#Set to false to allow non-creative players to make waystones globally activated for all players.
-	globalWaystoneSetupRequiresCreativeMode = true
+	globalWaystoneSetupRequiresCreativeMode = false
 
 [client]
 	#If enabled, the text overlay on waystones will no longer always render at full brightness.
@@ -100,7 +100,7 @@
 	#The multiplier applied to the base xp cost when teleporting from one warp plate to another.
 	warpPlateXpCostMultiplier = 0.0
 	#The multiplier applied to the base xp cost when teleporting via the inventory button.
-	inventoryButtonXpCostMultiplier = 0.0
+	inventoryButtonXpCostMultiplier = 0.3
 
 [compatibility]
 	#If enabled, JourneyMap waypoints will be created for each activated waystone.

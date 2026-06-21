@@ -1,0 +1,8 @@
+
+[client]
+	#Focus overlay HUD 布局预设索引
+	#0=右下, 1=右中, 2=左下, 3=左中, 4=中央偏右, 5=快捷栏左, 6=快捷栏右
+	#可在 GUI 界面中切换，修改会自动保存到本文件 [默认: 0]
+	#Range: 0 ~ 6
+	focusOverlayPreset = 3
+

@@ -1,6 +1,6 @@
 
 [server]
-	spawnDemon = false
+	spawnDemon = true
 
 	[server.mobs]
 
@@ -231,41 +231,75 @@
 				#Range: > 0
 				spawn_rate = 1
 
+		[server.mobs.gravestone]
+			#Set damage limit (Maximum damage taken within 3s)
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"damage limit" = 400.0
+			#Set setHealth limit (Maximum damage taken within 3s)
+			#Range: 0.0 ~ 1.7976931348623157E308
+			"setHealth limit" = 600.0
+			#Whether to halve max health, armor, and attack limit when gravestone entering phase 2
+			"true halve max health, armor, and attack limit" = true
+			#Set suck blood multiplier
+			#Range: 0.0 ~ 3.4028234663852886E38
+			"suck blood multiplier" = 1.0
+			#Whether the gravestone can be re-summoned only when the entity is dead or not loaded
+			"true enable gravestone respawn only dead" = true
+
+			[server.mobs.gravestone.attribute_config]
+				#Regulate mob health by this value
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Health multiplier" = 5.0
+				#Regulate mob attack damage by this value
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"Attack multiplier" = 3.0
+
+			[server.mobs.gravestone.neutral_protection_config]
+				#Can take unsourced damage without an attack target
+				"can damage" = true
+				#How far of sourced damage can be ignored when there is no target to attack
+				#Range: 0.0 ~ 1.7976931348623157E308
+				"can damage distance" = 20.0
+
+			[server.mobs.gravestone.bossbar]
+				#Enable custom bossbar
+				"Enable or not" = true
+
 	[server.tools]
 
 		[server.tools.halberd]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 30.0
+			attack_damage = 45.0
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
-			requirements_1 = 10
+			requirements_1 = 5
 			#skill 2 numerical requirements
 			#Range: 0 ~ 100
-			requirements_2 = 50
+			requirements_2 = 25
 
 		[server.tools.shield]
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
-			requirements_1 = 6
+			requirements_1 = 3
 
 		[server.tools.scratch]
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
-			requirements_1 = 40
+			requirements_1 = 20
 
 		[server.tools.winter_pass]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 9.0
+			attack_damage = 18.0
 			#skill1 numerical requirements
 			#Range: 0 ~ 100
-			requirements1 = 30
+			requirements1 = 10
 
 		[server.tools.ice_broadsword]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 15.0
+			attack_damage = 25.0
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
 			requirements_1 = 15
@@ -273,47 +307,49 @@
 		[server.tools.fire_steel]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 12.0
+			attack_damage = 24.0
 
 		[server.tools.sankta_ring]
 			#skill 1 numerical requirements
 			#Range: 0 ~ 100
-			requirements_1 = 3
+			requirements_1 = 1
+			#When enabled, most hostile mobs will no longer actively attack the player.
+			"mobs will no longer attack the player" = false
 
 		[server.tools.phantom_grasp]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 6.0
+			attack_damage = 12.0
 			#skill1 numerical requirements
 			#Range: 0 ~ 100
-			requirements1 = 10
+			requirements1 = 5
 
 		[server.tools.sacred_halberd]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 36.0
+			attack_damage = 70.0
 			#skill light numerical requirements
 			#Range: 0 ~ 100
-			light_requirements = 10
+			light_requirements = 5
 			#skill wind numerical requirements
 			#Range: 0 ~ 100
-			wind_requirements = 50
+			wind_requirements = 35
 
 		[server.tools.sacred_gun]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 15.0
+			attack_damage = 30.0
 			#skill numerical requirements
 			#Range: 0 ~ 100
-			requirements = 30
+			requirements = 15
 
 		[server.tools.machete]
 			#tool attack damage
 			#Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 21.0
+			attack_damage = 36.0
 			#skill numerical requirements
 			#Range: 0 ~ 100
-			requirements = 20
+			requirements = 10
 
 	[server.global_setting]
 		#Whether living can talk
@@ -322,7 +358,7 @@
 		"Enable attack living when dialogue" = true
 		#The number of times a player can summon a boss each day
 		#Range: > 0
-		"Can summon number" = 1
+		"Can summon number" = 3
 		#Whether boss show healthBar
 		"Enable bossBar can show" = true
 

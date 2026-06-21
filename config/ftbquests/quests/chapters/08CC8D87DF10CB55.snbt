@@ -110,27 +110,6 @@
 			y: 1.0d
 		}
 		{
-			can_repeat: false
-			id: "0E319B7FB0C4E86F"
-			rewards: [{
-				auto: "no_toast"
-				command: "/setblock ~ ~-3 ~ torchmaster:megatorch replace"
-				elevate_perms: true
-				id: "412BCAC7452F6D99"
-				silent: true
-				team_reward: false
-				type: "command"
-			}]
-			tasks: [{
-				id: "091D52CA7E3F564F"
-				stat: "minecraft:play_time"
-				type: "stat"
-				value: 1
-			}]
-			x: -5.0d
-			y: 3.5d
-		}
-		{
 			id: "273D4C0209F0D778"
 			rewards: [{
 				command: "/summon spore:vanguard ~ ~1 ~ {Attributes: [{Name:\"spore:ballistic\",Base:15.0d},{Name:\"spore:corrosives\",Base:15.0d},{Name:\"spore:grinding\",Base:15.0d},{Name:\"goety_revelation:resistance\",Base:1.5d},{Name:\"spore:laceration\",Base:15.0d},{Name:\"spore:localization\",Base:15.0d},{Name:\"spore:rejuvenation\",Base:15.0d},{Name:\"spore:toxicity\",Base:15.0d},{Name:\"goety_revelation:armor_penetration\",Base:2.0d},{Name:\"attributeslib:prot_pierce\",Base:20.0d}, {Name: \"minecraft:generic.max_health\", Base: 6666.0d}],ActiveEffects: [{Id:0,Amplifier:0b,Duration:2147483647,Ambient:1b,ShowParticles:1b,ShowIcon:1b,\"forge:id\":\"goetydelight:the_pale_messenger\"},{\"forge:id\":\"goety:fire_trail\",Amplifier:0b,Duration:2147483647,Ambient:1b,ShowParticles:1b,ShowIcon:1b},{Id:12,Amplifier:0b,Duration:2147483647,Ambient:1b,ShowParticles:1b,ShowIcon:1b}]}"

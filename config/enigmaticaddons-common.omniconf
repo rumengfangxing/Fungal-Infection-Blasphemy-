@@ -492,7 +492,7 @@
     # The damage boost multiplier of the Ring of Ultimate Luxury . [range: 0.0 ~ 2.0, default: 0.5, synchronized: yes]
     D:RingofUltimateLuxuryDamageBoostMultiplier=0.5
 
-    # List of entities that will be affected as Golem by the Ring of Ultimate Luxury. Examples: minecraft:iron_golem. Changing this option required game restart to take effect. [default: , synchronized: no]
+    # List of entities that will be affected as Merchant by the Ring of Ultimate Luxury. Changing this option required game restart to take effect. [default: , synchronized: no]
     S:RingofUltimateLuxuryExtraMerchantList <
      >
 
@@ -581,6 +581,15 @@
 
     # The damage resistance to the Raiders. [range: 0.0 ~ 400.0, default: 0.5, synchronized: yes]
     D:TotemofMaliceRaiderDamageResistance=0.5
+
+    # Undocumented property [range: 160 ~ 800, default: 320, synchronized: yes]
+    I:explorerScrollcooldown=320
+
+    # Undocumented property [range: 1 ~ 10, default: 5, synchronized: yes]
+    I:explorerScrolleffectiveRange=5
+
+    # Undocumented property [range: 0 ~ 100, default: 40, synchronized: yes]
+    I:survivalScrollhealthThreshold=40
 }
 
 

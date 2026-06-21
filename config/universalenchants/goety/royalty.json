@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:focus",
+    "goety:shade_throne",
+    "goety:stone_throne",
+    "goety:deepslate_throne",
+    "goety:ominous_throne",
+    "goety:blackstone_throne",
+    "goety:highrock_throne",
+    "goety:marble_throne",
+    "goety:royal_throne",
+    "goety:frosted_throne"
+  ],
+  "incompatible": []
+}

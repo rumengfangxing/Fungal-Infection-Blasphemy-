@@ -65,6 +65,25 @@
 			#Range: > 1
 			darkArmorChest = 8
 
+	[Armor."Malefic Helm"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 15
+		#Range: > 1
+		maleficDurability = 30
+		#Define the Enchantability for the armor, higher number the better, Default: 15
+		#Range: > 1
+		maleficEnchantability = 15
+		#Whether armor pieces don't break but no longer provide armor, Default: true
+		maleficPersist = true
+		#Define the toughness for each armor piece, Default: 2.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		maleficToughness = 2.0
+		#Define how much armor points wearing the Helmet provides, Default: 2
+		#Range: > 1
+		maleficHead = 2
+		#Define how much knockback resistance each armor piece provides, Default: 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		maleficKnockResist = 0.0
+
 	[Armor."Cursed Knight Armor"]
 		#Define the toughness for each armor piece, Default: 0.5
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -142,27 +161,27 @@
 	seaAmuletChargeConsume = 1
 
 	[Curios.Robes]
-		#Whether wearing Necro Crown while not being a Lich gives Weakness when in sunlight, Default: true
-		necroCrownWeakness = true
 		#Render Capes on certain Robes, Default: true
 		windRobeCape = true
+		#Show Hoods when wearing certain robes ie, Illusive Robes, Default: true
+		showRobeHoods = true
 		#Determines the chance of Void Robes wearers can teleport away from incoming attacks, set to 0 to disable, Default: 5
 		#Range: 0 ~ 100
 		voidRobeTeleportChance = 5
+		#If 'voidRobeTeleport' is enabled, teleporting cancels incoming damage, Default: true
+		voidRobeTeleportDamageCancel = true
+		#Whether wearing Necro Cape while not being a Lich gives Hunger when in sunlight, Default: true
+		necroCapeHunger = true
 		#Determines what level of Sapped is applied while wearing Void Robes in rain or water, set to 0 to disable, Default: 2
 		#Range: 0 ~ 10
 		voidRobeWaterSapped = 2
+		#Whether wearing Necro Crown while not being a Lich gives Weakness when in sunlight, Default: true
+		necroCrownWeakness = true
 		#Necro Crown and Cape change textures when wearing a specific robe, Default: true
 		necroCapeChangeTexture = true
 		#Determines how far Void Robes wearers can teleport away from original position, Default: 4
 		#Range: > 1
 		voidRobeTeleportDistance = 4
-		#Show Hoods when wearing certain robes ie, Illusive Robes, Default: true
-		showRobeHoods = true
-		#If 'voidRobeTeleport' is enabled, teleporting cancels incoming damage, Default: true
-		voidRobeTeleportDamageCancel = true
-		#Whether wearing Necro Cape while not being a Lich gives Hunger when in sunlight, Default: true
-		necroCapeHunger = true
 
 		[Curios.Robes.Neutral]
 			#If 'windSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
@@ -280,11 +299,17 @@
 	#Amount of Souls needed to repair certain Equipments per second, Default: 5
 	#Range: > 1
 	itemsRepairSouls = 5
+	#How many seconds until a revival item can be used when the servant dies, ie, Soul Jars, Howling Souls, Default: 90
+	#Range: > 0
+	reviveSecondsCool = 90
 	#Certain Items repair themselves using Soul Energy, Default: true
 	soulRepair = true
 	#How much Souls is consumed when crafting with Totem, Default: 1
 	#Range: > 0
 	craftSouls = 1
+	#How far the diameter of Command Horns reach, Default: 8.0
+	#Range: 1.0 ~ 1.7976931348623157E308
+	commandHornDiameter = 8.0
 	#How many servants an Esoteric Tesseract can contain, Default: 16
 	#Range: > 1
 	tesseractCapacity = 16

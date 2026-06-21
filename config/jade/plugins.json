@@ -78,6 +78,9 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "goetydelight": {
+    "doll_entity": true
+  },
   "balm": {
     "jade": true
   },
