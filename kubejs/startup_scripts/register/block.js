@@ -8,10 +8,6 @@ StartupEvents.registry('block', event => {
 		.tagBlock('minecraft:needs_stone_tool')
 		.textureAll('fib:block/timeless_sand')
 })
-//电台
-StartupEvents.registry("block", event => {
-  event.create("fib:radio_station","cardinal").defaultCutout()
-})
 //如梦玩偶
 StartupEvents.registry("block", event => {
   event.create("fib:ru_meng","cardinal").defaultCutout()
