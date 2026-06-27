@@ -36,42 +36,7 @@ ServerEvents.recipes(event =>{
     ],{
        T:'minecraft:iron_nugget'
     });
-    //冷却单元
-    create.mechanical_crafting('fib:cooling_unit',[
-         "ATFTA",
-         "JSBYJ",
-         "HQCQH",
-         "JDBDJ",
-         "ATXTA",
-    ],{
-       A:'create:andesite_alloy',
-       T:'create:iron_sheet',
-       F:'createdieselgenerators:chemical_sprayer',
-       J:'create:sturdy_sheet',
-       S:'create:speedometer',
-       B:'spore:ice_canister',
-       Y:'create:stressometer',
-       H:'create:brass_sheet',
-       Q:'fib:pressure_tank',
-       C:'spore:cdu',
-       D:'spore:circuit_board',
-       X:'create:propeller',
-    });
-    //气压罐
-    create.mechanical_crafting('fib:pressure_tank',[
-        "AJA",
-        "BZB",
-        "JMJ",
-        "BHB",
-        "AJA",
-    ],{
-        A:'create:andesite_alloy',
-        J:'create:sturdy_sheet',
-        B:'create:brass_sheet',
-        Z:'create:speedometer',
-        M:'createdieselgenerators:canister',
-        H:'create:brass_ingot',
-    });
+  
     //高爆单元
     create.mechanical_crafting(Item.of('fib:high_explosive_unit',8),[
         " T ",

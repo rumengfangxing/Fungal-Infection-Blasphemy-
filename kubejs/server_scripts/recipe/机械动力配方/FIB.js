@@ -22,7 +22,79 @@ create.crushing([Item.of('fib:saltpeter').withChance(0.8),
   Item.of('fib:saltpeter').withChance(0.25)],
   'sandstone')
 
+  
+   //动力合成
+   //冷却单元
+    create.mechanical_crafting('fib:cooling_unit',[
+         "ATFTA",
+         "JSBYJ",
+         "HQCQH",
+         "JDBDJ",
+         "ATXTA",
+    ],{
+       A:'create:andesite_alloy',
+       T:'create:iron_sheet',
+       F:'fib:liquid_ammonia_bucket',
+       J:'create:sturdy_sheet',
+       S:'create:speedometer',
+       B:'spore:ice_canister',
+       Y:'create:stressometer',
+       H:'create:brass_sheet',
+       Q:'fib:pressure_tank',
+       C:'createdieselgenerators:canister',
+       D:'spore:circuit_board',
+       X:'create:propeller',
+    });
+    //气压罐
+    create.mechanical_crafting('fib:pressure_tank',[
+        "AJA",
+        "BZB",
+        "JMJ",
+        "BHB",
+        "AJA",
+    ],{
+        A:'create:andesite_alloy',
+        J:'create:sturdy_sheet',
+        B:'create:brass_sheet',
+        Z:'create:speedometer',
+        M:'createdieselgenerators:canister',
+        H:'create:brass_ingot',
+    });
+
+
 //序列组装
+//制冰机
+const CU = 'fib:cooling_unit'
+    create.sequenced_assembly([
+      Item.of('fib_mod:ice_maker'),
+    ],
+      'fib:cooling_unit',
+    [
+      create.deploying(CU,[CU,'create_connected:kinetic_battery']),
+      create.deploying(CU,[CU,'create:mechanical_press']),
+      create.deploying(CU,[CU,'spore:circuit_board']),
+      create.deploying(CU,[CU,'create:andesite_casing']),
+      create.cutting(CU,CU),
+      create.pressing(CU,CU),
+    ])
+    .transitionalItem('fib:cooling_unit')
+    .loops(1);
+
+//CDU
+const CDU = 'dispenser'
+    create.sequenced_assembly([
+      Item.of('spore:cdu'),
+    ],
+      'dispenser',
+    [
+      create.deploying(CDU,[CDU,'fib:cooling_unit']),
+      create.deploying(CDU,[CDU,'spore:circuit_board']),
+      create.deploying(CDU,[CDU,'spore:compound_plate']),
+      create.deploying(CDU,[CDU,'iron_trapdoor']),
+    ])
+    .transitionalItem('dispenser')
+    .loops(1);
+
 //T1装备组件-羽毛
 const T101 = 'create:iron_sheet'
     create.sequenced_assembly([
