@@ -5,8 +5,11 @@
 function curiosWithAttributes(attrList, tickEventInterval) {
 	const builder = CuriosCapabilityBuilder.CURIOS.itemStack()
 
-	attrList.forEach(([attr, value]) => {
-		builder.modifyAttribute(attr.key, attr.name, value, attr.operation)
+	builder.dynamicAttribute(ctx => {
+		attrList.forEach(([attr, value]) => {
+				ctx.modify(attr.key, attr.name + '_' + ctx.UUID, value, attr.operation)
+			}
+		)
 	})
 	
 	if (tickEventInterval) {
