@@ -23,6 +23,26 @@ global.ATTR_POWERFUL_SHOOTING_ARROW_VELOCITY = { key: 'attributeslib:arrow_veloc
 global.ATTR_AUTO_SHOOTING_AUTO_FIRE = { key: 'newnew_attributes:auto_fire', name: 'AutoShootingAutoFire', operation: 'addition' }
 global.ATTR_AUTO_SHOOTING_DRAW_SPEED = { key: 'attributeslib:draw_speed', name: 'AutoShootingDrawSpeed', operation: 'addition' }
 
+// 技巧-枪
+global.ATTR_HEADSHOT_HEADSHOT_MULTIPLIER = { key: 'taa:headshot_multiplier', name: 'HeadshotMultiplier', operation: 'multiply_total' }
+
+global.ATTR_SHOOTER_EXPERIENCE_ADS_TIME = { key: 'taa:ads_time', name: 'ShooterExperienceAdsTime', operation: 'addition' }
+global.ATTR_SHOOTER_EXPERIENCE_RELOAD_TIME = { key: 'taa:reload_time', name: 'ShooterExperienceReloadTime', operation: 'addition' }
+global.ATTR_SHOOTER_EXPERIENCE_EFFECTIVE_RANGE = { key: 'taa:effective_range', name: 'ShooterExperienceEffectiveRange', operation: 'addition' }
+global.ATTR_SHOOTER_EXPERIENCE_ROUNDS_PER_MINUTE = { key: 'taa:rounds_per_minute', name: 'ShooterExperienceRoundsPerMinute', operation: 'addition' }
+global.ATTR_SHOOTER_EXPERIENCE_SILENCENEW = { key: 'taa:silencenew', name: 'ShooterExperienceSilenceNew', operation: 'addition' }
+global.ATTR_SHOOTER_EXPERIENCE_RECOIL = { key: 'taa:recoil', name: 'ShooterExperienceRecoil', operation: 'addition' }
+global.ATTR_SHOOTER_EXPERIENCE_RECOIL_PITCH = { key: 'taa:recoil_pitch', name: 'ShooterExperienceRecoilPitch', operation: 'addition' }
+global.ATTR_SHOOTER_EXPERIENCE_MOVE_SPEED = { key: 'taa:move_speed', name: 'ShooterExperienceMoveSpeed', operation: 'addition' }
+
+global.ATTR_MAGIC_MAGAZINE_BULLET_GUNDAMAGE={key:'taa:bullet_gundamage',name:'MagicMagazineBulletGunDamage',operation:'addition'}
+global.ATTR_MAGIC_MAGAZINE_ARMOR_IGNORE={key:'taa:armor_ignore',name:'MagicMagazineArmorIgnore',operation:'addition'}
+global.ATTR_MAGIC_MAGAZINE_MAGAZINE_CAPACITY={key:'taa:magazine_capacity',name:'MagicMagazineMagazineCapacity',operation:'addition'}
+global.ATTR_MAGIC_MAGAZINE_ROUNDS_PER_MINUTE={key:'taa:rounds_per_minute',name:'MagicMagazineRoundsPerMinute',operation:'multiply_total'}
+
+global.ATTR_DEAD_EYE_ADS_TIME={key:'taa:ads_time',name:'DeadEyeAdsTime',operation:'multiply_total'}
+global.ATTR_DEAD_EYE_HEADSHOT_MULTIPLIER={key:'taa:headshot_multiplier',name:'DeadEyeHeadshotMultiplier',operation:'multiply_total'}
+
 // 技巧-巫
 global.ATTR_ECONOMIZE_SOUL_INCREASE_EFFICIENCY = { key: 'goety_revelation:soul_increase_efficiency', name: 'EconomizeSoulIncreaseEfficiency', operation: 'addition' }
 global.ATTR_ECONOMIZE_SOUL_DECREASE_REDUCTION = { key: 'goety_revelation:soul_decrease_reduction', name: 'EconomizeSoulDecreaseReduction', operation: 'addition' }
@@ -71,9 +91,14 @@ global.ATTR_BEZERK_SYRINGE_ATTACK_SPEED = { key: 'minecraft:generic.attack_speed
 
 // 钙化血液样本
 global.ATTR_CALCIFIED_SYRINGE_KNOCKBACK = { key: 'minecraft:generic.attack_knockback', name: 'CalcifiedSyringeKnockback', operation: 'multiply_total' }
+global.ATTR_CALCIFIED_SYRINGE_KNOCKBACKADD = { key: 'minecraft:generic.attack_knockback', name: 'CalcifiedSyringeKnockbackadd', operation: 'addition' }
 
 // 强壮血液样本
 global.ATTR_REINFORCED_SYRINGE_ARMOR = { key: 'minecraft:generic.armor', name: 'ReinforcedSyringeArmor', operation: 'multiply_total' }
 
 // 吸血血液样本
 global.ATTR_VAMPIRIC_SYRINGE_LIFE_STEAL = { key: 'attributeslib:life_steal', name: 'VampiricSyringeLifeSteal', operation: 'addition' }
+
+// 脊柱髓液样本
+global.ATTR_SKELETAL_SYRINGE_MAX_HEALTH = { key: 'minecraft:generic.max_health', name: 'SkeletalSyringeMaxHealth', operation: 'multiply_total' }
+global.ATTR_SKELETAL_SYRINGE_MAX_HEALTHADD = { key: 'minecraft:generic.max_health', name: 'SkeletalSyringeMaxHealthADD', operation: 'addition' }

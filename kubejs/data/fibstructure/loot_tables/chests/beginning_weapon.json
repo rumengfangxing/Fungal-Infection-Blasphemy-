@@ -36,7 +36,14 @@
               "tag": "{GunCurrentAmmoCount:0,GunFireMode:\"SEMI\",GunId:\"tacz:deagle_golden\",HasBulletInBarrel:0b}"
             }
           ]
-        },
+        }
+      ],
+      "rolls": 2.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        
         {
           "type": "minecraft:item",
           "name": "lrtactical:melee",
@@ -71,7 +78,7 @@
           ]
         }
       ],
-      "rolls": 5.0
+      "rolls": 1.0
     }
   ]
 }

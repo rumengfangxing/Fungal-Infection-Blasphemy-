@@ -13,7 +13,8 @@ ItemEvents.modification(event => {
     event.modify('spore:calcified_syringe', item => {
         item.attachCapability(
             curiosWithAttributes([
-				[global.ATTR_CALCIFIED_SYRINGE_KNOCKBACK, 1]
+				[global.ATTR_CALCIFIED_SYRINGE_KNOCKBACK, 0.1],
+                [global.ATTR_CALCIFIED_SYRINGE_KNOCKBACKADD, 0.3]
 			])
         )
     })
@@ -22,6 +23,16 @@ ItemEvents.modification(event => {
     event.modify('spore:charred_syringe', item => {
         item.attachCapability(
             curiosWithAttributes([], 20)
+        )
+    })
+
+    // 脊柱髓液样本
+    event.modify('spore:skeletal_syringe', item => {
+        item.attachCapability(
+            curiosWithAttributes([
+                [global.ATTR_SKELETAL_SYRINGE_MAX_HEALTH, 0.1],
+                [global.ATTR_SKELETAL_SYRINGE_MAX_HEALTHADD, 2]
+            ])
         )
     })
 

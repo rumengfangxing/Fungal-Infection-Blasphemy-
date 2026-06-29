@@ -35,6 +35,8 @@ StartupEvents.registry('item', event => {
 	event.create('fib:uncompleted_module')
 	event.create('fib:saltpeter')
 	event.create('fib:putrid_substance')
+	event.create('fib:unopened_cooling_unit')
+	event.create('fib:filling_cooling_unit')
 
 
 

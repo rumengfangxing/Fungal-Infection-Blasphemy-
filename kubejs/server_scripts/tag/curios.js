@@ -8,10 +8,13 @@ ServerEvents.tags('item', event => {
 		'spore:toxic_syringe',
 		'spore:drowned_syringe',
 		'spore:reinforced_syringe',
-		'spore:charred_syringe'
+		'spore:charred_syringe',
+		'spore:skeletal_syringe'
 	]),
 	event.add('curios:curio',[
-		'enigmaticaddons:totem_of_malice',
+		'enigmaticaddons:totem_of_malice'
+	]),
+	event.add('curios:head',[
 		'spore:gas_mask'
 	])
 

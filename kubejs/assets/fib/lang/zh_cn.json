@@ -43,6 +43,8 @@
     "item.fib.small_piece_of_paper":"小纸片",
     "item.fib.putrid_substance":"腐臭物质",
     "item.fib.saltpeter":"硝石",
+    "item.fib.unopened_cooling_unit":"待启封的冷却单元",
+    "item.fib.filling_cooling_unit":"已填充的冷却单元",
     "item.fib.t1_equipment_module":"T1装备组件",
     "item.fib.t2_equipment_module":"T2装备组件",
     "item.fib.bio_equipment_module":"生化装备组件",
@@ -61,6 +63,7 @@
     "item.fib.avi_equipment_module.tooltip.1":"§c可以和任意状态下的对应护甲组装，小心重复组装浪费组件",
 
     "item.fib.ru_meng.tooltip.1":"§5AAA鸽子养殖小梦",
+    "item.majruszsdifficulty.undead_army_treasure_bag.tooltip.1":"§8与其将其打开。不如将遗物完整地交给有意收藏的人...",
 
     "item.fib.fib_logo": "§cFIB看板娘",
     "item.fib.fib_logo.tooltip.1": "一位传奇大法师的碎片(是的，人民碎片)，她和一位传奇工匠有着一段不朽的神话",

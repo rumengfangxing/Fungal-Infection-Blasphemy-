@@ -63,6 +63,25 @@ create.crushing([Item.of('fib:saltpeter').withChance(0.8),
 
 
 //序列组装
+//制冰物品配方（伪序列组装）
+    create.filling(Item.of('fib:filling_cooling_unit'),
+    [Item.of('fib:cooling_unit'),Fluid.water(1000)])
+    
+    event.custom({
+      "type":"createaddition:charging",
+      "input":{"item":"fib:filling_cooling_unit"},
+      "result":{"item":"fib:unopened_cooling_unit"},
+      "energy":50000,
+      "maxChargeRate":12500
+    })
+    create.cutting([
+      Item.of('fib:cooling_unit'),
+      Item.of('minecraft:blue_ice')
+    ],
+  'fib:unopened_cooling_unit')
+
+
+/*
 //制冰机
 const CU = 'fib:cooling_unit'
     create.sequenced_assembly([
@@ -79,20 +98,20 @@ const CU = 'fib:cooling_unit'
     ])
     .transitionalItem('fib:cooling_unit')
     .loops(1);
-
+*/
 //CDU
-const CDU = 'dispenser'
+const CDU = 'minecraft:dispenser'
     create.sequenced_assembly([
       Item.of('spore:cdu'),
     ],
-      'dispenser',
+      'minecraft:dispenser',
     [
       create.deploying(CDU,[CDU,'fib:cooling_unit']),
       create.deploying(CDU,[CDU,'spore:circuit_board']),
       create.deploying(CDU,[CDU,'spore:compound_plate']),
       create.deploying(CDU,[CDU,'iron_trapdoor']),
     ])
-    .transitionalItem('dispenser')
+    .transitionalItem('minecraft:dispenser')
     .loops(1);
 
 //T1装备组件-羽毛
