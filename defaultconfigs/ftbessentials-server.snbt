@@ -251,7 +251,7 @@
 			cooldown: 10
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# Warm-up time before /spawn command executes (in seconds)
 			# You can override this with FTB Ranks using ftbessentials.spawn.warmup
@@ -276,7 +276,7 @@
 			# You can override this with FTB Ranks using ftbessentials.tpa.warmup
 			# Default: 0
 			# Range: 0 ~ 604800
-			warmup: 0
+			warmup: 3
 		}
 		
 		# Allows admins to teleport to the location a user was last seen at
