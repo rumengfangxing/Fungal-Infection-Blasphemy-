@@ -3,13 +3,13 @@
 	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.
 	inventoryButton = "ANY"
 	#The x position of the warp button in the inventory.
-	warpButtonX = 58
+	warpButtonX = 103
 	#The y position of the warp button in the inventory.
-	warpButtonY = 60
+	warpButtonY = 63
 	#The y position of the warp button in the creative menu.
-	creativeWarpButtonX = 88
+	creativeWarpButtonX = 126
 	#The y position of the warp button in the creative menu.
-	creativeWarpButtonY = 33
+	creativeWarpButtonY = 25
 
 [cooldowns]
 	#The multiplier applied to the cooldown when teleporting to a global waystone via inventory button or warp stone.

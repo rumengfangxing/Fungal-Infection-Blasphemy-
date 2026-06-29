@@ -783,7 +783,7 @@
     I:CursedRingEnchantingBonus=25
 
     # Allows to adjust how frequently Endermen will try to randomly teleport to player bearing the ring, even if they can't see the player and are not angered yet. Lower value = less probability of this happening. [range: 0.01 ~ 32768.0, default: 1.0, synchronized: yes]
-    D:CursedRingEndermenRandomportFrequency=1.0
+    D:CursedRingEndermenRandomportFrequency=0.2
 
     # Range in which Endermen can try to randomly teleport to bearers of the ring. [range: 8.0 ~ 32768.0, default: 32.0, synchronized: yes]
     D:CursedRingEndermenRandomportRange=32.0
@@ -795,7 +795,7 @@
     I:CursedRingFortuneBonus=1
 
     # How much knockback bearers of the ring take, measured in percents. [range: 0 ~ 32768, default: 200, synchronized: yes]
-    I:CursedRingKnockbackDebuff=200
+    I:CursedRingKnockbackDebuff=125
 
     # How many bonus Looting levels ring provides [range: 0 ~ 32768, default: 1, synchronized: yes]
     I:CursedRingLootingBonus=1
@@ -814,10 +814,10 @@
     D:CursedRingNeutralXRayRange=4.0
 
     # Defines how much damage bearers of the ring receive from any source. Measured as percentage. [range: 0 ~ 32768, default: 200, synchronized: yes]
-    I:CursedRingPainModifier=150
+    I:CursedRingPainModifier=130
 
     # A fraction of time the player should bear the Seven Curses to use Abyssal Artifacts. [range: 0.0 ~ 32768.0, default: 0.995, synchronized: yes]
-    D:CursedRingSuperCursedTime=0.950
+    D:CursedRingSuperCursedTime=0.500
 
     # If true, Ring of the Seven Curses will be equipped into player's ring slot right away when entering a new world, instead of just being added to their inventory. [default: false, synchronized: yes]
     B:CursedRingUltraHardcore=true

@@ -127,7 +127,14 @@
     "com.refinedmods.refinedstorage.screen.grid.GridScreen": true,
     "de.maxhenkel.easyvillagers.gui.OutputScreen": true,
     "de.maxhenkel.easyvillagers.gui.AutoTraderScreen": true,
-    "net.p3pp3rf1y.sophisticatedstorage.client.gui.LimitedBarrelScreen": true
+    "net.p3pp3rf1y.sophisticatedstorage.client.gui.LimitedBarrelScreen": true,
+    "net.blay09.mods.waystones.client.gui.screen.WaystoneSelectionScreen": true,
+    "com.fib.fib.gui.container.screen.IceMakerScreen": true,
+    "com.refinedmods.refinedstorage.screen.DiskDriveScreen": true,
+    "com.refinedmods.refinedstorage.screen.ExternalStorageScreen": true,
+    "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackSettingsScreen": true,
+    "com.simibubi.create.content.schematics.table.SchematicTableScreen": true,
+    "com.simibubi.create.content.schematics.client.SchematicEditScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
@@ -219,6 +226,13 @@
     "com.refinedmods.refinedstorage.screen.grid.GridScreen": true,
     "de.maxhenkel.easyvillagers.gui.OutputScreen": true,
     "de.maxhenkel.easyvillagers.gui.AutoTraderScreen": true,
-    "net.p3pp3rf1y.sophisticatedstorage.client.gui.LimitedBarrelScreen": true
+    "net.p3pp3rf1y.sophisticatedstorage.client.gui.LimitedBarrelScreen": true,
+    "net.blay09.mods.waystones.client.gui.screen.WaystoneSelectionScreen": true,
+    "com.fib.fib.gui.container.screen.IceMakerScreen": true,
+    "com.refinedmods.refinedstorage.screen.DiskDriveScreen": true,
+    "com.refinedmods.refinedstorage.screen.ExternalStorageScreen": true,
+    "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackSettingsScreen": true,
+    "com.simibubi.create.content.schematics.table.SchematicTableScreen": true,
+    "com.simibubi.create.content.schematics.client.SchematicEditScreen": true
   }
 }

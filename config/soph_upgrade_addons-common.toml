@@ -1,0 +1,119 @@
+
+#RS网络磁铁升级设置
+[RSMagnetUpgrade]
+	#过滤槽数量
+	#Range: 1 ~ 100
+	filterSlots = 24
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 4
+	#是否启用
+	enable = true
+	#磁铁吸取的范围
+	#Range: 1 ~ 20
+	magnetRange = 5
+
+#RS网络拾取升级设置
+[RSPickupUpgrade]
+	#过滤槽数量
+	#Range: 1 ~ 100
+	filterSlots = 24
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 4
+	#是否启用
+	enable = true
+
+#RS卸货升级设置
+[RSDepositUpgrade]
+	#过滤槽数量
+	#Range: 1 ~ 100
+	filterSlots = 24
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 4
+	#是否启用
+	enable = true
+
+#末影升级 设置
+[EndChestUpgrade]
+	#是否启用
+	enable = true
+
+#超级虚空升级设置
+[SuperVoidUpgrade]
+	#过滤槽数量
+	#Range: 1 ~ 100
+	filterSlots = 48
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 6
+	#是否启用
+	enable = true
+
+#饮水升级设置
+[DrinkUpgrade]
+	#过滤槽数量
+	#Range: 1 ~ 100
+	filterSlots = 9
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 3
+	#是否启用
+	enable = true
+
+#高级饮水升级设置
+[AdvancedDrinkUpgrade]
+	#过滤槽数量
+	#Range: 1 ~ 100
+	filterSlots = 16
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 4
+	#是否启用
+	enable = true
+
+#药水护符升级设置
+[PotionCharmUpgrade]
+	#是否启用
+	enable = true
+	#槽位数量
+	#Range: 1 ~ 100
+	slots = 4
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 2
+
+#高级药水护符升级设置
+[AdvancedPotionCharmUpgrade]
+	#是否启用
+	enable = true
+	#槽位数量
+	#Range: 1 ~ 100
+	slots = 9
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 3
+
+#神化回收升级设置
+[SalvagingUpgrade]
+	#过滤槽数量
+	#Range: 1 ~ 100
+	filterSlots = 9
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 3
+	#是否启用
+	enable = true
+
+#高级神化回收升级设置
+[AdvancedSalvagingUpgrade]
+	#过滤槽数量
+	#Range: 1 ~ 100
+	filterSlots = 16
+	#每行显示的槽位数量
+	#Range: 1 ~ 6
+	slotsInRow = 4
+	#是否启用
+	enable = true
+

@@ -116,7 +116,7 @@
 	#Range: > 0
 	Ammo = 60000
 	#Default true
-	"Should the CDU create snow?" = true
+	"Should the CDU create snow?" = false
 
 ["Raid system parameters"]
 	"Raid level 1 spawns" = ["spore:inf_human", "spore:inf_husk", "spore:inf_drowned", "spore:inf_villager", "spore:inf_pillager", "spore:inf_player", "spore:inf_witch"]

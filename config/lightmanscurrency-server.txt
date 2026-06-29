@@ -4,7 +4,7 @@
 	#Lower if you encounter packet size problems.
 	#Range: 0 -> 2147483647
 	#Default: 500
-	limit=500
+	limit=200
 #Machine Protection Settings
 [machine_protection]
 	#Whether illegally broken traders (such as being replaced with /setblock, or modded machines that break blocks) will safely eject their block/contents into a temporary storage area for the owner to collect safely.
@@ -153,7 +153,7 @@
 	#Note: 20 ticks = 1s
 	#Range: 1 -> 2147483647
 	#Default: 20
-	tickDelay=20
+	tickDelay=10
 	#The cost required to repair a single item durability point with the Money Mending enchantment.
 	#See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 	#Default: "coin;1-lightmanscurrency:coin_copper"
@@ -206,14 +206,14 @@
 	maximumDuration=30
 	#Whether the players are allowed to bid on their own Auctions
 	#Default: false
-	ownerBidding=false
+	ownerBidding=true
 	#Whether players are allowed to bid on an auction when they were also the previous bidder
 	#Default: false
-	doubleBidding=false
+	doubleBidding=true
 	#The percentage of the final bid that will be collected as a fee instead of being given to the auctions owner when the auction is completed
 	#Range: 0 -> 99
 	#Default: 0
-	auctionFeeRate=0
+	auctionFeeRate=15
 	#A flat fee paid on the creation of an auction by the player submitting it
 	#If they are unable to pay this fee, they will not be able to submit any auctions
 	#See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
@@ -237,11 +237,11 @@
 	#Rate of 0.01 is equal to a 1% interest rate.
 	#Range: 0.0 -> 1.0
 	#Default: 0.0
-	interest=0.03
+	interest=0.05
 	#Whether interest applied to small amounts of money are guaranteed to give at least *some* money as long as there's money in the account.
 	#Example 1% interest applied to a bank account with only 1 copper coin will always give *at least* 1 copper coin.
 	#Default: true
-	forceInterest=true
+	forceInterest=false
 	#Whether players will receive a personal notification whenever their bank account collects interest.
 	#Regardless of this value, the bank accounts logs will always display the interest interaction.
 	#Default: true
@@ -257,7 +257,7 @@
 	#365 days = 630720000 ticks
 	#Range: 1200 -> 630720000
 	#Default: 1728000
-	interestDelay=1728000
+	interestDelay=144000
 	#A list of upper interest limits.
 	#Example:
 	#Adding "coin;1-lightmanscurrency:coin_netherite" to this list will make it so that players will get no more than 1 netherite coin worth of interest even if they would normally get more.
@@ -272,7 +272,7 @@
 [terminal]
 	#Whether the /lcterminal command will exist allowing players to access the Trading Terminal without the physical item/block
 	#Default: false
-	lcterminalCommand=true
+	lcterminalCommand=false
 	#Whether Traders with no defined Custom Name will be sorted to the bottom of the Trader list on the Network Terminal.
 	#Default: false
 	sortUnnamedTradersToBottom=false
@@ -354,7 +354,7 @@
 		maxClaimCount=1000000
 		#Whether the `/lcclaims buy forceload` command will be accessible to players.
 		#Default: false
-		allowForceloadPurchase=false
+		allowForceloadPurchase=true
 		#The price per forceload chunk purchased.
 		#See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 		#Default: "coin;1-lightmanscurrency:coin_netherite"

@@ -1,19 +1,14 @@
 {
   "armorSetName": "\u9632\u6BD2\u9762\u5177",
-  "performanceMode": true,
   "additionalSetpieces":[{
-    "itemKey": "spore:gas_mask",
-    "mustBeEmpty": false
+    "itemKey": "spore:gas_mask"
   }],
   "fullSetBonuses": [
     {
       "type": "effect",
       "name": "spore:mycelium_ef",
-      "value": 4.0,
-      "interactionType": "immunity",
-      "hideBonusDescription": false,
-      "onlyImmuneToNewEffects": false
+      "interactionType": "immunity"
     }
   ],
-  "hideGeneratedTooltip": false
+  "hideGeneratedTooltip": true
 }
