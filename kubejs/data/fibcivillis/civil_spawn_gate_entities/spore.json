@@ -1,8 +1,5 @@
 {
   "entries": [
-    { "blacklist": ["spore:inf_human","spore:inf_player","spore:inf_villager","spore:inf_wanderer",
-    "spore:inf_witch","spore:inf_pillager","spore:inf_drowned","spore:inf_husk","spore:inf_hazmat",
-    "spore:inf_diseased_villager","spore:inf_vindicator","spore:inf_evoker","spore:scent","spore:claw",
-    "spore:tendril","spore:mound"] }
+    { "blacklist": ["spore:inf_human","spore:inf_player","spore:inf_villager","spore:inf_wanderer","spore:inf_witch","spore:inf_pillager","spore:inf_drowned","spore:inf_husk","spore:inf_hazmat","spore:inf_diseased_villager","spore:inf_vindicator","spore:inf_evoker","spore:scent","spore:claw","spore:tendril","spore:mound","spore:saugling","spore:plagued","spore:lacerator_spawnegg","spore:biobloob","spore:griefer","spore:braiomil","spore:leaper","spore:slasher","spore:spitter","spore:howler","spore:stalker","spore:brute","spore:busser","spore:thorn","spore:volatele","spore:nuclea","spore:bloater","spore:scavenger","spore:prot_spawnegg","spore:inebriater","spore:mephitic","spore:chemist","spore:naiad","spore:conductor","spore:gargoyle","spore:scamper","spore:inf_contruct","spore:bairn"] }
   ]
 }

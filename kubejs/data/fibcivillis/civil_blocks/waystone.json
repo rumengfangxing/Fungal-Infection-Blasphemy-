@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "entries": [
+    { "block": "#waystones:sharestone",                       "weight": 0.5 },
+    { "block": "#waystones:waystones",                       "weight": 0.2 }
+  ]
+}

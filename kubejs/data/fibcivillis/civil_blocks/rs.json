@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "entries": [
+    { "block": "#refinedstorage:controller",                       "weight": 0.3 },
+    { "block": "#refinedstorage:crafter",                       "weight": 0.3 },
+    { "block": "#refinedstorage:crafter_manager",                       "weight": 0.3 },
+    { "block": "#refinedstorage:crafting_grid",                       "weight": 0.3 },
+    { "block": "#refinedstorage:crafting_monitor",                       "weight": 0.3 },
+    { "block": "#refinedstorage:detector",                       "weight": 0.3 },
+    { "block": "#refinedstorage:disk_manipulator",                       "weight": 0.3 },
+    { "block": "#refinedstorage:fluid_grid",                       "weight": 0.3 },
+    { "block": "#refinedstorage:grid",                       "weight": 0.3 },
+    { "block": "#refinedstorage:network_receiver",                       "weight": 0.3 },
+    { "block": "#refinedstorage:network_transmitter",                       "weight": 0.3 },
+    { "block": "#refinedstorage:pattern_grid",                       "weight": 0.3 },
+    { "block": "#refinedstorage:relay",                       "weight": 0.3 },
+    { "block": "#refinedstorage:security_manager",                       "weight": 0.3 },
+    { "block": "#refinedstorage:storage_blocks",                       "weight": 0.3 },
+    { "block": "#refinedstorage:wireless_transmitter",                       "weight": 0.3 }
+  ]
+}

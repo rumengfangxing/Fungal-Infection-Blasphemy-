@@ -134,7 +134,8 @@
     "com.refinedmods.refinedstorage.screen.ExternalStorageScreen": true,
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackSettingsScreen": true,
     "com.simibubi.create.content.schematics.table.SchematicTableScreen": true,
-    "com.simibubi.create.content.schematics.client.SchematicEditScreen": true
+    "com.simibubi.create.content.schematics.client.SchematicEditScreen": true,
+    "com.github.elenterius.biomancy.client.gui.DecomposerScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
@@ -233,6 +234,7 @@
     "com.refinedmods.refinedstorage.screen.ExternalStorageScreen": true,
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackSettingsScreen": true,
     "com.simibubi.create.content.schematics.table.SchematicTableScreen": true,
-    "com.simibubi.create.content.schematics.client.SchematicEditScreen": true
+    "com.simibubi.create.content.schematics.client.SchematicEditScreen": true,
+    "com.github.elenterius.biomancy.client.gui.DecomposerScreen": true
   }
 }

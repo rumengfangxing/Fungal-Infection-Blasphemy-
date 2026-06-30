@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "entries": [
+    { "block": "#lctech:fluid_tanks",                       "weight": 0.2 },
+    { "block": "#lightmanscurrency:auction_stand",                       "weight": 0.2 },
+    { "block": "#lightmanscurrency:trader",                       "weight": 0.2 }
+  ]
+}

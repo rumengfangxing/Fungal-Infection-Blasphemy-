@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "entries": [
+    
+    { "block": "#farmersdelight:cabinets",                       "weight": 0.1 },
+    { "block": "#farmersdelight:canvas_signs",                       "weight": 0.1 },
+    { "block": "#farmersdelight:feasts",                       "weight": 0.1 },
+    { "block": "#farmersdelight:hanging_signs",                       "weight": 0.1 }
+  ]
+}

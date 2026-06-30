@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "entries": [
+    { "block": "#sophisticatedstorage:all_storage",                       "weight": 0.1 }
+  ]
+}

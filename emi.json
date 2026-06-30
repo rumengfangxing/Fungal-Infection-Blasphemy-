@@ -1,6 +1,25 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:spore:infested_end_stone",
+    "item:minecraft:mycelium",
+    "item:biomancy:malignant_flesh_veins",
+    "item:biomancy:malignant_flesh",
+    {
+      "type": "item",
+      "id": "biomancy:malignant_flesh_wall",
+      "amount": 6
+    },
+    "item:biomancy:fibrous_flesh_wall",
+    "item:biomancy:smooth_primal_flesh_wall",
+    {
+      "type": "item",
+      "id": "biomancy:malignant_flesh_slab",
+      "amount": 2
+    },
+    "item:biomancy:porous_primal_flesh",
+    "item:biomancy:primal_flesh",
+    "item:biomancy:primal_flesh_slab",
     {
       "type": "fluid",
       "id": "create_enchantment_industry:hyper_experience",

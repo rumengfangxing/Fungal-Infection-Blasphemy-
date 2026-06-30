@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "entries": [
+    { "block": "#forge:bookshelves",                       "weight": 0.2 },
+    { "block": "#forge:chests",                       "weight": 0.05 },
+    { "block": "#forge:fences",                       "weight": 0.05 },
+    { "block": "#forge:glass",                       "weight": 0.05 },
+    { "block": "#forge:glass_panes",                       "weight": 0.05 },
+    { "block": "#forge:storage_blocks/emerald",                       "weight": 0.3 },
+    { "block": "#forge:stripped_logs",                       "weight": 0.05 },
+    { "block": "#goety:brazier",                       "weight": 0.5 },
+    { "block": "#goety:dark_altars",                       "weight": 0.3 },
+    { "block": "#goety:pedestals",                       "weight": 0.2 }
+  ]
+}
