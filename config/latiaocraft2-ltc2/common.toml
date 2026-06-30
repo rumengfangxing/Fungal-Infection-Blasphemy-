@@ -56,3 +56,13 @@
 	#Range: 0.01 ~ 1.0
 	WildPepperGenChanceFertilizer = 0.4
 
+["Festival Content Settings / 节日彩蛋设置"]
+	#Enable Spring Festival Surprises / 是否开启春节彩蛋
+	SpringFestivalEnable = true
+	#Enable Valentine's Day Surprises / 是否开启情人节彩蛋
+	ValentinesDayEnable = true
+	#Enable Fool's Day Surprises / 是否开启愚人节彩蛋
+	FoolsDayEnable = true
+	#Enable Mod's Anniversary Surprises / 是否开启模组周年庆彩蛋
+	ModsAnniversaryEnable = true
+

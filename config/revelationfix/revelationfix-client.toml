@@ -6,8 +6,6 @@
 [Render]
 	#Enable new Apollyon model texture (when "Apollyon" in dimension Nether)
 	enableNewNetherApollyonTexture = true
-	#Enable new Apollyon bossbar (when "Apollyon" in dimension Nether)
-	enableNewNetherApollyonBossbar = true
 	#Enable Nether ScarletRain (when "Apollyon" in dimension Nether)
 	enableScarletRain = true
 	#Make Nether ScarletRain more beautiful (when "Apollyon" in dimension Nether)
@@ -20,4 +18,8 @@
 	enableSpecialHaloEffect = true
 	#enable gray screen effect when time is frozen
 	enableTimeFreezingGrayEffect = true
+	#Use old version Apollyon bossbar
+	useOldApollyonBossbar = false
+	#Use simple version Apollyon bossbar
+	useSimpleApollyonBossbar = false
 

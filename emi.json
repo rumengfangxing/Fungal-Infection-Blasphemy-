@@ -1,0 +1,32 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    {
+      "type": "fluid",
+      "id": "create_enchantment_industry:hyper_experience",
+      "amount": 10
+    },
+    "item:create_enchantment_industry:hyper_experience_bottle",
+    {
+      "type": "fluid",
+      "id": "create_enchantment_industry:experience",
+      "amount": 0
+    },
+    "item:create_enchantment_industry:experience_rotor",
+    "item:legendarysurvivaloverhaul:thermal_resistance_ring",
+    "item:legendarysurvivaloverhaul:heart_fragment",
+    {
+      "type": "item",
+      "id": "legendarysurvivaloverhaul:heart_container",
+      "amount": 46
+    }
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}

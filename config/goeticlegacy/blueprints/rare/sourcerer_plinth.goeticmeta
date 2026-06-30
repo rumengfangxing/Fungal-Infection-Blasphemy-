@@ -2,5 +2,7 @@
   "langKey": "prefab.goeticlegacy.sourcerer_plinth",
   "displayName": "巫师高台",
   "rarity": "rare",
-  "dropWeight": 6
+  "dropWeight": 6,
+  "requiredMods": ["goetyawaken"],
+  "description": "prefab_desc.goeticlegacy.sourcerer_plinth"
 }

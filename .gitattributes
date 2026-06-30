@@ -1,1 +1,2 @@
 mods/spore_2.2.0h_1.20.1.jar filter=lfs diff=lfs merge=lfs -text
+mods/spore_2.2.0j_1.20.1.jar filter=lfs diff=lfs merge=lfs -text

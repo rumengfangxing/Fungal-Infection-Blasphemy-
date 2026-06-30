@@ -50,3 +50,7 @@
 	#Range: 0 ~ 128
 	JalapenoCountWild = 4
 
+["Wither Pepper / 凋灵辣椒"]
+	#Does the Wild Wither Pepper apply the Wither effect to nearby entities / 野生凋灵辣椒是否会向附近生物施加凋零效果
+	EffectWildPepperWither = true
+

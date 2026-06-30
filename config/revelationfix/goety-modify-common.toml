@@ -21,3 +21,7 @@
 		#启用对使徒狱火伤害的修改.
 		apostleHellfireModification = true
 
+	[Entities.Enchantments]
+		#A list of enchantments can't be upgraded by dark anvil.
+		darkAnvilBlackList = ["goety_revelation:reality_piercer"]
+

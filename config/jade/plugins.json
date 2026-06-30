@@ -66,6 +66,9 @@
     "goggles.detailed": false,
     "placard": true
   },
+  "ltc2": {
+    "latiao_oven": true
+  },
   "extrastorage": {
     "crafter": true,
     "advanced_crafter": true

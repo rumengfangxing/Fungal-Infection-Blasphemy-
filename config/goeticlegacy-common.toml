@@ -138,7 +138,7 @@
 	#仆从最终伤害加成（ADDITION） [默认: 0.60 = +60%]
 	#Range: 0.0 ~ 100.0
 	servantFinalDamageBonus = 0.6
-	#仆从伤害抗性削减（负值=受到的伤害增加） [默认: -0.60 = -60%]
+	#仆从护甲值削减（MULTIPLY_TOTAL，负值=削减百分比） [默认: -0.60 = -60%]
 	#Range: -1.0 ~ 0.0
 	servantDamageReductionPenalty = -0.6
 	#每点缺失生命值比率提供的伤害加成 [默认: 0.35]
@@ -165,6 +165,14 @@
 	#IRON_HIDE 效果等级 [默认: 1]
 	#Range: 0 ~ 255
 	ironHideAmplifier = 1
+	#蜘蛛中立血量阈值（倍率），
+	#蜘蛛最大生命 ≤ 玩家最大生命 × 此值时中立效果生效。
+	#[默认: 2.5]
+	#Range: 0.0 ~ 100.0
+	neutralHealthThreshold = 2.5
+	#击杀育母蜘蛛掉落蜘蛛标本册的概率（0.0~1.0） [默认: 0.50 = 50%]
+	#Range: 0.0 ~ 1.0
+	lootChance = 0.5
 
 #---- 启示之证 ----
 [the_acknowledgment]
@@ -762,15 +770,24 @@
 
 #---- 魔像之心（buff→shielded+iron_hide）----
 [golem_heart]
-	#是否启用 buff→iron_hide（二分之一等级） [默认: true]
+	#是否启用 buff→iron_hide [默认: true]
 	enableIronHide = true
+	#buff→shielded 等级系数 [默认: 1.0]
+	#Range: 0.0 ~ 10.0
+	shieldedRatio = 1.0
+	#buff→iron_hide 等级系数 [默认: 0.5]
+	#Range: 0.0 ~ 10.0
+	ironHideRatio = 0.5
+	#效果等级上限 [默认: 10]
+	#Range: 1 ~ 255
+	maxLevel = 10
 
 #---- 虚幻冥灯 ----
 [illusion_lantern]
 	#每件装备消耗灵魂能量 [默认: 6]
 	#Range: 1 ~ 10000
 	armorCost = 6
-	#亡灵中立血量阈值（倍率） [默认: 4.5]
+	#亡灵中立血量阈值（倍率），亡灵最大生命 ≤ 玩家最大生命 × 此值时中立 [默认: 2.5]
 	#Range: 1.0 ~ 100.0
 	neutralHealthThreshold = 4.5
 	#是否仅对亡灵仆从自动装备盔甲 [默认: false = 所有仆从均可装备]
@@ -851,6 +868,12 @@
 	#所有其他内容物的 applyAttributes() 提供的属性值乘以该系数。
 	#Range: 1.0 ~ 5.0
 	contentBoostMultiplier = 1.5
+	#非欧立方「不清除」的负面效果黑名单（ResourceLocation 格式）。
+	#列在此处的效果即使被游戏标记为负面（!isBeneficial），也不会被自动清除。
+	#默认包含不祥之兆（bad_omen）和灾厄的两个幻灵效果。
+	#如需恢复清除某个效果，将其从此列表中移除即可。
+	#格式示例: ["minecraft:bad_omen", "cataclysm:ghost_sickness"]
+	effectBypassList = ["minecraft:bad_omen", "cataclysm:ghost_sickness", "cataclysm:ghost_form"]
 
 #---- 虚空珍珠（重做） ----
 [void_pearl]
@@ -1075,6 +1098,9 @@
 	#魔法伤害乘数加成 [默认: 0.15]
 	#Range: 0.0 ~ 10.0
 	magicDamageMultiplier = 0.15
+	#墓穴战利品箱中出现玉佩的概率（0.0~1.0） [默认: 0.05 = 5%]
+	#Range: 0.0 ~ 1.0
+	lootChance = 0.05
 
 #---- 幽匿之心 ----
 [sculk_heart]
@@ -1107,6 +1133,9 @@
 	#召唤的监守者消失时间（tick） [默认: 2400 = 120秒]
 	#Range: 100 ~ 72000
 	wardenDespawnTicks = 2400
+	#远古城市战利品箱中出现幽匿之心的概率（0.0~1.0） [默认: 0.05 = 5%]
+	#Range: 0.0 ~ 1.0
+	lootChance = 0.05
 
 #════════════════════════════════════
 # 附魔
@@ -1298,6 +1327,12 @@
 	#[默认: 0.8] [范围: 0.1 ~ 1.0]
 	#Range: 0.1 ~ 1.0
 	soulCostRatioCap = 1.0
+	#启用维度方块过滤。
+	#启用后，在下界（ultraWarm 维度）部署建筑时，会自动过滤掉水源方块和气泡柱。
+	#防止玩家在下界通过预制建筑系统放置不应该存在的液体。
+	#关闭后还原旧行为，不作任何维度检查。
+	#[默认: true]
+	enableDimensionFilter = true
 
 #════════════════════════════════════
 # 初始建筑（Starter）
@@ -1317,4 +1352,68 @@
 	#首次运行时自动从 JAR 内置 resources 复制示例模板。
 	#[默认: goeticlegacy/starters]
 	starterPath = "goeticlegacy/starters"
+
+#---- 烈风之书 ----
+[wind_book]
+	#上升气流作用半径（格） [默认: 36]
+	#Range: 1 ~ 64
+	updraftRadius = 36
+	#右键主动技能冷却时间（tick，20 tick = 1 秒） [默认: 100 = 5 秒]
+	#Range: 1 ~ 72000
+	cooldownTicks = 100
+	#烈风神祠普通补给箱中出现烈风之书的概率（0.0~1.0） [默认: 0.15 = 15%]
+	#Range: 0.0 ~ 1.0
+	lootChance = 0.15
+	#烈风神祠宝藏箱中出现烈风之书的概率（0.0~1.0） [默认: 0.50 = 50%]
+	#Range: 0.0 ~ 1.0
+	treasureChance = 0.5
+
+#---- 过往之书 ----
+[bygone_book]
+	#下界生物中立血量阈值（倍率），
+	#敌对生物最大生命 ≤ 玩家最大生命 × 此值时中立效果生效。
+	#例：2.5 = 血量不超过玩家 2.5 倍的敌对生物才会中立。
+	#[默认: 2.5]
+	#Range: 0.0 ~ 100.0
+	neutralHealthThreshold = 2.5
+	#法术伤害乘数加成（ADDITION） [默认: 0.15 = +15%]
+	#Range: 0.0 ~ 10.0
+	magicDamageBonus = 0.15
+
+#---- 宰相之书 ----
+[vizier_book]
+	#Neollager 训练为紫袍刌民（Spellcaster）的概率 [默认: 0.6 = 60%]
+	#原版概率为 15%。设为 1.0 则必定转化。
+	#Range: 0.0 ~ 1.0
+	magicChance = 0.6
+	#刌民仆从训练速度倍率 [默认: 3 = ×3]
+	#Range: 1 ~ 100
+	trainSpeedMultiplier = 3
+
+#---- NightCube 典籍专属效果 ----
+#---- 烈风之书（NightCube 专属）----
+[wind_book_content]
+	#达到满增伤所需的高度差（格） [默认: 12]
+	#Range: 1 ~ 256
+	heightThreshold = 12
+	#最大增伤倍率（1.0 = +100%） [默认: 1.0]
+	#Range: 0.0 ~ 10.0
+	maxHeightBonus = 1.0
+
+#---- 过往之书（NightCube 专属）----
+[bygone_book_content]
+	#狱火额外造成目标最大生命值百分比伤害 [默认: 0.025 = 2.5%]
+	#Range: 0.0 ~ 1.0
+	hellfireMaxHealthPct = 0.025
+	#该百分比伤害的倍率 [默认: 1.5]
+	#Range: 0.0 ~ 100.0
+	hellfireDamageMultiplier = 1.5
+
+#---- 宰相之书（NightCube 专属）----
+[vizier_book_content]
+	#施法蓄力时的伤害减免率（0.6 = 减伤 60%） [默认: 0.6]
+	#Range: 0.0 ~ 1.0
+	shieldDamageReduction = 0.6
+	#是否启用「恼鬼聚晶 → 召唤折磨仆从」替换 [默认: true]
+	tormentorEnabled = true
 

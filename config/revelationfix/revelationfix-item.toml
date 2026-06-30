@@ -30,6 +30,18 @@
 	Cooldown = 60
 	#if true, the cooldowns of the eternal watch can can be reduced by other items
 	canCooldownsBeReduced = true
+	#The damage dealt by Eternal Watch to creatures during time stop.
+	#Range: 0.0 ~ 32768.0
+	DimensionalDamage = 10.0
+	#The chance for Eternal Watch to trigger time stop on a single creature.
+	#Range: 0 ~ 100
+	FreezeSingleChance = 6
+	#The time(in seconds) that Eternal Watch can freeze a single creature.
+	#Range: 0 ~ 32768
+	SingleFreezingTime = 5
+	#The damage dealt by Eternal Watch when ending time stop on a single creature.
+	#Range: 0.0 ~ 32768.0
+	SingleDamage = 10.0
 
 ["Apocalyptium Armor"]
 
