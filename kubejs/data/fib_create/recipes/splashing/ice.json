@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "fib:saltpeter"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:ice"
+    }
+  ]
+}

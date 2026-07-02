@@ -32,7 +32,7 @@
     B:EnderChestButtonEnabled=true
 
     # Allows to set offset for Ender Chest button on X axis. [range: -32768 ~ 32768, default: 0]
-    I:EnderChestButtonOffsetX=0
+    I:EnderChestButtonOffsetX=-48
 
     # Allows to set offset for Ender Chest button on X axis, for creative inventory specifically. [range: -32768 ~ 32768, default: 0]
     I:EnderChestButtonOffsetXCreative=0

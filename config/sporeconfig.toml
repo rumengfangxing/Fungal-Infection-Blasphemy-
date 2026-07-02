@@ -99,7 +99,7 @@
 ["Targeting Tasks"]
 	#Default false
 	"Should attack Animals?" = true
-	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:"]
+	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:"]
 	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit", "torchesbecomesunlight:burdenbeast", "torchesbecomesunlight:preparation_op"]
 	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
 	#Default true
@@ -197,15 +197,15 @@
 
 [Effects]
 	"Should the effect overlays be active ?" = true
-	"Mobs that are immune to the mycelium infection" = ["minecraft:ghast", "minecraft:iron_golem", "minecraft:magma_cube", "minecraft:mooshroom", "minecraft:phantom", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:wither", "minecraft:skeleton"]
+	"Mobs that are immune to the mycelium infection" = ["minecraft:ghast", "minecraft:magma_cube", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:wither", "minecraft:skeleton"]
 	"Mobs that are damaged by corrosion" = ["minecraft:iron_golem"]
 
 ["Mob Evolutions and Infection System"]
 
 	["Mob Evolutions and Infection System".Infections]
 		#Default true
-		"Should the player be infected on death?" = true
-		"Mobs and their infected counterparts" = ["minecraft:zombie|spore:inf_human", "minecraft:husk|spore:inf_husk", "minecraft:drowned|spore:inf_drowned", "minecraft:pillager|spore:inf_pillager", "minecraft:villager|spore:inf_villager", "guardvillagers:guard|spore:inf_villager", "recruits:recruit|spore:inf_villager", "recruits:bowman|spore:inf_villager", "recruits:recruit_shieldman|spore:inf_villager", "recruits:nomad|spore:inf_villager", "recruits:horseman|spore:inf_villager", "minecraft:witch|spore:inf_witch", "minecraft:wandering_trader|spore:inf_wanderer", "minecraft:evoker|spore:inf_evoker", "minecraft:vindicator|spore:inf_vindicator", "hunterillager:hunterillager|spore:inf_vindicator", "roamers:roamer|spore:inf_player", "roamers:bandit|spore:inf_player", "goety:maverick|spore:inf_vindicator", "goety:warlock|spore:inf_witch", "goety:heretic|spore:inf_witch", "minecraft:ravager|spore:brute", "goety:trampler|spore:brute", "goety:black_beast|spore:brute", "goety:conquillager|spore:inf_pillager", "goety:maverick|spore:inf_vindicator", "goety:piker|spore:inf_vindicator", "goety:preacher|spore:inf_evoker", "goety:crusher|spore:inf_vindicator", "goety:storm_caster|spore:inf_evoker", "goety:cryologer|spore:inf_evoker", "goety:sorcerer|spore:inf_evoker", "goety:minister|spore:vanguard", "goety:crone|spore:vanguard", "torchesbecomesunlight:burdenbeast|spore:brute", "torchesbecomesunlight:turret|spore:inf_contruct", "torchesbecomesunlight:yeti_ice_leaver|spore:knight", "torchesbecomesunlight:patrol_captain|spore:lacerator_spawnegg", "torchesbecomesunlight:preparation_op|spore:plagued", "torchesbecomesunlight:mangler|spore:brot", "torchesbecomesunlight:fallen_snowpriest|spore:inf_evoker", "torchesbecomesunlight:tainted_carcass|spore:inf_vindicator", "torchesbecomesunlight:distorted_caster|spore:inf_evoker", "torchesbecomesunlight:shield_guard|spore:prot_spawnegg", "torchesbecomesunlight:pathfinder_ballistarius|spore:prot_spawnegg"]
+		"Should the player be infected on death?" = false
+		"Mobs and their infected counterparts" = ["minecraft:zombie|spore:inf_human", "minecraft:husk|spore:inf_husk", "minecraft:drowned|spore:inf_drowned", "minecraft:pillager|spore:inf_pillager", "minecraft:villager|spore:inf_villager", "guardvillagers:guard|spore:inf_villager", "recruits:recruit|spore:inf_villager", "recruits:bowman|spore:inf_villager", "recruits:recruit_shieldman|spore:inf_villager", "recruits:nomad|spore:inf_villager", "recruits:horseman|spore:inf_villager", "minecraft:witch|spore:inf_witch", "minecraft:wandering_trader|spore:inf_wanderer", "minecraft:evoker|spore:inf_evoker", "minecraft:vindicator|spore:inf_vindicator", "hunterillager:hunterillager|spore:inf_vindicator", "roamers:roamer|spore:inf_player", "roamers:bandit|spore:inf_player", "goety:maverick|spore:inf_vindicator", "goety:warlock|spore:inf_witch", "goety:heretic|spore:inf_witch", "minecraft:ravager|spore:brute", "goety:trampler|spore:brute", "goety:black_beast|spore:brute", "goety:conquillager|spore:inf_pillager", "goety:maverick|spore:inf_vindicator", "goety:piker|spore:inf_vindicator", "goety:preacher|spore:inf_evoker", "goety:crusher|spore:inf_vindicator", "goety:storm_caster|spore:inf_evoker", "goety:cryologer|spore:inf_evoker", "goety:sorcerer|spore:inf_evoker", "goety:minister|spore:vanguard", "goety:crone|spore:vanguard", "torchesbecomesunlight:burdenbeast|spore:brute", "torchesbecomesunlight:turret|spore:inf_contruct", "torchesbecomesunlight:yeti_ice_leaver|spore:knight", "torchesbecomesunlight:patrol_captain|spore:lacerator_spawnegg", "torchesbecomesunlight:preparation_op|spore:plagued", "torchesbecomesunlight:mangler|spore:brot", "torchesbecomesunlight:fallen_snowpriest|spore:inf_evoker", "torchesbecomesunlight:tainted_carcass|spore:inf_vindicator", "torchesbecomesunlight:distorted_caster|spore:inf_evoker", "torchesbecomesunlight:shield_guard|spore:prot_spawnegg", "torchesbecomesunlight:pathfinder_ballistarius|spore:prot_spawnegg", "minecraft:mooshroom|spore:mound"]
 
 	["Mob Evolutions and Infection System".Evolutions]
 		"Infected Human Evolutions" = ["spore:knight", "spore:griefer", "spore:braiomil", "spore:busser"]
@@ -1466,7 +1466,7 @@
 
 	["Weapons and Tools OwO".PSI]
 		#Default 25
-		"Max charge" = 80
+		"Max charge" = 75
 		#Default 3
 		#Range: > 1
 		"Damage Multiplier" = 5

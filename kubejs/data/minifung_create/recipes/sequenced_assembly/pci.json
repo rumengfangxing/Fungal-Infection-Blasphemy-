@@ -1,12 +1,12 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "minecraft:dispenser"
+    "item": "spore:syringe"
   },
   "loops": 1,
   "results": [
     {
-      "item": "spore:cdu"
+      "item": "spore:pci"
     }
   ],
   "sequence": [
@@ -14,17 +14,17 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         },
         [
           {
-            "item": "spore:compound_plate"
+            "item": "biomancy:gem_fragments"
           }
         ]
       ],
       "results": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         }
       ]
     },
@@ -33,17 +33,17 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         },
         [
           {
-            "item": "minecraft:iron_ingot"
+            "item": "create:mechanical_pump"
           }
         ]
       ],
       "results": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         }
       ]
     },
@@ -51,17 +51,17 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         },
         [
           {
-            "item": "minecraft:iron_ingot"
+            "item": "create_connected:crank_wheel"
           }
         ]
       ],
       "results": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         }
       ]
     },
@@ -69,17 +69,17 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         },
         [
           {
-            "item": "minecraft:iron_ingot"
+            "item": "createaddition:iron_wire"
           }
         ]
       ],
       "results": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         }
       ]
     },
@@ -87,7 +87,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         },
         [
           {
@@ -97,25 +97,30 @@
       ],
       "results": [
         {
-          "item": "minecraft:dispenser"
+          "item": "spore:syringe"
         }
       ]
     },
     {
-      "type": "create:pressing",
+      "type": "create:deploying",
       "ingredients": [
         {
-          "item": "minecraft:dispenser"
-        }
+          "item": "spore:syringe"
+        },
+        [
+          {
+            "item": "create:analog_lever"
+          }
+        ]
       ],
       "results": [
         {
-          "item":"minecraft:dispenser"
+          "item": "spore:syringe"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "minecraft:dispenser"
+    "item": "spore:syringe"
   }
 }

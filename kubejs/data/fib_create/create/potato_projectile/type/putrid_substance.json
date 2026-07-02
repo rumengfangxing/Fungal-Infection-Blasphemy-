@@ -1,8 +1,8 @@
 {
-  "damage": 10,
-  "reload_ticks": 15,
-  "items": "create:brass_nugget",
-  "knockback": 1.0,
+  "damage": 8,
+  "reload_ticks": 1,
+  "items": "fib:putrid_substance",
+  "knockback": 2.0,
   "render_mode": 
   {
     "type": "create:toward_motion"

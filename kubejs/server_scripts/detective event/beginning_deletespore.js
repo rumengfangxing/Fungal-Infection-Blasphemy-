@@ -3,7 +3,7 @@ ServerEvents.loaded(event => {
     const deletespore = server.persistentData.getBoolean('delete_spore')
     if (deletespore) return
     
-    server.scheduleInTicks(10, callback => {
+    server.scheduleInTicks(80, callback => {
         server.runCommandSilent('spore:erase_the_fungus')
         server.persistentData.putBoolean('delete_spore', true)
     })

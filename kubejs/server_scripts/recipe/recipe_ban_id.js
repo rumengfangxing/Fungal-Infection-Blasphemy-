@@ -66,5 +66,8 @@ const removeRecipeIds = [
     'emxarms:ammo/339x57',
 //柴油动力虚空木屑配方
     'createdieselgenerators:compression_molding/stick',
-    'createdieselgenerators:crushing/wood_chip_ladders'
+    'createdieselgenerators:crushing/wood_chip_ladders',
+//冰相关配方禁用
+    'minecraft:packed_ice',
+    'spore:cdu'
 ]
