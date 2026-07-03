@@ -33,21 +33,21 @@ event.custom({
   ],
   "heatRequirement": "heated"
 });
-//糟糕液体250mb
+//糟糕液体125mb
 event.custom({
   "type": "createdieselgenerators:basin_fermenting",
   "ingredients": [
     { "item": "fib:putrid_substance"},
     { 
       "fluid": "minecraft:water",
-      "amount":200
+      "amount":125
     }
   ],
-  "processingTime": 180,
+  "processingTime": 120,
   "results": [
     { 
       "fluid":"fib:bad_liquid",
-      "amount":250
+      "amount":125
     }
   ],
   "heatRequirement": "heated"

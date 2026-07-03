@@ -1,0 +1,8 @@
+{
+	"type":"createaddition:liquid_burning",
+	"input": {
+      	"fluidTag": "fib:bad_liquid",
+      	"amount": 500
+	},
+	"burnTime": 20000
+}

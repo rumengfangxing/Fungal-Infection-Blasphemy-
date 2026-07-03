@@ -59,6 +59,9 @@ const removeRecipeIds = [
     'tacz:ammo/45_70',
     'sentry:sequenced_assembly/assembly/45_70',
     'bf1:ammo/fuel',
+    'tacz:ammo/792x57',
+    'tacz:ammo/22wmr',
+    'tacz:ammo/500mag',
     'tacz:ammo/762x25',
     'sentry:sequenced_assembly/assembly/762x25',
     'tacz:ammo/556x45',
@@ -69,5 +72,13 @@ const removeRecipeIds = [
     'createdieselgenerators:crushing/wood_chip_ladders',
 //冰相关配方禁用
     'minecraft:packed_ice',
-    'spore:cdu'
+    'spore:cdu',
+//药物配方禁用
+    'legendarysurvivaloverhaul:healing_herbs',
+    'lrtactical:consumable/ibuprofen',
+    'lrtactical:consumable/blood_pack',
+//战术道具配方禁用    
+    'lrtactical:throwable/molotov',
+    'lrtactical:throwable/m67',
+    'lrtactical:throwable/rgn'
 ]

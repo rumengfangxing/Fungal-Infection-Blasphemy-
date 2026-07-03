@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 1000,
+      "fluid": "fib:magazine_gas",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 50,
+      "fluid": "fib:liquid_ammonia",
+      "nbt": {}
+    },
+    {
+      "amount": 125,
+      "fluid": "createdieselgenerators:biodiesel",
+      "nbt": {}
+    } 
+  ]
+}

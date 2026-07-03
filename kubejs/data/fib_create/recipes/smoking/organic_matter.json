@@ -1,0 +1,13 @@
+{
+  "type": "create:smoking",
+  "ingredients": [
+    {
+      "item": "fib:putrid_substance"
+    }
+  ],
+  "results": [
+    {
+      "item": "biomancy:organic_matter"
+    }
+  ]
+}
