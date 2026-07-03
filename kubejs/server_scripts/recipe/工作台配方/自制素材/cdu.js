@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     event.shaped(
-        Item.of('fib_mod:scientists_experimental_platform'),
+        Item.of('spore:cdu'),
         [
             'BTB',
             'BLB',

@@ -44,7 +44,7 @@
         {
           "type": "lrtactical:flammable",
           "duration": 100,
-          "amplifier": 2,
+          "amplifier": 4,
           "visible": true
         },
         {

@@ -133,6 +133,10 @@
     "item.fib.bad_liquid_bucket.tooltip.1":"§8太臭了,这是粪吧",
 
 
+    "item.goeticlegacy:holy_helmet.tooltip.1": "§8刻满法阵的华丽衣物,其复杂结构杜绝了其可拓展性...",
+    "item.goeticlegacy:holy_chestplate.tooltip.1": "§8刻满法阵的华丽衣物,其复杂结构杜绝了其可拓展性...",
+    "item.goeticlegacy:holy_leggings.tooltip.1": "§8刻满法阵的华丽衣物,其复杂结构杜绝了其可拓展性...",
+    "item.goeticlegacy:holy_boots.tooltip.1": "§8刻满法阵的华丽衣物,其复杂结构杜绝了其可拓展性...",
     "item.spore.bezerk_syringe.tooltip.shift_hint": "§6按 [Shift] 查看佩戴时获得效果",
     "item.spore.bezerk_syringe.tooltip.shift.1": "  §a急迫1 (常驻)",
     "item.spore.bezerk_syringe.tooltip.shift.2": "  §a力量1 (常驻)",

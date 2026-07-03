@@ -8,6 +8,14 @@ create.compacting(
    Fluid.of('createdieselgenerators:biodiesel',500),
    Fluid.water(250)],
    Fluid.of('magazine_gas',500))
+////战术道具相关
+create.compacting(
+  Item.of('fib:napalm_lump',4),
+  [Fluid.of('createdieselgenerators:gasoline',250),
+   Fluid.of('createdieselgenerators:ethanol',100),
+   Item.of('minecraft:slime_ball',2),
+   Item.of('minecraft:blaze_powder',2)]).heated()
+////
 
 //石磨
 
@@ -21,8 +29,110 @@ create.crushing([Item.of('fib:saltpeter').withChance(0.8),
   Item.of('fib:saltpeter').withChance(0.25),
   Item.of('fib:saltpeter').withChance(0.25)],
   'sandstone')
+//混合搅拌
+////战术道具相关
+create.mixing("fib:c4_explosive",
+  ["minecraft:blaze_powder",
+    "minecraft:slime_ball",
+    'fib:pressed_powder',
+    Item.of('fib:high_energy_gunpowder',2),
+    Fluid.of('createdieselgenerators:biodiesel',100)]).heated()
+////
+////邪术精华
+create.mixing(['2x fib:hex_essence',"fib:hex_catalyst"],
+  ["legendarysurvivaloverhaul:heart_fragment","fib:hex_catalyst"]
+).heated()
 
-  
+create.mixing(['2x fib:hex_essence',"fib:hex_catalyst"],
+  ["legendarysurvivaloverhaul:shield_container","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:wither_sword","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:soul_jar","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:enderium_shard","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['1x fib:hex_essence',"fib:hex_catalyst"],
+  ["minecraft:echo_shard","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["goeticlegacy:old_world_echo","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:cerberus_fang","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["minecraft:ancient_debris","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:evoker_fang_scroll","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:sonic_boom_scroll","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['6x fib:hex_essence',"fib:hex_catalyst"],
+  ["legendarysurvivaloverhaul:heart_container","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["biomancy:bloomberry","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
+  ["minecraft:nether_star","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
+  ["fib:essenceoflife","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['32x fib:hex_essence',"fib:hex_catalyst"],
+  ["goety:void_echo","fib:hex_catalyst"]
+).heated()
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:angler_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:elder_guardian_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:ender_dragon_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:wither_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:undead_army_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:pillager_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:warden_treasure_bag","fib:hex_catalyst"]
+)
+create.mixing(Fluid.of('create_enchantment_industry:hyper_experience',100),
+  [Fluid.of('create_enchantment_industry:experience',200),"fib:hex_essence"]
+).superheated()
+////
    //动力合成
    //冷却单元
     create.mechanical_crafting('fib:cooling_unit',[

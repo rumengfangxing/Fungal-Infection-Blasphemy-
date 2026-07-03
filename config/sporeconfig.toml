@@ -6,7 +6,7 @@
 	"Maximum number of regular infected" = 40
 	"Maximum number of evolved infected" = 25
 	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:specter", "spore:inf_construct", "spore:scamper"]
-	"Dissable despawn system?" = true
+	"Dissable despawn system?" = false
 
 [Spawns]
 	"mob|weight|minimum|maximum" = ["spore:inf_human|25|2|5", "spore:inf_drowned|5|1|2", "spore:inf_pillager|10|1|3", "spore:inf_villager|10|1|3", "spore:inf_player|10|1|2", "spore:inf_wanderer|10|1|2", "spore:inf_witch|10|1|2", "spore:inf_hazmat|5|1|1", "spore:inf_vindicator|15|1|1", "spore:inf_husk|25|2|5", "spore:bairn|10|1|2", "spore:saugling|10|1|1"]
