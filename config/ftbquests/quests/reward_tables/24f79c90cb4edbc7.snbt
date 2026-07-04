@@ -1,7 +1,7 @@
 {
 	id: "24F79C90CB4EDBC7"
 	loot_size: 1
-	order_index: 8
+	order_index: 0
 	rewards: [
 		{
 			command: "/gamerule doInsomnia true"

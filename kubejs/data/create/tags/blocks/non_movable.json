@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "sophisticatedstorage:controller",
+      "required": false
+    },
+    {
+      "id": "sophisticatedstorage:storage_link",
+      "required": false
+    },
+    {
+      "id": "sophisticatedstorage:storage_io",
+      "required": false
+    },
+    {
+      "id": "sophisticatedstorage:storage_input",
+      "required": false
+    },
+    {
+      "id": "sophisticatedstorage:storage_output",
+      "required": false
+    }
+  ]
+}

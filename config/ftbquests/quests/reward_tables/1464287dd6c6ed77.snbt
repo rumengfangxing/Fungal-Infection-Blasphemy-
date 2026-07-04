@@ -1,0 +1,18 @@
+{
+	icon: "goety:shadow_essence"
+	id: "1464287DD6C6ED77"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ count: 3, item: "goety:treasure_pouch", title: "菜鸟亦或是新手" }
+		{
+			command: "/ftbquests change_progress @s complete 76ACB6BDDB2CCA68"
+			elevate_perms: true
+			icon: "goety:windswept_dead_bush"
+			silent: true
+			title: "高手亦或是老手"
+			type: "command"
+		}
+	]
+	title: "你是谁？"
+}

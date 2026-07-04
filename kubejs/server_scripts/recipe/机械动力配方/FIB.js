@@ -29,6 +29,15 @@ create.crushing([Item.of('fib:saltpeter').withChance(0.8),
   Item.of('fib:saltpeter').withChance(0.25),
   Item.of('fib:saltpeter').withChance(0.25)],
   'sandstone')
+
+//充电
+event.custom({
+      "type":"createaddition:charging",
+      "input":{"item":"createaddition:modular_accumulator"},
+      "result":Item.of('createaddition:modular_accumulator', '{BlockEntityTag:{EnergyCapacity:2000000,EnergyContent:{energy:40000000},ForgeCaps:{},id:"createaddition:modular_accumulator"},display:{Lore:[\'{"text":"(已充5%)"}\']}}'),
+      "energy":2000000,
+      "maxChargeRate":2000000
+    })
 //混合搅拌
 ////战术道具相关
 create.mixing("fib:c4_explosive",
