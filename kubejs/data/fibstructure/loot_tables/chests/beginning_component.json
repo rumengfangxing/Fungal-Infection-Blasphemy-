@@ -117,7 +117,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{frame:\"automobility:automobility:quartz_rickshaw\"}"
+              "tag": "{frame:\"automobility:quartz_rickshaw\"}"
             }
           ]
         }
