@@ -1,0 +1,179 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_engine",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{engine:\"automobility:copper\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_engine",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{engine:\"automobility:iron\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_engine",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{engine:\"automobility:stone\"}"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_frame",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{frame:\"riautomobility:copper_quadmotorcar\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_frame",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{frame:\"automobility:wooden_motorcar\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_frame",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{frame:\"automobility:copper_motorcar\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_frame",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{frame:\"riautomobility:wooden_quadmotorcar\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_frame",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{frame:\"riautomobility:wooden_doublemotorcar\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_frame",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{frame:\"automobility:quartz_rickshaw\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_frame",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{frame:\"automobility:automobility:quartz_rickshaw\"}"
+            }
+          ]
+        }
+      ],
+      "rolls": 2.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_wheel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{wheel:\"automobility:standard\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_wheel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{wheel:\"automobility:off_road\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_wheel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{wheel:\"automobility:tractor\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "automobility:automobile_wheel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{wheel:\"automobility:street\"}"
+            }
+          ]
+        }
+      ],
+      "rolls": 6.0
+    }
+  ]
+}

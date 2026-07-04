@@ -36,6 +36,17 @@
               "tag": "{GunCurrentAmmoCount:0,GunFireMode:\"SEMI\",GunId:\"tacz:deagle_golden\",HasBulletInBarrel:0b}"
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{GunCurrentAmmoCount:0,GunFireMode:\"SEMI\",GunId:\"tacz:lonetrail\",HasBulletInBarrel:1b}"
+            }
+          ]
         }
       ],
       "rolls": 2.0
