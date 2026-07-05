@@ -1,0 +1,72 @@
+{
+	icon: "enigmaticlegacy:evil_essence"
+	id: "4BB3871499A3082D"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			command: "/function fib_functions:choose_career/hunter"
+			elevate_perms: true
+			icon: {
+				Count: 1
+				id: "goety:hunters_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			silent: true
+			title: "猎手"
+			type: "command"
+		}
+		{
+			command: "/function fib_functions:choose_career/warlock"
+			elevate_perms: true
+			icon: "goety:arrow_rain_focus"
+			silent: true
+			title: "术士"
+			type: "command"
+		}
+		{
+			command: "/function fib_functions:choose_career/summon_warlock"
+			elevate_perms: true
+			icon: "goety:osseous_focus"
+			silent: true
+			title: "召唤术士"
+			type: "command"
+		}
+		{
+			command: "/function fib_functions:choose_career/gunslinger"
+			elevate_perms: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 9
+					GunFireMode: "SEMI"
+					GunId: "tacz:deagle_golden"
+					HasBulletInBarrel: 1b
+				}
+			}
+			silent: true
+			title: "枪手"
+			type: "command"
+		}
+		{
+			command: "/function fib_functions:choose_career/survival_expert"
+			elevate_perms: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						temperature: 20.9f
+					}
+				}
+				id: "legendarysurvivaloverhaul:thermometer"
+			}
+			silent: true
+			title: "生存专家"
+			type: "command"
+		}
+	]
+	title: "职业选择"
+}

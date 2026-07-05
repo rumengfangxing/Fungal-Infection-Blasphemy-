@@ -5,8 +5,473 @@
 	group: "7C3CC28B4F4C38EC"
 	icon: "spore:rotten_grass"
 	id: "378966E0F18A5EE2"
+	images: [
+		{
+			dependency: "1279707426A5CEAB"
+			height: 4.0d
+			image: "spore:block/rotten_grass"
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dev: true
+			height: 4.0d
+			image: "minecraft:block/grass"
+			order: 3
+			rotation: 0.0d
+			width: 6.0d
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dev: true
+			height: 8.0d
+			image: "minecraft:block/oak_sapling"
+			order: 2
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.0d
+			y: -5.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"本章节将指引并辅助你外出"
+				""
+				"无论你是&c流浪在外&r,还是&c外出探险&r"
+				""
+				"探索本章节都能为您&e提供切实的帮助&r"
+			]
+			icon: "minecraft:minecart"
+			id: "1279707426A5CEAB"
+			tasks: [{
+				id: "09CC6084DF836E6C"
+				title: "点击勾选以开启章节"
+				type: "checkmark"
+			}]
+			title: "荒野"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1279707426A5CEAB"]
+			description: [
+				"&e不会彻底改变&r你的&e游玩途径&r"
+				""
+				"选择职业后"
+				"你将&e获得一套相应职业的物品&r辅助游玩"
+				""
+				"职业没有高低贵贱哦,看你适合什么玩法"
+				"(#^ . ^#)"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:player_head"
+			id: "69846DD61FDD1028"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2AD40FD70EFBE57D"
+				table_id: 5454852096222496813L
+				team_reward: false
+				type: "choice"
+			}]
+			tasks: [{
+				id: "7AABB7C58A30BC71"
+				title: "点击勾选以完成任务"
+				type: "checkmark"
+			}]
+			title: "职业选择"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1279707426A5CEAB"]
+			description: [
+				"本任务的奖励将为您提供一次"
+				""
+				"&e选点传送&r服务"
+				""
+				"考量所去之处的环境,权衡利弊。综合你现有的一切,做出决断吧。"
+				""
+				"&8考虑到一开始的情况较为复杂,请挪步后几页查看帮助,&r"
+				"{@pagebreak}"
+				"传送相关指令"
+				"&e/tpa+玩家名&r→向指定玩家申请传送"
+				"&e/tpahere+玩家名&r→邀请指定玩家传送过来"
+				"&e/sethome&r+自定义名称&8(可选)&r→将当前坐标设置为家，配置名称可用于分类"
+				"&e/home&r+自定义名称&8(可选)&r→传送到&8(指定名称)&r的家"
+				"&c/rtp&r进行&c有范围限制&r的随机传送"
+				"&c/back&r回到&c&n上一次&r&c传送/死亡&r点"
+				"&8翻至下一页以查看更详细的规则&r"
+				"{@pagebreak}"
+				"&c/back&r的&c冷却时间为5秒&r,最多&c可以连续返回20次&r"
+				"迫于感染生物的独特&c感染机制&r"
+				"我&c不建议&r你上头式的&c反复back&r,最好&e做好准备再走&r"
+				""
+				"&c/rtp冷却&r时间为&c两小时&r,且用且珍惜"
+				""
+				"&e/sethome&r,你可以&e设置最多三个家&r"
+				""
+				"&c/spawn 返回出生点指令已禁用&r"
+				"&c所有传送指令,都需要原地静止等待3秒充能&r"
+				"&8下一页:留给服务器中的流浪者的建议&r"
+				"{@pagebreak}"
+				"在服务器运营较长时间,难免出现以下情况"
+				"1出生点沦陷"
+				"2领取任务奖励前往的结构已经被探索"
+				""
+				"为了一定程度缓解上述问题"
+				"建议您&e先使用/rtp,再领取任务的传送奖励&r"
+				"以确保自己能&e拥有一个健康的开局&r"
+			]
+			hide_until_deps_complete: true
+			icon: "waystones:warp_scroll"
+			id: "3FD7C21940CFA0DB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F5D5D6572768B25"
+				table_id: 4925529484297598251L
+				team_reward: false
+				type: "choice"
+			}]
+			tasks: [{
+				id: "36E90696658365C0"
+				title: "点击勾选以完成任务"
+				type: "checkmark"
+			}]
+			title: "传送"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"热闹的酒吧"
+				""
+				"&c真的没有什么奇怪的东西混进去吗?&r"
+				""
+				"{@pagebreak}"
+				"    当我记录炼金术实验及其对人类受试者影响的进展时，颤抖的墨迹暴露出我血管中奔涌的不安。在这条危机四伏的科学探索之路上，焦虑已成挥之不去的旅伴，不断啃噬着我的意识。"
+				"     并非我自身的躯体遭受炼金嬗变之创，而是那些作为实验体的平和之人。他们曾经鲜活柔润的肌肤已发生骇人异变，呈现出鬼魅般的灰暗色调。实验室长廊见证着他们每况愈下的状态，如同萦绕不去的警示，提醒着我所释放的可怖力量。"
+				"这种蜕变远超表象。日复一日，他们的行为愈发狂躁，新生的攻击性驱使着每个举动。仿佛炼金术唤醒了他们体内的原始本能，释放出深藏的欲望，将神智笼罩于黑暗之中。他们游荡在我的领域，被令人战栗的疯狂彻底吞噬。"
+				"     但比起受试者们的异变，真正萦绕我思绪的，是那来自更高位阶的阴森威胁——一股宗教势力正威胁要掐灭我的科学追求之火。他们对我研究的愤怒与蔑视如毒液般渗入耳际，在我惶惑的心智中播撒恐惧与偏执的种子。他们将我的实验视为僭越，是对其精心构筑的统治领域的亵渎。他们的触须已延伸至实验室外，渗透进我存在的每个角落。我时刻感受着监视的目光，他们蛰伏暗处，伺机给予致命一击。"
+				"     当夜晚被宗教审判与血腥报复的噩梦占据，安眠已成奢侈。我以最严密的戒备守护研究成果，唯恐毕生心血被这些可怖的敌手夺去。他们的存在如重负压顶，让我的双肩不堪重负。"
+				"     然而即便危机迫近，我的决心依然坚若磐石。对真理的渴求已超越浸透灵魂的恐惧。我必须继续前行，在这炼金术的迷宫中探索，押上所有筹码去揭开近在咫尺的奥秘。"
+				"     记录结束。"
+			]
+			id: "11493F1C3D3E0F15"
+			invisible: true
+			rewards: [{
+				auto: "enabled"
+				icon: "legendarysurvivaloverhaul:cactus_juice"
+				id: "48CA1FDA2649F4F7"
+				team_reward: false
+				title: "传送至绿茵酒吧"
+				type: "custom"
+			}]
+			tasks: [{
+				consume_items: true
+				icon: "legendarysurvivaloverhaul:cactus_juice"
+				id: "489A70746AC1B69F"
+				item: "create:creative_crate"
+				title: "禁用直接完成"
+				type: "item"
+			}]
+			title: "绿荫酒吧"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"&6炎热的沙漠&r"
+				""
+				"请自备&b解暑物品&r,比如&b冰、水、寒霜椒...&r"
+			]
+			id: "380156E0B4AB5859"
+			invisible: true
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					Count: 1
+					id: "legendarysurvivaloverhaul:desert_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "42E0315F36424FC5"
+				team_reward: false
+				title: "传送至沙漠村庄"
+				type: "custom"
+			}]
+			tasks: [{
+				consume_items: true
+				icon: {
+					Count: 1
+					id: "legendarysurvivaloverhaul:desert_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "022D038F33A60AC6"
+				item: "create:creative_crate"
+				title: "禁用直接完成"
+				type: "item"
+			}]
+			title: "沙漠村庄"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"安静的小屋"
+				""
+				"在这个时代已经罕存于世"
+				""
+				"很高兴你能静下来选择这个渔屋"
+			]
+			id: "2A8A0D1E8BEB5AE9"
+			invisible: true
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						Count: 1
+						id: "minecraft:fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "23311B84B1BFE3DB"
+					team_reward: false
+					title: "传送至渔屋"
+					type: "custom"
+				}
+				{
+					id: "6BF69BAE2039C27F"
+					item: {
+						Count: 1
+						id: "minecraft:fishing_rod"
+						tag: {
+							AttributeModifiers: [{
+								Amount: 2.0d
+								AttributeName: "minecraft:generic.luck"
+								Operation: 0
+								Slot: "mainhand"
+								UUID: [I;
+									173396509
+									456281163
+									-1308686953
+									-2078099386
+								]
+							}]
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:lure"
+									lvl: 5
+								}
+								{
+									id: "minecraft:luck_of_the_sea"
+									lvl: 5
+								}
+								{
+									id: "minecraft:mending"
+									lvl: 1
+								}
+							]
+							display: {
+								Name: "{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"color\":\"yellow\",\"text\":\"赐福的钓鱼竿^_^\"}],\"text\":\"\"}"
+							}
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				icon: {
+					Count: 1
+					id: "minecraft:fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "2823DB38DA595371"
+				item: "create:creative_crate"
+				title: "禁用直接完成"
+				type: "item"
+			}]
+			title: "渔屋"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"明智的选择"
+				"&e它们不会轻易出现在这里&r"
+				""
+				"&3极寒&r,游荡的亡灵生物是你要面对的敌人"
+				""
+				"相比那些吃人不吐骨头的怪物,这里简直就是天堂"
+			]
+			id: "310EF01FA4699696"
+			invisible: true
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:snow_block"
+				id: "30EA119E0A00DF82"
+				team_reward: false
+				title: "传送至雪原村庄"
+				type: "custom"
+			}]
+			tasks: [{
+				consume_items: true
+				icon: "minecraft:snow_block"
+				id: "65E555F7FF8CF272"
+				item: "create:creative_crate"
+				title: "禁用直接完成"
+				type: "item"
+			}]
+			title: "雪原村庄"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			description: ["&e速通玩家最爱&r"]
+			id: "371436E5B5207D17"
+			invisible: true
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:crying_obsidian"
+				id: "3FBF5AEE6D2A7DA2"
+				team_reward: false
+				title: "传送至废弃传送门"
+				type: "custom"
+			}]
+			tasks: [{
+				consume_items: true
+				icon: "minecraft:crying_obsidian"
+				id: "52B711EB3796EE2B"
+				item: "create:creative_crate"
+				title: "禁用直接完成"
+				type: "item"
+			}]
+			title: "废弃传送门"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"普遍存在的平原"
+				""
+				"自然万类共同竞技的大平台"
+				""
+				"灾难之下,连这份自然的平衡都难以维持了..."
+			]
+			id: "614D0D8B288E906E"
+			invisible: true
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:grass_block"
+				id: "5BF74FC6652D888F"
+				team_reward: false
+				title: "传送至平原村庄"
+				type: "custom"
+			}]
+			tasks: [{
+				consume_items: true
+				icon: "minecraft:grass_block"
+				id: "0338D0E36DA49321"
+				item: "create:creative_crate"
+				title: "禁用直接完成"
+				type: "item"
+			}]
+			title: "平原村庄"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"真不知道怎么说你好"
+				""
+				"你自己选的天崩开局,加油吧"
+				""
+				"......."
+				""
+				"送你个&e防毒面具&r吧"
+			]
+			id: "5E3261A684488766"
+			invisible: true
+			rewards: [
+				{
+					auto: "enabled"
+					icon: "spore:growth_mycelium"
+					id: "5BB53983AA8BEEA9"
+					team_reward: false
+					title: "传送至创世实验室"
+					type: "custom"
+				}
+				{
+					id: "29F5B7B495E8CFD4"
+					item: "spore:gas_mask"
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				icon: "spore:growth_mycelium"
+				id: "35501580BA1BE601"
+				item: "create:creative_crate"
+				title: "禁用直接完成"
+				type: "item"
+			}]
+			title: "&4创世实验室"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["3FD7C21940CFA0DB"]
+			description: [
+				"感谢罗德岛给予的支持"
+				"只需要&c缴纳一点路费&r,你将&e即刻被送往罗德岛给事处&r"
+				""
+				"相传这个组织是来源于世界之外的一个医药组织"
+				"现在正在积极从事感染者的救治工作"
+				""
+				"给事处并没有配备充足的药物"
+				"但是&3迷迭香小姐&r驻守在这里"
+				"或许&e她能护你周全&r"
+			]
+			hide_until_deps_complete: true
+			icon: "torchesbecomesunlight:rhodes_island_eye"
+			id: "79288EB2564382F7"
+			rewards: [{
+				auto: "enabled"
+				icon: "torchesbecomesunlight:rhodes_island_eye"
+				id: "7BEC7F4D2406DF45"
+				team_reward: true
+				title: "前往最近的罗德岛给事处"
+				type: "custom"
+			}]
+			shape: "none"
+			size: 3.0d
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "71B268C16E8E2D63"
+				item: { Count: 5, id: "lightmanscurrency:coin_gold" }
+				type: "item"
+			}]
+			title: "前往最近的罗德岛给事处"
+			x: -6.0d
+			y: -1.5d
+		}
+	]
 	title: "&8荒野"
 }

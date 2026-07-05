@@ -144,6 +144,28 @@
 			x: -6.0d
 			y: 0.0d
 		}
+		{
+			can_repeat: false
+			id: "226FBC8DF7E3432E"
+			rewards: [{
+				auto: "enabled"
+				command: "/title @s title {\"text\":\"求你了，看看任务书吧,物品栏左上角打开\",\"color\":\"gold\"}"
+				elevate_perms: true
+				id: "38E43EB6AAEDC6CF"
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "499F524C4F50817F"
+				stat: "minecraft:total_world_time"
+				title: "提醒"
+				type: "stat"
+				value: 10
+			}]
+			x: -6.5d
+			y: 3.5d
+		}
 	]
 	title: "检测"
 }
