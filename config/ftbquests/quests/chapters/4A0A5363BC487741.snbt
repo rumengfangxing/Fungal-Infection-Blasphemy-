@@ -52,7 +52,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6C63885E6C1712D5"]
 			description: [
 				"&4当你选择踏上亵渎之道时，神已经注意到了你，向你降下了七种诅咒"
 				"但是，降下诅咒的同时，你附带上了神性。而这个章节，将引你走上救赎"
@@ -73,13 +72,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "70800266654711FE"
-					table_id: 1741549655483791074L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "019A5B8D50476347"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -103,19 +100,16 @@
 				{
 					exclude_from_claim_all: true
 					id: "5382C18A3D91BB25"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "391DB89EF93CE608"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "7A7E2284230CCAE0"
-					table_id: 1741549655483791074L
 					type: "random"
 				}
 			]
@@ -154,13 +148,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "5725F56808B1E67A"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "358FBF6BD928CDEA"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -180,13 +172,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "4937CAE698CE5E39"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "480E1C9C07C95F1A"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -207,13 +197,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "0E85998D7F641CF0"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "75016819DEDC21D5"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -240,19 +228,16 @@
 				{
 					exclude_from_claim_all: true
 					id: "642B23E2BA9F6EAA"
-					table_id: 1741549655483791074L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "073A2E7D6BED37F3"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "39CF2D2736DF4256"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -278,19 +263,16 @@
 				{
 					exclude_from_claim_all: true
 					id: "7A75063FE11B9FE3"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "16781A19CB5ADF39"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "4601E904CD331631"
-					table_id: 1741549655483791074L
 					type: "random"
 				}
 			]
@@ -314,19 +296,16 @@
 				{
 					exclude_from_claim_all: true
 					id: "730D034B902D248F"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "5067897C45C261A0"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "74C71E58FF5567AB"
-					table_id: 1741549655483791074L
 					type: "random"
 				}
 			]
@@ -388,7 +367,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "0355D12625762DB1"
-					table_id: 6148969969489913202L
 					type: "random"
 				}
 				{
@@ -419,19 +397,16 @@
 				{
 					exclude_from_claim_all: true
 					id: "78DB42BB8FC4EEE5"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "3423CC2FFE58767B"
-					table_id: 1741549655483791074L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "2332FEF8F5887A8D"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -455,19 +430,16 @@
 				{
 					exclude_from_claim_all: true
 					id: "45513E9BE91AC500"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "0A16E59891389216"
-					table_id: 1741549655483791074L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "2697ED2A911BAEC4"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -486,13 +458,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "582F2A76F3779555"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "270143B282F8AB55"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -516,19 +486,16 @@
 				{
 					exclude_from_claim_all: true
 					id: "215A2913C45A1639"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "1F3590B3CE40EF0C"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "4A96131E64596E0E"
-					table_id: 1741549655483791074L
 					type: "random"
 				}
 			]
@@ -579,13 +546,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "64B93ECEE39EB3C0"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "6963284E8DE46489"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -604,13 +569,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "1EFD5C9F45A6F2B1"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "58C14B88CA28ABC5"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -629,13 +592,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "0CE429F98D0A1607"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "51D2D3FC9AF6FD71"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -655,13 +616,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "68103433CF4AC6C8"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "40EB02EE4AFD2F00"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -680,13 +639,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "68F7B764155C0F7F"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "149217C8489E09BB"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -705,13 +662,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "543DCBE56C08AEAE"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "13B395F1604A1020"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -730,13 +685,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "42AC4B2A54599BBC"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "6E9EDBF1AF0AD9B0"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -803,13 +756,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "40B8D8E3333F6894"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "21EC02CA18E33A1D"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -828,13 +779,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "04CE5CE08CE01C4D"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "5198CE5A4CCC207B"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]
@@ -859,13 +808,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "14C88F6A30CC55CF"
-					table_id: 6915865581086723551L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "491E3D8180FC7FCE"
-					table_id: 5750388060807619340L
 					type: "random"
 				}
 			]

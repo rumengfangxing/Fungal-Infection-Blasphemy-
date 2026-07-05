@@ -1,0 +1,264 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "39B089F5A9D4C6F4"
+	group: "7C3CC28B4F4C38EC"
+	icon: "enigmaticlegacy:cursed_ring"
+	id: "39B089F5A9D4C6F4"
+	images: [
+		{
+			height: 3.0d
+			image: "enigmaticlegacy:item/enigmatic_eye_dormant"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependency: "215D3703A213D335"
+			height: 3.0d
+			image: "enigmaticlegacy:item/enigmatic_eye"
+			order: 5
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependency: "23EF250B8502B51E"
+			height: 10.0d
+			image: "goetydelight:item/false_proverbs"
+			order: 1
+			rotation: 135.0d
+			width: 10.0d
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"起点,亦有可能是终点"
+				"如果你不想让你的故事草草了结的话,不妨&e跟随&r我的指引"
+				"我见过太多傲慢的半神诞生之初便将自己硬生生逼入绝境"
+				"我不认为你比他们更优秀"
+				""
+				"做出选择吧,是&b自由&r,还是让&e我帮你把握方向&r"
+			]
+			icon: {
+				Count: 1
+				id: "goeticlegacy:old_world_echo"
+				tag: {
+					Rarity: "epic"
+					SizeX: 43
+					SizeY: 43
+					SizeZ: 32
+					State: 1
+					TemplateName: "Thousand_Nights_Sanctuary"
+				}
+			}
+			id: "215D3703A213D335"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "367FCCA909D3E458"
+				table_id: 1469343899369008503L
+				team_reward: false
+				type: "choice"
+			}]
+			shape: "none"
+			size: 3.0d
+			tasks: [{
+				id: "7D7619675F8FD3AD"
+				title: "点击勾选以开启您的旅程"
+				type: "checkmark"
+			}]
+			title: "&4欢迎,受难者"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["215D3703A213D335"]
+			description: [
+				"在&e一层&r的&e大厅&r中,有你&e用得到的物资&r"
+				"如果你在&b如何进入建筑&r这一问题上犯了难"
+				"我给出的建议是&b打碎窗户进去&r"
+				""
+				"&8如果你在服务器游玩,发现初始结构已被完全破坏&r"
+				"&8完成本章其它可完成任务后&r"
+				"&8直接前往第二章,进行新手引导&r"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:compass"
+			id: "57D3706321DFAAE6"
+			tasks: [
+				{
+					consume_items: false
+					id: "638A2D768D3C3928"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 17
+							GunFireMode: "SEMI"
+							GunId: "tacz:glock_17"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					title: "任意枪械"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "09F70A6AF520EC8A"
+					item: {
+						Count: 1
+						id: "lrtactical:melee"
+						tag: {
+							Damage: 0
+							MeleeWeaponId: "lrtactical:baseball_bat"
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					title: "任意战术近战武器"
+					type: "item"
+				}
+			]
+			title: "初始建筑"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["57D3706321DFAAE6"]
+			description: [
+				"如果你足够细心的话"
+				"你可能会注意到你身上有"
+				"&e抗性提升V,隐身X,恒温&r"
+				"地图显示周围的区域为&e文明区"
+				"&r这些都是&e开局保护&r,防止你&4过早地与它们展开对抗&r"
+				""
+				"初始小屋里有它们的&c痕迹&r,我相信你注意到了"
+				"这里的&c文明已经被它们污染&r了"
+				"建议你尽快&e离开&r,&e去往更远更安全的地方&r再建立据点"
+				""
+				"如果你执意要&c留下&r的话,最好&c清理掉它们遗留的污物&r"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:cherry_sapling"
+			id: "59ED3CACCCE1E932"
+			tasks: [{
+				id: "53B08769CFC399C0"
+				title: "点击勾选以完成任务"
+				type: "checkmark"
+			}]
+			title: "明确情况"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["215D3703A213D335"]
+			description: [
+				"&c感染生物&r,&c感染环境&r"
+				"&4诅咒&r"
+				"&a饥饿&r,&b严寒&r,&6酷热&r"
+				"敌对你的一切生物"
+				"&4&m不怀好意的玩家&r&r"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/spawn_lightning_bolt"
+				}
+			}
+			id: "7D329D54348FA118"
+			tasks: [{
+				id: "518F5AFC14307BD0"
+				title: "点击勾选以完成任务"
+				type: "checkmark"
+			}]
+			title: "你将面对什么？"
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7D329D54348FA118"]
+			description: [
+				"你是一位受咒的半神"
+				"你有充足的行动力去改造眼前发生的一切"
+				"你有充足的思维能力去解决一个又一个迎面而来的难题"
+				""
+				"哦,我的朋友"
+				"收下这&e三瓶药水&r吧，把他们&5放在末影箱&r里"
+				"跟随那份世界最初对你降下的恶意(七咒)"
+				"“而那些坚韧顽强之人,将被给予祝福”"
+				""
+				"希望这三瓶药水能在&e绝境之中&r帮到你"
+				"或是让你在迷茫不敢向前时,给予你&e踏出第一步&r的勇气"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:player_head"
+			id: "526688B9DD496C7E"
+			rewards: [{
+				count: 3
+				id: "3E46C75D35267E95"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_invisibility"
+					}
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "12CDE686CD3801CD"
+				title: "点击勾选以完成任务"
+				type: "checkmark"
+			}]
+			title: "你能做什么？"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"526688B9DD496C7E"
+				"59ED3CACCCE1E932"
+			]
+			description: [
+				"用你的手里的枪或者是刀"
+				""
+				"&c&l去面对,去撕碎&r&r"
+				""
+				""
+				"&8(考虑到开局环境的复杂性,本章节不起前置作用,仅为前言)&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "spore:inf_diseased_villager_spawnegg"
+			id: "23EF250B8502B51E"
+			rewards: [{
+				id: "7728137F021F0C0B"
+				item: "enigmaticlegacy:soul_compass"
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "spore:inf_mobs"
+				criterion: ""
+				id: "7483A2FC19E0A9D8"
+				type: "advancement"
+			}]
+			title: "试着去面对吧"
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	title: "降临之初"
+}

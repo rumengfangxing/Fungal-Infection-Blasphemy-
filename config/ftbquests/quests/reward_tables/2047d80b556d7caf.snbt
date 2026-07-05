@@ -1,7 +1,7 @@
 {
 	id: "2047D80B556D7CAF"
 	loot_size: 1
-	order_index: 12
+	order_index: 3
 	rewards: [
 		{
 			command: "/curios add accessory @s 1"

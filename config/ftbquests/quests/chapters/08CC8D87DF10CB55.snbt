@@ -123,6 +123,27 @@
 			x: -2.0d
 			y: 3.5d
 		}
+		{
+			can_repeat: false
+			description: ["你不该来这里的,这里什么也没有"]
+			icon: "enigmaticlegacy:enigmatic_item"
+			id: "4A6688F841FFDAEF"
+			tasks: [
+				{
+					id: "393967ED0CB1DEBE"
+					item: "minecraft:structure_block"
+					type: "item"
+				}
+				{
+					id: "43EF3FFBCCBC1DDC"
+					item: "create:creative_crate"
+					type: "item"
+				}
+			]
+			title: "检测:我是老手"
+			x: -6.0d
+			y: 0.0d
+		}
 	]
 	title: "检测"
 }
