@@ -3,10 +3,14 @@
     "value": "ON"
   },
   "showHudFps": {
-    "value": "ON"
+    "value": "OFF"
+  },
+  "downscale": {
+    "value": "OFF"
   },
   "numberOfPasses": 3,
   "maxFps": 20,
+  "screenMaxFps": 20,
   "mapVanillaElements": {
     "minecraft:record_overlay": {
       "enabled": {
@@ -62,6 +66,12 @@
       },
       "pass": 3
     },
+    "yes_steve_model:ysm_extra_player": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "gnetum:status_bar": {
       "enabled": {
         "value": "AUTO"
@@ -81,6 +91,12 @@
       "pass": 3
     },
     "minecraft:player_list": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "yes_steve_model:ysm_loading_state": {
       "enabled": {
         "value": "AUTO"
       },
@@ -133,6 +149,12 @@
         "value": "AUTO"
       },
       "pass": 3
+    },
+    "yes_steve_model:ysm_debug_info": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     }
   },
   "mapModdedElementsPre": {
@@ -147,10 +169,22 @@
         "value": "AUTO"
       },
       "pass": 1
+    },
+    "chloride": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
     }
   },
   "mapModdedElementsPost": {
     "architectury": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
+    "embeddium_extra": {
       "enabled": {
         "value": "AUTO"
       },

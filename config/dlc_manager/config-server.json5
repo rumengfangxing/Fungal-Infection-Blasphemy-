@@ -2,7 +2,9 @@
   "server": {
     "serverSupport": true,
     "serverPort": 29690,
-    "serverPassword": ""
+    "serverPassword": "",
+    "modpackUrl": "",
+    "updateGithubRepo": ""
   },
   "ui": {
     "isEnableAllButtonShown": true,

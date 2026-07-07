@@ -31,8 +31,12 @@
   "immersiveportalsModInfoChecking": false,
   "majruszModsVersionCheck": false,
   "kiwiTier": false,
+  "createSnrDevCape": false,
+  "versionCheckWarn": true,
   "quarkCelebration": "HideLGBTQIA",
+  "vazkiiModsSpamLogs": false,
   "citadelAprilFoolsContent": false,
   "immersiveCavesDiscordMessage": false,
+  "ribbitsNoMorePrideMonth": false,
   "disabledMixins": []
 }

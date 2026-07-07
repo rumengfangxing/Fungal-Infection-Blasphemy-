@@ -1,7 +1,7 @@
 {
   "modpackMode": false,
   "fullScreen": "WINDOWED",
-  "fpsDisplayMode": "SIMPLE",
+  "fpsDisplayMode": "OFF",
   "fpsDisplayAlign": "LEFT",
   "fpsDisplayVAlign": "TOP",
   "fpsDisplaySystemMode": "OFF",
@@ -37,7 +37,7 @@
   "darknessFullMoonBright": 0.25,
   "hideJREMI": false,
   "hideJREMIHint": false,
-  "fontShadows": false,
+  "fontShadows": true,
   "leavesCulling": "OFF",
   "fastChests": false,
   "fastBeds": false,
@@ -50,8 +50,8 @@
   "tileEntityCullingDistanceX": 4096,
   "tileEntityCullingDistanceY": 32,
   "entityDistanceCulling": false,
-  "entityCullingDistanceX": 4096,
-  "entityCullingDistanceY": 32,
+  "entityCullingDistanceX": 256,
+  "entityCullingDistanceY": 16,
   "monsterDistanceCulling": false,
   "monsterCullingDistanceX": 16384,
   "monsterCullingDistanceY": 64,
@@ -65,8 +65,8 @@
   "tileEntityWhitelist": [
     "waterframes:all"
   ],
-  "borderlessAttachModeF11": "OFF",
+  "borderlessAttachModeF11": "ATTACH",
   "fastLanguageReload": true,
-  "enableZoom": false,
+  "enableZoom": true,
   "maxZoom": 50.0
 }

@@ -1,3 +1,8 @@
+[api]
+apiEnabled = false
+apiPort = 10086
+apiToken = ""
+
 [paths]
 dlcRoot = "DLC"
 taczRoot = "tacz"
@@ -6,12 +11,12 @@ datapackRoot = "datapacks"
 
 [ui]
 isEnableAllButtonShown = true
-isConfigButtonShown = false
+isConfigButtonShown = true
 isUButtomShown = true
 isUpdateManagerOn = true
-isSelfUpdateAutoCheckOn = true
+isSelfUpdateAutoCheckOn = false
 isPresetFuncOn = true
-ShowOnFirstRun = false
+ShowOnFirstRun = true
 WaitingTime = 0
 serverSupport = true
 titleAnchor = "auto"
@@ -29,13 +34,13 @@ noticePanelOffsetX = 0
 noticePanelOffsetY = 0
 noticePanelWidth = 0
 noticePanelHeight = 0
-modpackUrl = "https://www.mcmod.cn/modpack/1294.html"
-updateGithubRepo = "https://gitee.com/rumengfangxing/fib-fungal"
+modpackUrl = ""
+updateGithubRepo = ""
 
 [downloads]
-maxConcurrentDownloads = 5
-maxSegmentsPerFile = 4
-minSegmentMB = 20
+maxConcurrentDownloads = 64
+maxSegmentsPerFile = 8
+minSegmentMB = 1
 maxRetryCount = 5
 connectTimeoutSeconds = 10
-taskTimeoutSeconds = 60
+taskTimeoutSeconds = 120
