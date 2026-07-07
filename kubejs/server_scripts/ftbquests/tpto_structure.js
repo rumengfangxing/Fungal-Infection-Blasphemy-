@@ -2,49 +2,53 @@ const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const $HolderSet = Java.loadClass('net.minecraft.core.HolderSet')
 
-FTBQuestsEvents.customReward("5BB53983AA8BEEA9", event => {
-    teleportToStructure(event.player, 'spore:lab', 200)
-})
-
-FTBQuestsEvents.customReward("5BF74FC6652D888F", event => {
-    teleportToStructure(event.player, 'minecraft:village_plains', 200)
-})
-
-FTBQuestsEvents.customReward("42E0315F36424FC5", event => {
-    teleportToStructure(event.player, 'minecraft:village_desert', 200)
-})
-
-FTBQuestsEvents.customReward("30EA119E0A00DF82", event => {
-    teleportToStructure(event.player, 'minecraft:village_snowy', 200)
-})
-
-FTBQuestsEvents.customReward("48CA1FDA2649F4F7", event => {
-    teleportToStructure(event.player, 'dungeons_arise:greenwood_pub', 200)
-})
-
-FTBQuestsEvents.customReward("23311B84B1BFE3DB", event => {
-    teleportToStructure(event.player, 'dungeons_arise:fishing_hut', 200)
-})
-
-FTBQuestsEvents.customReward("3FBF5AEE6D2A7DA2", event => {
-    teleportToStructure(event.player, 'minecraft:ruined_portal', 200)
-})
-
-function teleportToStructure(player, structureName, searchChunkRadius) {
-    let level = player.getLevel()
-
-    let structureRegistry = level.registryAccess().registryOrThrow($Registries.STRUCTURE);
-    let structureKey = $ResourceKey.create(structureRegistry.key(), structureName);
-    let holder = structureRegistry.getHolder(structureKey);
-    let holderSet = $HolderSet.direct([holder.get()]);
-
-    let pair = level.getChunkSource().getGenerator().findNearestMapStructure(level, holderSet, player.blockPosition(), searchChunkRadius, false)
-
-    if (pair == null) {
-        player.sendSystemMessage("没有找到结构")
+FTBQuestsEvents.customReward("", event => {
+    const tags = event.reward.tags
+    if (tags.isEmpty()) {
+        console.warn('奖励tag填写错误')
         return
     }
+    const tagArray = tags.toArray()
+    switch (tagArray[0]) {
+        case 'tp_struct':
+            if (tagArray.length < 3) {
+                console.warn(`${event.reward.title.string} 的结构tag填写错误`)
+                return
+            }
+            teleportToStructure(event.player, tagArray[1] + ':' + tagArray[2], tagArray[3])
+            break
+        default:
+            console.warn(`${event.reward.title.string} 的奖励类型 ${tagArray[0]} 不存在`)
+            break
+    }
+})
 
-    let pos = pair.getFirst()
-    player.teleportTo("minecraft:overworld", pos.getX(), 0, pos.getZ(), player.yaw, player.pitch)
+/**
+ * @param {Internal.Player} player
+ * @param {string} structureName
+ * @param {string} searchChunkRadius
+ */
+function teleportToStructure(player, structureName, searchChunkRadius) {
+    searchChunkRadius = parseInt(searchChunkRadius, 10)
+    if (!searchChunkRadius) searchChunkRadius = 200
+    let level = player.getLevel()
+
+    let structureRegistry = level.registryAccess().registryOrThrow($Registries.STRUCTURE)
+    let structureKey = $ResourceKey.create(structureRegistry.key(), structureName)
+    let holder = structureRegistry.getHolder(structureKey)
+    holder.map(h => {
+        let holderSet = $HolderSet.direct([h])
+
+        let pair = level.getChunkSource().getGenerator().findNearestMapStructure(level, holderSet, player.blockPosition(), searchChunkRadius, false)
+        if (pair == null) {
+            player.sendSystemMessage('范围内没有找到结构')
+            return
+        }
+
+        let pos = pair.getFirst()
+        let height = level.getHeight('motion_blocking_no_leaves', pos.getX(), pos.getZ())
+        player.teleportTo(level.dimension, pos.getX() + 0.5, height, pos.getZ() + 0.5, player.yaw, player.pitch)
+    }).orElseGet(() => {
+        console.warn(`结构 ${structureName} 不存在`)
+    })
 }

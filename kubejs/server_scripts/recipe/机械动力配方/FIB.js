@@ -2,12 +2,13 @@ ServerEvents.recipes(event =>{
     const create = event.recipes.create
 
 //压块
-
+////杂质气体压制液化
 create.compacting(
   [Fluid.of('liquid_ammonia',50),
    Fluid.of('createdieselgenerators:biodiesel',500),
    Fluid.water(250)],
    Fluid.of('magazine_gas',500))
+
 ////战术道具相关
 create.compacting(
   Item.of('fib:napalm_lump',4),
@@ -39,6 +40,21 @@ event.custom({
       "maxChargeRate":2000000
     })
 //混合搅拌
+//火药
+create.mixing('6x minecraft:gunpowder',[
+  'minecraft:sugar',
+  '2x fib:saltpeter',
+  '3x minecraft:charcoal'
+]);
+event.shaped('4x minecraft:gunpowder', [
+  'SNN',
+  'CCC',
+  '   '
+], {
+  S: 'minecraft:sugar',
+  N: 'fib:saltpeter',
+  C: 'minecraft:charcoal'
+});
 ////战术道具相关
 create.mixing("fib:c4_explosive",
   ["minecraft:blaze_powder",

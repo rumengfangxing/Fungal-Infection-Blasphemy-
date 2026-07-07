@@ -5,16 +5,16 @@
 	order_index: 5
 	rewards: [
 		{
-			command: "/ftbquests change_progress @s complete 310EF01FA4699696"
-			elevate_perms: true
 			icon: "minecraft:snow_block"
-			silent: true
+			tags: [
+				"tp_struct"
+				"minecraft"
+				"village_snowy"
+			]
 			title: "&3[极寒]&r&e[村庄]&r雪原村庄&3(极寒可抑菌)"
-			type: "command"
+			type: "custom"
 		}
 		{
-			command: "/ftbquests change_progress @s complete 380156E0B4AB5859"
-			elevate_perms: true
 			icon: {
 				Count: 1
 				id: "legendarysurvivaloverhaul:desert_chestplate"
@@ -22,21 +22,25 @@
 					Damage: 0
 				}
 			}
-			silent: true
+			tags: [
+				"tp_struct"
+				"minecraft"
+				"village_desert"
+			]
 			title: "&6[酷热]&r&e[村庄]&r沙漠村庄"
-			type: "command"
+			type: "custom"
 		}
 		{
-			command: "/ftbquests change_progress @s complete 614D0D8B288E906E"
-			elevate_perms: true
 			icon: "minecraft:grass_block"
-			silent: true
+			tags: [
+				"tp_struct"
+				"minecraft"
+				"village_plains"
+			]
 			title: "&e[村庄]&r平原村庄"
-			type: "command"
+			type: "custom"
 		}
 		{
-			command: "/ftbquests change_progress @s complete 2A8A0D1E8BEB5AE9"
-			elevate_perms: true
 			icon: {
 				Count: 1
 				id: "minecraft:fishing_rod"
@@ -44,33 +48,43 @@
 					Damage: 0
 				}
 			}
-			silent: true
+			tags: [
+				"tp_struct"
+				"dungeons_arise"
+				"fishing_hut"
+			]
 			title: "&3[荒野]&r&e[额外奖励]&r渔屋"
-			type: "command"
+			type: "custom"
 		}
 		{
-			command: "/ftbquests change_progress @s complete 371436E5B5207D17"
-			elevate_perms: true
 			icon: "minecraft:crying_obsidian"
-			silent: true
+			tags: [
+				"tp_struct"
+				"minecraft"
+				"ruined_portal"
+			]
 			title: "&3[荒野]&r废弃传送门"
-			type: "command"
+			type: "custom"
 		}
 		{
-			command: "/ftbquests change_progress @s complete 11493F1C3D3E0F15"
-			elevate_perms: true
 			icon: "legendarysurvivaloverhaul:cactus_juice"
-			silent: true
+			tags: [
+				"tp_struct"
+				"dungeons_arise"
+				"greenwood_pub"
+			]
 			title: "&c[探索]&r&e[村民]&r绿荫酒馆"
-			type: "command"
+			type: "custom"
 		}
 		{
-			command: "/ftbquests change_progress @s complete 5E3261A684488766"
-			elevate_perms: true
-			icon: "spore:growth_mycelium"
-			silent: true
+			icon: "legendarysurvivaloverhaul:cactus_juice"
+			tags: [
+				"tp_struct"
+				"spore"
+				"lab"
+			]
 			title: "&4[感染]&r&c[探索]&r&d[蘑菇岛]&r创世实验室"
-			type: "command"
+			type: "custom"
 		}
 		{ item: "lightmanscurrency:coin_emerald", title: "我都不想选,&e奖励绿宝石币一枚&r" }
 	]

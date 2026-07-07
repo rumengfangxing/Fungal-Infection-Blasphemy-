@@ -164,14 +164,6 @@
 			]
 			id: "11493F1C3D3E0F15"
 			invisible: true
-			rewards: [{
-				auto: "enabled"
-				icon: "legendarysurvivaloverhaul:cactus_juice"
-				id: "48CA1FDA2649F4F7"
-				team_reward: false
-				title: "传送至绿茵酒吧"
-				type: "custom"
-			}]
 			tasks: [{
 				consume_items: true
 				icon: "legendarysurvivaloverhaul:cactus_juice"
@@ -192,20 +184,6 @@
 			]
 			id: "380156E0B4AB5859"
 			invisible: true
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					Count: 1
-					id: "legendarysurvivaloverhaul:desert_chestplate"
-					tag: {
-						Damage: 0
-					}
-				}
-				id: "42E0315F36424FC5"
-				team_reward: false
-				title: "传送至沙漠村庄"
-				type: "custom"
-			}]
 			tasks: [{
 				consume_items: true
 				icon: {
@@ -235,20 +213,6 @@
 			id: "2A8A0D1E8BEB5AE9"
 			invisible: true
 			rewards: [
-				{
-					auto: "enabled"
-					icon: {
-						Count: 1
-						id: "minecraft:fishing_rod"
-						tag: {
-							Damage: 0
-						}
-					}
-					id: "23311B84B1BFE3DB"
-					team_reward: false
-					title: "传送至渔屋"
-					type: "custom"
-				}
 				{
 					id: "6BF69BAE2039C27F"
 					item: {
@@ -290,6 +254,22 @@
 					team_reward: false
 					type: "item"
 				}
+				{
+					count: 2
+					id: "7A11FBD8D7C09C88"
+					item: {
+						Count: 1
+						id: "touhou_little_maid:chair"
+						tag: {
+							IsNoGravity: 0b
+							ModelId: "touhou_little_maid:beach_chair"
+							MountedHeight: 0.125f
+							TameableCanRide: 1b
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
 			]
 			tasks: [{
 				consume_items: true
@@ -320,14 +300,6 @@
 			]
 			id: "310EF01FA4699696"
 			invisible: true
-			rewards: [{
-				auto: "enabled"
-				icon: "minecraft:snow_block"
-				id: "30EA119E0A00DF82"
-				team_reward: false
-				title: "传送至雪原村庄"
-				type: "custom"
-			}]
 			tasks: [{
 				consume_items: true
 				icon: "minecraft:snow_block"
@@ -344,14 +316,6 @@
 			description: ["&e速通玩家最爱&r"]
 			id: "371436E5B5207D17"
 			invisible: true
-			rewards: [{
-				auto: "enabled"
-				icon: "minecraft:crying_obsidian"
-				id: "3FBF5AEE6D2A7DA2"
-				team_reward: false
-				title: "传送至废弃传送门"
-				type: "custom"
-			}]
 			tasks: [{
 				consume_items: true
 				icon: "minecraft:crying_obsidian"
@@ -374,14 +338,6 @@
 			]
 			id: "614D0D8B288E906E"
 			invisible: true
-			rewards: [{
-				auto: "enabled"
-				icon: "minecraft:grass_block"
-				id: "5BF74FC6652D888F"
-				team_reward: false
-				title: "传送至平原村庄"
-				type: "custom"
-			}]
 			tasks: [{
 				consume_items: true
 				icon: "minecraft:grass_block"

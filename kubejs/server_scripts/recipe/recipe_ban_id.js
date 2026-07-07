@@ -80,5 +80,10 @@ const removeRecipeIds = [
 //战术道具配方禁用    
     'lrtactical:throwable/molotov',
     'lrtactical:throwable/m67',
-    'lrtactical:throwable/rgn'
+    'lrtactical:throwable/rgn',
+//火药相关配方禁用
+    "tacz:gunpowder",
+    "create:milling/sandstone",
+//神圣之石配方禁用
+    "enigmaticaddons:bless_stone"
 ]

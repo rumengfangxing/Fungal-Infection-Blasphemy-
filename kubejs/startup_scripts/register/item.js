@@ -41,6 +41,7 @@ StartupEvents.registry('item', event => {
 	event.create('fib:hex_catalyst').glow(true).rarity('epic')
 	event.create('fib:napalm_lump')
 	event.create('fib:c4_explosive')
+	event.create('fib:injection_pen')
 
 
 

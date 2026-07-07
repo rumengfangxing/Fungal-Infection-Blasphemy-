@@ -1,0 +1,103 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "none"
+	filename: "4FF2B6CF071CC67B"
+	group: "21B93F40B013EE45"
+	icon: {
+		Count: 1
+		id: "explorerscompass:explorerscompass"
+		tag: { }
+	}
+	id: "4FF2B6CF071CC67B"
+	images: [
+		{
+			height: 2.0d
+			hover: ["村民结构"]
+			image: "ftbchunks:textures/faces/minecraft/villager.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			height: 2.0d
+			hover: ["灾厄结构"]
+			image: "ftbchunks:textures/faces/minecraft/pillager.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			height: 2.0d
+			hover: ["探索结构"]
+			image: "emi_loot:textures/gui/chest.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			hover: ["巫法结构"]
+			image: "minecraft:block/soul_campfire_log_lit"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			height: 2.0d
+			hover: ["下界结构"]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			height: 2.0d
+			hover: ["末地结构"]
+			image: "minecraft:block/end_portal_frame_top"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			hover: ["人类结构"]
+			image: "refinedstorage:block/controller/cutouts/light_blue"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			height: 2.0d
+			hover: ["神迹"]
+			image: "goetydelight:textures/mob_effect/the_pale_messenger.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: 9.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "0DE12211AB78A420"
+		size: 1.5d
+		tasks: [{
+			icon: "minecraft:emerald"
+			id: "7D17D3B3AFF6CCDE"
+			structure: "#minecraft:village"
+			title: "访问村庄"
+			type: "structure"
+		}]
+		title: "村庄"
+		x: -4.5d
+		y: -8.0d
+	}]
+	title: "探索"
+}

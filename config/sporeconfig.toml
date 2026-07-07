@@ -197,8 +197,8 @@
 
 [Effects]
 	"Should the effect overlays be active ?" = true
-	"Mobs that are immune to the mycelium infection" = ["minecraft:ghast", "minecraft:magma_cube", "minecraft:skeleton_horse", "minecraft:snow_golem", "minecraft:stray", "minecraft:wither", "minecraft:skeleton"]
-	"Mobs that are damaged by corrosion" = ["minecraft:iron_golem"]
+	"Mobs that are immune to the mycelium infection" = []
+	"Mobs that are damaged by corrosion" = ["minecraft:iron_golem", "goety:hostile_redstone_monstrosity", "goety:hostile_redstone_golem", "goety:obsidian_monolith", "goety:grave_golem"]
 
 ["Mob Evolutions and Infection System"]
 
