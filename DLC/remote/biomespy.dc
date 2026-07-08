@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = ["https://mediafilez.forgecdn.net/files/7488/30/biomespy-1.3.3-all.jar", "https://edge.forgecdn.net/files/7488/30/biomespy-1.3.3-all.jar", "https://cdn.modrinth.com/data/OieZFwRr/versions/JA9DqZQc/biomespy-1.3.3-all.jar"]
+priority = ["curseforge", "modrinth", "directUrl"]
+
+[basic]
+identifier = ""
+file_name = ""
+type = "mod"
+RedirectUrl = ""
+isInList = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+
+[dependencies]
+
+[conflicts]
+
+[DisplayName]
+zh_cn = "&#00aaaa [优化]§rBiomeSpy"
+
+[tip]

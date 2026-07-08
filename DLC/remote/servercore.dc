@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = ["https://cdn.modrinth.com/data/4WWQxlQP/versions/rx1c7m6q/servercore-forge-1.5.2%2B1.20.1.jar"]
+priority = ["curseforge", "modrinth", "directUrl"]
+
+[basic]
+identifier = ""
+file_name = ""
+type = "mod"
+RedirectUrl = ""
+isInList = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+
+[dependencies]
+
+[conflicts]
+
+[DisplayName]
+zh_cn = "&#00aaaa [优化]§rServerCore"
+
+[tip]

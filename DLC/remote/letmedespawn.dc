@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = ["https://mediafilez.forgecdn.net/files/6311/230/letmedespawn-1.20.x-forge-1.5.0.jar", "https://edge.forgecdn.net/files/6311/230/letmedespawn-1.20.x-forge-1.5.0.jar", "https://cdn.modrinth.com/data/vE2FN5qn/versions/1VmupN41/letmedespawn-1.20.x-forge-1.5.0.jar"]
+priority = ["curseforge", "modrinth", "directUrl"]
+
+[basic]
+identifier = ""
+file_name = ""
+type = "mod"
+RedirectUrl = ""
+isInList = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+
+[dependencies]
+
+[conflicts]
+
+[DisplayName]
+zh_cn = "&#00aaaa [优化]§rLetMeDespawn"
+
+[tip]

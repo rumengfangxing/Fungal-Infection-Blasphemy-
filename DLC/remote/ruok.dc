@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = ["https://mediafilez.forgecdn.net/files/7637/298/ruok-forge_1.20.1_Pre-Release_6-1.7.4.jar", "https://edge.forgecdn.net/files/7637/298/ruok-forge_1.20.1_Pre-Release_6-1.7.4.jar"]
+priority = ["curseforge", "modrinth", "directUrl"]
+
+[basic]
+identifier = ""
+file_name = ""
+type = "mod"
+RedirectUrl = ""
+isInList = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+
+[dependencies]
+
+[conflicts]
+
+[DisplayName]
+zh_cn = "&#00aaaa [优化]§rRuok"
+
+[tip]
