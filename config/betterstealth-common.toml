@@ -1,7 +1,7 @@
 #Maximum percent the detection range can be reduced by all stealth sources combined.
 #(0.80 = up to 80% reduction.).
 #Range: 0.0 ~ 1.0
-maxDetectionReductionPercent = 0.90
+maxDetectionReductionPercent = 0.9
 #Minimum allowed detection radius in blocks.
 #Range: 0.0 ~ 128.0
 minDetectionRadiusBlocks = 2.0
@@ -20,13 +20,13 @@ idleOrCrouchReductionPercent = 0.75
 #Detection range reduction when the player is behind the mob's look direction.
 #(0.50 = 50% reduction).
 #Range: 0.0 ~ 1.0
-behindMobReductionPercent = 0.70
+behindMobReductionPercent = 0.7
 #Detection range reduction when both body and head are concealed by grass.
 #(0.50 = 50% reduction).
 #Range: 0.0 ~ 1.0
-grassCoverReductionPercent = 0.70
+grassCoverReductionPercent = 0.7
 #Follow range reduction factor from Blindness effect applied to mobs.
 #(0.5 = 50% reduction to follow range).
 #Range: 0.0 ~ 1.0
-blindnessFollowRangeReduction = 0.80
+blindnessFollowRangeReduction = 0.8
 
