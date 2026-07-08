@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/7179/999/threatengl-forge-2.0.4-release.10.jar",
+  "https://edge.forgecdn.net/files/7179/999/threatengl-forge-2.0.4-release.10.jar",
+  "https://cdn.modrinth.com/data/RSFrpoou/versions/tHOhq8kE/threatengl-forge-2.0.4-release.10.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "threatengl-forge-2.0.4-release.10.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = " &#00aaaa[优化]§r威胁引擎"
+
+[tip]

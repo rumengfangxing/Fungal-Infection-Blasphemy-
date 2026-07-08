@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/8206/638/colorwheel-forge-1.2.9%2bmc1.20.1.jar",
+  "https://edge.forgecdn.net/files/8206/638/colorwheel-forge-1.2.9%2bmc1.20.1.jar",
+  "https://cdn.modrinth.com/data/BzHgFoGz/versions/eveWpY7P/colorwheel-forge-1.2.9%2Bmc1.20.1.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "colorwheel-forge-1.2.9+mc1.20.1.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = "&#00aaaa [优化]§rColorWheel"
+
+[tip]

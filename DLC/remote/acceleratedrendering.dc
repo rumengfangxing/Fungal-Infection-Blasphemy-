@@ -1,0 +1,25 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/8368/303/acceleratedrendering-1.0.11.1-1.20.1-alpha.jar",
+  "https://edge.forgecdn.net/files/8368/303/acceleratedrendering-1.0.11.1-1.20.1-alpha.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "acceleratedrendering-1.0.11.1-1.20.1-alpha.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = "&#00aaaa[优化]§r加速渲染"
+
+[tip]

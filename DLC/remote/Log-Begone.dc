@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/4583/425/Log-Begone-Forge-1.20.1-1.0.8.jar",
+  "https://edge.forgecdn.net/files/4583/425/Log-Begone-Forge-1.20.1-1.0.8.jar",
+  "https://cdn.modrinth.com/data/9ON3zv6e/versions/HEJGfa5J/Log-Begone-Forge-1.20.1-1.0.8.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "Log-Begone-Forge-1.20.1-1.0.8.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = "&#00aaaa[优化]§r日志消除"
+
+[tip]

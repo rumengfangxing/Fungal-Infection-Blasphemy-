@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/7949/342/createbetterfps-1.20.1-1.1.2.jar",
+  "https://edge.forgecdn.net/files/7949/342/createbetterfps-1.20.1-1.1.2.jar",
+  "https://cdn.modrinth.com/data/lMYIHZNH/versions/75GMC9GD/createbetterfps-1.20.1-1.1.2.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "createbetterfps-1.20.1-1.1.2.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = "&#00aaaa [优化]§rCreateBetterFps"
+
+[tip]

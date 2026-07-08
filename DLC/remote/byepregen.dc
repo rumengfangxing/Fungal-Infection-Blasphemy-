@@ -1,0 +1,25 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/8318/59/byepregen-1.0.2.2.jar",
+  "https://edge.forgecdn.net/files/8318/59/byepregen-1.0.2.2.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "byepregen-1.0.2.2.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = "&#00aaaa [优化]§rByePregen"
+
+[tip]

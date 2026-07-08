@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/7581/36/particle_core-0.3.3%2b1.20.1%2bforge.jar",
+  "https://edge.forgecdn.net/files/7581/36/particle_core-0.3.3%2b1.20.1%2bforge.jar",
+  "https://cdn.modrinth.com/data/RSeLon5O/versions/cFafZfyr/particle_core-0.3.3%2B1.20.1%2Bforge.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "particle_core-0.3.3+1.20.1+forge.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = "&#00aaaa[优化]§r粒子核心"
+
+[tip]

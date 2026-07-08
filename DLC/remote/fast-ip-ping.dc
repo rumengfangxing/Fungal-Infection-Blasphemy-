@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/7936/389/fast-ip-ping-v1.0.11-mc1.20.4-forge.jar",
+  "https://edge.forgecdn.net/files/7936/389/fast-ip-ping-v1.0.11-mc1.20.4-forge.jar",
+  "https://cdn.modrinth.com/data/9mtu0sUO/versions/WVhGsL3a/fast-ip-ping-v1.0.11-mc1.20.4-forge.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "fast-ip-ping-v1.0.11-mc1.20.4-forge.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = "&#00aaaa [优化]§rFast-Ip-Ping"
+
+[tip]

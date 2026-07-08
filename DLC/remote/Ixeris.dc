@@ -1,0 +1,26 @@
+[download]
+modrinth_projectid = ""
+modrinth_versionid = ""
+curseforge_projectid = ""
+curseforge_fileid = ""
+directUrl = [
+  "https://mediafilez.forgecdn.net/files/8296/873/Ixeris-4.5.1%2b1.20.1-forge.jar",
+  "https://edge.forgecdn.net/files/8296/873/Ixeris-4.5.1%2b1.20.1-forge.jar",
+  "https://cdn.modrinth.com/data/p8RJPJIC/versions/U0GeiJqV/Ixeris-4.5.1%2B1.20.1-forge.jar"
+]
+priority = "curseforge,modrinth,directUrl"
+
+[basic]
+identifier = ""
+type = "mod"
+file_name = "Ixeris-4.5.1+1.20.1-forge.jar"
+isEnabled = true
+isHidden = false
+AllowEnableByAll = true
+alarm = false
+RedirectUrl = ""
+
+[DisplayName]
+zh_cn = "&#00aaaa[优化]§rIxeris"
+
+[tip]

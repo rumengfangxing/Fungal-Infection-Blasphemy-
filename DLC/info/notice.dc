@@ -1,21 +1,19 @@
 isNoticeEnabled = true
-neverShow = false
+neverShow = true
 ShowFrequency = "perlaunchmanager"
 
 [Title]
-  en_us = "Fungal-Infection-Blasphemy modpack DLC content"
-  zh_cn = "菌染亵渎整合包DLC内容"
+en_us = "Fungal-Infection-Blasphemy modpack DLC content"
+zh_cn = "菌染亵渎整合包DLC内容"
 
 [Subhead]
-  enabled = "true"
-  en_us = "Made by rumengfangxing"
-  zh_cn = "by：如梦方醒"
+enabled = "true"
+zh_cn = "by：如梦方醒"
+en_us = "Made by rumengfangxing"
 
 [Contents]
-  en_us = ""
-  zh_cn = """
+en_us = ""
+zh_cn = """
 官方讨论群：[854637057](https://qm.qq.com/q/wGvf5NDvZ6)，可以直接点击跳转链接
 §a[百科站网址](https://www.mcmod.cn/modpack/1294.html)
 """
-
-
