@@ -46,8 +46,8 @@ function teleportToStructure(player, structureName, searchChunkRadius) {
         }
 
         let pos = pair.getFirst()
-        let height = level.getHeight('motion_blocking_no_leaves', pos.getX(), pos.getZ())
-        player.teleportTo(level.dimension, pos.getX() + 0.5, height, pos.getZ() + 0.5, player.yaw, player.pitch)
+        player.potionEffects.add('minecraft:slow_falling', 45 * 20, 0)
+        player.teleportTo(level.dimension, pos.getX() + 0.5, 180, pos.getZ() + 0.5, player.yaw, player.pitch)
     }).orElseGet(() => {
         console.warn(`结构 ${structureName} 不存在`)
     })

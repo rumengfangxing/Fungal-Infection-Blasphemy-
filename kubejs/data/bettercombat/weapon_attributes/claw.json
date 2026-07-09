@@ -21,8 +21,9 @@
         "upswing": 0.6,
         "animation": "bettercombat:one_handed_slam",
         "swing_sound": {
-          "id": "bettercombat:glaive_slash"
-        }
+          "id": "biomancy:flesh_block.break"
+        },
+        "pitch":"0"
       },
       {
         "conditions":["OFF_HAND_ONLY"],
@@ -32,28 +33,6 @@
         "animation": "bettercombat:one_handed_swipe_horizontal_right",
         "swing_sound": {
           "id": "bettercombat:sword_slash"
-        }
-      },
-      {
-        "conditions":["DUAL_WIELDING_SAME","MAIN_HAND_ONLY"],
-        "hitbox": "FORWARD_BOX",
-        "damage_multiplier":1.3,
-        "angle": 90,
-        "upswing": 0.5,
-        "animation": "bettercombat:dual_handed_slash_cross",
-        "swing_sound": {
-          "id": "bettercombat:glaive_slash"
-        }
-      },
-      {
-        "conditions":["DUAL_WIELDING_SAME","OFF_HAND_ONLY"],
-        "hitbox": "FORWARD_BOX",
-        "damage_multiplier":1.3,
-        "angle": 120,
-        "upswing": 0.5,
-        "animation": "bettercombat:dual_handed_slash_uncross",
-        "swing_sound": {
-          "id": "bettercombat:glaive_slash"
         }
       }
     ]

@@ -20,6 +20,17 @@
         "swing_sound": {
           "id": "bettercombat:axe_slash"
         }
+      },
+      {
+        "conditions":["MAIN_HAND_ONLY"],
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 1.3,
+        "angle": 90,
+        "upswing": 0.5,
+        "animation": "bettercombat:one_handed_slam",
+        "swing_sound": {
+          "id": "bettercombat:hammer_slam"
+        }
       }
     ]
   }

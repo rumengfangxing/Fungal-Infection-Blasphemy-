@@ -1,6 +1,6 @@
 {
   "attributes": {
-    "attack_range": 2.5,
+    "attack_range": 3,
     "two_handed": true,
     "category": "double_axe",
     "attacks": [
@@ -16,7 +16,7 @@
       },
       {
         "hitbox": "HORIZONTAL_PLANE",
-        "damage_multiplier": 1,
+        "damage_multiplier": 1.3,
         "angle": 360,
         "upswing": 0.5,
         "animation": "bettercombat:two_handed_spin",
