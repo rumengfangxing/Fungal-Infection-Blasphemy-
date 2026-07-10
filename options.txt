@@ -124,7 +124,7 @@ key_key.modernfix.config:key.keyboard.unknown
 key_key.riautomobility.boarding_as_passenger:key.keyboard.r
 key_key.visual_set_edit.cast_spell:key.keyboard.r
 key_key.searchonmcmod.search_on_mcmod:key.keyboard.r:CONTROL
-key_key.searchonmcmod.copy_item_name:key.keyboard.unknown
+key_key.searchonmcmod.copy_item_name:key.keyboard.c:CONTROL
 key_key.powerful_dummy.cleardps:key.keyboard.grave.accent
 key_key.confluence.metal_detector:key.keyboard.right.control
 key_key.confluence.step_stool:key.keyboard.unknown
@@ -235,11 +235,11 @@ key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.refinedstorage.focusSearchBar:key.keyboard.tab
 key_key.refinedstorage.clearGridCraftingMatrix:key.keyboard.x:CONTROL
 key_key.refinedstorage.openWirelessGrid:key.keyboard.unknown
