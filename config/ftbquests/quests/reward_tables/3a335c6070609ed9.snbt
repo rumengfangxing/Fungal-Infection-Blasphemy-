@@ -1,0 +1,12 @@
+{
+	id: "3A335C6070609ED9"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ item: "lightmanscurrency:coin_gold" }
+		{ count: 4, item: "lightmanscurrency:coin_gold" }
+		{ item: "lightmanscurrency:coin_emerald" }
+		{ count: 4, item: "lightmanscurrency:coin_emerald" }
+	]
+	title: "钱币奖励"
+}

@@ -22,6 +22,13 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Appli
     }
 })
 
+// // 实体交易系统 - 右键生物交互
+// ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerInteractEvent$EntityInteract', event => {
+//     if (event.getEntity() && !event.getEntity().getLevel().isClientSide()) {
+//         global.ForgeEntityInteractEvent(event)
+//     }
+// })
+
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHealEvent', event => {
     if (event.getEntity() && !event.getEntity().getLevel().isClientSide()) {
         global.ForgeLivingHealEvent(event)

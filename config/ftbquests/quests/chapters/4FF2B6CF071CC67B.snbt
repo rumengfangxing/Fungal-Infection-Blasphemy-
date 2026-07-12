@@ -82,6 +82,15 @@
 			x: -6.0d
 			y: 9.5d
 		}
+		{
+			height: 2.0d
+			hover: ["感染"]
+			image: "spore:block/fleshy_fungus"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: 12.5d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]

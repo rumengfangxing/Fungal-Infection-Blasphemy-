@@ -1,0 +1,249 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 6.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "spore:claw",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:tendons",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:mutated_fiber",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:spine_fragment",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:tumor",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:fungal_bonemeal",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:decayed_limbs",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 2.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "spore:fleshy_bone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:fleshy_claw",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "spore:spine",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "spore:mutated_heart",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_copper",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 5,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_copper",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_gold",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:sharpening_agent",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:hardening_agent",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "spore:integrating_agent",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "enigmaticaddons:earth_heart_fragment",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "enigmaticdice:enigmatic_die",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "enigmaticlegacy:soul_crystal",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:ammo",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AmmoId:\"tacz_unidict:pistol\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:ammo",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 6,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AmmoId:\"tacz_unidict:pistol\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tacz:ammo",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AmmoId:\"tacz_unidict:shot\"}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "artifacts:artifacts",
+          "expand": true
+        }
+      ]
+    }
+  ]
+}
