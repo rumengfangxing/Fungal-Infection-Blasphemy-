@@ -152,7 +152,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 3.0d
+			x: 19.5d
 			y: 0.0d
 		}
 		{
@@ -162,17 +162,16 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 5.0d
-			y: 0.0d
+			x: 19.5d
+			y: 4.5d
 		}
 		{
 			click: "#205ABA889BEB2CB6"
 			height: 3.0d
-			hover: ["图像未记录在案..."]
-			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			image: "spore:textures/gui/creatures/spitter.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 7.0d
+			x: 9.5d
 			y: 0.0d
 		}
 		{
@@ -182,8 +181,8 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 9.0d
-			y: 0.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			click: "#6CA75C105F9E00A0"
@@ -192,7 +191,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 11.0d
+			x: 11.5d
 			y: 0.0d
 		}
 		{
@@ -211,7 +210,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 13.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -221,7 +220,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 15.0d
+			x: 15.5d
 			y: 0.0d
 		}
 		{
@@ -231,7 +230,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 17.0d
+			x: 17.5d
 			y: 0.0d
 		}
 		{
@@ -247,12 +246,11 @@
 		{
 			click: "#124354C43CB39CC2"
 			height: 3.0d
-			hover: ["图像未记录在案..."]
-			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			image: "spore:textures/gui/creatures/inebriator.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: -3.0d
-			y: 4.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			click: "#27E06BDD502C0D36"
@@ -301,7 +299,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 7.0d
+			x: 7.5d
 			y: 4.5d
 		}
 		{
@@ -311,7 +309,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 9.0d
+			x: 9.5d
 			y: 4.5d
 		}
 		{
@@ -321,7 +319,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 11.0d
+			x: 11.5d
 			y: 4.5d
 		}
 		{
@@ -331,7 +329,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 13.0d
+			x: 13.5d
 			y: 4.5d
 		}
 		{
@@ -341,7 +339,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 15.0d
+			x: 15.5d
 			y: 4.5d
 		}
 		{
@@ -351,7 +349,7 @@
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 17.0d
+			x: 17.5d
 			y: 4.5d
 		}
 		{
@@ -405,8 +403,9 @@
 			y: 8.5d
 		}
 		{
+			click: "#2F026AB65C4BD9EF"
 			height: 1.0d
-			hover: ["实验体"]
+			hover: ["超进化"]
 			image: "minecraft:item/light_04"
 			rotation: 0.0d
 			width: 1.0d
@@ -492,6 +491,330 @@
 			width: 3.0d
 			x: 9.0d
 			y: 12.5d
+		}
+		{
+			click: "#570B05FF2BE49F49"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/infected_vindicator.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			click: "#48E7F311D1E186D3"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/infected_evoker.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			click: "#5C569FE84AFBD6CE"
+			height: 1.0d
+			hover: ["类器官体"]
+			image: "minecraft:item/light_05"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.0d
+			y: 16.5d
+		}
+		{
+			click: "#387568DBB70EE040"
+			height: 1.0d
+			hover: ["未知"]
+			image: "minecraft:item/light_06"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.0d
+			y: 21.0d
+		}
+		{
+			click: "#60FE505BE02A63F4"
+			height: 1.0d
+			hover: ["灾厄级造物"]
+			image: "minecraft:item/light_07"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.0d
+			y: 26.0d
+		}
+		{
+			click: "#4F0BFEB87A3CF662"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/mound.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -5.0d
+			y: 16.5d
+		}
+		{
+			click: "#4F3F6DBFFC3D2212"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/vigil.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.0d
+			y: 16.5d
+		}
+		{
+			click: "#76468478F8C3E45E"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/umarmer.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.0d
+			y: 16.5d
+		}
+		{
+			click: "#0F9DB9D9089D5387"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/usurper.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.5d
+			y: 16.5d
+		}
+		{
+			click: "#10E7F351B265E927"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/verwahrung.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.0d
+			y: 16.5d
+		}
+		{
+			click: "#137D087D93FF17E8"
+			height: 6.0d
+			image: "spore:textures/gui/creatures/proto_hivemind.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 22.5d
+			y: 16.5d
+		}
+		{
+			click: "#0474C1CC84DDC03C"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/womb.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.0d
+			y: 16.5d
+		}
+		{
+			click: "#3A2E7B14EE05821B"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 12.0d
+			y: 16.5d
+		}
+		{
+			click: "#6841AD95CDA59BC6"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 15.0d
+			y: 16.5d
+		}
+		{
+			click: "#00E031AD91584621"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 18.0d
+			y: 16.5d
+		}
+		{
+			height: 1.0d
+			hover: ["氛围组(属于未知)"]
+			image: "minecraft:item/light_00"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.5d
+			y: 21.0d
+		}
+		{
+			click: "#26AD9FDECCCEAFD8"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.0d
+			y: 21.0d
+		}
+		{
+			click: "#3172A314E8C1E53F"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "spore:textures/gui/creatures/scamper.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -5.0d
+			y: 21.0d
+		}
+		{
+			click: "#24B9A01F1D0FEC89"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -1.0d
+			y: 21.0d
+		}
+		{
+			click: "#2DC28E0DA848F68C"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 1.0d
+			y: 21.0d
+		}
+		{
+			click: "#5EF29C6B3CADA684"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.0d
+			y: 21.0d
+		}
+		{
+			click: "#037B894D768094F3"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.0d
+			y: 21.0d
+		}
+		{
+			click: "#7CA8D8002F4B431F"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 7.0d
+			y: 21.0d
+		}
+		{
+			click: "#198706E5988758F2"
+			height: 2.0d
+			image: "spore:item/illusion"
+			rotation: 0.0d
+			width: 2.0d
+			x: 11.5d
+			y: 21.5d
+		}
+		{
+			click: "#480B5609288ED647"
+			height: 2.0d
+			image: "spore:item/bottle_scent"
+			rotation: 0.0d
+			width: 2.0d
+			x: 14.5d
+			y: 21.5d
+		}
+		{
+			click: "#261E297B5D53D62F"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/howitzer.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -4.5d
+			y: 26.0d
+		}
+		{
+			click: "#1D3D7A66A94B94FF"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/hindenburg.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -1.0d
+			y: 26.0d
+		}
+		{
+			click: "#747E747A10836F4D"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/hohlfresser.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 2.5d
+			y: 26.0d
+		}
+		{
+			click: "#239A6E91C88D7845"
+			height: 3.0d
+			image: "spore:textures/gui/creatures/sieger_border.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.0d
+			y: 26.0d
+		}
+		{
+			click: "#186CC1829F130E0B"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.0d
+			y: 26.0d
+		}
+		{
+			click: "#249504C731CCFBE0"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 26.0d
+		}
+		{
+			click: "#3C5D4F5E7A2C0026"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 16.5d
+			y: 26.0d
+		}
+		{
+			click: "#14C206048602E82D"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 20.0d
+			y: 26.0d
+		}
+		{
+			click: "#25DFDEB898AD932A"
+			height: 3.0d
+			hover: ["图像未记录在案..."]
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 23.5d
+			y: 26.0d
 		}
 	]
 	order_index: 2
@@ -669,7 +992,7 @@
 				value: 1L
 			}]
 			title: "激跃者"
-			x: 3.5d
+			x: 20.0d
 			y: 0.5d
 		}
 		{
@@ -732,13 +1055,14 @@
 				value: 1L
 			}]
 			title: "鞭笞者"
-			x: 5.5d
-			y: 0.5d
+			x: 20.0d
+			y: 5.0d
 		}
 		{
 			hide_dependent_lines: true
-			icon: "minecraft:writable_book"
+			icon: "confluence:demon_heart"
 			id: "205ABA889BEB2CB6"
+			invisible: true
 			tasks: [{
 				entity: "spore:spitter"
 				icon: "goety:transfer_scroll"
@@ -747,7 +1071,7 @@
 				value: 1L
 			}]
 			title: "喷吐者"
-			x: 7.5d
+			x: 10.0d
 			y: 0.5d
 		}
 		{
@@ -762,8 +1086,8 @@
 				value: 1L
 			}]
 			title: "咆哮者"
-			x: 9.5d
-			y: 0.5d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
 			hide_dependent_lines: true
@@ -778,7 +1102,7 @@
 				value: 1L
 			}]
 			title: "追迹者"
-			x: 11.5d
+			x: 12.0d
 			y: 0.5d
 		}
 		{
@@ -793,7 +1117,7 @@
 				value: 1L
 			}]
 			title: "蛮兽"
-			x: 13.5d
+			x: 14.0d
 			y: 0.5d
 		}
 		{
@@ -808,7 +1132,7 @@
 				value: 1L
 			}]
 			title: "巫裂餮"
-			x: 15.5d
+			x: 16.0d
 			y: 0.5d
 		}
 		{
@@ -823,7 +1147,7 @@
 				value: 1L
 			}]
 			title: "恶涎者"
-			x: 17.5d
+			x: 18.0d
 			y: 0.5d
 		}
 		{
@@ -838,7 +1162,7 @@
 				value: 1L
 			}]
 			title: "石像鬼"
-			x: 17.5d
+			x: 18.0d
 			y: 5.0d
 		}
 		{
@@ -853,7 +1177,7 @@
 				value: 1L
 			}]
 			title: "守护者"
-			x: 15.5d
+			x: 16.0d
 			y: 5.0d
 		}
 		{
@@ -868,7 +1192,7 @@
 				value: 1L
 			}]
 			title: "纳克拉维"
-			x: 13.5d
+			x: 14.0d
 			y: 5.0d
 		}
 		{
@@ -883,7 +1207,7 @@
 				value: 1L
 			}]
 			title: "塞壬"
-			x: 11.5d
+			x: 12.0d
 			y: 5.0d
 		}
 		{
@@ -898,7 +1222,7 @@
 				value: 1L
 			}]
 			title: "深潜者"
-			x: 9.5d
+			x: 10.0d
 			y: 5.0d
 		}
 		{
@@ -913,7 +1237,7 @@
 				value: 1L
 			}]
 			title: "食腐鹫"
-			x: 7.5d
+			x: 8.0d
 			y: 5.0d
 		}
 		{
@@ -978,8 +1302,9 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "minecraft:writable_book"
+			icon: "confluence:demon_heart"
 			id: "124354C43CB39CC2"
+			invisible: true
 			tasks: [{
 				entity: "spore:inebriater"
 				icon: "goety:transfer_scroll"
@@ -988,8 +1313,8 @@
 				value: 1L
 			}]
 			title: "酗酒者"
-			x: -2.5d
-			y: 5.0d
+			x: 8.0d
+			y: 0.5d
 		}
 		{
 			hide_dependent_lines: true
@@ -1153,6 +1478,9 @@
 				"44772647380AAAA4"
 				"7219E1A18B3188F7"
 				"71137828580DA929"
+				"48E7F311D1E186D3"
+				"570B05FF2BE49F49"
+				"552CE817452F4853"
 			]
 			icon: {
 				Count: 1
@@ -1305,6 +1633,16 @@
 			y: 10.0d
 		}
 		{
+			dependencies: [
+				"5FC1D28759F90EA8"
+				"7C7144EF7F99FDBE"
+				"18953BC7A627A52F"
+				"7B3DACEE52BDDF2D"
+				"719B4AF0BF39BFCD"
+				"2533F78383A69B82"
+				"19DBB91362E1E597"
+				"359D27EED45A823C"
+			]
 			icon: {
 				Count: 1
 				id: "touhou_little_maid:entity_placeholder"
@@ -1320,9 +1658,559 @@
 				title: "点击以完成任务"
 				type: "checkmark"
 			}]
-			title: "实验体"
+			title: "超进化"
 			x: -6.0d
 			y: 14.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "570B05FF2BE49F49"
+			invisible: true
+			tasks: [{
+				entity: "spore:inf_vindicator"
+				icon: "goety:transfer_scroll"
+				id: "7F0731C385D3277B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "寄染卫道士"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "48E7F311D1E186D3"
+			invisible: true
+			tasks: [{
+				entity: "spore:inf_evoker"
+				icon: "goety:transfer_scroll"
+				id: "574F64A51A56050E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "寄染唤魔者"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "4F0BFEB87A3CF662"
+			invisible: true
+			tasks: [{
+				entity: "spore:mound"
+				icon: "goety:transfer_scroll"
+				id: "7C3BCD119E3F5196"
+				type: "kill"
+				value: 1L
+			}]
+			title: "肉囊"
+			x: -4.0d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "4F3F6DBFFC3D2212"
+			invisible: true
+			tasks: [{
+				entity: "spore:vigil"
+				icon: "goety:transfer_scroll"
+				id: "4115F4EB9ABA227F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "哨戒者"
+			x: -1.0d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "76468478F8C3E45E"
+			invisible: true
+			tasks: [{
+				entity: "spore:umarmed"
+				icon: "goety:transfer_scroll"
+				id: "68709AC1C2FFDDBD"
+				type: "kill"
+				value: 1L
+			}]
+			title: "恒守者"
+			x: 1.5d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "3A2E7B14EE05821B"
+			invisible: true
+			tasks: [{
+				entity: "spore:braurei"
+				icon: "goety:transfer_scroll"
+				id: "11EA206AC85A6273"
+				type: "kill"
+				value: 1L
+			}]
+			title: "酿毒体"
+			x: 12.5d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "0474C1CC84DDC03C"
+			invisible: true
+			tasks: [{
+				entity: "spore:reconstructor"
+				icon: "goety:transfer_scroll"
+				id: "4B814D9B6A6B2E19"
+				type: "kill"
+				value: 1L
+			}]
+			title: "菌兽构建者"
+			x: 10.0d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "10E7F351B265E927"
+			invisible: true
+			tasks: [{
+				entity: "spore:verva"
+				icon: "goety:transfer_scroll"
+				id: "330D4D3A6398BEEE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "保育体"
+			x: 7.0d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "0F9DB9D9089D5387"
+			invisible: true
+			tasks: [{
+				entity: "spore:usurper"
+				icon: "goety:transfer_scroll"
+				id: "1DA43EC89AB9C18C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "僭主者"
+			x: 4.0d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "6841AD95CDA59BC6"
+			invisible: true
+			tasks: [{
+				entity: "spore:delusioner"
+				icon: "goety:transfer_scroll"
+				id: "6CF676A472DB4AC3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "妄念魔"
+			x: 15.5d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "00E031AD91584621"
+			invisible: true
+			tasks: [{
+				entity: "spore:hivetumor"
+				icon: "goety:transfer_scroll"
+				id: "411446AFDD34019B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "蜂巢肿瘤"
+			x: 18.5d
+			y: 17.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "137D087D93FF17E8"
+			invisible: true
+			tasks: [{
+				entity: "spore:proto"
+				icon: "goety:transfer_scroll"
+				id: "1D4CDA907CCF781C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "雏生联合心智"
+			x: 24.5d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"137D087D93FF17E8"
+				"00E031AD91584621"
+				"3A2E7B14EE05821B"
+				"0474C1CC84DDC03C"
+				"10E7F351B265E927"
+				"6841AD95CDA59BC6"
+				"0F9DB9D9089D5387"
+				"4F0BFEB87A3CF662"
+				"4F3F6DBFFC3D2212"
+				"76468478F8C3E45E"
+			]
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "5C569FE84AFBD6CE"
+			invisible: true
+			size: 2.0d
+			tasks: [{
+				id: "7B05C9D613B1F2BC"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "类器官体"
+			x: -6.0d
+			y: 18.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "26AD9FDECCCEAFD8"
+			tasks: [{
+				entity: "spore:bairn"
+				icon: "goety:transfer_scroll"
+				id: "20EED8718AC8F369"
+				type: "kill"
+				value: 1L
+			}]
+			title: "菌染幼体"
+			x: -2.5d
+			y: 21.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "3172A314E8C1E53F"
+			invisible: true
+			tasks: [{
+				entity: "spore:scamper"
+				icon: "goety:transfer_scroll"
+				id: "3B6716ED8F82F16E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "窜扰者"
+			x: -4.5d
+			y: 21.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "24B9A01F1D0FEC89"
+			tasks: [{
+				entity: "spore:gastgaber"
+				icon: "goety:transfer_scroll"
+				id: "6551CF20EC325C54"
+				type: "kill"
+				value: 1L
+			}]
+			title: "菌主"
+			x: -0.5d
+			y: 21.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "2DC28E0DA848F68C"
+			tasks: [{
+				entity: "spore:specter"
+				icon: "goety:transfer_scroll"
+				id: "071FA3FCF381ADA4"
+				type: "kill"
+				value: 1L
+			}]
+			title: "幽灵"
+			x: 1.5d
+			y: 21.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "5EF29C6B3CADA684"
+			tasks: [{
+				entity: "goety:reaper"
+				icon: "goety:transfer_scroll"
+				id: "530B688CA570C5F9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "收割者"
+			x: 3.5d
+			y: 21.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "037B894D768094F3"
+			tasks: [{
+				entity: "spore:inf_contruct"
+				icon: "goety:transfer_scroll"
+				id: "7B4E6A7E268183D7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "菌染构造体"
+			x: 5.5d
+			y: 21.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "7CA8D8002F4B431F"
+			tasks: [{
+				entity: "spore:vanguard"
+				icon: "goety:transfer_scroll"
+				id: "3A356437265498E8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "先兆者"
+			x: 7.5d
+			y: 21.5d
+		}
+		{
+			dependencies: [
+				"26AD9FDECCCEAFD8"
+				"24B9A01F1D0FEC89"
+				"7CA8D8002F4B431F"
+				"037B894D768094F3"
+				"3172A314E8C1E53F"
+				"5EF29C6B3CADA684"
+				"2DC28E0DA848F68C"
+			]
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "387568DBB70EE040"
+			invisible: true
+			size: 2.0d
+			tasks: [{
+				id: "7D159F19E54F7A44"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "未知"
+			x: -6.0d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"1D3D7A66A94B94FF"
+				"261E297B5D53D62F"
+				"249504C731CCFBE0"
+				"747E747A10836F4D"
+				"186CC1829F130E0B"
+				"3C5D4F5E7A2C0026"
+				"25DFDEB898AD932A"
+				"239A6E91C88D7845"
+				"14C206048602E82D"
+			]
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "60FE505BE02A63F4"
+			invisible: true
+			size: 2.0d
+			tasks: [{
+				id: "08DC0EE6CB53D315"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "灾厄级造物"
+			x: -6.0d
+			y: 28.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "198706E5988758F2"
+			title: "幻形魔"
+			x: 12.5d
+			y: 22.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "minecraft:writable_book"
+			id: "480B5609288ED647"
+			title: "毒气"
+			x: 15.0d
+			y: 22.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "239A6E91C88D7845"
+			invisible: true
+			tasks: [{
+				entity: "spore:sieger"
+				icon: "goety:transfer_scroll"
+				id: "531116B532C34C2B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "强袭魔"
+			x: 7.5d
+			y: 26.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "747E747A10836F4D"
+			invisible: true
+			tasks: [{
+				entity: "spore:hohlfresser"
+				icon: "goety:transfer_scroll"
+				id: "253F756ABB56A4E7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "噬袭魔"
+			x: 3.0d
+			y: 26.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "1D3D7A66A94B94FF"
+			invisible: true
+			tasks: [{
+				entity: "spore:hindenburg"
+				icon: "goety:transfer_scroll"
+				id: "04873C793095A31B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "菌械空堡"
+			x: 0.0d
+			y: 26.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "261E297B5D53D62F"
+			invisible: true
+			tasks: [{
+				entity: "spore:howitzer"
+				icon: "goety:transfer_scroll"
+				id: "3C332ABBFA091C25"
+				type: "kill"
+				value: 1L
+			}]
+			title: "菌械重炮"
+			x: -3.5d
+			y: 26.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "249504C731CCFBE0"
+			invisible: true
+			tasks: [{
+				entity: "spore:gazenbreacher"
+				icon: "goety:transfer_scroll"
+				id: "1E7D273119F40D14"
+				type: "kill"
+				value: 1L
+			}]
+			title: "凝袭魔"
+			x: 10.5d
+			y: 26.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "186CC1829F130E0B"
+			invisible: true
+			tasks: [{
+				entity: "spore:leviathan"
+				icon: "goety:transfer_scroll"
+				id: "048DB2D398EE1A54"
+				type: "kill"
+				value: 1L
+			}]
+			title: "破舰魔"
+			x: 14.0d
+			y: 26.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "3C5D4F5E7A2C0026"
+			invisible: true
+			tasks: [{
+				entity: "spore:kraken"
+				icon: "goety:transfer_scroll"
+				id: "48798EFCB898079C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "沉渊魔"
+			x: 17.5d
+			y: 26.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "14C206048602E82D"
+			invisible: true
+			tasks: [{
+				entity: "spore:stahl"
+				icon: "goety:transfer_scroll"
+				id: "4C5968A3754B854B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "蚀刃魔"
+			x: 21.0d
+			y: 26.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "confluence:demon_heart"
+			id: "25DFDEB898AD932A"
+			invisible: true
+			tasks: [{
+				entity: "spore:verfall"
+				icon: "goety:transfer_scroll"
+				id: "76373125214748D9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "朽翼魔"
+			x: 24.5d
+			y: 26.5d
 		}
 	]
 	title: "&4感染"

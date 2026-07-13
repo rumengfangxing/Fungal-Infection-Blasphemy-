@@ -72,7 +72,7 @@ const BLOCK_CONFIGS = [
         speedMultiplier: 0.3,
         maxDistance: 5,
         soundId: "biomancy:flesh_block.break",
-        loopSoundId: "minecraft:block.anvil.place",
+        loopSoundId: "bettercombat:mace_slam",
         loopInterval: 10,
         lootTable: "fibloot:interaction/hammer/remains",
         cdTicks: 25,
@@ -88,8 +88,177 @@ const BLOCK_CONFIGS = [
             { name: '惩罚-破坏',     weight: 20, breakBlock: true,  giveLoot: false, effects: [], damage: 0, message: '§c砸得太重，东西全毁了。' },
             { name: '惩罚-不破坏',   weight: 5, breakBlock: false, giveLoot: false, effects: [{id:'mining_fatigue',duration:10,amplifier:2}], damage: 1, message: '§c震得你手发麻...' }
         ]
-    }
+    },
+    {
+        blockId: "spore:remains",
+        toolType: "clippers",
+        interactDuration: 4,
+        speedMultiplier: 0.1,
+        maxDistance: 4,
+        soundId: "biomancy:flesh_block.break",
+        loopSoundId: "minecraft:entity.sheep.shear",
+        loopInterval: 10,
+        lootTable: "fibloot:interaction/clippers/remains",
+        cdTicks: 80,
+        cdMin: 20,
+        atkSpdBase: 4,
+        minDelay: 10,
+        damageMode: 'bodypart',
+        bodypartHpDmg: 1,
+        text: "修剪中",
+        replaceWith: null,
+        results: [
+            { name: '成功',          weight: 90, breakBlock: true,  giveLoot: true,  effects: [],damage: 0, message: '§a✓ 修剪成功！' },
+            { name: '惩罚-破坏',     weight: 5, breakBlock: true,  giveLoot: false, effects: [], damage: 0, message: '§c剪坏了...。' },
+            { name: '惩罚-不破坏',   weight: 5, breakBlock: false, giveLoot: false, effects: [{id:'mining_fatigue',duration:10,amplifier:2}], damage: 6, message: '§c剪到手了,痛！' }
+        ]
+    },
 ////墙壁残躯
+    {
+        blockId: "spore:wall_remains",
+        toolType: "none",
+        interactDuration: 6,
+        speedMultiplier: 0.05,
+        maxDistance: 3,
+        soundId: "biomancy:flesh_block.break",
+        loopSoundId: "create:clipboard_check",
+        loopInterval: 10,
+        lootTable: "fibloot:interaction/hand/remains",
+        cdTicks: 120,
+        cdMin: 30,
+        atkSpdBase: 4,
+        minDelay: 10,
+        damageMode: 'bodypart',
+        bodypartHpDmg: 1,
+        text: "摸索中",    // 默认进度条文本，tool 未指定时使用
+        replaceWith: null,  // null=破坏  或直接填入"方块id"以替换
+        results: [
+            { name: '成功',          weight: 80, breakBlock: true,  giveLoot: true,  effects: [{id:'minecraft:mining_fatigue',duration:10,amplifier:1}], damage: 0, message: '§a✓ 摸索成功！' },
+            { name: '惩罚-破坏',     weight: 15, breakBlock: true,  giveLoot: false, effects: [{id:'minecraft:mining_fatigue',duration:10,amplifier:3}], damage: 4, message: '§c你粗暴地破坏了它，里面的东西也跟着损毁了。' },
+            { name: '惩罚-不破坏',   weight: 5, breakBlock: false, giveLoot: false, effects: [{id:'minecraft:nausea',duration:10,amplifier:1}], damage: 2, message: '§c你感到有些恶心...' }
+        ]
+    },
+    {
+        blockId: "spore:wall_remains",
+        toolType: "saw",
+        interactDuration: 3,
+        speedMultiplier: 0.2,
+        maxDistance: 5,
+        soundId: "biomancy:flesh_block.break",
+        loopSoundId: "create:sanding_short",
+        loopInterval: 10,
+        lootTable: "fibloot:interaction/saw/remains",
+        cdTicks: 40,
+        cdMin: 10,
+        atkSpdBase: 3,
+        minDelay: 5,
+        damageMode: 'bodypart',
+        bodypartHpDmg: 1,
+        text: "切割中",
+        replaceWith: null,
+        results: [
+            { name: '成功',          weight: 90, breakBlock: true,  giveLoot: true,  effects: [],damage: 0, message: '§a✓ 切割成功！' },
+            { name: '惩罚-破坏',     weight: 8, breakBlock: true,  giveLoot: false, effects: [], damage: 0, message: '§c你切坏了它，里面的东西也跟着损毁了。' },
+            { name: '惩罚-不破坏',   weight: 2, breakBlock: false, giveLoot: false, effects: [{id:'majruszsdifficulty:bleeding',duration:10,amplifier:3}], damage: 10, message: '§c该死的，锯到手了' }
+        ]
+    },
+    {
+        blockId: "spore:wall_remains",
+        toolType: "hammer",
+        interactDuration: 2,
+        speedMultiplier: 0.3,
+        maxDistance: 5,
+        soundId: "biomancy:flesh_block.break",
+        loopSoundId: "bettercombat:mace_slam",
+        loopInterval: 10,
+        lootTable: "fibloot:interaction/hammer/remains",
+        cdTicks: 25,
+        cdMin: 5,
+        atkSpdBase: 1,
+        minDelay: 5,
+        damageMode: 'bodypart',
+        bodypartHpDmg: 1,
+        text: "锤击中",
+        replaceWith: null,
+        results: [
+            { name: '成功',          weight: 75, breakBlock: true,  giveLoot: true,  effects: [],damage: 0, message: '§a✓ 一锤砸开！' },
+            { name: '惩罚-破坏',     weight: 20, breakBlock: true,  giveLoot: false, effects: [], damage: 0, message: '§c砸得太重，东西全毁了。' },
+            { name: '惩罚-不破坏',   weight: 5, breakBlock: false, giveLoot: false, effects: [{id:'mining_fatigue',duration:10,amplifier:2}], damage: 1, message: '§c震得你手发麻...' }
+        ]
+    },
+    {
+        blockId: "spore:wall_remains",
+        toolType: "clippers",
+        interactDuration: 4,
+        speedMultiplier: 0.1,
+        maxDistance: 4,
+        soundId: "biomancy:flesh_block.break",
+        loopSoundId: "minecraft:entity.sheep.shear",
+        loopInterval: 10,
+        lootTable: "fibloot:interaction/clippers/remains",
+        cdTicks: 80,
+        cdMin: 20,
+        atkSpdBase: 4,
+        minDelay: 10,
+        damageMode: 'bodypart',
+        bodypartHpDmg: 1,
+        text: "修剪中",
+        replaceWith: null,
+        results: [
+            { name: '成功',          weight: 90, breakBlock: true,  giveLoot: true,  effects: [],damage: 0, message: '§a✓ 修剪成功！' },
+            { name: '惩罚-破坏',     weight: 5, breakBlock: true,  giveLoot: false, effects: [], damage: 0, message: '§c剪坏了...。' },
+            { name: '惩罚-不破坏',   weight: 5, breakBlock: false, giveLoot: false, effects: [{id:'mining_fatigue',duration:10,amplifier:2}], damage: 6, message: '§c剪到手了,痛！' }
+        ]
+    },
+////冰冻残骸
+    {
+        blockId: "spore:frozen_remains",
+        toolType: "saw",
+        interactDuration: 3,
+        speedMultiplier: 0.2,
+        maxDistance: 5,
+        soundId: "minecraft:block.glass.break",
+        loopSoundId: "create:sanding_short",
+        loopInterval: 10,
+        lootTable: "fibloot:interaction/saw/frozen_remains",
+        cdTicks: 40,
+        cdMin: 10,
+        atkSpdBase: 3,
+        minDelay: 5,
+        damageMode: 'bodypart',
+        bodypartHpDmg: 1,
+        text: "切割中",
+        replaceWith: null,
+        results: [
+            { name: '成功',          weight: 90, breakBlock: true,  giveLoot: true,  effects: [],damage: 0, message: '§a✓ 切割成功！' },
+            { name: '惩罚-破坏',     weight: 8, breakBlock: true,  giveLoot: false, effects: [], damage: 0, message: '§c你切坏了它，里面的东西也跟着损毁了。' },
+            { name: '惩罚-不破坏',   weight: 2, breakBlock: false, giveLoot: false, effects: [{id:'majruszsdifficulty:bleeding',duration:10,amplifier:3}], damage: 10, message: '§c该死的，锯到手了' }
+        ]
+    },
+    {
+        blockId: "spore:frozen_remains",
+        toolType: "hammer",
+        interactDuration: 2,
+        speedMultiplier: 0.3,
+        maxDistance: 5,
+        soundId: "torchesbecomesunlight:snownova.ice_crystal",
+        loopSoundId: "torchesbecomesunlight:snownova.ice_crystal",
+        loopInterval: 10,
+        lootTable: "fibloot:interaction/hammer/frozen_remains",
+        cdTicks: 25,
+        cdMin: 5,
+        atkSpdBase: 1,
+        minDelay: 5,
+        damageMode: 'bodypart',
+        bodypartHpDmg: 1,
+        text: "锤击中",
+        replaceWith: null,
+        results: [
+            { name: '成功',          weight: 75, breakBlock: true,  giveLoot: true,  effects: [],damage: 0, message: '§a✓ 一锤砸开！' },
+            { name: '惩罚-破坏',     weight: 20, breakBlock: true,  giveLoot: false, effects: [], damage: 0, message: '§c砸得太重，东西全毁了。' },
+            { name: '惩罚-不破坏',   weight: 5, breakBlock: false, giveLoot: false, effects: [{id:'mining_fatigue',duration:10,amplifier:2}], damage: 1, message: '§c震得你手发麻...' }
+        ]
+    }
 ]
 
 // ===== 工具函数 =====
@@ -369,7 +538,7 @@ PlayerEvents.tick(function(event) {
         }
     }
     if (result.damage > 0) applyDamage(player, result.damage, cfg)
-    if (result.giveLoot) level.runCommandSilent('loot give @p loot ' + cfg.lootTable)
+    if (result.giveLoot) level.runCommandSilent('loot spawn ' + x + ' ' + y + ' ' + z + ' loot ' + cfg.lootTable)
     if (result.breakBlock) {
         if (cfg.replaceWith && cfg.replaceWith.length > 0) {
             level.getBlock(x, y, z).set(cfg.replaceWith)
