@@ -25,6 +25,7 @@
 	"item.default.tooltip.ctrl_hint": "§6按 [Ctrl] 查看更多信息",
 	"item.default.tooltip.alt_hint": "§6按 [Alt] 查看更多信息",
 	
-	"item.goety.undeath_potion.tip.failed": "你已是真菌生物,无法变为巫妖"
+	"item.goety.undeath_potion.tip.failed": "你已是真菌生物,无法变为巫妖",
 
+	"effect.fib.frost_resistance": "冻伤抗性"
 }

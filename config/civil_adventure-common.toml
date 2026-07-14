@@ -1,0 +1,44 @@
+
+#冒险区检测范围 — 仿文礼 detectionRadius
+[detection]
+	#冒险区判定半径（区块），3 = 7×7 区块区域
+	#Range: 1 ~ 16
+	radius_chunks = 6
+
+#分数计算
+[scoring]
+	#归一化除数（仿文礼 normalizationFactor），原始分 ÷ 此值 = 归一化分
+	#Range: 0.1 ~ 1000.0
+	normalization_divisor = 20.0
+	#冒险区触发阈值（归一化分 ≥ 此值即视为冒险区）
+	#Range: 0.01 ~ 1.0
+	zone_threshold = 0.5
+	#覆盖文礼文明区的阈值（归一化分），0=任何方块存在即覆盖
+	#Range: 0.0 ~ 1.0
+	civ_override_threshold = 0.9
+
+#Xaeros 小地图冒险区颜色
+[xaeros_color]
+	#冒险区色 (hex RGB)
+	color = "CC1111"
+
+#Xaeros 透明度
+[xaeros_alpha]
+	#冒险区不透明度 (0-255, 255=完全不透明)
+	#Range: 0 ~ 255
+	alpha = 160
+
+#界面提示
+[hud]
+	#进入/离开冒险区时显示提示
+	enabled = true
+
+#实体强化扫描
+[entity_scan]
+	#实体检测间隔（tick），20 tick = 1 秒
+	#Range: 20 ~ 12000
+	interval_ticks = 100
+	#离开冒险区后属性保留时间（tick），到期回收
+	#Range: 20 ~ 12000
+	buff_timeout_ticks = 200
+

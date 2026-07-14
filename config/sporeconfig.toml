@@ -5,16 +5,16 @@
 	"Maximum number of scents" = 20
 	"Maximum number of regular infected" = 40
 	"Maximum number of evolved infected" = 25
-	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:specter", "spore:inf_construct", "spore:scamper"]
+	"Mobs that will not be despawned by the system" = ["spore:proto", "spore:reconstructor", "spore:gastgaber", "spore:vanguard", "spore:reaper", "spore:specter", "spore:inf_construct", "spore:scamper"]
 	"Dissable despawn system?" = false
 
 [Spawns]
-	"mob|weight|minimum|maximum" = ["spore:inf_human|25|2|5", "spore:inf_drowned|5|1|2", "spore:inf_pillager|10|1|3", "spore:inf_villager|10|1|3", "spore:inf_player|10|1|2", "spore:inf_wanderer|10|1|2", "spore:inf_witch|10|1|2", "spore:inf_hazmat|5|1|1", "spore:inf_vindicator|15|1|1", "spore:inf_husk|25|2|5", "spore:bairn|10|1|2", "spore:saugling|10|1|1"]
-	"Mobs that spawn in laboratory type structures" = ["spore:inf_hazmat|70|2|5", "spore:saugling|15|1|2", "spore:inebriater|30|2|3", "spore:inf_player|20|1|2", "spore:plagued|15|1|2", "spore:lacerator|20|1|3", "spore:biobloob|10|1|2"]
+	"mob|weight|minimum|maximum" = ["spore:inf_human|80|2|5", "spore:inf_drowned|10|1|2", "spore:inf_pillager|40|1|3", "spore:inf_villager|70|1|3", "spore:inf_player|20|1|2", "spore:inf_wanderer|25|1|2", "spore:inf_witch|25|1|2", "spore:inf_diseased_villager|10|1|2"]
+	"Mobs that spawn in laboratory type structures" = ["spore:inf_hazmat|70|2|5", "spore:saugling|15|1|2", "spore:inebriater|30|2|3", "spore:chemist|30|2|3", "spore:conductor|30|2|3", "spore:inf_player|20|1|2", "spore:plagued|15|1|2", "spore:lacerator|20|1|3", "spore:biobloob|10|1|2"]
 	#Default false
 	"Should mobs be also able to spawn in daytime?" = true
 	#Default minecraft:is_overworld
-	"Dictates in what biome the infected spawn" = ["minecraft:is_overworld", "minecraft:crimson_forest", "minecraft:warped_forest"]
+	"Dictates in what biome the infected spawn" = ["minecraft:is_overworld"]
 	#Default 40
 	MobCap = 24
 	#Default forge:is_cold,minecraft:deep_dark
@@ -25,7 +25,7 @@
 	"Should a calamity load chunks?" = true
 	#Default true
 	"Should evolved and hyper have a damage cap on hard mode?" = true
-	"Hunger in seconds" = 2400
+	"Hunger in seconds" = 1200
 	#Default true
 	"Should the infected starve overtime?" = true
 	"The amount of needed Proto Hiveminds for the world to change (Proto World Modifier)" = 2
@@ -46,15 +46,15 @@
 
 [Explosion]
 	#Default 3
-	"Volatile explosion" = 6
+	"Volatile explosion" = 3
 	#Default 2
-	"Tumor explosion" = 4
+	"Tumor explosion" = 2
 	#Default 3
-	"Infected Scientist gastank explosion" = 6
+	"Infected Scientist gastank explosion" = 3
 	#Default 16
-	"Hindenburg nuke" = 32
+	"Hindenburg nuke" = 16
 	#Default 2
-	"Kamikaze Phayres explosion" = 4
+	"Kamikaze Phayres explosion" = 2
 
 ["Flesh Exoskeleton"]
 	#Default 0
@@ -99,18 +99,31 @@
 ["Targeting Tasks"]
 	#Default false
 	"Should attack Animals?" = true
-	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:"]
+	"Mobs Not Targeted" = ["minecraft:creeper", "minecraft:allay", "minecraft:dolphin", "minecraft:glow_squid", "minecraft:squid", "minecraft:bat", "minecraft:armor_stand", "creeperoverhaul:", "sculkhorde:", "fromanotherworld:"]
 	"Mobs that will run from infected" = ["minecraft:villager", "minecraft:wandering_trader", "roamers:bandit", "torchesbecomesunlight:burdenbeast", "torchesbecomesunlight:preparation_op"]
 	"Mobs ALWAYS Targeted" = ["minecraft:villager", "minecraft:wandering_trader", "minecraft:iron_golem"]
 	#Default true
 	"Should attack other mobs?" = true
-	"Mobs that will target infected" = ["minecraft:iron_golem", "minecraft:snow_golem", "guardvillagers:guard", "roamers:roamer", "torchesbecomesunlight:mangler", "torchesbecomesunlight:patrol_captain", "torchesbecomesunlight:fallen_snowpriest", "torchesbecomesunlight:tainted_carcass", "torchesbecomesunlight:distorted_caster", "torchesbecomesunlight:red", "torchesbecomesunlight:patriot", "torchesbecomesunlight:frost_nova", "torchesbecomesunlight:pursuer", "torchesbecomesunlight:gun_knight_patriot", "torchesbecomesunlight:rosmontis", "torchesbecomesunlight:shield_guard", "torchesbecomesunlight:pathfinder_ballistarius", "torchesbecomesunlight:yeti_ice_leaver", "torchesbecomesunlight:turret", "torchesbecomesunlight:war_phantom", "torchesbecomesunlight:tactical_defender", "torchesbecomesunlight:gravestone"]
+	"Mobs that will target infected" = ["minecraft:iron_golem", "minecraft:snow_golem", "guardvillagers:guard", "roamers:roamer", "torchesbecomesunlight:patrol_captain", "torchesbecomesunlight:fallen_snowpriest", "torchesbecomesunlight:tainted_carcass", "torchesbecomesunlight:distorted_caster", "torchesbecomesunlight:red", "torchesbecomesunlight:patriot", "torchesbecomesunlight:frost_nova", "torchesbecomesunlight:pursuer", "torchesbecomesunlight:gun_knight_patriot", "torchesbecomesunlight:rosmontis", "torchesbecomesunlight:shield_guard", "torchesbecomesunlight:pathfinder_ballistarius", "torchesbecomesunlight:yeti_ice_leaver", "torchesbecomesunlight:turret", "torchesbecomesunlight:war_phantom", "torchesbecomesunlight:tactical_defender", "torchesbecomesunlight:gravestone"]
 
 [Compatibilities]
 	#Default true
-	"Should there be a compatibility with FAW?" = false
+	"Should there be a compatibility with FAW?" = true
 	#Default true
-	"Should there be a compatibility with Sculk Infection?" = false
+	"Should there be a compatibility with Sculk Infection?" = true
+
+["Music System"]
+	#Default true
+	"Should we play songs in certain entity encounters?" = true
+	#Default true
+	"Should we play songs in the minecraft world?" = true
+	"Time before ambient songs start playing in minutes" = 7
+	#Default true
+	"Turn off Vanilla music?" = true
+	#Default false
+	"Turn off the system?" = false
+	#Default true
+	"Should we play songs in the minecraft menu?" = false
 
 ["Mob Roles, decides some of the interactions between the infected mobs"]
 	Disposable = ["spore:inf_human", "spore:inf_villager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:slasher", "spore:volatile", "spore:inf_vindicator", "minecraft:creeper"]
@@ -153,47 +166,34 @@
 		#Range: > 1
 		"Helmet Durability" = 1200
 
-["Music System"]
-	#Default true
-	"Should we play songs in certain entity encounters?" = true
-	#Default true
-	"Should we play songs in the minecraft world?" = true
-	"Time before ambient songs start playing in minutes" = 7
-	#Default true
-	"Turn off Vanilla music?" = true
-	#Default false
-	"Turn off the system?" = false
-	#Default true
-	"Should we play songs in the minecraft menu?" = false
-
 ["Living Guns"]
 	#Default 5
 	#Range: > 1
-	"Mist Maker Saw Damage" = 25
+	"Mist Maker Saw Damage" = 10
 	#Default 300
 	#Range: > 1
-	"Mist Maker Durability" = 800
+	"Mist Maker Durability" = 300
 	#Default 8
 	#Range: > 1
-	"Bile Blaster Damage" = 40
+	"Bile Blaster Damage" = 16
 	#Default 15
 	#Range: > 1
-	"Acidic Assassin Damage" = 75
+	"Acidic Assassin Damage" = 30
 	#Default 300
 	#Range: > 1
 	"Toxic Terroriser Durability" = 300
 	#Default 5
 	#Range: > 1
-	"Mist Maker Pallet Damage" = 25
+	"Mist Maker Pallet Damage" = 10
 	#Default 300
 	#Range: > 1
-	"Bile Blaster Durability" = 800
+	"Bile Blaster Durability" = 300
 	#Default 5
 	#Range: > 1
-	"Toxic Terroriser Damage" = 25
+	"Toxic Terroriser Damage" = 10
 	#Default 300
 	#Range: > 1
-	"Acidic Assassin Durability" = 800
+	"Acidic Assassin Durability" = 300
 
 [Effects]
 	"Should the effect overlays be active ?" = true
@@ -204,8 +204,8 @@
 
 	["Mob Evolutions and Infection System".Infections]
 		#Default true
-		"Should the player be infected on death?" = false
-		"Mobs and their infected counterparts" = ["minecraft:zombie|spore:inf_human", "minecraft:husk|spore:inf_husk", "minecraft:drowned|spore:inf_drowned", "minecraft:pillager|spore:inf_pillager", "minecraft:villager|spore:inf_villager", "guardvillagers:guard|spore:inf_villager", "recruits:recruit|spore:inf_villager", "recruits:bowman|spore:inf_villager", "recruits:recruit_shieldman|spore:inf_villager", "recruits:nomad|spore:inf_villager", "recruits:horseman|spore:inf_villager", "minecraft:witch|spore:inf_witch", "minecraft:wandering_trader|spore:inf_wanderer", "minecraft:evoker|spore:inf_evoker", "minecraft:vindicator|spore:inf_vindicator", "hunterillager:hunterillager|spore:inf_vindicator", "roamers:roamer|spore:inf_player", "roamers:bandit|spore:inf_player", "goety:maverick|spore:inf_vindicator", "goety:warlock|spore:inf_witch", "goety:heretic|spore:inf_witch", "minecraft:ravager|spore:brute", "goety:trampler|spore:brute", "goety:black_beast|spore:brute", "goety:conquillager|spore:inf_pillager", "goety:maverick|spore:inf_vindicator", "goety:piker|spore:inf_vindicator", "goety:preacher|spore:inf_evoker", "goety:crusher|spore:inf_vindicator", "goety:storm_caster|spore:inf_evoker", "goety:cryologer|spore:inf_evoker", "goety:sorcerer|spore:inf_evoker", "goety:minister|spore:vanguard", "goety:crone|spore:vanguard", "torchesbecomesunlight:burdenbeast|spore:brute", "torchesbecomesunlight:turret|spore:inf_contruct", "torchesbecomesunlight:yeti_ice_leaver|spore:knight", "torchesbecomesunlight:patrol_captain|spore:lacerator_spawnegg", "torchesbecomesunlight:preparation_op|spore:plagued", "torchesbecomesunlight:mangler|spore:brot", "torchesbecomesunlight:fallen_snowpriest|spore:inf_evoker", "torchesbecomesunlight:tainted_carcass|spore:inf_vindicator", "torchesbecomesunlight:distorted_caster|spore:inf_evoker", "torchesbecomesunlight:shield_guard|spore:prot_spawnegg", "torchesbecomesunlight:pathfinder_ballistarius|spore:prot_spawnegg", "minecraft:mooshroom|spore:mound"]
+		"Should the player be infected on death?" = true
+		"Mobs and their infected counterparts" = ["minecraft:zombie|spore:inf_human", "minecraft:zombie_villager|spore:inf_diseased_villager", "minecraft:husk|spore:inf_husk", "minecraft:drowned|spore:inf_drowned", "minecraft:pillager|spore:inf_pillager", "minecraft:villager|spore:inf_villager", "guardvillagers:guard|spore:inf_villager", "recruits:recruit|spore:inf_villager", "recruits:bowman|spore:inf_villager", "recruits:recruit_shieldman|spore:inf_villager", "recruits:nomad|spore:inf_villager", "recruits:horseman|spore:inf_villager", "minecraft:witch|spore:inf_witch", "minecraft:wandering_trader|spore:inf_wanderer", "minecraft:evoker|spore:inf_evoker", "minecraft:vindicator|spore:inf_vindicator", "hunterillager:hunterillager|spore:inf_vindicator", "roamers:roamer|spore:inf_player", "roamers:bandit|spore:inf_player", "goety:maverick|spore:inf_vindicator", "goety:warlock|spore:inf_witch", "goety:heretic|spore:inf_witch", "minecraft:ravager|spore:brute", "goety:trampler|spore:brute", "goety:black_beast|spore:brute", "goety:conquillager|spore:inf_pillager", "goety:maverick|spore:inf_vindicator", "goety:piker|spore:inf_vindicator", "goety:preacher|spore:inf_evoker", "goety:crusher|spore:inf_vindicator", "goety:storm_caster|spore:inf_evoker", "goety:cryologer|spore:inf_evoker", "goety:sorcerer|spore:inf_evoker", "goety:minister|spore:vanguard", "goety:crone|spore:vanguard", "torchesbecomesunlight:burdenbeast|spore:brute", "torchesbecomesunlight:turret|spore:inf_contruct", "torchesbecomesunlight:yeti_ice_leaver|spore:knight", "torchesbecomesunlight:patrol_captain|spore:lacerator_spawnegg", "torchesbecomesunlight:preparation_op|spore:plagued", "torchesbecomesunlight:mangler|spore:brot", "torchesbecomesunlight:fallen_snowpriest|spore:inf_evoker", "torchesbecomesunlight:tainted_carcass|spore:inf_vindicator", "torchesbecomesunlight:distorted_caster|spore:inf_evoker", "torchesbecomesunlight:shield_guard|spore:prot_spawnegg", "torchesbecomesunlight:pathfinder_ballistarius|spore:prot_spawnegg", "minecraft:mooshroom|spore:mound"]
 
 	["Mob Evolutions and Infection System".Evolutions]
 		"Infected Human Evolutions" = ["spore:knight", "spore:griefer", "spore:braiomil", "spore:busser"]
@@ -216,13 +216,13 @@
 		"Evolution Timer in seconds for hyper" = 300
 		"Infected Pillager Evolutions" = ["spore:howler", "spore:stalker", "spore:brute"]
 		#Default 300
-		"Evolution Timer in seconds" = 100
+		"Evolution Timer in seconds" = 200
 		#Default 7
-		"Minimum amount of kills to start the hyper evolution" = 4
-		"Infected Witch Evolutions" = ["spore:volatile"]
+		"Minimum amount of kills to start the hyper evolution" = 7
+		"Infected Witch Evolutions" = ["spore:volatile", "spore:mephitic", "spore:gorgon"]
 		"Infected Husk Evolutions" = ["spore:thorn", "spore:jagd", "spore:scavenger"]
-		"Infected Drowned Evolutions" = ["spore:bloater"]
-		"Infected Adventurer Evolutions" = ["spore:nuclea", "spore:protector"]
+		"Infected Drowned Evolutions" = ["spore:bloater", "spore:naiad"]
+		"Infected Adventurer Evolutions" = ["spore:nuclea", "spore:protector", "spore:gargoyle"]
 
 [Mobs]
 
@@ -338,6 +338,24 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Ogre Max health" = 100.0
 
+	[Mobs.Grakensenker]
+		#Default values: minecraft:darkness|600|0, spore:mycelium|600|1, minecraft:mining_fatigue|600|0
+		"Grakensenker debuffs" = ["minecraft:darkness|600|0", "spore:mycelium_ef|600|1", "minecraft:mining_fatigue|600|0", "enigmaticaddons:ichor_corrosion|600|1"]
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Grakensenker Armor" = 15.0
+		#Default 100
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Grakensenker Damage Cap , set to 0 to disable" = 40.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Grakensenker Damage" = 15.0
+		#Default 400
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Grakensenker Max health" = 400.0
+		#Default values: minecraft:strength|600|0, minecraft:conduit_power|600|0, minecraft:resistance|600|1
+		"Grakensenker buffs" = ["minecraft:strength|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|2", "enigmaticaddons:pure_resistance|600|0"]
+	
 	[Mobs.Bloater]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
@@ -363,24 +381,6 @@
 		"Sets Griefer Max health" = 45.0
 		#Default true
 		"Should explosion break blocks ?" = true
-
-	[Mobs.Grakensenker]
-		#Default values: minecraft:darkness|600|0, spore:mycelium|600|1, minecraft:mining_fatigue|600|0
-		"Grakensenker debuffs" = ["minecraft:darkness|600|0", "spore:mycelium_ef|600|1", "minecraft:mining_fatigue|600|0", "enigmaticaddons:ichor_corrosion|600|1"]
-		#Default 15
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Grakensenker Armor" = 15.0
-		#Default 100
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Grakensenker Damage Cap , set to 0 to disable" = 40.0
-		#Default 15
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Grakensenker Damage" = 15.0
-		#Default 400
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Grakensenker Max health" = 400.0
-		#Default values: minecraft:strength|600|0, minecraft:conduit_power|600|0, minecraft:resistance|600|1
-		"Grakensenker buffs" = ["minecraft:strength|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|2", "enigmaticaddons:pure_resistance|600|0"]
 
 	[Mobs.Brotkatze]
 		#Default values: minecraft:poison|120|0 ,spore:mycelium|600|0 ,spore:marker|2400|1
@@ -470,7 +470,7 @@
 		"Sets Scamper Armor" = 3.0
 		#Default 600
 		#Range: > 1
-		"Sets Scamper Age" = 200
+		"Sets Scamper Age" = 300
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Scamper Damage" = 6.0
@@ -516,7 +516,7 @@
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets the base armor of the Womb" = 8.0
-		"Mobs that are summoned for air support" = ["spore:hindenburg", "spore:howitzer"]
+		"Mobs that are summoned for air support" = ["spore:hindenburg", "spore:verfall"]
 		#Default 30
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets the base health of the Womb" = 60.0
@@ -530,8 +530,8 @@
 		#Default 5
 		#Range: > 1
 		"How much biomass does it get from consuming infected" = 2
-		"Mobs that are summoned for water support" = ["spore:gazenbreacher"]
-		"Mobs that are summoned for ground support" = ["spore:sieger", "spore:howitzer"]
+		"Mobs that are summoned for water support" = ["spore:gazenbreacher", "spore:kraken", "spore:leviathan"]
+		"Mobs that are summoned for ground support" = ["spore:sieger", "spore:howitzer", "spore:stahl"]
 
 	[Mobs.Gorgon]
 		#Default 10
@@ -576,7 +576,7 @@
 	[Mobs."Proto Hivemind"]
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Proto Damage Cap, set to 0 to disable" = 10.0
+		"Sets Proto Damage Cap, set to 0 to disable" = 20.0
 		#Default true
 		"Should the hivemind spread madness?" = true
 		#Default 10
@@ -584,7 +584,7 @@
 		"Sets Proto Melee damage" = 15.0
 		#Default 3.0
 		#Range: 0.1 ~ 1.7976931348623157E308
-		"Sets The chance for a raid to start" = 9.0
+		"Sets The chance for a raid to start" = 18.0
 		"Sentient Mobs targeted by the hivemind" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
 		#Default 15
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -680,7 +680,7 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Usurper Armor" = 6.0
 
-	[Mobs.Hindenburg]
+[Mobs.Hindenburg]
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Hindenburg Danage" = 15.0
@@ -857,7 +857,7 @@
 		"Sets Inquisitor Max health" = 60.0
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Inquisitor Damage" = 20.0
+		"Sets Inquisitor Damage" = 15.0
 
 	[Mobs."Infected Witch"]
 		#Default 4
@@ -982,7 +982,7 @@
 		#Default 2
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Verwahrung Armor" = 2.0
-		"Verwahrung summons" = ["spore:knight", "spore:griefer", "spore:braiomil", "spore:leaper", "spore:slasher", "spore:scavenger", "spore:bloater", "spore:inf_evoker", "spore:busser", "spore:volatile", "spore:gastgaber", "spore:specter"]
+		"Verwahrung summons" = ["spore:knight", "spore:griefer", "spore:braiomil", "spore:leaper", "spore:slasher", "spore:scavenger", "spore:bloater", "spore:inf_evoker", "spore:busser", "spore:volatile", "spore:mephitic"]
 		"Verwahrung buffs" = ["minecraft:speed", "minecraft:strength", "minecraft:resistance", "minecraft:regeneration", "enigmaticaddons:pure_resistance"]
 
 	[Mobs.Howitzer]
@@ -999,13 +999,24 @@
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Howitzer Damage" = 15.0
-		"Mobs that may spawn out of its dropped bombs" = ["spore:inf_vindicator", "spore:busser", "spore:brute", "spore:knight", "spore:griefer", "spore:leaper", "spore:inf_evoker", "spore:spitter", "spore:stalker", "spore:scavenger", "spore:bloater", "spore:braiomil"]
+		"Mobs that may spawn out of its dropped bombs" = ["spore:inf_vindicator", "spore:busser", "spore:brute", "spore:knight", "spore:griefer", "spore:leaper", "spore:naiad", "spore:inf_evoker", "spore:mephitic", "spore:spitter", "spore:stalker", "spore:scavenger", "spore:bloater", "spore:braiomil"]
 		#Default 500
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Howitzer Max health" = 500.0
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Howitzer Ranged Damage" = 10.0
+
+	[Mobs.Groberfub]
+		#Default 8
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Groberfub Armor" = 8.0
+		#Default 15
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Groberfub Damage" = 15.0
+		#Default 75
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Groberfub Max health" = 75.0
 
 	[Mobs.Sieger]
 		#Default 300
@@ -1039,17 +1050,6 @@
 		#Default 20
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Infected Pillager Max health" = 20.0
-
-	[Mobs.Groberfub]
-		#Default 8
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Groberfub Armor" = 8.0
-		#Default 15
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Groberfub Damage" = 15.0
-		#Default 75
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Groberfub Max health" = 85.0
 
 	[Mobs.Brute]
 		#Default 70
@@ -1139,39 +1139,6 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Volatile Armor" = 4.0
 
-	[Mobs."Infected Wandering Trader"]
-		#Default 6
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Wandering Trader Damage" = 6.0
-		#Default 1
-		#Range: 0.0 ~ 1.7976931348623157E308
-		"Sets Infected Wandering Trader Armor" = 1.0
-		#Default true
-		"Can the Infected Wandering Trader use Potions" = true
-		#Default 20
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Infected Wandering Trader Max health" = 20.0
-
-	[Mobs.Gastgeber]
-		#Default 6
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gastgeber Armor" = 6.0
-		#Default 600
-		#Range: > 1
-		"Seconds before Gastgeber moves from the area" = 600
-		#Default 7
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gastgeber Damage" = 7.0
-		#Default 25
-		#Range: > 1
-		"Infection Range" = 40
-		#Default 70
-		#Range: 1.0 ~ 1.7976931348623157E308
-		"Sets Gastgeber Max health" = 70.0
-		#Default 30
-		#Range: > 1
-		"Seconds before Gastgeber spreads foliage" = 20
-
 	[Mobs.Verfalldrache]
 		#Default 5
 		#Range: 1.0 ~ 1.7976931348623157E308
@@ -1199,6 +1166,39 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Verfalldrache Tar Damage" = 5.0
 
+	[Mobs."Infected Wandering Trader"]
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Wandering Trader Damage" = 6.0
+		#Default 1
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Sets Infected Wandering Trader Armor" = 1.0
+		#Default true
+		"Can the Infected Wandering Trader use Potions" = true
+		#Default 20
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Infected Wandering Trader Max health" = 20.0
+
+	[Mobs.Gastgeber]
+		#Default 6
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gastgeber Armor" = 6.0
+		#Default 600
+		#Range: > 1
+		"Seconds before Gastgeber moves from the area" = 600
+		#Default 7
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gastgeber Damage" = 7.0
+		#Default 25
+		#Range: > 1
+		"Infection Range" = 25
+		#Default 70
+		#Range: 1.0 ~ 1.7976931348623157E308
+		"Sets Gastgeber Max health" = 70.0
+		#Default 30
+		#Range: > 1
+		"Seconds before Gastgeber spreads foliage" = 30
+
 	[Mobs.Hivetumor]
 		#Default 10
 		#Range: 1.0 ~ 1.7976931348623157E308
@@ -1211,7 +1211,7 @@
 		"Sentient Mobs targeted by the Hivetumor" = ["minecraft:villager", "minecraft:pillager", "guardvillagers:guard", "minecraft:evoker", "minecraft:vindicator", "recruits:recruit", "recruits:bowman", "recruits:recruit_shieldman", "recruits:nomad", "recruits:horseman", "roamers:roamer"]
 		#Default 128
 		#Range: > 1
-		"Sets the linking range" = 800
+		"Sets the linking range" = 400
 		#Default 1200
 		#Range: > 1
 		"Time before it grows back into a hivemind" = 1200
@@ -1230,7 +1230,7 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Leviathan Max health" = 450.0
 		#Default values: minecraft:wither ,spore:mycelium ,minecraft:weakness
-		"Leviathan explosion effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness"]
+		"Leviathan explosion effects" = ["minecraft:wither", "spore:mycelium_ef", "minecraft:weakness", "enigmaticaddons:ichor_corrosion|600|1"]
 		#Default 25
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Leviathan Armor" = 25.0
@@ -1238,7 +1238,7 @@
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Sets Leviathan Damage Cap , set to 0 to disable" = 100.0
 		#Default values: minecraft:speed|600|0, minecraft:conduit_power|600|0, minecraft:resistance|600|1
-		"Leviathan buffs" = ["minecraft:speed|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|1"]
+		"Leviathan buffs" = ["minecraft:speed|600|1", "minecraft:strength|600|4", "minecraft:resistance|600|2", "enigmaticaddons:pure_resistance|600|0"]
 
 	[Mobs."Infected Husk"]
 		#Default 3
@@ -1267,9 +1267,9 @@
 
 	[Mobs.Vigil]
 		#The max wave of infected a vigil can summon
-		"Vigil max wave" = ["spore:inf_vindicator", "spore:busser", "spore:inf_witch", "spore:brute", "spore:knight", "spore:griefer", "spore:thorn", "spore:jagd", "spore:leaper", "spore:inf_evoker", "spore:spitter", "spore:stalker", "spore:howler", "spore:braiomil", "spore:wendigo", "spore:hevoker", "spore:scavenger", "spore:bloater", "spore:ogre", "spore:slasher", "spore:inquisitor", "spore:brot", "spore:volatile", "spore:hvindicator"]
+		"Vigil max wave" = ["spore:inf_vindicator", "spore:busser", "spore:inf_witch", "spore:brute", "spore:knight", "spore:griefer", "spore:thorn", "spore:jagd", "spore:leaper", "spore:inf_evoker", "spore:spitter", "spore:stalker", "spore:howler", "spore:braiomil", "spore:wendigo", "spore:hollen", "spore:hevoker", "spore:scavenger", "spore:bloater", "spore:ogre", "spore:slasher", "spore:inquisitor", "spore:brot", "spore:volatile", "spore:mephitic", "spore:gorgon", "spore:gargoyle", "spore:hvindicator", "spore:grober"]
 		#The mixed wave of infected a vigil can summon
-		"Vigil mix wave" = ["spore:inf_human", "spore:inf_villager", "spore:inf_pillager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:thorn", "spore:nuclea", "spore:jagd", "spore:scavenger", "spore:bloater", "spore:slasher", "spore:leaper", "spore:inf_evoker", "spore:spitter"]
+		"Vigil mix wave" = ["spore:inf_human", "spore:inf_villager", "spore:inf_pillager", "spore:inf_wanderer", "spore:knight", "spore:griefer", "spore:gorgon", "spore:gargoyle", "spore:mephitic", "spore:thorn", "spore:nuclea", "spore:jagd", "spore:scavenger", "spore:bloater", "spore:slasher", "spore:leaper", "spore:inf_evoker", "spore:spitter"]
 		#Default 60
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Vigil Max health" = 60.0
@@ -1623,7 +1623,7 @@
 		"Loot from basic hyper infected" = ["spore:claw_fragment|60", "spore:mutated_fiber|50", "spore:armor_fragment|15", "spore:tumor|35"]
 		#Default 300
 		#Range: > 1
-		Durability = 1500
+		Durability = 600
 		"Loot from calamities" = ["spore:claw_fragments|100", "spore:mutated_fiber|100", "spore:tumor|100", "spore:armor_fragment|100"]
 		#Default 6
 		Damage = 9

@@ -17,7 +17,8 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingAttackEvent', 
 })
 
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable', event => {
-    if (event.entity && event.entity.isPlayer() && !event.getEntity().getLevel().isClientSide()) {
+    // 不限玩家，所有 LivingEntity 均触发，各 handler 自行判断实体类型
+    if (event.entity && !event.getEntity().getLevel().isClientSide()) {
         global.ForgePlayerEffectApplicableEvent(event)
     }
 })
