@@ -1,0 +1,47 @@
+{
+  "_comment": "进化体",
+  "attributes": [
+    {
+      "attribute": "minecraft:generic.attack_damage",
+      "modifier": 0.2,
+      "operation": 2
+    },
+    {
+      "attribute": "minecraft:generic.armor",
+      "modifier": 0.2,
+      "operation": 2
+    },
+    {
+      "attribute": "minecraft:generic.armor_toughness",
+      "modifier": 0.2,
+      "operation": 2
+    }
+  ],
+  "effects": [
+    {
+      "effect": "fib:frost_resistance",
+      "duration": 600,
+      "amplifier": 1
+    },
+    {
+      "effect": "minecraft:jump_boost",
+      "duration": 300,
+      "amplifier": 1
+    },
+    {
+      "effect": "minecraft:regeneration",
+      "duration": 300,
+      "amplifier": 1
+    },
+    {
+      "effect": "minecraft:speed",
+      "duration": 300,
+      "amplifier": 0
+    },
+    {
+      "effect": "attributeslib:vitality",
+      "duration": 300,
+      "amplifier": 1
+    }
+  ]
+}

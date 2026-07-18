@@ -355,7 +355,7 @@
 		"Sets Grakensenker Max health" = 400.0
 		#Default values: minecraft:strength|600|0, minecraft:conduit_power|600|0, minecraft:resistance|600|1
 		"Grakensenker buffs" = ["minecraft:strength|600|0", "minecraft:conduit_power|600|0", "minecraft:resistance|600|2", "enigmaticaddons:pure_resistance|600|0"]
-	
+
 	[Mobs.Bloater]
 		#Default 6
 		#Range: 1.0 ~ 1.7976931348623157E308
@@ -680,7 +680,7 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Usurper Armor" = 6.0
 
-[Mobs.Hindenburg]
+	[Mobs.Hindenburg]
 		#Default 15
 		#Range: 1.0 ~ 1.7976931348623157E308
 		"Sets Hindenburg Danage" = 15.0

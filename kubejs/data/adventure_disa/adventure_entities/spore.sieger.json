@@ -1,0 +1,62 @@
+{
+  "_comment": "灾厄",
+  "attributes": [
+    {
+      "attribute": "minecraft:generic.attack_damage",
+      "modifier": 0.3,
+      "operation": 2
+    },
+    {
+      "attribute": "minecraft:generic.armor",
+      "modifier": 0.3,
+      "operation": 2
+    },
+    {
+      "attribute": "minecraft:generic.armor_toughness",
+      "modifier": 0.3,
+      "operation": 2
+    },
+    {
+      "attribute": "minecraft:generic.max_health",
+      "modifier": 0.3,
+      "operation": 2
+    },
+    {
+      "attribute": "goety_revelation:resistance",
+      "modifier": 0.3,
+      "operation": 0
+    }
+  ],
+  "effects": [
+    {
+      "effect": "fib:frost_resistance",
+      "duration": 600,
+      "amplifier": 3
+    },
+    {
+      "effect": "minecraft:jump_boost",
+      "duration": 300,
+      "amplifier": 3
+    },
+    {
+      "effect": "minecraft:regeneration",
+      "duration": 300,
+      "amplifier": 3
+    },
+    {
+      "effect": "minecraft:speed",
+      "duration": 300,
+      "amplifier": 1
+    },
+    {
+      "effect": "attributeslib:vitality",
+      "duration": 300,
+      "amplifier": 3
+    },
+    {
+      "effect": "goetydelight:the_pale_messenger",
+      "duration": 120,
+      "amplifier": 0
+    }
+  ]
+}

@@ -19,6 +19,14 @@
     {
       "id": "sophisticatedstorage:storage_output",
       "required": false
+    },
+    {
+      "id": "fib_mod:vault_wall",
+      "required": false
+    },
+    {
+      "id": "fib_mod:vault_gate",
+      "required": false
     }
   ]
 }

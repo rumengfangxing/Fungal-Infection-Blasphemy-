@@ -1,0 +1,47 @@
+{
+  "_comment": "类器官",
+  "attributes": [
+    {
+      "attribute": "minecraft:generic.armor",
+      "modifier": 0.3,
+      "operation": 2
+    },
+    {
+      "attribute": "minecraft:generic.armor_toughness",
+      "modifier": 0.3,
+      "operation": 2
+    },
+    {
+      "attribute": "minecraft:generic.max_health",
+      "modifier": 0.5,
+      "operation": 2
+    },
+    {
+      "attribute": "goety_revelation:resistance",
+      "modifier": 0.3,
+      "operation": 0
+    }
+  ],
+  "effects": [
+    {
+      "effect": "fib:frost_resistance",
+      "duration": 600,
+      "amplifier": 2
+    },
+    {
+      "effect": "goety:evil_eye",
+      "duration": 300,
+      "amplifier": 0
+    },
+    {
+      "effect": "minecraft:regeneration",
+      "duration": 300,
+      "amplifier": 4
+    },
+    {
+      "effect": "attributeslib:vitality",
+      "duration": 300,
+      "amplifier": 4
+    }
+  ]
+}

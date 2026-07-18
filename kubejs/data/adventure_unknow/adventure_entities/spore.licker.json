@@ -1,0 +1,27 @@
+{
+  "_comment": "弱势未知",
+  "attributes": [
+    {
+      "attribute": "minecraft:generic.attack_damage",
+      "modifier": 0.5,
+      "operation": 2
+    }
+  ],
+  "effects": [
+    {
+      "effect": "fib:frost_resistance",
+      "duration": 600,
+      "amplifier": 3
+    },
+    {
+      "effect": "minecraft:regeneration",
+      "duration": 300,
+      "amplifier": 0
+    },
+    {
+      "effect": "attributeslib:vitality",
+      "duration": 300,
+      "amplifier": 0
+    }
+  ]
+}

@@ -3,13 +3,13 @@
 [detection]
 	#冒险区判定半径（区块），3 = 7×7 区块区域
 	#Range: 1 ~ 16
-	radius_chunks = 6
+	radius_chunks = 1
 
 #分数计算
 [scoring]
 	#归一化除数（仿文礼 normalizationFactor），原始分 ÷ 此值 = 归一化分
 	#Range: 0.1 ~ 1000.0
-	normalization_divisor = 20.0
+	normalization_divisor = 35.0
 	#冒险区触发阈值（归一化分 ≥ 此值即视为冒险区）
 	#Range: 0.01 ~ 1.0
 	zone_threshold = 0.5
@@ -26,7 +26,7 @@
 [xaeros_alpha]
 	#冒险区不透明度 (0-255, 255=完全不透明)
 	#Range: 0 ~ 255
-	alpha = 160
+	alpha = 180
 
 #界面提示
 [hud]
@@ -41,4 +41,7 @@
 	#离开冒险区后属性保留时间（tick），到期回收
 	#Range: 20 ~ 12000
 	buff_timeout_ticks = 200
+	#方块变化批量重算冷却（tick），冷却期内收集变化、到期一次性算完
+	#Range: 1 ~ 100
+	recalc_cooldown_ticks = 10
 

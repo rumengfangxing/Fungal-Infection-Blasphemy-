@@ -1,0 +1,17 @@
+{
+  "_comment": "玩家减益",
+  "attributes": [
+  ],
+  "effects": [
+    {
+      "effect": "spore:marker",
+      "duration": 2400,
+      "amplifier": 1
+    },
+    {
+      "effect": "spore:madness",
+      "duration": 1200,
+      "amplifier": 1
+    }
+  ]
+}

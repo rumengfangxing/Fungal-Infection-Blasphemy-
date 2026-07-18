@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "fib_mod:vault_wall",
+    "fib_mod:vault_gate"
+  ]
+}
