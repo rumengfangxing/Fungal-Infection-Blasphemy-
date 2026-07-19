@@ -1,0 +1,22 @@
+
+[soul_cost]
+	#是否启用灵魂能量消耗。开启后每操控一个物品到祭坛底座消耗诅咒之笼的灵魂
+	enabled = true
+	#操控每个物品消耗的灵魂能量点数
+	#Range: > 0
+	per_item = 10
+
+[terminal]
+	#每次打开灵魂便捷终端消耗的灵魂能量
+	#Range: > 0
+	soul_cost_per_open = 10
+
+[rs_power]
+	#诅咒之笼供电：每灵魂能量转换的 FE。0=禁用
+	#Range: > 0
+	fe_per_soul = 100
+
+[emi]
+	#是否让 JEI/EMI 在所有 ApricityUI 界面显示（默认仅黑暗祭坛界面显示）。开启后银行/市场/拍卖等界面也会显示 JEI/EMI
+	show_on_all_aui = false
+

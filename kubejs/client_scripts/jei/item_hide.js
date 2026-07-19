@@ -1,3 +1,3 @@
 JEIEvents.hideItems(event => {
-  event.hide('goetydelight:starless_night')
+  event.hide('example:example')
 })

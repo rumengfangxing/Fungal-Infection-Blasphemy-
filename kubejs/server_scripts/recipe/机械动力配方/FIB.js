@@ -214,7 +214,19 @@ create.mixing(Fluid.of('create_enchantment_industry:hyper_experience',100),
       Item.of('minecraft:blue_ice')
     ],
   'fib:unopened_cooling_unit')
-
+//注射笔
+const ZSB = 'spore:syringe'
+    create.sequenced_assembly([
+      Item.of('fib:injection_pen'),
+    ],
+      'spore:syringe',
+    [
+      create.deploying(ZSB,[ZSB,'spore:compound_plate']),
+      create.cutting(ZSB,ZSB),
+      create.pressing(ZSB,ZSB),
+    ])
+    .transitionalItem('spore:syringe')
+    .loops(1);
 
 /*
 //制冰机

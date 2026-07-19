@@ -40,6 +40,9 @@ ServerEvents.recipes(event => {
             },
             {
                 "item": "spore:calcified_syringe"
+            },
+            {
+                "item": "spore:skeletal_syringe"
             }
         ],
         "result": {
