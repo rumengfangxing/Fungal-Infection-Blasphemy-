@@ -1,0 +1,124 @@
+[worldgen]
+    # 启用 RCV 自然生成
+    enabled = true
+    
+    # 使用现代结构系统，/locate 可定位
+    nativeNaturalStructure = true
+    
+    # 包含模组自带结构作为基础
+    includeBundledStructures = true
+    
+    # 白名单留空 = 所有结构均可生成
+    allowedStructureIds = []
+    
+    # 稀有度：1 = 默认，2 = 减半，3 = 更稀有
+    # 设为 1.5 让城市稍稀有但不至于找不到
+    rarity = 1
+    
+    # 出生点周围 128 格内不生成城市（给玩家安全开局空间）
+    minSpawnDistance = 128
+    
+    # 地形落差限制：城市建筑需要平坦地形
+    maxSurfaceDelta = 5
+    
+    # 使用新版严格地表检测，避免建筑悬空
+    compatSurfaceFootprint = false
+    
+    # 最大等待放置任务数
+    maxPendingPlacements = 128
+    
+    # 各维度存储上限
+    maxStoredPlacements = 512
+    maxStoredActivePlacements = 64
+    maxGenerationLedgerEntries = 2048
+    maxStructureFootprintEntries = 2048
+    maxConcurrentPlanning = 4
+
+    [worldgen.activePlacement]
+        fastLaneEnabled = true
+        fastLaneMaxBlockOperationsPerTick = 2048
+        fastLaneTickBudgetMs = 8
+
+    [worldgen.balance]
+        # 全局生成频率倍率
+        # 0.8 让城市总体密度适中，不铺满世界
+        naturalFrequencyMultiplier = 0.8
+        
+        # 各分类倍率 —— 这是实现你需求的关键
+        # decoration 类：小装饰物（路灯、长椅、车辆残骸等）→ 频繁出现
+        decoration = 2.5
+        
+        # frequent 类：常见建筑群（小型住宅、商店等）→ 构成城市主体
+        frequent = 1.2
+        
+        # adventure 类：中型建筑（学校、医院、办公楼等）→ 适中
+        adventure = 1.0
+        
+        # rare 类：大型建筑（工厂、公寓楼、车站等）→ 较稀有
+        rare = 0.6
+        
+        # ultrarare 类：巨型建筑（摩天大楼、体育场、军事基地等）→ 极稀有
+        ultrarare = 0.3
+
+    [worldgen.spacing]
+        # 启用间距控制，避免建筑堆叠
+        enabled = true
+        
+        # 全局最小间距 16 区块（约 256 方块）
+        minDistanceChunks = 16
+        
+        # 各分类独立间距
+        decorationMinDistanceChunks = 8      # 小装饰可以密集一些
+        frequentMinDistanceChunks = 12       # 普通建筑稍密
+        adventureMinDistanceChunks = 20      # 中型建筑拉开距离
+        rareMinDistanceChunks = 32           # 大型建筑稀少
+        ultrarareMinDistanceChunks = 48      # 巨型建筑非常稀少
+        
+        # decoration 类也应用间距
+        includeDecoration = true
+
+    [worldgen.chunkComplements]
+        enabled = true
+        maxPendingLedgerAdmissions = 256
+        maxLedgerAdmissionsPerTick = 8
+        maxLedgerComplementScanChunksPerTick = 64
+        fastLaneEnabled = true
+        fastLaneMaxBlockOperationsPerTick = 2048
+        fastLaneTickBudgetMs = 8
+
+    [worldgen.freezeDiagnostics]
+        enabled = false
+        thresholdMs = 8000
+
+[saplings]
+    # 树苗替换：关闭，避免随机长出城市建筑破坏体验
+    enabled = false
+    triggerChance = 0.0
+    baseWeight = 0.0
+    recordFootprints = false
+
+[decorations]
+    # 装饰物替换：开启，让城市中有路灯、路标等细节
+    enabled = true
+    
+    # 每区块树装饰替换概率
+    treeChunkChance = 0.05
+    
+    # 各类装饰权重（相对原版为1）
+    treeBaseWeight = 0.05
+    bigMushroomBaseWeight = 0.1
+    cactusBaseWeight = 0.05
+    desertWellBaseWeight = 0.1
+    fossilBaseWeight = 0.05
+    
+    maxPendingPlacements = 96
+    recordFootprints = false
+    verboseLogging = false
+
+[villages]
+    # 关闭 RCV 村庄替换，让村庄保持原版风格
+    enabled = false
+    attemptChance = 0.0
+    baseWeight = 0.0
+    budget = 0.0
+    verboseLogging = false
