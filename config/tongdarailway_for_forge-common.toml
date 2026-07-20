@@ -6,7 +6,7 @@ generateTrackSpawner = true
 placeTracksUsingTrackSpawner = true
 #Size of a railway planning region in chunks
 #Range: 16 ~ 512
-chunkGroupSize = 128
+chunkGroupSize = 64
 #Maximum height increment for railway elevation changes
 #Range: 10 ~ 500
 heightMaxIncrement = 100
