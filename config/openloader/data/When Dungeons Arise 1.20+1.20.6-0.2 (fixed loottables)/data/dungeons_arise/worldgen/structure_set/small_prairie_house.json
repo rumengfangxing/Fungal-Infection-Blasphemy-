@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:small_prairie_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 2010107029,
+    "spacing": 36,
+    "separation": 21,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "dungeons_arise:illager_windmill"
+    }
+  }
+}

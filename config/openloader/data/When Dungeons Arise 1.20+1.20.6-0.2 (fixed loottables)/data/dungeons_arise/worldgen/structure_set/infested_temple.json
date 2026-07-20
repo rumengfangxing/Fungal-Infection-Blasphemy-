@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:infested_temple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1003048511,
+    "spacing": 132,
+    "separation": 103,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

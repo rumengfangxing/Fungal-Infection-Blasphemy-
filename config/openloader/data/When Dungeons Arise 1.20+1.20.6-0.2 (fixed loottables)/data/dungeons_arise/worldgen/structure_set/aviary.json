@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:aviary",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1513831116,
+    "spacing": 165,
+    "separation": 125,
+    "type": "minecraft:random_spread"
+  }
+}

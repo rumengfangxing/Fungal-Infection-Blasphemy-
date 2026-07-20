@@ -1,0 +1,29 @@
+{
+	"pack": {
+		"description": "§4Dungeon arise @TheQKnight @KayJay @vanillaPL",
+		"version": "0.2",
+		"pack_format": 15,
+		"supported_formats": [
+			15,
+			48
+		]
+	},
+	"overlays": {
+		"entries": [
+			{
+				"formats": [
+					26,
+					48
+				],
+				"directory": "f26"
+			},
+			{
+				"formats": [
+					41,
+					48
+				],
+				"directory": "f41"
+			}
+		]
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:monastery",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 586259416,
+    "spacing": 180,
+    "separation": 93,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

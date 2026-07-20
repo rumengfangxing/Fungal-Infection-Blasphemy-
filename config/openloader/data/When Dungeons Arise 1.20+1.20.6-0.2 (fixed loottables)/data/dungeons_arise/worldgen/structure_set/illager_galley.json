@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:illager_galley",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1689906365,
+    "spacing": 55,
+    "separation": 32,
+    "type": "minecraft:random_spread"
+  }
+}

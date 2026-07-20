@@ -1,0 +1,4 @@
+{
+  "replace": false,
+  "values": ["#minecraft:is_jungle", "#minecraft:has_structure/jungle_temple"]
+}

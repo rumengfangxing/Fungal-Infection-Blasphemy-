@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:coliseum",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1653902010,
+    "spacing": 201,
+    "separation": 187,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

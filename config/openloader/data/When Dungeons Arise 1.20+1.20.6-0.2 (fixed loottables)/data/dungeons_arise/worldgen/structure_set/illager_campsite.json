@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:illager_campsite",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1535853399,
+    "spacing": 83,
+    "separation": 32,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

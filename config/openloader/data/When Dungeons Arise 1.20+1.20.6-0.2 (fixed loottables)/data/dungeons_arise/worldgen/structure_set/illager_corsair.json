@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:illager_corsair",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1535853399,
+    "spacing": 73,
+    "separation": 47,
+    "type": "minecraft:random_spread"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:bandit_towers",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1577726152,
+    "spacing": 75,
+    "separation": 45,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

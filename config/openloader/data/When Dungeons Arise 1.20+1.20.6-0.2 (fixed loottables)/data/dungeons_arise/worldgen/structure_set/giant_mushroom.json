@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:giant_mushroom",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1955781032,
+    "spacing": 82,
+    "separation": 50,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

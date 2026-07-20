@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:merchant_campsite",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 890935960,
+    "spacing": 67,
+    "separation": 15,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 7,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

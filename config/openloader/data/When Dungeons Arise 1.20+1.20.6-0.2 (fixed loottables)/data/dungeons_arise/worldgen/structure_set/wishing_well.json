@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:wishing_well",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1592567225,
+    "spacing": 77,
+    "separation": 34,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

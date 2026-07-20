@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:fishing_hut",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1653902010,
+    "spacing": 33,
+    "separation": 15,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:scorched_mines",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1941094240,
+    "spacing": 121,
+    "separation": 93,
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:ancient_cities"
+    }
+  }
+}

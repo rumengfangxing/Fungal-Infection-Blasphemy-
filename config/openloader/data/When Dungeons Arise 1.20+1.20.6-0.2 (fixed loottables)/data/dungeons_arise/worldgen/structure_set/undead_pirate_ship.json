@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:undead_pirate_ship",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 71120359,
+    "spacing": 82,
+    "separation": 53,
+    "type": "minecraft:random_spread"
+  }
+}
