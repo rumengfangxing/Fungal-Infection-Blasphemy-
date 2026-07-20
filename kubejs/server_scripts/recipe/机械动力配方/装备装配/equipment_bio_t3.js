@@ -243,6 +243,55 @@ event.custom({
   ],
   "heatRequirement": "superheated"
 })
+//战士套装
+event.custom({
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    { "item": "fib:bio_equipment_module"},
+    { "item": "biomancy:warrior_armor_helmet"}
+  ],
+  "processingTime": 200,
+  "results": [
+    Item.of('biomancy:warrior_armor_helmet', '{AttributeModifiers:[{Amount:12.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"head",UUID:[I;840001,840002,840003,840004]},{Amount:8.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"head",UUID:[I;840101,840102,840103,840104]},{Amount:0.5d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"head",UUID:[I;840201,840202,840203,840204]},{Amount:0.25d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"head",UUID:[I;840301,840302,840303,840304]},{Amount:5.0d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"head",UUID:[I;840401,840402,840403,840404]},{Amount:0.05d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"head",UUID:[I;840501,840502,840503,840504]},{Amount:8.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"head",UUID:[I;840601,840602,840603,840604]},{Amount:0.6d,AttributeName:"legendarysurvivaloverhaul:head_resistance",Operation:0,Slot:"head",UUID:[I;840701,840702,840703,840704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
+  ],
+  "heatRequirement": "superheated"
+})
+event.custom({
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    { "item": "fib:bio_equipment_module"},
+    { "item": "biomancy:warrior_armor_chestplate"}
+  ],
+  "processingTime": 200,
+  "results": [
+    Item.of('biomancy:warrior_armor_chestplate', '{AttributeModifiers:[{Amount:30.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"chest",UUID:[I;850001,850002,850003,850004]},{Amount:8.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"chest",UUID:[I;850101,850102,850103,850104]},{Amount:0.5d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"chest",UUID:[I;850201,850202,850203,850204]},{Amount:0.25d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"chest",UUID:[I;850301,850302,850303,850304]},{Amount:5.0d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"chest",UUID:[I;850401,850402,850403,850404]},{Amount:0.05d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"chest",UUID:[I;850501,850502,850503,850504]},{Amount:8.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"chest",UUID:[I;850601,850602,850603,850604]},{Amount:0.6d,AttributeName:"legendarysurvivaloverhaul:chest_resistance",Operation:0,Slot:"chest",UUID:[I;850701,850702,850703,850704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
+  ],
+  "heatRequirement": "superheated"
+})
+event.custom({
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    { "item": "fib:bio_equipment_module"},
+    { "item": "biomancy:warrior_armor_leggings"}
+  ],
+  "processingTime": 200,
+  "results": [
+    Item.of('biomancy:warrior_armor_leggings', '{AttributeModifiers:[{Amount:26.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"legs",UUID:[I;860001,860002,860003,860004]},{Amount:8.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"legs",UUID:[I;860101,860102,860103,860104]},{Amount:0.5d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"legs",UUID:[I;860201,860202,860203,860204]},{Amount:0.25d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"legs",UUID:[I;860301,860302,860303,860304]},{Amount:5.0d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"legs",UUID:[I;860401,860402,860403,860404]},{Amount:0.05d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"legs",UUID:[I;860501,860502,860503,860504]},{Amount:8.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"legs",UUID:[I;860601,860602,860603,860604]},{Amount:0.6d,AttributeName:"legendarysurvivaloverhaul:legs_resistance",Operation:0,Slot:"legs",UUID:[I;860701,860702,860703,860704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
+  ],
+  "heatRequirement": "superheated"
+})
+event.custom({
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    { "item": "fib:bio_equipment_module"},
+    { "item": "biomancy:warrior_armor_boots"}
+  ],
+  "processingTime": 200,
+  "results": [
+    Item.of('biomancy:warrior_armor_boots', '{AttributeModifiers:[{Amount:12.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"feet",UUID:[I;870001,870002,870003,870004]},{Amount:8.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"feet",UUID:[I;870101,870102,870103,870104]},{Amount:0.5d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"feet",UUID:[I;870201,870202,870203,870204]},{Amount:0.25d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"feet",UUID:[I;870301,870302,870303,870304]},{Amount:5.0d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"feet",UUID:[I;870401,870402,870403,870404]},{Amount:0.05d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"feet",UUID:[I;870501,870502,870503,870504]},{Amount:8.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"feet",UUID:[I;870601,870602,870603,870604]},{Amount:0.6d,AttributeName:"legendarysurvivaloverhaul:feet_resistance",Operation:0,Slot:"feet",UUID:[I;870701,870702,870703,870704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
+  ],
+  "heatRequirement": "superheated"
+})
 //------生物组件？------
 //血肉套
 event.custom({
@@ -485,6 +534,55 @@ event.custom({
   "processingTime": 200,
   "results": [
     Item.of('biomancy:acolyte_armor_boots', '{AttributeModifiers:[{Amount:12.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"feet",UUID:[I;830001,830002,830003,830004]},{Amount:9.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"feet",UUID:[I;830101,830102,830103,830104]},{Amount:0.75d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"feet",UUID:[I;830201,830202,830203,830204]},{Amount:0.375d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"feet",UUID:[I;830301,830302,830303,830304]},{Amount:7.5d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"feet",UUID:[I;830401,830402,830403,830404]},{Amount:0.075d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"feet",UUID:[I;830501,830502,830503,830504]},{Amount:12.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"feet",UUID:[I;830601,830602,830603,830604]},{Amount:0.9d,AttributeName:"legendarysurvivaloverhaul:feet_resistance",Operation:0,Slot:"feet",UUID:[I;830701,830702,830703,830704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
+  ],
+  "heatRequirement": "superheated"
+})
+//战士套
+event.custom({
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    { "item": "fib:bio_equipment_module_0"},
+    { "item": "biomancy:warrior_armor_helmet"}
+  ],
+  "processingTime": 200,
+  "results": [
+    Item.of('biomancy:warrior_armor_helmet', '{AttributeModifiers:[{Amount:16.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"head",UUID:[I;900001,900002,900003,900004]},{Amount:10.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"head",UUID:[I;900101,900102,900103,900104]},{Amount:0.75d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"head",UUID:[I;900201,900202,900203,900204]},{Amount:0.375d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"head",UUID:[I;900301,900302,900303,900304]},{Amount:7.5d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"head",UUID:[I;900401,900402,900403,900404]},{Amount:0.075d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"head",UUID:[I;900501,900502,900503,900504]},{Amount:12.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"head",UUID:[I;900601,900602,900603,900604]},{Amount:0.9d,AttributeName:"legendarysurvivaloverhaul:head_resistance",Operation:0,Slot:"head",UUID:[I;900701,900702,900703,900704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
+  ],
+  "heatRequirement": "superheated"
+})
+event.custom({
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    { "item": "fib:bio_equipment_module_0"},
+    { "item": "biomancy:warrior_armor_chestplate"}
+  ],
+  "processingTime": 200,
+  "results": [
+    Item.of('biomancy:warrior_armor_chestplate', '{AttributeModifiers:[{Amount:42.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"chest",UUID:[I;910001,910002,910003,910004]},{Amount:10.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"chest",UUID:[I;910101,910102,910103,910104]},{Amount:0.75d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"chest",UUID:[I;910201,910202,910203,910204]},{Amount:0.375d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"chest",UUID:[I;910301,910302,910303,910304]},{Amount:7.5d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"chest",UUID:[I;910401,910402,910403,910404]},{Amount:0.075d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"chest",UUID:[I;910501,910502,910503,910504]},{Amount:12.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"chest",UUID:[I;910601,910602,910603,910604]},{Amount:0.9d,AttributeName:"legendarysurvivaloverhaul:chest_resistance",Operation:0,Slot:"chest",UUID:[I;910701,910702,910703,910704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
+  ],
+  "heatRequirement": "superheated"
+})
+event.custom({
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    { "item": "fib:bio_equipment_module_0"},
+    { "item": "biomancy:warrior_armor_leggings"}
+  ],
+  "processingTime": 200,
+  "results": [
+    Item.of('biomancy:warrior_armor_leggings', '{AttributeModifiers:[{Amount:36.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"legs",UUID:[I;920001,920002,920003,920004]},{Amount:10.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"legs",UUID:[I;920101,920102,920103,920104]},{Amount:0.75d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"legs",UUID:[I;920201,920202,920203,920204]},{Amount:0.375d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"legs",UUID:[I;920301,920302,920303,920304]},{Amount:7.5d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"legs",UUID:[I;920401,920402,920403,920404]},{Amount:0.075d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"legs",UUID:[I;920501,920502,920503,920504]},{Amount:12.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"legs",UUID:[I;920601,920602,920603,920604]},{Amount:0.9d,AttributeName:"legendarysurvivaloverhaul:legs_resistance",Operation:0,Slot:"legs",UUID:[I;920701,920702,920703,920704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
+  ],
+  "heatRequirement": "superheated"
+})
+event.custom({
+  "type": "createdieselgenerators:basin_fermenting",
+  "ingredients": [
+    { "item": "fib:bio_equipment_module_0"},
+    { "item": "biomancy:warrior_armor_boots"}
+  ],
+  "processingTime": 200,
+  "results": [
+    Item.of('biomancy:warrior_armor_boots', '{AttributeModifiers:[{Amount:16.0d,AttributeName:"minecraft:generic.armor",Operation:0,Slot:"feet",UUID:[I;930001,930002,930003,930004]},{Amount:10.0d,AttributeName:"minecraft:generic.armor_toughness",Operation:0,Slot:"feet",UUID:[I;930101,930102,930103,930104]},{Amount:0.75d,AttributeName:"minecraft:generic.knockback_resistance",Operation:0,Slot:"feet",UUID:[I;930201,930202,930203,930204]},{Amount:0.375d,AttributeName:"minecraft:generic.attack_damage",Operation:2,Slot:"feet",UUID:[I;930301,930302,930303,930304]},{Amount:7.5d,AttributeName:"minecraft:generic.max_health",Operation:0,Slot:"feet",UUID:[I;930401,930402,930403,930404]},{Amount:0.075d,AttributeName:"minecraft:generic.max_health",Operation:2,Slot:"feet",UUID:[I;930501,930502,930503,930504]},{Amount:12.0d,AttributeName:"legendarysurvivaloverhaul:thermal_resistance",Operation:0,Slot:"feet",UUID:[I;930601,930602,930603,930604]},{Amount:0.9d,AttributeName:"legendarysurvivaloverhaul:feet_resistance",Operation:0,Slot:"feet",UUID:[I;930701,930702,930703,930704]}],Damage:0,agent:{mutant_enchanting:16.0d,mutant_max_durability:80,mutant_protection:80.0d,mutant_toughness:9.0d,mutation:0}}')
   ],
   "heatRequirement": "superheated"
 })

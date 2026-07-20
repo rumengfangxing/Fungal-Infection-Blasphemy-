@@ -379,6 +379,20 @@
 			format = ""
 			append = ""
 
+	[tag."forge:is_poison"]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[tag."forge:is_poison".icon]
+			item = ""
+			tex = ""
+
+		[tag."forge:is_poison".format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[tag."goety:fire_attacks"]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "[NO-VALUE]"
@@ -1981,6 +1995,20 @@
 				format = ""
 				append = ""
 
+		[type.biomancy.toxin]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.toxin.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.toxin.format]
+				prepend = ""
+				format = ""
+				append = ""
+
 		[type.biomancy.slash]
 			#Color of the damage number. [NO-VALUE] to use default color.
 			color = "[NO-VALUE]"
@@ -2019,6 +2047,20 @@
 				tex = ""
 
 			[type.biomancy.spike_impale.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.biomancy.impaler_projectile]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.biomancy.impaler_projectile.icon]
+				item = ""
+				tex = ""
+
+			[type.biomancy.impaler_projectile.format]
 				prepend = ""
 				format = ""
 				append = ""

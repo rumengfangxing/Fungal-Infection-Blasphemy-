@@ -6,3 +6,16 @@
 	#Range: 0 ~ 6
 	focusOverlayPreset = 3
 
+[holy_dot]
+	#Holy Armor DOT 信息 overlay 总开关
+	#设为 false 可完全隐藏 DOT 信息面板和护甲条金色边框 [默认: true]
+	holyDotEnabled = true
+	#Holy Armor DOT 信息面板布局预设索引
+	#0=左下, 1=右下, 2=左上, 3=右上, 4=快捷栏左, 5=快捷栏右
+	#可在游戏中通过 API 切换 [默认: 0]
+	#Range: 0 ~ 5
+	holyDotPreset = 0
+	#Holy Armor DOT 护甲条金色边框独立开关
+	#设为 false 仅隐藏护甲条金色边框，不影响 DOT 信息面板 [默认: true]
+	holyDotHealthBorderEnabled = true
+

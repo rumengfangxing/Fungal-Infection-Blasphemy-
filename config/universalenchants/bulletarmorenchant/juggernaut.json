@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:armor"
+  ],
+  "incompatible": [
+    "bulletarmorenchant:explosive_proof",
+    "bulletarmorenchant:incendiary_proof",
+    "bulletarmorenchant:bullet_proof",
+    "bulletarmorenchant:armor_piercing_proof"
+  ]
+}
