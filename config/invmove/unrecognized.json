@@ -135,7 +135,12 @@
     "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackSettingsScreen": true,
     "com.simibubi.create.content.schematics.table.SchematicTableScreen": true,
     "com.simibubi.create.content.schematics.client.SchematicEditScreen": true,
-    "com.github.elenterius.biomancy.client.gui.DecomposerScreen": true
+    "com.github.elenterius.biomancy.client.gui.DecomposerScreen": true,
+    "com.rtsbuilding.rtsbuilding.client.screen.RtsProgressionScreen": true,
+    "com.rtsbuilding.rtsbuilding.client.screen.RtsHomeScreen": true,
+    "com.rtsbuilding.rtsbuilding.client.screen.RtsModConfigScreen": true,
+    "com.rtsbuilding.rtsbuilding.client.screen.BuilderScreen": true,
+    "com.rtsbuilding.rtsbuilding.client.screen.standalone.RtsPluginManagementScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,

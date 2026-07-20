@@ -85,5 +85,20 @@ const removeRecipeIds = [
     "tacz:gunpowder",
     "create:milling/sandstone",
 //神圣之石配方禁用
-    "enigmaticaddons:bless_stone"
+    "enigmaticaddons:bless_stone",
+//RS卡配方禁用
+    "rsinfinitybooster:infinity_card",
+    "rsinfinitybooster:dimension_card",
+//RTS插件配方禁用
+    "rtsbuilding:remote_control_plugin",
+    "rtsbuilding:storage_integration_plugin",
+    "rtsbuilding:range_extension_i",
+    "rtsbuilding:range_culling_plugin",
+    "rtsbuilding:craft_terminal_plugin",
+    "rtsbuilding:blueprint_plugin",
+    "rtsbuilding:range_extension_ii",
+    "rtsbuilding:area_destroy_plugin",
+    "rtsbuilding:chain_break_plugin",
+    "rtsbuilding:field_deployment_plugin",
+    "rtsbuilding:range_extension_max"
 ]

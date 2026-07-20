@@ -1,7 +1,7 @@
 #Enable RTS Building survival progression, feature unlocks, home anchors, and progression radius limits.
 enableSurvivalProgression = true
 #When survival progression is enabled, share unlocked progression nodes and RTS home anchors with the player's FTB Team, or vanilla scoreboard team when FTB Teams is unavailable.
-shareSurvivalProgressionWithTeams = true
+shareSurvivalProgressionWithTeams = false
 #Maximum RTS action radius in blocks. Used directly when survival progression is disabled, and by the Radius Max skill when survival progression is enabled.
 #Range: 48 ~ 512
 maxActionRadiusBlocks = 128
