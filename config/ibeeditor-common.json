@@ -1,5 +1,5 @@
 {
   "version": 0,
-  "permissionLevel": 1,
-  "creativeOnly": true
+  "permissionLevel": 0,
+  "creativeOnly": false
 }
