@@ -1,0 +1,14 @@
+ServerEvents.recipes(event => {
+  event.custom({
+    "type": "biomancy:bio_brewing",
+    "ingredients": [
+      {"item": "biomancy:healing_additive"}
+    ],
+    "nutrientsCost": 1,
+    "processingTime": 40,
+    "reactant": {
+      "item": "minecraft:slime_ball"
+    },
+    "result":{"item": "create_biotech:captured_small_slime"}
+  })
+})

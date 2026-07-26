@@ -162,6 +162,6 @@
     "item.enigmaticdice.permafrost.tooltip.alt_hint": "§c按 [Alt] 查看攻击施加给目标的效果",
     "item.enigmaticdice.permafrost.tooltip.alt.1": "  §c冰冻3 (15s)",
 
-    "jei.goety.craftType.star":"星尘仪式",
-    "jei.goety.craftType.infect":"寄染仪式"
+    "jei.goety.craftType.star":"星尘",
+    "jei.goety.craftType.infect":"寄染"
 }

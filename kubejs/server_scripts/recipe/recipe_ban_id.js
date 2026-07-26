@@ -100,5 +100,8 @@ const removeRecipeIds = [
     "rtsbuilding:area_destroy_plugin",
     "rtsbuilding:chain_break_plugin",
     "rtsbuilding:field_deployment_plugin",
-    "rtsbuilding:range_extension_max"
+    "rtsbuilding:range_extension_max",
+//生物科技配方禁用
+    "create_biotech:mixing/cream",
+    "create_biotech:spider_assembly_table",
 ]

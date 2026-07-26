@@ -1,0 +1,257 @@
+
+[experience]
+	#Range: > 1
+	xpPerNugget = 3
+	#Range: > 1
+	clusterXpValue = 128
+	#Range: > 1
+	largeBudXpValue = 64
+	#Range: > 1
+	mediumBudXpValue = 32
+	#Range: > 1
+	smallBudXpValue = 16
+	#Range: > 1
+	buddingGrowthChance = 20
+	#Range: 1 ~ 64
+	clusterMaxOrbsPerPinch = 5
+	#Range: > 1
+	clusterMinXpPerSplitOrb = 37
+
+[creeperBlastChamber]
+	#Range: 1 ~ 16
+	minSize = 3
+	#Range: 1 ~ 32
+	maxSize = 5
+	#Range: > 1
+	overloadThresholdRpm = 128
+	#Range: > 1
+	overloadPointsCap = 8192
+	#Range: > 0
+	overloadDecayPointsPerSecond = 128
+	#Range: > 0
+	overloadTntEquivalentPerCreeper = 2
+	#Range: > 1
+	chargedCreeperEquivalentMultiplier = 2
+	#Range: 0.0 ~ 1.7976931348623157E308
+	tntExplosionPower = 4.0
+	#Range: > 1
+	readyOutputTimeout = 100
+	enableOverloadExplosions = true
+
+[powerBelt]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	surfaceMetersPerSecondToRpm = 24.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxGeneratedRpm = 256.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	stressCapacityPerRpm = 4.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxStressCapacityPerSegment = 1024.0
+	#Range: 1 ~ 1200
+	surfaceSpeedDetectionInterval = 10
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxPlayerSurfaceSpeed = 1.0
+
+[petriDish]
+	#Range: > 1
+	scanInterval = 20
+	#Range: 0 ~ 64
+	scanRadius = 2
+	#Range: > 1
+	fluidPerHealth = 50
+	#Range: > 1
+	tankCapacity = 409600
+	requireNearbyMatchingEntity = true
+
+[spiderAssemblyTable]
+	#Range: > 1
+	fluidCapacityPerLeg = 1000
+	#Range: 1.0 ~ 1.7976931348623157E308
+	deployerBaseDuration = 2000.0
+	#Range: > 1
+	sawFallbackDuration = 50
+	#Range: 1.0E-4 ~ 1.7976931348623157E308
+	sawSpeedDivisor = 24.0
+
+[cardboardBox]
+	smallBoxEntityAllowlist = ["minecraft:slime", "minecraft:cat", "minecraft:bat", "minecraft:chicken", "minecraft:rabbit", "minecraft:silverfish", "minecraft:endermite", "minecraft:bee", "minecraft:parrot", "minecraft:allay", "minecraft:frog", "minecraft:ocelot", "minecraft:vex", "minecraft:magma_cube"]
+	largeBoxCreativeOnly = true
+	lethalCaptureEnabled = true
+	#Allowed Values: ALLOW_ALL, ALLOWLIST, DENYLIST
+	largeBoxEntityListMode = "ALLOW_ALL"
+	largeBoxEntityAllowlist = []
+	largeBoxEntityDenylist = []
+
+[slimeMimic]
+	#Range: > 1
+	hauntCycleTicks = 100
+	replaceDropsWithSlime = true
+	rewriteVillagerTrades = true
+	#Range: 1 ~ 64
+	villagerTradeMinSlimeBalls = 1
+	#Range: 1 ~ 64
+	villagerTradeMaxSlimeBalls = 3
+	allowSpawnInjection = true
+	#Allowed Values: ALLOW_ALL, ALLOWLIST, DENYLIST
+	entityListMode = "ALLOW_ALL"
+	entityAllowlist = []
+	entityDenylist = []
+
+[ghastHotAirBalloon]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	forwardAcceleration = 0.04
+	#Range: 0.0 ~ 1.7976931348623157E308
+	backwardAcceleration = 0.02
+	#Range: 0.0 ~ 1.7976931348623157E308
+	verticalAcceleration = 0.03
+	#Range: 0.0 ~ 1.0
+	horizontalDrag = 0.9
+	#Range: 0.0 ~ 1.0
+	verticalDrag = 0.85
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxHorizontalSpeed = 0.35
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxVerticalSpeed = 0.25
+	#Range: 0.0 ~ 1.7976931348623157E308
+	turnAcceleration = 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	turnBrake = 4.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	turnDirectionChangeBrake = 6.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxTurnSpeed = 6.0
+	#Range: > 1
+	inputTimeoutTicks = 8
+	#Range: > 1
+	magnetTimeoutTicks = 12
+	#Range: 1.0E-4 ~ 1.7976931348623157E308
+	magnetBrakeDistance = 2.5
+	#Range: 0.0 ~ 1.7976931348623157E308
+	magnetMaxDistance = 32.0
+	#Range: 1.0E-4 ~ 1.7976931348623157E308
+	assemblyStationSpeed = 0.5
+	#Range: > 1
+	attractPeriodTicks = 20
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxVelocityForAttractSqr = 0.001
+
+[butterCat]
+	#Range: 1 ~ 8192
+	maxButterCount = 16
+	#Range: > 1
+	butterDecayTicks = 320
+	#Range: > 1
+	butterForMaxRpm = 16
+	#Range: 0.0 ~ 1.7976931348623157E308
+	rpmPerButter = 16.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxGeneratedRpm = 256.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	stressCapacityPerRpm = 256.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	maxStressCapacity = 65536.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	rotationAngularSpeed = 1.5707963267948966
+	#Range: 0 ~ 20
+	butterNutrition = 1
+	#Range: 0.0 ~ 20.0
+	butterSaturation = 0.5
+	#Range: 0 ~ 20
+	superButterNutrition = 18
+	#Range: 0.0 ~ 20.0
+	superButterSaturation = 0.5
+	#Range: > 0
+	superButterRotationDuration = 90
+	#Range: 0 ~ 255
+	superButterRotationAmplifier = 1
+	#Range: > 0
+	superButterLevitationDuration = 90
+	#Range: 0 ~ 255
+	superButterLevitationAmplifier = 0
+	#Range: 0 ~ 20
+	incompleteSuperButterNutrition = 2
+	#Range: 0.0 ~ 20.0
+	incompleteSuperButterSaturation = 0.5
+	#Range: > 0
+	incompleteSuperButterRotationDuration = 30
+	#Range: 0 ~ 255
+	incompleteSuperButterRotationAmplifier = 2
+
+[universalJoint]
+	#Range: 0 ~ 64
+	maxConnectionRange = 2
+	#Range: > 0
+	itemCooldownTicks = 5
+
+[squidPrinter]
+	#Range: > 1
+	cycleTicks = 20
+	#Range: > 0
+	cycleWaterCost = 50
+	#Range: > 1
+	tankCapacity = 1000
+	#Range: > 0
+	finishingTicks = 5
+
+[evokerEnchantingChamber]
+	#Range: > 1
+	castDurationTicksPerLevel = 40
+	#Range: > 1
+	fluidPerLevel = 1000
+	#Range: > 1
+	cacheCapacity = 4000
+
+[schrodingersCat]
+	#Range: > 1
+	defaultInterval = 20
+	#Range: > 1
+	maxInterval = 72000
+	#Range: 0.0 ~ 1.0
+	highSignalChance = 0.5
+
+[boneRatchet]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fallbackJamStressImpact = 20000.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	creativeMotorMargin = 1024.0
+
+[basinEntityProcessing]
+	#Range: 0.0 ~ 16.0
+	entityScanHeight = 1.25
+
+[slimeClutch]
+	#Range: > 1
+	recheckPeriod = 20
+	#Range: > 1
+	maxWalk = 1024
+	enableSoftOverloadCheck = true
+
+[liquidLivingSlime]
+	#Range: 1 ~ 64
+	sourceHitsToBreak = 4
+	dropSlimeBallWhenSourceBreaks = true
+
+[fixedCarrotFishingRod]
+	#Range: 0.0 ~ 128.0
+	searchRange = 10.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	speedModifier = 1.2
+	#Range: 0.0 ~ 64.0
+	stopDistance = 2.5
+	#Range: > 0
+	searchCooldown = 20
+	#Range: > 0
+	stopCooldown = 100
+
+[bufferPad]
+	#Range: 0.0 ~ 1.7976931348623157E308
+	escapePushSpeed = 0.05
+	#Range: 0.0 ~ 1.0
+	movementEpsilon = 1.0E-4
+
+[shulkerPackager]
+	#Range: > 1
+	transferDelay = 8
+	#Range: 0 ~ 64
+	connectionRange = 5
+
