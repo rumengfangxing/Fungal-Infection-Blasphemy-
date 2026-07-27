@@ -184,7 +184,7 @@
 			dependencies: ["2882C47A824C3E78"]
 			description: [
 				"虚空生铁机，需要一个村民启动"
-				"但产速太慢铁来源太多也许没什么大用"
+				"但产速较慢"
 			]
 			id: "0D027A203DBC638E"
 			tasks: [{
@@ -243,7 +243,7 @@
 			id: "2914D0E0762763A5"
 			tasks: [{
 				id: "53332872064CC810"
-				item: "lightmanscurrency:portable_gem_terminal"
+				item: "lightmanscurrency:portable_terminal"
 				type: "item"
 			}]
 			x: -4.0d
