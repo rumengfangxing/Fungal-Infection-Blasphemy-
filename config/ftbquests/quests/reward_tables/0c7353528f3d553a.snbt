@@ -1,0 +1,52 @@
+{
+	icon: "spore:syringe"
+	id: "0C7353528F3D553A"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ item: "legendarysurvivaloverhaul:morphine" }
+		{
+			item: {
+				Count: 1
+				id: "lrtactical:consumable"
+				tag: {
+					ConsumableId: "lrtactical:ibuprofen"
+					Damage: 0
+				}
+			}
+		}
+		{ count: 4, item: "majruszsdifficulty:bandage" }
+		{ count: 4, item: "majruszsdifficulty:golden_bandage" }
+		{ count: 4, item: "legendarysurvivaloverhaul:bandage" }
+		{
+			item: {
+				Count: 1
+				id: "lrtactical:consumable"
+				tag: {
+					ConsumableId: "42labk:tgl1"
+					Damage: 0
+				}
+			}
+		}
+		{ count: 4, item: "legendarysurvivaloverhaul:thermal_coat_1" }
+		{ count: 2, item: "legendarysurvivaloverhaul:thermal_coat_2" }
+		{ item: "legendarysurvivaloverhaul:thermal_coat_3" }
+		{
+			count: 4
+			item: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "legendarysurvivaloverhaul:temperature_immunity_long"
+				}
+			}
+		}
+		{ count: 8, item: "legendarysurvivaloverhaul:cooling_coat_1" }
+		{ count: 4, item: "legendarysurvivaloverhaul:cooling_coat_2" }
+		{ count: 2, item: "legendarysurvivaloverhaul:cooling_coat_3" }
+		{ count: 8, item: "legendarysurvivaloverhaul:heating_coat_1" }
+		{ count: 4, item: "legendarysurvivaloverhaul:heating_coat_2" }
+		{ count: 2, item: "legendarysurvivaloverhaul:heating_coat_3" }
+	]
+	title: "随机生存用品"
+}

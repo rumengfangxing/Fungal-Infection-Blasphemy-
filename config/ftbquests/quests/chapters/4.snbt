@@ -2056,6 +2056,11 @@
 			hide_dependent_lines: true
 			icon: "minecraft:writable_book"
 			id: "198706E5988758F2"
+			tasks: [{
+				id: "1935EB95795FE25A"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
 			title: "幻形魔"
 			x: 12.5d
 			y: 22.0d
@@ -2064,6 +2069,11 @@
 			hide_dependent_lines: true
 			icon: "minecraft:writable_book"
 			id: "480B5609288ED647"
+			tasks: [{
+				id: "2F165826314360EE"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
 			title: "毒气"
 			x: 15.0d
 			y: 22.0d

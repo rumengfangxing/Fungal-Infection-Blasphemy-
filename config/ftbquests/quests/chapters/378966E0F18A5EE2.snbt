@@ -137,6 +137,7 @@
 				id: "0F5D5D6572768B25"
 				table_id: 4925529484297598251L
 				team_reward: false
+				title: "自选空降位点"
 				type: "choice"
 			}]
 			tasks: [{
@@ -162,7 +163,7 @@
 				"但是&3迷迭香小姐&r驻守在这里"
 				"或许&e她能护你周全&r"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: "torchesbecomesunlight:rhodes_island_eye"
 			id: "79288EB2564382F7"
 			rewards: [{
@@ -190,6 +191,345 @@
 			title: "前往最近的罗德岛给事处"
 			x: -6.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["1279707426A5CEAB"]
+			description: [
+				"文明探测器:&6手持右键&r使用,扫描周围&2文明区范围&r。同时输出&c周围地块感染情况&r,方便展开探测和清理工作"
+				""
+				"探险家指南针:&6定位&n指定名称的&r&6结构&r"
+				""
+				"自然指南针:&6定位&n指定名称的&r&6群系&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "explorerscompass:explorerscompass"
+				tag: { }
+			}
+			id: "6B3C7C86BDB80F2D"
+			rewards: [
+				{
+					id: "575451B004A7B637"
+					item: {
+						Count: 1
+						id: "lrtactical:consumable"
+						tag: {
+							ConsumableId: "42labk:tgl1"
+							Damage: 0
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "6F47576688158544"
+					table_id: 897152364832445754L
+					team_reward: false
+					title: "随机生存用品"
+					type: "random"
+				}
+				{
+					id: "14A5AD8D75B6C800"
+					table_id: 4193797247284059865L
+					team_reward: false
+					title: "随机钱币奖励"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "33C51796C42A901C"
+					item: "civil:civil_detector"
+					type: "item"
+				}
+				{
+					id: "200DE7A027123223"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "24A9C11BA6A65675"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "探索必备工具"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1279707426A5CEAB"]
+			description: [
+				"我将向您介绍几样主要的出行工具"
+				""
+				"1沉浸式飞机模组提供的多种&6飞行载具&r"
+				""
+				"2飞车奇匠提供的多种&6陆地载具&r"
+				""
+				"3诡厄巫法模组提供的&6位移类法术&r"
+				""
+				"4机械动力&6火车,钩锁&r"
+				""
+				"5直接徒步或者飞行"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "explorerscompass:explorerscompass"
+				tag: { }
+			}
+			id: "51F4FA253AEABBCD"
+			rewards: [
+				{
+					id: "64EC1143279ADA82"
+					table_id: 897152364832445754L
+					team_reward: false
+					title: "随机生存用品"
+					type: "random"
+				}
+				{
+					id: "6BA57D26CC59E1D5"
+					table_id: 4193797247284059865L
+					team_reward: false
+					title: "随机钱币奖励"
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6E43AAE656FFE4D3"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "代步工具"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"优点:沉浸感强"
+				""
+				"缺点:吃地形，难操作"
+				""
+				"根据任务需求收集制作汽车的材料"
+				"&8(翻页查看陆地载具使用教程)&r"
+				"{@pagebreak}"
+				""
+				"{image:ftbquests:textures/picture/004.png width:180 height:120 align:center}"
+				"组装后的成品/半成品车可以用撬棍右键回收成零件"
+				"{@pagebreak}"
+				""
+				"{image:ftbquests:textures/picture/005.png width:180 height:100 align:center}"
+				"这类载具不需要燃料,转向过程中按空格可以进行漂移,松开漂移键后会进行加速"
+				"{@pagebreak}"
+				"                                           上坡问题"
+				"{image:ftbquests:textures/picture/006.png width:180 height:100 align:center}"
+				"车的&6越野性能&r是&6和轮胎挂钩&r的,像图中这俩车的轮胎明显不足以支持这俩车开上一格的高度"
+			]
+			icon: {
+				Count: 1
+				id: "automobility:automobile"
+				tag: {
+					Automobile: {
+						engine: "automobility:diamond"
+						frame: "automobility:c_arr"
+						isPrefab: 1b
+						wheels: "automobility:off_road"
+					}
+					display: {
+						Name: "{\"translate\":\"prefab.automobility.c_arr\",\"italic\":\"false\"}"
+					}
+				}
+			}
+			id: "5A94431BE65F9676"
+			rewards: [
+				{
+					id: "1B8B6DF8122336BD"
+					item: {
+						Count: 1
+						id: "automobility:automobile_engine"
+						tag: {
+							engine: "automobility:creative"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "4746BD7F208B98EA"
+					table_id: 897152364832445754L
+					team_reward: false
+					title: "随机生存用品"
+					type: "random"
+				}
+				{
+					id: "5FF3E6870D10E5A2"
+					table_id: 4193797247284059865L
+					team_reward: false
+					title: "随机钱币奖励"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "3E65FAF9FFB17874"
+					item: {
+						Count: 1
+						id: "automobility:automobile_frame"
+						tag: {
+							frame: "riautomobility:wooden_doublemotorcar"
+						}
+					}
+					match_nbt: false
+					title: "任意机动车外壳"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7A2D7CAD9D8EAF29"
+					item: {
+						Count: 1
+						id: "automobility:automobile_wheel"
+						tag: {
+							wheel: "riautomobility:dmc12"
+						}
+					}
+					title: "任意4个轮胎"
+					type: "item"
+				}
+				{
+					id: "2C2D9E35B4BEB97A"
+					item: {
+						Count: 1
+						id: "automobility:automobile_engine"
+						tag: {
+							engine: "automobility:diamond"
+						}
+					}
+					title: "任意引擎"
+					type: "item"
+				}
+				{
+					id: "2E6E6029B458164D"
+					item: "automobility:auto_mechanic_table"
+					type: "item"
+				}
+				{
+					id: "61E19310CE87C9F5"
+					item: "automobility:automobile_assembler"
+					type: "item"
+				}
+				{
+					id: "12CA54B0B9349806"
+					item: "automobility:crowbar"
+					type: "item"
+				}
+			]
+			title: "陆地载具"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"优点:夯,无需多言"
+				""
+				"缺点:烧燃料或者饥饿值,制作较为复杂"
+				"&8(任务需求的飞机可能是最好做的了)&r"
+			]
+			id: "3AF89EBC8A3DE824"
+			rewards: [
+				{
+					id: "763694B5674DE8B2"
+					table_id: 897152364832445754L
+					team_reward: false
+					title: "随机生存用品"
+					type: "random"
+				}
+				{
+					id: "55CB7C8A702544CA"
+					table_id: 4193797247284059865L
+					team_reward: false
+					title: "随机钱币奖励"
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "07EA4A1683D53D3D"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			title: "飞行载具"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"优点:夯,无需多言"
+				""
+				"缺点:获取方式较复杂"
+				""
+				"发射聚晶:让自己朝面朝方向弹射,获得&6&n时间短暂的&r&6缓降效果&r,出于安全考虑,需要持久附魔延迟摔落保护时间"
+				""
+				"飞行聚晶:\"升级版\"发射聚晶,牺牲了速度的爆发,但是可以更稳定的跑图"
+			]
+			id: "78D2D531CCF1B764"
+			tasks: [{
+				id: "39F3925A06AA3149"
+				item: "goety:launch_focus"
+				type: "item"
+			}]
+			title: "位移类聚晶"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"优点:美观"
+				""
+				"缺点:地形/环境依赖,需要手动搭建"
+			]
+			icon: "create:track_station"
+			id: "73256E0663CD13F0"
+			tasks: [
+				{
+					id: "63E5E2767B5E4FA1"
+					item: "create:chain_conveyor"
+					type: "item"
+				}
+				{
+					id: "53BDE74ED191E111"
+					item: "minecraft:chain"
+					type: "item"
+				}
+				{
+					id: "03A333CD45CBECFE"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "3235EA25248534A5"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "6165B7C990FD6FA8"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			title: "机械动力"
+			x: -0.5d
+			y: 2.5d
 		}
 	]
 	title: "&8荒野"

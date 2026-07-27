@@ -1,4 +1,5 @@
 {
+	icon: "goety:phantasm_focus"
 	id: "24F79C90CB4EDBC7"
 	loot_size: 1
 	order_index: 0
@@ -16,5 +17,5 @@
 			type: "command"
 		}
 	]
-	title: "幻翼生成"
+	title: "调整幻翼生成规则"
 }

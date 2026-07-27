@@ -84,11 +84,13 @@
 		}
 		{
 			can_repeat: true
+			icon: "enigmaticlegacy:forbidden_fruit"
 			id: "2490FC2C66B5515A"
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "3DE31BCB85F7E1E1"
+					icon: "enigmaticlegacy:forbidden_fruit"
+					id: "763D1A2FD27AA40E"
 					table_id: 4569497110123061963L
 					type: "choice"
 				}
@@ -102,9 +104,10 @@
 			]
 			tasks: [{
 				id: "398E314C5E2DC5D4"
-				title: "启用死亡不掉落"
+				title: "点击以完成任务"
 				type: "checkmark"
 			}]
+			title: "调整死亡掉落规则"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -141,10 +144,12 @@
 		}
 		{
 			can_repeat: true
+			icon: "goety:phantasm_focus"
 			id: "7E0DB1B9C1C5D5C7"
 			rewards: [
 				{
 					exclude_from_claim_all: true
+					icon: "goety:phantasm_focus"
 					id: "5516FD906A8EC41A"
 					table_id: 2663769850313104327L
 					type: "choice"
@@ -159,9 +164,10 @@
 			]
 			tasks: [{
 				id: "301CEACB44AF54A5"
-				title: "开关幻翼生成"
+				title: "点击以完成任务"
 				type: "checkmark"
 			}]
+			title: "开关幻翼生成"
 			x: 0.0d
 			y: -3.0d
 		}

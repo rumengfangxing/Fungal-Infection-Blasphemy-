@@ -28,5 +28,48 @@
                 "top": 14
             }
         }
+    },
+    "io.github.foundationgames.automobility.screen.AutoMechanicTableScreen": {
+        "buttonHints": {
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": 15,
+                "top": 109
+            },
+            "SORT": {
+                "horizontalOffset": 19,
+                "top": 109
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 18,
+                "top": 109
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 17,
+                "top": 109
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 54,
+                "top": 29
+            },
+            "SETTINGS": {
+                "horizontalOffset": 41,
+                "top": 14
+            }
+        }
+    },
+    "net.p3pp3rf1y.sophisticatedstorage.client.gui.LimitedBarrelScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 25
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 56,
+                "top": 30
+            },
+            "SETTINGS": {
+                "horizontalOffset": 42,
+                "top": 15
+            }
+        }
     }
 }

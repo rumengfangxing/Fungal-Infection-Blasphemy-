@@ -67,17 +67,7 @@
 			type: "custom"
 		}
 		{
-			icon: "legendarysurvivaloverhaul:cactus_juice"
-			tags: [
-				"tp_struct"
-				"dungeons_arise"
-				"greenwood_pub"
-			]
-			title: "&c[探索]&r&e[村民]&r绿荫酒馆"
-			type: "custom"
-		}
-		{
-			icon: "legendarysurvivaloverhaul:cactus_juice"
+			icon: "spore:growth_mycelium"
 			tags: [
 				"tp_struct"
 				"spore"

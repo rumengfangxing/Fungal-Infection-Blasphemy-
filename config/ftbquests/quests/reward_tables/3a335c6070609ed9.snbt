@@ -1,12 +1,16 @@
 {
+	icon: "lightmanscurrency:coin_gold"
 	id: "3A335C6070609ED9"
 	loot_size: 1
 	order_index: 6
 	rewards: [
-		{ item: "lightmanscurrency:coin_gold" }
-		{ count: 4, item: "lightmanscurrency:coin_gold" }
-		{ item: "lightmanscurrency:coin_emerald" }
-		{ count: 4, item: "lightmanscurrency:coin_emerald" }
+		{ item: "lightmanscurrency:coin_gold", weight: 30.0f }
+		{ count: 4, item: "lightmanscurrency:coin_gold", weight: 90.0f }
+		{ item: "lightmanscurrency:coin_emerald", weight: 10.0f }
+		{ count: 4, item: "lightmanscurrency:coin_emerald", weight: 8.0f }
+		{ item: "lightmanscurrency:coin_diamond", weight: 6.0f }
+		{ count: 4, item: "lightmanscurrency:coin_diamond", weight: 4.0f }
+		{ item: "lightmanscurrency:coin_netherite", weight: 2.0f }
 	]
-	title: "钱币奖励"
+	title: "随机钱币奖励"
 }

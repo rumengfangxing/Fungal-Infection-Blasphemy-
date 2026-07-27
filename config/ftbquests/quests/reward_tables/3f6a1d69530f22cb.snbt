@@ -1,4 +1,5 @@
 {
+	icon: "enigmaticlegacy:forbidden_fruit"
 	id: "3F6A1D69530F22CB"
 	loot_size: 1
 	order_index: 1
@@ -6,15 +7,17 @@
 		{
 			command: "/gamerule keepInventory true"
 			elevate_perms: true
+			icon: "enigmaticlegacy:astral_fruit"
 			title: "开启死亡不掉落"
 			type: "command"
 		}
 		{
 			command: "/gamerule keepInventory false"
 			elevate_perms: true
+			icon: "enigmaticlegacy:forbidden_fruit"
 			title: "关闭死亡不掉落"
 			type: "command"
 		}
 	]
-	title: "死亡不掉落"
+	title: "调整死亡掉落规则"
 }

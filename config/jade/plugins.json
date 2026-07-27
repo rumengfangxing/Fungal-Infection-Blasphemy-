@@ -69,10 +69,6 @@
   "ltc2": {
     "latiao_oven": true
   },
-  "extrastorage": {
-    "crafter": true,
-    "advanced_crafter": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -86,6 +82,10 @@
   },
   "balm": {
     "jade": true
+  },
+  "create_biotech": {
+    "butter_cat_engine": true,
+    "bionic_name": true
   },
   "jadeaddons": {
     "equipment_requirement": ""
