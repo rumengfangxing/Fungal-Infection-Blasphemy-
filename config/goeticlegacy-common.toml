@@ -1355,6 +1355,10 @@
 	#[默认: 10] [范围: 1 ~ 100]
 	#Range: 1 ~ 100
 	maxDeployFileSize = 10
+	#在聊天框显示预制建筑事务的启动信息和 Job UUID。
+	#仅供开发和管理员诊断使用；失败原因不受此项影响，始终向玩家显示。
+	#[默认: false]
+	debugJobMessages = false
 
 #════════════════════════════════════
 # 初始建筑（Starter）
@@ -1383,7 +1387,7 @@
 	#右键主动技能冷却时间（tick，20 tick = 1 秒） [默认: 100 = 5 秒]
 	#Range: 1 ~ 72000
 	cooldownTicks = 100
-	#烈风神祠普通补给箱中出现烈风之书的概率（0.0~1.0） [默认: 0.15 = 15%]
+	#烈风神祠普通补给箱中出现烈风之书的概率（已废弃，仅保留占位） [默认: 0.0]
 	#Range: 0.0 ~ 1.0
 	lootChance = 0.15
 	#烈风神祠宝藏箱中出现烈风之书的概率（0.0~1.0） [默认: 0.50 = 50%]
@@ -1545,4 +1549,112 @@
 	#CONVERT 模式消耗灵魂能量 [默认: 500]
 	#Range: 0 ~ 10000
 	convertSoulCost = 500
+
+#---- 疾风羽扇 ----
+[gale_plume_fan]
+	#龙卷风 Potency 增益（基础为 0） [默认: 4]
+	#Range: 0 ~ 100
+	cyclonePotency = 4
+	#龙卷风 Duration 增益（tick，基础 600） [默认: 300]
+	#Range: 0 ~ 72000
+	cycloneDuration = 300
+	#龙卷风 Radius 增益（基础 1.0） [默认: 0.8]
+	#Range: 0.0 ~ 10.0
+	cycloneRadius = 0.8
+	#龙卷风 Velocity 增益（弹射物速度） [默认: 2.5]
+	#Range: 0.0 ~ 20.0
+	cycloneVelocity = 2.5
+	#悬空施法时的上升初速度 Y 分量 [默认: 2.2]
+	#Range: 0.0 ~ 10.0
+	riseVelocity = 2.2
+	#施法冷却时间（tick，20 tick = 1 秒） [默认: 100 = 5 秒]
+	#Range: 0 ~ 72000
+	cooldownTicks = 100
+
+#---- 烈风重锤 ----
+[gale_mace]
+	#触发 Smash 攻击的最低摔落距离（格） [默认: 1.5]
+	#Range: 0.5 ~ 10.0
+	smashThreshold = 1.5
+	#Smash 攻击每格摔落距离的额外伤害 [默认: 3.0]
+	#Range: 0.0 ~ 50.0
+	smashDamagePerBlock = 3.0
+	#Smash 有效摔落上限（格），超过此值不再增加伤害和 AoE 增长 [默认: 60.0]
+	#Range: 1.0 ~ 256.0
+	maxEffectiveFall = 60.0
+	#AoE 牵引基础半径（格） [默认: 4.0]
+	#Range: 0.0 ~ 16.0
+	aoeRadiusBase = 4.0
+	#AoE 牵引每格摔落距离的半径增长 [默认: 1.0]
+	#Range: 0.0 ~ 10.0
+	aoeRadiusPerBlock = 1.0
+	#AoE 牵引半径上限（格） [默认: 8.0]
+	#Range: 0.0 ~ 32.0
+	aoeRadiusMax = 8.0
+	#AoE 牵引基础力度 [默认: 0.45]
+	#Range: 0.0 ~ 5.0
+	aoeKnockbackBase = 0.45
+	#AoE 牵引每格摔落距离的力度增长 [默认: 0.08]
+	#Range: 0.0 ~ 5.0
+	aoeKnockbackPerBlock = 0.08
+	#Smash 命中后玩家向上弹起速度系数（× sqrt(2×fallDist)） [默认: 0.25]
+	#Range: 0.0 ~ 3.0
+	bounceFactor = 0.25
+	#强效(Potency)对数缩放系数：每级加值 = logScale × log(level+1) [默认: 1.5]
+	#Range: 0.0 ~ 10.0
+	potencyLogScale = 1.5
+	#范围(Radius)每级 AoE 半径加成（格） [默认: 0.75]
+	#Range: 0.0 ~ 10.0
+	radiusBonusPerLevel = 0.75
+	#持久(Duration)每级弹跳速度加成（固定加值，约 0.5~1 格额外高度/级） [默认: 0.06]
+	#Range: 0.0 ~ 5.0
+	durationBouncePerLevel = 0.06
+
+#---- 烈风弹 ----
+[gale_charge]
+	#弹射物飞行速度 [默认: 1.5]
+	#Range: 0.1 ~ 5.0
+	speed = 1.5
+	#左键吸引聚怪半径（格） [默认: 5.0]
+	#Range: 1.0 ~ 32.0
+	pullRadius = 5.0
+	#左键吸引力度 [默认: 0.8]
+	#Range: 0.1 ~ 5.0
+	pullStrength = 0.8
+	#右键风爆击退半径（格） [默认: 6.0]
+	#Range: 1.0 ~ 32.0
+	blastRadius = 6.0
+	#右键击退力度 [默认: 1.5]
+	#Range: 0.1 ~ 10.0
+	blastStrength = 1.5
+	#右键风爆对投掷者自身的额外上推速度 [默认: 1.2]
+	#Range: 0.0 ~ 3.0
+	selfPushY = 1.2
+	#投掷冷却时间（tick，20 tick = 1 秒） [默认: 20 = 1 秒]
+	#Range: 0 ~ 72000
+	cooldownTicks = 20
+	#弹射物最大存活时间（tick，超时自动消失） [默认: 40 = 2 秒]
+	#Range: 10 ~ 200
+	maxLifetime = 40
+
+#---- 烈风神祠战利品注入 ----
+[shrine_loot]
+	#风伞在普通补给箱中的概率 [默认: 0.10 = 10%]
+	#Range: 0.0 ~ 1.0
+	windUmbrellaChance = 0.1
+	#疾风羽扇在普通补给箱中的概率 [默认: 0.05 = 5%]
+	#Range: 0.0 ~ 1.0
+	galePlumeFanSupplyChance = 0.05
+	#疾风羽扇在宝藏箱中的概率 [默认: 0.25 = 25%]
+	#Range: 0.0 ~ 1.0
+	galePlumeFanTreasureChance = 0.25
+	#烈风弹在普通补给箱中的概率 [默认: 0.70 = 70%]
+	#Range: 0.0 ~ 1.0
+	galeChargeChance = 0.7
+	#烈风弹每次最少生成数量 [默认: 3]
+	#Range: 1 ~ 64
+	galeChargeMinCount = 3
+	#烈风弹每次最多生成数量 [默认: 11]
+	#Range: 1 ~ 64
+	galeChargeMaxCount = 11
 

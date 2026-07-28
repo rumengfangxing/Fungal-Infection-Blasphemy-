@@ -1,62 +1,13 @@
-#Enable RTS Building survival progression, feature unlocks, home anchors, and progression radius limits.
+#Enable RTS Home anchors and home-radius limits.
 enableSurvivalProgression = true
-#When survival progression is enabled, share unlocked progression nodes and RTS home anchors with the player's FTB Team, or vanilla scoreboard team when FTB Teams is unavailable.
+#When RTS Home is enabled, share RTS home anchors and team plugins with the player's FTB Team, OpenPAC party, or vanilla scoreboard team.
 shareSurvivalProgressionWithTeams = false
-#Maximum RTS action radius in blocks. Used directly when survival progression is disabled, and by the Radius Max skill when survival progression is enabled.
+#Maximum RTS action radius in blocks.
 #Range: 48 ~ 512
 maxActionRadiusBlocks = 128
-#Skill material overrides. Format: node_path=minecraft:item:count,minecraft:item2:count. Example: ultimine=minecraft:diamond_pickaxe:1,minecraft:redstone_block:1
-progressionCostOverrides = []
-#Enable the experimental RTS blueprint panel and direct blueprint placement.
+#Enable the RTS blueprint library tab, local blueprint upload, and server-side blueprint placement.
 enableBlueprints = true
 #Maximum non-air blocks allowed in one RTS blueprint import, capture, or placement job.
 #Range: 1 ~ 200000
 maxBlueprintBlocks = 20000
-#Render translucent block ghost models before the player confirms placement.
-useBlockGhostPreview = true
-#Render translucent grow-in block ghosts after server-confirmed block placement.
-usePlaceBlockGhostAnimation = true
-#Render translucent shrink-out block ghosts after server-confirmed block destruction.
-useDestroyBlockGhostAnimation = false
-#Render wireframe outlines before the player confirms placement.
-useWireframePreview = false
-#Render grow-in wireframe outlines after server-confirmed block placement.
-usePlaceWireframeAnimation = false
-#Render shrink-out wireframe outlines after server-confirmed block destruction.
-useDestroyWireframeAnimation = false
-#Render merged skeleton borders for non-chain range destroy previews. Chain mining always uses the skeleton style.
-useRangeDestroySkeleton = true
-#Require a configurable keyboard key for the final multi-block placement/destroy confirmation instead of confirming with the mouse click used to select the range.
-requireKeyboardBatchConfirm = true
-
-[mining]
-	#Maximum blocks collected by one RTS chain mining request.
-	#Range: 1 ~ 4096
-	ultimineMaxBlocks = 16
-	#Maximum block count per dimension for RTS area mining selections.
-	#Range: 1 ~ 64
-	areaMineMaxSize = 8
-	#Maximum covered volume, width * height * depth, accepted by one RTS area mining selection.
-	#Range: 1 ~ 262144
-	areaMineMaxVolume = 256
-	#Maximum X-axis width accepted by one RTS area mining selection.
-	#Range: 1 ~ 256
-	areaMineMaxWidth = 8
-	#Maximum Y-axis height accepted by one RTS area mining selection.
-	#Range: 1 ~ 256
-	areaMineMaxHeight = 8
-	#Maximum Z-axis depth accepted by one RTS area mining selection.
-	#Range: 1 ~ 256
-	areaMineMaxDepth = 4
-	#Maximum explicit positions accepted by one RTS area destroy request.
-	#Range: 1 ~ 262144
-	areaDestroyMaxTargets = 512
-	#Maximum queued chain mining targets processed per player per server tick.
-	#Range: 1 ~ 128
-	ultimineBlocksPerTick = 8
-
-[placement]
-	#Maximum RTS remote block action sounds sent per player per tick. Excess sounds are dropped.
-	#Range: 0 ~ 16
-	remoteBlockActionSoundsPerTick = 16
 
