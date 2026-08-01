@@ -17,7 +17,6 @@
 			y: -4.0d
 		}
 		{
-			dependency: "7557C5DE8DFDC369"
 			dev: true
 			height: 4.0d
 			image: "minecraft:block/grass"
@@ -632,47 +631,38 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"我现在就用那个最简单、最直接、最不拐弯抹角、最不藏着掖着、最一针见血的方式跟你唠你现阶段该干啥！"
+				"&6手持便携终端右键&r打开界面,把&6磁盘塞在右上角槽位&r就可以使用了"
 				""
-				"赚钱,上网扫货！！！！！！"
-				"{@pagebreak}"
-				"回到正题:"
-				"交易终端里的网店可能会出售你需要的物品"
-				"你也可以找找有没有网店愿意收你的东西"
-				""
-				"这可能是你为数不多的与世界联系的方法了"
-				"{@pagebreak}"
-				"有一些好心人在置办了免费补给挂在网店上"
-				"如果有需要的话,希望这些补给可以帮到你"
+				"背上背包正式开始&m逃亡&r探险之旅吧"
 			]
-			hide_until_deps_complete: true
-			id: "7557C5DE8DFDC369"
-			rewards: [
+			icon: {
+				Count: 1
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					inventorySlots: 27
+					upgradeSlots: 1
+				}
+			}
+			id: "0899FD63A2E65625"
+			tasks: [
 				{
-					id: "79FFC8A91AE8AF6E"
+					id: "597FB1403B53C42C"
 					item: {
 						Count: 1
-						id: "lightmanscurrency:wallet_leather"
+						id: "refinedstorage:portable_grid"
 						tag: { }
 					}
-					team_reward: false
+					match_nbt: false
 					type: "item"
 				}
 				{
-					id: "761A1571DA5F9106"
-					table_id: 4193797247284059865L
-					team_reward: false
-					title: "随机钱币奖励"
-					type: "random"
+					id: "4E4CAC62317FDB7E"
+					title: "点击以完成任务"
+					type: "checkmark"
 				}
 			]
-			tasks: [{
-				id: "4CD536EC5DE812C3"
-				item: "lightmanscurrency:portable_terminal"
-				type: "item"
-			}]
 			x: 0.0d
-			y: 4.0d
+			y: 3.5d
 		}
 	]
 	title: "&8荒野"

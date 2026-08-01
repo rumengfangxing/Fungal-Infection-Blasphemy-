@@ -1,0 +1,29 @@
+{
+	icon: "spore:fungal_burger"
+	id: "2741BCDA2A54FA48"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ count: 2, item: "spore:sausage" }
+		{ count: 4, item: "spore:tendon_gum" }
+		{ item: "spore:fiber_stew" }
+		{ count: 2, item: "spore:heart_kebab" }
+		{ count: 2, item: "spore:roasted_heart_kebab" }
+		{ count: 2, item: "spore:roasted_tumor" }
+		{ item: "spore:vigil_eye_soup" }
+		{ count: 2, item: "spore:milky_sack" }
+		{ item: "spore:brain_noodles" }
+		{ count: 2, item: "spore:fried_wing_membrane" }
+		{ count: 4, item: "spore:biomass_bacon" }
+		{ item: "spore:organoid_soup" }
+		{ count: 2, item: "spore:fungal_sauce" }
+		{ count: 3, item: "spore:slice_of_heartpie" }
+		{ item: "spore:fungal_burger" }
+		{ item: "spore:fleshy_ribs" }
+		{ count: 2, item: "spore:meaty_icecream" }
+		{ item: "spore:amalgamated_roast" }
+		{ item: "spore:eldritch_sushi" }
+		{ item: "spore:stuffed_abomination" }
+	]
+	title: "随机感染食物"
+}

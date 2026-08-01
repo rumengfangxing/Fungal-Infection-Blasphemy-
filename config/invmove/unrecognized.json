@@ -143,7 +143,10 @@
     "com.rtsbuilding.rtsbuilding.client.screen.standalone.RtsPluginManagementScreen": true,
     "com.github.tartaricacid.touhoulittlemaid.client.gui.entity.maid.backpack.EmptyBackpackContainerScreen": true,
     "com.simibubi.create.content.trains.station.StationScreen": true,
-    "com.simibubi.create.content.trains.station.AssemblyScreen": true
+    "com.simibubi.create.content.trains.station.AssemblyScreen": true,
+    "civil.towncenter.gui.TownCenterMainScreen": true,
+    "civil.towncenter.gui.TownCenterMembersScreen": true,
+    "civil.towncenter.gui.TownCenterOptionsScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,

@@ -3,11 +3,11 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "gear"
 	filename: "7ADA31FD55AD6155"
-	group: "21B93F40B013EE45"
+	group: "18296D6B380C1DA0"
 	hide_quest_until_deps_complete: true
 	icon: "lightmanscurrency:coinpile_gold"
 	id: "7ADA31FD55AD6155"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

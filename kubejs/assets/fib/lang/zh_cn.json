@@ -163,5 +163,12 @@
     "item.enigmaticdice.permafrost.tooltip.alt.1": "  §c冰冻3 (15s)",
 
     "jei.goety.craftType.star":"星尘",
-    "jei.goety.craftType.infect":"寄染"
+    "jei.goety.craftType.infect":"寄染",
+
+    "zone_buff.civil.tc.str": "斗志",
+    "zone_buff.civil.tc.sstr": "游击队之歌",
+    "zone_buff.civil.tc.sregeneration": "活力迸发",
+    "zone_buff.civil.tc.trade": "村庄英雄",
+    "zone_buff.civil.tc.su": "恒温",
+    "zone_buff.civil.tc.sresistance": "纯化抗性"
 }

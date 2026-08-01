@@ -92,7 +92,7 @@
 			y: 12.5d
 		}
 	]
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [{
 		id: "0DE12211AB78A420"
