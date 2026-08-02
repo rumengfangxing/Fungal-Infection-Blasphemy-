@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2279A6A6151917F2"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "10769A603E6964C4"
@@ -7,6 +8,362 @@
 	id: "10769A603E6964C4"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: [
+				"                                     &e&o&l大脑寄存处&r"
+				"        我们的游戏是一个巨大的黑盒,不要太计较过程"
+				"{@pagebreak}"
+				"为什么要搞科学"
+				""
+				"&61:解构未知&r"
+				""
+				"&62:掌握已知&r"
+				"&8(纯个人观点,谨慎参考)&r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2279A6A6151917F2"
+			rewards: [{
+				id: "4BDACDBB11E03EAD"
+				table_id: 1739313601983776999L
+				team_reward: false
+				title: "初始科技补给"
+				type: "random"
+			}]
+			subtitle: "&l从使用工具开始"
+			tasks: [
+				{
+					advancement: "minecraft:story/upgrade_tools"
+					criterion: ""
+					icon: {
+						Count: 1
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "4E91C0AE18CD4A8A"
+					title: "获得石镐"
+					type: "advancement"
+				}
+				{
+					block: "minecraft:furnace"
+					block_type: 0
+					checkItem: false
+					icon: "minecraft:furnace"
+					id: "155F77177BE591F4"
+					isItemInteraction: false
+					title: "使用熔炉"
+					type: "questsadditions:use"
+					value: 1L
+				}
+			]
+			title: "科学"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2279A6A6151917F2"]
+			dependency_requirement: "one_completed"
+			description: ["&6俺寻思机器是这样动的&r"]
+			hide_until_deps_complete: true
+			icon: "minecraft:observer"
+			id: "7AC4F35B01AA1153"
+			subtitle: "&m他奶奶的,物理还在追我"
+			tasks: [{
+				id: "3CC50B0E0F7C7D95"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "机械"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2279A6A6151917F2"]
+			description: ["&6危险行为,仅供游戏演绎需要,请勿在现实中模仿&r"]
+			icon: "biomancy:insomnia_cure"
+			id: "35017792B97B491C"
+			subtitle: "&m我的天哪化学生"
+			tasks: [{
+				id: "71D3BC39AADA5FB1"
+				type: "checkmark"
+			}]
+			title: "生化"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7AC4F35B01AA1153"]
+			dependency_requirement: "one_completed"
+			hide_until_deps_complete: true
+			id: "5C0D7E4A4FBA3418"
+			rewards: [{
+				id: "23602F9CB0432E12"
+				table_id: 1739313601983776999L
+				title: "初阶科技补给"
+				type: "random"
+			}]
+			subtitle: "别问我为什么不是箱子,用木桶是基本素养"
+			tasks: [{
+				block: "minecraft:barrel"
+				block_type: 0
+				checkItem: false
+				id: "195486312FF0B70C"
+				isItemInteraction: false
+				title: "使用木桶"
+				type: "questsadditions:use"
+				value: 1L
+			}]
+			title: "模块:仓储"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7AC4F35B01AA1153"]
+			dependency_requirement: "one_completed"
+			description: [
+				"&6鼠标移到物品上,按[W]开始思索"
+				"&r"
+				"多想多用就行了"
+			]
+			hide_until_deps_complete: true
+			id: "52EC79AB825467F3"
+			rewards: [
+				{
+					count: 16
+					id: "4178B3D484E591AA"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "75CB6431407E7927"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "39BA6FF7F21CDDFC"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "3ED07E04999E9D4C"
+					item: "create:hand_crank"
+					type: "item"
+				}
+			]
+			subtitle: "我不多教,材料给你了直接放下上手实践"
+			tasks: [{
+				id: "4CA51B0E44C0B0ED"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "初识动力"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["52EC79AB825467F3"]
+			dependency_requirement: "one_completed"
+			description: [
+				"&6最简单的动力来源&r"
+				"只需要不停的"
+				"堆叠堆叠堆叠堆叠....."
+			]
+			icon: "create:large_water_wheel"
+			id: "5BA81106D05138B6"
+			rewards: [{
+				count: 2
+				id: "699926C81CA63EBC"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "水车仙人"
+			tasks: [
+				{
+					id: "6EDADFDD506C439B"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "4FF1A2B12BD7FA0B"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+			]
+			title: "!?河动力!?"
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["52EC79AB825467F3"]
+			dependency_requirement: "one_completed"
+			description: [
+				"可能比水车高级一点?"
+				"不过对羊毛需求有点大"
+			]
+			id: "0D4AF4FA7937BA88"
+			rewards: [{
+				count: 8
+				id: "1CB6CEE52408B75E"
+				item: "create:white_sail"
+				type: "item"
+			}]
+			subtitle: "风车仙人"
+			tasks: [{
+				id: "791113403A5F8640"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			title: "风车动力"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["52EC79AB825467F3"]
+			dependency_requirement: "one_completed"
+			description: ["你这家伙,宁愿饿死也要用曲柄产生动力吗"]
+			id: "32755A0FF7104637"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "061FFB14621B69A2"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "&mGal动力里不是这样的"
+			tasks: [{
+				advancement: "create:hand_crank_000"
+				criterion: ""
+				id: "7B4BD140DC36224B"
+				type: "advancement"
+			}]
+			title: "曲柄仙人"
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["32755A0FF7104637"]
+			dependency_requirement: "all_started"
+			description: [
+				"通常为了追求更高的效率,我们会选择大齿轮带动小齿轮提高转速"
+				""
+				"该任务将教你一个邪教玩法&8(好工程师不要学)&r"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/014.png width:180 height:100 align:center}"
+				"这是一个常规的齿轮加速阵列,在手摇驱动下末端可达256满转速"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/015.png width:180 height:100 align:center}"
+				"    而这,是一个齿轮减速阵列,末端输出的转速为个位数"
+				"                        那么我们可以用它做什么呢"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/016.png width:180 height:100 align:center}"
+				"                                     &l&6四 两 拨 千 斤&r&r"
+			]
+			hide_until_deps_visible: true
+			icon: "immersive_aircraft:industrial_gears"
+			id: "08AB74D752821BBD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1EF220517B8F573E"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "&m四两拨千斤"
+			tasks: [{
+				id: "4784F8D9909F85C1"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "邪教:齿轮减速"
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5BA81106D05138B6"
+				"32755A0FF7104637"
+				"0D4AF4FA7937BA88"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"如何制作安山机壳?"
+				"&6手持安山合金右键&n去皮&r&6原木&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "410B27941DF07BCD"
+			rewards: [
+				{
+					count: 4
+					id: "4A4E8AEE2E10D4D5"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3869D2006EA4244C"
+					table_id: 1739313601983776999L
+					type: "random"
+				}
+			]
+			shape: "none"
+			size: 3.0d
+			subtitle: "&m科技界迎来大变"
+			tasks: [{
+				advancement: "create:andesite_casing"
+				criterion: ""
+				id: "667B860C13830BD7"
+				type: "advancement"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			description: ["使用方法按[W]开始思索"]
+			id: "7986C1904B0AA1E8"
+			subtitle: "机械动力不得不品的一环"
+			tasks: [{
+				id: "55ACE8ABD7BF32B3"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			description: [
+				"左手处理物,右手工程锤"
+				""
+				"无需动力冲压机"
+			]
+			id: "62083478D610B5B9"
+			invisible: true
+			subtitle: "让你逃到课了"
+			tasks: [{
+				id: "011BFF30DBC68C3F"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.0d
+		}
+	]
 	title: "科学"
 }

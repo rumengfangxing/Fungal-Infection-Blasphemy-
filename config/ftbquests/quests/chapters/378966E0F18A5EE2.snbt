@@ -50,6 +50,22 @@
 			]
 			icon: "minecraft:minecart"
 			id: "1279707426A5CEAB"
+			rewards: [
+				{
+					id: "4B675A6AD1EE6007"
+					item: {
+						Count: 1
+						id: "refinedstorage:portable_grid"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4EFB1D6B4A868C4A"
+					item: "refinedstorage:1k_storage_disk"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "09CC6084DF836E6C"
 				title: "点击勾选以开启章节"
