@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3906CDC67457305C"
+	group: "3940671EEBB12B1A"
+	icon: "minecraft:blade_pottery_sherd"
+	id: "3906CDC67457305C"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "佣兵"
+}

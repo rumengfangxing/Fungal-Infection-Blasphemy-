@@ -107,6 +107,7 @@
 			rewards: [{
 				id: "6247A77250AD66AD"
 				item: "minecraft:emerald_block"
+				team_reward: false
 				type: "item"
 			}]
 			tasks: [{
@@ -136,6 +137,7 @@
 			rewards: [{
 				id: "1E40580791DC196A"
 				item: "minecraft:lodestone"
+				team_reward: false
 				type: "item"
 			}]
 			subtitle: "&m编钟"
@@ -199,11 +201,13 @@
 				{
 					id: "0816281268C38204"
 					item: "minecraft:crying_obsidian"
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "14774DD4E246A8A4"
 					item: "minecraft:bone"
+					team_reward: false
 					type: "item"
 				}
 			]
@@ -393,6 +397,7 @@
 			rewards: [{
 				id: "786DA985784CAF81"
 				item: "minecraft:emerald_block"
+				team_reward: false
 				type: "item"
 			}]
 			tasks: [{
@@ -423,6 +428,7 @@
 				count: 16
 				id: "77DC4DC339ECA572"
 				item: "minecraft:emerald"
+				team_reward: false
 				type: "item"
 			}]
 			tasks: [{

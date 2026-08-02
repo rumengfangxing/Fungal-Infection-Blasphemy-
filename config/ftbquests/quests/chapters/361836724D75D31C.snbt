@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "361836724D75D31C"
+	group: "3940671EEBB12B1A"
+	icon: "confluence:trifold_map"
+	id: "361836724D75D31C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "构筑"
+}
