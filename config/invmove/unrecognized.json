@@ -146,7 +146,8 @@
     "com.simibubi.create.content.trains.station.AssemblyScreen": true,
     "civil.towncenter.gui.TownCenterMainScreen": true,
     "civil.towncenter.gui.TownCenterMembersScreen": true,
-    "civil.towncenter.gui.TownCenterOptionsScreen": true
+    "civil.towncenter.gui.TownCenterOptionsScreen": true,
+    "com.rtsbuilding.rtsbuilding.client.screen.standalone.RtsHomeScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
