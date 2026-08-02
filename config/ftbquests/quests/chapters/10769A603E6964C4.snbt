@@ -6,6 +6,15 @@
 	group: "3940671EEBB12B1A"
 	icon: "spore:scanner"
 	id: "10769A603E6964C4"
+	images: [{
+		click: "#3ED059FC7DD31728"
+		height: 10.0d
+		image: "create:block/andesite_casing"
+		rotation: 0.0d
+		width: 10.0d
+		x: 6.5d
+		y: -6.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -363,6 +372,99 @@
 			}]
 			x: 13.0d
 			y: 2.0d
+		}
+		{
+			id: "0C9A7B276159492E"
+			tasks: [{
+				id: "022F58D859C52ADE"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -0.5d
+		}
+		{
+			id: "24EEFE5FFD067646"
+			tasks: [{
+				id: "14BBDDDAF0CA4BB0"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 4.0d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: [
+				"如何制作铜机壳?"
+				"&6手持铜锭右键&n去皮&r&6原木&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "5A4EFBD2DE5A446B"
+			shape: "none"
+			size: 3.0d
+			subtitle: "流体科技"
+			tasks: [{
+				advancement: "create:copper_casing"
+				criterion: ""
+				id: "679BC507710C2DC1"
+				type: "advancement"
+			}]
+			x: 19.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["14BBDDDAF0CA4BB0"]
+			description: [
+				"如何制作黄铜机壳?"
+				"&6手持黄铜锭右键&n去皮&r&6原木&r"
+			]
+			hide_dependency_lines: false
+			hide_until_deps_complete: true
+			id: "7C7FD098BF68F77D"
+			shape: "none"
+			size: 3.0d
+			subtitle: "高级原件"
+			tasks: [{
+				advancement: "create:brass_casing"
+				criterion: ""
+				id: "443BC210E3DA5B29"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 6.5d
+		}
+		{
+			id: "5FED0CC326E5167E"
+			tasks: [{
+				id: "1DE6E7235F52ED35"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 2.5d
+		}
+		{
+			description: ["使用方法按[W]开始思索"]
+			icon: "create:mechanical_mixer"
+			id: "2993DA5A25C8D14F"
+			subtitle: "机械动力不得不品的一环"
+			tasks: [
+				{
+					id: "10E45EBF3D908811"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "03853EFC496518A3"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			title: "动力搅拌"
+			x: 12.0d
+			y: 4.0d
 		}
 	]
 	title: "科学"
