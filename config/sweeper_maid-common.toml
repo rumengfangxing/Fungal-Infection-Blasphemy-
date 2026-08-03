@@ -13,22 +13,22 @@
 	#Items in this list will never be cleaned and will be kept as item entity until it disappear.
 	ITEM_WHITELIST = ["minecraft:nether_star", "minecraft:heavy_core"]
 	#Items in this list will be cleaned but not added to the dustbin.
-	ITEM_BLACKLIST = ["minecraft:cobblestone", "minecraft:sand"]
+	ITEM_BLACKLIST = ["minecraft:cobblestone", "minecraft:sand", "spore:claw_fragment", "spore:armor_fragment", "spore:mutated_heart", "spore:mutated_fiber", "spore:wing_membrane", "spore:spine_fragment", "spore:cerebrum", "spore:alveolic_sack", "spore:altered_spleen", "spore:corrosive_sack", "spore:organoid_membrane", "spore:tendons", "spore:innards", "spore:sickle_fragment", "spore:fang", "spore:spike", "spore:shield_fragment", "spore:tumor", "spore:frozen_decayed_biomass", "spore:decayed_torso", "spore:decayed_limbs", "spore:freeze_burned_biomass", "spore:biomass", "legendarysurvivaloverhaul:heart_fragment", "legendarysurvivaloverhaul:heart_container", "legendarysurvivaloverhaul:shield_container"]
 	#What message will be sent to players when there's 15s, 30s and 60s left to sweep. "$1" stands for the remaining time (in seconds).
-	MESSAGE_BEFORE_SWEEP_15_30_60 = "[Sweeper Maid]: I'll sweep the floor in $1 seconds!"
+	MESSAGE_BEFORE_SWEEP_15_30_60 = "[捡垃圾的鼠鼠]: 我还有 $1 秒得吃!"
 	#What message will be sent to players when there's 1s~10s left to sweep. "$1" stands for the remaining time (in seconds).
-	MESSAGE_BEFORE_SWEEP_1_10 = "[Sweeper Maid]: I'll sweep the floor in $1 seconds!"
+	MESSAGE_BEFORE_SWEEP_1_10 = "[捡垃圾的鼠鼠]: 我还有 $1 秒得吃!"
 	#What message will be sent to players after a sweep. "$1" stands for the number of killed dropped items, "$2" stands for the number of killed entities, and "$3" stands for the number of blacklisted items.
-	MESSAGE_AFTER_SWEEP = "[Sweeper Maid]: $1 dropped items, $2 unnecessary entities and $3 blacklist items are cleaned during this sweeping."
+	MESSAGE_AFTER_SWEEP = "[捡垃圾的鼠鼠]:这波捡了 $1 的垃圾,k了 $2 的头,删了 $3 坨大粪,得吃！！！"
 	#What message will be sent to players when open a wrong dustbin.
-	MESSAGE_WRONG_DUSTBIN = "[Sweeper Maid]: Wrong dustbin."
+	MESSAGE_WRONG_DUSTBIN = "[捡垃圾的鼠鼠]: 这也没看到有保险箱啊?"
 	#Name of dustbins.
-	DUSTBIN_NAME = "Dustbin "
+	DUSTBIN_NAME = "垃圾桶 "
 	#Count of dustbins
 	#Range: 1 ~ 64
-	DUSTBIN_COUNT = 64
+	DUSTBIN_COUNT = 3
 	#What chat message will be sent to players after a sweep. Command will be appended to the end of the chat message.
-	CHAT_MESSAGE_AFTER_SWEEP = "[Sweeper Maid]: Anything's missing? Let's checkout the dustbin:"
+	CHAT_MESSAGE_AFTER_SWEEP = "[捡垃圾的鼠鼠]: 诶大哥,你要不打开这保险箱看看:"
 	#Permission level of a player to open the dustbin.
 	#Range: 0 ~ 4
 	PERMISSION_LEVEL_DUSTBIN = 0

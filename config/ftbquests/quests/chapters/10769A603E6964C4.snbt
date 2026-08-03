@@ -8,16 +8,7 @@
 	id: "10769A603E6964C4"
 	images: [
 		{
-			click: "#3ED059FC7DD31728"
-			height: 10.0d
-			image: "create:block/andesite_casing"
-			rotation: 0.0d
-			width: 10.0d
-			x: 6.5d
-			y: -6.5d
-		}
-		{
-			click: "#71CADC5CC079CFA8"
+			click: "command:/maidvoice"
 			dependency: "410B27941DF07BCD"
 			height: 1.0d
 			image: "touhou_little_maid:textures/chat_bubble/maid_emoji/emoji_07.png"
@@ -25,6 +16,25 @@
 			width: 1.0d
 			x: 11.0d
 			y: 5.0d
+		}
+		{
+			dependency: "7B549B769BCD29F3"
+			height: 1.0d
+			image: "lightmanscurrency:textures/gui/icons/arrow_right.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.0d
+			y: 2.0d
+		}
+		{
+			click: "command:/playsound minecraft:entity.blaze.ambient voice @s"
+			dependency: "7B549B769BCD29F3"
+			height: 1.5d
+			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 19.0d
+			y: 1.0d
 		}
 	]
 	order_index: 0
@@ -221,8 +231,8 @@
 				}
 			]
 			title: "!?河动力!?"
-			x: 7.5d
-			y: 4.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["52EC79AB825467F3"]
@@ -245,8 +255,8 @@
 				type: "item"
 			}]
 			title: "风车动力"
-			x: 7.5d
-			y: 3.0d
+			x: 8.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["52EC79AB825467F3"]
@@ -268,8 +278,8 @@
 				type: "advancement"
 			}]
 			title: "曲柄仙人"
-			x: 6.5d
-			y: 4.0d
+			x: 8.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["32755A0FF7104637"]
@@ -305,8 +315,8 @@
 				type: "checkmark"
 			}]
 			title: "邪教:齿轮减速"
-			x: 5.5d
-			y: 4.0d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -346,7 +356,7 @@
 				type: "advancement"
 			}]
 			x: 12.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -366,8 +376,8 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 2.0d
+			x: 13.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -396,18 +406,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
-			y: 2.0d
-		}
-		{
-			id: "0C9A7B276159492E"
-			tasks: [{
-				id: "022F58D859C52ADE"
-				item: "create:mechanical_bearing"
-				type: "item"
-			}]
-			x: 17.5d
-			y: -0.5d
+			x: 15.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5FED0CC326E5167E"]
@@ -420,8 +420,8 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 4.0d
+			x: 22.0d
+			y: 2.0d
 		}
 		{
 			dependency_requirement: "one_completed"
@@ -445,12 +445,16 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["14BBDDDAF0CA4BB0"]
+			dependencies: [
+				"14BBDDDAF0CA4BB0"
+				"24EEFE5FFD067646"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"如何制作黄铜机壳?"
 				"&6手持黄铜锭右键&n去皮&r&6原木&r"
 			]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7C7FD098BF68F77D"
 			shape: "none"
@@ -462,13 +466,14 @@
 				id: "443BC210E3DA5B29"
 				type: "advancement"
 			}]
-			x: 21.0d
-			y: 1.5d
+			x: 25.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["2993DA5A25C8D14F"]
+			dependencies: ["7B549B769BCD29F3"]
 			dependency_requirement: "one_completed"
 			description: ["查看&6&n空的&r&6烈焰人燃烧室&r的思索"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "create:blaze_burner"
 			id: "5FED0CC326E5167E"
@@ -479,21 +484,14 @@
 				type: "random"
 			}]
 			subtitle: "接触热源"
-			tasks: [
-				{
-					id: "1DE6E7235F52ED35"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-				{
-					id: "3F666D0B62E61C34"
-					item: "create:empty_blaze_burner"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1DE6E7235F52ED35"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
 			title: "烈焰人燃烧室"
-			x: 14.0d
-			y: 4.0d
+			x: 20.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -525,8 +523,8 @@
 				}
 			]
 			title: "动力搅拌"
-			x: 12.0d
-			y: 4.0d
+			x: 16.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -554,7 +552,7 @@
 				type: "checkmark"
 			}]
 			title: "传动/物流"
-			x: 9.0d
+			x: 7.5d
 			y: 9.0d
 		}
 		{
@@ -578,8 +576,8 @@
 				type: "checkmark"
 			}]
 			title: "结构作业"
-			x: 9.0d
-			y: 15.0d
+			x: 7.5d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -760,7 +758,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -786,7 +784,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -812,7 +810,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -859,7 +857,7 @@
 				}
 			]
 			x: 13.5d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -900,8 +898,8 @@
 				type: "checkmark"
 			}]
 			title: "节点:基础传动"
-			x: 15.5d
-			y: 8.0d
+			x: 17.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -923,7 +921,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -953,7 +951,7 @@
 				}
 			]
 			x: 11.5d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -983,7 +981,7 @@
 				}
 			]
 			x: 14.5d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1005,7 +1003,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1042,8 +1040,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: 10.0d
+			x: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1064,8 +1062,8 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 10.0d
+			x: 11.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1086,8 +1084,8 @@
 				item: "create_biotech:universal_joint"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 10.0d
+			x: 13.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1108,8 +1106,8 @@
 				item: "create_connected:cross_connector"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 9.0d
+			x: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1154,8 +1152,8 @@
 				type: "checkmark"
 			}]
 			title: "节点:转向与连接"
-			x: 16.5d
-			y: 9.5d
+			x: 17.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1177,7 +1175,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1207,7 +1205,7 @@
 				}
 			]
 			x: 14.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1229,7 +1227,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1251,7 +1249,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1273,7 +1271,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1303,7 +1301,7 @@
 				}
 			]
 			x: 13.5d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1325,7 +1323,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 12.0d
+			y: 14.5d
 		}
 		{
 			dependency_requirement: "one_completed"
@@ -1364,8 +1362,8 @@
 				}
 			]
 			title: "红石脉冲"
-			x: 18.5d
-			y: 11.0d
+			x: 22.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1407,8 +1405,8 @@
 				type: "checkmark"
 			}]
 			title: "节点:信号与调节"
-			x: 15.5d
-			y: 11.0d
+			x: 17.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1438,7 +1436,7 @@
 				}
 			]
 			x: 11.5d
-			y: 12.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1459,8 +1457,8 @@
 				item: "create_connected:overstress_clutch"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 12.0d
+			x: 13.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1481,8 +1479,8 @@
 				item: "create_biotech:slime_clutch"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 12.0d
+			x: 14.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1503,8 +1501,8 @@
 				item: "create_biotech:bone_ratchet"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 12.0d
+			x: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1526,7 +1524,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 13.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1548,7 +1546,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 13.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1558,7 +1556,7 @@
 			hide_until_deps_complete: true
 			id: "7AED47C7D2E41A52"
 			x: 10.5d
-			y: 14.5d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -1602,8 +1600,8 @@
 				type: "checkmark"
 			}]
 			title: "节点:应力网络限制与保护"
-			x: 15.5d
-			y: 12.5d
+			x: 17.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1613,7 +1611,7 @@
 			hide_until_deps_complete: true
 			id: "2E33DE60D7807E4E"
 			x: 11.5d
-			y: 14.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1623,7 +1621,7 @@
 			hide_until_deps_complete: true
 			id: "08CF30271B74A565"
 			x: 12.5d
-			y: 14.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1633,7 +1631,7 @@
 			hide_until_deps_complete: true
 			id: "1F430E4BF1960BC0"
 			x: 13.5d
-			y: 14.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1643,7 +1641,76 @@
 			hide_until_deps_complete: true
 			id: "7B8DECD5FD01FAE9"
 			x: 14.5d
-			y: 14.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["2993DA5A25C8D14F"]
+			dependency_requirement: "one_completed"
+			description: ["查看&6&n空的&r&6烈焰人燃烧室&r的思索"]
+			hide_until_deps_complete: true
+			icon: "create:empty_blaze_burner"
+			id: "7B549B769BCD29F3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D41666E3886F53D"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "接触热源"
+			tasks: [{
+				id: "65ED9C25B3CFC69D"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "1B0D5513C4FCC631"
+			shape: "none"
+			size: 1.5d
+			subtitle: "粘连结构的核心道具"
+			tasks: [{
+				id: "14755C115A979132"
+				item: {
+					Count: 1
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "28A959EF0EF6DF51"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "6F8FEEA9FC8FCD28"
+				item: {
+					Count: 1
+					id: "create_biotech:smart_super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 20.5d
 		}
 	]
 	title: "科学"

@@ -1,0 +1,57 @@
+{
+  "maid.mode.idle4": {
+    "sounds": [
+      "ftbq:maid/mode/idle4"
+    ]
+  },
+  "maid.mode.idle5": {
+    "sounds": [
+      "ftbq:maid/mode/idle5"
+    ]
+  },
+  "maid.mode.idle6": {
+    "sounds": [
+      "ftbq:maid/mode/idle6"
+    ]
+  },
+  "maid.mode.idle14": {
+    "sounds": [
+      "ftbq:maid/mode/idle14"
+    ]
+  },
+  "maid.mode.idle15": {
+    "sounds": [
+      "ftbq:maid/mode/idle15"
+    ]
+  },
+  "maid.mode.idle16": {
+    "sounds": [
+      "ftbq:maid/mode/idle16"
+    ]
+  },
+  "maid.mode.idle17": {
+    "sounds": [
+      "ftbq:maid/mode/idle17"
+    ]
+  },
+  "maid.mode.idle19": {
+    "sounds": [
+      "ftbq:maid/mode/idle19"
+    ]
+  },
+  "maid.mode.idle35": {
+    "sounds": [
+      "ftbq:maid/mode/idle35"
+    ]
+  },
+  "maid.mode.idle36": {
+    "sounds": [
+      "ftbq:maid/mode/idle36"
+    ]
+  },
+  "maid.mode.idle39": {
+    "sounds": [
+      "ftbq:maid/mode/idle39"
+    ]
+  }
+}
