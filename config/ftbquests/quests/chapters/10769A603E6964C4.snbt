@@ -6,15 +6,27 @@
 	group: "3940671EEBB12B1A"
 	icon: "spore:scanner"
 	id: "10769A603E6964C4"
-	images: [{
-		click: "#3ED059FC7DD31728"
-		height: 10.0d
-		image: "create:block/andesite_casing"
-		rotation: 0.0d
-		width: 10.0d
-		x: 6.5d
-		y: -6.5d
-	}]
+	images: [
+		{
+			click: "#3ED059FC7DD31728"
+			height: 10.0d
+			image: "create:block/andesite_casing"
+			rotation: 0.0d
+			width: 10.0d
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			click: "#71CADC5CC079CFA8"
+			dependency: "410B27941DF07BCD"
+			height: 1.0d
+			image: "touhou_little_maid:textures/chat_bubble/maid_emoji/emoji_07.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.0d
+			y: 5.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -338,8 +350,16 @@
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
 			description: ["使用方法按[W]开始思索"]
+			hide_until_deps_complete: true
 			id: "7986C1904B0AA1E8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70D32E526A2D8CF5"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
 			subtitle: "机械动力不得不品的一环"
 			tasks: [{
 				id: "55ACE8ABD7BF32B3"
@@ -358,6 +378,12 @@
 			]
 			id: "62083478D610B5B9"
 			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B26354B70AAC115"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
 			subtitle: "让你逃到课了"
 			tasks: [{
 				id: "011BFF30DBC68C3F"
@@ -384,13 +410,17 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["5FED0CC326E5167E"]
+			dependency_requirement: "one_completed"
+			hide_until_deps_complete: true
 			id: "24EEFE5FFD067646"
+			subtitle: "黄铜时代的基石"
 			tasks: [{
 				id: "14BBDDDAF0CA4BB0"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 16.0d
 			y: 4.0d
 		}
 		{
@@ -432,23 +462,55 @@
 				id: "443BC210E3DA5B29"
 				type: "advancement"
 			}]
-			x: 15.5d
-			y: 6.5d
+			x: 21.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["2993DA5A25C8D14F"]
+			dependency_requirement: "one_completed"
+			description: ["查看&6&n空的&r&6烈焰人燃烧室&r的思索"]
+			hide_until_deps_complete: true
+			icon: "create:blaze_burner"
 			id: "5FED0CC326E5167E"
-			tasks: [{
-				id: "1DE6E7235F52ED35"
-				item: "create:blaze_burner"
-				type: "item"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "130D5C674F2D9DE4"
+				table_id: 1739313601983776999L
+				type: "random"
 			}]
-			x: 18.0d
-			y: 2.5d
+			subtitle: "接触热源"
+			tasks: [
+				{
+					id: "1DE6E7235F52ED35"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "3F666D0B62E61C34"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+			]
+			title: "烈焰人燃烧室"
+			x: 14.0d
+			y: 4.0d
 		}
 		{
+			dependencies: [
+				"7986C1904B0AA1E8"
+				"62083478D610B5B9"
+			]
+			dependency_requirement: "one_completed"
 			description: ["使用方法按[W]开始思索"]
+			hide_until_deps_complete: true
 			icon: "create:mechanical_mixer"
 			id: "2993DA5A25C8D14F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E6716DEFECC7F0E"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
 			subtitle: "机械动力不得不品的一环"
 			tasks: [
 				{
@@ -465,6 +527,1123 @@
 			title: "动力搅拌"
 			x: 12.0d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5BA81106D05138B6"
+				"32755A0FF7104637"
+				"0D4AF4FA7937BA88"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"右侧的任务将会展示各个时代可用的传动/物流元件"
+				""
+				"根据复杂程度"
+				"从左到右,从上到下"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create_connected:six_way_gearbox"
+			id: "64D667E3F23340A2"
+			shape: "none"
+			size: 3.0d
+			subtitle: "大连接时代"
+			tasks: [{
+				id: "2A86A6BA9B417318"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "传动/物流"
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"5BA81106D05138B6"
+				"32755A0FF7104637"
+				"0D4AF4FA7937BA88"
+			]
+			dependency_requirement: "one_completed"
+			description: ["右侧任务将会展示各时代可被连接在结构上的元件"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create:contraption_controls"
+			id: "4B72D1A5C4A0B7B1"
+			shape: "none"
+			size: 3.0d
+			subtitle: "让方块动起来!"
+			tasks: [{
+				id: "6A17C7017661BBC6"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "结构作业"
+			x: 9.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"7986C1904B0AA1E8"
+				"62083478D610B5B9"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"在该方块后方接入应力"
+				"会向方块正前方的方块输出FE"
+				""
+				"预计2048应力(5个大水车的总产力量/有16个风帆的风车的总产力量)"
+				"可以供给一套RS设备使用(只能使用外部存储面板,发电量不足以供给磁盘)"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create_simple_generator:stress_generator"
+			id: "4CB923D28D4DA984"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27C3CBB6B9AFE097"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "权宜之计"
+			tasks: [{
+				id: "6E8BC5BFC4635AF9"
+				item: "create_simple_generator:stress_generator"
+				type: "item"
+			}]
+			title: "应力发电机"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7986C1904B0AA1E8"
+				"62083478D610B5B9"
+			]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6A88F6F553731ED3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "12777AF913A52A4B"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "粒子加工,用完再也不想用熔炉了"
+			tasks: [{
+				id: "118A9CA602A5DE03"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7986C1904B0AA1E8"
+				"62083478D610B5B9"
+			]
+			dependency_requirement: "one_completed"
+			description: ["送头饰栏位是对工程师的奖励"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "71CADC5CC079CFA8"
+			rewards: [{
+				command: "/curios add head @s 1"
+				elevate_perms: true
+				icon: "artifacts:cowboy_hat"
+				id: "58167C5140BE95A0"
+				silent: true
+				title: "获得一个头饰栏位"
+				type: "command"
+			}]
+			subtitle: "戴上开智(没夸张成分)"
+			tasks: [{
+				id: "64C13AF0CA01108E"
+				item: "create:goggles"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "242FEC42CC4FF961"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7AAD14CD3CF36F35"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "比人工处理强一点"
+			tasks: [{
+				id: "089EAB3ABB8ECC21"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "3011A21530833931"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "033A882B803B2F2A"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "美观且实用的物品展示台"
+			tasks: [{
+				id: "4BA3DF00BE7BEFBA"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7986C1904B0AA1E8"
+				"62083478D610B5B9"
+			]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "66882D6C2CAA6F8D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A2CD69D1AF2A363"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "将锭轧成棍,将板轧成线"
+			tasks: [{
+				id: "5B64EC54D0180685"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5BA81106D05138B6"
+				"32755A0FF7104637"
+				"0D4AF4FA7937BA88"
+			]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "31C11F085352B818"
+			rewards: [{
+				count: 4
+				id: "69098D25F18B3852"
+				item: "create:shaft"
+				type: "item"
+			}]
+			subtitle: "直线传动"
+			tasks: [{
+				id: "7187B773B87F7D74"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"5BA81106D05138B6"
+				"32755A0FF7104637"
+				"0D4AF4FA7937BA88"
+			]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "3DEE0D3F2F855159"
+			rewards: [{
+				count: 4
+				id: "463C22EEF76CB74A"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			subtitle: "轴向与转向"
+			tasks: [{
+				id: "49298661C017EF46"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"5BA81106D05138B6"
+				"32755A0FF7104637"
+				"0D4AF4FA7937BA88"
+			]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "646794FE5E6F032F"
+			rewards: [{
+				count: 4
+				id: "7EC94FE9122146E5"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			subtitle: "与小齿轮耦合调整转速"
+			tasks: [{
+				id: "05C902A03C3BCA4E"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"5BA81106D05138B6"
+				"32755A0FF7104637"
+				"0D4AF4FA7937BA88"
+			]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create_connected:crank_wheel"
+			id: "4A147C9B6F869D7D"
+			rewards: [
+				{
+					count: 4
+					id: "0120EE644CE1F2C1"
+					item: "create_connected:crank_wheel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "47346007288F3245"
+					item: "create_connected:large_crank_wheel"
+					type: "item"
+				}
+			]
+			subtitle: "可以直接手摇的齿轮"
+			tasks: [
+				{
+					id: "00E0A4F999FA31A2"
+					item: "create:hand_crank"
+					type: "item"
+				}
+				{
+					id: "5CFBD42DE60153A9"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "2655EF244F41DE4A"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"31C11F085352B818"
+				"4A147C9B6F869D7D"
+				"646794FE5E6F032F"
+				"3DEE0D3F2F855159"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "57DBE973CE98D84E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "634528C719BCFE0B"
+					table_id: 4193797247284059865L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40B4863FDBE67F64"
+					table_id: 1739313601983776999L
+					type: "random"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "1E7691A52A47A9F4"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "节点:基础传动"
+			x: 15.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "0553A422D0A10586"
+			rewards: [{
+				count: 4
+				id: "054CC93E76AA4AFC"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			subtitle: "保持转向一致同时延长传动距离"
+			tasks: [{
+				id: "63D8B1BAD551CD50"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create:gearbox"
+			id: "53278B98C2A34F5A"
+			rewards: [{
+				count: 4
+				id: "7837092408453824"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			subtitle: "直角转弯"
+			tasks: [
+				{
+					id: "61CE6F3B1E221A71"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					id: "37451341001DF658"
+					item: "create:vertical_gearbox"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create_connected:parallel_gearbox"
+			id: "411E1565B2A45B54"
+			rewards: [{
+				count: 4
+				id: "763B405999AB868D"
+				item: "create_connected:parallel_gearbox"
+				type: "item"
+			}]
+			subtitle: "同向平行偏移+直角转弯"
+			tasks: [
+				{
+					id: "79A6865A10A52DE3"
+					item: "create_connected:parallel_gearbox"
+					type: "item"
+				}
+				{
+					id: "0C97DD0AB9FF89E0"
+					item: "create_connected:vertical_parallel_gearbox"
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "70F3215FF54F3FD4"
+			rewards: [{
+				count: 4
+				id: "09F61CFD41F66A0F"
+				item: "create_connected:encased_chain_cogwheel"
+				type: "item"
+			}]
+			subtitle: "兼具齿轮功能的链式传动箱"
+			tasks: [{
+				id: "19EDA55BE40930B7"
+				item: "create_connected:encased_chain_cogwheel"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create:chain_conveyor"
+			id: "61B0211FD1778F6C"
+			rewards: [
+				{
+					count: 4
+					id: "3F2A5FE7A0D11C52"
+					item: "create:chain_conveyor"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7DAF8474F860DB8A"
+					item: "minecraft:chain"
+					type: "item"
+				}
+			]
+			subtitle: "远距离点对点连接(存在角度限制)"
+			tasks: [
+				{
+					id: "28E2EB82EEC22539"
+					item: "create:chain_conveyor"
+					type: "item"
+				}
+				{
+					id: "3BD2DD2958DD65FD"
+					item: "minecraft:chain"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "29406662DCC3C07B"
+			rewards: [{
+				count: 4
+				id: "7614A5014EDD2AE9"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			subtitle: "直线方向点对点连接"
+			tasks: [{
+				id: "3E22DC1FA3301027"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "35D1A43B5CACD843"
+			rewards: [{
+				count: 4
+				id: "2EE80A44AE160827"
+				item: "create_biotech:universal_joint"
+				type: "item"
+			}]
+			subtitle: "短距离点对点传动"
+			tasks: [{
+				id: "34F7B3E5F33D5DB7"
+				item: "create_biotech:universal_joint"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "44772CFB2AE9C4F9"
+			rewards: [{
+				count: 4
+				id: "03FD971790EEA130"
+				item: "create_connected:cross_connector"
+				type: "item"
+			}]
+			subtitle: "交叉传动,各线独立"
+			tasks: [{
+				id: "4B4F775E4C7CD945"
+				item: "create_connected:cross_connector"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"61B0211FD1778F6C"
+				"35D1A43B5CACD843"
+				"0553A422D0A10586"
+				"53278B98C2A34F5A"
+				"70F3215FF54F3FD4"
+				"29406662DCC3C07B"
+				"411E1565B2A45B54"
+				"44772CFB2AE9C4F9"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "727730F8C901D8B7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "504A76775B006FB2"
+					table_id: 4193797247284059865L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A20560DB3D24DFA"
+					table_id: 1739313601983776999L
+					type: "all_table"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "046A5714640E98AE"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "节点:转向与连接"
+			x: 16.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6F83BD64477A29A7"
+			rewards: [{
+				count: 4
+				id: "01DF8D51AF8E1FC4"
+				item: "create:adjustable_chain_gearshift"
+				type: "item"
+			}]
+			subtitle: "更简单可控的变速"
+			tasks: [{
+				id: "7980B49AE5F32150"
+				item: "create:adjustable_chain_gearshift"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create:gearshift"
+			id: "6A8D38652639865D"
+			rewards: [{
+				count: 4
+				id: "4674232F2BD33EF9"
+				item: "create:gearshift"
+				type: "item"
+			}]
+			subtitle: "直接控制转向"
+			tasks: [
+				{
+					id: "62E14F4ED1F68D7F"
+					item: "create:gearshift"
+					type: "item"
+				}
+				{
+					id: "231345B8BC879F85"
+					item: "create_connected:inverted_gearshift"
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "1E7E268DBB9C2230"
+			rewards: [{
+				count: 4
+				id: "5A500A5915139A6E"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			subtitle: "红石无线网"
+			tasks: [{
+				id: "3FDF2DB461EA6E21"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6B228F0A30D5157C"
+			rewards: [{
+				count: 4
+				id: "610EB64D84BF40C2"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			subtitle: "遥控器"
+			tasks: [{
+				id: "0B3DC2BFF5648348"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "0B7F785BB633BDDA"
+			rewards: [{
+				count: 4
+				id: "745CFBED4211493C"
+				item: "create_connected:linked_transmitter"
+				type: "item"
+			}]
+			subtitle: "比直接使用信号终端发信好点"
+			tasks: [{
+				id: "6F87DE158DD46598"
+				item: "create_connected:linked_transmitter"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create_connected:six_way_gearbox"
+			id: "064527EB34466EC1"
+			rewards: [{
+				count: 4
+				id: "7FA1DA6E7C6219E3"
+				item: "create_connected:six_way_gearbox"
+				type: "item"
+			}]
+			subtitle: "六面连接"
+			tasks: [
+				{
+					id: "69E7198EBFE1C8B7"
+					item: "create_connected:six_way_gearbox"
+					type: "item"
+				}
+				{
+					id: "5595C2FE7D5B648E"
+					item: "create_connected:vertical_six_way_gearbox"
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: [""]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "2FA1029473F352C4"
+			rewards: [{
+				count: 4
+				id: "0F07937BEB7BF2C4"
+				item: "create_connected:shear_pin"
+				type: "item"
+			}]
+			subtitle: "一次性熔断保护器"
+			tasks: [{
+				id: "23EEF9A9610E4BC4"
+				item: "create_connected:shear_pin"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 12.0d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create:pulse_timer"
+			id: "5F2F9664F70C8430"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3A7CAD2BDCD2ADC1"
+				table_id: 1739313601983776999L
+				type: "random"
+			}]
+			subtitle: "脉冲,如此简单"
+			tasks: [
+				{
+					id: "7464B8457FC46DD6"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+				{
+					id: "71F95A572C3D0F1D"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+				{
+					id: "7A789770920A16B3"
+					item: "create:pulse_timer"
+					type: "item"
+				}
+				{
+					id: "71CC612010B0C82E"
+					item: "create_connected:sequenced_pulse_generator"
+					type: "item"
+				}
+			]
+			title: "红石脉冲"
+			x: 18.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"6B228F0A30D5157C"
+				"6F83BD64477A29A7"
+				"6A8D38652639865D"
+				"0B7F785BB633BDDA"
+				"1E7E268DBB9C2230"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "2CF5B9BBBF7A3B0E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "12AD9116B386D5C0"
+					table_id: 4193797247284059865L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "504D179A0319EA2C"
+					table_id: 1739313601983776999L
+					type: "all_table"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "4A7E521142EBBB45"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "节点:信号与调节"
+			x: 15.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create:clutch"
+			id: "52785CE2C035D3B6"
+			rewards: [{
+				count: 4
+				id: "41B5DAD98BFF8341"
+				item: "create_connected:inverted_clutch"
+				type: "item"
+			}]
+			subtitle: "主动断开传动"
+			tasks: [
+				{
+					id: "7C37B94151156535"
+					item: "create:clutch"
+					type: "item"
+				}
+				{
+					id: "03D4D27B6614DCB8"
+					item: "create_connected:inverted_clutch"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: [""]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6767646EE5927C6A"
+			rewards: [{
+				count: 4
+				id: "202FF5BBEF98ED10"
+				item: "create_connected:overstress_clutch"
+				type: "item"
+			}]
+			subtitle: "应力过载保护器"
+			tasks: [{
+				id: "56CCA686986D582A"
+				item: "create_connected:overstress_clutch"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "222A8875EA937E9B"
+			rewards: [{
+				count: 4
+				id: "03D25425F5CA7844"
+				item: "create_biotech:slime_clutch"
+				type: "item"
+			}]
+			subtitle: "会自动重启的应力过载保护器"
+			tasks: [{
+				id: "0F5D0828371EE3F4"
+				item: "create_biotech:slime_clutch"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "110CE831F2DF236A"
+			rewards: [{
+				count: 4
+				id: "2617AC3A3EF68112"
+				item: "create_biotech:bone_ratchet"
+				type: "item"
+			}]
+			subtitle: "转向不符直接卡停整个网络"
+			tasks: [{
+				id: "0AC2D24C460BD3ED"
+				item: "create_biotech:bone_ratchet"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: [""]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "73B5D5186BDF904C"
+			rewards: [{
+				count: 4
+				id: "7874918DDCB5C699"
+				item: "create_connected:freewheel_clutch"
+				type: "item"
+			}]
+			subtitle: "匹配转向的离合器"
+			tasks: [{
+				id: "0D06CC769C8D53A0"
+				item: "create_connected:freewheel_clutch"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: [""]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "45844C10072B31B1"
+			rewards: [{
+				count: 4
+				id: "383BC59E1CEAC3F3"
+				item: "create_connected:centrifugal_clutch"
+				type: "item"
+			}]
+			subtitle: "匹配转速的离合器"
+			tasks: [{
+				id: "10A9A3C306F4A498"
+				item: "create_connected:centrifugal_clutch"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "7AED47C7D2E41A52"
+			x: 10.5d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"6767646EE5927C6A"
+				"2FA1029473F352C4"
+				"222A8875EA937E9B"
+				"110CE831F2DF236A"
+				"52785CE2C035D3B6"
+				"45844C10072B31B1"
+				"73B5D5186BDF904C"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "20A1A4BBCD0ED8FB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2575DAB94022D1BF"
+					table_id: 4193797247284059865L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4965FABAAF3C9725"
+					table_id: 1739313601983776999L
+					type: "all_table"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "49EC38008384CC75"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "节点:应力网络限制与保护"
+			x: 15.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "2E33DE60D7807E4E"
+			x: 11.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "08CF30271B74A565"
+			x: 12.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "1F430E4BF1960BC0"
+			x: 13.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "7B8DECD5FD01FAE9"
+			x: 14.5d
+			y: 14.5d
 		}
 	]
 	title: "科学"
