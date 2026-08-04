@@ -27,7 +27,8 @@
         "tacz_merchant": [],
         "doctor_merchant": [],
         "flesh_scholar_merchant": [],
-        "hunter": []
+        "hunter": [],
+        "ltc2:prince_latiao": []
     },
     "globalBookmarks1": {
         "armorer": [],
@@ -57,7 +58,8 @@
         "tacz_merchant": [],
         "doctor_merchant": [],
         "flesh_scholar_merchant": [],
-        "hunter": []
+        "hunter": [],
+        "ltc2:prince_latiao": []
     },
     "globalBookmarks2": {
         "armorer": [],
@@ -87,6 +89,7 @@
         "tacz_merchant": [],
         "doctor_merchant": [],
         "flesh_scholar_merchant": [],
-        "hunter": []
+        "hunter": [],
+        "ltc2:prince_latiao": []
     }
 }

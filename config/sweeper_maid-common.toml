@@ -23,12 +23,12 @@
 	#What message will be sent to players when open a wrong dustbin.
 	MESSAGE_WRONG_DUSTBIN = "[捡垃圾的鼠鼠]: 这也没看到有保险箱啊?"
 	#Name of dustbins.
-	DUSTBIN_NAME = "垃圾桶 "
+	DUSTBIN_NAME = "Dustbin "
 	#Count of dustbins
 	#Range: 1 ~ 64
 	DUSTBIN_COUNT = 3
 	#What chat message will be sent to players after a sweep. Command will be appended to the end of the chat message.
-	CHAT_MESSAGE_AFTER_SWEEP = "[捡垃圾的鼠鼠]: 诶大哥,你要不打开这保险箱看看:"
+	CHAT_MESSAGE_AFTER_SWEEP = "[捡垃圾的鼠鼠]: 诶大哥,你要不点开这保险箱看看:"
 	#Permission level of a player to open the dustbin.
 	#Range: 0 ~ 4
 	PERMISSION_LEVEL_DUSTBIN = 0

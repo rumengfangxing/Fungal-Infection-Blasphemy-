@@ -2,12 +2,12 @@
 #Settings for Inventory HUD
 [inventoryhud]
 	#Inventory HUD mini mode
-	invMini = false
+	invMini = true
 	#Inventory HUD vertical mode
 	invVert = false
 	#Inventory HUD alpha
 	#Range: 0 ~ 100
-	invAlpha = 0
+	invAlpha = 60
 	#Toggle on by default
 	byDefault = false
 	#Animate recently picked up items
@@ -62,11 +62,11 @@
 	potAlpha = 35
 	#Potion HUD gap
 	#Range: -5 ~ 5
-	potGap = 0
+	potGap = -5
 	#Potion HUD mini mode
-	potMini = true
+	potMini = false
 	#Potion HUD horizontal mode
-	potHor = true
+	potHor = false
 	#Full bar duration
 	#Range: > 1
 	barDuration = 150
@@ -86,37 +86,37 @@
 	invValign = "BOTTOM"
 	#Inventory HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	invHalign = "MIDDLE"
+	invHalign = "LEFT"
 	#Inventory HUD position (X)
 	#Range: -9999 ~ 9999
-	xPos = 0
+	xPos = 93
 	#Inventory HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPos = 150
+	yPos = 71
 	#Armor HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	armValign = "BOTTOM"
 	#Armor HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	armHalign = "RIGHT"
+	armHalign = "LEFT"
 	#Armor HUD position (X)
 	#Range: -9999 ~ 9999
-	xArmPos = 94
+	xArmPos = 20
 	#Armor HUD position (Y)
 	#Range: -9999 ~ 9999
-	yArmPos = 70
+	yArmPos = 102
 	#Potion HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
-	potValign = "BOTTOM"
+	potValign = "TOP"
 	#Potion HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	potHalign = "MIDDLE"
+	potHalign = "LEFT"
 	#Potion HUD position (X)
 	#Range: -9999 ~ 9999
-	xPotionPos = 85
+	xPotionPos = 54
 	#Potion HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPotionPos = 92
+	yPotionPos = 16
 	#Helmet position (X)
 	#Range: -9999 ~ 9999
 	helmPosX = 103
