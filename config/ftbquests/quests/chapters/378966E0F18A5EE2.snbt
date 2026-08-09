@@ -28,11 +28,11 @@
 		}
 		{
 			dev: true
-			height: 8.0d
+			height: 6.0d
 			image: "minecraft:block/oak_sapling"
 			order: 2
 			rotation: 0.0d
-			width: 5.0d
+			width: 6.0d
 			x: 9.0d
 			y: 0.5d
 		}
@@ -344,7 +344,7 @@
 				type: "checkmark"
 			}]
 			title: "代步工具"
-			x: -2.0d
+			x: -3.0d
 			y: 1.5d
 		}
 		{
@@ -474,7 +474,7 @@
 				}
 			]
 			title: "陆地载具"
-			x: -3.5d
+			x: -4.5d
 			y: 2.5d
 		}
 		{
@@ -513,7 +513,7 @@
 				type: "item"
 			}]
 			title: "飞行载具"
-			x: -2.5d
+			x: -3.5d
 			y: 2.5d
 		}
 		{
@@ -555,7 +555,7 @@
 				type: "item"
 			}]
 			title: "位移类聚晶"
-			x: -1.5d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -565,33 +565,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"优点:美观"
+				"优点:夯,无需多言"
 				""
-				"缺点:地形/环境依赖,需要手动搭建"
-				"{@pagebreak}"
-				"{image:ftbquests:textures/picture/007.png width:180 height:100 align:center}"
-				"使用扳手右键锁链传动箱之间连接的锁链就可以挂在上面了"
-				"{@pagebreak}"
-				"{image:ftbquests:textures/picture/008.png width:180 height:100 align:center}"
-				"创建列车第一步:手持列车车站右键铁轨绑定,再放置方块以创建站点"
-				"{@pagebreak}"
-				"{image:ftbquests:textures/picture/009.png width:180 height:100 align:center}"
-				"右键列车站点打开,点击创建新列车"
-				"{@pagebreak}"
-				"{image:ftbquests:textures/picture/010.png width:180 height:100 align:center}"
-				"手持列车机壳右键铁轨创建转向盘,这是列车的基底,可以在其上搭建列车&8(按住alt可以选择转向盘样式哦)&r"
-				"{@pagebreak}"
-				"{image:ftbquests:textures/picture/011.png width:180 height:100 align:center}"
-				"像这样搭一个坐垫上去,再搭一个列车驾驶台上去,用强力胶粘起来"
-				"{@pagebreak}"
-				"{image:ftbquests:textures/picture/012.png width:180 height:100 align:center}"
-				"搭好之后,右键列车站点组装列车,一辆(极端)简易的列车就建成了"
-				"{@pagebreak}"
-				"{image:ftbquests:textures/picture/013.png width:180 height:100 align:center}"
-				"坐在坐垫上,右键驾驶台操控列车,开启你的列车之旅吧！"
+				"缺点:飞行较慢，需要恶魂，且恶魂容易死亡"
+				"（一定要给家里的哨戒臂加一个恶魂白名单）"
 			]
 			hide_until_deps_complete: true
-			icon: "create:track_station"
+			icon: "create_biotech:ghast_helm"
 			id: "73256E0663CD13F0"
 			rewards: [
 				{
@@ -612,33 +592,23 @@
 			tasks: [
 				{
 					id: "63E5E2767B5E4FA1"
-					item: "create:chain_conveyor"
+					item: "create_biotech:ghast_hot_air_balloon_assembly_station"
 					type: "item"
 				}
 				{
 					id: "53BDE74ED191E111"
-					item: "minecraft:chain"
+					item: "create_biotech:ghast_helm"
 					type: "item"
 				}
 				{
 					id: "03A333CD45CBECFE"
-					item: "create:wrench"
-					type: "item"
-				}
-				{
-					id: "3235EA25248534A5"
-					item: "create:track_station"
-					type: "item"
-				}
-				{
-					id: "6165B7C990FD6FA8"
-					item: "create:railway_casing"
+					item: "create_biotech:white_buffer_pad"
 					type: "item"
 				}
 			]
-			title: "机械动力"
-			x: -0.5d
-			y: 2.5d
+			title: "机械动力-飞行载具"
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -679,6 +649,88 @@
 			]
 			x: 0.0d
 			y: 3.5d
+		}
+		{
+			dependencies: [
+				"51F4FA253AEABBCD"
+				"4A6688F841FFDAEF"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"优点:美观"
+				""
+				"缺点:地形/环境依赖,需要手动搭建"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/007.png width:180 height:100 align:center}"
+				"使用扳手右键锁链传动箱之间连接的锁链就可以挂在上面了"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/008.png width:180 height:100 align:center}"
+				"创建列车第一步:手持列车车站右键铁轨绑定,再放置方块以创建站点"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/009.png width:180 height:100 align:center}"
+				"右键列车站点打开,点击创建新列车"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/010.png width:180 height:100 align:center}"
+				"手持列车机壳右键铁轨创建转向盘,这是列车的基底,可以在其上搭建列车&8(按住alt可以选择转向盘样式哦)&r"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/011.png width:180 height:100 align:center}"
+				"像这样搭一个坐垫上去,再搭一个列车驾驶台上去,用强力胶粘起来"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/012.png width:180 height:100 align:center}"
+				"搭好之后,右键列车站点组装列车,一辆(极端)简易的列车就建成了"
+				"{@pagebreak}"
+				"{image:ftbquests:textures/picture/013.png width:180 height:100 align:center}"
+				"坐在坐垫上,右键驾驶台操控列车,开启你的列车之旅吧！"
+			]
+			hide_until_deps_complete: true
+			icon: "create:track_station"
+			id: "3F1A186FC3B705FA"
+			rewards: [
+				{
+					id: "1B39D41709E21B4D"
+					table_id: 897152364832445754L
+					team_reward: false
+					title: "随机生存用品"
+					type: "random"
+				}
+				{
+					id: "4E57B65A70930CAF"
+					table_id: 4193797247284059865L
+					team_reward: false
+					title: "随机钱币奖励"
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "7B3C524C1E8A5779"
+					item: "create:chain_conveyor"
+					type: "item"
+				}
+				{
+					id: "147EF5468797AA32"
+					item: "minecraft:chain"
+					type: "item"
+				}
+				{
+					id: "01201C9822C33C5E"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "42B6BD18D9F7B321"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "4DB0F2B94F5AB6B4"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			title: "机械动力"
+			x: -1.5d
+			y: 2.5d
 		}
 	]
 	title: "&8荒野"

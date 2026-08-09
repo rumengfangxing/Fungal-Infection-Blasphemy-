@@ -36,6 +36,47 @@
 			x: 19.0d
 			y: 1.0d
 		}
+		{
+			dependency: "439DBFE4FB670440"
+			height: 1.0d
+			image: "lightmanscurrency:textures/gui/icons/arrow_right.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 25.5d
+			y: 9.0d
+		}
+		{
+			click: "command:/playsound create:sanding_long voice @s"
+			dependency: "439DBFE4FB670440"
+			height: 3.0d
+			image: "create:item/sand_paper"
+			rotation: 0.0d
+			width: 3.0d
+			x: 25.5d
+			y: 7.5d
+		}
+		{
+			click: "command:ponder"
+			dependency: "52EC79AB825467F3"
+			height: 3.0d
+			hover: ["点击进入思索目录"]
+			image: "goety:block/pine_bookshelf"
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.5d
+			y: 11.5d
+		}
+		{
+			click: "command:ponder index"
+			dependency: "52EC79AB825467F3"
+			height: 3.0d
+			hover: ["点击查看所有思索"]
+			image: "goety:block/windswept_bookshelf"
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.5d
+			y: 15.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -153,8 +194,8 @@
 				value: 1L
 			}]
 			title: "模块:仓储"
-			x: 1.5d
-			y: 3.0d
+			x: 0.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7AC4F35B01AA1153"]
@@ -441,8 +482,8 @@
 				id: "679BC507710C2DC1"
 				type: "advancement"
 			}]
-			x: 19.5d
-			y: 4.5d
+			x: 13.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -466,8 +507,8 @@
 				id: "443BC210E3DA5B29"
 				type: "advancement"
 			}]
-			x: 25.5d
-			y: 0.0d
+			x: 25.25d
+			y: 2.0357142857142705d
 		}
 		{
 			dependencies: ["7B549B769BCD29F3"]
@@ -551,7 +592,7 @@
 				title: "点击以完成任务"
 				type: "checkmark"
 			}]
-			title: "传动/物流"
+			title: "传动"
 			x: 7.5d
 			y: 9.0d
 		}
@@ -1362,8 +1403,8 @@
 				}
 			]
 			title: "红石脉冲"
-			x: 22.0d
-			y: 10.5d
+			x: 19.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1457,7 +1498,7 @@
 				item: "create_connected:overstress_clutch"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 12.5d
 			y: 14.5d
 		}
 		{
@@ -1479,7 +1520,7 @@
 				item: "create_biotech:slime_clutch"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 13.5d
 			y: 14.5d
 		}
 		{
@@ -1501,8 +1542,8 @@
 				item: "create_biotech:bone_ratchet"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 14.5d
+			x: 13.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["410B27941DF07BCD"]
@@ -1523,7 +1564,7 @@
 				item: "create_connected:freewheel_clutch"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.5d
 			y: 15.5d
 		}
 		{
@@ -1545,7 +1586,7 @@
 				item: "create_connected:centrifugal_clutch"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.5d
 			y: 15.5d
 		}
 		{
@@ -1555,6 +1596,12 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7AED47C7D2E41A52"
+			subtitle: "通入应力转动结构，可以作为其他结构的子结构，作为子结构时会保持自身转盘垂直方向不变"
+			tasks: [{
+				id: "24FC33E0C4719E2C"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
 			x: 10.5d
 			y: 17.5d
 		}
@@ -1609,27 +1656,21 @@
 			description: ["使用方法按[W]开始思索"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
+			icon: "create:mechanical_piston"
 			id: "2E33DE60D7807E4E"
-			x: 11.5d
-			y: 17.5d
-		}
-		{
-			dependencies: ["410B27941DF07BCD"]
-			dependency_requirement: "one_completed"
-			description: ["使用方法按[W]开始思索"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "08CF30271B74A565"
-			x: 12.5d
-			y: 17.5d
-		}
-		{
-			dependencies: ["410B27941DF07BCD"]
-			dependency_requirement: "one_completed"
-			description: ["使用方法按[W]开始思索"]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "1F430E4BF1960BC0"
+			subtitle: "推拉结构"
+			tasks: [
+				{
+					id: "4A4C95458E6F73B8"
+					item: "create:mechanical_piston"
+					type: "item"
+				}
+				{
+					id: "74D7FA7D37AC9B4B"
+					item: "create:sticky_mechanical_piston"
+					type: "item"
+				}
+			]
 			x: 13.5d
 			y: 17.5d
 		}
@@ -1639,8 +1680,46 @@
 			description: ["使用方法按[W]开始思索"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
-			id: "7B8DECD5FD01FAE9"
+			id: "08CF30271B74A565"
+			subtitle: "通入红石信号组装矿车"
+			tasks: [{
+				id: "744A044B58205195"
+				item: "create:cart_assembler"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "1F430E4BF1960BC0"
+			subtitle: "吊起/放下平台"
+			tasks: [{
+				id: "204BB655C742DC9D"
+				item: "create:rope_pulley"
+				type: "item"
+			}]
 			x: 14.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "7B8DECD5FD01FAE9"
+			subtitle: "粘连平台一起移动"
+			tasks: [{
+				id: "58EB83608059D724"
+				item: "create:gantry_carriage"
+				type: "item"
+			}]
+			x: 15.5d
 			y: 17.5d
 		}
 		{
@@ -1690,7 +1769,7 @@
 			y: 19.0d
 		}
 		{
-			dependencies: ["410B27941DF07BCD"]
+			dependencies: ["7C7FD098BF68F77D"]
 			dependency_requirement: "one_completed"
 			description: ["使用方法按[W]开始思索"]
 			hide_dependency_lines: true
@@ -1698,6 +1777,7 @@
 			id: "28A959EF0EF6DF51"
 			shape: "none"
 			size: 1.5d
+			subtitle: "将连片的粘连区视为一个整体,便于一键移除"
 			tasks: [{
 				id: "6F8FEEA9FC8FCD28"
 				item: {
@@ -1711,6 +1791,532 @@
 			}]
 			x: 9.0d
 			y: 20.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: [""]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "3608050A64ECF517"
+			rewards: [{
+				count: 4
+				id: "695222C9A4F44A21"
+				item: "create_connected:brake"
+				type: "item"
+			}]
+			subtitle: "主动过载应力网络"
+			tasks: [{
+				icon: "create_connected:brake"
+				id: "1D2572C87E70AE47"
+				item: "create_connected:brake"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			id: "390A27842DDC90C0"
+			tasks: [{
+				id: "717544C163D536AE"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			id: "621B360478291202"
+			tasks: [{
+				id: "0730ABC853B28F68"
+				item: "create:content_observer"
+				type: "item"
+			}]
+			x: 26.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: "create_connected:brass_gearbox"
+			id: "6DBC2A9B7E92B323"
+			tasks: [
+				{
+					id: "396BFA7F1FD6FF21"
+					item: "create_connected:brass_gearbox"
+					type: "item"
+				}
+				{
+					id: "0FEC8D60DA02BED8"
+					item: "create_connected:vertical_brass_gearbox"
+					type: "item"
+				}
+			]
+			x: 18.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			id: "5501607BA4FFC3F3"
+			subtitle: "神之手"
+			tasks: [{
+				id: "4933BEC316792DDE"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "28C332C3ADAA1DF7"
+			subtitle: "风车轴承连接的动态结构也可以工作"
+			tasks: [{
+				id: "1215B69FDEF0CE37"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["410B27941DF07BCD"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "7186C8BCF9654546"
+			subtitle: "热气球上的组件是可以工作的,可能有显示问题"
+			tasks: [{
+				id: "02D9659F38BA0A59"
+				item: "create_biotech:ghast_hot_air_balloon_assembly_station"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "01DD86F9675431CF"
+			subtitle: "将网络的应力传递给另一个网络"
+			tasks: [{
+				id: "59C569B2C4CF2818"
+				item: "create_connected:kinetic_bridge"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "2F390C8BDBFD9F33"
+			tasks: [{
+				id: "1B8F747F3D0740FD"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 13.0d
+		}
+		{
+			dependency_requirement: "one_completed"
+			id: "439DBFE4FB670440"
+			tasks: [{
+				id: "61ADB38951E4FFB9"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: 23.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["439DBFE4FB670440"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "1F1E5338759974F3"
+			tasks: [{
+				id: "6DC6D18DFC5E861E"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 27.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			id: "685906E28C3973F1"
+			tasks: [{
+				id: "63DFAF5E02048D61"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 27.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			id: "360A294BC2033BFA"
+			tasks: [{
+				id: "5893488404DC9A5D"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 28.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "2CCF87E2079464CF"
+			tasks: [{
+				id: "0E633131E5B5A0E8"
+				item: "create:sequenced_gearshift"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["1F1E5338759974F3"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "719F6CF95A52D6D6"
+			tasks: [{
+				id: "4A3A5F9EFA47C8E0"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			id: "5E18106639726D5A"
+			subtitle: "需预设升降点位的绳索滑轮,常用于电梯"
+			tasks: [{
+				id: "36DAE65CECD95521"
+				item: "create:elevator_pulley"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 17.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			id: "4F752D5C30D1DCD8"
+			tasks: [{
+				id: "7D957531F0D6F696"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 27.5d
+			y: 11.5d
+		}
+		{
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "7D90234398182C10"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6081788AC3FCD27F"
+					table_id: 4193797247284059865L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FD072EAD2B59FB3"
+					table_id: 1739313601983776999L
+					type: "random"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "4D921EBD3147C420"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "输入与输出"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			icon: "create:andesite_funnel"
+			id: "18777DF1385419FB"
+			tasks: [
+				{
+					id: "4B2D7FA5D9417B48"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "18935EA5EFCACA2A"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			icon: "minecraft:hopper"
+			id: "04E203E83CE6664D"
+			tasks: [
+				{
+					id: "33D87B4F44D5CAE6"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "5F853A821CE9F5CE"
+					item: "minecraft:hopper_minecart"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "6F0AE9A782B3EA17"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4BE6944469E2F483"
+					table_id: 4193797247284059865L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32D4974058EE0E16"
+					table_id: 1739313601983776999L
+					type: "random"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "203BB95012112F51"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "传输"
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			icon: "create:belt_connector"
+			id: "7A36C746F8293B00"
+			tasks: [
+				{
+					id: "7BD0700140E43C4E"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "1337D644F0FFAB04"
+					item: "create_biotech:slime_belt_connector"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			id: "2B9E4E9EF1E9367B"
+			tasks: [{
+				id: "01F6F5B8DEB109CA"
+				item: "create:item_hatch"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			icon: "create:chute"
+			id: "5F96A3593156451F"
+			tasks: [
+				{
+					id: "7154706DF87E13C1"
+					item: "create:chute"
+					type: "item"
+				}
+				{
+					id: "3A21FEA06F91C6FE"
+					item: "create_connected:brass_chute"
+					type: "item"
+				}
+				{
+					id: "55C0CD9F6E8B8FAA"
+					item: "create:smart_chute"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "touhou_little_maid:entity_placeholder"
+				tag: {
+					RecipeId: "touhou_little_maid:altar/reborn_maid"
+				}
+			}
+			id: "6E4D29D5E7178A38"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A5D5744A94DED3D"
+					table_id: 4193797247284059865L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4D9B6CEBE8288AC8"
+					table_id: 1739313601983776999L
+					type: "random"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "132A0A4C55275E4C"
+				title: "点击以完成任务"
+				type: "checkmark"
+			}]
+			title: "仓储管理"
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			id: "64DF1BE010A52747"
+			tasks: [{
+				id: "74D7B69314BADA33"
+				item: "create:weighted_ejector"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			id: "5617E243807EE4C6"
+			tasks: [{
+				id: "5D21BC77DC92494D"
+				item: "create:stockpile_switch"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			id: "069C7A71B410AF5E"
+			tasks: [{
+				id: "02AA061E84983CA9"
+				item: "create:content_observer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			icon: "create:stock_ticker"
+			id: "39764C3F8717C048"
+			tasks: [
+				{
+					id: "6A07BFA0640BCC1E"
+					item: "create:stock_ticker"
+					type: "item"
+				}
+				{
+					id: "3000AAC83987B169"
+					item: "create:stock_link"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 9.0d
+		}
+		{
+			id: "6C39DB4065988439"
+			tasks: [{
+				id: "26EB61625F100FB2"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			icon: "create:andesite_tunnel"
+			id: "08F658FCE5AACEAF"
+			tasks: [
+				{
+					id: "4684138ADCA1DB79"
+					item: "create:andesite_tunnel"
+					type: "item"
+				}
+				{
+					id: "0F8E9A3CF2222660"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7C7FD098BF68F77D"]
+			dependency_requirement: "one_completed"
+			description: ["使用方法按[W]开始思索"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "7C797DBFE2759C68"
+			subtitle: "动态结构制作钟表,轻而易举啊"
+			tasks: [{
+				id: "4D85DCA672294C41"
+				item: "create:clockwork_bearing"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 17.5d
 		}
 	]
 	title: "科学"

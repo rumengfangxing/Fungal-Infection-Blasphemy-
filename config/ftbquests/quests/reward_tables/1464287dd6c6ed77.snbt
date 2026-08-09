@@ -4,13 +4,13 @@
 	loot_size: 1
 	order_index: 2
 	rewards: [
-		{ count: 3, item: "goety:treasure_pouch", title: "菜鸟亦或是新手" }
+		{ count: 3, item: "goety:treasure_pouch", title: "菜鸟亦或是新手(获得奖励袋)" }
 		{
 			command: "/ftbquests change_progress @s complete 4A6688F841FFDAEF"
 			elevate_perms: true
 			icon: "goety:windswept_dead_bush"
 			silent: true
-			title: "高手亦或是老手"
+			title: "高手亦或是老手(解除大部分任务的前置,非线性游玩)"
 			type: "command"
 		}
 	]

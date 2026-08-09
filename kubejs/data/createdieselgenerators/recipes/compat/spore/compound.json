@@ -1,0 +1,20 @@
+{
+  "type": "createdieselgenerators:hammering",
+  "ingredients": [
+    {
+      "item": "spore:compound"
+    }
+  ],
+  "results": [
+    {
+      "item": "spore:compound_plate"
+    }
+  ],
+
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "spore"
+    }
+  ]
+}

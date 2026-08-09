@@ -104,4 +104,7 @@ const removeRecipeIds = [
 //生物科技配方禁用
     "create_biotech:mixing/cream",
     "create_biotech:spider_assembly_table",
+//锌板冲突配方
+     "createaddition:pressing/zinc_ingot",
+     "createdieselgenerators:compat/createaddition/zinc_sheet",
 ]

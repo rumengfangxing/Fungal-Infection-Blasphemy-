@@ -14,6 +14,14 @@
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
           "minCount": 1
+        },
+        {
+          "slot": "curios:curio",
+          "itemId": "spore:gas_mask",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
         }
       ],
       "effects": [

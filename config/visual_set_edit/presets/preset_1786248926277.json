@@ -1,0 +1,435 @@
+{
+  "id": "preset_1786248926277",
+  "fallbackName": "血液注入",
+  "tooltipColor": 16755200,
+  "phases": [
+    {
+      "fallbackName": "[吸血]摄取溢出",
+      "requiredCount": 4,
+      "slotConditions": [
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:vampiric_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:vampiric_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:vampiric_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:vampiric_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        }
+      ],
+      "effects": [
+        {
+          "attributeId": "attributeslib:overheal",
+          "amount": 0.1,
+          "operation": "ADDITION",
+          "uniqueId": "256c114b-d64f-46e3-8548-435c2d76f4e9",
+          "type": "attribute",
+          "customDisplayText": "造成伤害的10%会变为额外生命值",
+          "customColor": "yellow"
+        }
+      ],
+      "additionalConditions": []
+    },
+    {
+      "fallbackName": "[狂暴]高度兴奋",
+      "requiredCount": 4,
+      "slotConditions": [
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:bezerk_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:bezerk_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:bezerk_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:bezerk_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        }
+      ],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "biomancy:frenzy",
+          "amplifier": 0,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "c058c6e6-a1cc-47c0-ba5e-43521f206dab",
+          "type": "potion",
+          "customDisplayText": "持续获得[狂暴]效果",
+          "customColor": "yellow"
+        }
+      ],
+      "additionalConditions": []
+    },
+    {
+      "fallbackName": "[强壮]骑士精神",
+      "requiredCount": 4,
+      "slotConditions": [
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:reinforced_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:reinforced_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:reinforced_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:reinforced_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        }
+      ],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "goety:shielding",
+          "amplifier": 4,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "be9cb2f0-1e4f-402b-a5a4-d4ab54b07195",
+          "type": "potion",
+          "customDisplayText": "自身和周围友军获得25%减伤",
+          "customColor": "yellow"
+        },
+        {
+          "attributeId": "confluence:aggro",
+          "amount": 400.0,
+          "operation": "ADDITION",
+          "uniqueId": "099924ba-4a77-401e-859d-fe7c03b89c7c",
+          "type": "attribute",
+          "customDisplayText": "敌人更容易攻击你",
+          "customColor": "red"
+        }
+      ],
+      "additionalConditions": []
+    },
+    {
+      "fallbackName": "[钙化]排斥反击",
+      "requiredCount": 4,
+      "slotConditions": [
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:calcified_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:calcified_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:calcified_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:calcified_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        }
+      ],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "goety:repulsive",
+          "amplifier": 4,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "5b3fe21d-cb0d-4df7-b0df-def8a6ad9ef1",
+          "type": "potion",
+          "customDisplayText": "攻击你的生物会被弹飞",
+          "customColor": "yellow"
+        }
+      ],
+      "additionalConditions": []
+    },
+    {
+      "fallbackName": "[焦化]纵火狂人",
+      "requiredCount": 4,
+      "slotConditions": [
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:charred_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:charred_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:charred_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:charred_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        }
+      ],
+      "effects": [
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "spore:ignitable",
+          "amplifier": 9,
+          "durationSeconds": 5,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "4647f2d5-a54e-4029-a199-c7a012ca49b4",
+          "type": "potion",
+          "customDisplayText": "攻击可燃目标概率造成火焰溅射",
+          "customColor": "yellow"
+        },
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "attributeslib:detonation",
+          "amplifier": 0,
+          "durationSeconds": 2,
+          "showParticles": true,
+          "cooldownSeconds": 1,
+          "uniqueId": "ab84fec1-cd78-4370-a0af-dc93189c3ba9",
+          "type": "potion",
+          "customDisplayText": "攻击会引爆火焰",
+          "customColor": "yellow"
+        }
+      ],
+      "additionalConditions": []
+    },
+    {
+      "fallbackName": "[渊流]如鱼得水",
+      "requiredCount": 4,
+      "slotConditions": [
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:drowned_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:drowned_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:drowned_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:drowned_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        }
+      ],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "minecraft:conduit_power",
+          "amplifier": 0,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "c772f8af-a5af-47fa-87fe-e3eb6d856f57",
+          "type": "potion",
+          "customDisplayText": "获得[潮涌能量]效果",
+          "customColor": "yellow"
+        },
+        {
+          "target": "SELF",
+          "mobEffectId": "goetydelight:hydration",
+          "amplifier": 3,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "2fd2b15b-0525-4dd9-97b4-ec34da38b001",
+          "type": "potion",
+          "customDisplayText": "在水/雨中快速恢复生命值",
+          "customColor": "yellow"
+        },
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "goety:tripping",
+          "amplifier": 2,
+          "durationSeconds": 8,
+          "showParticles": true,
+          "cooldownSeconds": 5,
+          "uniqueId": "552ea907-03f5-4a06-8765-3872088a682f",
+          "type": "potion",
+          "customDisplayText": "攻击会让生物打滑",
+          "customColor": "yellow"
+        }
+      ],
+      "additionalConditions": []
+    },
+    {
+      "fallbackName": "[脊髓]活力迸发",
+      "requiredCount": 4,
+      "slotConditions": [
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:skeletal_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:skeletal_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:skeletal_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        },
+        {
+          "slot": "curios:blood",
+          "itemId": "spore:skeletal_syringe",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1
+        }
+      ],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "majruszsdifficulty:glass_regeneration",
+          "amplifier": 5,
+          "durationSeconds": 20,
+          "showParticles": true,
+          "cooldownSeconds": 10,
+          "uniqueId": "86b54a55-1628-4960-862a-44398643960c",
+          "type": "potion",
+          "customDisplayText": "脱战时每秒恢复较高血量",
+          "customColor": "yellow"
+        },
+        {
+          "target": "SELF",
+          "mobEffectId": "attributeslib:vitality",
+          "amplifier": 1,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "effc2c6e-675c-4909-ac1f-9e77adddca3a",
+          "type": "potion",
+          "customDisplayText": "受到的治疗效果提升40%",
+          "customColor": "yellow"
+        }
+      ],
+      "additionalConditions": []
+    }
+  ],
+  "showTooltip": true,
+  "customTooltipLines": [],
+  "backgroundStoryLines": []
+}

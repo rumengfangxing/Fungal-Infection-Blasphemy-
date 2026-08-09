@@ -1,0 +1,13 @@
+{
+  "type": "createdieselgenerators:hammering",
+  "ingredients": [
+    {
+      "item": "create:pulp"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:cardboard"
+    }
+  ]
+}

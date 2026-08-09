@@ -70,6 +70,7 @@
 			}]
 			shape: "none"
 			size: 3.0d
+			subtitle: "&m依旧文青病"
 			tasks: [{
 				id: "7D7619675F8FD3AD"
 				title: "点击勾选以开启您的旅程"
@@ -89,6 +90,7 @@
 				"&8如果你在服务器游玩,发现初始结构已被完全破坏&r"
 				"&8完成本章其它可完成任务后&r"
 				"&8直接前往第二章,进行新手引导&r"
+				"{\"text\":\"点击跳转到目标任务\",\"color\":\"aqua\",\"underlined\":true,\"bold\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1279707426A5CEAB\"}}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:compass"
@@ -238,8 +240,8 @@
 				""
 				"&c&l去面对,去撕碎&r&r"
 				""
-				""
 				"&8(考虑到开局环境的复杂性,本章节不起前置作用,仅为前言)&r"
+				"{\"text\":\"点击跳转下一章\",\"color\":\"aqua\",\"underlined\":true,\"bold\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1279707426A5CEAB\"}}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
