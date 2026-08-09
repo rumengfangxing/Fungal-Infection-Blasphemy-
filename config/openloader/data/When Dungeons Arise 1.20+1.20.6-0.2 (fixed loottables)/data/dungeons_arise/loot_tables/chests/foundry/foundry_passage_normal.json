@@ -128,7 +128,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/bastion_hoglin_stable"
+          "name": "minecraft:chests/bastion_hoglin_stable"
         }
       ]
     }

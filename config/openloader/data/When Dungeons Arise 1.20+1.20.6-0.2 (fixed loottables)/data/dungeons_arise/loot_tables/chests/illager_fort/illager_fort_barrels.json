@@ -73,51 +73,8 @@
               }
             },
             {
-              "function": "minecraft:set_fireworks",
-              "explosions": {
-                "values": [
-                  {
-                    "shape": "small_ball",
-                    "colors": [
-                      10685337
-                    ],
-                    "fade_colors": [
-                      16711680
-                    ]
-                  },
-                  {
-                    "shape": "star",
-                    "colors": [
-                      8718716
-                    ],
-                    "fade_colors": [
-                      16711680
-                    ]
-                  },
-                  {
-                    "shape": "burst",
-                    "colors": [
-                      4195388
-                    ],
-                    "fade_colors": [
-                      16711680
-                    ],
-                    "has_twinkle": true
-                  },
-                  {
-                    "shape": "burst",
-                    "colors": [
-                      16711680
-                    ],
-                    "fade_colors": [
-                      16777024
-                    ],
-                    "has_trail": true
-                  }
-                ],
-                "mode": "insert"
-              },
-              "flight_duration": 3
+              "function": "minecraft:set_nbt",
+              "tag": "{Fireworks:{Flight:3b,Explosions:[{Type:0,Flicker:1b,Colors:[I;10685337],FadeColors:[I;16711680]},{Type:2,Colors:[I;8718716],FadeColors:[I;16711680]},{Type:4,Flicker:1b,Colors:[I;4195388],FadeColors:[I;16711680]},{Type:4,Trail:1b,Colors:[I;16711680],FadeColors:[I;16777024]}]}}"
             }
           ]
         },
@@ -156,7 +113,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 5
+          "weight": 8
         },
         {
           "type": "minecraft:item",
@@ -201,10 +158,7 @@
       ]
     },
     {
-      "rolls": {
-        "min": 1,
-        "max": 2
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -221,26 +175,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_ingot",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:emerald",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 4,
-                "max": 16
+                "max": 6
               }
             }
           ]
@@ -252,8 +193,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 12,
-                "max": 16
+                "min": 3,
+                "max": 6
               }
             }
           ]

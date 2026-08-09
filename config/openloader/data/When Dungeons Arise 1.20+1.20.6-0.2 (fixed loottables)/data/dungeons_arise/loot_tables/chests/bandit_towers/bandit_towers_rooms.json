@@ -61,34 +61,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_name": "{\"text\":\"Liquor\",\"color\":\"gold\",\"italic\":false}",
-                "minecraft:potion_contents": {
-                  "custom_color": 16764508,
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:strength",
-                      "amplifier": 0,
-                      "duration": 600,
-                      "show_particles": true
-                    },
-                    {
-                      "id": "minecraft:nausea",
-                      "amplifier": 1,
-                      "duration": 600,
-                      "show_particles": true
-                    },
-                    {
-                      "id": "minecraft:regeneration",
-                      "amplifier": 1,
-                      "duration": 600,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Liquor\",\"color\":\"gold\"}'},CustomPotionEffects:[{Id:5b,Amplifier:0b,Duration:600},{Id:9b,Amplifier:1b,Duration:600},{Id:10b,Amplifier:1b,Duration:600}],CustomPotionColor:16764508}"
             }
           ]
         }
@@ -207,11 +181,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_desert_house"
+          "name": "minecraft:chests/village/village_desert_house"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_weaponsmith"
+          "name": "minecraft:chests/village/village_weaponsmith"
         },
         {
           "type": "minecraft:empty",
@@ -219,7 +193,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/desert_pyramid"
+          "name": "minecraft:chests/desert_pyramid"
         }
       ]
     }

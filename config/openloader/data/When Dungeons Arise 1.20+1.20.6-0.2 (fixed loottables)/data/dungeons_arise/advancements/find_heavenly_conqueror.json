@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Ghost Riders In The Sky",
+      "text": "浮现于天际的幽灵骑士",
       "color": "red"
     },
     "description": {
-      "text": "Find a Heavenly Conqueror"
+      "text": "找到一艘天际征服者战舰"
     },
     "icon": {
       "item": "minecraft:golden_chestplate"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_heavenly_rider"
 }

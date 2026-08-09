@@ -168,11 +168,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_fisher"
+          "name": "minecraft:chests/village/village_fisher"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_butcher"
+          "name": "minecraft:chests/village/village_butcher"
         }
       ]
     }

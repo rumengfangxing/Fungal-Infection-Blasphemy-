@@ -123,28 +123,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_name": "{\"text\":\"Fine Wine\",\"italic\":false}",
-                "minecraft:potion_contents": {
-                  "custom_color": 16764508,
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:nausea",
-                      "amplifier": 0,
-                      "duration": 200,
-                      "show_particles": true
-                    },
-                    {
-                      "id": "minecraft:regeneration",
-                      "amplifier": 3,
-                      "duration": 80,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Fine Wine\"}'},CustomPotionEffects:[{Id:9b,Amplifier:0b,Duration:200},{Id:10b,Amplifier:3b,Duration:80}]}"
             }
           ]
         },
@@ -314,11 +294,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_fisher"
+          "name": "minecraft:chests/village/village_fisher"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_butcher"
+          "name": "minecraft:chests/village/village_butcher"
         }
       ]
     }

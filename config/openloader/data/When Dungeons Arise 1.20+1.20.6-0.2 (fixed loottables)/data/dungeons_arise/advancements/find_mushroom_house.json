@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Over The Garden Wall",
+      "text": "花园墙外",
       "color": "dark_green"
     },
     "description": {
-      "text": "Find a Mushroom House"
+      "text": "找到一间蘑菇小屋"
     },
     "icon": {
       "item": "minecraft:warped_fungus"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_giant_mushroom"
 }

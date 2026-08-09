@@ -328,7 +328,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/jungle_temple"
+          "name": "minecraft:chests/jungle_temple"
         }
       ]
     }

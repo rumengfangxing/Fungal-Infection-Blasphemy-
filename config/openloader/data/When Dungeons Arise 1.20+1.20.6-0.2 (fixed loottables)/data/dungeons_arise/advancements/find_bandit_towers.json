@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "What Happens in Las Vegas...",
+      "text": "拉斯维加斯遭遇了什么…？",
       "color": "red"
     },
     "description": {
-      "text": "Find the Bandit Towers"
+      "text": "找到一座疆盗塔楼"
     },
     "icon": {
       "item": "minecraft:lantern"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_bandit_village"
 }

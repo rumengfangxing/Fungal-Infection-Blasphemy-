@@ -9,24 +9,12 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:saturation",
-                      "amplifier": 0,
-                      "duration": 12000,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:23b,Amplifier:0b,Duration:12000}]}"
             },
             {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:strong_swiftness"
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_swiftness\"}"
             }
           ]
         },
@@ -35,24 +23,12 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:resistance",
-                      "amplifier": 0,
-                      "duration": 2400,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:11b,Amplifier:0b,Duration:2400}]}"
             },
             {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:strong_swiftness"
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_swiftness\"}"
             }
           ]
         },
@@ -61,8 +37,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:strong_swiftness"
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_swiftness\"}"
             }
           ]
         },
@@ -71,20 +47,8 @@
           "name": "minecraft:splash_potion",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:slowness",
-                      "amplifier": 2,
-                      "duration": 400,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:2b,Amplifier:2b,Duration:400}]}"
             }
           ]
         },
@@ -97,20 +61,8 @@
               "count": 1
             },
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:strength",
-                      "amplifier": 2,
-                      "duration": 200,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:5b,Amplifier:2b,Duration:200}]}"
             }
           ]
         },
@@ -119,20 +71,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:instant_health",
-                      "amplifier": 2,
-                      "duration": 1,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:6b,Amplifier:2b,Duration:1}]}"
             }
           ]
         }
@@ -362,7 +302,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_temple"
+          "name": "minecraft:chests/village/village_temple"
         }
       ]
     }

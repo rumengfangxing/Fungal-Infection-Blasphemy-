@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Sweet Dreams",
+      "text": "甜蜜的梦",
       "color": "green"
     },
     "description": {
-      "text": "Find a Mushroom Village"
+      "text": "找到一处蘑菇村落"
     },
     "icon": {
       "item": "minecraft:crimson_fence"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_mushroom_house"
 }

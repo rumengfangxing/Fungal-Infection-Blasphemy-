@@ -260,7 +260,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/pillager_outpost"
+          "name": "minecraft:chests/pillager_outpost"
         }
       ]
     }

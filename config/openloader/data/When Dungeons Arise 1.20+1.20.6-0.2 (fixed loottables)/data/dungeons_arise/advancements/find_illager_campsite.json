@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "People Are Strange",
+      "text": "有些古怪的人",
       "color": "dark_purple"
     },
     "description": {
-      "text": "Find an Illager Campsite"
+      "text": "找到一处灾厄营地"
     },
     "icon": {
       "item": "minecraft:crossbow"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_merchant_campsite"
 }

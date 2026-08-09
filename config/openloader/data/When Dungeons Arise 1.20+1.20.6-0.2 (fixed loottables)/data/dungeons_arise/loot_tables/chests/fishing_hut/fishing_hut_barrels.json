@@ -10,8 +10,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:luck"
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:luck\"}"
             }
           ]
         },

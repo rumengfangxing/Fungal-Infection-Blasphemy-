@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "All Along The Watchtower",
+      "text": "遥望于放逐之路",
       "color": "dark_purple"
     },
     "description": {
-      "text": "Find an Illager Windmill"
+      "text": "找到一处灾厄磨坊"
     },
     "icon": {
       "item": "minecraft:iron_hoe"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_merchant_campsite"
 }

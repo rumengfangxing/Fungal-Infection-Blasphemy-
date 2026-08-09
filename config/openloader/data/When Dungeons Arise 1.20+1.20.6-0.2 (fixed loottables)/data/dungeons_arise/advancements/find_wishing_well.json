@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Jump",
+      "text": "跳吧！",
       "color": "dark_aqua"
     },
     "description": {
-      "text": "Find a Wishing Well "
+      "text": "找到一口许愿井"
     },
     "icon": {
       "item": "minecraft:melon_slice"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:wda_root"
 }

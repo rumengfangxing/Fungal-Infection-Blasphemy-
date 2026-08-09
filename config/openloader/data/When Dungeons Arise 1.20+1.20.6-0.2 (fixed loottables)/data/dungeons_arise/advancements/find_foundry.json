@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Iron Maiden",
+      "text": "铁处女",
       "color": "dark_red"
     },
     "description": {
-      "text": "Find a Foundry "
+      "text": "找到一座铸造厂"
     },
     "icon": {
       "item": "minecraft:netherite_ingot"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_scorched_mines"
 }

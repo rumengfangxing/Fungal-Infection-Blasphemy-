@@ -3,8 +3,12 @@
     "icon": {
       "item": "minecraft:filled_map"
     },
-    "title": "On The Road",
-    "description": "Discover an Infested Temple explorer map",
+    "title": {
+      "text": "在路上了"
+    },
+    "description": {
+      "text": "发现蚀败之楼的地图"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,

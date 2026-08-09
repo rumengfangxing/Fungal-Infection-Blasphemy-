@@ -19,7 +19,7 @@
                   "attribute": "minecraft:generic.knockback_resistance",
                   "name": "",
                   "amount": 1,
-                  "operation": "add_value",
+                  "operation": "addition",
                   "slot": [
                     "offhand",
                     "mainhand"
@@ -37,7 +37,7 @@
                     "min": 3,
                     "max": 4
                   },
-                  "operation": "add_value",
+                  "operation": "addition",
                   "slot": "mainhand"
                 }
               ]
@@ -184,7 +184,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/woodland_mansion"
+          "name": "minecraft:chests/woodland_mansion"
         }
       ]
     }

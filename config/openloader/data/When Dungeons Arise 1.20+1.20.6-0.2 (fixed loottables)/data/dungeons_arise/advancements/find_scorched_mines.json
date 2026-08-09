@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Katabasis",
+      "text": "黄泉路上",
       "color": "dark_red"
     },
     "description": {
-      "text": "Find the Scorched Mines"
+      "text": "找到一座焦黑矿井"
     },
     "icon": {
       "item": "minecraft:blaze_powder"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:wda_root"
 }

@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Remember Me For Centuries",
+      "text": "英雄不朽",
       "color": "dark_red"
     },
     "description": {
-      "text": "Find a Coliseum"
+      "text": "找到一座斗兽场"
     },
     "icon": {
       "item": "minecraft:shield"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:wda_root"
 }

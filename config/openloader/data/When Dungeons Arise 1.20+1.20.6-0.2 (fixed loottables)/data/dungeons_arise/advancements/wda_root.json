@@ -1,16 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "When Dungeons Arise",
-      "color": "gold",
-      "bold": false,
-      "italic": false,
-      "underlined": false,
-      "strikethrough": false,
-      "obfuscated": false
+      "text": "当地牢浮现之时",
+      "color": "gold"
     },
     "description": {
-      "text": "Dungeons arise on a brave new world",
+      "text": "沉睡已久的地牢已经浮现于这世界之中",
       "color": "white"
     },
     "icon": {
@@ -20,12 +15,16 @@
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false,
-    "background": "minecraft:textures/block/stone_bricks.png"
+    "background": "dungeons_arise:textures/wda_background.png"
   },
   "criteria": {
     "WDA": {
       "trigger": "minecraft:tick"
     }
   },
-  "requirements": [["WDA"]]
+  "requirements": [
+    [
+      "WDA"
+    ]
+  ]
 }

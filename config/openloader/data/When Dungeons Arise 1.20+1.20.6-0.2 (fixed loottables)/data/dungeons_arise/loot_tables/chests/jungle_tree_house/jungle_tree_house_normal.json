@@ -27,15 +27,15 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/woodland_mansion"
+          "name": "minecraft:chests/woodland_mansion"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_toolsmith"
+          "name": "minecraft:chests/village/village_toolsmith"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/simple_dungeon"
+          "name": "minecraft:chests/simple_dungeon"
         }
       ]
     },
@@ -46,59 +46,54 @@
       },
       "entries": [
         {
-          "type": "minecraft:group",
-          "children": [
+          "type": "minecraft:item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:iron_nugget",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 24,
-                    "max": 48
-                  }
-                }
-              ]
-            },
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 24,
+                "max": 48
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:gold_nugget",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 16,
-                    "max": 48
-                  }
-                }
-              ]
-            },
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 16,
+                "max": 48
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:iron_ingot",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 4,
-                    "max": 18
-                  }
-                }
-              ]
-            },
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 18
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ore",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:iron_ore",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "min": 8,
-                    "max": 32
-                  }
-                }
-              ]
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 32
+              }
             }
           ]
         }
@@ -112,12 +107,8 @@
           "name": "minecraft:leather_helmet",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:dyed_color": {
-                  "rgb": 2467351
-                }
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:2467351}}"
             }
           ]
         },
@@ -126,12 +117,8 @@
           "name": "minecraft:leather_chestplate",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:dyed_color": {
-                  "rgb": 2467351
-                }
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:2467351}}"
             }
           ]
         },
@@ -140,12 +127,8 @@
           "name": "minecraft:leather_leggings",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:dyed_color": {
-                  "rgb": 2467351
-                }
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:2467351}}"
             }
           ]
         },
@@ -154,12 +137,8 @@
           "name": "minecraft:leather_boots",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:dyed_color": {
-                  "rgb": 2467351
-                }
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:2467351}}"
             }
           ]
         }

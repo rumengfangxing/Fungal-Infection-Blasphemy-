@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Wild Tales",
+      "text": "《蛮荒故事》",
       "color": "dark_purple"
     },
     "description": {
-      "text": "Find an Illager Fort"
+      "text": "找到一座灾厄要塞"
     },
     "icon": {
       "item": "minecraft:snowball"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_illager_campsite"
 }

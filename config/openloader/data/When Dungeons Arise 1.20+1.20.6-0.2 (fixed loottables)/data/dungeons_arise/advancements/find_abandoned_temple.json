@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Lost for Words",
+      "text": "那些…未曾述说的故事",
       "color": "aqua"
     },
     "description": {
-      "text": "Find an Abandoned Temple"
+      "text": "找到一座废弃寺庙"
     },
     "icon": {
       "item": "minecraft:cracked_stone_bricks"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:wda_root"
 }

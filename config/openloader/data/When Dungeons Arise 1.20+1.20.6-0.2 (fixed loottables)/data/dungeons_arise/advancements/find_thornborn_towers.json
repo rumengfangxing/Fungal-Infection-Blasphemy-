@@ -4,8 +4,12 @@
       "item": "minecraft:rose_bush",
       "color": "dark_aqua"
     },
-    "title": "Guns and Roses",
-    "description": "Visit the Thornborn Towers",
+    "title": {
+      "text": "枪炮玫瑰"
+    },
+    "description": {
+      "text": "拜访一座荆棘城堡"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
@@ -29,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_small_prairie_house"
 }

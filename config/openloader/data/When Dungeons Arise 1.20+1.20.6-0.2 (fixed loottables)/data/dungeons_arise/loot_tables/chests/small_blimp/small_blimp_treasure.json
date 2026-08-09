@@ -257,7 +257,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/simple_dungeon"
+          "name": "minecraft:chests/simple_dungeon"
         }
       ]
     }

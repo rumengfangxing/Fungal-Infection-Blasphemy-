@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Who Killed This Thing?",
+      "text": "弑鹿者何人？",
       "color": "white"
     },
     "description": {
-      "text": "Find a Ceryneian Hind"
+      "text": "找到一具刻律涅牝鹿的尸骨"
     },
     "icon": {
       "item": "minecraft:bone"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:wda_root"
 }

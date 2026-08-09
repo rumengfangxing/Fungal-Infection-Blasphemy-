@@ -120,51 +120,41 @@
           ]
         },
         {
-          "type": "minecraft:group",
-          "children": [
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:diamond_helmet",
-              "functions": [
-                {
-                  "function": "minecraft:enchant_with_levels",
-                  "levels": {
-                    "min": 25,
-                    "max": 39
-                  }
-                }
-              ]
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 25,
+                "max": 39
+              }
             }
           ]
         },
         {
-          "type": "minecraft:group",
-          "children": [
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:diamond_leggings",
-              "functions": [
-                {
-                  "function": "minecraft:enchant_with_levels",
-                  "levels": {
-                    "min": 25,
-                    "max": 39
-                  }
-                }
-              ]
-            },
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 25,
+                "max": 39
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:diamond_chestplate",
-              "functions": [
-                {
-                  "function": "minecraft:enchant_with_levels",
-                  "levels": {
-                    "min": 25,
-                    "max": 39
-                  }
-                }
-              ]
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 25,
+                "max": 39
+              }
             }
           ]
         }
@@ -242,7 +232,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/nether_bridge"
+          "name": "minecraft:chests/nether_bridge"
         }
       ]
     }

@@ -242,11 +242,11 @@ key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
 key_railways.keyinfo.cycle_menu:key.keyboard.left.alt
 key_key.refinedstorage.focusSearchBar:key.keyboard.tab
@@ -365,6 +365,10 @@ key_key.goeticlegacy.unholy_scroll_focus:key.keyboard.o:SHIFT
 key_key.goeticlegacy.holy_dot_toggle:key.keyboard.h
 key_key.goeticlegacy.sculk_heart_active:key.keyboard.k
 key_key.refinedstorageaddons.openWirelessCraftingGrid:key.keyboard.g:CONTROL
+key_ibeeditor.key.editor:key.keyboard.i
+key_ibeeditor.key.nbt_editor:key.keyboard.n
+key_ibeeditor.key.snbt_editor:key.keyboard.r
+key_ibeeditor.key.vault:key.keyboard.j
 key_key.goety.wand:key.keyboard.z
 key_key.goety.focusCircle:key.keyboard.x
 key_key.goety.bag:key.keyboard.c

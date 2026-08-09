@@ -221,7 +221,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_plains_house"
+          "name": "minecraft:chests/village/village_plains_house"
         }
       ]
     }

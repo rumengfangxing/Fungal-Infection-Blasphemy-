@@ -165,11 +165,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_desert_house"
+          "name": "minecraft:chests/village/village_desert_house"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/village/village_weaponsmith"
+          "name": "minecraft:chests/village/village_weaponsmith"
         },
         {
           "type": "minecraft:empty",

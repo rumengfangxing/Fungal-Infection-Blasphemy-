@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Stone Free",
+      "text": "石之自由",
       "color": "dark_gray"
     },
     "description": {
-      "text": "Find a Mining System"
+      "text": "找到一处大型矿井"
     },
     "icon": {
       "item": "minecraft:hopper_minecart"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:wda_root"
 }

@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Ride Of The Valkyries",
+      "text": "女武神之骑",
       "color": "dark_red"
     },
     "description": {
-      "text": "Find a Heavenly Rider"
+      "text": "找到一艘天际骑士团战舰"
     },
     "icon": {
       "item": "minecraft:saddle"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:wda_root"
 }

@@ -205,40 +205,8 @@
           "name": "minecraft:potion",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_name": "{\"text\":\"Beer\",\"color\":\"gold\",\"italic\":false,\"bold\":true}",
-                "minecraft:potion_contents": {
-                  "custom_color": 15794030,
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:speed",
-                      "amplifier": 1,
-                      "duration": 4800,
-                      "show_particles": true
-                    },
-                    {
-                      "id": "minecraft:haste",
-                      "amplifier": 1,
-                      "duration": 4800,
-                      "show_particles": true
-                    },
-                    {
-                      "id": "minecraft:regeneration",
-                      "amplifier": 0,
-                      "duration": 4800,
-                      "show_particles": true
-                    },
-                    {
-                      "id": "minecraft:weakness",
-                      "amplifier": 3,
-                      "duration": 9600,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Beer\",\"color\":\"gold\",\"bold\":true,\"italic\":false}'},CustomPotionEffects:[{Id:1b,Amplifier:1b,Duration:4800},{Id:3b,Amplifier:1b,Duration:4800},{Id:10b,Amplifier:0b,Duration:4800},{Id:18b,Amplifier:3b,Duration:9600}],CustomPotionColor:15794030}"
             }
           ]
         },

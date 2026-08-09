@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:greenwood_pub",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 88371663,
+    "spacing": 60,
+    "separation": 50,
+    "type": "minecraft:random_spread"
+  }
+}

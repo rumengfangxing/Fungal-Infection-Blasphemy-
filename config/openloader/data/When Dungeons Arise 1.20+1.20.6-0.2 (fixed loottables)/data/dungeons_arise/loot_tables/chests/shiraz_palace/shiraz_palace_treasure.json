@@ -14,26 +14,8 @@
           "name": "minecraft:splash_potion",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:speed",
-                      "amplifier": 3,
-                      "duration": 400,
-                      "show_particles": true
-                    },
-                    {
-                      "id": "minecraft:regeneration",
-                      "amplifier": 5,
-                      "duration": 100,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:1b,Amplifier:3b,Duration:400},{Id:10b,Amplifier:5b,Duration:100}]}"
             }
           ]
         }
@@ -52,10 +34,8 @@
           "name": "minecraft:player_head",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": "DiamondTown"
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:\"DiamondTown\"}"
             }
           ]
         },
@@ -65,10 +45,8 @@
           "name": "minecraft:player_head",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": "TheCatsKing"
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:\"TheCatsKing\"}"
             }
           ]
         }
@@ -82,20 +60,8 @@
           "name": "minecraft:tipped_arrow",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:slowness",
-                      "amplifier": 4,
-                      "duration": 400,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:2b,Amplifier:4b,Duration:600}]}"
             },
             {
               "function": "minecraft:set_count",
@@ -111,26 +77,8 @@
           "name": "minecraft:tipped_arrow",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:potion_contents": {
-                  "custom_effects": [
-                    {
-                      "id": "minecraft:wither",
-                      "amplifier": 3,
-                      "duration": 30,
-                      "show_particles": true
-                    },
-                    {
-                      "id": "minecraft:levitation",
-                      "amplifier": 6,
-                      "duration": 600,
-                      "show_particles": true
-                    }
-                  ]
-                },
-                "minecraft:custom_data": {}
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:20b,Amplifier:4b,Duration:30},{Id:25b,Amplifier:6b,Duration:600}]}"
             },
             {
               "function": "minecraft:set_count",

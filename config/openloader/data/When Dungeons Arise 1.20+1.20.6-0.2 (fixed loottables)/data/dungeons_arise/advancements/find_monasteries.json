@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "A Quiet Place",
+      "text": "云窗月户",
       "color": "blue"
     },
     "description": {
-      "text": "Find a Monastery"
+      "text": "找到一座修道院"
     },
     "icon": {
       "item": "minecraft:feather"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_abandoned_temple"
 }

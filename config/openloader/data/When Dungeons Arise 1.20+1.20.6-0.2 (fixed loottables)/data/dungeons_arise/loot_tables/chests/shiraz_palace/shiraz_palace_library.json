@@ -206,7 +206,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/woodland_mansion"
+          "name": "minecraft:chests/woodland_mansion"
         }
       ]
     }

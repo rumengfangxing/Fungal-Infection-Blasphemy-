@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Rusted Root",
+      "text": "锈蚀之根",
       "color": "dark_red"
     },
     "description": {
-      "text": "Find a Bandit Village"
+      "text": "找到一片疆盗村落"
     },
     "icon": {
       "item": "minecraft:dead_bush"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:wda_root"
 }

@@ -30,85 +30,6 @@
       ]
     },
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:crossbow",
-          "functions": [
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:quick_charge": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 1300
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_helmet",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 15
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_leggings",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 15
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_chestplate",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 15
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_boots",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 0,
-                "max": 15
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "rolls": {
         "min": 1,
         "max": 2
@@ -123,7 +44,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 4,
-                "max": 16
+                "max": 8
               }
             }
           ]
@@ -136,8 +57,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 24,
-                "max": 32
+                "min": 6,
+                "max": 18
               }
             }
           ]
@@ -150,8 +71,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 16,
-                "max": 48
+                "min": 12,
+                "max": 24
               }
             }
           ]
@@ -173,14 +94,11 @@
       ]
     },
     {
-      "rolls": {
-        "min": 1,
-        "max": 2
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 10
+          "weight": 40
         },
         {
           "type": "minecraft:item",
@@ -245,11 +163,11 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/woodland_mansion"
+          "name": "minecraft:chests/woodland_mansion"
         },
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/simple_dungeon"
+          "name": "minecraft:chests/simple_dungeon"
         }
       ]
     }

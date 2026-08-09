@@ -77,7 +77,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/bastion_other"
+          "name": "minecraft:chests/bastion_other"
         }
       ]
     }

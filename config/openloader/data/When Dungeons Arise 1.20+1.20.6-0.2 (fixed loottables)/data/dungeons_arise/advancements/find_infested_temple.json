@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Super Creeps",
+      "text": "悉悉簌簌",
       "color": "dark_red"
     },
     "description": {
-      "text": "Find an Infested Temple"
+      "text": "找到一栋蚀败之楼"
     },
     "icon": {
       "item": "minecraft:infested_stone_bricks"
@@ -33,6 +33,10 @@
       }
     }
   },
-  "requirements": [["location0"]],
+  "requirements": [
+    [
+      "location0"
+    ]
+  ],
   "parent": "dungeons_arise:find_abandoned_temple"
 }

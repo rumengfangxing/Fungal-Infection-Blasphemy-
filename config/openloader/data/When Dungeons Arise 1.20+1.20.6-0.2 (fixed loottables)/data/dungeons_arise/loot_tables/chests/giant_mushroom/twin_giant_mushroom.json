@@ -58,10 +58,8 @@
           "name": "minecraft:player_head",
           "functions": [
             {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:profile": "MHF_Slime"
-              }
+              "function": "minecraft:set_nbt",
+              "tag": "{SkullOwner:\"MHF_Slime\"}"
             }
           ]
         }
@@ -255,7 +253,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:chests/abandoned_mineshaft"
+          "name": "minecraft:chests/abandoned_mineshaft"
         }
       ]
     }
