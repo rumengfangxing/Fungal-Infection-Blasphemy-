@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "spore:tumor"
+    },
+    {
+      "amount": 50,
+      "fluid": "fib:liquid_ammonia"
+    }
+  ],
+  "results": [
+    {
+      "item": "sporefrozen_tumor"
+    }
+  ]
+}

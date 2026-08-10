@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "spore:tumor"
+    },
+    {
+      "amount": 50,
+      "fluid": "biomancy:acid"
+    }
+  ],
+  "results": [
+    {
+      "item": "sporesicken_tumor"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 3,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "majruszsdifficulty:bandage",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "majruszsdifficulty:golden_bandage",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "legendarysurvivaloverhaul:bandage",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2.0
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_regeneration"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4.0
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_healing"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lrtactical:consumable",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ConsumableId:\"lrtactical:blood_pack\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lrtactical:consumable",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ConsumableId:\"42labk:pills\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

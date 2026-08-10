@@ -1,0 +1,165 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 3,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_copper",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coinpile_copper",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coinpile_copper",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_iron",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_iron",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coinpile_iron",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coinpile_iron",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_gold",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_emerald",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_emerald",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coinpile_emerald",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_diamond",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_diamond",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lightmanscurrency:coin_netherite",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

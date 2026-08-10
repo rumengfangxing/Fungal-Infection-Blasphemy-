@@ -1,0 +1,122 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 2,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goety:magic_emerald",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald_block",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goety:ominous_orb",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goetydelight:ominous_ice_cream",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goety:dark_scroll",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goeticlegacy:old_world_echo",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Rarity:\"common\",SizeX:11,SizeY:11,SizeZ:11,State:1,TemplateName:\"pilleger_servant\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goeticlegacy:old_world_echo",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Rarity:\"common\",SizeX:9,SizeY:9,SizeZ:9,State:1,TemplateName:\"signaler_servant\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goeticlegacy:old_world_echo",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Rarity:\"common\",SizeX:23,SizeY:11,SizeZ:26,State:1,TemplateName:\"storm_training_ground\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

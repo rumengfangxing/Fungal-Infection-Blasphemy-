@@ -2,7 +2,31 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "spore:biomass", "count": 4
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
+    },
+    {
+      "item": "spore:biomass"
     }
   ],
   "results": [
