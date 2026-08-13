@@ -1004,6 +1004,13 @@
 	#  "minecraft:nether_star;0;3"      → 下界之星，无限次，每次3槽
 	#  "somemod:special_scroll;1;15"    → 某mod的卷轴，1次全解锁
 	sacrificeRecipes = ["goety:void_echo;1;1", "goety:night_beacon;1;1", "goety:ominous_orb;1;1", "enigmaticlegacy:ichor_bottle;1;1", "enigmaticlegacy:forbidden_fruit;1;1"]
+	#════════════════════════════════════
+	# 救赎之戒兼容配置
+	#════════════════════════════════════
+	#救赎之戒（受祝福者）放行 requireEldritch 内容物时，每次事件触发消耗的破损值 [默认: 2]
+	#设为 0 表示放行但不消耗破损值
+	#Range: 0 ~ 100
+	blessCompatBetrayalCost = 0
 
 #---- 时间加速 ----
 [night_cube_active]
@@ -1528,9 +1535,11 @@
 #════════════════════════════════════
 #---- 黑暗秘典（物品栏被动）----
 [black_book_passive]
-	#物品栏被动模式下每秒灵魂回复量（固定值） [默认: 10.0]
+	#物品栏被动模式下每秒灵魂回复量（固定值） [默认: 2.0]
 	#Range: 0.0 ~ 10000.0
 	passiveSoulRegen = 10.0
+	#是否启用黑暗秘典物品栏被动（背包内携带时每秒回复灵魂） [默认: true]
+	enablePassive = true
 
 #---- 女巫酿造学（物品栏被动）----
 [witches_brew_passive]

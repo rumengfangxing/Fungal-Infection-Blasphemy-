@@ -75,17 +75,17 @@ enableGoetyRevelationCompatibility = true
 #按下Shift键时的移动速度倍率
 #Range: 0.0 ~ 1.7976931348623157E308
 shiftSpeedMultiplier = 2.0
-#Damage multiplier in LivingHurtEvent
-#LivingHurtEvent中的伤害倍率
-#Range: 0.0 ~ 1.7976931348623157E308
+#Normal damage multiplier (when not sneaking)
+#正常的伤害增幅倍率（非潜行状态）
+#Range: 0.0 ~ 3.4028234663852886E38
 livingHurtDamageMultiplier = 2.0
-#General damage multiplier in LivingDamageEvent
-#LivingDamageEvent中的一般伤害倍率
-#Range: 0.0 ~ 1.7976931348623157E308
+#Damage multiplier when sneaking but not backstabbing
+#潜行非背刺的伤害增幅倍率
+#Range: 0.0 ~ 3.4028234663852886E38
 livingDamageGeneralMultiplier = 2.0
-#Backstab damage multiplier in LivingDamageEvent
-#LivingDamageEvent中的背刺伤害倍率
-#Range: 0.0 ~ 1.7976931348623157E308
+#Damage multiplier when sneaking and backstabbing
+#潜行背刺的伤害增幅倍率
+#Range: 0.0 ~ 3.4028234663852886E38
 livingDamageBackstabMultiplier = 3.0
 #Boost percentage per stack of Lich's Chaos Stew for minions (0.15 = 15%)
 #巫妖乱炖每层为仆从提供的加成百分比（0.15 = 15%）
@@ -107,4 +107,54 @@ nightPeaSoupMaxCount = 12
 #玩家模型缩放设置（格式：玩家名称=缩放比例）
 #注：请勿在高版本ysm中使用该功能（2.6.2版本可用，2.6.5版本不可用）
 playerModelScales = ["Steve=1.0", "Alex=1.0", "wu1wu2=1.0"]
+#If true, use whitelist mode (only apply debuffs in the list); if false, use blacklist mode (exclude debuffs in the list)
+#true=白名单模式（仅施加列表中的debuff），false=黑名单模式（排除列表中的debuff）
+tenThousandPoisonFeastUseWhitelist = true
+#A list of debuff effects for whitelist/blacklist (mode controlled by tenThousandPoisonFeastUseWhitelist)
+#万毒盛宴的效果白名单/黑名单（模式由tenThousandPoisonFeastUseWhitelist控制）
+#Supports:
+#  - Effect ID: 'minecraft:slowness' (exact match)
+#  - MOD ID partial match: 'mod:goety' (matches any effect from modid containing 'goety', supports sub-mods)
+#支持格式：
+#  - 效果ID：'minecraft:slowness'（精确匹配）
+#  - MOD ID部分匹配：'mod:goety'（匹配modid包含'goety'的所有效果，支持附属模组）
+tenThousandPoisonFeastEffectList = ["minecraft:slowness", "minecraft:mining_fatigue", "minecraft:poison", "minecraft:wither", "minecraft:blindness", "minecraft:nausea", "minecraft:darkness", "minecraft:weakness", "minecraft:hunger", "minecraft:unluck", "minecraft:bad_omen", "minecraft:levitation", "mod:goety", "mod:twilightforest", "mod:quark", "mod:jerotes", "mod:delight", "mod:cataclysm", "mod:enigmatic", "mod:aether", "mod:born_in_chaos_v1", "mod:spell", "mod:iron"]
+#Level range configuration for specific debuffs (format: effect_id=min-max)
+#万毒宴特定效果等级范围配置（格式：效果id=最小值-最大值）
+#Priority: Level/Duration Config > Whitelist/Blacklist > Default Config
+#优先级：等级/时长配置 > 白名单/黑名单 > 默认配置
+tenThousandPoisonFeastLevelConfig = ["minecraft:slowness=0-4", "minecraft:weakness=0-3", "minecraft:wither=0-2", "minecraft:blindness=0-1", "minecraft:nausea=0-1", "minecraft:hunger=0-3", "minecraft:mining_fatigue=0-3"]
+#Duration range configuration for specific debuffs (format: effect_id=min-max, unit: minutes)
+#万毒宴特定效果时长范围配置（格式：效果id=最小值-最大值，单位：分钟）
+#Priority: Level/Duration Config > Whitelist/Blacklist > Default Config
+#优先级：等级/时长配置 > 白名单/黑名单 > 默认配置
+tenThousandPoisonFeastDurationConfig = ["minecraft:slowness=0.5-3", "minecraft:weakness=0.5-3", "minecraft:wither=0.25-1.5", "minecraft:blindness=0.25-0.5", "minecraft:nausea=0.25-0.5", "minecraft:hunger=0.5-2", "minecraft:mining_fatigue=0.5-2"]
+#Default minimum level for debuffs not configured in LevelConfig
+#未在LevelConfig中配置的效果的默认最小等级
+#Range: 0 ~ 255
+tenThousandPoisonFeastDefaultMinLevel = 0
+#Default maximum level for debuffs not configured in LevelConfig
+#未在LevelConfig中配置的效果的默认最大等级
+#Range: 0 ~ 255
+tenThousandPoisonFeastDefaultMaxLevel = 2
+#Default minimum duration (minutes) for debuffs not configured in DurationConfig
+#未在DurationConfig中配置的效果的默认最短持续时间（分钟）
+#Range: 0.0 ~ 1.7976931348623157E308
+tenThousandPoisonFeastDefaultMinDuration = 0.1
+#Default maximum duration (minutes) for debuffs not configured in DurationConfig
+#未在DurationConfig中配置的效果的默认最长持续时间（分钟）
+#Range: 0.0 ~ 1.7976931348623157E308
+tenThousandPoisonFeastDefaultMaxDuration = 5.0
+#Number of random debuffs to apply when eating Ten Thousand Poison Feast
+#食用万毒盛宴时随机施加的debuff数量
+#Range: 1 ~ 100
+tenThousandPoisonFeastEffectCount = 6
+#Minimum number of items required in crafting grid to create Ten Thousand Poison Feast
+#合成万毒盛宴所需的最少物品数量
+#Range: 1 ~ 9
+tenThousandPoisonFeastMinItemCount = 4
+#Minimum number of unique debuff types from all ingredients required to create Ten Thousand Poison Feast
+#合成万毒盛宴所需的最少debuff种类数（所有材料提供的不同debuff种类之和）
+#Range: 1 ~ 100
+tenThousandPoisonFeastMinDebuffCount = 8
 
