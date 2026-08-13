@@ -1,0 +1,75 @@
+
+#MCG's Questborne Configuration
+[general]
+	#Maximum number of quests a player can have active at once
+	#Range: 1 ~ 20
+	maxActiveQuests = 5
+	#Multiplier for Quest Points earned (1.0 = normal, 2.0 = double)
+	#Range: 0.1 ~ 10.0
+	qpMultiplier = 3.0
+	#Multiplier for reputation earned (1.0 = normal, 2.0 = double)
+	#Range: 0.1 ~ 10.0
+	repMultiplier = 3.0
+
+[npcs]
+	#Maximum distance (blocks) NPCs will wander from their home position
+	#Range: 3 ~ 32
+	wanderRadius = 10
+	#If true, NPCs cannot be killed by players
+	npcInvulnerable = false
+	#Ticks until a killed NPC respawns at their campsite (24000 = 1 in-game day)
+	#Range: 1200 ~ 72000
+	respawnTicks = 24000
+
+[quests]
+	#Number of quests each NPC offers at a time
+	#Range: 1 ~ 8
+	questsPerNpc = 5
+	#Multiplier for quest cooldowns (1.0 = normal, 0.5 = half cooldown)
+	#Range: 0.0 ~ 5.0
+	cooldownMultiplier = 0.5
+	#If true, obtain quests consume items from player inventory on turn-in
+	consumeItemsOnTurnIn = true
+
+[shop]
+	#QP cost for a Bronze Crate
+	#Range: 1 ~ 1000
+	bronzeCrateCost = 10
+	#QP cost for a Silver Crate
+	#Range: 1 ~ 1000
+	silverCrateCost = 25
+	#QP cost for a Gold Crate
+	#Range: 1 ~ 1000
+	goldCrateCost = 70
+
+[worldgen]
+	#Average distance (chunks) between campsites
+	#Range: 8 ~ 128
+	campsiteSpacing = 32
+	#Minimum distance (chunks) between campsites
+	#Range: 4 ~ 64
+	campsiteSeparation = 12
+	#Minimum number of NPCs per campsite
+	#Range: 1 ~ 5
+	minNpcsPerCamp = 1
+	#Maximum number of NPCs per campsite
+	#Range: 1 ~ 5
+	maxNpcsPerCamp = 3
+
+[reputation]
+	#Reputation needed for Adventurer tier
+	#Range: 1 ~ 1000
+	adventurerThreshold = 100
+	#Reputation needed for Veteran tier
+	#Range: 1 ~ 5000
+	veteranThreshold = 300
+	#Reputation needed for Champion tier
+	#Range: 1 ~ 10000
+	championThreshold = 600
+	#Reputation needed for Legend tier
+	#Range: 1 ~ 20000
+	legendThreshold = 1000
+	#Reputation tier required to hire an NPC (1=Adventurer, 2=Veteran, 3=Champion, 4=Legend)
+	#Range: 1 ~ 4
+	hireTier = 1
+
