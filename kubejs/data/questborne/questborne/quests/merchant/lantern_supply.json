@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/lantern_supply",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:lantern",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 5,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "平原上正在建一个新的定居点，它们需要灯笼，几十个。不能让村民在黑暗中绊倒。对士气不好，对我作为可靠供应商的声誉更糟。",
+    "accept": "我会为定居点制作灯笼。",
+    "decline": "让它们用火把。",
+    "in_progress": "黑暗降临，定居者很紧张。那些灯笼现在会大有帮助。",
+    "complete": "寒冷边境的温暖光亮！定居点领袖送来感谢，我送来付款。每个人的更光明未来。"
+  }
+}

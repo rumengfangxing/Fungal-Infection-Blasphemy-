@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/enderman_hunt",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:enderman",
+      "count": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 90
+  },
+  "dialogue": {
+    "description": "末影人。高大、黑暗、如果你看错它们就会绝对愤怒。我一直在追踪它们的模式，它们在平原附近聚集。猎杀它们。",
+    "accept": "我知道不要眼神接触。我会完成的。",
+    "decline": "会瞬移的敌人？那超出我的能力范围。",
+    "in_progress": "眼睛看低，剑举高。那东西打人像推土机。",
+    "complete": "末影珍珠都有！我看你掌握了间接凝视的艺术。"
+  }
+}

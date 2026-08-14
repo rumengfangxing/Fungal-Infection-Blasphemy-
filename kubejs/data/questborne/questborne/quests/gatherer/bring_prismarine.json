@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_prismarine",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:prismarine_shard",
+      "count": {
+        "min": 16,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 28,
+    "reputation": 7,
+    "bonus_xp": 80
+  },
+  "dialogue": {
+    "description": "海底神殿里有海晶石，闪闪发光的海绿色碎片，比石头还硬。保护它们的守卫者很可怕，但碎片值得冒险。你准备好潜水了吗？",
+    "accept": "我会对付守卫者。",
+    "decline": "那些激光鱼吓死我了。",
+    "in_progress": "守卫者给你麻烦了吗？用水肺药水，不要直视它们。我仍然需要那些碎片。",
+    "complete": "海晶石碎片，还带着深海的湿气！它们像没有其他石头一样闪烁。海晶灯、暗海晶石，建筑者们会出大价钱。勇敢的工作，潜水者。"
+  }
+}

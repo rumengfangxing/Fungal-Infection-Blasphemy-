@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/emerald_exchange",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:emerald",
+      "count": {
+        "min": 12,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 85
+  },
+  "dialogue": {
+    "description": "绿宝石是村民贸易网络的货币，而我找到了一个愿意出高于市场价购买的买家。这是一个套利机会，但我首先需要绿宝石。",
+    "accept": "我会获得绿宝石。",
+    "decline": "我的绿宝石还是自己留着吧，谢谢。",
+    "in_progress": "买家的出价很快就过期。没有绿宝石的每一刻都是失去金钱！",
+    "complete": "绿色完美！这笔交易的利润率是惊人的。给你，你那份比公平还多。"
+  }
+}

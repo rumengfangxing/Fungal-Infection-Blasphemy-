@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_netherite_scrap",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:netherite_scrap",
+      "count": {
+        "min": 2,
+        "max": 4
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 65,
+    "reputation": 15,
+    "bonus_xp": 300
+  },
+  "dialogue": {
+    "description": "下界合金碎片，从远古残骸熔炼而来，整个下界最稀有的矿石。藏在最深处，被熔岩和下界岩包围。只有最有技巧的矿工才知道要找什么。",
+    "accept": "我会把好东西带回来。",
+    "decline": "下界深处是死刑。",
+    "in_progress": "远古残骸不会出现在任何地图上。你在最底层盲挖、祈祷。但碎片比金子还值钱。继续找。",
+    "complete": "下界合金碎片！感受它有多重，比主世界任何东西都密。这是传说中的东西，朋友。能在火里存活的盔甲和工具。壮观。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_lodestone",
+  "npc_type": "crafter",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:lodestone",
+      "count": 1,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 65,
+    "reputation": 15,
+    "bonus_xp": 320
+  },
+  "dialogue": {
+    "description": "航海家公会需要一块磁石。下界合金锭嵌在雕纹石砖里，校准后能让指南针从任何维度指向它。工艺与导航的杰作。",
+    "accept": "磁石，一块所有指南针都会指向它的磁石。带回来。",
+    "decline": "这种精度的下界合金活儿需要更多准备。",
+    "in_progress": "下界合金核心在封装过程中必须磁化。如果在石砖固定前冷却，磁力就没了。",
+    "complete": "把指南针靠近它……看，指针瞬间锁定。航海家们再也不会迷路了。"
+  }
+}

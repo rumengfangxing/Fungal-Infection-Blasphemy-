@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/heart_of_the_sea_deal",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:heart_of_the_sea",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 55,
+    "reputation": 13,
+    "bonus_xp": 230
+  },
+  "dialogue": {
+    "description": "海洋之心，一种蓝得不可思议的宝石，只在埋藏的宝藏里能找到。一位水下建筑师想要它做潮涌核心。她愿意用一整货舱的贵重品来换一颗。",
+    "accept": "我会寻找埋藏的宝藏。",
+    "decline": "藏宝图不可靠。",
+    "in_progress": "跟随地图，深挖，海洋会交出它的秘密。建筑师在指望着我们！",
+    "complete": "海洋之心！它带着海洋能量脉动。建筑师会用这个创造奇迹。你真正赢得了你的声誉。"
+  }
+}

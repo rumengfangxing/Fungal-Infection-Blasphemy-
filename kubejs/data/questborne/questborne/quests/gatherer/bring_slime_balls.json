@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_slime_balls",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:slime_ball",
+      "count": {
+        "min": 12,
+        "max": 20
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 36,
+    "reputation": 8,
+    "bonus_xp": 120
+  },
+  "dialogue": {
+    "description": "粘液球是主世界最粘的东西，也是最有用的。粘性活塞、拴绳、粘液块，它们是工程奇迹。晚上在沼泽或地下深处猎杀史莱姆。",
+    "accept": "我去猎史莱姆。",
+    "decline": "弄一身粘糊糊的不是我的风格。",
+    "in_progress": "沼泽里的满月，或地下的史莱姆区块，那是你最好的选择。我的工程师需要那些粘液来做他们的建筑。",
+    "complete": "粘糊糊的、有弹性的、而且粘度完美！我的工程师们会拿着这批造一整个礼拜的装置。不过你可能需要洗洗手。"
+  }
+}

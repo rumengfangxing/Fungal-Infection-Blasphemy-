@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/nether_wastes_sweep",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:ghast",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:magma_cube",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 42,
+    "reputation": 9,
+    "bonus_xp": 140
+  },
+  "dialogue": {
+    "description": "下界荒地需要为新前哨站清理。恶魂从上方降下火雨，岩浆怪在下方弹跳。在两条战线上确保这个区域。",
+    "accept": "空中和地面威胁？我会处理两者。",
+    "decline": "下界的双线战斗？那是疯了。",
+    "in_progress": "火球还在飞，熔岩还在弹跳。还没清理完。",
+    "complete": "荒地达到了下界所能达到的最安全程度。前哨站建造者可以搬进来了。"
+  }
+}

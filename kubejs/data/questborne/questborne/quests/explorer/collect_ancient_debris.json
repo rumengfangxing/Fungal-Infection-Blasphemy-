@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/collect_ancient_debris",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ancient_debris",
+      "count": {
+        "min": 2,
+        "max": 4
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 11,
+    "bonus_xp": 180
+  },
+  "dialogue": {
+    "description": "远古残骸藏在最深层——被时间遗忘的文明的遗迹。开采它需要决心和钻石工具。",
+    "accept": "远古残骸——下界最稀有的材料！我会深挖并把能找到的都带回来。",
+    "decline": "在下界深层开采没有充分准备太危险了。",
+    "in_progress": "在下界 Y 层 15 左右挖。远古残骸抗爆而且极其稀有。用床或 TNT 快速清理大区域。",
+    "complete": "远古残骸！这是传说中的材料——精炼后简直坚不可摧。你从下界最深处的宝库中取回了宝藏！"
+  }
+}

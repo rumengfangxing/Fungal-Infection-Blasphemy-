@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/honey_bottles",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:honey_bottle",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 18,
+    "reputation": 5,
+    "bonus_xp": 55
+  },
+  "dialogue": {
+    "description": "蜂蜜是自然界的黄金，我的朋友。炼金师、面包师、治疗者，他们都吵着要它。而蜜蜂蜇伤意味着大多数普通人不会自己收集。那就是你进来的地方。",
+    "accept": "我会勇敢面对蜜蜂取蜂蜜。",
+    "decline": "我珍惜我未蜇的皮肤。",
+    "in_progress": "几次蜜蜂蜇伤从没杀死任何人。好吧，也许有些人。但肯定不是你！",
+    "complete": "瓶装液体阳光！治疗者会付三倍。你的勇气得到了回报。"
+  }
+}

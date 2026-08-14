@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/pumpkin_pie_order",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:pumpkin_pie",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 16,
+    "reputation": 4,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "一位贵族老爷为他的秋日宴会订了南瓜派。他付离谱金额。我只是需要有人实际来做派。我的才能在于销售，不是烘焙。",
+    "accept": "我会准备南瓜派。",
+    "decline": "自己烤派去。",
+    "in_progress": "老爷的宴会临近了。没有派意味着没有付款意味着不快乐的商人！",
+    "complete": "金黄酥脆的完美！老爷会唱我的赞歌，好吧，我的赞歌。但你会拿到硬币，那比赞美更好。"
+  }
+}

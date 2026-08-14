@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/dragon_egg_acquisition",
+  "npc_type": "merchant",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": false,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:dragon_egg",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 150,
+    "reputation": 25,
+    "bonus_xp": 800
+  },
+  "dialogue": {
+    "description": "龙蛋。全世界只有一个，一位女皇出价与她王国重量相等的黄金。杀死末影龙，夺取它的蛋，我们将成为世界上最富有的存在。",
+    "accept": "我会击败龙并夺取它的蛋。",
+    "decline": "有些东西真正无价。",
+    "in_progress": "末影龙守护着造物中最有价值的物体。但你已经一次又一次地证明了自己。我相信你，也相信我们的利润率。",
+    "complete": "龙蛋！我拿着世界上最稀有的物体。女皇会有她的奖品，而我们的名字将回响在历史中。绝对荣幸与你做这笔生意。"
+  }
+}

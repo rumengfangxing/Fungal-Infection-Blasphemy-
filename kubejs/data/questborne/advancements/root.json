@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "item": "questborne:bronze_crate"
+    },
+    "title": "任务之旅",
+    "description": "开始你作为任务冒险者的旅程",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/deepslate_bricks.png"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

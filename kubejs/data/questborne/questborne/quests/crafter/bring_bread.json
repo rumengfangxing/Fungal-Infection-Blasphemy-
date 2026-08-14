@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/bring_bread",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:bread",
+      "count": 32,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 4,
+    "bonus_xp": 40
+  },
+  "dialogue": {
+    "description": "营地的面包消耗得跟不要钱似的。给我弄 32 个面包来，够大伙吃上一礼拜。",
+    "accept": "行，我去烤。",
+    "decline": "我又不是面包师傅。",
+    "in_progress": "闻着你身上有股炉子味儿。我的面包呢？",
+    "complete": "32 个新鲜面包！今晚营地能好好吃一顿了。这是你应得的。"
+  }
+}

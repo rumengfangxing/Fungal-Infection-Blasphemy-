@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/diamond_procurement",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:diamond",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 40,
+    "reputation": 9,
+    "bonus_xp": 120
+  },
+  "dialogue": {
+    "description": "钻石。贸易商品的顶峰。一位女公爵订了一顶王冠，我的珠宝商需要原石。她愿意付的价格是……让我们说连我都脸红了。",
+    "accept": "我会挖钻石。",
+    "decline": "钻石留在我的口袋里。",
+    "in_progress": "没有钻石的每一天都是女公爵考虑另一个商人的一天。我不能允许那样！",
+    "complete": "完美无瑕的净度！珠宝商会把这些打磨成壮丽的东西。而女公爵的黄金会塑造我们的财富。"
+  }
+}

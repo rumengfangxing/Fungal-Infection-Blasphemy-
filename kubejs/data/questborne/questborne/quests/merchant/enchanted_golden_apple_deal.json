@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/enchanted_golden_apple_deal",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:enchanted_golden_apple",
+      "count": {
+        "min": 1,
+        "max": 2
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 200
+  },
+  "dialogue": {
+    "description": "远方国度一位垂死的国王听说了附魔金苹果的传说，他们称之为上帝之果。他的顾问们愿意付任何价格。这是千载难逢的利润，朋友。",
+    "accept": "我会给你找一个上帝之果。",
+    "decline": "有些东西太稀有了不能交易。",
+    "in_progress": "远古神殿、隐藏箱子，上帝之果存在于某个地方。国王的生命悬于一线。还有我的佣金。",
+    "complete": "我从没想过会亲手拿到一个。那闪光几乎是超自然的。国王的顾问们会感激涕零，并用黄金付款。"
+  }
+}

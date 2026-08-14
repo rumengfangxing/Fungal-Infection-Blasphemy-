@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/ravager_slayer",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:ravager",
+      "count": {
+        "min": 2,
+        "max": 4
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 35,
+    "reputation": 8,
+    "bonus_xp": 100
+  },
+  "dialogue": {
+    "description": "劫掠兽。活的攻城武器，角像攻城锤。一只就能推平一栋房子。我需要我认识的最勇敢的猎手来击倒它们。",
+    "accept": "大目标只是意味着更难打偏。我加入。",
+    "decline": "我宁愿今天不被踩成糊状。",
+    "in_progress": "那些野兽仍在横冲直撞。你需要正面迎击它们。",
+    "complete": "你像它们什么都不是一样推倒了那些怪物！提醒我永远别让你生气。"
+  }
+}

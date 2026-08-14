@@ -1,0 +1,40 @@
+{
+  "id": "questborne:gatherer/bring_mushrooms",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:red_mushroom",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:brown_mushroom",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 5,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "我在试我祖母传下来的炖菜食谱，需要红蘑菇和棕色蘑菇。黑暗的洞穴和阴凉的森林是你的最佳选择。只是回来路上别吃任何。",
+    "accept": "我知道去哪里找。",
+    "decline": "我不信任蘑菇。",
+    "in_progress": "两种都要，记住，红的和棕色的。缺一种就是一碗坏汤。",
+    "complete": "红的和棕色的，像祖母用的一样！今晚我们吃正经蘑菇炖菜。拿个碗来，你挣了一碗。"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "questborne:hunter/undead_purge",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:zombie",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:husk",
+      "count": {
+        "min": 5,
+        "max": 8
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:drowned",
+      "count": {
+        "min": 5,
+        "max": 8
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 5,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "每一种亡灵变体都在从木制品里爬出来。普通僵尸、尸壳、溺尸，我需要它们全部被处理。把它当作一次大清洗。",
+    "accept": "全面亡灵清除？这才像话。",
+    "decline": "对一个人来说那是很多亡灵……",
+    "in_progress": "我仍然能闻到风中腐烂的肉味。清除还没完成。",
+    "complete": "每一种类型、每一种变体，全部被摧毁。你是个天生的猎手。"
+  }
+}

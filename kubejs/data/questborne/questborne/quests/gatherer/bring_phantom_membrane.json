@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_phantom_membrane",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:phantom_membrane",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 42,
+    "reputation": 10,
+    "bonus_xp": 155
+  },
+  "dialogue": {
+    "description": "幻翼，不眠者的诅咒。那些亡灵魔鬼只在有人几天没睡觉时出现。它们的膜能修复鞘翅和酿造缓降药水。保持清醒并猎杀它们。",
+    "accept": "睡眠被高估了。",
+    "decline": "我需要我的美容觉。",
+    "in_progress": "累了吗？那就是你召唤它们的方式。保持清醒，观察天空，在它们俯冲时出击。别忘了膜。",
+    "complete": "半透明、纸一样薄，但像皮革一样强。这些膜无视重力本身。缓降药水和鞘翅修复。失眠的代价，变成了利润。现在去睡会儿吧。"
+  }
+}

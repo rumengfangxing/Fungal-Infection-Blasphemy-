@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_daylight_detector",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:daylight_detector",
+      "count": 4,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 11,
+    "bonus_xp": 170
+  },
+  "dialogue": {
+    "description": "灯塔管理员需要日光传感器来自动控制信标。玻璃、石英、木板，精确感应太阳的轨迹。",
+    "accept": "给灯塔带日光传感器来，让信标再也不会错过日落。",
+    "decline": "感光装置太娇贵了，这次算了。",
+    "in_progress": "石英必须在完美无瑕的玻璃下面。玻璃有一点杂质传感器就会误报。",
+    "complete": "光线的每一丝变化都能响应。不管晴雨，灯塔都会自动点亮。"
+  }
+}

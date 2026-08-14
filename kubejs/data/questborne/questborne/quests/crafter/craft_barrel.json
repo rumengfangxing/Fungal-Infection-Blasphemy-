@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_barrel",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:barrel",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 24,
+    "reputation": 6,
+    "bonus_xp": 70
+  },
+  "dialogue": {
+    "description": "酿酒厂需要新木桶来陈酿。桶板要严丝合缝，铁箍要结实，一滴都不能漏。他们的招牌可就靠这个了。",
+    "accept": "给酿酒厂带不漏水的桶来，一滴都不会漏的那种。",
+    "decline": "箍桶这活儿我现在没空。",
+    "in_progress": "每块桶板都要仔细敲到位。一块歪了整只桶就废了。",
+    "complete": "灌满水一滴都不渗。酿酒师傅肯定乐坏了。"
+  }
+}

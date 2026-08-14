@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_ender_pearls",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ender_pearl",
+      "count": {
+        "min": 8,
+        "max": 12
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 11,
+    "bonus_xp": 175
+  },
+  "dialogue": {
+    "description": "末影珍珠，掌中的传送。那些高大黑暗的末影人带着它们。激怒它们很危险，但它们掉落的珍珠对探索和其他目的是无价的。",
+    "accept": "我以前盯住过末影人。",
+    "decline": "我宁愿不跟它们打架。",
+    "in_progress": "末影人不喜欢被盯着看。但你已经知道那了。仍然需要那些珍珠，朋友。它们至关重要。",
+    "complete": "我手臂上的汗毛在拿着这些时都竖起来了。纯粹的传送能量，被压缩在一颗珍珠里。你招惹了危险的生物来获得这些。赢得尊重。"
+  }
+}

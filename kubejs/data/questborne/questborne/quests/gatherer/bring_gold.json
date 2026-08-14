@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_gold",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:gold_ingot",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "金不只是好看。猪灵拿它交易，动力铁轨需要它，某些附魔需要黄金之触。我的库存空了。是时候补充了。",
+    "accept": "淘金热开始了。",
+    "decline": "金对我来说太深了。",
+    "in_progress": "还没金？如果表层采矿是你的风格就去恶地，或者往深处去。不管怎样，我需要锭。",
+    "complete": "金的光芒永远不过时。手里沉甸甸的，眼里暖洋洋的。你干得好。这是你那份利润。"
+  }
+}

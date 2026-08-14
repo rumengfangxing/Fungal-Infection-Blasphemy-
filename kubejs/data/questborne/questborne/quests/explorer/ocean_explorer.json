@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/ocean_explorer",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:nautilus_shell",
+      "count": {
+        "min": 2,
+        "max": 3
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 33,
+    "reputation": 8,
+    "bonus_xp": 95
+  },
+  "dialogue": {
+    "description": "海洋蕴藏着陆地探险家很少看到的秘密。鹦鹉螺壳被冲上岸或能从溺尸身上找到——深海的遗物，我收集作为战利品。",
+    "accept": "来自深海的鹦鹉螺壳！我会搜寻海岸并处理我找到的任何溺尸。",
+    "decline": "海洋不是我的领域。我现在还是待在干地上吧。",
+    "in_progress": "试着在海里钓鱼或在夜晚猎杀溺尸。鹦鹉螺壳很稀有，但坚持就有回报。",
+    "complete": "鹦鹉螺壳！这些螺旋形的美物证明你勇敢面对了深海。我会把它们加入我的海洋奇观收藏。"
+  }
+}

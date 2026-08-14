@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_smoker",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:smoker",
+      "count": 4,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 10,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "屠夫公会订了烟熏炉给他们的新熏制房。好硬木结构，通风要顺畅。",
+    "accept": "给屠夫带烟熏炉来，挑那种火候稳的。",
+    "decline": "屠夫们再等等吧。",
+    "in_progress": "木壳要均匀导烟。气流不均熏出来的肉就不均匀。",
+    "complete": "屠夫们以后熏肉时间能缩短一半。优质建造带来优质出品。"
+  }
+}

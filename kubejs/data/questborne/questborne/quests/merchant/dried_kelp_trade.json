@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/dried_kelp_trade",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:dried_kelp",
+      "count": {
+        "min": 32,
+        "max": 64
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "水手们对干海带深信不疑。轻便、营养、而且永不腐烂。一支舰队刚停靠，它们正在为长途航行补货。如果你能给我供应，轻松赚钱。",
+    "accept": "我会收集干海带。",
+    "decline": "我不想趟进海里弄海带。",
+    "in_progress": "船在黎明起航！我在潮水转向前需要那些海带！",
+    "complete": "咸鲜、完美干燥。船长会对这批收获满意的。顺风和顺当的付款给你。"
+  }
+}

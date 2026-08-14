@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/ink_sac_bundle",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ink_sac",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 3,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "墨汁在合适的市场里是液体黄金。每一个招牌画家、制图师和抄写员在三个王国里都需要那东西。给我带墨囊来，我会确保我们都获利。",
+    "accept": "我会猎一些鱿鱼取墨汁。",
+    "decline": "我宁愿保持干燥。",
+    "in_progress": "我的墨水池快干了。抄写员们威胁要换供应商！",
+    "complete": "深色且丰富，完美品质的墨汁。抄写员们会付大价钱。你的佣金，挣得值。"
+  }
+}

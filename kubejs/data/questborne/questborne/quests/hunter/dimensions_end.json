@@ -1,0 +1,62 @@
+{
+  "id": "questborne:hunter/dimensions_end",
+  "npc_type": "hunter",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": false,
+  "cooldown": "0h",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:blaze",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:wither_skeleton",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:ghast",
+      "count": {
+        "min": 5,
+        "max": 8
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:enderman",
+      "count": {
+        "min": 20,
+        "max": 30
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:ender_dragon",
+      "count": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 150,
+    "reputation": 25,
+    "bonus_xp": 800
+  },
+  "dialogue": {
+    "description": "维度终结。猎人公会的最终试炼。清理下界要塞，然后进入末地并杀死龙本身。这是你做过的一切狩猎，合并成一个终极挑战。",
+    "accept": "最终试炼。一切都在这一刻达到了顶峰。",
+    "decline": "我……需要更多时间。这是所有狩猎的终点。",
+    "in_progress": "两个维度、无数敌人、一个猎手。试炼继续直到龙倒下。",
+    "complete": "维度终结完成了。下界颤抖，末地哭泣，而你屹立胜利。我没有什么可以再教你了。向前走吧，传奇。世界由你来保护。"
+  }
+}

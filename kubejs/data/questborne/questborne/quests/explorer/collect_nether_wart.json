@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/collect_nether_wart",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:nether_wart",
+      "count": {
+        "min": 16,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 36,
+    "reputation": 8,
+    "bonus_xp": 110
+  },
+  "dialogue": {
+    "description": "下界疣生长在要塞最暗角落的灵魂沙上。它是所有药水酿造的基础——没有一个认真的探险家会不带补给就上路。",
+    "accept": "要塞里的下界疣！酿造必需品。我会勇闯下界囤一些。",
+    "decline": "突袭要塞不在我今天的日程上。",
+    "in_progress": "在下界要塞找楼梯间——下界疣农场长在楼梯底部的灵魂沙上。",
+    "complete": "好收成的下界疣！有了这个，我们可以酿造抗火、迅捷等药水。探险家的炼金术工具包从这里开始。"
+  }
+}

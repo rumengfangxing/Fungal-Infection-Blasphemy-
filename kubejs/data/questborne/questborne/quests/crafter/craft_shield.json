@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_shield",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 100,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:shield",
+      "count": 4,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 10,
+    "reputation": 6,
+    "bonus_xp": 58
+  },
+  "dialogue": {
+    "description": "村庄守卫人手不足，装备也差。他们需要盾牌，坚实的橡木加铁，能挡住骷髅箭矢不会裂开的那种。",
+    "accept": "给守卫带盾牌来。挑结实点的。",
+    "decline": "我炉子里还有别的项目。",
+    "in_progress": "盾牌的强度取决于铁箍。金属活儿别偷工减料。",
+    "complete": "结实的盾牌，战斗时平衡感很好。守卫们现在能站稳脚跟了。干得漂亮。"
+  }
+}

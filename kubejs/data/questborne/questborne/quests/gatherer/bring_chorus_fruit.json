@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_chorus_fruit",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:chorus_fruit",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 55,
+    "reputation": 13,
+    "bonus_xp": 240
+  },
+  "dialogue": {
+    "description": "紫颂果只生长在末地外部岛屿上。紫色的、外星来的、吃了能传送。我在实验紫珀块和末地烛。需要大量收获。",
+    "accept": "末地岛屿在等着。",
+    "decline": "掉进虚空可不吸引人。",
+    "in_progress": "外部岛屿很危险。裂隙、潜影贝、下方的虚空。但紫颂植物在那里长得又高又多。从底部砍，收集所有。",
+    "complete": "来自龙域之外的紫色收获！质地、重量，这些都是完美标本。熔炼成爆裂紫颂果后，它们能做出配得上末地城的紫珀块。非凡。"
+  }
+}

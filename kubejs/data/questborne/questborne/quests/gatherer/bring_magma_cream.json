@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_magma_cream",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:magma_cream",
+      "count": {
+        "min": 6,
+        "max": 10
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 38,
+    "reputation": 9,
+    "bonus_xp": 130
+  },
+  "dialogue": {
+    "description": "岩浆膏，来自岩浆怪的那种粘稠残留物。摸起来恶心，对防火药水来说无价。下界那些弹跳的熔岩块被击败后会掉落它。带上你的剑。",
+    "accept": "粘糊糊的火块？行吧。",
+    "decline": "我宁愿不被活活烧死。",
+    "in_progress": "岩浆怪被击中会分裂，所以继续挥砍直到它们停止弹跳。最小的那些里面有岩浆膏。",
+    "complete": "粘稠、温热、微微发光。这种膏会酿成防火药水，任何认真的下界远征的必备装备。恶心的东西，但你处理得像个专家。"
+  }
+}

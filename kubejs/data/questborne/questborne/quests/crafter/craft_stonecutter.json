@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_stonecutter",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:stonecutter",
+      "count": 2,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 6,
+    "bonus_xp": 78
+  },
+  "dialogue": {
+    "description": "石匠们需要一台正经的切石机。铁刃嵌在石头里，锋利到切花岗岩跟切热面包似的。",
+    "accept": "刀刃耐用的切石机，包在我身上。",
+    "decline": "把铁嵌进石头需要专注，我今天没有。",
+    "in_progress": "刀刃必须绝对垂直。偏一度每一刀切出来都是歪的。",
+    "complete": "刀刃对得真准。石匠们能用这工具雕出杰作。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:merchant/compass_order",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:compass",
+      "count": 6,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "一个探险家公会刚下了指南针的大宗订单。每个新成员都得到一个。公会的生意兴隆，进而，我们的也是。",
+    "accept": "带指南针来就行。",
+    "decline": "它们可以自己找路。",
+    "in_progress": "公会新成员很快要出发了。它们需要那些指南针否则会在原地打转！",
+    "complete": "每一根指针都指向正北。公会大师会对这个质量印象深刻。干得好！"
+  }
+}

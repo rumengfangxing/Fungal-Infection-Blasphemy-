@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/string_shipment",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:string",
+      "count": {
+        "min": 24,
+        "max": 48
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 3,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "海岸边的渔夫们绝望地需要线来修补渔网。我答应他们周末前发一批。帮我信守我的诺言和我的声誉。",
+    "accept": "我会收集你需要的线。",
+    "decline": "渔夫们可以等。",
+    "in_progress": "还没线？渔夫们越来越坐立不安，而坐立不安的渔夫不付钱。",
+    "complete": "太好了！海岸边的人家 在夜幕降临前就能修好网。而我在天亮前就能拿到它们的银币。这是你那份。"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/mountain_peak",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "reach_height",
+      "target": "minecraft:overworld",
+      "count": 200
+    }
+  ],
+  "rewards": {
+    "quest_points": 14,
+    "reputation": 4,
+    "bonus_xp": 42
+  },
+  "dialogue": {
+    "description": "外面有一些山尖能擦到云。我要你爬一座。至少到达 Y 层 200。站在世界之巅，看看我在梦中看到的东西。",
+    "accept": "我会找到我能找到的最高的山。",
+    "decline": "高度真的不是我的菜。",
+    "in_progress": "你需要去更高处。石峰和崎岖的悬崖才是你能找到我要的高度的地方。",
+    "complete": "你触碰到了天空！告诉我，从那里你能看到地平线的弧度吗？壮观。"
+  }
+}

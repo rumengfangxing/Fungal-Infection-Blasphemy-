@@ -1,0 +1,54 @@
+{
+  "id": "questborne:explorer/breed_all_farm",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:cow",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    },
+    {
+      "type": "breed",
+      "entity": "minecraft:sheep",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    },
+    {
+      "type": "breed",
+      "entity": "minecraft:pig",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    },
+    {
+      "type": "breed",
+      "entity": "minecraft:chicken",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 55,
+    "reputation": 13,
+    "bonus_xp": 220
+  },
+  "dialogue": {
+    "description": "真正的探险家会让所到之处繁荣昌盛。繁殖全部四种常见家畜——牛、羊、猪、鸡。留下丰饶的遗产！",
+    "accept": "全套农场繁殖计划！我会让每个畜栏都充满新生命。",
+    "decline": "同时照料四种动物超出了我现在的能力。",
+    "in_progress": "四个物种要繁殖！小麦给牛羊，胡萝卜给猪，种子给鸡。冠军探险家也是大师级农夫。",
+    "complete": "每个畜栏都装满了新生命！你确保这片土地将繁荣好几代。真正的冠军所到之处皆是丰饶。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/collect_sea_pickles",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:sea_pickle",
+      "count": {
+        "min": 8,
+        "max": 12
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 5,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "海泡菜在海底像小灯塔一样发光。我用它们来标记潜水远征的水下路线。从珊瑚礁给我带一批回来。",
+    "accept": "水下搜寻发光海泡菜？我弄条船开始潜水！",
+    "decline": "我现在没有准备水下探险。",
+    "in_progress": "在暖水海洋和珊瑚礁里找。海泡菜聚集在海床上，在深处隐隐发光。",
+    "complete": "好收获！这些小小的生物发光奇迹将标记水下洞穴的安全通道。海洋有它自己的探索方式。"
+  }
+}

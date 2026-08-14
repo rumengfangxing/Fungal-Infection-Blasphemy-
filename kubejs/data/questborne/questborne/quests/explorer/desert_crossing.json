@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/desert_crossing",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 2500
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 6,
+    "bonus_xp": 68
+  },
+  "dialogue": {
+    "description": "沙漠在烈日下无尽延伸。两千五百格穿过灼热的沙地，经过神殿和水井——真正的耐力考验。",
+    "accept": "我会勇敢面对炎热穿越那片沙漠。水、食物和决心——我只需要这些！",
+    "decline": "沙漠的热度今天不吸引我。我等天气凉些再走。",
+    "in_progress": "沙漠会捉弄疲劳的眼睛。继续前进——你翻过的每一座沙丘都让你离另一边更近。",
+    "complete": "你穿越了沙地！沙漠穿越区分随意的步行者和真正的探险家。炎热、干渴、无尽的地平线——你征服了这一切。"
+  }
+}

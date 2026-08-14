@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_nether_star",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:nether_star",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": false
+    }
+  ],
+  "rewards": {
+    "quest_points": 150,
+    "reputation": 25,
+    "bonus_xp": 800
+  },
+  "dialogue": {
+    "description": "下界之星，凋灵本身的燃烧核心。用灵魂沙和凋灵骷髅头颅召唤那个三头怪物，然后摧毁它。这是终极测试。",
+    "accept": "我会召唤并杀死凋灵。",
+    "decline": "我还没准备好面对那个怪物。",
+    "in_progress": "凋灵会摧毁它路径上的一切。充分准备。附魔甲、金苹果、密闭的竞技场。这不是普通的战斗。",
+    "complete": "一颗下界之星……我几乎无法不遮着眼睛看它。你召唤了一个毁灭之神并活着给我带来了它的心脏。你是一个传奇。"
+  }
+}

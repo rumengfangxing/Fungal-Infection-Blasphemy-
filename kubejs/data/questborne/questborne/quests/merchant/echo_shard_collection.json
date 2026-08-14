@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/echo_shard_collection",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:echo_shard",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 60,
+    "reputation": 14,
+    "bonus_xp": 260
+  },
+  "dialogue": {
+    "description": "来自地下远古城市的回响碎片。学者说它们与幽匿能量共振。我说收藏家为它们出财富。勇敢面对深暗之域，给我带碎片来。",
+    "accept": "我会下降到远古城市。",
+    "decline": "监守者潜伏在下面。不了谢谢。",
+    "in_progress": "在深暗之域沉默就是生存。小心移动、快速搜刮、给我带那些碎片！",
+    "complete": "它们带着古老能量在嗡鸣！学者和收藏家会欣喜若狂。你在深暗之域幸存了下来，仅凭这一点就值得庆祝。"
+  }
+}

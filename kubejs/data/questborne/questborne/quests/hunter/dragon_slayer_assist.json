@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/dragon_slayer_assist",
+  "npc_type": "hunter",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": false,
+  "cooldown": "0h",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:ender_dragon",
+      "count": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:enderman",
+      "count": {
+        "min": 15,
+        "max": 20
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 150,
+    "reputation": 25,
+    "bonus_xp": 800
+  },
+  "dialogue": {
+    "description": "末影龙。终极猎物。我一生都在为这个时刻训练猎手。进入末地，清理守卫塔楼的末影人，然后亲手杀死龙。这是你的遗产。",
+    "accept": "末影龙今天倒下。这是我的命运。",
+    "decline": "我……还没准备好。还没。",
+    "in_progress": "末地维度在等待你的胜利。龙在盘旋，像死亡本身一样耐心。",
+    "complete": "龙被杀了。在我所有这些年里，我只看到少数人做到过。你现在是一个传奇了，我很荣幸曾指引你到这里。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:merchant/map_production",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:map",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "探险家、定居者、冒险者，他们都需要地图。空白的，记住了。他们会自己填细节。我只需要产品来卖。纸和指南针，精心组装。",
+    "accept": "带地图来就行。",
+    "decline": "地图不是我的行当。",
+    "in_progress": "冒险者们实打实地在我的店外排队。我需要那些地图！",
+    "complete": "新鲜羊皮纸，准备好被发现！每一个购买的人可能都会找到一条新贸易路线。而新贸易路线意味着新客户。"
+  }
+}

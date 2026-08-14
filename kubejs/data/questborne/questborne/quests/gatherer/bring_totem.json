@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_totem",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:totem_of_undying",
+      "count": {
+        "min": 1,
+        "max": 2
+      },
+      "consume": false
+    }
+  ],
+  "rewards": {
+    "quest_points": 100,
+    "reputation": 20,
+    "bonus_xp": 500
+  },
+  "dialogue": {
+    "description": "不死图腾，一种能欺骗死亡本身的黄金偶像。唤魔者在林地府邸里带着它们，那些召唤尖牙从地上升起的灰袍狂热者。杀死唤魔者，夺取图腾。",
+    "accept": "死亡本身也阻止不了我。",
+    "decline": "林地府邸是死亡陷阱。",
+    "in_progress": "唤魔者是狡猾的施法者。它们的恼鬼仆从能穿墙飞。保持移动，用力打，在府邸把你整个吞没之前夺取那个图腾。",
+    "complete": "不死图腾闪着金光，在生与死的边界上拉扯。在你手里它救了你。在我手里，它会保护整个营地。传奇工作。"
+  }
+}

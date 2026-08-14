@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/swamp_patrol",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:slime",
+      "count": {
+        "min": 6,
+        "max": 10
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:witch",
+      "count": {
+        "min": 1,
+        "max": 2
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 4,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "沼泽越来越糟。史莱姆和女巫到处都是。我以前自己在那里巡逻，但我的膝盖不如从前了。轮到你了。",
+    "accept": "沼泽任务是吧。我会清理它。",
+    "decline": "泥巴、史莱姆和药水？那是一个坚决不。",
+    "in_progress": "沼泽还在溃烂。回去。",
+    "complete": "你臭得像沼泽水但工作完成了。洗个澡和你的奖励。"
+  }
+}

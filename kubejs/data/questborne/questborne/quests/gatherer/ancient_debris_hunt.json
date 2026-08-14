@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/ancient_debris_hunt",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ancient_debris",
+      "count": {
+        "min": 3,
+        "max": 5
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 75,
+    "reputation": 16,
+    "bonus_xp": 370
+  },
+  "dialogue": {
+    "description": "远古残骸，下界合金的原始、未熔炼形态。它像被遗忘时代的埋藏宝藏一样藏在下界 Y 层 15。把原始未加工的带给我。",
+    "accept": "我会在下界用爆破开路。",
+    "decline": "床式采矿不是我的乐趣。",
+    "in_progress": "TNT 或床，选你的炸药，在 Y-15 挖隧道。远古残骸能在爆炸中幸存。其他东西就不行了。聪明采矿，朋友。",
+    "complete": "原始远古残骸，带着爆破伤痕，很美。每一块都讲述着数百万年的故事。我会小心熔炼这些，不能浪费一丁点碎片。惊人的收获。"
+  }
+}

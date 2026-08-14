@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/legendary_diamond_haul",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:diamond",
+      "count": {
+        "min": 12,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 80,
+    "reputation": 18,
+    "bonus_xp": 400
+  },
+  "dialogue": {
+    "description": "我需要钻石。不是一把，是一笔财富。足够为整支远征队装备附魔装备。一组最硬、最璀璨的宝石，来自地球最深处。这是给传奇的任务。",
+    "accept": "矿井要被我挖空了。",
+    "decline": "即使传奇也有极限。",
+    "in_progress": "时运 III 镐子。在 Y 层负 59 挖条带。在黑暗里一夜又一夜。这就是传奇被锻造的方式，一颗一颗钻石。",
+    "complete": "一座钻石山！我采集了一辈子从没见过这么多在一个地方。这一批能买下一个王国。世界会记住你在这里建造的东西，朋友。"
+  }
+}

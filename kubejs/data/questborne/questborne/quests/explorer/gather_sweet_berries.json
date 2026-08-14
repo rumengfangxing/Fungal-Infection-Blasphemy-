@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/gather_sweet_berries",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:sweet_berries",
+      "count": {
+        "min": 16,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 3,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "甜浆果在针叶林里野生生长——长途远征的完美路粮。采摘起来扎手，但每一道划痕都值得。给我囤一批！",
+    "accept": "路粮总是有用的！我去针叶林，勇敢面对那些带刺的灌木。",
+    "decline": "那些刺对我来说现在不值那些浆果。",
+    "in_progress": "小心那些刺！但浆果值得——甜、有营养、而且能放好几周。",
+    "complete": "好收成！这些浆果能支撑很多次旅程。最好的探险家总是知道在野外哪里能找到食物。"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "questborne:merchant/dye_assortment",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:red_dye",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:blue_dye",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:yellow_dye",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 5,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "一位来自南方的纺织品商人需要原色染料：红、蓝、黄。有了这三种，她的织工可以混合出太阳下的任何颜色。她为这套出高价。",
+    "accept": "我会收集你需要的染料。",
+    "decline": "太多颜色不合我口味。",
+    "in_progress": "我需要全部三种颜色，朋友。织工不会接受不完整的调色板。",
+    "complete": "无限可能的彩虹！织工会用这些创造杰作。而我们都会从艺术中获利。"
+  }
+}

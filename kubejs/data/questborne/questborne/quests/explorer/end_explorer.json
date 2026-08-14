@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/end_explorer",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:chorus_fruit",
+      "count": {
+        "min": 16,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 70,
+    "reputation": 16,
+    "bonus_xp": 350
+  },
+  "dialogue": {
+    "description": "末地的外部岛屿是高大的紫颂植物的家园。收获它们的果实——吃掉后会随机传送你，这对任何身陷困境的探险家来说都是个有用的技巧。",
+    "accept": "末地的外部岛屿！我会在虚空中搭桥，从那些外星树木上收获紫颂果。",
+    "decline": "末地对我来说现在太陌生太危险了。",
+    "in_progress": "击败末影龙后找到末地折跃门。外部岛屿上长满了紫颂植物。从下往上破坏！",
+    "complete": "来自末地的紫颂果！这些紫色的食物携带着时空本身的结构。只有冠军探险家才会为了补给进入末地。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_sand",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:sand",
+      "count": {
+        "min": 32,
+        "max": 64
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "炉子里装满燃料但没有东西可以熔成玻璃。我需要沙子。海滩沙、沙漠沙、什么沙都行。给我搞一大批来。",
+    "accept": "沙子是吧。",
+    "decline": "这个我算了。",
+    "in_progress": "还没沙子？炉子饿着呢，我还有订单要填。",
+    "complete": "哈！感受那重量。好干净的沙子。天亮前我就能做出玻璃板。营地终于能有正经窗户了。"
+  }
+}

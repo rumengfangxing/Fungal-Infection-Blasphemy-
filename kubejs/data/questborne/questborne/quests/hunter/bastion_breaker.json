@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/bastion_breaker",
+  "npc_type": "hunter",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:piglin_brute",
+      "count": {
+        "min": 8,
+        "max": 12
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:hoglin",
+      "count": {
+        "min": 6,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 68,
+    "reputation": 16,
+    "bonus_xp": 320
+  },
+  "dialogue": {
+    "description": "一座堡垒遗迹需要被打破。猪灵蛮兵守卫着每一座桥，疣猪兽被关在畜栏里。清理它们全部。每一层、每一个房间、每一只野兽。",
+    "accept": "突袭并清理一座堡垒？让我们搞点动静。",
+    "decline": "在密闭空间里对付蛮兵和疣猪兽？我需要不同的策略。",
+    "in_progress": "堡垒还在回响着咕噜声和喷鼻声。它还没被打破。",
+    "complete": "堡垒沉寂了。它的守卫被击溃和打散。你赢得了堡垒破坏者的称号。"
+  }
+}

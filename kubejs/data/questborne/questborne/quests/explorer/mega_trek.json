@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/mega_trek",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 20000
+    }
+  ],
+  "rewards": {
+    "quest_points": 75,
+    "reputation": 17,
+    "bonus_xp": 380
+  },
+  "dialogue": {
+    "description": "两万格拉伸了耐力的极限。你需要马、船和钢铁般的决心。这次徒步区分冠军和传奇。",
+    "accept": "两万格！我会用所有可用的交通工具，把自己推到绝对极限！",
+    "decline": "两万格是惊人的。我需要更多时间来准备这么大规模的事情。",
+    "in_progress": "世界似乎没有尽头，对吧？那就是这种规模探索的美丽和恐怖。继续前进——你在创造历史！",
+    "complete": "两万格！你走过的、骑过的、航行过的距离超过了制图师能绘制的范围。你站在这个世界精英探险家的行列中！"
+  }
+}

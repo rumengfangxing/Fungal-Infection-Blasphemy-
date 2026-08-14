@@ -1,0 +1,236 @@
+{
+  "npc_type": "hunter",
+  "items": [
+    {
+      "item": "minecraft:arrow",
+      "count": 32,
+      "cost": 8,
+      "display_name": "箭矢"
+    },
+    {
+      "item": "minecraft:cooked_beef",
+      "count": 8,
+      "cost": 8,
+      "display_name": "熟牛肉"
+    },
+    {
+      "item": "minecraft:bone",
+      "count": 8,
+      "cost": 8,
+      "display_name": "骨头"
+    },
+    {
+      "item": "minecraft:string",
+      "count": 8,
+      "cost": 8,
+      "display_name": "线"
+    },
+    {
+      "item": "minecraft:leather",
+      "count": 4,
+      "cost": 8,
+      "display_name": "皮革"
+    },
+    {
+      "item": "minecraft:flint",
+      "count": 8,
+      "cost": 8,
+      "display_name": "燧石"
+    },
+    {
+      "item": "minecraft:iron_sword",
+      "count": 1,
+      "cost": 12,
+      "display_name": "铁剑"
+    },
+    {
+      "item": "minecraft:bow",
+      "count": 1,
+      "cost": 15,
+      "display_name": "弓"
+    },
+    {
+      "item": "minecraft:shield",
+      "count": 1,
+      "cost": 15,
+      "display_name": "盾牌"
+    },
+    {
+      "item": "minecraft:cobweb",
+      "count": 4,
+      "cost": 10,
+      "display_name": "蜘蛛网"
+    },
+    {
+      "item": "minecraft:crossbow",
+      "count": 1,
+      "cost": 20,
+      "display_name": "弩"
+    },
+    {
+      "item": "minecraft:spectral_arrow",
+      "count": 16,
+      "cost": 18,
+      "display_name": "光灵箭",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:chainmail_helmet",
+      "count": 1,
+      "cost": 15,
+      "display_name": "锁链头盔",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:chainmail_chestplate",
+      "count": 1,
+      "cost": 25,
+      "display_name": "锁链胸甲",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:lead",
+      "count": 2,
+      "cost": 10,
+      "display_name": "拴绳",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:potion",
+      "count": 1,
+      "cost": 20,
+      "display_name": "治疗药水 II",
+      "reputation_required": 100,
+      "potion": "minecraft:strong_healing"
+    },
+    {
+      "item": "minecraft:potion",
+      "count": 1,
+      "cost": 22,
+      "display_name": "力量药水",
+      "reputation_required": 100,
+      "potion": "minecraft:strength"
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 30,
+      "display_name": "锋利 III",
+      "reputation_required": 100,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 3
+        }
+      ]
+    },
+    {
+      "item": "minecraft:fire_charge",
+      "count": 8,
+      "cost": 22,
+      "display_name": "火焰弹",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:golden_apple",
+      "count": 2,
+      "cost": 30,
+      "display_name": "金苹果",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:splash_potion",
+      "count": 1,
+      "cost": 25,
+      "display_name": "喷溅型治疗药水 II",
+      "reputation_required": 300,
+      "potion": "minecraft:strong_healing"
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 45,
+      "display_name": "力量 IV",
+      "reputation_required": 300,
+      "enchantments": [
+        {
+          "id": "minecraft:power",
+          "lvl": 4
+        }
+      ]
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 50,
+      "display_name": "保护 IV",
+      "reputation_required": 300,
+      "enchantments": [
+        {
+          "id": "minecraft:protection",
+          "lvl": 4
+        }
+      ]
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 65,
+      "display_name": "锋利 V",
+      "reputation_required": 600,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 5
+        }
+      ]
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 55,
+      "display_name": "抢夺 III",
+      "reputation_required": 600,
+      "enchantments": [
+        {
+          "id": "minecraft:looting",
+          "lvl": 3
+        }
+      ]
+    },
+    {
+      "item": "minecraft:diamond_sword",
+      "count": 1,
+      "cost": 150,
+      "display_name": "屠兽者",
+      "reputation_required": 600,
+      "enchantments": [
+        {
+          "id": "minecraft:sharpness",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:looting",
+          "lvl": 3
+        }
+      ]
+    },
+    {
+      "item": "minecraft:bow",
+      "count": 1,
+      "cost": 180,
+      "display_name": "鹰眼",
+      "reputation_required": 1000,
+      "enchantments": [
+        {
+          "id": "minecraft:power",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:infinity",
+          "lvl": 1
+        }
+      ]
+    }
+  ]
+}

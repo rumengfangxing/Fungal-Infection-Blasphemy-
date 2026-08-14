@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_tnt",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:tnt",
+      "count": 16,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 12,
+    "bonus_xp": 190
+  },
+  "dialogue": {
+    "description": "矿业公司要可控爆破炸药。火药包在沙壳里，运输稳定，爆炸力强到能炸开基岩。小心处理。",
+    "accept": "给矿工带 TNT 来，要包得又紧又稳。",
+    "decline": "摆弄炸药需要钢铁神经，今天不行。",
+    "in_progress": "火药要均匀地分布在沙子里。局部堆积会导致不可预测的爆炸。",
+    "complete": "稳定、强力、引信正确。矿业公司能创纪录地开通新隧道。"
+  }
+}

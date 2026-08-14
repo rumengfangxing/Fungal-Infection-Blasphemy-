@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_loom",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:loom",
+      "count": 4,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 10,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "织工公会要扩建，需要织布机。木工要精准，梭子要顺滑。工匠的挑战。",
+    "accept": "给织工带织布机来，要运转如丝的。",
+    "decline": "织布机太精细了，这次算了。",
+    "in_progress": "综丝要滑动顺畅。绑太紧整个机构就卡死了。",
+    "complete": "动作顺滑，框架平衡。织工们会在上面织出杰作挂毯。"
+  }
+}

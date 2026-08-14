@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_flower_pots",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:flower_pot",
+      "count": 16,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 10,
+    "reputation": 3,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "镇长想给镇广场摆上盆栽花。我需要正经的陶土花盆，烧过、上过釉的。",
+    "accept": "给镇广场带花盆？要又好看又结实的。",
+    "decline": "陶艺不是我的行当，算了。",
+    "in_progress": "注意窑温。太热会裂，太凉会碎。",
+    "complete": "造型优美，釉面光洁。有了这些，镇广场要开满鲜花了。"
+  }
+}

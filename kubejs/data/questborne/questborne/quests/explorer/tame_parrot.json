@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/tame_parrot",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "tame",
+      "entity": "minecraft:parrot",
+      "count": {
+        "min": 1,
+        "max": 2
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 32,
+    "reputation": 7,
+    "bonus_xp": 90
+  },
+  "dialogue": {
+    "description": "在丛林深处，彩色的鹦鹉栖息在树冠上。用种子驯服一只，它会坐在你肩膀上，用模仿声警告你危险。",
+    "accept": "一只鹦鹉伙伴！我会带着满满几口袋种子进入丛林。",
+    "decline": "丛林对我来说现在太危险了。我改天再试。",
+    "in_progress": "丛林很密，但鹦鹉值得。在树梢间听它们的叫声！",
+    "complete": "多么美丽的伙伴！鹦鹉不只是宠物——它们模仿附近生物的叫声。你的新朋友有一天可能会救你一命。"
+  }
+}

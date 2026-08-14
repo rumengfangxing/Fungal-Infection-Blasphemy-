@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/hoglin_hunt",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:hoglin",
+      "count": {
+        "min": 6,
+        "max": 12
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 40,
+    "reputation": 9,
+    "bonus_xp": 120
+  },
+  "dialogue": {
+    "description": "疣猪兽是下界的野猪，除了它们像马一样大而且两倍愤怒。绯红森林里到处都是它们。削减兽群。",
+    "accept": "下界野猪狩猎？那是一个值得挣的战利品。",
+    "decline": "巨型恶魔猪？我想我还是待在上面吧。",
+    "in_progress": "我能从这里听到它们的喷鼻声。兽群仍然太密。",
+    "complete": "你带回了足够喂饱一支军队的猪排。绯红森林现在安全多了。"
+  }
+}

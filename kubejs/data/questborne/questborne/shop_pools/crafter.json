@@ -1,0 +1,223 @@
+{
+  "npc_type": "crafter",
+  "items": [
+    {
+      "item": "minecraft:piston",
+      "count": 4,
+      "cost": 10,
+      "display_name": "活塞"
+    },
+    {
+      "item": "minecraft:copper_block",
+      "count": 4,
+      "cost": 10,
+      "display_name": "铜块"
+    },
+    {
+      "item": "minecraft:chain",
+      "count": 8,
+      "cost": 10,
+      "display_name": "锁链"
+    },
+    {
+      "item": "minecraft:scaffolding",
+      "count": 16,
+      "cost": 10,
+      "display_name": "脚手架"
+    },
+    {
+      "item": "minecraft:campfire",
+      "count": 2,
+      "cost": 10,
+      "display_name": "营火"
+    },
+    {
+      "item": "minecraft:lightning_rod",
+      "count": 2,
+      "cost": 12,
+      "display_name": "避雷针"
+    },
+    {
+      "item": "minecraft:target",
+      "count": 2,
+      "cost": 12,
+      "display_name": "标靶"
+    },
+    {
+      "item": "minecraft:magma_cream",
+      "count": 4,
+      "cost": 15,
+      "display_name": "岩浆膏"
+    },
+    {
+      "item": "minecraft:hopper",
+      "count": 2,
+      "cost": 25,
+      "display_name": "漏斗"
+    },
+    {
+      "item": "minecraft:comparator",
+      "count": 4,
+      "cost": 18,
+      "display_name": "比较器"
+    },
+    {
+      "item": "minecraft:experience_bottle",
+      "count": 8,
+      "cost": 18,
+      "display_name": "附魔之瓶"
+    },
+    {
+      "item": "minecraft:observer",
+      "count": 4,
+      "cost": 18,
+      "display_name": "侦测器",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:sticky_piston",
+      "count": 4,
+      "cost": 18,
+      "display_name": "粘性活塞",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:tinted_glass",
+      "count": 4,
+      "cost": 15,
+      "display_name": "遮光玻璃",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:fermented_spider_eye",
+      "count": 4,
+      "cost": 22,
+      "display_name": "发酵蛛眼",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:slime_block",
+      "count": 2,
+      "cost": 28,
+      "display_name": "粘液块",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 30,
+      "display_name": "附魔书：耐久 III",
+      "reputation_required": 100,
+      "enchantments": [
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        }
+      ]
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 35,
+      "display_name": "附魔书：效率 IV",
+      "reputation_required": 100,
+      "enchantments": [
+        {
+          "id": "minecraft:efficiency",
+          "lvl": 4
+        }
+      ]
+    },
+    {
+      "item": "minecraft:daylight_detector",
+      "count": 1,
+      "cost": 12,
+      "display_name": "日光传感器",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:anvil",
+      "count": 1,
+      "cost": 30,
+      "display_name": "铁砧",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:bell",
+      "count": 1,
+      "cost": 35,
+      "display_name": "钟",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 80,
+      "display_name": "附魔书：经验修补",
+      "reputation_required": 300,
+      "enchantments": [
+        {
+          "id": "minecraft:mending",
+          "lvl": 1
+        }
+      ]
+    },
+    {
+      "item": "minecraft:sentry_armor_trim_smithing_template",
+      "count": 1,
+      "cost": 35,
+      "display_name": "哨兵盔甲纹饰",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 35,
+      "display_name": "附魔书：水下速掘",
+      "reputation_required": 600,
+      "enchantments": [
+        {
+          "id": "minecraft:aqua_affinity",
+          "lvl": 1
+        }
+      ]
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 45,
+      "display_name": "附魔书：荆棘 III",
+      "reputation_required": 600,
+      "enchantments": [
+        {
+          "id": "minecraft:thorns",
+          "lvl": 3
+        }
+      ]
+    },
+    {
+      "item": "minecraft:diamond_pickaxe",
+      "count": 1,
+      "cost": 150,
+      "display_name": "大师级钻石镐",
+      "reputation_required": 600,
+      "enchantments": [
+        {
+          "id": "minecraft:efficiency",
+          "lvl": 5
+        },
+        {
+          "id": "minecraft:unbreaking",
+          "lvl": 3
+        }
+      ]
+    },
+    {
+      "item": "minecraft:silence_armor_trim_smithing_template",
+      "count": 1,
+      "cost": 80,
+      "display_name": "沉默盔甲纹饰",
+      "reputation_required": 1000
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/ender_eye_shipment",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ender_eye",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 10,
+    "bonus_xp": 160
+  },
+  "dialogue": {
+    "description": "末影之眼，一半烈焰粉一半末影珍珠，全是利润。学者研究它们，冒险者用它们找要塞，收藏家展示它们。需求远大于供应。",
+    "accept": "我会制作末影之眼。",
+    "decline": "末影珍珠是我的，留着。",
+    "in_progress": "烈焰粉和末影珍珠，危险的材料做危险的产品。但回报是惊人的。",
+    "complete": "它们悬浮着，发出异界的能量光芒！学院里的每个学者都会争抢这些。你的勇敢被慷慨回报。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_hoppers",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:hopper",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 42,
+    "reputation": 10,
+    "bonus_xp": 150
+  },
+  "dialogue": {
+    "description": "分类设施需要漏斗。铁制漏斗口要精确，让物品从一个容器顺畅流到下一个。不卡、不堵。",
+    "accept": "给分类系统带漏斗来，要保证顺畅。",
+    "decline": "这么多铁件要成型，我现在不想折腾。",
+    "in_progress": "漏斗口要逐渐收窄。太陡了物品会卡，太平了流不下去。",
+    "complete": "物品像水流过河道一样顺畅。分类设施将完美运转。"
+  }
+}

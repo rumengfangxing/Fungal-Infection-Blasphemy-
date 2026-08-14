@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/phantom_membrane_deal",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:phantom_membrane",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 38,
+    "reputation": 9,
+    "bonus_xp": 135
+  },
+  "dialogue": {
+    "description": "幻翼膜对缓降药水和鞘翅修复必不可少。两者都稀有、都有价值。保持清醒足够久，幻翼会来找你。然后只是一个……幸存的问题。",
+    "accept": "我会猎杀幻翼获取它们的膜。",
+    "decline": "我更喜欢睡觉，谢谢。",
+    "in_progress": "夜空中对不睡觉的人来说充满了幻翼。稳住自己，精准出击！",
+    "complete": "半透明且诡异地美丽。药水酿造者和鞘翅拥有者都会出大价钱。今晚好好休息，你挣到了。"
+  }
+}

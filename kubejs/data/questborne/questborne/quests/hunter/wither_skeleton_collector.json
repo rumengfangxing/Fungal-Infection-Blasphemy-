@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/wither_skeleton_collector",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:wither_skeleton",
+      "count": {
+        "min": 10,
+        "max": 18
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 200
+  },
+  "dialogue": {
+    "description": "凋灵骷髅。三格高，石剑，还有那个吞噬你生命值的凋零效果。要塞走廊里满是它们。我需要一个老练猎手来干这个。",
+    "accept": "要塞走廊里的凋灵骷髅？那是个正经挑战。",
+    "decline": "光是凋零效果就足以让我重新考虑。",
+    "in_progress": "要塞大厅仍然回响着它们的脚步声。别让它们把你逼到角落。",
+    "complete": "一堆焦骨。如果有头颅掉落，留着。你挣的远不止这个。"
+  }
+}

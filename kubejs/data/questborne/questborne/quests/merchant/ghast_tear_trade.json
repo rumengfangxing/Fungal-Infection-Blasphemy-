@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/ghast_tear_trade",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ghast_tear",
+      "count": {
+        "min": 3,
+        "max": 6
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 10,
+    "bonus_xp": 170
+  },
+  "dialogue": {
+    "description": "恶魂之泪，最稀有的酿造材料。炼金师用它们做再生药水，绝望的贵族会为了一小瓶治疗出离谱价格。难点？你必须让一个恶魂哭泣。",
+    "accept": "我会收获恶魂之泪。",
+    "decline": "对抗恶魂是自杀，不是生意。",
+    "in_progress": "炼金师们在等。恶魂之泪不会自己收集，虽然那会方便吧？",
+    "complete": "来自火焰生物的结晶悲伤。炼金师会用这些酿造奇迹。你在下界的勇气最值得钦佩。"
+  }
+}

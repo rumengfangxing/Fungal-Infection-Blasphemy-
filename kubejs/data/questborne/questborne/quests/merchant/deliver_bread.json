@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/deliver_bread",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:bread",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "我的补给车两个村子前掉了一个轮子，我所有的面包都在雨里变味了。我在集市日前需要新鲜面包，否则我会失去我最好的顾客。",
+    "accept": "我可以帮你收集一些面包。",
+    "decline": "我不是你的送货员。",
+    "in_progress": "还在等那面包。集市不会永远等下去，朋友。",
+    "complete": "新鲜又温暖！这些会卖得很好。这是你那份利润。"
+  }
+}

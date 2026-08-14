@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/gather_diamonds",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:diamond",
+      "count": {
+        "min": 6,
+        "max": 12
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 40,
+    "reputation": 10,
+    "bonus_xp": 150
+  },
+  "dialogue": {
+    "description": "钻石。真家伙。我接到一个富有的主顾的委托，需要顶级宝石做附魔装备。深脉钻石，记住了，不接受替代品。",
+    "accept": "是时候去深采了。",
+    "decline": "深暗不值得。",
+    "in_progress": "我的主顾越来越没耐心了，我不想丢这个合同。那些钻石不会自己采。",
+    "complete": "完美无瑕的净度，优秀的切割潜力。这些是彻头彻尾的深脉钻石。我的主顾会欣喜若狂。出色的工作，老手。"
+  }
+}

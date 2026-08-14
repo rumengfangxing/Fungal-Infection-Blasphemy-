@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_bookshelf",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 100,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:bookshelf",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 10,
+    "reputation": 7,
+    "bonus_xp": 70
+  },
+  "dialogue": {
+    "description": "知识就是力量，而力量需要个地方安放。给我带些书架来，营地的附魔室空荡荡的太寒碜了。",
+    "accept": "书和木板，交给我。",
+    "decline": "我不是读书的料。",
+    "in_progress": "书架又不会自己蹦出来。书、木板，配方你知道的。",
+    "complete": "附魔室现在像样了。知识触手可及。干得漂亮！"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:writable_book"
+    },
+    "title": "打工人",
+    "description": "从 NPC 那里接取你的第一个任务",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "questborne:root",
+  "criteria": {
+    "accepted": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "questborne:crafter/forge_diamond_armor",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:diamond_chestplate",
+      "count": 1,
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:diamond_leggings",
+      "count": 1,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 65,
+    "reputation": 15,
+    "bonus_xp": 300
+  },
+  "dialogue": {
+    "description": "骑士指挥官需要钻石板甲——胸甲和护腿，用最好的宝石锻造、每个刻面都对准了偏转打击。带一套来。",
+    "accept": "给指挥官带钻石甲来，要配得上王族的防护。",
+    "decline": "这么大规格的钻石锻造需要我倾尽所有。改天吧。",
+    "in_progress": "沿着钻石的自然解理面塑形每一块板。对抗晶体结构它会碎，顺着它它就比铁还硬。",
+    "complete": "钻石像凝固的星火一样闪光。这套甲能挡开这世上任何利刃。"
+  }
+}

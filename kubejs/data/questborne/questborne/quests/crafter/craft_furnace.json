@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_furnace",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:furnace",
+      "count": 6,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 7,
+    "reputation": 2,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "我在搭建一条新的熔炼线，需要熔炉。圆石结构，真材实料，别糊弄。",
+    "accept": "你带来的熔炉得热到能化铁。",
+    "decline": "熔炉活儿改天再说吧。",
+    "in_progress": "检查好通风道再拿来——没有通风的熔炉就是个石头盒子。",
+    "complete": "保温性能一流。我的熔炼线要让全地区的铁匠都眼红。"
+  }
+}

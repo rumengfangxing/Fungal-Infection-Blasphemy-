@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_trident",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": false,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:trident",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": false
+    }
+  ],
+  "rewards": {
+    "quest_points": 100,
+    "reputation": 20,
+    "bonus_xp": 500
+  },
+  "dialogue": {
+    "description": "三叉戟，海神波塞冬的叉子。只有携带一支的溺尸有很小的几率掉落。你可能猎杀一百只都空手而归，但一支三叉戟改变一切。",
+    "accept": "我会猎杀海洋里每一只溺尸。",
+    "decline": "几率太糟糕了。",
+    "in_progress": "耐心是猎手最强大的武器。继续战斗溺尸，尤其是在海洋废墟附近的雷暴期间。三叉戟会属于那些坚持的人。",
+    "complete": "一支三叉戟！激流让你在雨中飞行，忠诚让它回到你手中，引雷召唤闪电。神明的武器，而你把它带给了我。我深感荣幸。"
+  }
+}

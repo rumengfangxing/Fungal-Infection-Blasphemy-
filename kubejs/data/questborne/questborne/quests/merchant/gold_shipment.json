@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/gold_shipment",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:gold_ingot",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 6,
+    "bonus_xp": 70
+  },
+  "dialogue": {
+    "description": "黄金！商业的通用语言。我和首都的一位珠宝商签了合同，但我需要原材料。给我带金锭来，我们俩都会走得更富。",
+    "accept": "我会挖你需要的金。",
+    "decline": "金太有价值了不能交出去。",
+    "in_progress": "珠宝商不会永远等。金，朋友，我需要金！",
+    "complete": "它美丽地闪耀！珠宝商会用这些锭创造杰作。而我会创造利润。你那份，如承诺的。"
+  }
+}

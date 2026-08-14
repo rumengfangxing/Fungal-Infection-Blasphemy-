@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/gather_quartz",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:quartz",
+      "count": {
+        "min": 24,
+        "max": 48
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 28,
+    "reputation": 7,
+    "bonus_xp": 80
+  },
+  "dialogue": {
+    "description": "下界石英，白得像骨头，滑得像玻璃。是漂亮的建筑材料，红石爱好者用它做侦测器和日光传感器。不过需要通过传送门去一趟。",
+    "accept": "下界吓不倒我。",
+    "decline": "我远离那个地狱景象。",
+    "in_progress": "从下界回来了吗？还是还在躲恶魂火球？不管怎样我需要那些石英。",
+    "complete": "完美的石英，还带着下界的余温！没有裂痕或缺口。你在那个炼狱里应付自如。尊重。"
+  }
+}

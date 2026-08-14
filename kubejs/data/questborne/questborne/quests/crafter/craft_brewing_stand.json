@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_brewing_stand",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:brewing_stand",
+      "count": 2,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 9,
+    "bonus_xp": 140
+  },
+  "dialogue": {
+    "description": "炼金师需要一个酿造台——烈焰棒做芯、圆石做底座的那种，要能导热又不烧穿石头。",
+    "accept": "烈焰棒加圆石，我把火和石头融到一起。",
+    "decline": "摆弄烈焰棒太危险了，这活儿我不接。",
+    "in_progress": "烈焰棒必须摆在正中心。偏一点热量分布不均，药水全废。",
+    "complete": "火与石的完美平衡。炼金师能在这个台上酿出传奇药水。"
+  }
+}

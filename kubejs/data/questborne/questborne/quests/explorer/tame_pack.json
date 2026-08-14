@@ -1,0 +1,38 @@
+{
+  "id": "questborne:explorer/tame_pack",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "tame",
+      "entity": "minecraft:wolf",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    },
+    {
+      "type": "tame",
+      "entity": "minecraft:cat",
+      "count": {
+        "min": 2,
+        "max": 3
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 58,
+    "reputation": 14,
+    "bonus_xp": 250
+  },
+  "dialogue": {
+    "description": "一个冠军探险家出行带着随从。驯服一群狼和一对猫——对抗敌对生物和苦力怕的双重保护。建立你的随行队伍！",
+    "accept": "狼群和猫伙伴！我会收集骨头和鱼，建立终极旅行团队。",
+    "decline": "同时驯服那么多动物是个大承诺。这次先算了。",
+    "in_progress": "森林里的狼，村庄附近的猫。骨头给狼，生鳕鱼给猫。你的随行队伍正在成形！",
+    "complete": "狼群和忠诚的猫在你身边！你现在像贵族一样旅行。没有苦力怕或僵尸敢靠近你的营地。"
+  }
+}

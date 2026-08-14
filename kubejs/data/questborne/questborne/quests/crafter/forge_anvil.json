@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/forge_anvil",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:anvil",
+      "count": 2,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 80
+  },
+  "dialogue": {
+    "description": "我那老铁砧表面坑坑洼洼没法用了。我需要一块新铁砧——31 锭纯铁锤打成型的那种。带一块来。",
+    "accept": "新铁砧？那是大铁活儿。我会让它声音清脆。",
+    "decline": "那么多铁要打，今天不行。",
+    "in_progress": "铁砧必须一体成型，不要焊接、不要接缝。挑的时候慢慢来。",
+    "complete": "听这声音！清脆透亮。这铁砧够我用几十年。"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "questborne:explorer/find_stronghold",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": false,
+  "cooldown": "0h",
+  "objectives": [
+    {
+      "type": "visit_structure",
+      "structure": "minecraft:stronghold",
+      "count": 1
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 200,
+    "items": [
+      {
+        "item": "minecraft:ender_eye",
+        "count": 4
+      }
+    ]
+  },
+  "dialogue": {
+    "description": "古书记载着一座深埋地下的堡垒，一个被遗忘的文明建造的要塞。末影之眼会指引你。跟随它们的踪迹找到入口。",
+    "accept": "我会跟随末影之眼，无论它们指向哪里。",
+    "decline": "地下要塞可以再等等。",
+    "in_progress": "向天空投掷末影之眼。它会飘向要塞方向。跟随它，往下挖，找到入口。",
+    "complete": "你找到了！要塞，通往末地本身的传送门。你发现了这个世界最大的秘密之一。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_grindstone",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:grindstone",
+      "count": 2,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 7,
+    "bonus_xp": 85
+  },
+  "dialogue": {
+    "description": "每把刀都需要磨，我那老砂轮磨薄了。给我带个新的来，石盘要转得正，橡木框架要结实。",
+    "accept": "转得正的砂轮，交给我。",
+    "decline": "砂轮太费力气了，现在不想干。",
+    "in_progress": "石盘在轴上要平衡好。不平衡的砂轮打颤，能把刃口磨废了。",
+    "complete": "转起来像黄油一样顺滑。光摇手柄就能感觉到平衡。大师手艺。"
+  }
+}

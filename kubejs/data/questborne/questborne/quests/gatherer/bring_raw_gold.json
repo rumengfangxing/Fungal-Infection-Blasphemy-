@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_raw_gold",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:raw_gold",
+      "count": {
+        "min": 12,
+        "max": 20
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 90
+  },
+  "dialogue": {
+    "description": "粗金矿石，未加工、未熔炼，直接从土里出来。我有一种特殊的精炼技术能从粗矿石中提取比普通熔炉更多的金子。把好东西带给我。",
+    "accept": "粗金，马上来。",
+    "decline": "深矿今天不吸引我。",
+    "in_progress": "我的坩埚加热好了等着呢。就差那些粗金来开始精炼过程了。",
+    "complete": "感受这些金块的重量！纯金矿石，充满潜力。我的技术能从这些里提取两倍的锭。我熔炼完了会把你那份给你。"
+  }
+}

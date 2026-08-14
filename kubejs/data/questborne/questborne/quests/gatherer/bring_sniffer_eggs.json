@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_sniffer_eggs",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:sniffer_egg",
+      "count": {
+        "min": 1,
+        "max": 2
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 60,
+    "reputation": 14,
+    "bonus_xp": 280
+  },
+  "dialogue": {
+    "description": "嗅探兽蛋是远古生物的遗物，埋在温暖海洋废墟的可疑沙里。用刷子轻轻刷沙子，你可能会发现一个。一个活化石，等着孵化成一个来自逝去时代的生物。",
+    "accept": "我会做一些水下考古。",
+    "decline": "远古蛋听起来很脆弱。",
+    "in_progress": "温暖海洋废墟，可疑的沙子。用刷子，不是镐子。这些蛋已经存活了上千年。温柔对待它们。",
+    "complete": "一个嗅探兽蛋！数百万年历史且仍然可存活。当它孵化时，我们将有一个活着呼吸的、与远古世界的连接。你做了一项惊天动地的考古发现。"
+  }
+}

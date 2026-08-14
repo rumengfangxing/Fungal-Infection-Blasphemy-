@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/build_beacon",
+  "npc_type": "crafter",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:beacon",
+      "count": 1,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 80,
+    "reputation": 18,
+    "bonus_xp": 400
+  },
+  "dialogue": {
+    "description": "王国订做了一个信标——下界之星加上黑曜石和玻璃、光芒能直冲天际的那种。带一个回来，只有真正的能手才配碰这活儿。",
+    "accept": "照亮天空的信标。这会是我最伟大的作品。",
+    "decline": "信标是一辈子才能做一次的东西，我还得再准备准备。",
+    "in_progress": "下界之星必须完美居中在玻璃和黑曜石外壳里，光芒要向四面八方均匀辐射。",
+    "complete": "我的天……太壮观了。光柱直插云霄。你带来了一件真正永恒的东西。"
+  }
+}

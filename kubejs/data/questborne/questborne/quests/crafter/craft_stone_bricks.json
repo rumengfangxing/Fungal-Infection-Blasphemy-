@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_stone_bricks",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:stone_bricks",
+      "count": 64,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 7,
+    "reputation": 3,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "公会大厅需要新地板。我要石砖，切割整齐、棱角分明。不要掉渣的边。",
+    "accept": "棱边干净的石砖。你会拥有镇上最好的地板。",
+    "decline": "石工活儿今天提不起兴致。",
+    "in_progress": "拇指沿着边摸一下，刮手的就别拿来。",
+    "complete": "这才叫石砖！公会大厅能再挺立一百年。"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/tame_wolf",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "tame",
+      "entity": "minecraft:wolf",
+      "count": {
+        "min": 1,
+        "max": 2
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 4,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "狼在森林和针叶林里巡逻——凶猛但一旦被驯服就忠诚。带着尊重献上一根骨头能把一个野生捕食者变成你最忠实的盟友。",
+    "accept": "一只狼伙伴听起来很适合前方的路。我会收集一些骨头去森林。",
+    "decline": "我还没准备好承担养狼的责任。",
+    "in_progress": "找到狼了吗？在森林和针叶林里找。它们成群行动，你不会错过它们的。",
+    "complete": "一只狼在你身边！整个主世界没有比它更忠诚的伙伴了。它们会为你战斗到最后一口气。"
+  }
+}

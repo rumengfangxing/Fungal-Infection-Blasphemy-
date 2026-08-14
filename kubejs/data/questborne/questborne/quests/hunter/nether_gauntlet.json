@@ -1,0 +1,46 @@
+{
+  "id": "questborne:hunter/nether_gauntlet",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:blaze",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:wither_skeleton",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:ghast",
+      "count": {
+        "min": 5,
+        "max": 8
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 65,
+    "reputation": 15,
+    "bonus_xp": 300
+  },
+  "dialogue": {
+    "description": "下界试炼。烈焰人、凋灵骷髅和恶魂，全在一次行动里。只有最老练的猎手才敢尝试这个试炼。它区分老手和传奇。",
+    "accept": "下界试炼？我一直在等这个挑战。",
+    "decline": "一次在下界对付三种目标类型？那是送死。",
+    "in_progress": "试炼在每一个目标倒下之前不算完成。没有捷径。",
+    "complete": "你跑了试炼并活了下来！这场狩猎会被歌颂。"
+  }
+}

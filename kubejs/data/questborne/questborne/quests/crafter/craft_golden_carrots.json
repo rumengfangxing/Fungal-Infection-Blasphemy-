@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_golden_carrots",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 300,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:golden_carrot",
+      "count": 16,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 10,
+    "bonus_xp": 100
+  },
+  "dialogue": {
+    "description": "金胡萝卜是工匠能做出来的最好的食物，黄金包裹的完美。给我带一批来，报酬丰厚。",
+    "accept": "我需要金锭和胡萝卜。",
+    "decline": "太贵了，我搞不起。",
+    "in_progress": "继续找！我要刚从工作台下来的新鲜金胡萝卜。",
+    "complete": "漂亮。这些金胡萝卜能卖个好价钱。这是你那份。"
+  }
+}

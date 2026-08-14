@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/blaze_powder_supply",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:blaze_powder",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 40,
+    "reputation": 9,
+    "bonus_xp": 140
+  },
+  "dialogue": {
+    "description": "酿造师、附魔师、工程师，他们都需要烈焰粉，而他们谁都不想亲自去下界弄。那就是中间人业务的美丽之处。你勇敢面对火焰，我处理销售。",
+    "accept": "我会去下界弄烈焰粉。",
+    "decline": "下界的热度不值得。",
+    "in_progress": "酿造师们快断货了。没有烈焰粉，就没有药水被酿造。想想那些口渴的冒险者！",
+    "complete": "摸起来烫手但价值连城！酿造公会会出大价钱。你的下界远征完全值得冒险。"
+  }
+}

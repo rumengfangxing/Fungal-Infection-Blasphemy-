@@ -1,0 +1,28 @@
+{
+  "id": "questborne:merchant/spyglass_procurement",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:spyglass",
+      "count": 4,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 90
+  },
+  "dialogue": {
+    "description": "船长们为高质量的望远镜出财富。铜和紫水晶，精心组装。我有三位船长在互相竞价，利润率是离谱的。",
+    "accept": "带望远镜来就行。",
+    "decline": "紫水晶太稀有了不能浪费。",
+    "in_progress": "船长们越来越坐立不安。没有望远镜的船长就像没有硬币的商人，没用！",
+    "complete": "水晶般清晰的光学！这些船长能从好几里格外看到风暴。而我也能从这儿看到它们的硬币。"
+  }
+}

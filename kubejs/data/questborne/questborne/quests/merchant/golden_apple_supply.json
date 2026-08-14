@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/golden_apple_supply",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 400,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:golden_apple",
+      "count": {
+        "min": 8,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 42,
+    "reputation": 9,
+    "bonus_xp": 130
+  },
+  "dialogue": {
+    "description": "一位富有的炼金师认为金苹果隐藏了永葆青春的秘密。胡说，当然，但他的硬币非常真实。他会买每一颗我能送达的金苹果。",
+    "accept": "我会为炼金师制作金苹果。",
+    "decline": "金做锭更好。",
+    "in_progress": "炼金师越来越没耐心。显然永生不能等。谁知道呢？",
+    "complete": "闪烁着附魔光芒！炼金师会实验好几个月。也会付我们好几个月钱。聪明。"
+  }
+}

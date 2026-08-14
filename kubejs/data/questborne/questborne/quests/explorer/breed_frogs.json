@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/breed_frogs",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:frog",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 38,
+    "reputation": 9,
+    "bonus_xp": 130
+  },
+  "dialogue": {
+    "description": "青蛙有三种变种，取决于蝌蚪在哪里长大。用粘液球在沼泽和红树林里繁殖它们——它们的呱呱声在夜晚填满了音乐。",
+    "accept": "沼泽里的青蛙繁殖！我会拿些粘液球去湿地。",
+    "decline": "在沼泽里趟来趟去找青蛙今天不吸引我。",
+    "in_progress": "青蛙喜欢粘液球——讽刺吧？在沼泽和红树林生物群系找它们。",
+    "complete": "一片青蛙合唱！每一只都是小小的探险家，在睡莲叶间跳跃。沼泽因你的作为而生机勃勃！"
+  }
+}

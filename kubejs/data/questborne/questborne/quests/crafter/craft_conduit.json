@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_conduit",
+  "npc_type": "crafter",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:conduit",
+      "count": 1,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 75,
+    "reputation": 16,
+    "bonus_xp": 380
+  },
+  "dialogue": {
+    "description": "我需要一个潮涌核心——海洋之心裹上鹦鹉螺壳做成的那种。海洋建造者们等了很久了。",
+    "accept": "带潮涌核心来就行，拿的时候小心别摔了。",
+    "decline": "摆弄深海遗物超出了我目前的技艺。",
+    "in_progress": "每个鹦鹉螺壳都要螺旋向内指向核心。这个图案能把海洋之力汇聚成一束光。",
+    "complete": "潮涌核心随着潮汐的节奏脉动。水下建造者以后在水里干活跟陆地上一样自在。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_target",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:target",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 35,
+    "reputation": 8,
+    "bonus_xp": 100
+  },
+  "dialogue": {
+    "description": "射箭场要升级了。我需要用干草块和红石做的标靶——被击中时会发信号、让射手能追踪精度的那个。带一个来。",
+    "accept": "被击中会发信号的标靶。弓箭手们会爱死的。",
+    "decline": "射箭场的升级可以再等等。",
+    "in_progress": "红石要均匀地穿过干草。不管箭射中哪里，信号都必须触发。",
+    "complete": "每一击都能干净地记录。射箭场现在是最好的训练场了。"
+  }
+}

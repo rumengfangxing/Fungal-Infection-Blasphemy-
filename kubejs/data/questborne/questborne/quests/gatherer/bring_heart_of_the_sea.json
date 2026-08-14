@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_heart_of_the_sea",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:heart_of_the_sea",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 70,
+    "reputation": 15,
+    "bonus_xp": 320
+  },
+  "dialogue": {
+    "description": "海洋之心，一种深蓝色球体，只在埋藏的宝藏箱里能找到，位置由沉船里的探险家地图标出。海洋嫉妒地守护着它的秘密，但这个神器是潮涌核心的核心。",
+    "accept": "我会跟随藏宝图。",
+    "decline": "寻宝太费时间了。",
+    "in_progress": "沉船里有地图，X 标记着世界各地的海滩上的点。在地图说的地方挖。心总是等在那里。",
+    "complete": "海洋之心！感受它的脉动，像潮汐本身的节奏。这个球体在沙子里等了几世纪。用鹦鹉螺壳包裹它，它就会变成拥有不可思议力量的潮涌核心。"
+  }
+}

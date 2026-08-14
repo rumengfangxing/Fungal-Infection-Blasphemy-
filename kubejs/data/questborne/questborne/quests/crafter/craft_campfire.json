@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_campfire",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:campfire",
+      "count": 6,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 10,
+    "reputation": 3,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "商队在路上需要便携火坑。营火要有石头底座，免得烧焦地面。",
+    "accept": "给商队带营火来，要安全、便携、还暖和。",
+    "decline": "商队自己想办法去吧。",
+    "in_progress": "木头要架得均匀才能烧得稳。歪歪扭扭的火堆早晚出事。",
+    "complete": "做工扎实又安全。商队在寒夜里能吃上热饭了，全靠你。"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/continental_trek",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 15000
+    }
+  ],
+  "rewards": {
+    "quest_points": 65,
+    "reputation": 15,
+    "bonus_xp": 300
+  },
+  "dialogue": {
+    "description": "一万五千格。一场带你穿越整个大陆、经过你能想象到的每一种生物群系的史诗之旅。只有最专注的探险家才敢尝试。",
+    "accept": "一万五千格！这是我毕生的远征。我不会停下来，直到走完每一步！",
+    "decline": "一万五千格超出了我现在能承诺的范围。",
+    "in_progress": "身后数千格，前方还有数千格。这就是普通旅行者放弃的地方——但你不是普通旅行者，对吧？",
+    "complete": "一万五千格！你穿越了大陆，朋友。你的靴子讲述了一位真正的冠军探险家的故事。世界因你的经过而变小了。"
+  }
+}

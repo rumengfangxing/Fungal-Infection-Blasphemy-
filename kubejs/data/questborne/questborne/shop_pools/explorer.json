@@ -1,0 +1,208 @@
+{
+  "npc_type": "explorer",
+  "items": [
+    {
+      "item": "minecraft:torch",
+      "count": 32,
+      "cost": 8,
+      "display_name": "火把"
+    },
+    {
+      "item": "minecraft:bread",
+      "count": 8,
+      "cost": 8,
+      "display_name": "面包"
+    },
+    {
+      "item": "minecraft:cooked_salmon",
+      "count": 8,
+      "cost": 8,
+      "display_name": "熟鲑鱼"
+    },
+    {
+      "item": "minecraft:compass",
+      "count": 1,
+      "cost": 8,
+      "display_name": "指南针"
+    },
+    {
+      "item": "minecraft:clock",
+      "count": 1,
+      "cost": 8,
+      "display_name": "时钟"
+    },
+    {
+      "item": "minecraft:map",
+      "count": 4,
+      "cost": 8,
+      "display_name": "空地图"
+    },
+    {
+      "item": "minecraft:oak_boat",
+      "count": 1,
+      "cost": 8,
+      "display_name": "船"
+    },
+    {
+      "item": "minecraft:bucket",
+      "count": 1,
+      "cost": 8,
+      "display_name": "桶"
+    },
+    {
+      "item": "minecraft:lantern",
+      "count": 4,
+      "cost": 10,
+      "display_name": "灯笼"
+    },
+    {
+      "item": "minecraft:ladder",
+      "count": 16,
+      "cost": 8,
+      "display_name": "梯子"
+    },
+    {
+      "item": "minecraft:lead",
+      "count": 2,
+      "cost": 10,
+      "display_name": "拴绳"
+    },
+    {
+      "item": "minecraft:name_tag",
+      "count": 1,
+      "cost": 12,
+      "display_name": "命名牌",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:saddle",
+      "count": 1,
+      "cost": 15,
+      "display_name": "马鞍",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:soul_lantern",
+      "count": 4,
+      "cost": 12,
+      "display_name": "灵魂灯笼",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:firework_rocket",
+      "count": 32,
+      "cost": 20,
+      "display_name": "烟花火箭",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:potion",
+      "count": 1,
+      "cost": 20,
+      "display_name": "夜视药水",
+      "reputation_required": 100,
+      "potion": "minecraft:night_vision"
+    },
+    {
+      "item": "minecraft:potion",
+      "count": 1,
+      "cost": 22,
+      "display_name": "水肺药水",
+      "reputation_required": 100,
+      "potion": "minecraft:water_breathing"
+    },
+    {
+      "item": "minecraft:chorus_fruit",
+      "count": 8,
+      "cost": 18,
+      "display_name": "紫颂果",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:phantom_membrane",
+      "count": 4,
+      "cost": 25,
+      "display_name": "幻翼膜",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:ender_eye",
+      "count": 2,
+      "cost": 25,
+      "display_name": "末影之眼",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:ender_pearl",
+      "count": 8,
+      "cost": 35,
+      "display_name": "末影珍珠",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:potion",
+      "count": 1,
+      "cost": 25,
+      "display_name": "缓降药水",
+      "reputation_required": 300,
+      "potion": "minecraft:slow_falling"
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 40,
+      "display_name": "附魔书：摔落保护 IV",
+      "reputation_required": 300,
+      "enchantments": [
+        {
+          "id": "minecraft:feather_falling",
+          "lvl": 4
+        }
+      ]
+    },
+    {
+      "item": "minecraft:ender_chest",
+      "count": 1,
+      "cost": 35,
+      "display_name": "末影箱",
+      "reputation_required": 600
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 40,
+      "display_name": "附魔书：深海探索者 III",
+      "reputation_required": 600,
+      "enchantments": [
+        {
+          "id": "minecraft:depth_strider",
+          "lvl": 3
+        }
+      ]
+    },
+    {
+      "item": "minecraft:diamond_boots",
+      "count": 1,
+      "cost": 120,
+      "display_name": "寻路者钻石靴子",
+      "reputation_required": 600,
+      "enchantments": [
+        {
+          "id": "minecraft:feather_falling",
+          "lvl": 4
+        },
+        {
+          "id": "minecraft:depth_strider",
+          "lvl": 3
+        }
+      ]
+    },
+    {
+      "item": "minecraft:recovery_compass",
+      "count": 1,
+      "cost": 50,
+      "display_name": "回响指南针",
+      "reputation_required": 1000
+    }
+  ]
+}

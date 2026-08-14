@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/nether_trek",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 5000
+    }
+  ],
+  "rewards": {
+    "quest_points": 40,
+    "reputation": 9,
+    "bonus_xp": 120
+  },
+  "dialogue": {
+    "description": "五千格穿越下界的地狱景象。绯红森林、玄武岩三角洲、灵魂沙峡谷——每一处都是对神经和技巧的考验。",
+    "accept": "下界在等着！五千格穿越火与硫磺——来吧！",
+    "decline": "下界对我来说现在太敌对。我需要先有更好的装备。",
+    "in_progress": "下界扭曲了你的距离感。继续移动，小心恶魂火球——它们可不在乎你的旅行计划！",
+    "complete": "五千格穿越下界！大多数探险家不敢。炎热、熔岩、敌对生物——你面对了这一切并回来了。"
+  }
+}

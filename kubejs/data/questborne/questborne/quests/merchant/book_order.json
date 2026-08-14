@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/book_order",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:book",
+      "count": {
+        "min": 12,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 4,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "隔壁省的一个图书管理员在建一个新侧厅。空白书，她需要给附魔台和记录用。如果你知道合适的买家，书的售价是制作成本的三倍。",
+    "accept": "我会准备书。",
+    "decline": "我不是装订工。",
+    "in_progress": "图书管理员的信使明天到。到那时候我需要那些书在我架子上！",
+    "complete": "装订精美！图书管理员会高兴。而高兴的图书管理员是慷慨的图书管理员。"
+  }
+}

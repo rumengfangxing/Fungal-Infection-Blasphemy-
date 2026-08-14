@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/breed_rabbits",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:rabbit",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "兔子是难以捉摸的小东西，但一旦用蒲公英或胡萝卜驯服，它们就繁殖得很快。兔子农场为旅途提供皮革和幸运兔脚。",
+    "accept": "兔子真可爱！我会用蒲公英抓一些来让它们繁殖。",
+    "decline": "追着兔子跑现在不是我的乐趣。",
+    "in_progress": "兔子很快——你需要耐心。用蒲公英或胡萝卜引诱它们，然后顺其自然。",
+    "complete": "一整窝兔子！它们繁殖得比你想象的要快。兔脚炖汤是探险家的秘密食谱。"
+  }
+}

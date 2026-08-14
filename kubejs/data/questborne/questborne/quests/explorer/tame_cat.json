@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/tame_cat",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "tame",
+      "entity": "minecraft:cat",
+      "count": {
+        "min": 1,
+        "max": 2
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 4,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "流浪猫在村庄附近游荡，警惕但好奇。一个有耐心的灵魂带着生鳕鱼能赢得它们的信任。没有比它们更好的伙伴来让苦力怕远离了。",
+    "accept": "我会找一只流浪猫并赢得它的信任。是时候先钓些生鳕鱼了！",
+    "decline": "猫对我来说现在太挑剔了。也许下次吧。",
+    "in_progress": "对猫来说耐心是关键，朋友。蹲低，慢慢移动，让它们来找你。",
+    "complete": "你做到了！一个忠诚的猫伙伴——你睡觉时它们会让苦力怕远离。猫会明智地选择主人。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/leather_stockpile",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:leather",
+      "count": {
+        "min": 20,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 14,
+    "reputation": 4,
+    "bonus_xp": 40
+  },
+  "dialogue": {
+    "description": "皮革是任何贸易路线的支柱。盔甲、书、马鞍，谁都需要。我危险地低库存了，还有三个镇在等发货。",
+    "accept": "我会为你的库存收集皮革。",
+    "decline": "听起来是你的问题，不是我的。",
+    "in_progress": "我的仓库架子空了。快点好吗？",
+    "complete": "这才叫正经收获！我已经能听到硬币叮当响了。挣得值，朋友。"
+  }
+}

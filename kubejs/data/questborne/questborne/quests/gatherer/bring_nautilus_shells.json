@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_nautilus_shells",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:nautilus_shell",
+      "count": {
+        "min": 4,
+        "max": 6
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 10,
+    "bonus_xp": 170
+  },
+  "dialogue": {
+    "description": "鹦鹉螺壳，来自最深处海洋的螺旋形美物。溺尸有时带着它们，渔夫偶尔会钓到。我需要它们做一个潮涌核心项目，那可能改变我们水下作业的一切。",
+    "accept": "我会搜寻海岸和深处。",
+    "decline": "海洋太不可预测了。",
+    "in_progress": "试着用海之眷顾钓鱼，或猎杀带着它们的溺尸。鹦鹉螺壳很稀有但它们是存在的。",
+    "complete": "完美的螺旋！大自然数学的化身。有足够多的这些，我可以建一个潮涌核心，让附近任何人水下呼吸。你在创造历史，朋友。"
+  }
+}

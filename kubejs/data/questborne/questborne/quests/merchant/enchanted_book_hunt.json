@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/enchanted_book_hunt",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:enchanted_book",
+      "count": {
+        "min": 2,
+        "max": 4
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 70,
+    "reputation": 8,
+    "bonus_xp": 100
+  },
+  "dialogue": {
+    "description": "附魔书是已知世界每盎司利润最高的物品。战士、矿工、建筑师，他们都想要附魔。我不在乎里面是什么；任何附魔书都卖。",
+    "accept": "我会给你找附魔书。",
+    "decline": "附魔书太有价值了不能卖。",
+    "in_progress": "钓鱼、交易、从地牢里搜刮，我不在乎怎么弄。只管带来！",
+    "complete": "附魔的闪光！每一本都能卖一笔小财富。你有采购的天赋，我的朋友。"
+  }
+}

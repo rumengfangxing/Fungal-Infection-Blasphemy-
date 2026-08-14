@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_rails",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 100,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:rail",
+      "count": 32,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 6,
+    "bonus_xp": 55
+  },
+  "dialogue": {
+    "description": "矿井在扩建，我们需要铁轨网络把矿石运回地面。铁和木棍，材料简单，但铺轨的精度是门艺术。",
+    "accept": "铁轨，铁和木棍做的那种。带一批来。",
+    "decline": "铁轨活儿今天不适合我。",
+    "in_progress": "每段铁轨都要笔直笔直。别偷懒。弯的铁轨能让满载的矿车脱轨。",
+    "complete": "好手艺！这些铁轨能运好几吨矿石。矿工们会夸你的。"
+  }
+}

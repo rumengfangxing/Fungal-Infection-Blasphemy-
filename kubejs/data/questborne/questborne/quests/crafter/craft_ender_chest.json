@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_ender_chest",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ender_chest",
+      "count": 2,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 55,
+    "reputation": 13,
+    "bonus_xp": 240
+  },
+  "dialogue": {
+    "description": "商人公会要末影箱，安全的跨维度储物。黑曜石壁，末影之眼为核心。你放进其中一个里的东西，能从任何另一个里拿出来。",
+    "accept": "末影箱，超越空间本身的储物。干了。",
+    "decline": "跨维度工艺需要头脑清醒，我现在不在状态。",
+    "in_progress": "末影之眼必须在黑曜石框架里共振。如果它没反应了，就得重来。",
+    "complete": "打开它，你看到的是世界之间的虚空。你的东西安全地漂浮在那片空间里。杰作。"
+  }
+}

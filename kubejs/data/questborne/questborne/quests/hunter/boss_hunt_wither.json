@@ -1,0 +1,31 @@
+{
+  "id": "questborne:hunter/boss_hunt_wither",
+  "npc_type": "hunter",
+  "rarity": "epic",
+  "requires": "questborne:hunter/nether_warrior",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "14d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:wither",
+      "count": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 100,
+    "reputation": 25,
+    "bonus_xp": 500
+  },
+  "dialogue": {
+    "description": "有一种生物诞生于灵魂沙和头颅，一个三头怪物叫凋灵。召唤它。摧毁它。证明你真的是一个冠军。",
+    "accept": "我首先需要一些凋灵头颅。",
+    "decline": "我还没准备好那场战斗。",
+    "in_progress": "你面对凋灵了吗？如果需要更多准备也别觉得羞耻。",
+    "complete": "你做到了不可能的事。凋灵不复存在。你的名字会在篝火旁被传颂好几代。"
+  }
+}

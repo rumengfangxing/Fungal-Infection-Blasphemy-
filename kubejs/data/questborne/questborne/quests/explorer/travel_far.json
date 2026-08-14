@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/travel_far",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 1000
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 5,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "最好的发现发生在你停止计划、只是走路的时候。从这里出发，朝任何方向旅行至少 1000 格。看看你会找到什么。",
+    "accept": "是时候伸伸腿了。",
+    "decline": "我现在还是待在营地附近吧。",
+    "in_progress": "还在营地附近？动起来！地平线不会自己探索。",
+    "complete": "一千格！你心里有流浪者的精神。欢迎回来，探险家。"
+  }
+}

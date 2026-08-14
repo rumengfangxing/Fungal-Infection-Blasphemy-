@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/jungle_expedition",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:cocoa_beans",
+      "count": {
+        "min": 12,
+        "max": 20
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 5,
+    "bonus_xp": 62
+  },
+  "dialogue": {
+    "description": "丛林是藤蔓和巨树的迷宫，但其中藏着可可豆。带回可可豆——它们做出来的旅行饼干最好吃！",
+    "accept": "路上的饼干？不用多说！我会在丛林里砍出一条路找到那些可可豆。",
+    "decline": "丛林太密太容易迷路了。这个我算了。",
+    "in_progress": "看丛林树干侧面。可可豆就长在树皮上——深棕色的是成熟的。",
+    "complete": "可可豆！今晚我们烤饼干，明天我们吃饱了上路。丛林总是回报那些有勇气进入的人。"
+  }
+}

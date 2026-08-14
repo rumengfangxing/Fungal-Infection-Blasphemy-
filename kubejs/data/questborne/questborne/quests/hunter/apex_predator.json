@@ -1,0 +1,46 @@
+{
+  "id": "questborne:hunter/apex_predator",
+  "npc_type": "hunter",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "14d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:warden",
+      "count": {
+        "min": 2,
+        "max": 3
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:elder_guardian",
+      "count": {
+        "min": 2,
+        "max": 3
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:evoker",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 130,
+    "reputation": 22,
+    "bonus_xp": 700
+  },
+  "dialogue": {
+    "description": "顶级掠食者试炼横跨每个生物群系和维度。深暗之域的监守者、海洋的远古守卫者、府邸的唤魔者。猎杀它们，证明你是食物链的顶端。",
+    "accept": "顶级掠食者。我会夺取那个头衔。",
+    "decline": "即使传奇也有极限。这可能就是我的。",
+    "in_progress": "顶级试炼横跨整个世界。每个生物群系、每个危险。不要动摇。",
+    "complete": "顶级掠食者试炼完成了。这个世界上没有任何东西能挑战你了。我对你的精通鞠躬。"
+  }
+}

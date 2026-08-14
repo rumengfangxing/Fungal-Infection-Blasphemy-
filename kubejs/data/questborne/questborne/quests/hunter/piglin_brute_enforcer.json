@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/piglin_brute_enforcer",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:piglin_brute",
+      "count": {
+        "min": 4,
+        "max": 8
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 11,
+    "bonus_xp": 180
+  },
+  "dialogue": {
+    "description": "猪灵蛮兵用金斧头守卫着堡垒，零仁慈。它们不交易，不谈判，只管挥。我尊重这点，但我需要它们消失。",
+    "accept": "堡垒突袭对付蛮兵？那是真正的狩猎。",
+    "decline": "金斧头和不外交？我首先需要一面更大的盾牌。",
+    "in_progress": "堡垒仍然回响着它们的战吼。推进更深。",
+    "complete": "你清理了一座堡垒的执法者。那需要钢铁神经和更锋利的刀刃。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_cartography_table",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:cartography_table",
+      "count": 2,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 6,
+    "bonus_xp": 72
+  },
+  "dialogue": {
+    "description": "探险家公会要一张制图台。桌面要像玻璃一样平，带纸张夹具和测量边。",
+    "accept": "给探险家带制图台来，要精工木活。",
+    "decline": "那是专业活儿，改天吧。",
+    "in_progress": "桌面必须绝对水平。台面歪了地图就是歪的。",
+    "complete": "绝对水平，量边笔直。制图师们要在这上面描绘世界了。"
+  }
+}

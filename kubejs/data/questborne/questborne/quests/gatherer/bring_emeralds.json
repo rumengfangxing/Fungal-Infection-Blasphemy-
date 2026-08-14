@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_emeralds",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:emerald",
+      "count": {
+        "min": 12,
+        "max": 20
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 10,
+    "bonus_xp": 160
+  },
+  "dialogue": {
+    "description": "绿宝石是村庄的货币，而现在我需要购买力。山地生物群系深埋着它们，或者你可以通过交易攒一堆。不管你用什么方法，给我带绿宝石来。",
+    "accept": "我会让你变富。",
+    "decline": "那是个很高的要求。",
+    "in_progress": "你带来的每一颗绿宝石都为我们打开一扇门。村子就靠绿色宝石运转了，朋友。继续努力。",
+    "complete": "一堆绿色财富！这么多绿宝石，我可以为整个营地采购一季的补给。你刚刚成了我们最有价值的盟友。"
+  }
+}

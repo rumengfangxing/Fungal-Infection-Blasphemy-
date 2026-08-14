@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/mob_slayer_skeleton",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:skeleton",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 5,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "骨弓手在路上猎杀旅行者。干掉 15 个骷髅，结束这一切。",
+    "accept": "包在我身上。",
+    "decline": "我有别的优先事项。",
+    "in_progress": "那些骷髅不会自己射箭。嗯，实际上……算了。去干吧。",
+    "complete": "多亏了你，道路更安全了。挣得值，朋友。"
+  }
+}

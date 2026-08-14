@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_obsidian",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:obsidian",
+      "count": {
+        "min": 10,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 85
+  },
+  "dialogue": {
+    "description": "黑曜石是最坚硬的天然石头。开采起来永远要花很久，但没有什么，我是说没有什么，能炸穿它。我需要一些来做一个加固金库。带钻石镐来。",
+    "accept": "我有耐心做这个。",
+    "decline": "人生苦短，不值得挖黑曜石。",
+    "in_progress": "我知道黑曜石挖得慢。但那就是它有价值的原因。没什么好东西是容易来的。",
+    "complete": "坚实、黑暗、几乎坚不可摧。这个金库能把我们的宝藏安全地保护起来，不让任何苦力怕、任何破坏者、任何自然力量伤害。大师级工作。"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/meadow_explorer",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 2000
+    }
+  ],
+  "rewards": {
+    "quest_points": 18,
+    "reputation": 5,
+    "bonus_xp": 55
+  },
+  "dialogue": {
+    "description": "两千格！那对于一位初出茅庐的探险家来说是一次正经的远征。穿越草地、涉过溪流、爬上山丘——看看熟悉之外还有什么。",
+    "accept": "两千格是一次真正的冒险！是时候打包补给，进入未知了。",
+    "decline": "那是一段相当远的距离。在尝试之前我需要更多准备。",
+    "in_progress": "两千格可不是小壮举。调整节奏享受旅程——那是探险家的方式。",
+    "complete": "两千格！我看得出来，你正在发展真正的流浪癖。地平线现在在召唤你了，对吧？"
+  }
+}

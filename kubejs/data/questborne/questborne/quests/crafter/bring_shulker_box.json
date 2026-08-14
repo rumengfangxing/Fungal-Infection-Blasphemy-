@@ -1,0 +1,31 @@
+{
+  "id": "questborne:crafter/bring_shulker_box",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:shulker_box",
+      "count": {
+        "min": 1,
+        "max": 2
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 60,
+    "reputation": 14,
+    "bonus_xp": 260
+  },
+  "dialogue": {
+    "description": "公会的移动工坊需要潜影盒。用潜影壳和箱子合成，能折叠能展开，里面的东西不会丢。你能弄多少弄多少。",
+    "accept": "末地的潜影盒，我去弄回来。",
+    "decline": "猎潜影贝太危险了，今天不去。",
+    "in_progress": "壳必须完好无损，裂了的壳维度绑定会失效，盒子就废了。",
+    "complete": "开合得像活物一样。移动工坊以后轻装上阵，啥都能带上。"
+  }
+}

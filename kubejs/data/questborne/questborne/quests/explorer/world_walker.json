@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/world_walker",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 25000
+    }
+  ],
+  "rewards": {
+    "quest_points": 100,
+    "reputation": 20,
+    "bonus_xp": 500
+  },
+  "dialogue": {
+    "description": "两万五千格。一段大多数人认为不可能的旅程。你会走到太阳无数次升起落下，直到风景本身变得陌生。这是终极测试。",
+    "accept": "两万五千格！这段旅程将定义我作为探险家的遗产。没有什么能阻止我！",
+    "decline": "即使是我也有极限，两万五千格可能超出了它们。我需要想想。",
+    "in_progress": "你离开仿佛有一个世纪了。世界在你面前无尽延伸——但你已经走了太远，现在不能回头了。传说就是在这样的时刻锻造的。",
+    "complete": "两万五千格！你走过了世界本身的长度！这段旅程将被歌颂。你不仅仅是一个探险家——你是一个传奇！"
+  }
+}

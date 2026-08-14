@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_honey",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:honey_bottle",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 5,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "甜美的金色蜂蜜，大自然完美的食物。解毒、味道好、还容易交易。找些蜂巢，在下面点上营火把它们熏安分，把那液体黄金装瓶。",
+    "accept": "我知道怎么对付蜜蜂。",
+    "decline": "我过敏。大概。",
+    "in_progress": "记住，先往蜂巢下面放营火，再采集。除非你喜欢被蜇。我的蜂蜜呢？",
+    "complete": "浓稠、金黄、甜得像夏日的早晨。你身上也没有被蜇的痕迹，专业的活儿。今晚营地会享用它。"
+  }
+}

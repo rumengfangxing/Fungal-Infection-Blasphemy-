@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/emerald_treasury",
+  "npc_type": "merchant",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:emerald",
+      "count": {
+        "min": 64,
+        "max": 64
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 100,
+    "reputation": 20,
+    "bonus_xp": 500
+  },
+  "dialogue": {
+    "description": "大商人公会正在建立一种通用货币储备。它们需要一组绿宝石，村民经济的基础。这将重塑整个大陆的贸易。",
+    "accept": "我会集结绿宝石储备。",
+    "decline": "六十四个绿宝石超出了我的能力。",
+    "in_progress": "贸易、采矿、物物交换，不管你怎么获得，我需要六十四个绿宝石。公会的期限快到了！",
+    "complete": "一套完整的绿宝石储备！大商人公会将为几代人稳定贸易。而我们的名字将在每个交易大厅被提及。不朽的成就。"
+  }
+}

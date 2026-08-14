@@ -1,0 +1,189 @@
+{
+  "npc_type": "merchant",
+  "items": [
+    {
+      "item": "minecraft:painting",
+      "count": 4,
+      "cost": 8,
+      "display_name": "画"
+    },
+    {
+      "item": "minecraft:candle",
+      "count": 4,
+      "cost": 8,
+      "display_name": "蜡烛"
+    },
+    {
+      "item": "minecraft:item_frame",
+      "count": 4,
+      "cost": 8,
+      "display_name": "物品展示框"
+    },
+    {
+      "item": "minecraft:flower_pot",
+      "count": 4,
+      "cost": 8,
+      "display_name": "花盆"
+    },
+    {
+      "item": "minecraft:armor_stand",
+      "count": 2,
+      "cost": 10,
+      "display_name": "盔甲架"
+    },
+    {
+      "item": "minecraft:bookshelf",
+      "count": 4,
+      "cost": 12,
+      "display_name": "书架"
+    },
+    {
+      "item": "minecraft:glow_item_frame",
+      "count": 2,
+      "cost": 12,
+      "display_name": "荧光物品展示框"
+    },
+    {
+      "item": "minecraft:cake",
+      "count": 1,
+      "cost": 15,
+      "display_name": "蛋糕"
+    },
+    {
+      "item": "minecraft:flower_banner_pattern",
+      "count": 1,
+      "cost": 15,
+      "display_name": "花朵旗帜图案"
+    },
+    {
+      "item": "minecraft:music_disc_cat",
+      "count": 1,
+      "cost": 15,
+      "display_name": "音乐唱片 - Cat"
+    },
+    {
+      "item": "minecraft:decorated_pot",
+      "count": 1,
+      "cost": 18,
+      "display_name": "饰纹陶罐"
+    },
+    {
+      "item": "minecraft:music_disc_13",
+      "count": 1,
+      "cost": 15,
+      "display_name": "音乐唱片 - 13",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:goat_horn",
+      "count": 1,
+      "cost": 18,
+      "display_name": "山羊角",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:skeleton_skull",
+      "count": 1,
+      "cost": 20,
+      "display_name": "骷髅头颅",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:creeper_head",
+      "count": 1,
+      "cost": 20,
+      "display_name": "苦力怕头颅",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:globe_banner_pattern",
+      "count": 1,
+      "cost": 25,
+      "display_name": "地球旗帜图案",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:brewing_stand",
+      "count": 1,
+      "cost": 20,
+      "display_name": "酿造台",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:jukebox",
+      "count": 1,
+      "cost": 25,
+      "display_name": "唱片机",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:chiseled_bookshelf",
+      "count": 1,
+      "cost": 15,
+      "display_name": "雕纹书架",
+      "reputation_required": 100
+    },
+    {
+      "item": "minecraft:angler_pottery_sherd",
+      "count": 1,
+      "cost": 30,
+      "display_name": "垂钓陶片",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:archer_pottery_sherd",
+      "count": 1,
+      "cost": 30,
+      "display_name": "弓箭陶片",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:skull_banner_pattern",
+      "count": 1,
+      "cost": 40,
+      "display_name": "头颅旗帜图案",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:music_disc_pigstep",
+      "count": 1,
+      "cost": 45,
+      "display_name": "音乐唱片 - 猪步",
+      "reputation_required": 300
+    },
+    {
+      "item": "minecraft:music_disc_otherside",
+      "count": 1,
+      "cost": 45,
+      "display_name": "音乐唱片 - Otherside",
+      "reputation_required": 600
+    },
+    {
+      "item": "minecraft:sniffer_egg",
+      "count": 1,
+      "cost": 65,
+      "display_name": "嗅探兽蛋",
+      "reputation_required": 600
+    },
+    {
+      "item": "minecraft:piglin_head",
+      "count": 1,
+      "cost": 45,
+      "display_name": "猪灵头颅",
+      "reputation_required": 600
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "cost": 70,
+      "display_name": "附魔书：灵魂疾行 III",
+      "reputation_required": 1000,
+      "enchantments": [
+        {
+          "id": "minecraft:soul_speed",
+          "lvl": 3
+        }
+      ]
+    }
+  ]
+}

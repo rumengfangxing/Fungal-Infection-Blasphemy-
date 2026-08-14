@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_cactus",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:cactus",
+      "count": {
+        "min": 16,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 14,
+    "reputation": 4,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "绿色染料需求量大，仙人掌是最好的来源。问题是，最近的沙漠要走很远，那些扎人的东西也不好搬。小心包好带回来。",
+    "accept": "我不介意沙漠的热。",
+    "decline": "为仙人掌走太远了。",
+    "in_progress": "回来路上小心那些刺！还在等仙人掌呢。",
+    "complete": "你把这些运回来了还没被扎成筛子？厉害。这些能做一批好绿色染料。这报酬你挣得值。"
+  }
+}

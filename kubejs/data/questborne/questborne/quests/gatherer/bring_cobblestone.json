@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_cobblestone",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:cobblestone",
+      "count": {
+        "min": 64,
+        "max": 128
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "我在修补营地墙。昨晚苦力怕炸了个大洞。日落前需要一堆圆石来填补缺口。",
+    "accept": "我去采矿。",
+    "decline": "找别人吧。",
+    "in_progress": "那些墙不会自己修。还需要那些圆石，朋友。",
+    "complete": "坚实的石头，正是我需要的。又一个没有苦力怕从墙里爬进来的夜晚。你真是救星。"
+  }
+}

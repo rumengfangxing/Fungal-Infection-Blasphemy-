@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/long_journey",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 3000
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 6,
+    "bonus_xp": 70
+  },
+  "dialogue": {
+    "description": "三千格未探索的领地等着你。朝任何方向走，直到风景完全陌生为止。那就是冒险所在的地方。",
+    "accept": "三千格进入未知？那正是我渴望的旅程！",
+    "decline": "那是一段严肃的徒步。我需要更多准备才能出发那么远。",
+    "in_progress": "你周围的生物群系在变化吗？那就是你知道自己正在到达真正新地方的方式。",
+    "complete": "三千格！你看到了很少有人走过的土地。每个名副其实的探险家过去都有过这样的旅程。"
+  }
+}

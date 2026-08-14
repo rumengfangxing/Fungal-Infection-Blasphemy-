@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/night_watch",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:zombie",
+      "count": {
+        "min": 8,
+        "max": 12
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:skeleton",
+      "count": {
+        "min": 5,
+        "max": 8
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 16,
+    "reputation": 4,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "我需要有人值夜。僵尸和骷髅都在天黑后出没。处理任何从阴影里蹒跚而出的东西。",
+    "accept": "今晚我守夜。没什么能逃过我。",
+    "decline": "我需要我的美容觉，抱歉。",
+    "in_progress": "夜晚还没结束。外面保持警惕。",
+    "complete": "天亮了你还站着。那就是我喜欢看到的。"
+  }
+}

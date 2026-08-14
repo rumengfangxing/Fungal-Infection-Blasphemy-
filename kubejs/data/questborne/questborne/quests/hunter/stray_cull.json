@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/stray_cull",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:stray",
+      "count": {
+        "min": 6,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 13,
+    "reputation": 3,
+    "bonus_xp": 36
+  },
+  "dialogue": {
+    "description": "霜冻骷髅一直在北方道路上猎杀旅行者。它们的迟缓箭是恶心的东西。终结它们。",
+    "accept": "我会让那些冰冻弓手尝尝它们自己的药。",
+    "decline": "老实说，我更喜欢温暖的气候。",
+    "in_progress": "旅行者仍然被那些箭冻伤。继续猎杀。",
+    "complete": "北方道路再次可以通行了。打得好，猎手。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_kelp",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:kelp",
+      "count": {
+        "min": 32,
+        "max": 48
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "干海带是很好的路粮。轻、能放很久、急用时能填肚子。我需要从海底的新鲜供应。你游泳自在吗？",
+    "accept": "我憋气还行。",
+    "decline": "我宁愿待在干地上。",
+    "in_progress": "别告诉我你怕一点水？我需要那些海带，朋友。",
+    "complete": "咸鲜、新鲜，正是我喜欢的。今晚我会在火上烘干这些。在深处干得好。"
+  }
+}

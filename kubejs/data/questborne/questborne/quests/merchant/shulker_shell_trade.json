@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/shulker_shell_trade",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:shulker_shell",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 65,
+    "reputation": 15,
+    "bonus_xp": 280
+  },
+  "dialogue": {
+    "description": "潜影壳，无限储物的关键。每个冒险者都想要潜影盒，而壳只来自末地城。永不满足的需求，没有供应。完美的市场条件。",
+    "accept": "我会突袭末地城找潜影壳。",
+    "decline": "末地太危险了。",
+    "in_progress": "末地城是迷宫般的且危险，但潜影贝守护着无法估量的宝藏。继续前进！",
+    "complete": "完美的潜影壳！工匠们会为这些争斗。光是竞价战就会有趣。你是一个无畏的供应商。"
+  }
+}

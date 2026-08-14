@@ -1,0 +1,67 @@
+{
+  "id": "questborne:crafter/forge_netherite_full_set",
+  "npc_type": "crafter",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": false,
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:netherite_helmet",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:netherite_chestplate",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:netherite_leggings",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:netherite_boots",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 200,
+    "reputation": 30,
+    "bonus_xp": 1000,
+    "items": [
+      {
+        "item": "minecraft:netherite_ingot",
+        "count": 2
+      },
+      {
+        "item": "minecraft:diamond",
+        "count": 8
+      }
+    ]
+  },
+  "dialogue": {
+    "description": "这是终极委托。全套下界合金甲，从头到脚。四件用世上最稀有的材料锻造。只有大宗师才敢尝试。",
+    "accept": "全套下界合金。这将是我的巅峰之作。",
+    "decline": "全套下界合金……尝试这种规格的事之前我得先给自己打打气。",
+    "in_progress": "每件都必须与其他件相辅相成。头盔衔接胸甲，胸甲衔接护腿，护腿衔接靴子。一件连续的无敌之铠。",
+    "complete": "我……我说不出话了。我在炉边这么多年，没人做到过。全套下界合金，每一处都完美。你是一个传奇。公会将传颂你一千年。"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/guardian_depths",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:guardian",
+      "count": {
+        "min": 8,
+        "max": 15
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 28,
+    "reputation": 6,
+    "bonus_xp": 80
+  },
+  "dialogue": {
+    "description": "海底神殿充满了守卫者。它们的激光如果不小心会把你烤熟。我需要它们的刺做项目，并且少一些恐吓渔夫。",
+    "accept": "水下激光鱼？听起来像星期二。",
+    "decline": "我不喜欢被鱼微波加热。",
+    "in_progress": "神殿仍然被守卫。你需要清理更多。",
+    "complete": "一整袋海晶砂砾！你一定把那个神殿变成了墓地。"
+  }
+}

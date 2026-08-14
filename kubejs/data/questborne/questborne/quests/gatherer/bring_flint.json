@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_flint",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:flint",
+      "count": {
+        "min": 12,
+        "max": 20
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 6,
+    "reputation": 2,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "箭需要燧石箭头，生火器需要燧石火花。不管怎样，我正好缺了。翻些沙砾，掉出来的尖锐碎片正是我需要的。",
+    "accept": "我会筛些沙砾。",
+    "decline": "听起来很乏味。",
+    "in_progress": "继续筛那些沙砾！燧石藏在里面，顽固的小碎片。",
+    "complete": "边缘锋利，重量合适，这些能做好的箭头。不花哨，但没有什么比一支好箭头更能保命了。"
+  }
+}

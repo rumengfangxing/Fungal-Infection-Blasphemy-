@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/short_stroll",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 500
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 3,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "每一段伟大的旅程都始于一步。出去走走，覆盖一些地面——即使是一次短途散步也能揭示你以前从未注意过的奇观。",
+    "accept": "一次短途散步听起来正是我需要的。我会伸伸腿看看外面有什么。",
+    "decline": "也许下次吧——我现在没有心情散步。",
+    "in_progress": "还在外面晃悠？让靴子动起来，朋友。世界不会自己探索！",
+    "complete": "啊，你眼里有那种火花！即使是一次短暂的漫游也能振作精神。干得好，旅行者。"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/slime_cleanup",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:slime",
+      "count": {
+        "min": 10,
+        "max": 20
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 3,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "史莱姆从这个地区的每一个洞穴和沼泽里渗出。恶心的东西。尽可能多地压扁。大的和小的算一样。",
+    "accept": "挤压史莱姆？够简单。",
+    "decline": "我刚清理了我的盔甲，抱歉。",
+    "in_progress": "还能听到那种恶心的咕叽声。更多史莱姆要压扁。",
+    "complete": "哈！你浑身是粘液但工作完成了。这是你的报酬，史莱姆杀手。"
+  }
+}

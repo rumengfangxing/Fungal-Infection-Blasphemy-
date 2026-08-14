@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/diamond_vault",
+  "npc_type": "merchant",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:diamond",
+      "count": {
+        "min": 16,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 100,
+    "reputation": 20,
+    "bonus_xp": 500
+  },
+  "dialogue": {
+    "description": "完美无瑕的钻石，足够填满一座皇家金库。一个国王集团在修建一座共享金库来签署和平条约，他们会出大价钱。我收到过的最大单笔订单。",
+    "accept": "我会用钻石填满一座金库。",
+    "decline": "那是不可思议数量的钻石。",
+    "in_progress": "一座金库价值的钻石。我知道这是巨大的要求，但集团的付款同样巨大。深挖！",
+    "complete": "一组钻石！我交易了三十年从未见过这么多财富在一个地方。国王们会有他们的和平，而我们会得到他们的感激，当然是黄金。"
+  }
+}

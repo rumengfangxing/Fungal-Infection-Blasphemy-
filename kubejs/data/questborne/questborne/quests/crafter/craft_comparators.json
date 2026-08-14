@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_comparators",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:comparator",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 11,
+    "bonus_xp": 180
+  },
+  "dialogue": {
+    "description": "红石工程师需要比较器来测信号。下界石英火把嵌在石头里，间距必须精确到毫米。差一丁点读数就废了。",
+    "accept": "高精度校准的比较器，量两次做一次的那种。带一批来。",
+    "decline": "这种精度的活儿我今天做不来。",
+    "in_progress": "石英火把高度必须完全一致，差一根头发丝信号对比就偏了。",
+    "complete": "校准到完美。这些比较器能读到最精细的信号强度。"
+  }
+}

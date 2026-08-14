@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/cross_country",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 5000
+    }
+  ],
+  "rewards": {
+    "quest_points": 35,
+    "reputation": 8,
+    "bonus_xp": 100
+  },
+  "dialogue": {
+    "description": "五千格。那是帝国之间的距离，是不同世界之间的距离。穿越山脉、沙漠、海洋——在一次壮阔的徒步中看遍所有。",
+    "accept": "五千格！这将是我最长的旅程。看看世界为我准备了什么！",
+    "decline": "五千格对我来说现在太雄心勃勃了。我会慢慢来。",
+    "in_progress": "你离开有一阵子了——好！最好的发现发生在你远离熟悉的一切的时候。",
+    "complete": "穿越了五千格！你穿越了整片大陆的土地。你的报告之后地图需要更新了！"
+  }
+}

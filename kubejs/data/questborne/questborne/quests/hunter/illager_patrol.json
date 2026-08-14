@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/illager_patrol",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:pillager",
+      "count": {
+        "min": 6,
+        "max": 10
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:vindicator",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 28,
+    "reputation": 6,
+    "bonus_xp": 75
+  },
+  "dialogue": {
+    "description": "在村庄边界发现灾厄村民巡逻队。十字弩手和斧战士协同作战。解决两者。别让任何逃脱回去报信。",
+    "accept": "混合灾厄村民部队？我会全部拿下。",
+    "decline": "有组织的敌人完全是另一种野兽。",
+    "in_progress": "有些散开了。追踪掉队者。",
+    "complete": "没有一个逃脱。你至少把它们的下一次袭击推迟了好几周。"
+  }
+}

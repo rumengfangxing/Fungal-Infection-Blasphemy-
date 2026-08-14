@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/drowned_menace",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:drowned",
+      "count": {
+        "min": 8,
+        "max": 15
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 14,
+    "reputation": 4,
+    "bonus_xp": 40
+  },
+  "dialogue": {
+    "description": "河岸爬满了溺尸。渔夫无法工作，商人不愿过河。清理它们，让老实人谋生。",
+    "accept": "是时候进行水下害虫防治了。",
+    "decline": "我其实不太会游泳。",
+    "in_progress": "水域仍然危险。继续努力。",
+    "complete": "河水重新清澈了。你有真正猎手的素质。"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/ocean_monument_siege",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:guardian",
+      "count": {
+        "min": 25,
+        "max": 35
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:elder_guardian",
+      "count": {
+        "min": 3,
+        "max": 3
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 72,
+    "reputation": 16,
+    "bonus_xp": 340
+  },
+  "dialogue": {
+    "description": "全面神殿围城。每一个守卫者、每一个远古守卫者、整个结构都需要被清除。这是终极水下狩猎。带上你最好的水下装备。",
+    "accept": "全面神殿清除？整片海洋都不知道自己是怎么被击中的。",
+    "decline": "三个远古守卫者和几十个普通守卫者？我需要一艘潜艇。",
+    "in_progress": "神殿的激光网格仍然活跃。继续在疲劳中战斗。",
+    "complete": "一整座海底神殿，单人征服。海洋向你低头，冠军。"
+  }
+}

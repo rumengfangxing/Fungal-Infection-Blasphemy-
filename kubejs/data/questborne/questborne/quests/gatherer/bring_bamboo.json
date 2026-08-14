@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_bamboo",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:bamboo",
+      "count": {
+        "min": 32,
+        "max": 48
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 13,
+    "reputation": 4,
+    "bonus_xp": 40
+  },
+  "dialogue": {
+    "description": "竹子用途多。脚手架、燃料，甚至家具，如果你手巧的话。东边有一片丛林。给我砍一捆好的拖回来。",
+    "accept": "丛林之旅听起来有趣。",
+    "decline": "丛林不是我的菜。",
+    "in_progress": "丛林没那么远！我在这儿都能听到鹦鹉的声音了。我的竹子呢？",
+    "complete": "听那中空的声音，好的、干的竹子。同重量下比铁还结实。你有挑好竹竿的天赋。"
+  }
+}

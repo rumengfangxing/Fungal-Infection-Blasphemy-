@@ -1,0 +1,49 @@
+{
+  "id": "questborne:crafter/forge_netherite_sword",
+  "npc_type": "crafter",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": false,
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:netherite_sword",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:netherite_pickaxe",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 140,
+    "reputation": 24,
+    "bonus_xp": 750,
+    "items": [
+      {
+        "item": "minecraft:netherite_ingot",
+        "count": 1
+      },
+      {
+        "item": "minecraft:diamond",
+        "count": 4
+      }
+    ]
+  },
+  "dialogue": {
+    "description": "王国的冠军需要一把下界合金剑和一把下界合金镐。一把征服敌人，一把征服大地。两件绝对统治的利器。",
+    "accept": "下界合金的剑和镐。配得上冠军的工具。",
+    "decline": "锻造两把下界合金工具需要的材料我还没攒够。",
+    "in_progress": "剑的平衡点必须在护手旁一指宽处。镐头敲击时必须像铃铛一样清脆。每个维度都完美。",
+    "complete": "剑破空而吟。镐切石如切黄油。这些不是工具，它们是使用者意志的延伸。超凡入圣。"
+  }
+}

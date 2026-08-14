@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/elder_guardian_trophy",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:elder_guardian",
+      "count": {
+        "min": 1,
+        "max": 3
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 200
+  },
+  "dialogue": {
+    "description": "远古守卫者。海洋神殿的古老领主。光是它们的挖掘疲劳诅咒就击退了整个袭击队伍。只有最好的猎手才敢尝试。",
+    "accept": "远古守卫者战利品挂在我墙上一定很壮观。",
+    "decline": "会诅咒你的古老水下首领？也许明年吧。",
+    "in_progress": "你脸色苍白。挖掘疲劳很艰难，但继续前进。远古守卫者在等着。",
+    "complete": "一只远古守卫者，被杀了！海洋本身在颤抖。这是一次载入史册的狩猎。"
+  }
+}

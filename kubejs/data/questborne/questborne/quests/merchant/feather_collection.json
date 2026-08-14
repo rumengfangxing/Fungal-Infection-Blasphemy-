@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/feather_collection",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:feather",
+      "count": {
+        "min": 24,
+        "max": 48
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "首都的一位学者订了一箱羽毛笔。显然大学即将毕业一班新的抄写员，它们都需要书写工具。羽毛，而且要很多。",
+    "accept": "我会收集一些羽毛。",
+    "decline": "自己追鸡去。",
+    "in_progress": "那些学者不会自己写文凭。我需要那些羽毛！",
+    "complete": "轻如空气，适合做羽毛笔。学者会高兴。付款已交付，一如既往。"
+  }
+}

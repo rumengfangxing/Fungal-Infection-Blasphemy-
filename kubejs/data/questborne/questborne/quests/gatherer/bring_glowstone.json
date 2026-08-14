@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_glowstone",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:glowstone_dust",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 6,
+    "bonus_xp": 70
+  },
+  "dialogue": {
+    "description": "荧石粉，从下界天花板上那些诡异的簇状物上收获。能让药水更强，还能在没有火灾风险的情况下照亮房间。采集起来危险，但我信任你的技能。",
+    "accept": "我会带一组回来。",
+    "decline": "下界天花板？不用了谢谢。",
+    "in_progress": "注意你在那些下界壁架上的脚下。一步走错就是掉进熔岩里的长距离坠落。但我仍然需要那些荧石。",
+    "complete": "像被捕获的阳光一样发光！这种粉非常有用。酿造师、建筑师，谁都想要。你挣到了这报酬的每一分。"
+  }
+}

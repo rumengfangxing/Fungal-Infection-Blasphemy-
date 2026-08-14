@@ -1,0 +1,46 @@
+{
+  "id": "questborne:hunter/hundred_kill_hunt",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:zombie",
+      "count": {
+        "min": 30,
+        "max": 40
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:skeleton",
+      "count": {
+        "min": 30,
+        "max": 40
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:creeper",
+      "count": {
+        "min": 15,
+        "max": 20
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 60,
+    "reputation": 14,
+    "bonus_xp": 280
+  },
+  "dialogue": {
+    "description": "百杀狩猎。老练猎手中的一项传统。在一次出猎中猎杀惊人数量的敌对生物。僵尸、骷髅、苦力怕。数量是这里的挑战。",
+    "accept": "百杀狩猎。我一直在等待证明自己。",
+    "decline": "那是……很多杀戮。即使对我也一样。",
+    "in_progress": "你的剑现在一定变钝了。继续数，继续杀。",
+    "complete": "百杀狩猎，完成了！你的名字加入了那条极短的猎手名单——做到过的人屈指可数。"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/zombie_villager_mercy",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:zombie_villager",
+      "count": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "被感染的村民……他们病得太重无法治愈。他们的呻吟让幸存者夜不能寐。我要求你做的事是一种仁慈。赐予他们安宁。",
+    "accept": "这是残酷的工作，但总得有人做。",
+    "decline": "我……我不能那样做。他们曾经是人。",
+    "in_progress": "我知道这很难。但他们在受苦。完成你开始的。",
+    "complete": "安息吧，老朋友们。你今天做了一件善良的事，猎手。一件艰难而善良的事。"
+  }
+}

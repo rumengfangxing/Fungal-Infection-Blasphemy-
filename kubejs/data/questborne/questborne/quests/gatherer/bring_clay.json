@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_clay",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:clay_ball",
+      "count": {
+        "min": 24,
+        "max": 48
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 6,
+    "reputation": 2,
+    "bonus_xp": 40
+  },
+  "dialogue": {
+    "description": "我在试着烧砖，正经的砖，不是那种一碰就碎的。但河床这儿被捡光了。需要你走远些带些粘土球回来。",
+    "accept": "我知道河边有个好地方。",
+    "decline": "今天不想弄一身泥。",
+    "in_progress": "窑准备好了等着呢。就差粘土来启动了。",
+    "complete": "好粘土，又细又滑。这些能烧出漂亮的砖。你靴子上有泥但口袋里有硬币，公平交易，我觉得。"
+  }
+}

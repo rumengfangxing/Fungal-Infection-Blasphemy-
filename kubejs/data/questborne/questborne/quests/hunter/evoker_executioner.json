@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/evoker_executioner",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:evoker",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 10,
+    "bonus_xp": 160
+  },
+  "dialogue": {
+    "description": "唤魔者是灾厄村民中的施法者。从地面召唤尖牙，从空气中召唤恼鬼，最坏的那种黑魔法。永久沉默它们。",
+    "accept": "施法者需要快速解决。我知道怎么做。",
+    "decline": "幽灵般的尖牙从地板喷出？我很好，谢谢。",
+    "in_progress": "我能感觉到黑魔法仍在脉动。唤魔者还活着。",
+    "complete": "它们的不死图腾现在是你的了。黑魔法随着它们的最后一口气消散。"
+  }
+}

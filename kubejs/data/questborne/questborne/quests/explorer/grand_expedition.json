@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/grand_expedition",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 10000
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 200
+  },
+  "dialogue": {
+    "description": "一万格。一段传奇规模的旅程。你会穿越你从未见过的生物群系，面对你从未想象过的危险。这就是真正的探索的样子。",
+    "accept": "一万格！这是我一直在训练的远征。没有什么能阻止我！",
+    "decline": "一万格是……压倒性的。我还没准备好做那样的承诺。",
+    "in_progress": "一万格是一次巨大的旅程。一步一步来——再长的路也只是一串脚印。",
+    "complete": "一万格！你走得比大多数人一辈子走的都远。这段旅程将被载入探险史册！"
+  }
+}

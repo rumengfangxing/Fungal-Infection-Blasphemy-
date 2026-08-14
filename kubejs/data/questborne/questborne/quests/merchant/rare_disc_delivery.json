@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/rare_disc_delivery",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:music_disc_pigstep",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 11,
+    "bonus_xp": 180
+  },
+  "dialogue": {
+    "description": "一位收藏家在找《猪步》，已知最稀有的音乐唱片。只在下界的堡垒里能找到，由蛮兵守卫。他出价一笔财富。一笔危险的财富，但依然是财富。",
+    "accept": "我会勇敢面对堡垒找《猪步》。",
+    "decline": "猪灵蛮兵不值得任何价格。",
+    "in_progress": "堡垒很可怕，我知道。但收藏家的黄金非常非常真实。继续前进！",
+    "complete": "《猪步》！收藏家会 欣喜若狂。还有硬币也一样热情。你非凡地勇敢。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/dragon_breath_supply",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:dragon_breath",
+      "count": {
+        "min": 3,
+        "max": 6
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 55,
+    "reputation": 13,
+    "bonus_xp": 240
+  },
+  "dialogue": {
+    "description": "龙息，从末影龙自己的攻击中装瓶。炼金师需要它做滞留药水，付荒谬价格。装瓶龙的怒火并带给我。",
+    "accept": "我会面对龙并装瓶它的呼吸。",
+    "decline": "离龙那么近是疯了。",
+    "in_progress": "玻璃瓶准备好！当龙呼吸时，收集紫色雾气。理论简单。实践恐怖。",
+    "complete": "装瓶的龙息！紫色雾气像被捕获的 暴风雨一样在里面旋转。炼金师会付大价钱，如果它们在做实验后还有鼻子的话。"
+  }
+}

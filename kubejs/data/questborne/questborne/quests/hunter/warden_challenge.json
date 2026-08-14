@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/warden_challenge",
+  "npc_type": "hunter",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "14d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:warden",
+      "count": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 80,
+    "reputation": 18,
+    "bonus_xp": 400
+  },
+  "dialogue": {
+    "description": "监守者。古老、盲目、而且能两下杀死人。面对它的大多数猎手没有回来。我不会对你撒谎，这可能是你做过最难的事。",
+    "accept": "一个监守者。一个猎手。让我们看看谁走开。",
+    "decline": "我听过那些故事。我还没准备好。",
+    "in_progress": "还活着？好。深暗之域是耐心的。监守者最终会找到你。",
+    "complete": "你……你真的杀了一个监守者。我狩猎了三十年从来没有尝试过。你赢得了我绝对的尊重。"
+  }
+}

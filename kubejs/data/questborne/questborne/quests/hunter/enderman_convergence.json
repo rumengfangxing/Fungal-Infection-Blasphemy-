@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/enderman_convergence",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:enderman",
+      "count": {
+        "min": 25,
+        "max": 35
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 55,
+    "reputation": 13,
+    "bonus_xp": 250
+  },
+  "dialogue": {
+    "description": "末影人的汇聚形成了，几十只在一个区域，以令人疯狂的舞蹈瞬移。没人知道它们为什么聚集，但它们需要被驱散。暴力地。",
+    "accept": "末影人的汇聚？我正是为此训练的。",
+    "decline": "几十个瞬移的巨人？那是噩梦，不是任务。",
+    "in_progress": "汇聚持续着。它们的瞬移越来越不规律。你在让它们紧张。",
+    "complete": "汇聚被粉碎了。末影珍珠散落在战场上。一场配得上冠军的狩猎。"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/pillager_raid",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:pillager",
+      "count": {
+        "min": 10,
+        "max": 18
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 6,
+    "bonus_xp": 70
+  },
+  "dialogue": {
+    "description": "两个山谷外发现掠夺者前哨站。它们在囤积十字弩并计划一次袭击。先发制人。在它们组织起来之前打散它们的部队。",
+    "accept": "先发制人的打击？我已经在磨刀了。",
+    "decline": "独自面对一个前哨站看起来很鲁莽。",
+    "in_progress": "那个前哨站还在。保持压力。",
+    "complete": "它们的旗帜被撕破，十字弩被破坏。你一个人打得像一支军队。"
+  }
+}

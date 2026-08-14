@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_redstone",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:redstone",
+      "count": {
+        "min": 32,
+        "max": 48
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 6,
+    "bonus_xp": 70
+  },
+  "dialogue": {
+    "description": "有个捣鼓红石的朋友在造某种装置。活塞、中继器、比较器，全套。她需要成把的红石粉。深采，朋友。真的深。",
+    "accept": "我会往深处去。",
+    "decline": "下面太危险了。",
+    "in_progress": "我那红石朋友越来越坐不住了。说没有红石她完不成她的机器。别让她等。",
+    "complete": "红石粉！看它闪烁。她会乐疯的。说那机器能自动化我们一半的农场工作。进步，朋友，建立在红石粉和汗水之上。"
+  }
+}

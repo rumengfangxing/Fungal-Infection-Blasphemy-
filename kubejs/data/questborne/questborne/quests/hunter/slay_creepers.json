@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/slay_creepers",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:creeper",
+      "count": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 3,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "那些绿色恶魔整周都在炸我的陷阱。我需要有人削减它们的数量，在我剩余的装备没了之前。",
+    "accept": "我会处理苦力怕。它们不知道被什么击中了。",
+    "decline": "我宁愿我的四肢还连着，谢谢。",
+    "in_progress": "还能听到外面的爆炸声。你还没完成工作。",
+    "complete": "啊，终于安静了。我的耳膜谢谢你，朋友。"
+  }
+}

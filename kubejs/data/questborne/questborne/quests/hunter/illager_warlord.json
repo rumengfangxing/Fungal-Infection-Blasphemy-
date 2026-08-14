@@ -1,0 +1,54 @@
+{
+  "id": "questborne:hunter/illager_warlord",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:pillager",
+      "count": {
+        "min": 15,
+        "max": 20
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:vindicator",
+      "count": {
+        "min": 8,
+        "max": 12
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:evoker",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:ravager",
+      "count": {
+        "min": 2,
+        "max": 3
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 70,
+    "reputation": 16,
+    "bonus_xp": 350
+  },
+  "dialogue": {
+    "description": "一支灾厄村民战团正在集结。掠夺者、卫道士、唤魔者和劫掠兽一起行军。这是一支全面入侵部队。在它们到达村庄之前摧毁它们。",
+    "accept": "一整支战团？这将是我最伟大的战斗。",
+    "decline": "那是一支军队，不是狩猎。我需要盟友来对付那个。",
+    "in_progress": "它们的鼓声还在敲。战团继续行军。",
+    "complete": "一整支灾厄村民军队，被一个猎手瓦解。村庄安全了。你真的是一位冠军。"
+  }
+}

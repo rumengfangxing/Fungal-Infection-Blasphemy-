@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/collect_blaze_rods",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:blaze",
+      "count": {
+        "min": 6,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 10,
+    "bonus_xp": 160
+  },
+  "dialogue": {
+    "description": "烈焰人用旋转的怒气和火球守卫着下界要塞。击败它们并收集它们的烈焰棒——酿造探索辅助药水的必需品。",
+    "accept": "进下界要塞猎烈焰人！我需要抗火药水，但我准备好迎接挑战了。",
+    "decline": "烈焰人对我来说现在太危险了。我需要更好的准备。",
+    "in_progress": "下界要塞是黑砖砌成的危险迷宫。听烈焰人刷怪笼的嘎嘎声——那就是它们所在的地方。",
+    "complete": "烈焰棒！这些燃烧的战利品证明你征服了下界最危险的守卫之一。每个伟大的探险家都曾勇闯要塞。"
+  }
+}

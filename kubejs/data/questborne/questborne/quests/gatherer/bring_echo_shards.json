@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_echo_shards",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:echo_shard",
+      "count": {
+        "min": 4,
+        "max": 6
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 70,
+    "reputation": 16,
+    "bonus_xp": 350
+  },
+  "dialogue": {
+    "description": "回响碎片带着深暗之域的共振在震动。只在远古城市箱子里能找到，由监守者本身守卫，一个靠声音狩猎的盲目恐怖。小心前行，或者干脆别走。",
+    "accept": "我可以悄无声息地移动。",
+    "decline": "监守者不值得纠缠。",
+    "in_progress": "蹲下。不要在幽匿附近破坏方块。不要冲刺。不要发出声音。如果你做了，监守者会找到你。但那些回响碎片值得那恐惧。",
+    "complete": "它们在我手中嗡鸣，一种来自世界本身的深处的频率。回响碎片是现存最稀有的材料之一。你走到了大多数人不愿去的地方。配得上冠军。"
+  }
+}

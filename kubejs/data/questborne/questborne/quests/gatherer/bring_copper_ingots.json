@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_copper_ingots",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:copper_ingot",
+      "count": {
+        "min": 24,
+        "max": 36
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "我在给营地做风向标和避雷针，但我需要熔炼过的铜锭，不是原矿。自己熔炼或交易都行，我不在乎你怎么弄到。",
+    "accept": "熔炼过的铜，收到。",
+    "decline": "那是很多熔炼活儿。",
+    "in_progress": "熔炉在跑吗？我很快需要那些铜锭。雷雨季要来了，我们还没避雷保护。",
+    "complete": "亮橙色的铜，刚从炉里出来！在雨里放几周就会变成那种漂亮的铜绿色。避雷针今晚就装上去。干得好。"
+  }
+}

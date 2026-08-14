@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/mansion_raid",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:vindicator",
+      "count": {
+        "min": 8,
+        "max": 12
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:evoker",
+      "count": {
+        "min": 2,
+        "max": 3
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 190
+  },
+  "dialogue": {
+    "description": "一座林地府邸需要被清空。一间一间房间、一层一层楼，卫道士和唤魔者藏在每扇门后。这是一次正经的袭击，猎手。",
+    "accept": "房间对房间的府邸清理？这就是我训练的。",
+    "decline": "一整座满是灾厄村民的府邸？我需要后援。",
+    "in_progress": "我仍然能看到上层有火光。府邸还没被清理。",
+    "complete": "每一间房间被清扫，每一个灾厄村民倒下。你像自然力量一样袭击了那座府邸。"
+  }
+}

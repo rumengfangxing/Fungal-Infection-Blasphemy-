@@ -1,0 +1,37 @@
+{
+  "id": "questborne:hunter/nether_scout",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:blaze",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    },
+    {
+      "type": "travel_distance",
+      "count": {
+        "min": 500,
+        "max": 500
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 6,
+    "bonus_xp": 70
+  },
+  "dialogue": {
+    "description": "我需要一个下界侦察兵。覆盖一些地面，干掉你遇到的任何烈焰人，活着回来。带着暴力副业的简单侦察。",
+    "accept": "带战斗的下界侦察？我的任务。",
+    "decline": "下界让我焦虑。我待在这里。",
+    "in_progress": "你还没覆盖足够的地面。更深入荒地。",
+    "complete": "好情报，还有烈焰棒。你是个高效的猎手。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/bring_any_music_disc",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 300,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain_tag",
+      "tag": "minecraft:music_discs",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 40,
+    "reputation": 12,
+    "bonus_xp": 120
+  },
+  "dialogue": {
+    "description": "我有一个收藏家为音乐唱片出高价。任何唱片都行，它们都够稀有。找一张给我带来。",
+    "accept": "我知道一个苦力怕-骷髅 把戏。",
+    "decline": "太难找了。",
+    "in_progress": "找到音乐唱片了吗？试着让骷髅射中苦力怕……",
+    "complete": "一张真正的音乐唱片！我的收藏家会为这个出最高价。这是你慷慨的那份。"
+  }
+}

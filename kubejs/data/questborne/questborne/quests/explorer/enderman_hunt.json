@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/enderman_hunt",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:enderman",
+      "count": {
+        "min": 10,
+        "max": 16
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 55,
+    "reputation": 13,
+    "bonus_xp": 240
+  },
+  "dialogue": {
+    "description": "末影人本身就是跨维度旅行者——随心所欲地在世界间传送。猎杀它们获取珍珠，那是通往末地维度的钥匙。",
+    "accept": "末影人是狡猾的对手，但它们的珍珠无价。我会装备好开始猎杀！",
+    "decline": "末影人的瞬移让我起鸡皮疙瘩。今天不去。",
+    "in_progress": "末影人在主世界夜晚生成，但末地到处都是。戴南瓜头以避免激怒它们——或者如果你想要战斗，就别戴！",
+    "complete": "猎杀末影人的好收成！它们的珍珠打开了维度之间的门户。你证明了自己能挑战存在于世界之间的存在。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_chest",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:chest",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 6,
+    "reputation": 2,
+    "bonus_xp": 40
+  },
+  "dialogue": {
+    "description": "储物是工坊的根基。我需要几个盖子严实的箱子，别让灰钻进去。",
+    "accept": "带能传世的箱子来。",
+    "decline": "我自己的储物问题还没解决呢。",
+    "in_progress": "合页要顺滑，没有比卡住的箱子更糟心的了。",
+    "complete": "听这盖子合上的声音，严丝合缝。你有双工匠的手。"
+  }
+}

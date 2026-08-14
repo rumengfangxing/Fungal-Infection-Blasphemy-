@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/gather_saplings",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:oak_sapling",
+      "count": {
+        "min": 8,
+        "max": 12
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 11,
+    "reputation": 3,
+    "bonus_xp": 32
+  },
+  "dialogue": {
+    "description": "我在旅行路线沿途种树——为未来的流浪者提供树荫，为导航提供地标。给我带橡树树苗来，帮助绿化世界！",
+    "accept": "在旅行路线沿途种树是个好主意！我会摇些橡树弄树苗。",
+    "decline": "我现在没有时间种树。",
+    "in_progress": "有树苗了吗？打掉橡树的树叶——它们掉落树苗的几率还挺高的。",
+    "complete": "太好了！这些树苗每一棵都会长成高大的橡树，为世世代代的旅行者提供荫蔽。"
+  }
+}

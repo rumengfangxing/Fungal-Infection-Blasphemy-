@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_ghast_tears",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ghast_tear",
+      "count": {
+        "min": 3,
+        "max": 5
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 200
+  },
+  "dialogue": {
+    "description": "恶魂之泪，来自下界那些尖叫白色恐怖的结晶悲伤。听起来诗意，但它们是再生药水的关键成分。很少人能采集。你能吗？",
+    "accept": "我会让一些恶魂沉默。",
+    "decline": "那些尖叫的东西会让我做噩梦。",
+    "in_progress": "恶魂飘浮在熔岩海上，使它们加倍危险。但它们的眼泪必须在掉落前抓住。棘手的工作。我相信你。",
+    "complete": "恶魂之泪……冰凉，尽管来自最热的维度。每一颗都是一个等着发生的炼金奇迹。再生药水会因为你的勇敢而挽救生命。"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "questborne:hunter/spider_exterminator",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "requires": "questborne:hunter/mob_slayer_zombie",
+  "reputation_required": 100,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:spider",
+      "count": {
+        "min": 20,
+        "max": 30
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 8,
+    "bonus_xp": 80,
+    "items": [
+      {
+        "item": "minecraft:string",
+        "count": 16
+      }
+    ]
+  },
+  "dialogue": {
+    "description": "附近的洞穴里满是蛛网。我需要有人在它们开始爬进营地之前清理 30 只蜘蛛。",
+    "accept": "我会带一把剑和一支火把。",
+    "decline": "不喜欢蜘蛛。",
+    "in_progress": "灭绝工作进行得怎么样了？我老在睡袋上发现蛛网。",
+    "complete": "三十只干掉！我终于可以不用检查靴子就睡觉了。这是你的奖励。"
+  }
+}

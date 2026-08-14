@@ -1,0 +1,31 @@
+{
+  "id": "questborne:crafter/craft_glass",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:glass",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 7,
+    "reputation": 3,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "我在给公会最好的作品做展示柜。我要透明玻璃，没有气泡没有杂质。",
+    "accept": "清澈透亮的玻璃，这就来。",
+    "decline": "玻璃活儿需要耐心，我现在没有。",
+    "in_progress": "每块玻璃对着光看。有雾蒙蒙的就重新烧一炉。",
+    "complete": "完美无瑕的透明度。我的展示柜能把咱们的作品衬得漂漂亮亮。"
+  }
+}

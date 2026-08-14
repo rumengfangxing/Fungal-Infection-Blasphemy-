@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_respawn_anchor",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:respawn_anchor",
+      "count": 1,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 60,
+    "reputation": 14,
+    "bonus_xp": 280
+  },
+  "dialogue": {
+    "description": "下界远征队需要一个重生锚。哭泣的黑曜石加荧石，在巨大压力下融合。它能将灵魂绑定在下界的某个点上。",
+    "accept": "重生锚，荧石和哭泣的黑曜石做成的、违抗死亡的东西。带一个来。",
+    "decline": "灵魂绑定器物不能仓促行事。",
+    "in_progress": "哭泣的黑曜石流泪是有原因的。把它的泪水均匀引入荧石舱室。",
+    "complete": "它发出异界的嗡鸣。下界远征队在最需要的时候会有救命稻草。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_shulker_shells",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:shulker_shell",
+      "count": {
+        "min": 4,
+        "max": 6
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 75,
+    "reputation": 17,
+    "bonus_xp": 380
+  },
+  "dialogue": {
+    "description": "潜影壳，由那些在末地城潜伏的盒子形状的恐怖生物掉落。每对能做一个潜影盒，任何维度最精致的便携储物。我需要壳，我会出大价钱。",
+    "accept": "末地城是我的游乐场。",
+    "decline": "悬浮子弹和虚空坠落？不。",
+    "in_progress": "注意它们的投射物。在虚空中被发射到天空是快速死亡。盾牌有帮助。耐心也是。我需要那些壳。",
+    "complete": "完美的潜影壳！紫色，带着末地能量嗡鸣。潜影盒将彻底改变我们的储物系统。你突袭了一座末地城并活着讲述了故事。传奇，真的。"
+  }
+}

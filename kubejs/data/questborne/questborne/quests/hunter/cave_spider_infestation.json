@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/cave_spider_infestation",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:cave_spider",
+      "count": {
+        "min": 10,
+        "max": 18
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "矿井被洞穴蜘蛛侵扰了。比地表的小但带毒。咬一口你就能看到双影了。带解药。",
+    "accept": "在狭小空间里对付带毒蜘蛛？我活着的意义。",
+    "decline": "毒和幽闭恐惧？绝不。",
+    "in_progress": "矿井还结着网。那些小恐怖繁殖得快。",
+    "complete": "清理了一整个刷怪笼的量！你是有抗毒体质还是纯粹胆子大？。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:merchant/cake_commission",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:cake",
+      "count": 6,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 6,
+    "bonus_xp": 75
+  },
+  "dialogue": {
+    "description": "婚礼季！省里每一对新人都想要蛋糕，面包师们忙不过来。我一直在左右接单。材料复杂——牛奶、糖、小麦、鸡蛋——但利润是甜蜜的。",
+    "accept": "我会烤婚礼蛋糕。",
+    "decline": "我不做婚礼。",
+    "in_progress": "幸福的新人没有蛋糕正在变成愤怒的新人。请快点！",
+    "complete": "层层叠叠，可爱！新娘们会喜悦地哭泣，她们的家人在我的价格下哭泣。每个人都开心！"
+  }
+}

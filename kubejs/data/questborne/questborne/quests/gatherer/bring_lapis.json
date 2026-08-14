@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_lapis",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:lapis_lazuli",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 5,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "附魔台消耗青金石像吃糖一样。有一堆冒险者在排队想附魔他们的装备，但没东西喂台子。蓝色矿石，中深度，你知道那东西。",
+    "accept": "我会找些青金石矿脉。",
+    "decline": "今天不行，老家伙。",
+    "in_progress": "附魔台在发光但没有青金石就什么也做不了。快点好吗？",
+    "complete": "美丽的蓝色石头！每一颗都是一个等着发生的法术。附魔师们会很兴奋，付费客户意味着我能付你钱。"
+  }
+}

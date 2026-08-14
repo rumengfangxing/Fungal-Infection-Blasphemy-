@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_iron",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:raw_iron",
+      "count": {
+        "min": 12,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 5,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "我的铁一直不够用，这把老骨头也不如从前了。给我带 32 个粗铁来，我不会亏待你的。",
+    "accept": "我去矿里。",
+    "decline": "现在不行。",
+    "in_progress": "矿里有收获吗？我很快需要那些铁。",
+    "complete": "好矿石，这个。你有矿工的眼睛。这是你的报酬。"
+  }
+}

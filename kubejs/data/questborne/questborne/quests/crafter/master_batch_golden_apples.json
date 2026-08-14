@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/master_batch_golden_apples",
+  "npc_type": "crafter",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:golden_apple",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 100,
+    "reputation": 20,
+    "bonus_xp": 500
+  },
+  "dialogue": {
+    "description": "皇家军队要出征了，战地医生需要大量金苹果。黄金包裹的苹果，注入了治愈魔法。每个士兵重伤时的最后依靠。",
+    "accept": "给军队囤金苹果。我把每一个都镀上金。",
+    "decline": "那么多金工活儿会把我榨干的。我必须拒绝。",
+    "in_progress": "每个苹果都必须完全包裹。金箔上有条缝隙，治愈附魔就会像破杯里的水一样漏光。好好挑。",
+    "complete": "一箱又一箱闪闪发光的金苹果。军医们能在战场上救回无数条命。你为国尽忠了。"
+  }
+}

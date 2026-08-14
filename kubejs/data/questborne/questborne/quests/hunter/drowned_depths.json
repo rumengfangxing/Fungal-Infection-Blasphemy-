@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/drowned_depths",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:drowned",
+      "count": {
+        "min": 12,
+        "max": 20
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 17,
+    "reputation": 5,
+    "bonus_xp": 50
+  },
+  "dialogue": {
+    "description": "离岸有一座沉没废墟，已经成了溺尸的繁殖地。有些带着三叉戟，所以小心。清理深处。",
+    "accept": "水下战斗？接受挑战。",
+    "decline": "我几乎不会游泳，更不用说在水下战斗了。",
+    "in_progress": "废墟仍然被侵扰着。潜得更深，猎手。",
+    "complete": "你湿透了但胜利了。深处被清理了。"
+  }
+}

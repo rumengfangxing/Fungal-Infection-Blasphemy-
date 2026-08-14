@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/breed_horses",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:horse",
+      "count": {
+        "min": 2,
+        "max": 4
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 28,
+    "reputation": 7,
+    "bonus_xp": 80
+  },
+  "dialogue": {
+    "description": "好马是探险家最宝贵的资产。它们能用步行所需一小部分的时间穿越广阔的距离。帮我们为前方的路繁殖一些好马。",
+    "accept": "繁殖马听起来太棒了！金苹果和金胡萝卜——我知道它们喜欢什么。",
+    "decline": "繁殖马需要我现在没有的资源。改天吧。",
+    "in_progress": "马需要金苹果或金胡萝卜才能繁殖。为如此高贵的生物投资是值得的！",
+    "complete": "好马驹！有了这样强壮的马，世界的任何角落都触手可及。真正的探险家伙伴。"
+  }
+}

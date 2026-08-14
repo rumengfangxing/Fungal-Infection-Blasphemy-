@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_end_crystal",
+  "npc_type": "crafter",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:end_crystal",
+      "count": 2,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 16,
+    "bonus_xp": 350
+  },
+  "dialogue": {
+    "description": "奥术议会需要末地水晶——末影之眼、恶魂之泪、玻璃融合成的容器。带一个来，拿的时候小心点，那东西不稳定。",
+    "accept": "末地水晶，不稳定、强大、而且美。你带的时候要极其小心。",
+    "decline": "没有充分准备就做末地水晶，太危险了。",
+    "in_progress": "恶魂之泪必须在玻璃球里自由悬浮。碰到壁，水晶就不稳定了。",
+    "complete": "它自己飘着、转着，散发治愈能量。奥术议会肯定会大吃一惊。"
+  }
+}

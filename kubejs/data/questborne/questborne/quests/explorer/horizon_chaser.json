@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/horizon_chaser",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 50000
+    }
+  ],
+  "rewards": {
+    "quest_points": 150,
+    "reputation": 25,
+    "bonus_xp": 800
+  },
+  "dialogue": {
+    "description": "五万格。地平线本身在你面前逃离，而你仍在追逐。这段旅程通向已知世界最遥远的边界之外。只有真正的探险家才敢梦想它。",
+    "accept": "五万格！这是每个探险家都梦想但很少有人敢尝试的旅程。我会追逐地平线直到世界的边缘！",
+    "decline": "五万格……即使是传说也有它们的极限。我需要时间消化你的要求。",
+    "in_progress": "世界在你面前无尽地展开。新的生物群系、新的奇观、新的危险在每个转角。五万格——你在重新定义作为探险家的意义！",
+    "complete": "旅行了五万格！你的脚印从造物的一边延伸到另一边。我从未遇到过能与你匹敌的探险家。你是地平线追猎者——一个活着的传奇！"
+  }
+}

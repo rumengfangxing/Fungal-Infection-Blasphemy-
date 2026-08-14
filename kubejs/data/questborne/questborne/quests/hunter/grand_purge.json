@@ -1,0 +1,54 @@
+{
+  "id": "questborne:hunter/grand_purge",
+  "npc_type": "hunter",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:zombie",
+      "count": {
+        "min": 50,
+        "max": 60
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:skeleton",
+      "count": {
+        "min": 50,
+        "max": 60
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:creeper",
+      "count": {
+        "min": 25,
+        "max": 30
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:enderman",
+      "count": {
+        "min": 15,
+        "max": 20
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 120,
+    "reputation": 20,
+    "bonus_xp": 600
+  },
+  "dialogue": {
+    "description": "大清洗。一项古老的狩猎传统，只留给最伟大的猎手。在一次传奇的出猎中猎杀压倒性数量的敌对生物。这会考验你所拥有的一切。",
+    "accept": "大清洗。让毕生狩猎开始吧。",
+    "decline": "即使是我也知道什么时候被纯粹数量压倒。",
+    "in_progress": "大清洗要求的耐力无法衡量。你的武器手臂绝不能停歇。",
+    "complete": "大清洗完成了。数百个生物被一个猎手击倒。你的名字将回荡在岁月中。"
+  }
+}

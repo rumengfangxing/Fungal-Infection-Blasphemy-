@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_lanterns",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:lantern",
+      "count": 16,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 32,
+    "reputation": 7,
+    "bonus_xp": 90
+  },
+  "dialogue": {
+    "description": "镇议会要在主街上装正经的灯笼。铁壳、防风、还漂亮。不光实用，还得好看。",
+    "accept": "给大街带铁灯笼来，要闪闪发光的。",
+    "decline": "灯笼活儿需要精度，我现在没法保证。",
+    "in_progress": "每个铁框必须一模一样。议会在主街上要的是整齐划一。",
+    "complete": "这些灯笼将为后人照亮前路。铁艺堪称精美。"
+  }
+}

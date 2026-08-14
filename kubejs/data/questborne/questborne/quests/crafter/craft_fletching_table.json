@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_fletching_table",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:fletching_table",
+      "count": 3,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 10,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "弓箭手们需要正经的制箭台。好箭从好台面开始。给他们带点配得上这门手艺的东西。",
+    "accept": "给弓箭手带制箭台来，要能让每一支箭都飞得笔直。",
+    "decline": "弓箭用品让别人去弄吧。",
+    "in_progress": "要有固定箭杆的夹槽。制箭这事儿精度就是一切。",
+    "complete": "弓箭手公会托我带话感谢你。这些台子做出来的箭永不偏航。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_crafting_table",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:crafting_table",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "公会来了新学徒，每人需要一张工作台。给我带一批合成台来。",
+    "accept": "每个工匠都值得一张好工作台。交上来吧。",
+    "decline": "学徒们再等会儿吧。",
+    "in_progress": "好的工作台桌面要平要正。挑的时候别着急。",
+    "complete": "这些配得上公会。每个学徒都会从一张好台面开始他们的旅程。"
+  }
+}

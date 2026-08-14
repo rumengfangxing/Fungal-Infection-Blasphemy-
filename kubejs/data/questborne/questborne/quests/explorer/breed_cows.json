@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/breed_cows",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 100,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:cow",
+      "count": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 6,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "一个好的营地需要稳定的食物供应。找些牛来繁殖。我们要在这荒郊野地活下去，得有一群像样的牛群。",
+    "accept": "我去弄些小麦来。",
+    "decline": "我不是农夫。",
+    "in_progress": "繁殖得怎么样了？我们需要那些牛多起来。",
+    "complete": "牛群在壮大！这才叫有远见。有你在，营地不会挨饿。"
+  }
+}

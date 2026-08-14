@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/totem_trade",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:totem_of_undying",
+      "count": {
+        "min": 1,
+        "max": 2
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 11,
+    "bonus_xp": 190
+  },
+  "dialogue": {
+    "description": "国王、将军、偏执的贵族，他们都想要不死图腾。欺骗死亡是终极奢侈品，而奢侈品是我的专长。突袭一座林地府邸，给我带一个来。",
+    "accept": "我会从唤魔者那里夺取一个图腾。",
+    "decline": "唤魔者太危险了，为了这个。",
+    "in_progress": "府邸里满是灾厄村民，但也满是图腾。专注于奖品！",
+    "complete": "一个不死图腾！你知道一个吓坏了的贵族为这个付多少吗？比你想象的要多。壮丽的工作。"
+  }
+}

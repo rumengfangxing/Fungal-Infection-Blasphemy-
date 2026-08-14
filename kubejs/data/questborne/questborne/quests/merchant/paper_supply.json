@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/paper_supply",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:paper",
+      "count": {
+        "min": 32,
+        "max": 64
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 13,
+    "reputation": 4,
+    "bonus_xp": 38
+  },
+  "dialogue": {
+    "description": "地图、书、合同，文明靠纸运行，我的朋友。而我危险地接近断供。光是制图师就会买我一半库存。",
+    "accept": "我会为你制作一些纸。",
+    "decline": "我不是造纸工。",
+    "in_progress": "仍然需要那些纸。我的制图师客户现在在树皮上画图了。",
+    "complete": "脆爽且干净！这会让制图师们开心好几周。出色的工作。"
+  }
+}

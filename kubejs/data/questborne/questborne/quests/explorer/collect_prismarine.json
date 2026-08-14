@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/collect_prismarine",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:prismarine_shard",
+      "count": {
+        "min": 12,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 88
+  },
+  "dialogue": {
+    "description": "海底神殿里有海晶石——一种远古文明在海浪下锻造的材料。勇敢面对守卫者，带回这种海洋宝藏的碎片。",
+    "accept": "海底神殿很危险，但海晶石值得。我会装备好深潜下去！",
+    "decline": "守卫者和海底神殿？那比我想要的危险更多。",
+    "in_progress": "守卫者不会轻易交出宝藏。用水肺药水，带一把强力的武器！",
+    "complete": "海晶石碎片！你掠夺了一座海底神殿并活着回来讲了这件事。这些碎片闪烁着古老的力量。"
+  }
+}

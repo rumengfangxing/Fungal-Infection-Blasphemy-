@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/ghast_sniper",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:ghast",
+      "count": {
+        "min": 5,
+        "max": 8
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 40,
+    "reputation": 9,
+    "bonus_xp": 130
+  },
+  "dialogue": {
+    "description": "恶魂是下界天空的顶级掠食者。哭泣、尖叫、投掷火球、而且不知为何仍然可怕。我需要一个神射手把它们打下来。",
+    "accept": "在熔岩地狱里打空中目标？我天生为此。",
+    "decline": "在熔岩坑上躲避火球不是我的风格。",
+    "in_progress": "天空仍然在尖叫。那些恶魂不会自己倒下。",
+    "complete": "每一枪都命中。你甚至能给骷髅上一堂射击课。"
+  }
+}

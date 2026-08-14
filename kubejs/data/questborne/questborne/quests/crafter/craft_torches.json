@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_torches",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:torch",
+      "count": 64,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "矿井需要照明，村路夜里也黑。给我带一批火把来，把黑暗赶走。",
+    "accept": "我这就给你把火把点亮。",
+    "decline": "我今天不想沾煤灰。",
+    "in_progress": "别在煤上省。一根弱火把还不如没有。",
+    "complete": "这些能烧很久很稳。今晚村民们能睡得更踏实。"
+  }
+}

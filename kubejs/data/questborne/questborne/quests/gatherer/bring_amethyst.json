@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_amethyst",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:amethyst_shard",
+      "count": {
+        "min": 16,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 6,
+    "bonus_xp": 75
+  },
+  "dialogue": {
+    "description": "地下藏着晶洞。敲开一个，里面会有紫色水晶簇。叫紫水晶碎片。漂亮、实用、还挺值钱。给我带些来。",
+    "accept": "我喜欢敲晶洞。",
+    "decline": "水晶狩猎让别人去吧。",
+    "in_progress": "听地下的叮当声，那就是找到晶洞的方法。我还需要那些紫水晶碎片。",
+    "complete": "听它们互相碰撞的声音！像紫色的小铃铛。望远镜、染色玻璃、装饰品，紫水晶有十几种用途。找得好，朋友。"
+  }
+}

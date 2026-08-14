@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/cave_delver",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:glow_berries",
+      "count": {
+        "min": 16,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "我们脚下繁茂的洞穴里长满了发光的浆果。带些回来——它们是探险家眼中的美味，还能照亮最暗的隧道。",
+    "accept": "地下洞穴里的发光浆果？听起来是场值得一去的冒险！",
+    "decline": "探洞不是我的强项。这次先不管洞穴了。",
+    "in_progress": "在地下找繁茂洞穴——挂着发光浆果的藤蔓从顶上垂下来。那景象可美了！",
+    "complete": "发光浆果！这是大自然自己的火把。今晚我们会把它们串在营地里，像地下国王一样享用。"
+  }
+}

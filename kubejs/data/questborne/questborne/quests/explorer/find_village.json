@@ -1,0 +1,28 @@
+{
+  "id": "questborne:explorer/find_village",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "5d",
+  "time_limit": "none",
+  "objectives": [
+    {
+      "type": "visit_structure",
+      "structure": "minecraft:village_plains",
+      "count": 1
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 6,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "这些平原上散落着定居点，满是商人和诚实村民的村庄。找到一个并回来告诉我你看到了什么。",
+    "accept": "我会睁大眼睛留意。",
+    "decline": "我宁愿待在营地附近。",
+    "in_progress": "还在找？村庄往往出现在平坦开阔的土地上。继续找。",
+    "complete": "你找到了一个！太棒了。每一座被标记的村庄都是像我们这样的旅行者的又一处避风港。"
+  }
+}

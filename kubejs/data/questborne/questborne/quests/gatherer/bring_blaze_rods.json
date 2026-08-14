@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_blaze_rods",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:blaze_rod",
+      "count": {
+        "min": 6,
+        "max": 10
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 12,
+    "bonus_xp": 190
+  },
+  "dialogue": {
+    "description": "烈焰棒是酿造台和比煤烧得更热的燃料的必需品。问题是，它们来自烈焰人，下界要塞深处的活火柱。这不是给胆小者的活儿。",
+    "accept": "我在下界打过更狠的。",
+    "decline": "喷火的生物？坚决不。",
+    "in_progress": "下界很严酷，我知道。但那些烈焰棒对我们的酿造操作是不可替代的。命运眷顾勇者。",
+    "complete": "还在冒烟！我隔着手套都能感觉到热。这些棒能为我们的酿造台供能好几周。你实打实地穿越了火海。太出色了。"
+  }
+}

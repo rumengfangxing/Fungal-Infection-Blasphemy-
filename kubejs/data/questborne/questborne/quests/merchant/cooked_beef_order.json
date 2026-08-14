@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/cooked_beef_order",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:cooked_beef",
+      "count": {
+        "min": 20,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 3,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "一支矿工车队明天要路过，他们预定了补给。我需要熟牛肉，很多。饥饿的矿工付双倍，你看。",
+    "accept": "我会给你弄熟牛肉。",
+    "decline": "找别的供应商。",
+    "in_progress": "那些矿工很快就到。别让我空手！",
+    "complete": "完美！烤得恰到好处。矿工会满意，我也是。你的报酬，正如承诺的。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_pistons",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:piston",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 38,
+    "reputation": 8,
+    "bonus_xp": 120
+  },
+  "dialogue": {
+    "description": "工程师公会在设计新的闸门机构，需要活塞，而且要经久耐用。铁、红石、木头要完美配合。",
+    "accept": "给工程师带活塞来，要能推动山的那种。",
+    "decline": "红石机械太麻烦了，我需要先多准备。",
+    "in_progress": "铁板必须与缸体完美密封。有一点缝隙推力就全漏了。",
+    "complete": "伸展顺滑，收缩有力。这些活塞能为各种机械供能好多年。"
+  }
+}

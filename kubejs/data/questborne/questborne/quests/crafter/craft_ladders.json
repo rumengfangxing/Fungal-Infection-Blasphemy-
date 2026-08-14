@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_ladders",
+  "npc_type": "crafter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:ladder",
+      "count": 32,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "我在装备一个新矿井，需要结实的梯子。横档得能撑住穿全身铁甲的人，记住了。",
+    "accept": "带梯子来，要能撑住铁傀儡的那种。",
+    "decline": "梯子不是我现在的专长。",
+    "in_progress": "送来之前每根横档都试一下。我可不想有人因为我的活儿摔了。",
+    "complete": "结构扎实。这些梯子够矿工们用上好一阵子。"
+  }
+}

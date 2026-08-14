@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/elytra_trade",
+  "npc_type": "merchant",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": false,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:elytra",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 80,
+    "reputation": 18,
+    "bonus_xp": 400
+  },
+  "dialogue": {
+    "description": "鞘翅，末地的翅膀。一位女王从小梦想飞行。她会为了一对清空国库。末地船是唯一来源，它们在虚空之外。你够勇敢吗？",
+    "accept": "我会飞回来给你带鞘翅。",
+    "decline": "末地虚空吞噬了太多冒险者。",
+    "in_progress": "末地船漂浮在虚空岛屿上方。一步走错就是湮灭。但奖品……奖品是一切。",
+    "complete": "翅膀！真正的翅膀！女王会在她王国上空翱翔。而她付的价格？让我们说我们俩都能退休了。但我们不会，总会有另一笔交易。"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "questborne:explorer/breed_massive_herd",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:cow",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "type": "breed",
+      "entity": "minecraft:sheep",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "type": "breed",
+      "entity": "minecraft:pig",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    },
+    {
+      "type": "breed",
+      "entity": "minecraft:chicken",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 120,
+    "reputation": 22,
+    "bonus_xp": 600
+  },
+  "dialogue": {
+    "description": "传奇探险家所到之处皆繁荣。繁殖每种常见动物的大规模畜群——每种数十只。把这片土地变成丰饶的天堂！",
+    "accept": "跨物种的大规模繁殖计划！我要把这些田地变成世界从未见过的最富饶的农田！",
+    "decline": "繁殖那么多动物需要惊人数量的资源。我还没准备好。",
+    "in_progress": "现在田地里应该已经动物成群了！牛、羊、猪、鸡——全在你的照料下茁壮成长。继续，直到这片土地承载不下为止！",
+    "complete": "大地在你的畜群脚下震颤！你在这片土地上带来的生命规模超乎想象。这才是传奇探险家的标志！"
+  }
+}

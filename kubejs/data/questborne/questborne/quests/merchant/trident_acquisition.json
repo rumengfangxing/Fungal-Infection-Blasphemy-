@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/trident_acquisition",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 1000,
+  "repeatable": false,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:trident",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 80,
+    "reputation": 18,
+    "bonus_xp": 400
+  },
+  "dialogue": {
+    "description": "一位航海军阀想要一把三叉戟，海洋被选中的武器。溺尸守卫带着它们，但很少。军阀出了一个不断上涨的长期出价。是时候兑现了。",
+    "accept": "我会猎杀溺尸找三叉戟。",
+    "decline": "三叉戟太稀有了不能卖。",
+    "in_progress": "溺尸对它们的三叉戟很固执。但坚持终有回报——这次是字面意义上的。",
+    "complete": "一把真正的三叉戟！军阀会用这个指挥海洋。而我也将指挥一笔非常非常大的付款。出色工作！"
+  }
+}

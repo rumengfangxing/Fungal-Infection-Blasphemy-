@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/breed_sheep",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:sheep",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 3,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "这附近的牧羊人需要帮手扩大羊群。找些羊来帮它们繁殖——羊毛毕竟不长在树上！",
+    "accept": "我去拿些小麦找一群羊帮忙繁殖。就养羊了！",
+    "decline": "我今天不想扮演牧羊人。",
+    "in_progress": "那些毛茸茸的朋友怎么样了？记住，一点点小麦对羊来说就很有用了。",
+    "complete": "干得漂亮！那些毛茸茸的新羊羔能让村子温暖过冬。你有牧羊人的天赋！"
+  }
+}

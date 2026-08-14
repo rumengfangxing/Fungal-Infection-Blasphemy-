@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/ghast_slayer",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:ghast",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 42,
+    "reputation": 10,
+    "bonus_xp": 145
+  },
+  "dialogue": {
+    "description": "恶魂像巨型哭泣的水母一样飘浮在下界，向任何移动的东西发射爆炸火球。清理天空，让探险家能安全旅行。",
+    "accept": "那些尖叫的火球毁了我太多次下界之旅。是时候清理天空了！",
+    "decline": "恶魂和它们的火球是我今天不想处理的事情。",
+    "in_progress": "一记时机恰当的箭或反射回去的火球能把它们打下来。观察天空，听它们悲伤的哭声。",
+    "complete": "下界的天空现在安静了！恶魂之泪被炼金术士珍视，它们的沉默被其他所有人珍视。打得好，探险家！"
+  }
+}

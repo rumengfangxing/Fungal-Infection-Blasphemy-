@@ -1,0 +1,35 @@
+{
+  "id": "questborne:crafter/bring_potions",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "requires": "questborne:crafter/bring_bread",
+  "reputation_required": 100,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:potion",
+      "count": 8,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 8,
+    "bonus_xp": 80,
+    "items": [
+      {
+        "item": "minecraft:blaze_rod",
+        "count": 2
+      }
+    ]
+  },
+  "dialogue": {
+    "description": "我最近在捣鼓炼药，库存快见底了。给我弄 8 瓶药水来，什么类型都行，我只要瓶子和里面的东西。",
+    "accept": "我去把酿造台烧起来。",
+    "decline": "这不是我的专长。",
+    "in_progress": "药水酿得怎么样了？我等着用呢。",
+    "complete": "干得漂亮！这些够我实验好几个礼拜了。拿着。"
+  }
+}

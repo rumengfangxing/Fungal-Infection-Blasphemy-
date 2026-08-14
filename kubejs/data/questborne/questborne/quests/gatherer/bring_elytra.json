@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_elytra",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": false,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:elytra",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": false
+    }
+  ],
+  "rewards": {
+    "quest_points": 120,
+    "reputation": 22,
+    "bonus_xp": 600
+  },
+  "dialogue": {
+    "description": "鞘翅，末地的翅膀。它们在末地船里等着，旁边是末地城，由潜影贝和下方的深渊守卫。我一辈子都在梦想飞行。给我带一对来。",
+    "accept": "我会给你带翅膀来。",
+    "decline": "末地太危险了，即使对我也是。",
+    "in_progress": "末地船很稀有，不是每个城都有。在虚空中搭桥，清理潜影贝，在船体的物品展示框里找到。鞘翅在里面等着。",
+    "complete": "翅膀……真正的翅膀，轻如空气，强如铁。我这辈子都在用两条腿走这个世界，而今天你给了一个老采集者飞行的礼物。我永远不会忘记。"
+  }
+}

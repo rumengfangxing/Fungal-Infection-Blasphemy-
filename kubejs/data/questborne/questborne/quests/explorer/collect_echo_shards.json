@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/collect_echo_shards",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:echo_shard",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 72,
+    "reputation": 16,
+    "bonus_xp": 360
+  },
+  "dialogue": {
+    "description": "回响碎片与深暗之域的古老频率共振。只在远古城市的箱子里能找到，这些碎片能制作回响指南针——探险家的保险单。",
+    "accept": "远古城市里的回响碎片！我会勇敢面对幽匿和监守者的领域找到它们。",
+    "decline": "深暗之域和监守者是我今天不愿面对的东西。",
+    "in_progress": "远古城市是寂静的坟墓。小心移动，避开幽匿感测体，搜刮箱子。不管做什么，别惊醒监守者。",
+    "complete": "回响碎片！这些碎片带着深暗之域的记忆在震动。把它们做成回响指南针，你再也不会弄丢随身物品了。"
+  }
+}

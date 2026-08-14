@@ -1,0 +1,28 @@
+{
+  "id": "questborne:merchant/clock_delivery",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:clock",
+      "count": 6,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 28,
+    "reputation": 6,
+    "bonus_xp": 80
+  },
+  "dialogue": {
+    "description": "一位贵族想要匹配的时钟放在他庄园的每个房间里。金和红石，精密制作。他不在乎价格，商人听来是音乐，你说呢？",
+    "accept": "带时钟来就行，他出高价。",
+    "decline": "我不是钟表匠。",
+    "in_progress": "滴答，朋友。贵族越来越没耐心了。讽刺的是，他在买时钟。",
+    "complete": "壮观的工艺！每一个都保持完美时间。贵族会最满意。你的报酬，准时到账。"
+  }
+}

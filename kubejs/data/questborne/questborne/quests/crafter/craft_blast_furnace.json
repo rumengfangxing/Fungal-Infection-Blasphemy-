@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_blast_furnace",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:blast_furnace",
+      "count": 2,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 28,
+    "reputation": 6,
+    "bonus_xp": 75
+  },
+  "dialogue": {
+    "description": "普通熔炉烧矿太慢了。我要个能扛住高温和大批量的高炉。",
+    "accept": "高炉是吧，我让它火力翻倍。",
+    "decline": "高炉这东西我现在搞不定。",
+    "in_progress": "平滑石的内衬必须完美，有一条裂缝压力一大就全完了。",
+    "complete": "烧矿速度顶三台普通熔炉。了不起的工程。"
+  }
+}

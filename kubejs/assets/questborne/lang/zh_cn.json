@@ -4,12 +4,10 @@
   "item.questborne.silver_crate": "白银宝箱",
   "item.questborne.gold_crate": "黄金宝箱",
   "entity.questborne.quest_npc": "任务 NPC",
-
   "questborne.rarity.common": "普通",
   "questborne.rarity.uncommon": "不凡",
   "questborne.rarity.rare": "稀有",
   "questborne.rarity.epic": "史诗",
-
   "questborne.ui.option.turn_in_quests": "我活儿干完了，来交差。",
   "questborne.ui.option.quests": "有活儿干吗？",
   "questborne.ui.option.shop": "有什么好东西卖吗？",
@@ -28,7 +26,6 @@
   "questborne.ui.option.abandon_confirm": "对，放弃。",
   "questborne.ui.option.abandon_cancel": "不，还是留着吧。",
   "questborne.ui.click_continue": "[ 点击继续 ]",
-
   "questborne.ui.rewards": "你将获得以下奖励：",
   "questborne.ui.earned": "你得到了：",
   "questborne.ui.reward_summary": "%s 任务积分，+%s 好感度，还有 %s 经验。",
@@ -45,7 +42,6 @@
   "questborne.ui.cant_afford": "买不起",
   "questborne.ui.abandon_confirm_text": "确定要放弃这个任务吗？所有进度都会消失。",
   "questborne.ui.abandon_done": "任务已放弃。有时候，知难而退也是一种智慧。",
-
   "questborne.journal.active": "进行中的任务",
   "questborne.journal.no_quests": "当前没有进行中的任务。",
   "questborne.journal.hint_line1": "去找营地里",
@@ -55,11 +51,9 @@
   "questborne.journal.quest_points": "任务积分：%s",
   "questborne.journal.reputation": "好感度",
   "questborne.journal.quest_count": "任务：%s/%s",
-
   "questborne.toast.completed": "任务完成！",
   "questborne.toast.expired": "任务已过期",
   "questborne.toast.accepted": "已接取任务",
-
   "questborne.npc.hunter.greeting.sleep.male.1": "*打了个哈欠* ……嗯？哦，是你啊。也不看看现在几点？最好真有急事。",
   "questborne.npc.hunter.greeting.sleep.male.2": "*咕哝* ……我正梦到打猎呢。这大半夜的，你想要啥？",
   "questborne.npc.hunter.greeting.sleep.female.1": "*翻身* ……认真的？月亮还在天上呢。要是没啥正事，我可要生气了。",
@@ -80,7 +74,6 @@
   "questborne.npc.merchant.greeting.sleep.male.2": "*咕哝* ……我刚才在梦里数钱呢，那可是最美妙的梦。你想要啥？",
   "questborne.npc.merchant.greeting.sleep.female.1": "*坐起身* ……你知道我的美容觉值多少钱吗？你肯定付不起。不过，说吧。",
   "questborne.npc.merchant.greeting.sleep.female.2": "*哈欠* ……半夜谈生意？有胆色。我能为你做什么？",
-
   "questborne.npc.hunter.greeting.first.male.1": "看你的样子，应该能打。这地儿可没多少能打的经过。我叫{npc}。",
   "questborne.npc.hunter.greeting.first.male.2": "等等，我没见过你，但你那架势一看就是会打架的。来找活的？",
   "questborne.npc.hunter.greeting.first.female.1": "哟，总算来了个看着不像待宰羔羊的。我是{npc}，让我瞧瞧你的本事。",
@@ -125,7 +118,6 @@
   "questborne.npc.hunter.greeting.legend.female.2": "这片土地上最伟大的女猎手。我深感荣幸。有何吩咐？",
   "questborne.npc.hunter.greeting.legend.female.3": "他们说野地都会为你让路，{player}。我信。",
   "questborne.npc.hunter.greeting.legend.female.4": "要是我有你一半的本事，我死也瞑目了。能为传奇做点啥？",
-
   "questborne.npc.gatherer.greeting.first.male.1": "哎呀，你好。这地方可少见人。我是{npc}，对大地的东西感兴趣吗？",
   "questborne.npc.gatherer.greeting.first.male.2": "哟，有客人。风把你吹来，肯定有缘由。欢迎，朋友。",
   "questborne.npc.gatherer.greeting.first.female.1": "来旅行者了！太好了。我是{npc}，森林一直悄悄跟我说会有人来。",
@@ -170,7 +162,6 @@
   "questborne.npc.gatherer.greeting.legend.female.2": "这片土地上最伟大的采集者。你的来访让我倍感荣幸。",
   "questborne.npc.gatherer.greeting.legend.female.3": "都说连季节都会为了你而改变，{player}。我全都信。",
   "questborne.npc.gatherer.greeting.legend.female.4": "你的名字会被大地传颂好几代。这是大地能给予的最高荣耀。",
-
   "questborne.npc.crafter.greeting.first.male.1": "一看你就是个懂行的。我叫{npc}，我做的东西能用一辈子。",
   "questborne.npc.crafter.greeting.first.male.2": "别乱碰，一半还在冷却呢。我是{npc}，你是来找活的还是来浪费我时间的？",
   "questborne.npc.crafter.greeting.first.female.1": "哟，总算来个知道锤子哪头朝上的。我是{npc}，坐吧。",
@@ -215,7 +206,6 @@
   "questborne.npc.crafter.greeting.legend.female.2": "锻造界的传奇。我连给你递锤子都不够格，但我一定尽力。",
   "questborne.npc.crafter.greeting.legend.female.3": "都说你的双手被炉火祝福过。看了你的作品，{player}，我信。",
   "questborne.npc.crafter.greeting.legend.female.4": "有史以来最伟大的工匠。我的工坊就是你的，一句话的事。",
-
   "questborne.npc.explorer.greeting.first.male.1": "你靴子上沾着远方道路的尘土，我喜欢。我叫{npc}，我知道每条值得走的路。",
   "questborne.npc.explorer.greeting.first.male.2": "旅行者！我一眼就能看出来，你看地平线的眼神不一样。我是{npc}。",
   "questborne.npc.explorer.greeting.first.female.1": "哦，你眼里有股流浪的劲儿。我是{npc}，世界很大很美，我知道最好的地方。",
@@ -260,7 +250,6 @@
   "questborne.npc.explorer.greeting.legend.female.2": "路上的传奇。未来的人会沿着你开辟的足迹前行。我深感荣幸。",
   "questborne.npc.explorer.greeting.legend.female.3": "如果这个世界还有你没看过的角落，{player}，那它大概就不存在。",
   "questborne.npc.explorer.greeting.legend.female.4": "有史以来最伟大的寻路者。孩子们会长大听着你的名字。我确信。",
-
   "questborne.npc.merchant.greeting.first.male.1": "哎呀，有客人。我是{npc}，我这儿的货你找遍别处也没有。",
   "questborne.npc.merchant.greeting.first.male.2": "没见过你，说明你还没在我这儿买过东西。那是个错误，咱们可以纠正。我是{npc}。",
   "questborne.npc.merchant.greeting.first.female.1": "哦，有钱又有好奇心的人——我最喜欢的组合。我是{npc}，你来对地方了。",
@@ -305,7 +294,6 @@
   "questborne.npc.merchant.greeting.legend.female.2": "传奇女商贾。我的店就是你的店——当然，得分点分寸。",
   "questborne.npc.merchant.greeting.legend.female.3": "市场因你一个人的名声而起落，{player}。能为您服务是最大的荣幸。",
   "questborne.npc.merchant.greeting.legend.female.4": "全天下最著名的商人，站在我的小店里。我自豪得不行。",
-
   "questborne.npc.hunter.goodbye.male.1": "在外面机灵点。我就在这儿，需要就来找我。",
   "questborne.npc.hunter.goodbye.male.2": "小心背后，朋友。野地可不会原谅粗心大意。",
   "questborne.npc.hunter.goodbye.male.3": "保持警惕，{player}。我见过太多好手因为松懈送命。",
@@ -346,7 +334,6 @@
   "questborne.npc.merchant.goodbye.female.2": "下次见！记住，没人比我价钱更好——没人。",
   "questborne.npc.merchant.goodbye.female.3": "继续赚你的任务积分，{player}，我包你值。",
   "questborne.npc.merchant.goodbye.female.4": "路上小心，回来时带上鼓鼓的钱袋。我正盯着一批新货呢。",
-
   "questborne.npc.hunter.quest_intro.male.1": "活儿一直有。这地方不清理怪物可不行。这是最近闹得凶的，挑一个吧。",
   "questborne.npc.hunter.quest_intro.male.2": "有的是该宰的畜生。看看哪个你觉得合手。",
   "questborne.npc.hunter.quest_intro.male.3": "我最近在周边侦察了一下，有几个目标要处理。{player}，你看哪个合适。",
@@ -387,7 +374,6 @@
   "questborne.npc.merchant.quest_intro.female.2": "生意不睡觉，我的需求也不睡。这是账本上的事。",
   "questborne.npc.merchant.quest_intro.female.3": "我攒了几笔买卖，需要可靠的人手。{player}，你挑。",
   "questborne.npc.merchant.quest_intro.female.4": "有钱赚，而且我愿意分。来看看有什么要做的。",
-
   "questborne.npc.hunter.quest_accepted.male.1": "有胆识。外面小心点，干完了来找我。",
   "questborne.npc.hunter.quest_accepted.male.2": "好小子。狩猎开始了，别空手回来。",
   "questborne.npc.hunter.quest_accepted.male.3": "你知道该怎么做。压低身子，别出声，干净利落地收尾。",
@@ -428,7 +414,6 @@
   "questborne.npc.merchant.quest_accepted.female.2": "太好了。时间就是钱，别磨蹭。但也不能急到搞砸。",
   "questborne.npc.merchant.quest_accepted.female.3": "挑合同的眼光不错，{player}。干完这票，咱们都赚。",
   "questborne.npc.merchant.quest_accepted.female.4": "算你订下了。我已经把你的成功算进账本了。别让我的账出错。",
-
   "questborne.npc.hunter.shop_intro.male.1": "我路上收了些东西。不算多精贵，但能保你在外面活着。",
   "questborne.npc.hunter.shop_intro.male.2": "有些装备你可能会感兴趣。从想杀我的东西身上扒下来的，质量还行。",
   "questborne.npc.hunter.shop_intro.male.3": "野外求生装备，实战检验过的。每一件都至少救过我一次命，{player}。",
@@ -469,7 +454,6 @@
   "questborne.npc.merchant.shop_intro.female.2": "这边请！今天的货我都是特意为像你这样的人挑选的。",
   "questborne.npc.merchant.shop_intro.female.3": "上等货色，都是我亲手挑的。{player}，随便看，看到满意。",
   "questborne.npc.merchant.shop_intro.female.4": "我最好的东西一直留着，等一个真正懂行的买家——我觉得就是你。",
-
   "questborne.npc.hunter.shop_no_qp.male.1": "你口袋空空啊，朋友。去接几个合同，赚够了积分再来吧。",
   "questborne.npc.hunter.shop_no_qp.male.2": "没东西可以交易？{player}，先出去打几趟猎再说。",
   "questborne.npc.hunter.shop_no_qp.female.1": "你还没赚到任务积分呢。先出去证明自己，再来说装备的事。",
@@ -490,7 +474,6 @@
   "questborne.npc.merchant.shop_no_qp.male.2": "我货架满满，你的余额空空，{player}。把这个解决了咱们再做生意。",
   "questborne.npc.merchant.shop_no_qp.female.1": "先有任务积分，再谈买东西。姑娘我也得养家糊口呀。",
   "questborne.npc.merchant.shop_no_qp.female.2": "我很想帮你，但我不能卖给一分钱都没有的人。赚了分再回来吧。",
-
   "questborne.shop.bronze_crate": "青铜宝箱",
   "questborne.shop.silver_crate": "白银宝箱",
   "questborne.shop.gold_crate": "黄金宝箱",
@@ -508,21 +491,17 @@
   "questborne.ui.accept_failed": "等等——这活儿我好像不能给你。再看看任务板吧。",
   "questborne.ui.turn_in_failed": "嗯，你好像没把东西带齐。带齐了再来吧。",
   "questborne.ui.companion_lost": "§c[任务之旅] §7你的伙伴 §f%s§7 已经离开了。你可以再雇一个同职业的新伙伴。",
-
   "item.questborne.hired_npc": "雇佣的 NPC",
-
   "questborne.ui.option.hire": "来跟我干吧。",
   "questborne.ui.option.hire_yes": "欢迎加入。",
   "questborne.ui.option.hire_no": "算了，再等等吧。",
   "questborne.ui.hire_confirm": "%s 认真考虑了一下你的提议。“你已经证明了自己，我愿意与你并肩。你只要给我找个好地方，有床和我的工位，我就安顿下来。”",
-
   "questborne.ui.option.stay": "待在家里附近。",
   "questborne.ui.option.roam": "随便逛逛吧。",
   "questborne.ui.wander_off": "明白了。我会待在这儿，把周围打理好。",
   "questborne.ui.wander_on": "好主意。我也正好想活动活动。不会走远，放心。",
   "questborne.ui.option.settings": "管理设置。",
   "questborne.ui.unhappy": "我很感激你的邀请，但这样我没法工作。我需要附近有 %s 才能安顿下来。搞定了我就有活给你。",
-
   "questborne.ui.new_quests_dawn": "每天黎明会刷新新的任务。",
   "questborne.ui.npc_title": "%s——%s",
   "questborne.ui.objective.kill": "击杀 %s 只 %s",
@@ -539,7 +518,6 @@
   "questborne.ui.banner.quest_accepted": "已接取任务！",
   "questborne.ui.banner.quest_abandoned": "任务已放弃",
   "questborne.ui.banner.quest_complete": "任务完成！",
-
   "questborne.ui.settings_title": "NPC 设置",
   "questborne.ui.settings.wander_radius": "游荡半径：",
   "questborne.ui.settings.name_tag": "名称标签：",
@@ -558,7 +536,6 @@
   "questborne.ui.option.dismiss_yes": "对，你自由了。",
   "questborne.ui.option.dismiss_no": "算了，留下吧。",
   "questborne.ui.dismiss_done": "这阵子很荣幸。你多保重。",
-
   "questborne.ui.settings.dismiss_question": "解雇这个 NPC？",
   "questborne.ui.settings.dismiss_flavor": "他们会返回野地。",
   "questborne.ui.settings.dismiss_confirm": "解雇",
@@ -569,10 +546,8 @@
   "questborne.ui.wander.far": "远（16）",
   "questborne.ui.wander.roam": "漫游（32）",
   "questborne.ui.npc_wake": "你把 NPC 吵醒了。现在可以使唤他们了。",
-
   "key.questborne.open_journal": "打开任务日志",
   "key.categories.questborne": "任务之旅",
-
   "subtitles.questborne.quest_accept": "任务已接取",
   "subtitles.questborne.quest_abandon": "任务已放弃",
   "subtitles.questborne.quest_complete": "任务完成",

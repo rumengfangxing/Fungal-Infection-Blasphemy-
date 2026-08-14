@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_wither_skeleton_skulls",
+  "npc_type": "gatherer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:wither_skeleton_skull",
+      "count": {
+        "min": 1,
+        "max": 2
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 200
+  },
+  "dialogue": {
+    "description": "凋灵骷髅头颅，下界最危险的骷髅的最稀有掉落。炭化的骨头，黑如夜。我收集它们作为……战利品。还有其他最好不讨论的用途。",
+    "accept": "那些高大黑暗的骷髅吓不倒我。",
+    "decline": "凋灵骷髅超出我的能力范围。",
+    "in_progress": "掉率很糟糕，我知道。但时运附魔的剑有帮助。继续在那些要塞走廊里努力。",
+    "complete": "一个凋灵骷髅头颅！你知道这些有多稀有吗？大多数猎手花好几天都空手而归。你有传说的运气，朋友。这是非凡的。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_any_logs",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain_tag",
+      "tag": "minecraft:logs",
+      "count": {
+        "min": 32,
+        "max": 64
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "我们需要木材，而且很急。什么木头都行。橡木、桦木、云杉，你能弄到什么就弄什么。",
+    "accept": "我开始砍了。",
+    "decline": "找别的樵夫吧。",
+    "in_progress": "我能听到远处树倒的声音。继续！",
+    "complete": "一批好木材！营地的框架会因为你而结实。"
+  }
+}

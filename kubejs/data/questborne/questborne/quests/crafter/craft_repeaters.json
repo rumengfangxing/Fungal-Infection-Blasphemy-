@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_repeaters",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:repeater",
+      "count": 16,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 38,
+    "reputation": 9,
+    "bonus_xp": 130
+  },
+  "dialogue": {
+    "description": "通讯塔需要红石中继器。红石火把放在石板上，调校到能增强和转发远距离信号。",
+    "accept": "给塔带中继器来，要能让信号一直强劲。",
+    "decline": "红石中继器需要比我现在更集中精力。",
+    "in_progress": "每个中继器出厂时延迟设置必须一致。一致性是信号链的关键。",
+    "complete": "信号干净增强，零损耗。通讯塔能覆盖领地的每个角落。"
+  }
+}

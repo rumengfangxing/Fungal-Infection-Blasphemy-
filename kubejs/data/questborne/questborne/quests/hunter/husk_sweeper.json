@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/husk_sweeper",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:husk",
+      "count": {
+        "min": 6,
+        "max": 12
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 13,
+    "reputation": 3,
+    "bonus_xp": 38
+  },
+  "dialogue": {
+    "description": "沙漠尸壳正在向定居点迁移。它们的饥饿诅咒让它们比普通亡灵更糟。消灭它们。",
+    "accept": "沙漠亡灵？我有正好对付它们的剑。",
+    "decline": "靴子里的沙子真的不是我的菜。",
+    "in_progress": "沙漠之风仍然携带着它们的呻吟。还有更多工作要做。",
+    "complete": "沙漠现在安静了。你在外面处理得不错。"
+  }
+}

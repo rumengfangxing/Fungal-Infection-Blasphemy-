@@ -1,0 +1,29 @@
+{
+  "id": "questborne:explorer/visit_nether",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "requires": "questborne:explorer/find_village",
+  "reputation_required": 100,
+  "repeatable": false,
+  "cooldown": "0h",
+  "time_limit": "none",
+  "objectives": [
+    {
+      "type": "visit_dimension",
+      "target": "minecraft:the_nether",
+      "count": 1
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 12,
+    "bonus_xp": 150
+  },
+  "dialogue": {
+    "description": "他们说我们脚下有一个火与硫磺的领域，一个叫下界的地狱景象。建一座传送门，走进去，活着回来讲述这个故事。",
+    "accept": "我首先需要一些黑曜石。",
+    "decline": "我还没准备好。",
+    "in_progress": "还没穿过去？你需要一座黑曜石做的传送门。用打火石点亮它。",
+    "complete": "你去过下界并活了下来！没多少人能这么说。你的勇气非凡。"
+  }
+}

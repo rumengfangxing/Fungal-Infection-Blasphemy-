@@ -1,0 +1,49 @@
+{
+  "id": "questborne:explorer/dimensional_collector",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:dragon_breath",
+      "count": {
+        "min": 3,
+        "max": 5
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:nether_star",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:heart_of_the_sea",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 150,
+    "reputation": 25,
+    "bonus_xp": 800
+  },
+  "dialogue": {
+    "description": "最稀有的宝藏横跨三个维度。来自末地的龙息、来自凋灵的下界之星、来自埋藏宝藏的海洋之心。集齐三样，证明你的统治力。",
+    "accept": "三个维度，三样传奇宝藏！这是终极收藏家的挑战。我会征服它们全部！",
+    "decline": "那是世界上三个最危险挑战的组合。我需要更多时间。",
+    "in_progress": "末影龙的龙息、凋灵的下界之星、藏宝图里的海洋之心。每一件本身就是一个任务。合在一起，它们就是传奇。",
+    "complete": "龙息、下界之星和海洋之心！你手中握着所有三个维度的精华！历史上没有探险家能匹敌这一壮举。你真的是传奇！"
+  }
+}

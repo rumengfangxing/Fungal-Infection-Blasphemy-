@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/cookie_crate",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:cookie",
+      "count": {
+        "min": 32,
+        "max": 64
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 4,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "儿童节快到了，镇上每个父母都想要饼干。帮我送货，我们五五分账。好吧，六四。对我有利。生意就是生意。",
+    "accept": "我会为节日烤些饼干。",
+    "decline": "我是个冒险者，不是面包师。",
+    "in_progress": "节日快到了！我不能空手面对那些孩子！",
+    "complete": "光是味道就值千金！父母们会排队的。这是你的百分之四十。一言为定。"
+  }
+}

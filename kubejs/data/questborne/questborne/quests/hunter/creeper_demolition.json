@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/creeper_demolition",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:creeper",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 20,
+    "reputation": 5,
+    "bonus_xp": 60
+  },
+  "dialogue": {
+    "description": "据说地下有个苦力怕巢。爆炸在村子附近造成天坑。我需要一个勇敢的灵魂来清理掉整个地方。",
+    "accept": "苦力怕巢？危险，但我加入。",
+    "decline": "我喜欢我身体的所有部件都在。坚决不。",
+    "in_progress": "地面还在震动。那个巢还没空。",
+    "complete": "你完整地回来了！我其实挺惊讶的。这报酬你挣得值。"
+  }
+}

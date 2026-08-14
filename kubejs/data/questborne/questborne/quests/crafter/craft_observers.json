@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_observers",
+  "npc_type": "crafter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:observer",
+      "count": 6,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 10,
+    "bonus_xp": 160
+  },
+  "dialogue": {
+    "description": "安保团队需要侦测器来搭警戒线警报系统——石英传感器嵌在圆石里、用红石布线的那种。精细活儿。",
+    "accept": "给警报系统带侦测器来，要能捕捉每一次动静。",
+    "decline": "红石精密活儿需要比我现在更稳的手。",
+    "in_progress": "石英传感器必须朝外，不能被遮挡。挡住了它就是块贵石头。",
+    "complete": "每一个都会在方块发生最微小的变化时触发。警戒线将固若金汤。"
+  }
+}

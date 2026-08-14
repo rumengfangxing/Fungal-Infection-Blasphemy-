@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/gather_nether_wart",
+  "npc_type": "gatherer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:nether_wart",
+      "count": {
+        "min": 16,
+        "max": 24
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 25,
+    "reputation": 6,
+    "bonus_xp": 75
+  },
+  "dialogue": {
+    "description": "每一瓶值得酿造的药剂都始于下界疣。它长在要塞楼梯间的灵魂沙上，深红色的、疣状的、闻起来像硫磺。不令人愉快，但必不可少。",
+    "accept": "我会突袭一个要塞花园。",
+    "decline": "要塞是自杀式行动。",
+    "in_progress": "下界要塞很危险，我知道。但在酿造中没有下界疣的替代品。仍然指望着你。",
+    "complete": "下界疣那毫无疑问的臭味！闻起来难闻，酿起来好用。营地里的每个药水制造者都会欠你一份人情。好工作。"
+  }
+}

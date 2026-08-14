@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/disc_fragment_recovery",
+  "npc_type": "merchant",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:disc_fragment_5",
+      "count": {
+        "min": 9,
+        "max": 9
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 75,
+    "reputation": 17,
+    "bonus_xp": 350
+  },
+  "dialogue": {
+    "description": "九个唱片碎片。拼在一起，它们形成音乐唱片 5，一段来自远古城市的录音，几个世纪以来没有活人听过。一位博物馆馆长拿出了她的全部捐赠基金换一套完整的。",
+    "accept": "我会找回全部九个碎片。",
+    "decline": "远古城市是死刑。",
+    "in_progress": "九个碎片散落在深暗之域。监守者嫉妒地守护着它们。但馆长的出价是非凡的。",
+    "complete": "全部九个碎片！它们拼在一起将形成现存最神秘的录音。馆长会重写历史书。而我们也会重写我们的银行余额。"
+  }
+}

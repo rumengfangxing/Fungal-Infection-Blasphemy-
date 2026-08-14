@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/saddle_collection",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:saddle",
+      "count": {
+        "min": 3,
+        "max": 5
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 38,
+    "reputation": 9,
+    "bonus_xp": 130
+  },
+  "dialogue": {
+    "description": "一个骑兵团需要马鞍，正经的，不是农夫用的那种易坏东西。马鞍不能制作，这使它们稀缺，这使它们有利可图。在你能找到的任何地方找。",
+    "accept": "我会追踪马鞍。",
+    "decline": "马鞍太稀有了不能放手。",
+    "in_progress": "地牢、要塞、钓鱼，马鞍在奇怪的地方出现。继续找！",
+    "complete": "好马鞍，每一个！骑兵指挥官会为他的最佳骑手配备。而我也会装备我的钱柜。出色的采购。"
+  }
+}

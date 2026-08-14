@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/blaze_runner",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:blaze",
+      "count": {
+        "min": 6,
+        "max": 12
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 32,
+    "reputation": 7,
+    "bonus_xp": 95
+  },
+  "dialogue": {
+    "description": "我需要烈焰棒做特殊项目，但我太老了不能自己勇闯要塞。进去干掉一些烈焰人。建议带抗火药水。",
+    "accept": "下界要塞跑？来吧。",
+    "decline": "反复被点燃不吸引我。",
+    "in_progress": "还没棒？要塞里的烈焰人不会自己猎自己。",
+    "complete": "你闻起来像硫磺和胜利。这些棒完美。"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_any_wool",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain_tag",
+      "tag": "minecraft:wool",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 6,
+    "reputation": 2,
+    "bonus_xp": 40
+  },
+  "dialogue": {
+    "description": "营地需要保暖和床上用品。给我带羊毛来，什么颜色都行，我不挑剔。只要量够就行。",
+    "accept": "我去拿剪刀。",
+    "decline": "今天不行。",
+    "in_progress": "羊毛弄到了吗？夜里越来越冷了。",
+    "complete": "就是这个！今晚每个人都有温暖的床。干得好。"
+  }
+}

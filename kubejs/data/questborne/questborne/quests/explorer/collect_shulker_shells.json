@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/collect_shulker_shells",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:shulker_shell",
+      "count": {
+        "min": 4,
+        "max": 6
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 78,
+    "reputation": 18,
+    "bonus_xp": 400
+  },
+  "dialogue": {
+    "description": "潜影贝用悬浮弹守卫着末地城。击败它们并夺取它们的壳——它们能合成每个探险家都梦想携带的盒子。",
+    "accept": "潜影壳做便携储物！每个探险家都需要潜影盒。我要突袭末地城！",
+    "decline": "末地城和潜影贝超出了我目前的能力。",
+    "in_progress": "末地城耸立在外部岛屿的虚空之上。潜影贝藏在墙壁里，带盾牌和远程武器！",
+    "complete": "潜影壳！把它们做成潜影盒，你在路上再也不会担心背包空间不够了。终极探险家行李！"
+  }
+}

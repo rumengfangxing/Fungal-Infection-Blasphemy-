@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_sugar_cane",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:sugar_cane",
+      "count": {
+        "min": 24,
+        "max": 40
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 6,
+    "reputation": 2,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "我一直在实验造纸和精炼糖。两者都需要甘蔗，而我用完了最后一批。那东西长在河边，高高的绿色芦苇，不会错过的。",
+    "accept": "我去河边看看。",
+    "decline": "现在不行。",
+    "in_progress": "我的造纸机没有甘蔗一直在积灰。在水边找到了吗？",
+    "complete": "好收获！脆脆的、高挑的茎秆，这些是完美的。一半造纸一半制糖。甜蜜的买卖，你说呢？"
+  }
+}

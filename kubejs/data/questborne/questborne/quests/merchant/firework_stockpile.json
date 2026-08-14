@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/firework_stockpile",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:firework_rocket",
+      "count": {
+        "min": 32,
+        "max": 64
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 22,
+    "reputation": 5,
+    "bonus_xp": 65
+  },
+  "dialogue": {
+    "description": "国王的生日庆典在两周后，每个镇都需要烟花。我多年前就垄断了节日用品市场。现在我只是需要库存来支撑它。",
+    "accept": "我会准备烟花。",
+    "decline": "对我来说太易爆了。",
+    "in_progress": "没有烟花意味着没有节日。没有节日意味着愤怒的镇民。愤怒的镇民意味着对生意不好！",
+    "complete": "它们会照亮天空！每个镇广场都会庆祝，每一枚硬币都会流向我们。壮观！"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/magma_cube_crusher",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:magma_cube",
+      "count": {
+        "min": 15,
+        "max": 25
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 38,
+    "reputation": 8,
+    "bonus_xp": 110
+  },
+  "dialogue": {
+    "description": "玄武岩三角洲爬满了岩浆怪。弹跳、燃烧、分裂成更小的燃烧碎片。我需要清理这个区域以便安全通过。",
+    "accept": "弹跳的熔岩块？我会压扁每一个。",
+    "decline": "会燃烧又会繁殖的东西？我退出。",
+    "in_progress": "还在外面弹跳。记住，大的会分裂成小的。",
+    "complete": "三角洲现在可以通行了。我的靴子谢谢你，我的钱包也是。"
+  }
+}

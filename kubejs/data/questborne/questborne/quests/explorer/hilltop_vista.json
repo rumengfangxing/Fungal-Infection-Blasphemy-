@@ -1,0 +1,27 @@
+{
+  "id": "questborne:explorer/hilltop_vista",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "travel_distance",
+      "target": "minecraft:air",
+      "count": 1500
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 4,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "我听说东边的山丘那边有壮丽的景色。徒步去再回来——一千五百格应该能让你看到好风景。",
+    "accept": "一千五百格看美景？算我一个——我喜欢好全景！",
+    "decline": "我今天没有心情做那种徒步。下次吧。",
+    "in_progress": "你还没回来？好！那说明你还在探索。翻过那些山丘！",
+    "complete": "你脸上的表情说明了一切。站在山顶上，整个世界在你面前展开，没有什么能比得上。"
+  }
+}

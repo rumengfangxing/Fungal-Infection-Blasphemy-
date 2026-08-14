@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_boats",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:oak_boat",
+      "count": 6,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 3,
+    "bonus_xp": 55
+  },
+  "dialogue": {
+    "description": "渔民需要新船，旧的都烂穿了。给他们带些不会半路沉底的来。",
+    "accept": "要能扛得住任何风浪的那种船。",
+    "decline": "造船这活儿比我现在能承担的要多。",
+    "in_progress": "每处接缝都要仔细密封。漏水船在开阔水域就是催命符。",
+    "complete": "不漏水，平衡好。这些船够渔民使唤好一阵子了。好手艺！"
+  }
+}

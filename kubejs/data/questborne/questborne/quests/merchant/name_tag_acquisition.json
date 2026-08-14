@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/name_tag_acquisition",
+  "npc_type": "merchant",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:name_tag",
+      "count": {
+        "min": 3,
+        "max": 5
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 85
+  },
+  "dialogue": {
+    "description": "牧场主、马厩主人、宠物收藏家，谁都想要命名牌，而且没人能制作它们。那使它们稀有，而稀有意味着有价值。找一些来，我会让你觉得值得。",
+    "accept": "我会追踪一些命名牌。",
+    "decline": "它们太难找了。",
+    "in_progress": "地牢、矿井、钓鱼，总有办法找到命名牌。我相信你的机智！",
+    "complete": "命名牌！你知道牧场主为这些付多少吗？它们也不知道，直到我定价。出色的工作。"
+  }
+}

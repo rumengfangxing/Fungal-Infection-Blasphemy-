@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/breed_bees",
+  "npc_type": "explorer",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:bee",
+      "count": {
+        "min": 3,
+        "max": 5
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 85
+  },
+  "dialogue": {
+    "description": "蜜蜂是每一片草地的无名英雄。没有它们，花朵凋零，庄稼欠收。用花来繁殖它们，帮助荒野繁荣。",
+    "accept": "蜜蜂真迷人！我会找些蜂巢，用花帮助蜂群壮大。",
+    "decline": "被蜇不在我今天的计划里。算了。",
+    "in_progress": "拿一朵花靠近蜜蜂，它们会像小狗一样跟着你。只是别惹恼它们——没人想要一群愤怒的蜜蜂！",
+    "complete": "健康蜂群的嗡嗡声！你帮整个生态系统做了件大好事。蜜蜂让世界花开不断，而现在它们更多了，因为你。"
+  }
+}

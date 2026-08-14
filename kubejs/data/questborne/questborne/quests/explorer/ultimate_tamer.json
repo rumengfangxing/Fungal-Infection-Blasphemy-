@@ -1,0 +1,46 @@
+{
+  "id": "questborne:explorer/ultimate_tamer",
+  "npc_type": "explorer",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "tame",
+      "entity": "minecraft:wolf",
+      "count": {
+        "min": 5,
+        "max": 8
+      }
+    },
+    {
+      "type": "tame",
+      "entity": "minecraft:cat",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    },
+    {
+      "type": "tame",
+      "entity": "minecraft:parrot",
+      "count": {
+        "min": 2,
+        "max": 3
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 110,
+    "reputation": 22,
+    "bonus_xp": 550
+  },
+  "dialogue": {
+    "description": "最伟大的探险家带着一个动物集合出行。驯服狼来保护，猫来陪伴，鹦鹉来预警。建立终极伙伴大军！",
+    "accept": "一整支驯服伙伴的动物集合！狼、猫和鹦鹉——我需要成堆的骨头、鱼和种子！",
+    "decline": "跨多个物种驯服那么多动物是一项艰巨的任务。我会先做更多准备。",
+    "in_progress": "森林找狼，村庄找猫，丛林找鹦鹉。你必须走遍四方来建立你的动物集合。一个传奇探险家的随行队伍！",
+    "complete": "一群狼、一群猫和一群鹦鹉！你像荒野之王一样旅行！没有探险家曾指挥过如此忠诚的追随者。传奇！"
+  }
+}

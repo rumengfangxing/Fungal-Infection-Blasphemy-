@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_coal",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:coal",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "火把不会自己亮，朋友。我需要煤，一大堆。营地附近的隧道都黑了，我这把老骨头整天挥镐子可受不了。",
+    "accept": "我去挖些来。",
+    "decline": "现在没兴趣。",
+    "in_progress": "还在等那煤。没有火把在下面伸手不见五指。",
+    "complete": "啊，新鲜煤的味道！今晚这些老矿会被好好点亮。你干活的手艺不错。"
+  }
+}

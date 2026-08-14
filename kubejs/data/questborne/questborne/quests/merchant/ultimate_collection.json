@@ -1,0 +1,49 @@
+{
+  "id": "questborne:merchant/ultimate_collection",
+  "npc_type": "merchant",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:nether_star",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:heart_of_the_sea",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:totem_of_undying",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 130,
+    "reputation": 22,
+    "bonus_xp": 700
+  },
+  "dialogue": {
+    "description": "收藏家，一个口袋深不见底的人，想要一颗下界之星、一颗海洋之心和一个不死图腾。他称之为力量三件套。我称之为利润三件套。",
+    "accept": "我会收集全部三件传奇物品。",
+    "decline": "那是三个不可能任务一次。",
+    "in_progress": "凋灵、海洋深处、林地府邸。三个试炼换三件宝藏。收藏家在等完整的套装。",
+    "complete": "力量三件套， 集齐了！收藏家会说不出话，对于一个从不停止谈论他收藏的人来说那很了不起。这是我撮合过的最伟大的交易。"
+  }
+}

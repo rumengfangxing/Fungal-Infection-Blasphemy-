@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_dragon_breath",
+  "npc_type": "gatherer",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:dragon_breath",
+      "count": {
+        "min": 3,
+        "max": 5
+      },
+      "consume": false
+    }
+  ],
+  "rewards": {
+    "quest_points": 80,
+    "reputation": 18,
+    "bonus_xp": 400
+  },
+  "dialogue": {
+    "description": "龙息，从末影龙的酸液攻击中装瓶。你需要空玻璃瓶和钢铁神经。当那条龙在上方盘旋时，在黑曜石平台上收集紫色粒子。",
+    "accept": "我会把龙的怒火装瓶。",
+    "decline": "离龙那么近是疯了。",
+    "in_progress": "等龙落下并吐出酸雾。然后跑进去用瓶子。手快、心稳。你能行的。",
+    "complete": "旋转的紫色怒火，被捕捉在玻璃里！龙息是滞留药水的唯一原料，区域效果炼金。你站在一条龙下面并装瓶了它的怒火。我由衷敬畏。"
+  }
+}

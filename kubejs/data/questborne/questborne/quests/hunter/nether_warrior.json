@@ -1,0 +1,37 @@
+{
+  "id": "questborne:hunter/nether_warrior",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "requires": "questborne:hunter/spider_exterminator",
+  "reputation_required": 300,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:blaze",
+      "count": {
+        "min": 10,
+        "max": 15
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 50,
+    "reputation": 12,
+    "bonus_xp": 150,
+    "items": [
+      {
+        "item": "minecraft:blaze_rod",
+        "count": 4
+      }
+    ]
+  },
+  "dialogue": {
+    "description": "我听说过下面那个地狱领域里的火焰精灵的传说。带证据证明你杀了 15 个烈焰人，我会付老手的工资。",
+    "accept": "我会勇敢面对烈火。",
+    "decline": "下界可以等。",
+    "in_progress": "从下界回来了吗？那些烈焰人不会自己杀自己。",
+    "complete": "十五个烈焰人！光是热度就能杀死一个较弱的战士。你挣的远不止这个。"
+  }
+}

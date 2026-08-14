@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/spider_nest",
+  "npc_type": "hunter",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:spider",
+      "count": {
+        "min": 8,
+        "max": 14
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 12,
+    "reputation": 3,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "在老矿井里发现了一个蜘蛛巢。到处都是蛛网，每天孵蛋。在它们扩散到地表之前烧掉它。",
+    "accept": "蜘蛛？恶心，但我会处理它们。",
+    "decline": "八条腿对我来说大约多了七条。",
+    "in_progress": "我仍然能看到蛛网横跨矿井入口。还没完。",
+    "complete": "矿井干净了。勇敢的工作，大多数人不会靠近那东西。"
+  }
+}

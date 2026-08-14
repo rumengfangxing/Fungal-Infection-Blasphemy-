@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/nether_star_deal",
+  "npc_type": "merchant",
+  "rarity": "epic",
+  "reputation_required": 1000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:nether_star",
+      "count": {
+        "min": 1,
+        "max": 1
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 120,
+    "reputation": 22,
+    "bonus_xp": 600
+  },
+  "dialogue": {
+    "description": "一颗下界之星，只由凋灵本身掉落。海对岸的一位皇帝想要它做他的信标塔，他的报价信单独就用了四个人来搬。毕生难遇的交易。",
+    "accept": "我会杀死凋灵并夺取它的星。",
+    "decline": "凋灵超出了我的能力。",
+    "in_progress": "我知道凋灵很可怕。但想想奖励！一位皇帝的黄金在等着！",
+    "complete": "一颗下界之星！我在这行几十年了从没亲手拿过一个。皇帝会建他的信标，而我们也会建造我们的财富。传奇工作。"
+  }
+}

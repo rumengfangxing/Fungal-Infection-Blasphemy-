@@ -1,0 +1,31 @@
+{
+  "id": "questborne:gatherer/bring_wheat",
+  "npc_type": "gatherer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:wheat",
+      "count": {
+        "min": 32,
+        "max": 48
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 6,
+    "reputation": 2,
+    "bonus_xp": 35
+  },
+  "dialogue": {
+    "description": "营地里肚子在咕咕叫。动物需要饲料，我们需要面包。一大捆小麦能解决两个问题。什么农场都行，只要把它带回来，金黄的、干燥的。",
+    "accept": "我去田里看看。",
+    "decline": "我不是农夫。",
+    "in_progress": "肚子叫得比夜里的僵尸还响了。小麦呢？",
+    "complete": "金黄的麦穗，熟透了！我都能闻到面包的味道了。营地谢谢你，我那咕咕叫的肚子也谢谢你。"
+  }
+}

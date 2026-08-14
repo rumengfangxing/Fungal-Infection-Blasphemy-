@@ -1,0 +1,31 @@
+{
+  "id": "questborne:explorer/gather_flowers",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:poppy",
+      "count": {
+        "min": 10,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 3,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "每年的这个时候平原上都开满了红色虞美人。给我采一束来——我用它们标记小路，让其他旅行者能找到路。",
+    "accept": "虞美人做路标？真聪明！我去田里摘一束。",
+    "decline": "采花不是我的风格。算了。",
+    "in_progress": "继续在平原和草地上找。一旦开始找，虞美人到处都是！",
+    "complete": "漂亮的一束！这些鲜红的花会引导许多迷路的灵魂回到正路。大自然自己的路标。"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "questborne:hunter/fortress_cleanse",
+  "npc_type": "hunter",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:wither_skeleton",
+      "count": {
+        "min": 6,
+        "max": 10
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:blaze",
+      "count": {
+        "min": 6,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 11,
+    "bonus_xp": 180
+  },
+  "dialogue": {
+    "description": "我需要下界要塞的一个完整区域被扫干净。凋灵骷髅和烈焰人都有。别让任何东西留在那些走廊里。",
+    "accept": "完整要塞清扫？我会清理每一条走廊。",
+    "decline": "那听起来像是一场包裹在火里的自杀任务。",
+    "in_progress": "要塞仍然闪烁着烈焰人的火光，回响着焦骨的声音。继续。",
+    "complete": "一整翼被清理了。没有守卫者，要塞在颤抖。传奇工作。"
+  }
+}

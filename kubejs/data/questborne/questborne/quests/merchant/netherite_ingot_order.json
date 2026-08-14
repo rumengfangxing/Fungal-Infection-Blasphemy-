@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/netherite_ingot_order",
+  "npc_type": "merchant",
+  "rarity": "epic",
+  "reputation_required": 2000,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:netherite_ingot",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 150,
+    "reputation": 25,
+    "bonus_xp": 800
+  },
+  "dialogue": {
+    "description": "下界合金，现存最稀有的金属。一位传奇铁匠想要为预言中的英雄打造盔甲，他的付款是惊人的。远古残骸，熔炼并合金。你能送达吗？",
+    "accept": "我会从深处锻造下界合金锭。",
+    "decline": "下界合金太珍贵了不能放手。",
+    "in_progress": "下界最深处隐藏着远古残骸。开采它、熔炼它、再用金合成合金。铁匠在等待终极材料。",
+    "complete": "下界合金锭！每一块比一栋房子还值钱。铁匠会创造一件杰作，而这笔交易将被传颂几个世纪。你真的传奇。"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/wither_skeleton_hunt",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:wither_skeleton",
+      "count": {
+        "min": 8,
+        "max": 12
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 45,
+    "reputation": 10,
+    "bonus_xp": 170
+  },
+  "dialogue": {
+    "description": "凋灵骷髅在下界要塞的走廊里潜行——高大、黑暗、致命。它们的凋零触碰会吸干任何靠得太近的人的生命。猎杀它们。",
+    "accept": "凋灵骷髅很可怕，但必须有人削减它们的数量。我会清理那些走廊！",
+    "decline": "凋零效果是我现在宁愿避免的。",
+    "in_progress": "待在要塞走廊里，它们会来找你。盾牌举好——它们的石剑打得很重，凋零效果很凶狠。",
+    "complete": "你杀死了凋灵骷髅！很少有人敢正面面对它们。多亏了你的勇敢，要塞安全了一些，老练探险家。"
+  }
+}

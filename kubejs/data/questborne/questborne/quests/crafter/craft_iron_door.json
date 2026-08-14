@@ -1,0 +1,28 @@
+{
+  "id": "questborne:crafter/craft_iron_door",
+  "npc_type": "crafter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:iron_door",
+      "count": 4,
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 35,
+    "reputation": 8,
+    "bonus_xp": 100
+  },
+  "dialogue": {
+    "description": "金库需要加固门。纯铁打造，厚重结实，合页要经得起暴力破拆。安全就靠这扇门了。",
+    "accept": "给金库带铁门来。什么都别想穿过这扇门。",
+    "decline": "这么重的铁活儿我今天没力气。",
+    "in_progress": "铁板要捶打得厚度均匀。薄的地方就是弱点，贼最会挑地方下手。",
+    "complete": "实心铁，厚度一致。这扇门能挡住横冲直撞的劫掠兽。金库安全了。"
+  }
+}

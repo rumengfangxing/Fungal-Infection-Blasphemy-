@@ -1,0 +1,40 @@
+{
+  "id": "questborne:merchant/brewing_ingredient_bundle",
+  "npc_type": "merchant",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:nether_wart",
+      "count": {
+        "min": 16,
+        "max": 32
+      },
+      "consume": true
+    },
+    {
+      "type": "obtain",
+      "item": "minecraft:blaze_rod",
+      "count": {
+        "min": 4,
+        "max": 8
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 48,
+    "reputation": 11,
+    "bonus_xp": 180
+  },
+  "dialogue": {
+    "description": "我在组装酿造新手套装，下界疣和烈焰棒打包在一起。每个有抱负的炼金师都想要一个。下界很危险，但利润率更危险。危险地高，那就是。",
+    "accept": "我会收集下界材料。",
+    "decline": "下界不值得任何利润。",
+    "in_progress": "下界要塞里同时有下界疣和烈焰人。一石二鸟，一块可怕的石头。继续努力！",
+    "complete": "一套完整的酿造新手套装！炼金师公会会立刻抢购。你的下界生存技能真的令人印象深刻。"
+  }
+}

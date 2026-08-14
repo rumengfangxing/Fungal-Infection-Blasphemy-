@@ -1,0 +1,31 @@
+{
+  "id": "questborne:merchant/egg_delivery",
+  "npc_type": "merchant",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "obtain",
+      "item": "minecraft:egg",
+      "count": {
+        "min": 16,
+        "max": 16
+      },
+      "consume": true
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 2,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "镇对面的面包师明天需要鸡蛋做节日蛋糕。她付我溢价，如果你能按时送达我愿意分享利润。",
+    "accept": "我会带鸡蛋来。小心地。",
+    "decline": "对我来说太易碎了。",
+    "in_progress": "请告诉我你没把它们全打碎。面包师会要我的头！",
+    "complete": "一个都没碎！你有比大多数人更稳的手。面包师送来她的感谢，我送来硬币。"
+  }
+}

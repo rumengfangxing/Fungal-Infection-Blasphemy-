@@ -1,0 +1,30 @@
+{
+  "id": "questborne:hunter/vindicator_strike",
+  "npc_type": "hunter",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:vindicator",
+      "count": {
+        "min": 5,
+        "max": 10
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 30,
+    "reputation": 7,
+    "bonus_xp": 85
+  },
+  "dialogue": {
+    "description": "卫道士是灾厄村民部队中持斧头的肌肉。快速、野蛮、无情。它们一直在林地道路上伏击巡逻队。终结它们的统治。",
+    "accept": "斧头疯子？我会让它们看看真正的战士是什么样的。",
+    "decline": "那东西会朝你冲刺而来。我选择生命。",
+    "in_progress": "林地道路仍然危险。更多卫道士潜伏在府邸里。",
+    "complete": "它们的斧头在你的反击下已经钝了。大师级工作。"
+  }
+}

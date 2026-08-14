@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/breed_axolotl",
+  "npc_type": "explorer",
+  "rarity": "rare",
+  "reputation_required": 600,
+  "repeatable": true,
+  "cooldown": "7d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:axolotl",
+      "count": {
+        "min": 2,
+        "max": 4
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 10,
+    "bonus_xp": 150
+  },
+  "dialogue": {
+    "description": "美西螈潜伏在地下最深最暗的水池里——可爱的两栖动物，凶猛猎手。找到它们、抓住它们、用热带鱼繁殖它们。",
+    "accept": "美西螈！那些可爱的水下捕食者。我会深潜找一对来繁殖。",
+    "decline": "在深暗水域找美西螈听起来现在太危险了。",
+    "in_progress": "美西螈在水下洞穴生成。你需要桶装热带鱼来繁殖。在那片黑暗水域里耐心是关键。",
+    "complete": "美西螈宝宝！它们可爱得不真实，对吧？这些小捕食者会长成深海的凶猛卫士。稀有的繁殖成功！"
+  }
+}

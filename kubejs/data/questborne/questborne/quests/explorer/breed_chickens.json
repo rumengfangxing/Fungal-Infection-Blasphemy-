@@ -1,0 +1,30 @@
+{
+  "id": "questborne:explorer/breed_chickens",
+  "npc_type": "explorer",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "breed",
+      "entity": "minecraft:chicken",
+      "count": {
+        "min": 4,
+        "max": 6
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 8,
+    "reputation": 3,
+    "bonus_xp": 30
+  },
+  "dialogue": {
+    "description": "鸡可能不是最光彩照人的生物，但它们的蛋救过很多旅行者在路上的饥饿。帮一个本地鸡舍扩大规模吧。",
+    "accept": "鸡是吧！我有种子可以分——让这个鸡舍热闹起来。",
+    "decline": "我现在不想跟羽毛和咯咯叫打交道。",
+    "in_progress": "鸡那边怎么样了？那玩意儿一旦开始繁殖快得吓人！",
+    "complete": "太好了！那个鸡舍现在生机勃勃。每个人都能吃上新鲜鸡蛋了——包括我们这些疲惫的旅人！"
+  }
+}
