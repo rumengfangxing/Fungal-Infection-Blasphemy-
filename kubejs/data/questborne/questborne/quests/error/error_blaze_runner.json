@@ -1,0 +1,30 @@
+{
+  "id": "questborne:error/error_blaze_runner",
+  "npc_type": "error",
+  "rarity": "uncommon",
+  "reputation_required": 200,
+  "repeatable": true,
+  "cooldown": "5d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:blaze",
+      "count": {
+        "min": 6,
+        "max": 12
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 32,
+    "reputation": 7,
+    "bonus_xp": 95
+  },
+  "dialogue": {
+    "description": "测试文本",
+    "accept": "测试文本",
+    "decline": "测试文本",
+    "in_progress": "测试文本",
+    "complete": "测试文本"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "error",
+  "display_name": "ERROR",
+  "texture_namespace": "questborne",
+  "workstation": "minecraft:smithing_table",
+  "male_names": [
+    "测试男一",
+    "测试男二",
+    "测试男三",
+    "测试男四",
+    "测试男五"
+  ],
+  "female_names": [
+    "测试女一",
+    "测试女二",
+    "测试女三",
+    "测试女四",
+    "测试女五"
+  ],
+  "skin_variants": 1,
+  "icon": "minecraft:bow",
+  "natural_spawn": false
+}

@@ -1,0 +1,38 @@
+{
+  "id": "questborne:error/error_swamp_patrol",
+  "npc_type": "error",
+  "rarity": "common",
+  "reputation_required": 0,
+  "repeatable": true,
+  "cooldown": "3d",
+  "objectives": [
+    {
+      "type": "kill",
+      "target": "minecraft:slime",
+      "count": {
+        "min": 6,
+        "max": 10
+      }
+    },
+    {
+      "type": "kill",
+      "target": "minecraft:witch",
+      "count": {
+        "min": 1,
+        "max": 2
+      }
+    }
+  ],
+  "rewards": {
+    "quest_points": 15,
+    "reputation": 4,
+    "bonus_xp": 45
+  },
+  "dialogue": {
+    "description": "测试文本",
+    "accept": "测试文本",
+    "decline": "测试文本",
+    "in_progress": "测试文本",
+    "complete": "测试文本"
+  }
+}

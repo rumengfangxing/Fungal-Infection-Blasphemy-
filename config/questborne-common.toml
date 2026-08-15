@@ -9,7 +9,7 @@
 	qpMultiplier = 3.0
 	#Multiplier for reputation earned (1.0 = normal, 2.0 = double)
 	#Range: 0.1 ~ 10.0
-	repMultiplier = 3.0
+	repMultiplier = 6.0
 
 [npcs]
 	#Maximum distance (blocks) NPCs will wander from their home position
