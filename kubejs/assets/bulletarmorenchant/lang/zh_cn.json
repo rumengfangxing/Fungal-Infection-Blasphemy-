@@ -1,0 +1,12 @@
+{
+  "enchantment.bulletarmorenchant.bullet_proof": "防弹",
+  "enchantment.bulletarmorenchant.bullet_proof.desc": "降低标准子弹造成的伤害。",
+  "enchantment.bulletarmorenchant.explosive_proof": "防爆",
+  "enchantment.bulletarmorenchant.explosive_proof.desc": "降低高爆弹（包括爆炸冲击）造成的伤害。",
+  "enchantment.bulletarmorenchant.incendiary_proof": "防火",
+  "enchantment.bulletarmorenchant.incendiary_proof.desc": "降低燃烧弹造成的伤害，但无法阻止火焰。",
+  "enchantment.bulletarmorenchant.armor_piercing_proof": "防穿甲",
+  "enchantment.bulletarmorenchant.armor_piercing_proof.desc": "降低穿甲弹造成的伤害。",
+  "enchantment.bulletarmorenchant.juggernaut": "重装壁垒",
+  "enchantment.bulletarmorenchant.juggernaut.desc": "降低所有子弹类型造成的伤害。"
+}

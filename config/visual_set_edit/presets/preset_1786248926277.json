@@ -155,15 +155,6 @@
           "type": "potion",
           "customDisplayText": "自身和周围友军获得25%减伤",
           "customColor": "yellow"
-        },
-        {
-          "attributeId": "confluence:aggro",
-          "amount": 400.0,
-          "operation": "ADDITION",
-          "uniqueId": "099924ba-4a77-401e-859d-fe7c03b89c7c",
-          "type": "attribute",
-          "customDisplayText": "敌人更容易攻击你",
-          "customColor": "red"
         }
       ],
       "additionalConditions": []

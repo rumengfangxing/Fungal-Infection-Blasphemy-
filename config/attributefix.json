@@ -858,17 +858,6 @@
         "value": 1024
       }
     },
-    "confluence:magic_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "forge:nametag_distance": {
       "enabled": false,
       "min": {
@@ -878,6 +867,17 @@
       "max": {
         "default": 64,
         "value": 64
+      }
+    },
+    "confluence:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "goety:spell_range": {
@@ -1155,17 +1155,6 @@
         "value": 1000
       }
     },
-    "confluence:crit_chance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "goety_revelation:spell_velocity": {
       "enabled": false,
       "min": {
@@ -1175,6 +1164,17 @@
       "max": {
         "default": 32767,
         "value": 32767
+      }
+    },
+    "confluence:crit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "minecraft:generic.follow_range": {

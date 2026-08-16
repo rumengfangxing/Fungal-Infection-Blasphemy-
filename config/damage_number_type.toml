@@ -1,9 +1,8 @@
-
 [tag]
 
 	[tag."minecraft:is_lightning"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFD700"
 		priority = 0
 
 		[tag."minecraft:is_lightning".icon]
@@ -17,7 +16,7 @@
 
 	[tag."goety:physical"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[tag."goety:physical".icon]
@@ -31,7 +30,7 @@
 
 	[tag."aether:is_cold"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00BFFF"
 		priority = 0
 
 		[tag."aether:is_cold".icon]
@@ -45,7 +44,7 @@
 
 	[tag."fantasy_ending:uom_weakness"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[tag."fantasy_ending:uom_weakness".icon]
@@ -59,7 +58,7 @@
 
 	[tag."minecraft:always_hurts_ender_dragons"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."minecraft:always_hurts_ender_dragons".icon]
@@ -73,7 +72,7 @@
 
 	[tag."minecraft:bypasses_enchantments"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[tag."minecraft:bypasses_enchantments".icon]
@@ -87,7 +86,7 @@
 
 	[tag."minecraft:is_projectile"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[tag."minecraft:is_projectile".icon]
@@ -101,7 +100,7 @@
 
 	[tag."goety:hellfire"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[tag."goety:hellfire".icon]
@@ -115,7 +114,7 @@
 
 	[tag."minecraft:witch_resistant_to"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."minecraft:witch_resistant_to".icon]
@@ -129,7 +128,7 @@
 
 	[tag."minecraft:is_fall"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[tag."minecraft:is_fall".icon]
@@ -143,7 +142,7 @@
 
 	[tag."torchesbecomesunlight:magic_damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[tag."torchesbecomesunlight:magic_damage".icon]
@@ -157,7 +156,7 @@
 
 	[tag."minecraft:bypasses_resistance"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[tag."minecraft:bypasses_resistance".icon]
@@ -171,7 +170,7 @@
 
 	[tag."minecraft:avoids_guardian_thorns"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#228B22"
 		priority = 0
 
 		[tag."minecraft:avoids_guardian_thorns".icon]
@@ -185,7 +184,7 @@
 
 	[tag."dummmmmmy:is_cold"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00BFFF"
 		priority = 0
 
 		[tag."dummmmmmy:is_cold".icon]
@@ -199,7 +198,7 @@
 
 	[tag."minecraft:bypasses_armor"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[tag."minecraft:bypasses_armor".icon]
@@ -213,7 +212,7 @@
 
 	[tag."minecraft:is_freezing"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00BFFF"
 		priority = 0
 
 		[tag."minecraft:is_freezing".icon]
@@ -227,7 +226,7 @@
 
 	[tag."minecraft:burns_armor_stands"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[tag."minecraft:burns_armor_stands".icon]
@@ -241,7 +240,7 @@
 
 	[tag."forge:is_acid"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#32CD32"
 		priority = 0
 
 		[tag."forge:is_acid".icon]
@@ -255,7 +254,7 @@
 
 	[tag."goety:wanting_damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."goety:wanting_damage".icon]
@@ -269,7 +268,7 @@
 
 	[tag."minecraft:no_anger"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."minecraft:no_anger".icon]
@@ -283,7 +282,7 @@
 
 	[tag."minecraft:is_drowning"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00008B"
 		priority = 0
 
 		[tag."minecraft:is_drowning".icon]
@@ -297,7 +296,7 @@
 
 	[tag."revelationfix:uom_weakness"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[tag."revelationfix:uom_weakness".icon]
@@ -311,7 +310,7 @@
 
 	[tag."goety:water_attacks"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00008B"
 		priority = 0
 
 		[tag."goety:water_attacks".icon]
@@ -325,7 +324,7 @@
 
 	[tag."rosmontislib:real_damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[tag."rosmontislib:real_damage".icon]
@@ -339,7 +338,7 @@
 
 	[tag."goety:no_knockback"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."goety:no_knockback".icon]
@@ -353,7 +352,7 @@
 
 	[tag."forge:is_physical"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[tag."forge:is_physical".icon]
@@ -367,7 +366,7 @@
 
 	[tag."goety:shock_attacks"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFD700"
 		priority = 0
 
 		[tag."goety:shock_attacks".icon]
@@ -381,7 +380,7 @@
 
 	[tag."forge:is_poison"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#32CD32"
 		priority = 0
 
 		[tag."forge:is_poison".icon]
@@ -395,7 +394,7 @@
 
 	[tag."goety:fire_attacks"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[tag."goety:fire_attacks".icon]
@@ -409,7 +408,7 @@
 
 	[tag."twilightforest:breaks_lich_shields"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[tag."twilightforest:breaks_lich_shields".icon]
@@ -423,7 +422,7 @@
 
 	[tag."minecraft:always_most_significant_fall"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[tag."minecraft:always_most_significant_fall".icon]
@@ -437,7 +436,7 @@
 
 	[tag."bookshelf:fake_player"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."bookshelf:fake_player".icon]
@@ -451,7 +450,7 @@
 
 	[tag."dummmmmmy:is_explosion"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF8C00"
 		priority = 0
 
 		[tag."dummmmmmy:is_explosion".icon]
@@ -465,7 +464,7 @@
 
 	[tag."minecraft:bypasses_invulnerability"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[tag."minecraft:bypasses_invulnerability".icon]
@@ -479,7 +478,7 @@
 
 	[tag."minecraft:bypasses_shield"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[tag."minecraft:bypasses_shield".icon]
@@ -493,7 +492,7 @@
 
 	[tag."tacz:bullets"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[tag."tacz:bullets".icon]
@@ -507,7 +506,7 @@
 
 	[tag."minecraft:bypasses_cooldown"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[tag."minecraft:bypasses_cooldown".icon]
@@ -521,7 +520,7 @@
 
 	[tag."ltc2:is_hot_damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[tag."ltc2:is_hot_damage".icon]
@@ -533,9 +532,23 @@
 			format = ""
 			append = ""
 
+	[tag."minecraft:bypasses_wolf_armor"]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "#DC143C"
+		priority = 0
+
+		[tag."minecraft:bypasses_wolf_armor".icon]
+			item = ""
+			tex = ""
+
+		[tag."minecraft:bypasses_wolf_armor".format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[tag."goety:magic_fire"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[tag."goety:magic_fire".icon]
@@ -549,7 +562,7 @@
 
 	[tag."minecraft:wither_immune_to"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#2F4F4F"
 		priority = 0
 
 		[tag."minecraft:wither_immune_to".icon]
@@ -563,7 +576,7 @@
 
 	[tag."goety:frost_attacks"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00BFFF"
 		priority = 0
 
 		[tag."goety:frost_attacks".icon]
@@ -577,7 +590,7 @@
 
 	[tag."forge:is_magic"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[tag."forge:is_magic".icon]
@@ -591,7 +604,7 @@
 
 	[tag."netherexp:can_disrupt_underground_ecto_slabs"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."netherexp:can_disrupt_underground_ecto_slabs".icon]
@@ -605,7 +618,7 @@
 
 	[tag."minecraft:is_fire"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[tag."minecraft:is_fire".icon]
@@ -619,7 +632,7 @@
 
 	[tag."minecraft:no_impact"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."minecraft:no_impact".icon]
@@ -633,7 +646,7 @@
 
 	[tag."minecraft:always_triggers_silverfish"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."minecraft:always_triggers_silverfish".icon]
@@ -647,7 +660,7 @@
 
 	[tag."dummmmmmy:is_thorn"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#228B22"
 		priority = 0
 
 		[tag."dummmmmmy:is_thorn".icon]
@@ -661,7 +674,7 @@
 
 	[tag."minecraft:ignites_armor_stands"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[tag."minecraft:ignites_armor_stands".icon]
@@ -675,7 +688,7 @@
 
 	[tag."minecraft:damages_helmet"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."minecraft:damages_helmet".icon]
@@ -689,7 +702,7 @@
 
 	[tag."minecraft:is_explosion"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF8C00"
 		priority = 0
 
 		[tag."minecraft:is_explosion".icon]
@@ -703,7 +716,7 @@
 
 	[tag."dummmmmmy:is_wither"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#2F4F4F"
 		priority = 0
 
 		[tag."dummmmmmy:is_wither".icon]
@@ -717,7 +730,7 @@
 
 	[tag."dungeonnowloading:hollow_hurtable"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."dungeonnowloading:hollow_hurtable".icon]
@@ -731,7 +744,7 @@
 
 	[tag."minecraft:bypasses_effects"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[tag."minecraft:bypasses_effects".icon]
@@ -745,7 +758,7 @@
 
 	[tag."dummmmmmy:is_fire"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[tag."dummmmmmy:is_fire".icon]
@@ -759,7 +772,7 @@
 
 	[tag."minecraft:panic_causes"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[tag."minecraft:panic_causes".icon]
@@ -779,7 +792,7 @@
 
 	[type.mob]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[type.mob.icon]
@@ -793,7 +806,7 @@
 
 	[type.corrosion]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#32CD32"
 		priority = 0
 
 		[type.corrosion.icon]
@@ -807,7 +820,7 @@
 
 	[type.badRespawnPoint]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.badRespawnPoint.icon]
@@ -821,7 +834,7 @@
 
 	[type.bleeding]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[type.bleeding.icon]
@@ -835,7 +848,7 @@
 
 	[type.tick_poison_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#32CD32"
 		priority = 0
 
 		[type.tick_poison_damage.icon]
@@ -849,7 +862,7 @@
 
 	[type.matter_cannon]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.matter_cannon.icon]
@@ -863,7 +876,7 @@
 
 	[type.false_justice]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF69B4"
 		priority = 0
 
 		[type.false_justice.icon]
@@ -877,7 +890,7 @@
 
 	[type.snow_monster_frozen]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00BFFF"
 		priority = 0
 
 		[type.snow_monster_frozen.icon]
@@ -891,7 +904,7 @@
 
 	[type.freeze]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00BFFF"
 		priority = 0
 
 		[type.freeze.icon]
@@ -905,7 +918,7 @@
 
 	[type.flyIntoWall]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[type.flyIntoWall.icon]
@@ -919,7 +932,7 @@
 
 	[type.braiomil_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.braiomil_damage.icon]
@@ -931,9 +944,23 @@
 			format = ""
 			append = ""
 
+	[type.morerelics_king_crimson]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "#DC143C"
+		priority = 0
+
+		[type.morerelics_king_crimson.icon]
+			item = ""
+			tex = ""
+
+		[type.morerelics_king_crimson.format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[type.darkness]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#4B0082"
 		priority = 0
 
 		[type.darkness.icon]
@@ -949,7 +976,7 @@
 
 		[type.goety.summon]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#C0C0C0"
 			priority = 0
 
 			[type.goety.summon.icon]
@@ -963,7 +990,7 @@
 
 		[type.goety.windBlast]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#C0C0C0"
 			priority = 0
 
 			[type.goety.windBlast.icon]
@@ -977,7 +1004,7 @@
 
 		[type.goety.death]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#4B0082"
 			priority = 0
 
 			[type.goety.death.icon]
@@ -991,7 +1018,7 @@
 
 		[type.goety.drench]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00008B"
 			priority = 0
 
 			[type.goety.drench.icon]
@@ -1005,7 +1032,7 @@
 
 		[type.goety.doom]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#4B0082"
 			priority = 0
 
 			[type.goety.doom.icon]
@@ -1019,7 +1046,7 @@
 
 		[type.goety.iceBouquet]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00BFFF"
 			priority = 0
 
 			[type.goety.iceBouquet.icon]
@@ -1033,7 +1060,7 @@
 
 		[type.goety.bubbleStream]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00008B"
 			priority = 0
 
 			[type.goety.bubbleStream.icon]
@@ -1047,7 +1074,7 @@
 
 		[type.goety.frostBreath]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00BFFF"
 			priority = 0
 
 			[type.goety.frostBreath.icon]
@@ -1061,7 +1088,7 @@
 
 		[type.goety.hellfire]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.goety.hellfire.icon]
@@ -1075,7 +1102,7 @@
 
 		[type.goety.spike]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#228B22"
 			priority = 0
 
 			[type.goety.spike.icon]
@@ -1089,7 +1116,7 @@
 
 		[type.goety.acid]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#32CD32"
 			priority = 0
 
 			[type.goety.acid.icon]
@@ -1103,7 +1130,7 @@
 
 		[type.goety.venom]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#32CD32"
 			priority = 0
 
 			[type.goety.venom.icon]
@@ -1117,7 +1144,7 @@
 
 		[type.goety.directFreeze]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00BFFF"
 			priority = 0
 
 			[type.goety.directFreeze.icon]
@@ -1131,7 +1158,7 @@
 
 		[type.goety.rot]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#2F4F4F"
 			priority = 0
 
 			[type.goety.rot.icon]
@@ -1145,7 +1172,7 @@
 
 		[type.goety.voided]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#4B0082"
 			priority = 0
 
 			[type.goety.voided.icon]
@@ -1159,7 +1186,7 @@
 
 		[type.goety.indirectDrench]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00008B"
 			priority = 0
 
 			[type.goety.indirectDrench.icon]
@@ -1173,7 +1200,7 @@
 
 		[type.goety.choke]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#C0C0C0"
 			priority = 0
 
 			[type.goety.choke.icon]
@@ -1187,7 +1214,7 @@
 
 		[type.goety.lightning]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFD700"
 			priority = 0
 
 			[type.goety.lightning.icon]
@@ -1201,7 +1228,7 @@
 
 		[type.goety.indirectShock]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFD700"
 			priority = 0
 
 			[type.goety.indirectShock.icon]
@@ -1215,7 +1242,7 @@
 
 		[type.goety.shock]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFD700"
 			priority = 0
 
 			[type.goety.shock.icon]
@@ -1229,7 +1256,7 @@
 
 		[type.goety.dismissed]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#C0C0C0"
 			priority = 0
 
 			[type.goety.dismissed.icon]
@@ -1243,7 +1270,7 @@
 
 		[type.goety.directDrench]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00008B"
 			priority = 0
 
 			[type.goety.directDrench.icon]
@@ -1257,7 +1284,7 @@
 
 		[type.goety.phobia]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF69B4"
 			priority = 0
 
 			[type.goety.phobia.icon]
@@ -1271,7 +1298,7 @@
 
 		[type.goety.sword]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFAAAA"
 			priority = 0
 
 			[type.goety.sword.icon]
@@ -1285,7 +1312,7 @@
 
 		[type.goety.fireBreath]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.goety.fireBreath.icon]
@@ -1299,7 +1326,7 @@
 
 		[type.goety.indirectHellfire]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.goety.indirectHellfire.icon]
@@ -1313,7 +1340,7 @@
 
 		[type.goety.swarm]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#C0C0C0"
 			priority = 0
 
 			[type.goety.swarm.icon]
@@ -1327,7 +1354,7 @@
 
 		[type.goety.boiling]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.goety.boiling.icon]
@@ -1341,7 +1368,7 @@
 
 		[type.goety.lifeLeech]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#DC143C"
 			priority = 0
 
 			[type.goety.lifeLeech.icon]
@@ -1355,7 +1382,7 @@
 
 		[type.goety.rage]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.goety.rage.icon]
@@ -1369,7 +1396,7 @@
 
 		[type.goety.directShock]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFD700"
 			priority = 0
 
 			[type.goety.directShock.icon]
@@ -1383,7 +1410,7 @@
 
 		[type.goety.soulLeech]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#AA00FF"
 			priority = 0
 
 			[type.goety.soulLeech.icon]
@@ -1397,7 +1424,7 @@
 
 		[type.goety.indirectFreeze]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00BFFF"
 			priority = 0
 
 			[type.goety.indirectFreeze.icon]
@@ -1411,7 +1438,7 @@
 
 	[type.redirected]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF69B4"
 		priority = 0
 
 		[type.redirected.icon]
@@ -1425,7 +1452,7 @@
 
 	[type.witherSkull]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#2F4F4F"
 		priority = 0
 
 		[type.witherSkull.icon]
@@ -1439,7 +1466,7 @@
 
 	[type.dotdamage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.dotdamage.icon]
@@ -1453,7 +1480,7 @@
 
 	[type.onFire]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[type.onFire.icon]
@@ -1467,7 +1494,7 @@
 
 	[type.sonic_boom]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[type.sonic_boom.icon]
@@ -1481,7 +1508,7 @@
 
 	[type.pursuer_demon_attack]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.pursuer_demon_attack.icon]
@@ -1495,7 +1522,7 @@
 
 	[type.no_trigger_attack]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.no_trigger_attack.icon]
@@ -1509,7 +1536,7 @@
 
 	[type.star_cloak]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.star_cloak.icon]
@@ -1523,7 +1550,7 @@
 
 	[type.tick_freeze_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00BFFF"
 		priority = 0
 
 		[type.tick_freeze_damage.icon]
@@ -1537,7 +1564,7 @@
 
 	[type."attributeslib:detonation"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF8C00"
 		priority = 0
 
 		[type."attributeslib:detonation".icon]
@@ -1553,7 +1580,7 @@
 
 		[type.farmersdelight.stove]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.farmersdelight.stove.icon]
@@ -1567,7 +1594,7 @@
 
 	[type.anvil]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[type.anvil.icon]
@@ -1581,7 +1608,7 @@
 
 	[type.tick_wither_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#2F4F4F"
 		priority = 0
 
 		[type.tick_wither_damage.icon]
@@ -1595,7 +1622,7 @@
 
 	[type.starve]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#8B4513"
 		priority = 0
 
 		[type.starve.icon]
@@ -1609,7 +1636,7 @@
 
 	[type.fireworks]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF8C00"
 		priority = 0
 
 		[type.fireworks.icon]
@@ -1623,7 +1650,7 @@
 
 	[type.slasher_piercing_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[type.slasher_piercing_damage.icon]
@@ -1637,7 +1664,7 @@
 
 	[type.tick_fire_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[type.tick_fire_damage.icon]
@@ -1651,7 +1678,7 @@
 
 	[type.genericKill]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.genericKill.icon]
@@ -1665,7 +1692,7 @@
 
 	[type.automobile]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.automobile.icon]
@@ -1679,7 +1706,7 @@
 
 	[type.calamity_damage1]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.calamity_damage1.icon]
@@ -1693,7 +1720,7 @@
 
 	[type.fall]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[type.fall.icon]
@@ -1707,7 +1734,7 @@
 
 	[type.tickmdamage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.tickmdamage.icon]
@@ -1721,7 +1748,7 @@
 
 	[type.cactus]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#228B22"
 		priority = 0
 
 		[type.cactus.icon]
@@ -1737,7 +1764,7 @@
 
 		[type.touhou_little_maid.danmaku]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#AA00FF"
 			priority = 0
 
 			[type.touhou_little_maid.danmaku.icon]
@@ -1755,7 +1782,7 @@
 
 			[type.revelationfix.fe_power.0]
 				#Color of the damage number. [NO-VALUE] to use default color.
-				color = "[NO-VALUE]"
+				color = "#C0C0C0"
 				priority = 0
 
 				[type.revelationfix.fe_power.0.icon]
@@ -1769,7 +1796,7 @@
 
 	[type.fallingStalactite]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[type.fallingStalactite.icon]
@@ -1783,7 +1810,7 @@
 
 	[type.calamity_damage3]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.calamity_damage3.icon]
@@ -1797,7 +1824,7 @@
 
 	[type.outsideBorder]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#4B0082"
 		priority = 0
 
 		[type.outsideBorder.icon]
@@ -1811,7 +1838,7 @@
 
 	[type.abyss]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#4B0082"
 		priority = 0
 
 		[type.abyss.icon]
@@ -1825,7 +1852,7 @@
 
 	[type.calamity_damage2]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.calamity_damage2.icon]
@@ -1839,7 +1866,7 @@
 
 	[type.infected_witch_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.infected_witch_damage.icon]
@@ -1853,7 +1880,7 @@
 
 	[type.fireball]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[type.fireball.icon]
@@ -1869,7 +1896,7 @@
 
 		[type.legendarysurvivaloverhaul.hyperthermia]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.legendarysurvivaloverhaul.hyperthermia.icon]
@@ -1883,7 +1910,7 @@
 
 		[type.legendarysurvivaloverhaul.hypothermia]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#00BFFF"
 			priority = 0
 
 			[type.legendarysurvivaloverhaul.hypothermia.icon]
@@ -1897,7 +1924,7 @@
 
 		[type.legendarysurvivaloverhaul.dehydration]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#8B4513"
 			priority = 0
 
 			[type.legendarysurvivaloverhaul.dehydration.icon]
@@ -1911,7 +1938,7 @@
 
 	[type.sting]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#32CD32"
 		priority = 0
 
 		[type.sting.icon]
@@ -1925,7 +1952,7 @@
 
 	[type.dragonBreath]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[type.dragonBreath.icon]
@@ -1939,7 +1966,7 @@
 
 	[type.fallingBlock]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[type.fallingBlock.icon]
@@ -1955,7 +1982,7 @@
 
 		[type.biomancy.spike_fall_on]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#228B22"
 			priority = 0
 
 			[type.biomancy.spike_fall_on.icon]
@@ -1969,7 +1996,7 @@
 
 		[type.biomancy.tooth_projectile]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#C0C0C0"
 			priority = 0
 
 			[type.biomancy.tooth_projectile.icon]
@@ -1983,7 +2010,7 @@
 
 		[type.biomancy.chest_bite]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#DC143C"
 			priority = 0
 
 			[type.biomancy.chest_bite.icon]
@@ -1997,7 +2024,7 @@
 
 		[type.biomancy.toxin]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#32CD32"
 			priority = 0
 
 			[type.biomancy.toxin.icon]
@@ -2011,7 +2038,7 @@
 
 		[type.biomancy.slash]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFAAAA"
 			priority = 0
 
 			[type.biomancy.slash.icon]
@@ -2025,7 +2052,7 @@
 
 		[type.biomancy.primordial_spikes]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#228B22"
 			priority = 0
 
 			[type.biomancy.primordial_spikes.icon]
@@ -2039,7 +2066,7 @@
 
 		[type.biomancy.spike_impale]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#228B22"
 			priority = 0
 
 			[type.biomancy.spike_impale.icon]
@@ -2053,7 +2080,7 @@
 
 		[type.biomancy.impaler_projectile]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#C0C0C0"
 			priority = 0
 
 			[type.biomancy.impaler_projectile.icon]
@@ -2067,7 +2094,7 @@
 
 		[type.biomancy.bleed]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#DC143C"
 			priority = 0
 
 			[type.biomancy.bleed.icon]
@@ -2081,7 +2108,7 @@
 
 		[type.biomancy.corrosive_acid]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#32CD32"
 			priority = 0
 
 			[type.biomancy.corrosive_acid.icon]
@@ -2095,7 +2122,7 @@
 
 	[type.servant_redirect]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF69B4"
 		priority = 0
 
 		[type.servant_redirect.icon]
@@ -2109,7 +2136,7 @@
 
 	[type."True Damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[type."True Damage".icon]
@@ -2123,7 +2150,7 @@
 
 	[type.radiation_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#7FFF00"
 		priority = 0
 
 		[type.radiation_damage.icon]
@@ -2137,7 +2164,7 @@
 
 	[type.sweetBerryBush]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#228B22"
 		priority = 0
 
 		[type.sweetBerryBush.icon]
@@ -2151,7 +2178,7 @@
 
 	[type.magic]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[type.magic.icon]
@@ -2167,7 +2194,7 @@
 
 		[type.mycelium.overtake]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#228B22"
 			priority = 0
 
 			[type.mycelium.overtake.icon]
@@ -2181,7 +2208,7 @@
 
 	[type.thorns]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#228B22"
 		priority = 0
 
 		[type.thorns.icon]
@@ -2195,7 +2222,7 @@
 
 	[type.arrow]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[type.arrow.icon]
@@ -2211,7 +2238,7 @@
 
 		[type.ltc2.ender_chain]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFD700"
 			priority = 0
 
 			[type.ltc2.ender_chain.icon]
@@ -2225,7 +2252,7 @@
 
 		[type.ltc2.hot]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.ltc2.hot.icon]
@@ -2239,7 +2266,7 @@
 
 	[type.knight_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.knight_damage.icon]
@@ -2253,7 +2280,7 @@
 
 	[type.drown]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00008B"
 		priority = 0
 
 		[type.drown.icon]
@@ -2267,7 +2294,7 @@
 
 	[type.mental_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF69B4"
 		priority = 0
 
 		[type.mental_damage.icon]
@@ -2283,7 +2310,7 @@
 
 		[type.tacz.bullet]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFAAAA"
 			priority = 0
 
 			[type.tacz.bullet.icon]
@@ -2297,7 +2324,7 @@
 
 	[type."attributeslib:cold_damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#00BFFF"
 		priority = 0
 
 		[type."attributeslib:cold_damage".icon]
@@ -2311,7 +2338,7 @@
 
 	[type.justice]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF69B4"
 		priority = 0
 
 		[type.justice.icon]
@@ -2327,7 +2354,7 @@
 
 		[type.create.crush]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#A9A9A9"
 			priority = 0
 
 			[type.create.crush.icon]
@@ -2341,7 +2368,7 @@
 
 		[type.create.fan_fire]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.create.fan_fire.icon]
@@ -2355,7 +2382,7 @@
 
 		[type.create.mechanical_drill]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFAAAA"
 			priority = 0
 
 			[type.create.mechanical_drill.icon]
@@ -2369,7 +2396,7 @@
 
 		[type.create.potato_cannon]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFAAAA"
 			priority = 0
 
 			[type.create.potato_cannon.icon]
@@ -2383,7 +2410,7 @@
 
 		[type.create.mechanical_saw]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFAAAA"
 			priority = 0
 
 			[type.create.mechanical_saw.icon]
@@ -2397,7 +2424,7 @@
 
 		[type.create.fan_lava]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF4500"
 			priority = 0
 
 			[type.create.fan_lava.icon]
@@ -2411,7 +2438,7 @@
 
 		[type.create.run_over]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#A9A9A9"
 			priority = 0
 
 			[type.create.run_over.icon]
@@ -2425,7 +2452,7 @@
 
 		[type.create.cuckoo_surprise]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#C0C0C0"
 			priority = 0
 
 			[type.create.cuckoo_surprise.icon]
@@ -2439,7 +2466,7 @@
 
 		[type.create.mechanical_roller]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#A9A9A9"
 			priority = 0
 
 			[type.create.mechanical_roller.icon]
@@ -2453,7 +2480,7 @@
 
 	[type.tickdamage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.tickdamage.icon]
@@ -2467,7 +2494,7 @@
 
 	[type.inFire]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[type.inFire.icon]
@@ -2481,7 +2508,7 @@
 
 	[type.stalagmite]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[type.stalagmite.icon]
@@ -2495,7 +2522,7 @@
 
 	[type.thrown]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.thrown.icon]
@@ -2509,7 +2536,7 @@
 
 	[type.no_trigger_no_armor_attack]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.no_trigger_no_armor_attack.icon]
@@ -2523,7 +2550,7 @@
 
 	[type.infected_damage1]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.infected_damage1.icon]
@@ -2537,7 +2564,7 @@
 
 	[type."attributeslib:fire_damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[type."attributeslib:fire_damage".icon]
@@ -2551,7 +2578,7 @@
 
 	[type.infected_damage3]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.infected_damage3.icon]
@@ -2565,7 +2592,7 @@
 
 	[type.infected_damage2]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.infected_damage2.icon]
@@ -2579,7 +2606,7 @@
 
 	[type.info_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.info_damage.icon]
@@ -2593,7 +2620,7 @@
 
 	[type.indirectMagic]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#AA00FF"
 		priority = 0
 
 		[type.indirectMagic.icon]
@@ -2607,7 +2634,7 @@
 
 	[type.slasher_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[type.slasher_damage.icon]
@@ -2621,7 +2648,7 @@
 
 	[type.lightningBolt]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFD700"
 		priority = 0
 
 		[type.lightningBolt.icon]
@@ -2635,7 +2662,7 @@
 
 	[type.thunder_chain]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFD700"
 		priority = 0
 
 		[type.thunder_chain.icon]
@@ -2649,7 +2676,7 @@
 
 	[type.lava]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[type.lava.icon]
@@ -2663,7 +2690,7 @@
 
 	[type.leaper_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.leaper_damage.icon]
@@ -2677,7 +2704,7 @@
 
 	[type.truedamage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[type.truedamage.icon]
@@ -2689,9 +2716,23 @@
 			format = ""
 			append = ""
 
+	[type.morerelics_judgement]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "#FF69B4"
+		priority = 0
+
+		[type.morerelics_judgement.icon]
+			item = ""
+			tex = ""
+
+		[type.morerelics_judgement.format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[type."attributeslib:bleeding"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[type."attributeslib:bleeding".icon]
@@ -2705,7 +2746,7 @@
 
 	[type.player]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[type.player.icon]
@@ -2719,7 +2760,7 @@
 
 	[type.dryout]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#8B4513"
 		priority = 0
 
 		[type.dryout.icon]
@@ -2733,7 +2774,7 @@
 
 	[type.evil_curse]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF69B4"
 		priority = 0
 
 		[type.evil_curse.icon]
@@ -2747,7 +2788,7 @@
 
 	[type.cramming]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[type.cramming.icon]
@@ -2761,7 +2802,7 @@
 
 	[type.trident]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFAAAA"
 		priority = 0
 
 		[type.trident.icon]
@@ -2775,7 +2816,7 @@
 
 	[type."attributeslib:current_hp_damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[type."attributeslib:current_hp_damage".icon]
@@ -2789,7 +2830,7 @@
 
 	[type.inWall]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#A9A9A9"
 		priority = 0
 
 		[type.inWall.icon]
@@ -2803,7 +2844,7 @@
 
 	[type.generic]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.generic.icon]
@@ -2817,7 +2858,7 @@
 
 	[type.griefer_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#C0C0C0"
 		priority = 0
 
 		[type.griefer_damage.icon]
@@ -2831,7 +2872,7 @@
 
 	[type.explosion]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF8C00"
 		priority = 0
 
 		[type.explosion.icon]
@@ -2845,7 +2886,7 @@
 
 		[type.explosion.player]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FF8C00"
 			priority = 0
 
 			[type.explosion.player.icon]
@@ -2859,7 +2900,7 @@
 
 	[type.outOfWorld]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#4B0082"
 		priority = 0
 
 		[type.outOfWorld.icon]
@@ -2873,7 +2914,7 @@
 
 	[type.hotFloor]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FF4500"
 		priority = 0
 
 		[type.hotFloor.icon]
@@ -2887,7 +2928,7 @@
 
 	[type."Critical Damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#DC143C"
 		priority = 0
 
 		[type."Critical Damage".icon]
@@ -2901,7 +2942,7 @@
 
 	[type.wither]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#2F4F4F"
 		priority = 0
 
 		[type.wither.icon]
@@ -2915,7 +2956,7 @@
 
 	[type.tick_lightning_damage]
 		#Color of the damage number. [NO-VALUE] to use default color.
-		color = "[NO-VALUE]"
+		color = "#FFD700"
 		priority = 0
 
 		[type.tick_lightning_damage.icon]
@@ -2931,7 +2972,7 @@
 
 		[type.createaddition.tesla_coil]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#FFD700"
 			priority = 0
 
 			[type.createaddition.tesla_coil.icon]
@@ -2945,7 +2986,7 @@
 
 		[type.createaddition.barbed_wire]
 			#Color of the damage number. [NO-VALUE] to use default color.
-			color = "[NO-VALUE]"
+			color = "#A9A9A9"
 			priority = 0
 
 			[type.createaddition.barbed_wire.icon]
@@ -2956,4 +2997,3 @@
 				prepend = ""
 				format = ""
 				append = ""
-

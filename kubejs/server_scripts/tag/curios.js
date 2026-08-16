@@ -17,6 +17,29 @@ ServerEvents.tags('item', event => {
 	event.add('curios:head',[
 		'spore:gas_mask'
 	])
+	event.add('curios:body',[
+		'spore:gas_mask',
+		'goety_revelation:eternal_watch'
+	])
+	event.add('curios:bracelet',[
+		'morerelics:moodworm',
+        'goety:pendant_of_hunger',
+		'goety:amethyst_necklace',
+        'goety:sea_amulet',
+        'goety:feline_amulet',
+        'goety:star_amulet',
+        'morerelics:opal_necklace',
+        'morerelics:slumbering_amulet',
+        'relics:holy_locket',
+        'relics:reflection_necklace',
+        'artifacts:thorn_pendant',
+        'artifacts:panic_necklace',
+        'artifacts:flame_pendant',
+        'artifacts:cross_necklace',
+        'relics:jellyfish_necklace',
+        'artifacts:charm_of_sinking',
+        'artifacts:shock_pendant'
+	])
 
 	
 	
