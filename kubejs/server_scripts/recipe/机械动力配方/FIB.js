@@ -46,15 +46,6 @@ create.mixing('6x minecraft:gunpowder',[
   '2x fib:saltpeter',
   '3x minecraft:charcoal'
 ]);
-event.shaped('4x minecraft:gunpowder', [
-  'SNN',
-  'CCC',
-  '   '
-], {
-  S: 'minecraft:sugar',
-  N: 'fib:saltpeter',
-  C: 'minecraft:charcoal'
-});
 ////战术道具相关
 create.mixing("fib:c4_explosive",
   ["minecraft:blaze_powder",

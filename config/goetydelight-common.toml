@@ -52,7 +52,7 @@ soulAffixDamagePerLevel = 1.0
 soulAffixSoulCostPerLevel = 10
 #Disable Soul Mending enchantment entirely
 #完全禁用灵魂修补附魔
-disableSoulMending = false
+disableSoulMending = true
 #Disable Soul Healing enchantment entirely
 #完全禁用溢魂弥躯附魔
 disableSoulHealing = false

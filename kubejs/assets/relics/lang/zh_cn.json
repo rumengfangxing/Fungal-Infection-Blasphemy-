@@ -1,3 +1,3 @@
 {
-    "tooltip.relics.relic.quick_reroll.hint": "右键点击: 一键重滚到最高品质（左键: 单次重滚）"
+    "tooltip.relics.relic.quick_reroll.hint": "§2左键:重置一次 §c右键:循环至满品质"
 }
