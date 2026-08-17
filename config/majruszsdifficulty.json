@@ -150,14 +150,11 @@
     "double_loot": {
       "is_enabled": true,
       "chance": {
-        "__default": 0.0,
-        "expert": 0.05,
-        "master": 0.1
+        "__default": 0.05,
+        "expert": 0.1,
+        "master": 0.25
       },
-      "blacklisted_items": [
-        "minecraft:nether_star",
-        "minecraft:totem_of_undying"
-      ]
+      "blacklisted_items": []
     },
     "drowned_lightning_bolt": {
       "is_enabled": true,
@@ -372,14 +369,8 @@
     },
     "spawn_blocker": {
       "forbidden_entities": {
-        "__default": [
-          "majruszsdifficulty:illusioner",
-          "majruszsdifficulty:tank",
-          "majruszsdifficulty:cerberus"
-        ],
-        "expert": [
-          "majruszsdifficulty:cerberus"
-        ],
+        "__default": [],
+        "expert": [],
         "master": []
       }
     },
@@ -401,13 +392,13 @@
       "is_enabled": true,
       "multiplier": {
         "__default": 1.0,
-        "expert": 1.1,
-        "master": 1.2
+        "expert": 1.2,
+        "master": 1.5
       }
     }
   },
   "blood_moon": {
-    "is_enabled": false,
+    "is_enabled": true,
     "night_trigger_chance": 0.0666,
     "spawn_rate_multiplier": 2.0,
     "crd_penalty": 0.5
@@ -415,240 +406,610 @@
   "undead_army": {
     "is_enabled": true,
     "reset_all_participants_kills": true,
-    "wave_duration": 1200.0,
+    "wave_duration": 1500.0,
     "preparing_duration": 10.0,
     "highlight_delay": 300.0,
     "extra_size_ratio_per_player": 0.5,
     "area_radius": 70,
-    "kill_requirement": 100,
-    "kill_requirement_first": 25,
+    "kill_requirement": 150,
+    "kill_requirement_first": 30,
     "kill_requirement_warning": 3,
     "waves": [
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "type": "spore:inf_human",
             "count": 2
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "type": "spore:inf_player",
             "count": 2
           },
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "type": "spore:inf_husk",
             "count": 2
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "type": "spore:inf_pillager",
             "count": 2
           }
         ],
         "game_stage": "normal",
-        "exp": 8
+        "exp": 10
       },
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "type": "spore:inf_human",
             "count": 2
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 3
+            "type": "spore:inf_player",
+            "count": 2
           },
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
-            "count": 3
+            "type": "spore:inf_husk",
+            "count": 2
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "type": "spore:inf_pillager",
+            "count": 2
+          },
+          {
+            "type": "spore:knight",
+            "count": 2
+          },
+          {
+            "type": "spore:leaper",
+            "count": 1
+          }
+        ],
+        "game_stage": "normal",
+        "exp": 15
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:inf_human",
+            "count": 1
+          },
+          {
+            "type": "spore:inf_player",
+            "count": 1
+          },
+          {
+            "type": "spore:inf_husk",
+            "count": 1
+          },
+          {
+            "type": "spore:inf_pillager",
+            "count": 2
+          },
+          {
+            "type": "spore:knight",
+            "count": 2
+          },
+          {
+            "type": "spore:leaper",
+            "count": 2
+          },
+          {
+            "type": "spore:usurper",
+            "count": 2
+          },
+          {
+            "type": "spore:spitter",
             "count": 2
           }
         ],
         "game_stage": "normal",
-        "exp": 16
+        "exp": 20
       },
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
-            "count": 3
+            "type": "spore:inf_husk",
+            "count": 2
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
-            "count": 3
+            "type": "spore:inf_pillager",
+            "count": 2
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
-            "count": 3
+            "type": "spore:knight",
+            "count": 2
           },
           {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
-            "count": 3
+            "type": "spore:leaper",
+            "count": 2
+          },
+          {
+            "type": "spore:slasher",
+            "count": 2
+          },
+          {
+            "type": "spore:brute",
+            "count": 2
+          },
+          {
+            "type": "spore:conductor",
+            "count": 2
+          },
+          {
+            "type": "spore:scavenger",
+            "count": 2
           }
         ],
-        "boss": {
-          "type": "majruszsdifficulty:tank",
-          "count": 1
-        },
         "game_stage": "normal",
-        "exp": 24
+        "exp": 25
       },
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "type": "spore:knight",
             "count": 2
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
+            "type": "spore:leaper",
             "count": 2
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
+            "type": "spore:slasher",
+            "count": 2
           },
           {
-            "type": "majruszsdifficulty:tank",
-            "count": 1
+            "type": "spore:brute",
+            "count": 2
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 3
+            "type": "minecraft:pig",
+            "count": 2
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
+            "type": "spore:usurper",
+            "count": 2
           },
           {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
-            "count": 3
+            "type": "spore:spitter",
+            "count": 2
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
-            "count": 1
+            "type": "spore:gorgon",
+            "count": 2
+          },
+          {
+            "type": "spore:busser",
+            "count": 2
+          },
+          {
+            "type": "spore:scavenger",
+            "count": 2
           }
         ],
-        "game_stage": "expert",
-        "exp": 32
+        "game_stage": "normal",
+        "exp": 30
       },
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 1
-          },
-          {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 3
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "type": "spore:delusioner",
             "count": 2
           },
           {
-            "type": "majruszsdifficulty:tank",
-            "count": 1
+            "type": "spore:howler",
+            "count": 2
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 3
+            "type": "spore:gargoyle",
+            "count": 2
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "type": "spore:lacerator",
+            "count": 2
+          },
+          {
+            "type": "spore:saugling",
+            "count": 2
+          },
+          {
+            "type": "spore:inf_evoker",
+            "count": 2
+          },
+          {
+            "type": "spore:jagd",
+            "count": 2
+          },
+          {
+            "type": "spore:nuclea",
+            "count": 2
+          },
+          {
+            "type": "spore:inebriater",
+            "count": 2
+          },
+          {
+            "type": "spore:inf_vindicator",
             "count": 2
           }
         ],
-        "boss": {
-          "type": "majruszsdifficulty:cerberus",
-          "count": 1
-        },
         "game_stage": "expert",
         "exp": 40
       },
       {
         "mobs": [
           {
-            "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+            "type": "spore:usurper",
+            "count": 2
+          },
+          {
+            "type": "spore:spitter",
+            "count": 2
+          },
+          {
+            "type": "spore:conductor",
+            "count": 2
+          },
+          {
+            "type": "spore:gorgon",
+            "count": 2
+          },
+          {
+            "type": "spore:howler",
+            "count": 2
+          },
+          {
+            "type": "spore:delusioner",
+            "count": 2
+          },
+          {
+            "type": "spore:busser",
+            "count": 2
+          },
+          {
+            "type": "spore:scavenger",
+            "count": 2
+          },
+          {
+            "type": "spore:gargoyle",
+            "count": 2
+          }
+        ],
+        "boss": {
+          "type": "spore:wendigo",
+          "count": 1
+        },
+        "game_stage": "expert",
+        "exp": 50
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:knight",
+            "count": 2
+          },
+          {
+            "type": "spore:leaper",
+            "count": 2
+          },
+          {
+            "type": "spore:slasher",
+            "count": 2
+          },
+          {
+            "type": "spore:brute",
+            "count": 2
+          },
+          {
+            "type": "minecraft:pig",
+            "count": 2
+          },
+          {
+            "type": "spore:lacerator",
+            "count": 2
+          },
+          {
+            "type": "spore:saugling",
+            "count": 2
+          },
+          {
+            "type": "spore:inf_evoker",
+            "count": 2
+          },
+          {
+            "type": "spore:jagd",
+            "count": 2
+          }
+        ],
+        "boss": {
+          "type": "spore:inquisitor",
+          "count": 1
+        },
+        "game_stage": "expert",
+        "exp": 60
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:nuclea",
+            "count": 2
+          },
+          {
+            "type": "spore:inebriater",
+            "count": 2
+          },
+          {
+            "type": "spore:inf_vindicator",
+            "count": 2
+          },
+          {
+            "type": "spore:usurper",
+            "count": 2
+          },
+          {
+            "type": "spore:spitter",
+            "count": 2
+          },
+          {
+            "type": "spore:conductor",
+            "count": 2
+          },
+          {
+            "type": "spore:gorgon",
+            "count": 2
+          }
+        ],
+        "boss": {
+          "type": "spore:brot",
+          "count": 1
+        },
+        "game_stage": "expert",
+        "exp": 70
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:delusioner",
+            "count": 2
+          },
+          {
+            "type": "spore:howler",
+            "count": 2
+          },
+          {
+            "type": "spore:gargoyle",
+            "count": 2
+          },
+          {
+            "type": "spore:scavenger",
+            "count": 2
+          },
+          {
+            "type": "spore:busser",
+            "count": 2
+          },
+          {
+            "type": "spore:lacerator",
+            "count": 2
+          },
+          {
+            "type": "spore:saugling",
+            "count": 2
+          }
+        ],
+        "boss": {
+          "type": "spore:ogre",
+          "count": 1
+        },
+        "game_stage": "expert",
+        "exp": 80
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:wendigo",
             "count": 1
           },
           {
-            "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "type": "spore:inquisitor",
             "count": 1
           },
           {
-            "type": "majruszsdifficulty:tank",
+            "type": "spore:brot",
             "count": 1
           },
           {
-            "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "type": "spore:ogre",
             "count": 1
           },
           {
-            "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
-            "count": 1
+            "type": "spore:hevoker",
+            "count": 2
           },
           {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_wither_skeleton",
-            "count": 1
+            "type": "spore:hvindicator",
+            "count": 2
           },
           {
-            "type": "majruszsdifficulty:cerberus",
+            "type": "spore:grober",
+            "count": 2
+          },
+          {
+            "type": "spore:hollen",
             "count": 1
           }
         ],
         "boss": {
-          "type": "majruszsdifficulty:giant",
-          "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+          "type": "spore:wendigo",
           "count": 1
         },
         "game_stage": "master",
-        "exp": 48
+        "exp": 90
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:hevoker",
+            "count": 2
+          },
+          {
+            "type": "spore:hvindicator",
+            "count": 2
+          },
+          {
+            "type": "spore:grober",
+            "count": 2
+          },
+          {
+            "type": "spore:hollen",
+            "count": 1
+          },
+          {
+            "type": "spore:inquisitor",
+            "count": 2
+          },
+          {
+            "type": "spore:brot",
+            "count": 2
+          },
+          {
+            "type": "spore:ogre",
+            "count": 2
+          }
+        ],
+        "boss": {
+          "type": "spore:grober",
+          "count": 1
+        },
+        "game_stage": "master",
+        "exp": 100
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:wendigo",
+            "count": 2
+          },
+          {
+            "type": "spore:inquisitor",
+            "count": 2
+          },
+          {
+            "type": "spore:brot",
+            "count": 2
+          },
+          {
+            "type": "spore:ogre",
+            "count": 2
+          },
+          {
+            "type": "spore:hevoker",
+            "count": 2
+          },
+          {
+            "type": "spore:hvindicator",
+            "count": 2
+          },
+          {
+            "type": "spore:grober",
+            "count": 2
+          }
+        ],
+        "boss": {
+          "type": "spore:hollen",
+          "count": 1
+        },
+        "game_stage": "master",
+        "exp": 110
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:wendigo",
+            "count": 2
+          },
+          {
+            "type": "spore:inquisitor",
+            "count": 2
+          },
+          {
+            "type": "spore:brot",
+            "count": 2
+          },
+          {
+            "type": "spore:ogre",
+            "count": 2
+          },
+          {
+            "type": "spore:hevoker",
+            "count": 2
+          },
+          {
+            "type": "spore:hvindicator",
+            "count": 2
+          },
+          {
+            "type": "spore:grober",
+            "count": 2
+          },
+          {
+            "type": "spore:hollen",
+            "count": 1
+          }
+        ],
+        "boss": {
+          "type": "spore:inquisitor",
+          "count": 1
+        },
+        "game_stage": "master",
+        "exp": 120
+      },
+      {
+        "mobs": [
+          {
+            "type": "spore:wendigo",
+            "count": 2
+          },
+          {
+            "type": "spore:inquisitor",
+            "count": 2
+          },
+          {
+            "type": "spore:brot",
+            "count": 2
+          },
+          {
+            "type": "spore:ogre",
+            "count": 2
+          },
+          {
+            "type": "spore:hevoker",
+            "count": 2
+          },
+          {
+            "type": "spore:hvindicator",
+            "count": 2
+          },
+          {
+            "type": "spore:grober",
+            "count": 2
+          },
+          {
+            "type": "spore:hollen",
+            "count": 1
+          }
+        ],
+        "boss": {
+          "type": "spore:hollen",
+          "count": 1
+        },
+        "game_stage": "master",
+        "exp": 130
       }
     ]
   },
   "mobs": {
     "cursed_armor": {
-      "item_drop_chance": 0.2,
+      "item_drop_chance": 0.5,
       "custom_name_chance": 0.025,
       "custom_names": [
         "Freshah"
@@ -728,10 +1089,10 @@
       }
     },
     "sonic_boom_scroll": {
-      "attack_damage": 14,
+      "attack_damage": 60,
       "attack_range": {
-        "min": 12,
-        "max": 30
+        "min": 24,
+        "max": 48
       }
     },
     "wither_sword": {
