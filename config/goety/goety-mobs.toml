@@ -326,7 +326,7 @@
 		#How much Soul Energy it cost per second for a Geo Servant to heal, Default: 1
 		#Range: > 0
 		geoMinionHealCost = 1
-		#Whether Geo Servants can heal if summoned while wearing Frost Robe, Default: true
+		#Whether Geo Servants can heal if summoned while wearing Geo Robe, Default: true
 		geoMinionHeal = true
 		#How much Health Geo Servants heal, numerically, Default: 1.0
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -730,8 +730,6 @@
 			ministerRaid = true
 
 [Textures]
-	#If Brood Mothers uses their old textures, Default: false
-	broodMotherOldTexture = false
 	#If armor worn by mobs that uses HierarchicalArmorLayer(ie, Illager Servants) shows Armor Trim, Default: true
 	hierarchicalArmorTrim = true
 	#If certain mobs have a different texture during some holiday months, Default: true

@@ -6,7 +6,7 @@
 	#Harming Extra Capacity, Default: 1
 	#Range: > 0
 	harmingCapacity = 1
-	#Resistance Extra Capacity, Default: 6
+	#Resistance Extra Capacity, Default: 8
 	#Range: > 0
 	resistanceCapacity = 6
 	#Healing Extra Capacity, Default: 1
@@ -25,6 +25,9 @@
 ["Modded Soul Cost"]
 
 	["Modded Soul Cost"."Status Effects"]
+		#Necrosis Soul Cost, Default: 25
+		#Range: > 1
+		necrosisCost = 25
 		#Wild Rage Soul Cost, Default: 50
 		#Range: > 1
 		wildRageCost = 50
@@ -37,6 +40,9 @@
 		#Fire Trail Soul Cost, Default: 50
 		#Range: > 1
 		fireTrailCost = 50
+		#Insect Bane Soul Cost, Default: 25
+		#Range: > 1
+		insectBaneCost = 25
 		#Bottling Soul Cost, Default: 50
 		#Range: > 1
 		bottlingCost = 50
@@ -85,6 +91,9 @@
 		#Explosive Soul Cost, Default: 50
 		#Range: > 1
 		explosiveCost = 50
+		#Smiting Soul Cost, Default: 25
+		#Range: > 1
+		smitingCost = 25
 		#Flammable Soul Cost, Default: 50
 		#Range: > 1
 		flammableCost = 50
@@ -204,6 +213,9 @@
 		#Part Lava Soul Cost, Default: 25
 		#Range: > 1
 		partLavaCost = 25
+		#Aging Soul Cost, Default: 100
+		#Range: > 1
+		agingCost = 100
 		#Infest Soul Cost, Default: 25
 		#Range: > 1
 		infestCost = 25
@@ -261,6 +273,9 @@
 		#Strip Armor Soul Cost, Default: 100
 		#Range: > 1
 		stripArmorCost = 100
+		#Exchange Soul Cost, Default: 25
+		#Range: > 1
+		exchangeCost = 25
 
 [Curable]
 	#Whether Snow Skin is curable via Milk or Wartful Egg, Default: false
@@ -387,7 +402,7 @@
 	#How much Capacity is given for sixth level, Default: 8
 	#Range: > 0
 	level6Capacity = 8
-	#How much Capacity is given initially, Default: 4
+	#How much Capacity is given initially, Default: 1
 	#Range: > 1
 	initialCapacity = 4
 	#How much Capacity is given for fourth level, Default: 2
@@ -398,15 +413,42 @@
 	level5Capacity = 4
 
 	["Modded Capacity"."Status Effects"]
+		#Frosty Aura Extra Capacity, Default: 2
+		#Range: > 0
+		frostyAuraCapacity = 2
+		#Rallying Extra Capacity, Default: 2
+		#Range: > 0
+		rallyingCapacity = 2
+		#Gravity Pulse Extra Capacity, Default: 2
+		#Range: > 0
+		gravityPulseCapacity = 2
+		#Fire Trail Extra Capacity, Default: 4
+		#Range: > 0
+		fireTrailCapacity = 4
+		#Storm's Wrath Extra Capacity, Default: 4
+		#Range: > 0
+		stormsWrathCapacity = 4
+		#Void Touched Extra Capacity, Default: 4
+		#Range: > 0
+		voidTouchedCapacity = 4
+		#Shielding Extra Capacity, Default: 2
+		#Range: > 0
+		shieldingCapacity = 2
+		#Snow Skin Extra Capacity, Default: 4
+		#Range: > 0
+		snowSkinCapacity = 4
+		#Fortunate Extra Capacity, Default: 6
+		#Range: > 0
+		fortunateCapacity = 6
+		#Radiance Extra Capacity, Default: 2
+		#Range: > 0
+		radianceCapacity = 2
 		#Bottling Extra Capacity, Default: 4
 		#Range: > 0
 		bottlingCapacity = 4
 		#Save Effects Extra Capacity, Default: 2
 		#Range: > 0
 		saveEffectsCapacity = 8
-		#Frosty Aura Extra Capacity, Default: 2
-		#Range: > 0
-		frostyAuraCapacity = 2
 		#Sun Allergy Extra Capacity, Default: 4
 		#Range: > 0
 		sunAllergyCapacity = 4
@@ -416,18 +458,12 @@
 		#Wild Rage Extra Capacity, Default: 2
 		#Range: > 0
 		wildRageCapacity = 2
-		#Rallying Extra Capacity, Default: 2
+		#Smiting Extra Capacity, Default: 2
 		#Range: > 0
-		rallyingCapacity = 2
-		#Gravity Pulse Extra Capacity, Default: 2
-		#Range: > 0
-		gravityPulseCapacity = 2
+		smitingCapacity = 2
 		#Corpse Eater Extra Capacity, Default: 4
 		#Range: > 0
 		corpseEaterCapacity = 4
-		#Fire Trail Extra Capacity, Default: 4
-		#Range: > 0
-		fireTrailCapacity = 4
 		#Plunge Extra Capacity, Default: 4
 		#Range: > 0
 		plungeCapacity = 4
@@ -443,30 +479,15 @@
 		#Evil Eye Extra Capacity, Default: 4
 		#Range: > 0
 		evilEyeCapacity = 4
-		#Storm's Wrath Extra Capacity, Default: 4
-		#Range: > 0
-		stormsWrathCapacity = 4
 		#Explosive Extra Capacity, Default: 2
 		#Range: > 0
 		explosiveCapacity = 2
-		#Void Touched Extra Capacity, Default: 4
+		#Insect Bane Extra Capacity, Default: 2
 		#Range: > 0
-		voidTouchedCapacity = 4
+		insectBaneCapacity = 2
 		#Nyctophobia Extra Capacity, Default: 4
 		#Range: > 0
 		nyctophobiaCapacity = 4
-		#Shielding Extra Capacity, Default: 2
-		#Range: > 0
-		shieldingCapacity = 2
-		#Snow Skin Extra Capacity, Default: 4
-		#Range: > 0
-		snowSkinCapacity = 4
-		#Fortunate Extra Capacity, Default: 6
-		#Range: > 0
-		fortunateCapacity = 6
-		#Radiance Extra Capacity, Default: 2
-		#Range: > 0
-		radianceCapacity = 2
 
 	["Modded Capacity"."Block/Other Effects"]
 		#Purify Debuffs Extra Capacity, Default: 2

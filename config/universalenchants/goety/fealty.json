@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:focus",
+    "goety:haunted_broom"
+  ],
+  "incompatible": []
+}

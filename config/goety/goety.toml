@@ -161,10 +161,6 @@
 	lichNightVision = true
 
 [General]
-	#Arca will save the Player if past Totem Maximum Soul Count, Default: true
-	arcaUndying = true
-	#Entities part of a Player's Grimoire of Goodwill will be protected by the Player's servants, Default: true
-	goodwillServantGuard = true
 	#Totem of Souls will save the Player if full of Soul Energy and its in Curio Slot, hotbar or off-hand, Default: true
 	totemUndying = true
 	#Move where the equipped Focus is located vertically from its original position (- = Up, + = Down), Default: 0
@@ -174,33 +170,55 @@
 	starterTotem = true
 	#Bosses from the Mod has custom Music Playing. Default: true
 	bossMusic = true
-	#Vertical Position of where the Soul Energy Bar is located, Default: -5
-	#Range: > -2147483647
-	soulGuiVertical = -5
-	#Players camera can shake. Default: true
-	cameraShake = true
 	#Horizontal Position of where the Soul Energy Bar is located, Default: 100
 	#Range: > -2147483647
 	soulGuiHorizontal = 100
-	#Show the Soul Energy Bar if Player has Totem of Souls/Arca, Default: true
-	soulGuiShow = true
+	#Move where the equipped Ominous Charm counter is located horizontally from its original position (- = Left, + = Right), Default: 0
+	#Range: > -2147483647
+	ocGuiHorizontal = 0
 	#Gives Players the Black Book when first entering World and Patchouli is loaded, Default: false
 	starterBook = false
-	#Whether Wands and Staffs show cooldown if the focus it's equipped with is, Default: true
-	showWandCooldown = true
-	#Move where the equipped Focus is located horizontally from its original position (- = Left, + = Right), Default: 0
-	#Range: > -2147483647
-	focusGuiHorizontal = 0
+	#Show the Ominous Charm Bad Omen amount in Gui, Default: true
+	ocGuiShow = true
 	#Entities part of a Player's Grimoire of Goodwill will not take most damage from said Player rather than just spells, Default: false
 	goodwillNoDamage = false
 	#Show currently equipped focus on Wand/Staff in Gui, Default: true
 	focusGuiShow = true
 	#Show numerical amount of Souls on the Soul Energy Bar, Default: false
 	showNumber = true
-	#Using an item while holding a wand or staff on main/offhand will cause the wand or staff to be put on cooldown to prevent accidental spellcasting, Default: true
-	wandCoolItemUse = true
+	#Move where the equipped Eternal Cauldron counter is located vertically from its original position (- = Up, + = Down), Default: 0
+	#Range: > -2147483647
+	ecGuiVertical = 0
 	#Entities part of a Player's Grimoire of Goodwill will be considered as the Player's ally codewise, Default: false
 	goodwillFullAlly = false
+	#Arca will save the Player if past Totem Maximum Soul Count but only if they're a Lich, Default: true
+	arcaLichUndying = true
+	#Show the Eternal Cauldron cooldown in Gui, Default: true
+	ecGuiShow = true
+	#Arca will save the Player if past Totem Maximum Soul Count, Default: true
+	arcaUndying = true
+	#Entities part of a Player's Grimoire of Goodwill will be protected by the Player's servants, Default: true
+	goodwillServantGuard = true
+	#Vertical Position of where the Soul Energy Bar is located, Default: -5
+	#Range: > -2147483647
+	soulGuiVertical = -5
+	#Players camera can shake. Default: true
+	cameraShake = true
+	#Show the Soul Energy Bar if Player has Totem of Souls/Arca, Default: true
+	soulGuiShow = true
+	#Move where the equipped Eternal Cauldron counter is located horizontally from its original position (- = Left, + = Right), Default: 0
+	#Range: > -2147483647
+	ecGuiHorizontal = 0
+	#Whether Wands and Staffs show cooldown if the focus it's equipped with is, Default: true
+	showWandCooldown = true
+	#Move where the equipped Focus is located horizontally from its original position (- = Left, + = Right), Default: 0
+	#Range: > -2147483647
+	focusGuiHorizontal = 0
+	#Move where the equipped Ominous Charm counter is located vertically from its original position (- = Up, + = Down), Default: 0
+	#Range: > -2147483647
+	ocGuiVertical = 0
+	#Using an item while holding a wand or staff on main/offhand will cause the wand or staff to be put on cooldown to prevent accidental spellcasting, Default: true
+	wandCoolItemUse = true
 	#Gives Players the Witch's Brew when first entering World and Patchouli is loaded, Default: false
 	starterWitchBook = false
 	#Bosses from the Mod has custom looking Boss Bars. Default: true
@@ -208,8 +226,6 @@
 	#Totem Maximum Soul Count and Threshold to save the Player, Default: 10000
 	#Range: > 10
 	maxSouls = 30000
-	#Arca will save the Player if past Totem Maximum Soul Count but only if they're a Lich, Default: true
-	arcaLichUndying = true
 	#Arca Maximum Soul Count, Default: 100000
 	#Range: > 10
 	maxArcaSouls = 200000

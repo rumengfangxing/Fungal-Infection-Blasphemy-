@@ -373,6 +373,17 @@
 			#Range: 1.0 ~ 1.7976931348623157E308
 			snarelingHealth = 40.0
 
+		[Attributes."Summoned Mobs"."Elder Guardian Servant"]
+			#How much Max Health Elder Guardian Servants have, Default: 80.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			elderGuardianHealth = 80.0
+			#How much natural Armor Elder Guardian Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			elderGuardianArmor = 0.0
+			#How much damage Elder Guardian Servants attack deals, Default: 8.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			elderGuardianDamage = 8.0
+
 		[Attributes."Summoned Mobs"."Web Spider Servant"]
 			#How much Max Health Web Spider Servants have, Default: 16.0
 			#Range: 1.0 ~ 1.7976931348623157E308
@@ -587,6 +598,17 @@
 			#How much damage Zombified Piglin Servants deals, Default: 5.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			zombifiedPiglinServantDamage = 7.5
+
+		[Attributes."Summoned Mobs"."Guardian Servant"]
+			#How much natural Armor Guardian Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			guardianArmor = 0.0
+			#How much damage Guardian Servants attack deals, Default: 6.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			guardianDamage = 6.0
+			#How much Max Health Guardian Servants have, Default: 30.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			guardianHealth = 30.0
 
 		[Attributes."Summoned Mobs".Mini-Ghast]
 			#How much Max Health Mini-Ghasts have, Default: 5.0

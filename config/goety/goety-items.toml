@@ -5,7 +5,7 @@
 		#Define the Enchantability for the armor, higher number the better, Default: 20
 		#Range: > 1
 		cursedPaladinEnchantability = 20
-		#Define the toughness for each armor piece, Default: 1.0
+		#Define the toughness for each armor piece, Default: 2.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		cursedPaladinToughness = 1.0
 		#Whether armor pieces don't break but no longer provide armor, Default: true
@@ -18,7 +18,7 @@
 		cursedPaladinKnockResist = 0.0
 
 		[Armor."Cursed Paladin Armor"."Armor Points"]
-			#Define how much armor points wearing the Chestplate provides, Default: 7
+			#Define how much armor points wearing the Chestplate provides, Default: 8
 			#Range: > 1
 			cursedPaladinChest = 7
 			#Define how much armor points wearing the Helmet provides, Default: 3
@@ -307,6 +307,9 @@
 	#How much Souls is consumed when crafting with Totem, Default: 1
 	#Range: > 0
 	craftSouls = 1
+	#How many blocks from its previous location will the Haunted Broom take Soul Energy, set to 0 to disable, Default: 8
+	#Range: > 0
+	hauntedBroomSoulDistance = 8
 	#How far the diameter of Command Horns reach, Default: 8.0
 	#Range: 1.0 ~ 1.7976931348623157E308
 	commandHornDiameter = 8.0
@@ -318,44 +321,47 @@
 	tesseractDurability = 16
 	#If soulRepair is enabled, the cost of Soul Energy multiplies per item's enchantments, Default: true
 	soulRepairEnchant = true
+	#How much Soul Energy is taken every 'hauntedBroomSoulDistance' blocks flown with Haunted Brooms, Default: 10
+	#Range: > 1
+	hauntedBroomSouls = 10
 
 ["Tools & Weapons"]
 
 	["Tools & Weapons".Staffs]
 		#How much base damage Frost Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		frostStaffDamage = 4.0
 		#How much base damage Nameless Staffs deals, Default: 6.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		namelessStaffDamage = 6.0
 		#How much base damage Necro Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		necroStaffDamage = 4.0
 		#How much base damage Abyss Staffs deals, Default: 9.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		abyssStaffDamage = 9.0
 		#How much base damage Wild Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		wildStaffDamage = 4.0
 		#How much base damage Geo Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		geoStaffDamage = 4.0
 		#How much base damage Nether Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		netherStaffDamage = 4.0
 		#How much base damage Ominous Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		ominousStaffDamage = 4.0
 		#How much base damage Void Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		voidStaffDamage = 4.0
 		#How much base damage Storm Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		stormStaffDamage = 4.0
 		#Holding a Staff offhand increases wielder's melee attack damage by 25%, Default: true
 		staffOffhandBuff = true
 		#How much base damage Wind Staffs deals, Default: 4.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		windStaffDamage = 4.0
 
 	["Tools & Weapons".Hammers]
@@ -366,7 +372,7 @@
 		#Range: 0.0 ~ 1.7976931348623157E308
 		hammerAttackSpeed = 0.75
 		#How much base damage Hammers deals, the damage added depends on material the hammer is made off (ie. Iron = 2.0), Default: 5.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		hammerBaseDamage = 24.0
 
 	["Tools & Weapons"."Philosopher's Mace"]
@@ -376,13 +382,16 @@
 		#Whether tools don't break but no longer benefits, Default: true
 		philosophersMacePersist = true
 		#How much damage Philosopher's Mace deals, Default: 9.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		philosophersMaceDamage = 14.0
 		#How many uses before the Philosopher's Mace breaks, Default: 128
 		#Range: > 1
 		philosophersMaceDurability = 128
 
 	["Tools & Weapons"."Special Tools"]
+		#How much base damage Sickles deals, the damage added depends on material the sickle is made off (ie. Iron = 2.0), Default: 0.5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		sickleBaseDamage = 0.5
 		#Define the Enchantability for Special Tools, higher number the better, Default: 22
 		#Range: > 1
 		specialToolsEnchantability = 22
@@ -395,6 +404,9 @@
 		#Define the Mining Level for Special Tools, example, 3 = Diamond, 4 = Netherite, Default: 3
 		#Range: > 0
 		specialToolsMiningLevel = 3
+		#How fast it takes to fully swing a Sickle. The lower the number the slower it takes to recharge, Default: 3.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		sickleAttackSpeed = 3.0
 		#How much damage Special Tools deals, the configured number is added to Tool Base Damage, Default: 3.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		specialToolsDamage = 3.0
@@ -412,7 +424,7 @@
 		#Range: > 1
 		bladeOfEnderEnchantability = 20
 		#How much damage Blade of Ender deals, Default: 9.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		bladeOfEnderDamage = 16.0
 		#How fast it takes to fully swing a Blade of Ender. The lower the number the slower it takes to recharge, Default: 1.2
 		#Range: 0.0 ~ 1.7976931348623157E308
@@ -427,7 +439,7 @@
 		#Whether tools don't break but no longer benefits, Default: true
 		darkToolsPersist = true
 		#How much damage Dark Tools deals, the configured number is added to Tool Base Damage, Default: 3.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		darkToolsDamage = 3.0
 		#How many uses before Dark Tools breaks, Default: 166
 		#Range: > 1
@@ -439,7 +451,7 @@
 		#Range: > 1
 		darkToolsEnchantability = 20
 		#How fast Dark Tools mines, the higher the better, Default: 8.0
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		darkToolsBreakSpeed = 8.0
 
 	["Tools & Weapons".Scythes]
@@ -463,7 +475,7 @@
 		#Range: > 1
 		darkScytheSouls = 1
 		#How much base damage Scythes deals, the damage added depends on material the scythe is made off (ie. Iron = 2.0), Default: 4.5
-		#Range: 1.0 ~ 1.7976931348623157E308
+		#Range: 0.0 ~ 1.7976931348623157E308
 		scytheBaseDamage = 6.0
 		#Define the Enchantability for Death Scythe, higher number the better, Default: 22
 		#Range: > 1
