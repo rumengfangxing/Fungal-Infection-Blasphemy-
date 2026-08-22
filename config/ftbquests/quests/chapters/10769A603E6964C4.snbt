@@ -79,6 +79,9 @@
 		}
 	]
 	order_index: 0
+	quest_enhance_chapter_background: "emxarms:textures/attachment/slot/ammo_3.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -160,6 +163,7 @@
 		{
 			dependencies: ["2279A6A6151917F2"]
 			description: ["&6危险行为,仅供游戏演绎需要,请勿在现实中模仿&r"]
+			hide_until_deps_complete: true
 			icon: "biomancy:insomnia_cure"
 			id: "35017792B97B491C"
 			subtitle: "&m我的天哪化学生"

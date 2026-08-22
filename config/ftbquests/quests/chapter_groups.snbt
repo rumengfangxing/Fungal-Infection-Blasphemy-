@@ -2,11 +2,8 @@
 	chapter_groups: [
 		{ id: "7C3CC28B4F4C38EC", title: "&f引导" }
 		{ id: "3940671EEBB12B1A", title: "&6主线" }
-		{ id: "5E6271B05BEA90F3", title: "&d神秘遗物" }
 		{ id: "18296D6B380C1DA0", title: "玩法指南" }
 		{ id: "21B93F40B013EE45", title: "图鉴" }
-		{ id: "5C833F73A01412E2", title: "科技" }
-		{ id: "1EBC22E93EF9B621", title: "&e商店" }
 		{ id: "79300EFB8D8A68FC", title: "杂项" }
 	]
 }

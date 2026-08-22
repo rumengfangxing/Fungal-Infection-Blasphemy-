@@ -37,6 +37,9 @@
 		}
 	]
 	order_index: 0
+	quest_enhance_chapter_background: "enigmaticlegacy:block/star_fabric"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

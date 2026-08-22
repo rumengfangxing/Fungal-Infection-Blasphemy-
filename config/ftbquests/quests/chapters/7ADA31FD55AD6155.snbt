@@ -8,6 +8,8 @@
 	icon: "lightmanscurrency:coinpile_gold"
 	id: "7ADA31FD55AD6155"
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

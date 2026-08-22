@@ -195,7 +195,7 @@ var TIPS_POOL = [
         }
     });
 
-    // ==================== /fibtest ====================
+    // ==================== /broadcasttest ====================
     global.triggerEveningBroadcast = function(server) {
         var overworld = server.getLevel("minecraft:overworld");
         if (!overworld) return;
@@ -207,7 +207,7 @@ var TIPS_POOL = [
 ServerEvents.commandRegistry(function(event) {
     var commands = event.commands;
     event.register(
-        commands.literal("fibtest")
+        commands.literal("broadcasttest")
             .requires(function(src) { return src.hasPermission(2); })
             .executes(function(ctx) {
                 var server = ctx.getSource().getServer();

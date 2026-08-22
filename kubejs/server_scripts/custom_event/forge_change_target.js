@@ -3,10 +3,6 @@
  */
 global.ForgeLivingChangeTargetEvent = event => {
 	handleSporeIgnoreFungifiedPlayer(event)
-	// // 实体交易系统 - 友好生物消除仇恨
-	// if (typeof global.handleTraderHostility === 'function') {
-	// 	global.handleTraderHostility(event)
-	// }
 }
 
 /**

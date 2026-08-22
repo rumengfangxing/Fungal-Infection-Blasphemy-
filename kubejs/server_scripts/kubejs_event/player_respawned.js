@@ -1,7 +1,7 @@
 PlayerEvents.respawned(event => {
 	const { player } = event
 	if (getFungifiedStage(player) != 0) {
-		setFungifiedStage(player, 0)
-		player.sendData("kubejs:fungified_biomass_hunger", {enable: false})
+		setFungifiedStage(player, 1)
+		setFungifiedBiomass(player, 10)
 	}
 })

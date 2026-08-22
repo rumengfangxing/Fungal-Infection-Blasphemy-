@@ -6,6 +6,8 @@
 	icon: "minecraft:blade_pottery_sherd"
 	id: "3906CDC67457305C"
 	order_index: 4
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [ ]
 	title: "佣兵"

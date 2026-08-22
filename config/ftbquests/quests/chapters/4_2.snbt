@@ -3,7 +3,7 @@
 	default_quest_shape: "none"
 	filename: "4_2"
 	group: "18296D6B380C1DA0"
-	icon: "confluence:obsidian_skull"
+	icon: "morerelics:king_crimson"
 	id: "6E79B73AD047A080"
 	images: [{
 		click: "#4A9008353B1A2BCD"
@@ -16,6 +16,9 @@
 		y: 0.0d
 	}]
 	order_index: 0
+	quest_enhance_chapter_background: "emxarms:textures/attachment/slot/ammo_2.png"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [{
 		description: [

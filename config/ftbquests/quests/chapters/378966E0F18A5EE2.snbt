@@ -6,38 +6,10 @@
 	group: "7C3CC28B4F4C38EC"
 	icon: "spore:rotten_grass"
 	id: "378966E0F18A5EE2"
-	images: [
-		{
-			dependency: "1279707426A5CEAB"
-			height: 4.0d
-			image: "spore:block/rotten_grass"
-			rotation: 0.0d
-			width: 6.0d
-			x: 0.0d
-			y: -4.0d
-		}
-		{
-			dev: true
-			height: 4.0d
-			image: "minecraft:block/grass"
-			order: 3
-			rotation: 0.0d
-			width: 6.0d
-			x: 8.0d
-			y: -4.0d
-		}
-		{
-			dev: true
-			height: 6.0d
-			image: "minecraft:block/oak_sapling"
-			order: 2
-			rotation: 0.0d
-			width: 6.0d
-			x: 9.0d
-			y: 0.5d
-		}
-	]
 	order_index: 1
+	quest_enhance_chapter_background: "spore:block/mycelium_growths_big_underwater"
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -296,7 +268,7 @@
 				}
 			]
 			title: "探索必备工具"
-			x: 2.0d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -621,6 +593,7 @@
 				""
 				"背上背包正式开始&m逃亡&r探险之旅吧"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "sophisticatedbackpacks:backpack"

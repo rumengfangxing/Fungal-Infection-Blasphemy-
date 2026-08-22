@@ -258,6 +258,28 @@ const BLOCK_CONFIGS = [
             { name: '惩罚-破坏',     weight: 20, breakBlock: true,  giveLoot: false, effects: [], damage: 0, message: '§c砸得太重，东西全毁了。' },
             { name: '惩罚-不破坏',   weight: 5, breakBlock: false, giveLoot: false, effects: [{id:'mining_fatigue',duration:10,amplifier:2}], damage: 1, message: '§c震得你手发麻...' }
         ]
+    },
+    {
+        blockId: "spore:frozen_remains",
+        toolType: "none",
+        interactDuration: 4,
+        speedMultiplier: 0.3,
+        maxDistance: 3,
+        soundId: "minecraft:block.glass.break",
+        loopSoundId: "create:clipboard_check",
+        loopInterval: 10,
+        lootTable: "fibloot:interaction/hammer/frozen_remains",
+        cdTicks: 25,
+        cdMin: 5,
+        atkSpdBase: 1,
+        minDelay: 5,
+        damageMode: 'bodypart',
+        bodypartHpDmg: 2,
+        text: "摸索中",
+        replaceWith: null,
+        results: [
+            { name: '惩罚',   weight: 100, breakBlock: false, giveLoot: false, effects: [{id:'mining_fatigue',duration:10,amplifier:2}], damage: 1, message: '§c太冷了,或许得换个工具(锤或锯)...' }
+        ]
     }
 ]
 

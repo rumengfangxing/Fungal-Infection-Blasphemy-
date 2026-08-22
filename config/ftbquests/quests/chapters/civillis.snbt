@@ -7,6 +7,8 @@
 	icon: "civil:civil_detector"
 	id: "22E2D2E1E9B867AD"
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

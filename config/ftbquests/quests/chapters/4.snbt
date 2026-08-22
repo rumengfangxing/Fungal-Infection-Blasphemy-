@@ -1,5 +1,5 @@
 {
-	autofocus_id: "3ED059FC7DD31728"
+	autofocus_id: "6DF33AE4E834E3DF"
 	default_hide_dependency_lines: false
 	default_quest_shape: "none"
 	filename: "4"
@@ -818,11 +818,13 @@
 		}
 	]
 	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "3ED059FC7DD31728"
 			invisible: true
 			tasks: [{
@@ -838,7 +840,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "4DD0B93CD0BC1A90"
 			invisible: true
 			tasks: [{
@@ -854,7 +856,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "120D67E806A46982"
 			invisible: true
 			tasks: [{
@@ -870,7 +872,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "71137828580DA929"
 			invisible: true
 			tasks: [{
@@ -886,7 +888,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "15EDC17CEFDA62A8"
 			invisible: true
 			tasks: [{
@@ -902,7 +904,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "21C18302E4855938"
 			invisible: true
 			tasks: [{
@@ -918,7 +920,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "03BA165BA4B9DF2D"
 			invisible: true
 			tasks: [{
@@ -934,7 +936,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "303489D05F73C24E"
 			invisible: true
 			tasks: [{
@@ -950,7 +952,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "5E66CDEA3E718429"
 			invisible: true
 			tasks: [{
@@ -966,7 +968,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "44772647380AAAA4"
 			invisible: true
 			tasks: [{
@@ -997,7 +999,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "46C51DA4D572201E"
 			invisible: true
 			tasks: [{
@@ -1013,7 +1015,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "6A653FB96099BC18"
 			invisible: true
 			tasks: [{
@@ -1029,7 +1031,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "79F9D503CECC0CF7"
 			invisible: true
 			tasks: [{
@@ -1060,7 +1062,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "205ABA889BEB2CB6"
 			invisible: true
 			tasks: [{
@@ -1302,7 +1304,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "124354C43CB39CC2"
 			invisible: true
 			tasks: [{
@@ -1664,7 +1666,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "570B05FF2BE49F49"
 			invisible: true
 			tasks: [{
@@ -1680,7 +1682,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "48E7F311D1E186D3"
 			invisible: true
 			tasks: [{
@@ -1696,7 +1698,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "4F0BFEB87A3CF662"
 			invisible: true
 			tasks: [{
@@ -1712,7 +1714,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "4F3F6DBFFC3D2212"
 			invisible: true
 			tasks: [{
@@ -1728,7 +1730,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "76468478F8C3E45E"
 			invisible: true
 			tasks: [{
@@ -1760,7 +1762,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "0474C1CC84DDC03C"
 			invisible: true
 			tasks: [{
@@ -1776,7 +1778,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "10E7F351B265E927"
 			invisible: true
 			tasks: [{
@@ -1792,7 +1794,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "0F9DB9D9089D5387"
 			invisible: true
 			tasks: [{
@@ -1840,7 +1842,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "137D087D93FF17E8"
 			invisible: true
 			tasks: [{
@@ -1903,7 +1905,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "3172A314E8C1E53F"
 			invisible: true
 			tasks: [{
@@ -2080,7 +2082,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "239A6E91C88D7845"
 			invisible: true
 			tasks: [{
@@ -2096,7 +2098,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "747E747A10836F4D"
 			invisible: true
 			tasks: [{
@@ -2112,7 +2114,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "1D3D7A66A94B94FF"
 			invisible: true
 			tasks: [{
@@ -2128,7 +2130,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "261E297B5D53D62F"
 			invisible: true
 			tasks: [{
@@ -2144,7 +2146,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "249504C731CCFBE0"
 			invisible: true
 			tasks: [{
@@ -2160,7 +2162,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "186CC1829F130E0B"
 			invisible: true
 			tasks: [{
@@ -2176,7 +2178,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "3C5D4F5E7A2C0026"
 			invisible: true
 			tasks: [{
@@ -2192,7 +2194,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "14C206048602E82D"
 			invisible: true
 			tasks: [{
@@ -2208,7 +2210,7 @@
 		}
 		{
 			hide_dependent_lines: true
-			icon: "confluence:demon_heart"
+			icon: "morerelics:crown_of_the_legend"
 			id: "25DFDEB898AD932A"
 			invisible: true
 			tasks: [{
@@ -2221,6 +2223,23 @@
 			title: "朽翼魔"
 			x: 24.5d
 			y: 26.5d
+		}
+		{
+			id: "6DF33AE4E834E3DF"
+			invisible: true
+			rewards: [{
+				id: "69B52E1A15E87FF2"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			tasks: [{
+				id: "232F6914D615E164"
+				title: "被你发现了awa!"
+				type: "checkmark"
+			}]
+			title: "你怎么发现这里的？？？"
+			x: 3.0d
+			y: 0.0d
 		}
 	]
 	title: "&4感染"

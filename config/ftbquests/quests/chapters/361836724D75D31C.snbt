@@ -3,9 +3,17 @@
 	default_quest_shape: ""
 	filename: "361836724D75D31C"
 	group: "3940671EEBB12B1A"
-	icon: "confluence:trifold_map"
+	icon: {
+		Count: 1
+		id: "minecraft:filled_map"
+		tag: {
+			map: 0
+		}
+	}
 	id: "361836724D75D31C"
 	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [ ]
 	title: "构筑"
