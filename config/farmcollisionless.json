@@ -1,0 +1,10 @@
+{
+  "DetectionIntervalTicks": 20,
+  "CollisionlessProvider": "net.minecraft.world.level.block.FenceBlock",
+  "SkipEnemyMonsterFarm": true,
+  "TheNumberOfEntitiesInAChunkThatValidatesDetection": 10,
+  "AutoDetectFarm": true,
+  "RequireOPForCollisionlessChunkActivation": true,
+  "Version": "3",
+  "FarmEntitiesRegistryNameWhitelist": []
+}

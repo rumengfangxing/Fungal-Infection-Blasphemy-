@@ -13,7 +13,10 @@
     "rain_splash": true,
     "block_break": true,
     "block_breaking": true,
-    "other": {}
+    "other": {
+      "dummmmmmy:hay": true,
+      "dummmmmmy:number": false
+    }
   },
   "detail_settings": {
     "sky": true,
@@ -28,7 +31,9 @@
     "fog_distance": 33,
     "fog_start": 100,
     "multi_dimension_fog_control": false,
-    "dimensionFogDistance": {},
+    "dimensionFogDistance": {
+      "minecraft:overworld": 0
+    },
     "light_updates": true,
     "item_frame": true,
     "armor_stand": true,

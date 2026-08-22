@@ -1,6 +1,7 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:goeticlegacy:old_world_echo{OneUse:1b,Rarity:\"common\",SourceType:\"starter\",State:1,TemplateName:\"starter_house\",display:{Lore:[\u0027{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"color\":\"white\",\"text\":\"丑陋的临时据点\"}],\"text\":\"\"}\u0027]}}",
     "item:minecraft:gunpowder",
     "item:spore:infested_end_stone",
     "item:minecraft:mycelium",

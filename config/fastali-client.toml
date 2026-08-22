@@ -1,0 +1,16 @@
+#Master toggle for the Advanced Loot Info (ALI) optimizations.
+#Only has any effect when Advanced Loot Info (modid 'ali') is installed - FastALI patches
+#ALI at runtime, no ALI code is bundled. When ALI is absent this does nothing.
+optimizeAli = true
+#Cache the throwaway sample entities ALI builds for its loot categories, so JEI
+#reloads and re-opening a loot category don't reconstruct every mob from scratch.
+#Safe.
+optimizeAliEntityCache = true
+#Skip constructing sample entities for entity types whose loot table isn't in the
+#synced data - the biggest ALI load-time cost. A handful of mobs use a runtime loot
+#table that differs from their default one and could in theory be skipped; if a mob's
+#loot page goes missing, turn this off.
+optimizeAliAggressive = true
+#Log how long each FastALI-accelerated phase took.
+logTimings = true
+

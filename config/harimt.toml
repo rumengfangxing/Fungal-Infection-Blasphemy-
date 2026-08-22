@@ -1,0 +1,39 @@
+
+["Async Config"]
+	#Disables parallel processing of entities.
+	disabled = false
+	#Maximum worker threads. -1 = auto.
+	#Range: > -1
+	paraMax = -1
+	#List of entity IDs or namespaces (*):
+	#  - 'minecraft:zombie' = specific entity
+	#  - 'minecraft:*'      = all entities in namespace
+	synchronizedEntities = ["minecraft:tnt", "minecraft:creeper", "minecraft:experience_orb", "minecraft:end_crystal", "minecraft:wither", "create:*", "minecraft:item", "minecraft:ghast"]
+	#Enables async entity spawning. WARNING: incompatible with Carpet's lagFreeSpawning.
+	enableAsyncSpawn = true
+	#Experimental! Enables async random ticks.
+	enableAsyncRandomTicks = false
+	#Enable affinity-based entity routing.
+	#Routes entities in the same chunk to the same worker thread for better CPU cache locality.
+	#Workers steal from other lanes when idle. Recommended: true.
+	enableAffinityRouting = true
+	#Enable circuit breaker for entity tick crash isolation.
+	#When an entity type crashes repeatedly during async tick, it is automatically
+	#moved to synchronous ticking until it stabilizes. Prevents cascade failures.
+	enableCircuitBreaker = true
+	#Experimental Vulkan broad-phase diagnostics.
+	#Disabled by default because the current collision pairs are telemetry-only and
+	#do not replace Minecraft collision resolution. Enabling this may initialize a
+	#Vulkan device on the server.
+	enableGpuCollision = false
+	#Target number of entities per worker thread. Lower values = more parallelism.
+	#The system dynamically scales workers based on entity count.
+	#Recommended: 15-40. Default: 25.
+	#Range: 5 ~ 200
+	entitiesPerWorker = 25
+	#Timeout in milliseconds before warning about slow entity tick batches.
+	#Does NOT cancel ticks (unsafe) - only logs warnings for diagnostics.
+	#Default: 200ms.
+	#Range: 50 ~ 5000
+	staleTaskTimeoutMs = 200
+
