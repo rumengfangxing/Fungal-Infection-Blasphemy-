@@ -1,7 +1,7 @@
 {
 	"isHoldToAttackEnabled": true,
 	"isMiningWithWeaponsEnabled": true,
-	"isSwingThruGrassEnabled": true,
+	"isSwingThruGrassEnabled": false,
 	"isAttackInsteadOfMineWhenEnemiesCloseEnabled": true,
 	"isHighlightCrosshairEnabled": true,
 	"hudHighlightColor": 16711680,
@@ -11,7 +11,7 @@
 	"isTooltipAttackRangeEnabled": true,
 	"weaponSwingSoundVolume": 100,
 	"isDebugOBBEnabled": true,
-	"swingThruGrassBlacklist": "farmersdelight",
+	"swingThruGrassBlacklist": "farmersdelight","wicked_boline"
 	"mineWithWeaponBlacklist": "",
 	"firstPersonAnimations": "AUTO"
 }

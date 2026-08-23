@@ -1,6 +1,19 @@
 {
   "favorites": [],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "goety:henbane_flower",
+      "amount": 64
+    },
+    "item:goety:nightshade_blossom",
+    "item:goety:nightshade_seeds",
+    "item:goety:wicked_boline{Damage:0}",
+    "item:goety:henbane_seeds",
+    "item:goety:brew{CustomBrewEffects:[{Amplifier:0b,BrewId:\"effect.goety.aging\",Duration:1}],CustomPotionColor:5329233}",
+    "item:goety:aging_cream",
+    "item:goety:forbidden_grass",
+    "item:minecraft:blue_glazed_terracotta",
     "item:goeticlegacy:old_world_echo{OneUse:1b,Rarity:\"common\",SourceType:\"starter\",State:1,TemplateName:\"starter_house\",display:{Lore:[\u0027{\"italic\":false,\"color\":\"white\",\"extra\":[{\"text\":\"\"},{\"color\":\"white\",\"text\":\"丑陋的临时据点\"}],\"text\":\"\"}\u0027]}}",
     "item:minecraft:gunpowder",
     "item:spore:infested_end_stone",
