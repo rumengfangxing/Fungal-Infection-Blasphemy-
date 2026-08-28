@@ -1,0 +1,22 @@
+{
+  "modid": "ezactions_skp",
+  "vars": {
+    "modLoaded": "isModLoaded('ezactions')",
+    "screenOpen": "isScreenOpen()"
+  },
+  "entries": [
+    {
+      "when": {
+        "modLoaded": "true",
+        "screenOpen": "false"
+      },
+      "then": [
+        "show('ezactions_skp', 'key.ezactions.bundle.____')",
+        "show('ezactions_skp', 'key.ezactions.bundle.______')",
+        "show('ezactions_skp', 'key.ezactions.bundle.______________')",
+        "show('ezactions_skp', 'key.ezactions.bundle.gui_______gui_')",
+        "show('ezactions_skp', 'key.ezactions.open')"
+      ]
+    }
+  ]
+}

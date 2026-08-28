@@ -1,0 +1,50 @@
+{
+  "id": "preset_1787674989010",
+  "fallbackName": "属性限制",
+  "tooltipColor": 16755200,
+  "phases": [
+    {
+      "fallbackName": "感染玩家移速限制",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [
+        {
+          "attributeId": "minecraft:generic.movement_speed",
+          "operation": "ADDITION",
+          "variableType": "ATTRIBUTE_VALUE",
+          "formulaType": "LINEAR",
+          "coefficients": [
+            0.0,
+            0.0
+          ],
+          "base": 2.0,
+          "clipMinX": NaN,
+          "clipMaxX": NaN,
+          "uniqueId": "9c67b77f-1bd7-4489-8745-4b4ebbbe615b",
+          "sourceAttributeId": "minecraft:generic.movement_speed",
+          "type": "dynamic_attribute",
+          "customDisplayText": "",
+          "customColor": "white",
+          "showPointer": true
+        }
+      ],
+      "additionalConditions": [
+        {
+          "field": "SPRINTING",
+          "comparator": "EQ",
+          "value": "",
+          "type": "player_state"
+        },
+        {
+          "field": "HAS_EFFECT",
+          "comparator": "EQ",
+          "value": "spore:symbiosis",
+          "type": "player_state"
+        }
+      ]
+    }
+  ],
+  "showTooltip": true,
+  "customTooltipLines": [],
+  "backgroundStoryLines": []
+}

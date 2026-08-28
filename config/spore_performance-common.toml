@@ -1,0 +1,468 @@
+
+[safe]
+	#感染刷怪笼的供养扫描只在服务端运行；建议保持开启。
+	spawnerServerOnly = true
+	#配置加载或重载时预编译方块感染映射，移除热路径中的字符串解析；建议保持开启。
+	compiledInfectionMap = true
+	#优化感染卷须每 10 Tick 的局部传播，不改变触发节奏、概率或交互结果；建议保持开启。
+	tendrilSpreadFastPath = true
+	#同一灾厄实体在同一游戏 Tick 最多执行一次路径重算；建议保持开启。
+	sameTickPathGate = true
+	#跳过非进化感染体必定无结果的灾厄伙伴搜索；建议保持开启。
+	skipNonEvolvingCalamityFollow = true
+	#复用 AI Fix 的 Howitzer 在同 Tick、同目标位置的视线判断；建议保持开启。
+	howitzerSameTickCache = true
+	#sporesrp 按维度分桶并跳过无效跨维 UUID 查找；建议保持开启。
+	sporesrpDimensionGuards = true
+	#sporesrp 对已关闭的 Handler 立即返回，不建立无用缓存；建议保持开启。
+	sporesrpDisabledShortCircuit = true
+	#Sona 的区块感染总开关判定在同一维度同一 Tick 内复用；不缓存感染数值，也不改变判定结果。
+	sonaCanChunkInfectionTickCache = true
+	#同 Tick同区块的 Spore 投射物共享一次实体碰撞候选查询，最终命中仍逐投射物精确判定。
+	sporeProjectileBroadphaseCache = true
+	#保存 Spore 胆汁投射物已经存活的 Tick，防止区块卸载后寿命重新从零开始并遗留远距投射物；建议保持开启。
+	persistBileProjectileLifetime = true
+	#Spore 胆汁投射物的总生存时间（Tick）；300 与本体原始设定一致。
+	#Range: 1 ~ 72000
+	bileProjectileLifetimeTicks = 300
+
+[refactor]
+
+	[refactor.ai]
+		#启用 Spore 实体 AI 底层重构总开关；关闭后所有公共 AI 入口回退 Spore 原逻辑。
+		enabled = true
+		#按维度和空间单元共享目标候选感知帧，并为每只实体重新执行原目标条件。
+		sharedPerception = true
+		#用事件驱动威胁传播替代每只感染体各自扫描附近同类。
+		eventDrivenThreats = true
+		#用维度级群组成员表处理目标传播和伙伴选择。
+		groupCoordination = true
+		#启用即时、感知、导航和后台四阶段 Tick 诊断与过载保护。
+		tickPipeline = true
+
+	[refactor.navigation]
+		#启用 Spore 共享导航服务；移动、碰撞和攻击仍逐 Tick。
+		enabled = true
+		#允许相近体型、起点和目标区段的 Spore 单位共享路径走廊。
+		sharedCorridors = true
+		#长距离路径在主线程复制只读快照后交给后台线程计算粗粒度走廊。
+		asyncLongPaths = true
+		#超过此距离才创建异步长路径任务（格）。
+		#Range: 8 ~ 128
+		asyncThreshold = 12
+		#异步路径工作线程数量；线程只允许读取不可变快照。
+		#Range: 1 ~ 4
+		workerThreads = 2
+		#每个维度每 Tick 最多复制的路径快照数量。
+		#Range: 1 ~ 256
+		snapshotBudgetPerTick = 32
+		#每个维度每 Tick 最多接收并缓存的异步路径结果数量。
+		#Range: 1 ~ 512
+		resultBudgetPerTick = 64
+		#单个维度允许等待的异步路径请求上限。
+		#Range: 16 ~ 4096
+		queueLimit = 256
+		#单个维度最多缓存的共享路径走廊数量。
+		#Range: 64 ~ 32768
+		cacheEntries = 2048
+		#共享路径走廊最大有效时间（Tick）；地形变化可提前失效。
+		#Range: 1 ~ 400
+		cacheTicks = 40
+		#目标移动超过此距离后重新请求路径（格）。
+		#Range: 0.5 ~ 16.0
+		targetMoveInvalidation = 2.0
+
+	[refactor.compat]
+		#AI重构在检测到 exhuashan_sporeai_fix 时避开其灾厄专属技能覆盖。
+		sporeAiFix = true
+		#AI重构为 sporesrp Proto 和器官体启用软兼容适配。
+		sporesrp = true
+
+	[refactor.calamityNavigation]
+		#启用全灾厄导航运行时；仅调度寻路和朝向，不替换攻击、技能或移动物理。
+		enabled = true
+		#非技能状态下只允许移动执行器写入灾厄身体朝向，观察控制仅处理头部、视线和俯仰。
+		singleYawOwner = true
+		#检测路径节点无进展并按重算、替代落点和退避顺序恢复，避免原地持续转圈。
+		progressRecovery = true
+		#缓存灾厄前往固定 SearchArea 的坐标路径；实体目标和坐标目标使用独立缓存键。
+		positionPathCache = true
+		#方块变更只使经过该区段的路径失效，不再让整维度全部路径缓存失效。
+		sectionPathInvalidation = true
+		#路径节点连续未推进且位移过低多少 Tick 后判定为卡路。
+		#Range: 5 ~ 200
+		noProgressTicks = 20
+		#第二次卡路时为固定目标选择替代落点的最大半径（格）。
+		#Range: 1 ~ 16
+		recoveryWaypointRadius = 4
+		#首次导航退避时间（Tick）；后续按 20、40、80 Tick 递增。
+		#Range: 1 ~ 400
+		retryTicks = 20
+		#灾厄导航退避的最大时间（Tick）。
+		#Range: 20 ~ 1200
+		maxRetryTicks = 80
+		#完全排除朽翼魔龙（Verfalldrachen），不改变其盘旋、寻路或技能逻辑。
+		excludeVerfalldrachen = true
+
+	[refactor.multipart]
+		#为 HohlMultipart 使用轻量服务端 Tick；保留命中箱、伤害转发、父实体同步和死亡逻辑。
+		minimalServerTick = true
+		#让 HohlMultipart 近战分体共享已加载实体索引；最终范围、阵营和伤害判定仍逐分体执行。
+		sharedMeleeQuery = true
+
+	[refactor.staticEntities]
+		#菌丘没有目标或受击时跳过移动和完整 AI，只保留年龄、感染周期和同步。
+		moundMinimalTick = true
+		#扎根且未战斗的 GastGeber 跳过移动和无效 AI；脱根、受击或获得目标立即恢复。
+		rootedGastgeberMinimalTick = true
+		#在实体进入服务端 AI 前检查工作令牌，避免未取得后台名额的旧实体运行完整 Goal。
+		enforceWorkTokensBeforeAi = true
+
+	[refactor.follow]
+		#用维度级伙伴群组和共享走廊替代每个感染体重复创建跟随路径。
+		groupPathing = true
+		#伙伴跟随抵达半径按双方碰撞箱计算，避免大型单位在近距离反复寻路。
+		sizeAwareArrival = true
+		#伙伴距离不超过此值且局部路线安全时直接移动，不创建 Path。
+		#Range: 2 ~ 64
+		directSteeringDistance = 12
+		#每个伙伴群组每 Tick最多创建的本地接入路径数。
+		#Range: 0 ~ 16
+		maxLocalPathsPerGroupTick = 1
+
+	[refactor.busser]
+		#启用 Busser 变体行动仲裁和飞行导航碰撞缓存。
+		enabled = true
+		#按 Busser 变体只运行匹配的 Goal，减少互斥 Goal 的重复 canUse。
+		variantGoalPruning = true
+		#同一飞行导航 Tick复用碰撞区域和方块状态，避免重复创建 PathNavigationRegion。
+		sharedAirSweepContext = true
+		#Busser 飞行导航每 Tick最多测试的捷径候选数量。
+		#Range: 1 ~ 16
+		shortcutCandidatesPerTick = 3
+		#Busser 飞行捷径碰撞结果的最短刷新间隔。
+		#Range: 1 ~ 20
+		shortcutRefreshTicks = 2
+
+	[refactor.foliage]
+		#菌丘侵蚀只读取实际触发分支需要的邻居方块。
+		lazyNeighborReads = true
+		#预编译菌丘感染映射、标签和方块属性处理计划。
+		compiledActionPlans = true
+		#菌丘侵蚀重构的全局 Tick耗时预算（微秒）。
+		#Range: 100 ~ 50000
+		foliageTimeBudgetMicros = 750
+		#感染卷须重构的全局 Tick耗时预算（微秒）。
+		#Range: 100 ~ 50000
+		tendrilTimeBudgetMicros = 350
+
+[limits]
+	#单个维度内已加载的全部 Spore 生物单位上限。0 为不限；已有存档实体永远允许读档。
+	#Range: 0 ~ 100000
+	maxFungalUnitsPerDimension = 200
+	#单个维度内已加载的 spore:mound（菌囊/菌丘）上限。0 为不限。
+	#Range: 0 ~ 100000
+	maxMoundsPerDimension = 16
+	#单个维度内已加载的 spore:tendril（感染卷须）上限。0 为不限；Boss 的 arena_tendril 不计入此项。
+	#Range: 0 ~ 100000
+	maxTendrilsPerDimension = 32
+
+	[limits.working]
+		#单个维度内同时执行完整服务端 AI 的 Basic/Evolved/Hyper 感染体数量；超额旧实体保留，停止感知、Goal、寻路和控制器 Tick，但物理、受击、生命和同步仍逐 Tick运行。
+		#Range: 0 ~ 100000
+		maxActiveFungalUnitsPerDimension = 200
+		#单个维度内同时执行感染传播工作的 GastGeber 数量。
+		#Range: 0 ~ 100000
+		maxWorkingGastGebersPerDimension = 12
+		#单个维度内同时执行感染和卷须任务的 Mound 数量。
+		#Range: 0 ~ 100000
+		maxWorkingMoundsPerDimension = 8
+		#单个维度内同时执行方块传播的感染卷须数量。
+		#Range: 0 ~ 100000
+		maxWorkingTendrilsPerDimension = 16
+		#后台工作名额重新排序和轮换的周期（Tick）。
+		#Range: 20 ~ 12000
+		rotationTicks = 200
+		#实体获得工作名额后的最短保持时间（Tick），用于避免频繁抖动。
+		#Range: 0 ~ 1200
+		hysteresisTicks = 40
+
+	[limits.calamity]
+		#单个维度内所有灾厄实体总数上限；-1 表示不限制；存档已有灾厄仍允许加载。
+		#Range: -1 ~ 100000
+		maxTotal = -1
+		#单个维度内同一种灾厄实体上限；-1 表示不限制；存档已有灾厄仍允许加载。
+		#Range: -1 ~ 100000
+		maxPerType = -1
+
+[items]
+
+	[items.merge]
+		#启用 SporePerformance 自带的 Spore 掉落物区块分桶合并；Harium/Lithium 已提供合并优化时建议保持关闭。
+		enabled = true
+		#把合并协调器应用到所有模组物品；默认关闭，开启前需确认自动化兼容。
+		global = true
+		#受管物品合并半径（格）。
+		#Range: 1 ~ 16
+		radius = 4
+		#物品合并协调器运行间隔（Tick）。
+		#Range: 1 ~ 200
+		intervalTicks = 10
+		#单个维度每轮最多检查的物品实体数。
+		#Range: 16 ~ 100000
+		entityBudget = 256
+		#单个维度每轮物品合并的耗时预算（微秒）。
+		#Range: 100 ~ 50000
+		timeBudgetMicros = 750
+
+	[items.lifetime]
+		#缩短受管 Spore 普通掉落物的自然消失时间；玩家和特殊物品受保护。
+		enabled = true
+		#常见 Spore 废料的自然消失时间（Tick）；1200 Tick 为 60 秒。
+		#Range: 100 ~ 72000
+		fastTicks = 1200
+		#其他 Spore 普通掉落物的自然消失时间（Tick）；2400 Tick 为 120 秒。
+		#Range: 100 ~ 72000
+		normalTicks = 2400
+		#玩家主动丢弃物品的保护时间（Tick）；6000 Tick 为原版 5 分钟。
+		#Range: 100 ~ 72000
+		playerDroppedTicks = 6000
+		#保护不可堆叠、命名、附魔、损伤或带自定义 NBT 的物品。
+		protectSpecialItems = true
+
+[aggressive]
+	#启用后将菌囊的卷须目标大范围扫描拆分到多个 Tick；会延后找到目标的时间。
+	moundTendrilScheduler = true
+	#单个菌囊卷须扫描任务每 Tick 最多检查的方块数。
+	#Range: 64 ~ 262144
+	tendrilBlocksPerTaskTick = 4096
+	#所有菌囊卷须扫描任务每 Tick 共用的方块预算。
+	#Range: 64 ~ 1048576
+	tendrilBlocksGlobalTick = 16384
+	#可同时排队的菌囊卷须扫描任务上限；满时请求会延后重试。
+	#Range: 1 ~ 4096
+	maxTendrilJobs = 64
+	#启用后将菌囊侵蚀、菌丝和结构生成拆分到多个 Tick；会延长后台完成时间。
+	foliageScheduler = true
+	#单个菌囊侵蚀任务每 Tick 最多处理的方块数。
+	#Range: 64 ~ 262144
+	foliageBlocksPerTaskTick = 2048
+	#所有菌囊侵蚀任务每 Tick 共用的方块预算。
+	#Range: 64 ~ 1048576
+	foliageBlocksGlobalTick = 8192
+	#可同时排队的菌囊侵蚀任务上限。
+	#Range: 1 ~ 4096
+	maxFoliageJobs = 128
+	#使用低分配整数游标，并在读取世界前排除球体外位置；仅在 foliageScheduler 开启时生效。
+	foliageFastCursor = true
+	#按扫描中的当前区块复用已加载 LevelChunk；不会请求或加载新区块。
+	foliageDirectLoadedChunkRead = true
+	#为菌囊侵蚀任务增加真实耗时上限；达到上限后保留游标并延后继续。
+	foliageTimeBudget = true
+	#全部菌囊侵蚀任务单 Tick 共用的时间预算，单位微秒。
+	#Range: 100 ~ 50000
+	foliageTimeBudgetMicros = 1500
+	#为菌囊卷须目标搜索增加真实耗时上限；达到上限后保留游标并延后继续。
+	tendrilTimeBudget = true
+	#全部菌囊卷须搜索任务单 Tick 共用的时间预算，单位微秒。
+	#Range: 100 ~ 50000
+	tendrilTimeBudgetMicros = 500
+	#不可达目标时让灾厄寻路按退避间隔重试；目标移动、受击和关键技能会立刻解除退避。
+	calamityPathBackoff = true
+	#灾厄路径重算的最小间隔（Tick）；仅在 calamityPathBackoff 开启时生效。
+	#Range: 1 ~ 100
+	calamityPathMinIntervalTicks = 10
+	#将 Spore 无目标实体的目标获取按距离错峰到 2–5 Tick；受击和目标失效会立即刷新。
+	balancedTargetAcquisition = true
+	#使用近距离目标检查间隔的范围（格）。
+	#Range: 4 ~ 128
+	targetNearDistance = 16
+	#近距离无目标实体的目标检查间隔（Tick）。
+	#Range: 1 ~ 20
+	targetNearIntervalTicks = 2
+	#远距离无目标实体的目标检查间隔（Tick）。
+	#Range: 1 ~ 40
+	targetFarIntervalTicks = 5
+	#为普通感染体、进化体、Hyper 和器官体启用路径复用及失败退避。
+	generalPathBackoff = true
+	#目标移动超过此距离时立即解除路径等待（格）。
+	#Range: 0.25 ~ 32.0
+	pathTargetMoveThreshold = 2.0
+	#普通 Spore 寻路失败后的最大退避时间（Tick）。
+	#Range: 10 ~ 400
+	pathBackoffMaxTicks = 80
+	#降低远离玩家且静止落地物品的物理计算频率；年龄和拾取仍逐 Tick。
+	stationaryItemPhysicsLod = true
+	#静止物品执行完整物理的间隔（Tick）。
+	#Range: 2 ~ 20
+	stationaryItemPhysicsInterval = 4
+	#玩家进入此距离后恢复物品逐 Tick物理（格）。
+	#Range: 2 ~ 64
+	stationaryItemWakeDistance = 8
+	#清理超过寿命且所有者已失效的 Spore 投射物；默认关闭。
+	orphanProjectileCleanup = true
+	#孤立 Spore 投射物允许存在的最长时间（Tick）。
+	#Range: 100 ~ 72000
+	orphanProjectileLifetimeTicks = 600
+	#远离玩家且空闲的 Basic/Evolved/Hyper 感染体降低 Goal/TargetSelector 更新频率。
+	remoteIdleAi = true
+	#距离最近玩家超过此距离才允许远距空闲 AI 降频。
+	#Range: 32 ~ 512
+	remoteIdleAiDistance = 96
+	#远距空闲 AI 的 Goal/TargetSelector 更新间隔（Tick）；物理、生命和同步仍逐 Tick。
+	#Range: 2 ~ 40
+	remoteIdleAiInterval = 10
+	#缓存 AI Fix Howitzer 的轨迹计算，并限制每 Tick 的新轨迹数量。
+	howitzerTrajectoryCache = true
+	#Howitzer 轨迹缓存的有效 Tick 数；目标移动超过 1.5 格会提前失效。
+	#Range: 1 ~ 20
+	howitzerTrajectoryCacheTicks = 5
+	#每个 Howitzer 每 Tick 最多允许的新轨迹探测数；命中缓存的探测不消耗该预算。
+	#Range: 1 ~ 128
+	howitzerMaxNewTrajectoriesPerTick = 8
+	#同一目标的感染体群体感知共享邻居查询，并错峰伙伴跟随搜索。
+	groupSensingCache = true
+	#伙伴跟随候选快照的有效期（Tick）；仅在 groupSensingCache 开启时生效。
+	#Range: 1 ~ 200
+	followSnapshotTicks = 20
+	#伙伴没有明显移动且现有路径仍有效时复用路径，并将周期重算按 UUID 错峰。
+	followPathReuse = true
+	#伙伴跟随路径的最短周期重算间隔（Tick）；伙伴变更或明显移动会立即解除等待。
+	#Range: 20 ~ 200
+	followRepathIntervalTicks = 40
+	#伙伴移动超过此距离时允许提前重算路径。
+	#Range: 0.5 ~ 16.0
+	followRepathMoveThreshold = 2.0
+	#伙伴寻路失败后按递增间隔重试；伙伴变更或明显移动会立即解除退避。
+	followPathFailureBackoff = true
+	#伙伴寻路失败的最大退避时间（Tick）。
+	#Range: 20 ~ 400
+	followPathBackoffMaxTicks = 80
+	#将 sporesrp 完整心智半径 50 的预分配 BlockPos 队列替换为常量内存游标。
+	sporesrpLazyFullHivemindQueue = true
+	#用 sporesrp 共享方块预算限制完整心智原有采矿切片。
+	sporesrpMiningBudget = true
+	#完整心智采矿共用的每 Tick 方块预算；被延后的切片会从原游标继续。
+	#Range: 64 ~ 1048576
+	sporesrpBlocksGlobalTick = 8192
+	#将 Proto 和完整心智的地表搜索改为仅已加载区块的游标任务。
+	sporesrpSurfaceSearchScheduler = true
+	#将完整心智外壳建造改为仅已加载区块的游标任务。
+	sporesrpCasingScheduler = true
+	#单个 sporesrp 地表/外壳后台任务每 Tick 最多处理的方块数。
+	#Range: 16 ~ 262144
+	sporesrpBackgroundBlocksPerTaskTick = 2048
+	#可同时排队的 sporesrp 地表和外壳任务上限。
+	#Range: 1 ~ 4096
+	sporesrpBackgroundMaxJobs = 128
+	#sporesrp Proto 技能检查的 UUID 错峰因子；1 保持原生节奏。
+	#Range: 1 ~ 40
+	sporesrpProtoStagger = 1
+	#sporesrp 完整心智技能检查的 UUID 错峰因子；1 保持原生节奏。
+	#Range: 1 ~ 40
+	sporesrpFullHivemindStagger = 1
+	#sporesrp Builder 检查的 UUID 错峰因子；1 保持原生节奏。
+	#Range: 1 ~ 40
+	sporesrpBuilderStagger = 1
+	#AI Fix 非关键永久实体维护的检查间隔（Tick）；伤害、死亡和移除保护仍即时。
+	#Range: 1 ~ 200
+	sporefixPermanentAuditInterval = 20
+	#降低 AI Fix 非关键永久实体维护频率。
+	sporefixPermanentAuditScheduler = true
+
+[compat]
+
+	[compat.sporefix]
+		#自动检测 AI Fix 是否存在以及兼容签名；关闭后不启用其专属优化。
+		autoDetect = true
+
+	[compat.sporesrp]
+		#自动检测 sporesrp 是否存在以及兼容签名；关闭后不启用其专属优化。
+		autoDetect = true
+
+	[compat.touhouLittleMaid]
+		#女仆 P 点软兼容：共享附近玩家查询并降低无人静止 P 点物理频率，不合并或改变 P 点价值。
+		powerPointOptimization = true
+		#无人接近且落地静止 P 点的完整物理检查间隔（Tick）。
+		#Range: 1 ~ 20
+		groundedPhysicsInterval = 4
+
+	[compat.tacz]
+		#自动检测 TACZ 子弹类和枪械 ID 方法；缺失或签名不匹配时只关闭本兼容项。
+		autoDetect = true
+		#允许白名单 TACZ 武器绕过 Spore 灾厄的单次受击伤害上限；其他武器仍使用原版上限。
+		bypassCalamityDamageCap = true
+		#允许白名单 TACZ 武器绕过 Spore 灾厄自身适应和 sporesrp 的适应性减伤；这是独立于单次伤害上限的开关。
+		bypassSrpAdaptation = true
+		#绕过 Spore 灾厄单次伤害上限的 TACZ 枪械 ID；使用命名空间:枪械路径。
+		calamityDamageCapGunIds = ["cib:qlu11", "cib:dzj08", "zeta:railgun", "cib:qbu201", "cib:qbu10", "jccrossbow:compound_crossbow_data", "cib:qbu202", "cib:qbu203", "create_armorer:sniper_semi_clockwork", "immersive_armorer:railgun", "jccrossbow:compound_crossbow", "sfms:nitro_505", "sfms:tb23", "zeta:apw1", "zeta:r6", "cib:qjz171"]
+		#绕过 Spore 灾厄自身适应和 sporesrp 适应性减伤的 TACZ 枪械 ID；使用命名空间:枪械路径。
+		srpAdaptationBypassGunIds = ["cib:qlu11", "cib:dzj08", "zeta:railgun"]
+
+[diagnostics]
+	#收集 /sporeperformance metrics 使用的轻量计数器；默认关闭以减少额外开销。
+	metrics = true
+	#慢任务日志阈值（毫秒）；供诊断记录使用。
+	#Range: 1 ~ 10000
+	slowTaskMilliseconds = 25
+
+	[diagnostics.aiRefactor]
+		#收集 AI 重构的目标、LOS、群体、路径和阶段计数。
+		metrics = true
+		#影子比较新旧目标与路径决策；只记录差异，不改变游戏结果。
+		shadowComparison = true
+		#记录单实体 AI 阶段慢调用的阈值（微秒）。
+		#Range: 50 ~ 100000
+		slowEntityMicros = 500
+
+	[diagnostics.debugTrace]
+		#启用独立结构化调试日志；默认关闭，测试时再开启。
+		enabled = true
+		#记录实体加入、离开、维度卸载及调试模块生命周期。
+		entityLifecycle = true
+		#记录共享感知查询、候选数量、缓存命中和最终目标。
+		perception = true
+		#记录威胁传播、群组广播、领队和伙伴分配。
+		threatsAndGroups = true
+		#记录路径缓存、队列、快照、异步结果、失效和回退。
+		navigation = true
+		#记录关键Goal启动、继续、停止及拒绝原因。
+		goals = true
+		#记录攻击准备、最终复核、命中和范围攻击候选。
+		combat = true
+		#记录Stahl跳跃、空中状态、落地伤害及特效实体。
+		stahl = true
+		#记录菌丘、卷须、GastGeber、工作令牌和后台队列。
+		backgroundWork = true
+		#记录AI Fix、sporesrp及Mixin委托/兼容状态。
+		compatibility = true
+		#在调试记录中写入实体坐标。
+		includeCoordinates = true
+		#普通实体事件每N Tick/实体组合采样一次；1表示全部记录。
+		#Range: 1 ~ 1000
+		sampleEveryN = 1
+		#每秒最多写入的普通调试事件数；严重错误不受此限制。
+		#Range: 10 ~ 100000
+		maxEventsPerSecond = 500
+		#内存中保留的最近调试事件数量，供管理员命令查看。
+		#Range: 64 ~ 32768
+		ringEntries = 1024
+
+	[diagnostics.calamityTrace]
+		#启用只记录附近灾厄生物的独立追踪日志；不会混入普通实体调试日志。
+		enabled = true
+		#距离任一服务器玩家不超过此范围的灾厄才会被追踪（格）。
+		#Range: 16 ~ 512
+		radius = 128
+		#同一时间允许写入详细状态的附近灾厄最大数量，防止大规模战斗刷满日志。
+		#Range: 1 ~ 128
+		maxTracked = 12
+		#每只被追踪灾厄记录完整决策快照的间隔（Tick）；路径和卡住事件仍立即记录。
+		#Range: 1 ~ 200
+		sampleIntervalTicks = 5
+		#每秒最多写入的灾厄追踪事件数；超过时丢弃普通追踪事件而不阻塞服务器。
+		#Range: 10 ~ 100000
+		maxEventsPerSecond = 240
+		#在灾厄追踪记录中写入坐标、速度和身体/头部朝向。
+		includeCoordinates = true
+

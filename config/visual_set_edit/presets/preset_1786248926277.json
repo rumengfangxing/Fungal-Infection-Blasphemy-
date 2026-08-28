@@ -13,7 +13,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -21,7 +22,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -29,7 +31,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -37,7 +40,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         }
       ],
       "effects": [
@@ -48,7 +52,8 @@
           "uniqueId": "256c114b-d64f-46e3-8548-435c2d76f4e9",
           "type": "attribute",
           "customDisplayText": "造成伤害的10%会变为额外生命值",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         }
       ],
       "additionalConditions": []
@@ -63,7 +68,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -71,7 +77,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -79,7 +86,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -87,7 +95,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         }
       ],
       "effects": [
@@ -101,7 +110,8 @@
           "uniqueId": "c058c6e6-a1cc-47c0-ba5e-43521f206dab",
           "type": "potion",
           "customDisplayText": "持续获得[狂暴]效果",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         }
       ],
       "additionalConditions": []
@@ -116,7 +126,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -124,7 +135,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -132,7 +144,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -140,7 +153,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         }
       ],
       "effects": [
@@ -154,7 +168,8 @@
           "uniqueId": "be9cb2f0-1e4f-402b-a5a4-d4ab54b07195",
           "type": "potion",
           "customDisplayText": "自身和周围友军获得25%减伤",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         }
       ],
       "additionalConditions": []
@@ -169,7 +184,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -177,7 +193,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -185,7 +202,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -193,7 +211,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         }
       ],
       "effects": [
@@ -207,7 +226,8 @@
           "uniqueId": "5b3fe21d-cb0d-4df7-b0df-def8a6ad9ef1",
           "type": "potion",
           "customDisplayText": "攻击你的生物会被弹飞",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         }
       ],
       "additionalConditions": []
@@ -222,7 +242,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -230,7 +251,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -238,7 +260,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -246,7 +269,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         }
       ],
       "effects": [
@@ -260,7 +284,8 @@
           "uniqueId": "4647f2d5-a54e-4029-a199-c7a012ca49b4",
           "type": "potion",
           "customDisplayText": "攻击可燃目标概率造成火焰溅射",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         },
         {
           "target": "ATTACK_TARGET",
@@ -272,7 +297,8 @@
           "uniqueId": "ab84fec1-cd78-4370-a0af-dc93189c3ba9",
           "type": "potion",
           "customDisplayText": "攻击会引爆火焰",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         }
       ],
       "additionalConditions": []
@@ -287,7 +313,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -295,7 +322,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -303,7 +331,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -311,7 +340,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         }
       ],
       "effects": [
@@ -325,7 +355,8 @@
           "uniqueId": "c772f8af-a5af-47fa-87fe-e3eb6d856f57",
           "type": "potion",
           "customDisplayText": "获得[潮涌能量]效果",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         },
         {
           "target": "SELF",
@@ -337,7 +368,8 @@
           "uniqueId": "2fd2b15b-0525-4dd9-97b4-ec34da38b001",
           "type": "potion",
           "customDisplayText": "在水/雨中快速恢复生命值",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         },
         {
           "target": "ATTACK_TARGET",
@@ -349,7 +381,8 @@
           "uniqueId": "552ea907-03f5-4a06-8765-3872088a682f",
           "type": "potion",
           "customDisplayText": "攻击会让生物打滑",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         }
       ],
       "additionalConditions": []
@@ -364,7 +397,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -372,7 +406,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -380,7 +415,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         },
         {
           "slot": "curios:blood",
@@ -388,7 +424,8 @@
           "nbtRule": "IGNORE",
           "durabilityMinPercent": 0,
           "durabilityMaxPercent": 100,
-          "minCount": 1
+          "minCount": 1,
+          "customDisplayText": ""
         }
       ],
       "effects": [
@@ -402,7 +439,8 @@
           "uniqueId": "86b54a55-1628-4960-862a-44398643960c",
           "type": "potion",
           "customDisplayText": "脱战时每秒恢复较高血量",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         },
         {
           "target": "SELF",
@@ -414,7 +452,8 @@
           "uniqueId": "effc2c6e-675c-4909-ac1f-9e77adddca3a",
           "type": "potion",
           "customDisplayText": "受到的治疗效果提升40%",
-          "customColor": "yellow"
+          "customColor": "yellow",
+          "showPointer": true
         }
       ],
       "additionalConditions": []

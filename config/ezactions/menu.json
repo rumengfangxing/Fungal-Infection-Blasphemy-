@@ -1,0 +1,593 @@
+[
+  {
+    "id": "快捷指令轮盘(触发常用指令)",
+    "title": {
+      "text": "快捷指令轮盘(触发常用指令)"
+    },
+    "icon": "lightmanscurrency:command_trader",
+    "bundleKeybindEnabled": true,
+    "children": [
+      {
+        "id": "cmd_1a02c776896",
+        "title": {
+          "text": "设置当前地点为默认的家"
+        },
+        "icon": "waystones:waystone",
+        "action": {
+          "type": "COMMAND",
+          "command": "/sethome",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02c783df9",
+        "title": {
+          "text": "回到默认的家"
+        },
+        "icon": "waystones:warp_stone",
+        "action": {
+          "type": "COMMAND",
+          "command": "/home",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02c793d1f",
+        "title": {
+          "text": "回到上一次传送/死亡点"
+        },
+        "icon": "minecraft:skeleton_skull",
+        "action": {
+          "type": "COMMAND",
+          "command": "/back",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02c7d834f",
+        "title": {
+          "text": "随机传送(两小时冷却)"
+        },
+        "icon": "minecraft:grass_block",
+        "action": {
+          "type": "COMMAND",
+          "command": "/rtp",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02cc70d6b",
+        "title": {
+          "text": "选择玩家传送(需自行选择目标,按tab补全)"
+        },
+        "icon": "minecraft:player_head",
+        "action": {
+          "type": "COMMAND",
+          "command": "/type /tpa+",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02ceecc1f",
+        "title": {
+          "text": "选择玩家传送到你(需自行选择目标,按tab补全)"
+        },
+        "icon": "minecraft:piglin_head",
+        "action": {
+          "type": "COMMAND",
+          "command": "/type /tpahere+",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02cfd0702",
+        "title": {
+          "text": "选择玩家交易(需自行选择目标,按tab补全)"
+        },
+        "icon": "minecraft:emerald",
+        "action": {
+          "type": "COMMAND",
+          "command": "/type /lctrade+",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02d24b4fb",
+        "title": {
+          "text": "购买FTB区块扩充上限(需自行填入数量)"
+        },
+        "icon": "minecraft:map",
+        "action": {
+          "type": "COMMAND",
+          "command": "/type /lcclaims buy claim+",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02d25e2f8",
+        "title": {
+          "text": "购买FTB强加载区块扩充上限(需自行填入数量)"
+        },
+        "icon": "minecraft:filled_map",
+        "action": {
+          "type": "COMMAND",
+          "command": "/type /lcclaims buy forceload+",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02d34f144",
+        "title": {
+          "text": "设定你的昵称(需手动填入)"
+        },
+        "icon": "minecraft:name_tag",
+        "action": {
+          "type": "COMMAND",
+          "command": "/type /nickname+",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      },
+      {
+        "id": "cmd_1a02d45d11e",
+        "title": {
+          "text": "设定他人昵称(需手动填入,对方不可见)"
+        },
+        "icon": "minecraft:name_tag",
+        "action": {
+          "type": "COMMAND",
+          "command": "/type /nicknamefor+",
+          "delayTicks": 0,
+          "cycleCommands": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "地图/路径点",
+    "title": {
+      "text": "地图/路径点"
+    },
+    "icon": "minecraft:filled_map",
+    "bundleKeybindEnabled": true,
+    "children": [
+      {
+        "id": "key_1a02d583490",
+        "title": {
+          "text": "打开FTB区块地图"
+        },
+        "icon": "minecraft:cartography_table",
+        "action": {
+          "type": "KEY",
+          "name": "key.ftbchunks.map",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a02d5b0ee8",
+        "title": {
+          "text": "打开世界地图"
+        },
+        "icon": "minecraft:filled_map",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_open_map",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a02d66895f",
+        "title": {
+          "text": "快速创建路径点"
+        },
+        "icon": "waystones:warp_stone",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_instant_waypoint",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a02d7d9b2b",
+        "title": {
+          "text": "创建路径点"
+        },
+        "icon": "waystones:waystone",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_new_waypoint",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a03969e30e",
+        "title": {
+          "text": "打开路径点界面"
+        },
+        "icon": "waystones:sharestone",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_waypoints_key",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      }
+    ]
+  },
+  {
+    "id": "GUI轮盘(打开各种gui)",
+    "title": {
+      "text": "GUI轮盘(打开各种gui)"
+    },
+    "icon": "create:crafting_blueprint",
+    "bundleKeybindEnabled": true,
+    "children": [
+      {
+        "id": "诡厄巫法",
+        "title": {
+          "text": "诡厄巫法"
+        },
+        "icon": "goety:totem_of_souls",
+        "children": [
+          {
+            "id": "key_1a0471525b6",
+            "title": {
+              "text": "打开聚晶包"
+            },
+            "icon": "goety:focus_bag",
+            "action": {
+              "type": "KEY",
+              "name": "key.goety.bag",
+              "toggle": false,
+              "mode": "AUTO"
+            }
+          },
+          {
+            "id": "key_1a047140ad1",
+            "title": {
+              "text": "打开不洁卷轴聚晶采单"
+            },
+            "icon": "goeticlegacy:unholy_scroll",
+            "action": {
+              "type": "KEY",
+              "name": "key.goeticlegacy.unholy_scroll_focus",
+              "toggle": false,
+              "mode": "AUTO"
+            }
+          },
+          {
+            "id": "key_1a04714a5aa",
+            "title": {
+              "text": "打开暗夜立方采单"
+            },
+            "icon": "goeticlegacy:night_cube",
+            "action": {
+              "type": "KEY",
+              "name": "key.goeticlegacy.night_cube_menu",
+              "toggle": false,
+              "mode": "AUTO"
+            }
+          },
+          {
+            "id": "key_1a0471282fd",
+            "title": {
+              "text": "打开药酿包"
+            },
+            "icon": "goety:brew_bag",
+            "action": {
+              "type": "KEY",
+              "name": "key.goety.witch.brewBag",
+              "toggle": false,
+              "mode": "AUTO"
+            }
+          },
+          {
+            "id": "key_1a047130d07",
+            "title": {
+              "text": "打开药酿圆环"
+            },
+            "icon": "goety:gas_brew",
+            "action": {
+              "type": "KEY",
+              "name": "key.goety.witch.brewCircle",
+              "toggle": false,
+              "mode": "AUTO"
+            }
+          }
+        ]
+      },
+      {
+        "id": "银行模组",
+        "title": {
+          "text": "银行模组"
+        },
+        "icon": "lightmanscurrency:coin_chest_bank_upgrade",
+        "children": [
+          {
+            "id": "key_1a0470ae294",
+            "title": {
+              "text": "打开交易终端"
+            },
+            "icon": "lightmanscurrency:portable_gem_terminal",
+            "action": {
+              "type": "KEY",
+              "name": "key.lightmanscurrency.portable_terminal",
+              "toggle": false,
+              "mode": "AUTO"
+            }
+          },
+          {
+            "id": "key_1a047075cb1",
+            "title": {
+              "text": "打开ATM"
+            },
+            "icon": "lightmanscurrency:portable_atm",
+            "action": {
+              "type": "KEY",
+              "name": "key.lightmanscurrency.portable_atm",
+              "toggle": false,
+              "mode": "AUTO"
+            }
+          },
+          {
+            "id": "key_1a04706ea03",
+            "title": {
+              "text": "打开钱包"
+            },
+            "icon": "lightmanscurrency:wallet_diamond",
+            "action": {
+              "type": "KEY",
+              "name": "key.lightmanscurrency.open_wallet",
+              "toggle": false,
+              "mode": "AUTO"
+            }
+          }
+        ]
+      },
+      {
+        "id": "key_1a0470dcfda",
+        "title": {
+          "text": "查看身体状况"
+        },
+        "icon": "legendarysurvivaloverhaul:bandage",
+        "action": {
+          "type": "KEY",
+          "name": "key.legendarysurvivaloverhaul.body_health",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a0470ec99a",
+        "title": {
+          "text": "打开FTB任务书"
+        },
+        "icon": "ftbquests:book",
+        "action": {
+          "type": "KEY",
+          "name": "key.ftbquests.quests",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a0470f306e",
+        "title": {
+          "text": "打开NPC任务日志"
+        },
+        "icon": "create:clipboard",
+        "action": {
+          "type": "KEY",
+          "name": "key.questborne.open_journal",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a047104dc5",
+        "title": {
+          "text": "打开RTS俯视角建造"
+        },
+        "icon": "rtsbuilding:rts_control_core",
+        "action": {
+          "type": "KEY",
+          "name": "key.rtsbuilding.toggle_rts",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a04733966e",
+        "title": {
+          "text": "打开末影箱(需七咒,末影之戒)"
+        },
+        "icon": "minecraft:ender_chest",
+        "action": {
+          "type": "KEY",
+          "name": "key.enderRing",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a047348214",
+        "title": {
+          "text": "打开背包"
+        },
+        "icon": "sophisticatedbackpacks:backpack",
+        "action": {
+          "type": "KEY",
+          "name": "key.sophisticatedbackpacks.open_backpack",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a047212836",
+        "title": {
+          "text": "打开无线终端"
+        },
+        "icon": "refinedstorage:wireless_grid",
+        "action": {
+          "type": "KEY",
+          "name": "key.refinedstorage.openWirelessGrid",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a04721c1b7",
+        "title": {
+          "text": "打开无线合成终端"
+        },
+        "icon": "refinedstorageaddons:wireless_crafting_grid",
+        "action": {
+          "type": "KEY",
+          "name": "key.refinedstorageaddons.openWirelessCraftingGrid",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      }
+    ]
+  },
+  {
+    "id": "配置轮盘",
+    "title": {
+      "text": "配置轮盘"
+    },
+    "icon": "sophisticatedstorage:storage_tool",
+    "bundleKeybindEnabled": true,
+    "children": [
+      {
+        "id": "key_1a047313851",
+        "title": {
+          "text": "打开地图设置"
+        },
+        "icon": "minecraft:map",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_open_settings",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a0473188b2",
+        "title": {
+          "text": "打开小地图设置"
+        },
+        "icon": "minecraft:filled_map",
+        "action": {
+          "type": "KEY",
+          "name": "gui.xaero_minimap_settings",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a0472e8e1a",
+        "title": {
+          "text": "打开jade配置"
+        },
+        "icon": "goeticlegacy:jade_amulet",
+        "action": {
+          "type": "KEY",
+          "name": "key.jade.config",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a0472e2a09",
+        "title": {
+          "text": "打开HUD配置"
+        },
+        "icon": "itemfilters:mod",
+        "action": {
+          "type": "KEY",
+          "name": "key.inventoryhud.openconfig",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a04730a42c",
+        "title": {
+          "text": "打开tacz配置"
+        },
+        "icon": "tacz:gun_smith_table",
+        "action": {
+          "type": "KEY",
+          "name": "key.tacz.open_config.desc",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a0472d215e",
+        "title": {
+          "text": "打开模组列表"
+        },
+        "icon": "create:clipboard",
+        "action": {
+          "type": "KEY",
+          "name": "key.configured.open_mod_list",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a0472efa1f",
+        "title": {
+          "text": "打开现代化修复配置屏幕"
+        },
+        "icon": "create:crafting_blueprint",
+        "action": {
+          "type": "KEY",
+          "name": "key.modernfix.config",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a0472cc403",
+        "title": {
+          "text": "打开现代化UI操作中心"
+        },
+        "icon": "refinedstorage:wrench",
+        "action": {
+          "type": "KEY",
+          "name": "key.modernui.openCenter",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      },
+      {
+        "id": "key_1a04769ad76",
+        "title": {
+          "text": "打开EZactions配置"
+        },
+        "icon": "create:sturdy_sheet",
+        "action": {
+          "type": "KEY",
+          "name": "key.ezactions.open_editor",
+          "toggle": false,
+          "mode": "AUTO"
+        }
+      }
+    ]
+  }
+]

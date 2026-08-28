@@ -1,0 +1,83 @@
+{
+  "id": "ponderer:infected_human_spawnegg",
+  "items": [
+    "spore:infected_human_spawnegg"
+  ],
+  "title": {
+    "en_us": "New Scene - infected_human_spawnegg",
+    "zh_cn": "新场景 - infected_human_spawnegg"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "场景 1"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "create_entity",
+          "entity": "spore:inf_human",
+          "pos": [
+            2.5,
+            1.0,
+            2.5
+          ],
+          "nbt": "{AbsorptionAmount:0.0f,ArmorDropChances:[0.085f,0.085f,0.085f,0.085f],ArmorItems:[{},{},{},{}],Attributes:[{Base:1.0d,Name:\"forge:swim_speed\"},{Base:12.0d,Name:\"minecraft:generic.attack_damage\"},{Base:0.2d,Name:\"minecraft:generic.movement_speed\"},{Base:1.0d,Name:\"enigmaticdice:size_scale\"},{Base:0.0d,Name:\"minecraft:generic.armor_toughness\"},{Base:60.0d,Name:\"minecraft:generic.max_health\"},{Base:4.0d,Name:\"minecraft:generic.armor\"},{Base:0.0d,Name:\"forge:step_height_addition\"},{Base:16.0d,Name:\"minecraft:generic.follow_range\"},{Base:0.08d,Name:\"forge:entity_gravity\"}],BalmData:{},Brain:{memories:{}},CanPickUpLoot:0b,CanUpdate:1b,FallFlying:0b,ForgeCaps:{\"curios:inventory\":{Curios:[]},\"ending_library:endinglib_cap\":{},\"ending_library:endinglib_living_cap\":{},\"goety:misc\":{ambientSoundTime:0,clientTargetID:0,customSpinTexture:\"textures/entity/trident_riptide.png\",freezeLevel:0,mobTargetID:0,shakeTime:0,shieldCool:0,shieldTime:0,shields:0},\"goety_revelation:gr_extra\":{},\"goetydelight:active_buffs\":{buffs:[]},\"goetydelight:entity_visual_effects\":{Effects:{}},\"l2library:effects\":{},\"tacz:synced_entity_data\":[],\"tickrateapi:tickrate\":{BaseTickrate:20.0f,Priority:1000},\"torchesbecomesunlight:frozen_cap\":{act:0.0f,armor:0.0f,dish:0b,health:0.0f,move:0.0f}},ForgeData:{AnniLastTick:16.13568f,AnniPowerTick:17.708544f,create_biotech.previous_liquid_living_slime_vertical_speed:-0.078375d,create_biotech.was_touching_liquid_living_slime:0b},HandDropChances:[0.085f,0.085f],HandItems:[{},{}],Health:102.0f,HurtByTimestamp:0,Invulnerable:0b,LeftHanded:0b,PersistenceRequired:0b,evo_points:0,evolution:0,hunger:0,kills:0,linked:0b,origin:\"minecraft:zombie\",persistent:0b}"
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Edit this ponder scene!",
+            "zh_cn": "这是个寄染僵尸"
+          },
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 80
+        },
+        {
+          "type": "modify_entities_nbt",
+          "duration": 20,
+          "blockPos": [
+            3,
+            0,
+            3
+          ],
+          "blockPos2": [
+            2,
+            0,
+            0
+          ],
+          "offset": [
+            0.0,
+            2.0,
+            5.0
+          ],
+          "walkAnimation": true
+        }
+      ]
+    }
+  ]
+}
