@@ -1,0 +1,70 @@
+{
+  "id": "preset_1787995707484",
+  "fallbackName": "奇思妙想(\u003e_-)",
+  "tooltipColor": 16755200,
+  "phases": [
+    {
+      "fallbackName": "?!黄油面包!?",
+      "requiredCount": 2,
+      "slotConditions": [
+        {
+          "slot": "MAINHAND",
+          "itemId": "fib:baguette_king",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1,
+          "customDisplayText": ""
+        },
+        {
+          "slot": "curios:any",
+          "itemId": "create_biotech:super_butter",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1,
+          "customDisplayText": ""
+        }
+      ],
+      "effects": [
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "create_biotech:rotation",
+          "amplifier": 9,
+          "durationSeconds": 5,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "8c5ef5c7-e98b-419a-be7c-2cc1d60a0577",
+          "type": "potion",
+          "customDisplayText": "",
+          "customColor": "gold",
+          "showPointer": true
+        },
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "minecraft:levitation",
+          "amplifier": 0,
+          "durationSeconds": 3,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "1eba2406-9b6c-4a0c-a78f-a25bcb5bada5",
+          "type": "potion",
+          "customDisplayText": "",
+          "customColor": "red",
+          "showPointer": true
+        }
+      ],
+      "additionalConditions": [
+        {
+          "field": "HAS_EFFECT",
+          "comparator": "EQ",
+          "value": "minecraft:saturation",
+          "type": "player_state"
+        }
+      ]
+    }
+  ],
+  "showTooltip": true,
+  "customTooltipLines": [],
+  "backgroundStoryLines": []
+}

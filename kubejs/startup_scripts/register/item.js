@@ -72,7 +72,20 @@ StartupEvents.registry('item', event => {
 		.rarity('epic')
 		.maxDamage(16)
 		.attackDamageBaseline(6)
-	
+	// 法棍大王
+	event.create('fib:baguette_king', 'sword')
+		.rarity('epic')
+		.glow(true)
+		.maxDamage(600)
+		.attackDamageBaseline(9) // 总伤害12 = 基础1 + 基线9 + 铁级2
+		.speedBaseline(-2.8) // 攻速1.2 = 基础4 + (-2.8)
+		.food(food => {
+			food
+				.hunger(10) // 恢复半饱食度
+				.saturation(0.5) // 恢复半饱和度
+				.alwaysEdible() // 满饱食度也可食用,用于获取效果
+		})
+
 
 	//维度传送物品
    	event.create('fib:frozen_key').rarity('epic')

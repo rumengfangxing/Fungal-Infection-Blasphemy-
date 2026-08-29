@@ -4,7 +4,7 @@ ServerEvents.recipes(event =>{
     //脑子
     create.mixing(['spore:cerebrum',
         Item.of('spore:cerebrum').withChance(0.85)],
-        [Fluid.of("biofactory:nutrients_fluid",90),'spore:cerebrum']).heated()
+        [Fluid.of("biofactory:nutrients_fluid",120),'biomancy:regenerative_fluid','spore:cerebrum']).heated()
     
     //内分泌激素
     //突变纤维
@@ -32,7 +32,7 @@ ServerEvents.recipes(event =>{
         Item.of('spore:armor_fragment').withChance(0.25),
         Item.of('spore:armor_fragment').withChance(0.25),
         Item.of('spore:armor_fragment').withChance(0.25)],
-        [Fluid.of("biofactory:nutrients_fluid",90),'spore:armor_fragment','biomancy:hormone_secretion','minecraft:bone_meal']).heated()
+        [Fluid.of("biofactory:nutrients_fluid",90),'spore:armor_fragment','biomancy:hormone_secretion','2x biomancy:tough_fibers']).heated()
 
     //利爪残片
     create.mixing([Item.of('spore:claw_fragment',3),
@@ -44,7 +44,7 @@ ServerEvents.recipes(event =>{
     //突变心脏
     create.mixing([Item.of('spore:mutated_heart',2),
         Item.of('spore:mutated_heart').withChance(0.25)],
-        [Fluid.of("biofactory:nutrients_fluid",90),'spore:mutated_heart','biomancy:genetic_compound']).heated()
+        [Fluid.of("biofactory:nutrients_fluid",120),'spore:mutated_heart','biomancy:genetic_compound']).heated()
 
     //腐化性囊
     create.mixing([Item.of('spore:corrosive_sack',2),
@@ -66,6 +66,55 @@ ServerEvents.recipes(event =>{
     //胆汁
     create.mixing(Fluid.of('spore:bile',1000),
         ['biomancy:hormone_secretion','biomancy:volatile_fluid',Item.of('biomancy:bile',2),Fluid.water(1000)])
+
+
+    //粉碎轮
+    //利爪
+    create.crushing(['2x minecraft:bone_meal',Item.of('spore:claw_fragment').withChance(0.65)],'spore:claw')
+    //菌丝块
+    create.crushing(['2x spore:fungal_bonemeal',
+        Item.of('spore:fungal_bonemeal').withChance(0.60),
+        Item.of('spore:fungal_bonemeal').withChance(0.30)],'spore:fungal_shell')
+    create.crushing(['2x spore:fungal_bonemeal',
+        Item.of('spore:fungal_bonemeal').withChance(0.60),
+        Item.of('spore:fungal_bonemeal').withChance(0.30)],'spore:mycelium_block')
+    create.crushing(['spore:fungal_bonemeal',
+        Item.of('spore:fungal_bonemeal').withChance(0.60),
+        Item.of('spore:fungal_bonemeal').withChance(0.25)],'spore:mycelium_slab')
+    //焦化生物质
+    create.crushing(['spore:frozen_decayed_biomass',
+        Item.of('spore:frozen_decayed_biomass').withChance(0.60),
+        Item.of('spore:frozen_decayed_biomass').withChance(0.25)],'spore:freeze_burned_biomass')
+    //菌泡隔膜
+    create.crushing(['spore:frozen_decayed_biomass',
+        Item.of('biomancy:biometric_membrane').withChance(0.85),
+        Item.of('spore:frozen_decayed_biomass').withChance(0.60),
+        Item.of('spore:frozen_decayed_biomass').withChance(0.25)],'spore:membrane_block')
+    //剧毒生物质
+    create.crushing(['spore:frozen_decayed_biomass',
+        Item.of('biomancy:toxin_extract').withChance(0.85),
+        Item.of('biomancy:toxin_extract').withChance(0.65),
+        Item.of('biomancy:toxin_extract').withChance(0.45),
+        Item.of('spore:frozen_decayed_biomass').withChance(0.60),
+        Item.of('spore:frozen_decayed_biomass').withChance(0.25)],'spore:sicken_biomass_block')
+    //钙化生物质
+    create.crushing(['spore:frozen_decayed_biomass','minecraft:bone_meal',
+        Item.of('biomancy:bone_fragments').withChance(0.85),
+        Item.of('biomancy:bone_fragments').withChance(0.65),
+        Item.of('biomancy:bone_fragments').withChance(0.45),
+        Item.of('spore:frozen_decayed_biomass').withChance(0.60),
+        Item.of('spore:frozen_decayed_biomass').withChance(0.25)],'spore:calcified_biomass_block')
+    
+
+    //压块
+    //胆汁
+    create.compacting(['4x spore:biomass',Fluid.of('spore:bile',500)],
+    '4x spore:bile_tumor'
+    )
+
+    create.compacting(['2x spore:biomass',Fluid.of('spore:bile',1000)],
+    'spore:gastric_biomass_block')
+
 
     //动力合成
     //脑组织块

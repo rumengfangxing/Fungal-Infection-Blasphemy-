@@ -12,7 +12,8 @@ ServerEvents.tags('item', event => {
 		'spore:skeletal_syringe'
 	]),
 	event.add('curios:curio',[
-		'enigmaticaddons:totem_of_malice'
+		'enigmaticaddons:totem_of_malice',
+		'create_biotech:super_butter'
 	]),
 	event.add('curios:head',[
 		'spore:gas_mask'

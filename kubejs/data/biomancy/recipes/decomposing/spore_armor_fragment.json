@@ -1,0 +1,1 @@
+{"type":"biomancy:decomposing","ingredient":{"count":2,"item":"spore:armor_fragment"},"nutrientsCost":1,"processingTime":100,"results":[{"countRange":{"type":"uniform","max":5,"min":4},"item":"biomancy:tough_fibers"}]}

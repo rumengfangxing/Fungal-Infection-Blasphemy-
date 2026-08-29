@@ -1,0 +1,1 @@
+{"type":"biomancy:decomposing","ingredient":{"count":1,"item":"spore:shield_fragment"},"nutrientsCost":1,"processingTime":800,"results":[{"countRange":{"type":"uniform","max":10,"min":4},"item":"biomancy:tough_fibers"},{"countRange":{"type":"uniform","max":4,"min":2},"item":"biomancy:mineral_fragment"}]}

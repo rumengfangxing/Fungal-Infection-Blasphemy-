@@ -1,0 +1,1 @@
+{"type":"biomancy:decomposing","ingredient":{"count":4,"item":"spore:frozen_tumor"},"nutrientsCost":1,"processingTime":100,"results":[{"countRange":{"type":"uniform","max":3,"min":1},"item":"biomancy:volatile_fluid"},{"countRange":{"type":"uniform","max":4,"min":2},"item":"spore:frozen_decayed_biomass"}]}

@@ -1,0 +1,1 @@
+{"type":"biomancy:bio_brewing","ingredients":[{"item":"biomancy:frenzy_serum"},{"item":"biomancy:hormone_secretion"},{"item":"biomancy:volatile_fluid"}],"nutrientsCost":5,"processingTime":100,"reactant":{"item":"fib:injection_pen"},"result":{"item":"lrtactical:consumable","nbt":{"ConsumableId":"42labk:mul"}}}

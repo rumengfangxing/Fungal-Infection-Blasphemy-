@@ -1,0 +1,1 @@
+{"type":"biomancy:decomposing","ingredient":{"count":1,"item":"spore:alveolic_sack"},"nutrientsCost":1,"processingTime":80,"results":[{"countRange":{"type":"uniform","max":3,"min":2},"item":"biomancy:flesh_bits"},{"countRange":{"type":"uniform","max":4,"min":2},"item":"biomancy:elastic_fibers"},{"countRange":{"type":"uniform","max":2,"min":0},"item":"biomancy:toxin_extract"}]}

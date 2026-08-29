@@ -57,6 +57,22 @@ const itemRightHandlers = {
         if (player.level.dimension == targetDim) return
         player.teleportTo(targetDim, player.x, player.y, player.z, 0, 0)
     },
+	// 法棍大王
+	'fib:baguette_king': function(event) {
+		const { player, item } = event
+		// 60秒冷却判定
+		if (player.getCooldowns().isOnCooldown(item.getItem())) {
+			player.setStatusMessage(Text.translate('item.fib.baguette_king.tip.cooldown'))
+			event.cancel()
+			return
+		}
+		// 剩余耐久不足100无法食用
+		if (item.getMaxDamage() - item.getDamageValue() < 100) {
+			player.setStatusMessage(Text.translate('item.fib.baguette_king.tip.no_durability'))
+			event.cancel()
+			return
+		}
+	},
 	//时空之剑
     /*'fib:time_sword': function(event) {
     const { player, level } = event
@@ -75,3 +91,21 @@ const itemRightHandlers = {
     })
 },*/
 }
+
+// 法棍大王:食用动画结束后结算
+ItemEvents.foodEaten(event => {
+	const { player, item } = event
+	if (item.id != 'fib:baguette_king') return
+
+	// 剑不会被吃掉,补回被消耗的1个(创造模式原版不消耗,无需补偿)
+	if (!player.isCreative()) item.grow(1)
+	// 扣一滴血
+	player.attack(2)
+	// 30秒饱和 + 5级goety护盾
+	player.potionEffects.add('minecraft:saturation', 400, 0)
+	player.potionEffects.add('goety:shielding', 400, 4)
+	// 消耗100点耐久
+	item.hurt(100, player.level.random, player)
+	// 60秒冷却
+	player.getCooldowns().addCooldown(item.getItem(), 1200)
+})

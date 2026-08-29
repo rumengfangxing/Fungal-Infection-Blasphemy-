@@ -1,0 +1,1 @@
+{"type":"biomancy:decomposing","ingredient":{"count":1,"item":"spore:mutated_heart"},"nutrientsCost":1,"processingTime":80,"results":[{"countRange":{"type":"uniform","max":4,"min":2},"item":"spore:biomass"},{"countRange":{"type":"uniform","max":1,"min":0},"item":"spore:tendons"}]}

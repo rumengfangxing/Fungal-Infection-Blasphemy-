@@ -27,5 +27,8 @@
 	
 	"item.goety.undeath_potion.tip.failed": "你已是真菌生物,无法变为巫妖",
 
+	"item.fib.baguette_king.tip.cooldown": "法棍还在消化中...",
+	"item.fib.baguette_king.tip.no_durability": "法棍已破损,无法食用",
+
 	"effect.fib.frost_resistance": "冻伤抗性"
 }

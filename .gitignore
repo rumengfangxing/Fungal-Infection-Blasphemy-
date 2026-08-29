@@ -60,3 +60,4 @@ config/RuOK.toml
 /screenshots
 kubejs/CLAUDE.md
 kubejs/skill.md
+/config/zstdnet

@@ -1,0 +1,1 @@
+{"type":"biomancy:decomposing","ingredient":{"count":1,"item":"spore:mutated_heart"},"nutrientsCost":1,"processingTime":160,"results":[{"countRange":{"type":"uniform","max":3,"min":2},"item":"spore:mutated_fiber"},{"countRange":{"type":"uniform","max":4,"min":2},"item":"biomancy:flesh_bits"},{"countRange":{"type":"uniform","max":6,"min":4},"item":"biomancy:elastic_fibers"}]}

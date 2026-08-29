@@ -12,6 +12,9 @@ global.ATTR_CURIOS_FUNGIFIED_ORGAN = { key: 'organ', name: 'FungifiedOrganSlot',
 
 // 私有饰品属性 ---------------------------------------
 
+// 法棍大王
+global.ATTR_BAGUETTE_ENTITY_REACH = { key: 'forge:entity_reach', name: 'BaguetteKingEntityReach', operation: 'addition' }
+
 // 技巧-弓
 global.ATTR_HEAVY_BOW_ARROW_DAMAGE = { key: 'attributeslib:arrow_damage', name: 'HeavyBowArrowDamage', operation: 'multiply_total' }
 global.ATTR_HEAVY_BOW_ARROW_VELOCITY = { key: 'attributeslib:arrow_velocity', name: 'HeavyBowArrowVelocity', operation: 'multiply_total' }

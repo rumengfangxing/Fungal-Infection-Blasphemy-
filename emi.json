@@ -1,6 +1,17 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:fib:t1_equipment_module",
+    "item:fib:t2_equipment_module",
+    "item:fib:bio_equipment_module",
+    "item:fib:h_a_equipment_module",
+    "item:fib:bio_equipment_module_0",
+    "item:enigmaticlegacy:cosmic_cake",
+    "item:fib:echo_equipment_module",
+    "item:fib:spec_equipment_module",
+    "item:fib:skill_potent",
+    "item:goety_revelation:apocalyptium_helmet{Damage:0}",
+    "item:enigmaticaddons:quartz_scepter{Damage:0}",
     {
       "type": "item",
       "id": "goety:henbane_flower",

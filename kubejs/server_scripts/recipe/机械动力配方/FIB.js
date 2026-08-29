@@ -2,34 +2,33 @@ ServerEvents.recipes(event =>{
     const create = event.recipes.create
 
 //压块
-////杂质气体压制液化
+//杂质气体压制液化
 create.compacting(
   [Fluid.of('liquid_ammonia',50),
    Fluid.of('createdieselgenerators:biodiesel',500),
    Fluid.water(250)],
    Fluid.of('magazine_gas',500))
-
-////战术道具相关
+//凝固汽油块
 create.compacting(
   Item.of('fib:napalm_lump',4),
   [Fluid.of('createdieselgenerators:gasoline',250),
    Fluid.of('createdieselgenerators:ethanol',100),
    Item.of('minecraft:slime_ball',2),
    Item.of('minecraft:blaze_powder',2)]).heated()
-////
+
+
 
 //石磨
-
 create.milling([Item.of('fib:saltpeter').withChance(0.65),
   Item.of('fib:saltpeter').withChance(0.2)],
   'sandstone')
-
 //粉碎
-
 create.crushing([Item.of('fib:saltpeter').withChance(0.8),
   Item.of('fib:saltpeter').withChance(0.25),
   Item.of('fib:saltpeter').withChance(0.25)],
   'sandstone')
+
+
 
 //充电
 event.custom({
@@ -39,6 +38,8 @@ event.custom({
       "energy":2000000,
       "maxChargeRate":2000000
     })
+
+
 //混合搅拌
 //火药
 create.mixing('6x minecraft:gunpowder',[
@@ -46,109 +47,19 @@ create.mixing('6x minecraft:gunpowder',[
   '2x fib:saltpeter',
   '3x minecraft:charcoal'
 ]);
-////战术道具相关
+create.mixing(Fluid.of('biofactory:nutrients_fluid',30),[
+  Fluid.water(30),
+  '5x biomancy:nutrients'
+]);
+//C4炸药
 create.mixing("fib:c4_explosive",
   ["minecraft:blaze_powder",
     "minecraft:slime_ball",
     'fib:pressed_powder',
     Item.of('fib:high_energy_gunpowder',2),
     Fluid.of('createdieselgenerators:biodiesel',100)]).heated()
-////
-////邪术精华
-create.mixing(['2x fib:hex_essence',"fib:hex_catalyst"],
-  ["legendarysurvivaloverhaul:heart_fragment","fib:hex_catalyst"]
-).heated()
 
-create.mixing(['2x fib:hex_essence',"fib:hex_catalyst"],
-  ["legendarysurvivaloverhaul:shield_container","fib:hex_catalyst"]
-).heated()
 
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:wither_sword","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:soul_jar","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:enderium_shard","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['1x fib:hex_essence',"fib:hex_catalyst"],
-  ["minecraft:echo_shard","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["goeticlegacy:old_world_echo","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:cerberus_fang","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["minecraft:ancient_debris","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:evoker_fang_scroll","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:sonic_boom_scroll","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['6x fib:hex_essence',"fib:hex_catalyst"],
-  ["legendarysurvivaloverhaul:heart_container","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
-  ["biomancy:bloomberry","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
-  ["minecraft:nether_star","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
-  ["fib:essenceoflife","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['32x fib:hex_essence',"fib:hex_catalyst"],
-  ["goety:void_echo","fib:hex_catalyst"]
-).heated()
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:angler_treasure_bag","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:elder_guardian_treasure_bag","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:ender_dragon_treasure_bag","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:wither_treasure_bag","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:undead_army_treasure_bag","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:pillager_treasure_bag","fib:hex_catalyst"]
-).heated()
-
-create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
-  ["majruszsdifficulty:warden_treasure_bag","fib:hex_catalyst"]
-)
-create.mixing(Fluid.of('create_enchantment_industry:hyper_experience',100),
-  [Fluid.of('create_enchantment_industry:experience',200),"fib:hex_essence"]
-).superheated()
-////
    //动力合成
    //冷却单元
     create.mechanical_crafting('fib:cooling_unit',[
@@ -188,6 +99,7 @@ create.mixing(Fluid.of('create_enchantment_industry:hyper_experience',100),
     });
 
 
+
 //序列组装
 //制冰物品配方（伪序列组装）
     create.filling(Item.of('fib:filling_cooling_unit'),
@@ -205,6 +117,8 @@ create.mixing(Fluid.of('create_enchantment_industry:hyper_experience',100),
       Item.of('minecraft:blue_ice')
     ],
   'fib:unopened_cooling_unit')
+
+
 //注射笔
 const ZSB = 'spore:syringe'
     create.sequenced_assembly([
@@ -218,25 +132,6 @@ const ZSB = 'spore:syringe'
     ])
     .transitionalItem('spore:syringe')
     .loops(1);
-
-/*
-//制冰机
-const CU = 'fib:cooling_unit'
-    create.sequenced_assembly([
-      Item.of('fib_mod:ice_maker'),
-    ],
-      'fib:cooling_unit',
-    [
-      create.deploying(CU,[CU,'create_connected:kinetic_battery']),
-      create.deploying(CU,[CU,'create:mechanical_press']),
-      create.deploying(CU,[CU,'spore:circuit_board']),
-      create.deploying(CU,[CU,'create:andesite_casing']),
-      create.cutting(CU,CU),
-      create.pressing(CU,CU),
-    ])
-    .transitionalItem('fib:cooling_unit')
-    .loops(1);
-*/
 //CDU
 const CDU = 'minecraft:dispenser'
     create.sequenced_assembly([
@@ -251,7 +146,6 @@ const CDU = 'minecraft:dispenser'
     ])
     .transitionalItem('minecraft:dispenser')
     .loops(1);
-
 //T1装备组件-羽毛
 const T101 = 'create:iron_sheet'
     create.sequenced_assembly([
@@ -397,4 +291,102 @@ const ECHO = 'fib:t2_equipment_module'
     ])
     .transitionalItem('fib:t2_equipment_module')
     .loops(4);
+
+
+
+////邪术精华
+create.mixing(['2x fib:hex_essence',"fib:hex_catalyst"],
+  ["legendarysurvivaloverhaul:heart_fragment","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['2x fib:hex_essence',"fib:hex_catalyst"],
+  ["legendarysurvivaloverhaul:shield_container","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:wither_sword","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:soul_jar","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:enderium_shard","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['1x fib:hex_essence',"fib:hex_catalyst"],
+  ["minecraft:echo_shard","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["goeticlegacy:old_world_echo","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:cerberus_fang","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["minecraft:ancient_debris","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:evoker_fang_scroll","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:sonic_boom_scroll","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['6x fib:hex_essence',"fib:hex_catalyst"],
+  ["legendarysurvivaloverhaul:heart_container","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["biomancy:bloomberry","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
+  ["minecraft:nether_star","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
+  ["fib:essenceoflife","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['32x fib:hex_essence',"fib:hex_catalyst"],
+  ["goety:void_echo","fib:hex_catalyst"]
+).heated()
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:angler_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['4x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:elder_guardian_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['16x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:ender_dragon_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:wither_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:undead_army_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:pillager_treasure_bag","fib:hex_catalyst"]
+).heated()
+
+create.mixing(['8x fib:hex_essence',"fib:hex_catalyst"],
+  ["majruszsdifficulty:warden_treasure_bag","fib:hex_catalyst"]
+)
+create.mixing(Fluid.of('create_enchantment_industry:hyper_experience',100),
+  [Fluid.of('create_enchantment_industry:experience',200),"fib:hex_essence"]
+).superheated()
+
 })

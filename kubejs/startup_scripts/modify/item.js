@@ -51,4 +51,10 @@ ItemEvents.modification(event => {
         item.setAttackDamage(17)
         item.setAttackSpeed(-2.8)
     })
+    // 法棍大王
+    event.modify('fib:baguette_king', item => {
+        itemWithAttributes(item, [
+            [global.ATTR_BAGUETTE_ENTITY_REACH, 1]
+        ])
+    })
 })

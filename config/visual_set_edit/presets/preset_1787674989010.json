@@ -22,6 +22,7 @@
           "clipMaxX": NaN,
           "uniqueId": "9c67b77f-1bd7-4489-8745-4b4ebbbe615b",
           "sourceAttributeId": "minecraft:generic.movement_speed",
+          "scoreboardObjective": "",
           "type": "dynamic_attribute",
           "customDisplayText": "",
           "customColor": "white",
