@@ -79,6 +79,7 @@ StartupEvents.registry('item', event => {
 		.maxDamage(600)
 		.attackDamageBaseline(9) // 总伤害12 = 基础1 + 基线9 + 铁级2
 		.speedBaseline(-2.8) // 攻速1.2 = 基础4 + (-2.8)
+		.modifyAttribute('forge:entity_reach', 'Bague', 1, 'addition') // 攻击距离 3 → 4
 		.food(food => {
 			food
 				.hunger(10) // 恢复半饱食度

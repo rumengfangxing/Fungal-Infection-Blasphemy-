@@ -152,7 +152,23 @@
     "dlovin.inventoryhud.gui.config.InventoryConfigScreen": true,
     "com.mcg.questborne.client.screen.JournalScreen": true,
     "com.blamejared.controlling.client.NewKeyBindsScreen": true,
-    "com.sal_fish.visual_set_edit.gui.PresetListScreen": true
+    "com.sal_fish.visual_set_edit.gui.PresetListScreen": true,
+    "net.irisshaders.iris.gui.screen.ShaderPackScreen": true,
+    "org.embeddedt.embeddium.gui.screen.PromptScreen": true,
+    "com.sal_fish.visual_set_edit.gui.PresetEditScreen": true,
+    "com.sal_fish.visual_set_edit.gui.PhaseEditScreen": true,
+    "com.sal_fish.visual_set_edit.gui.ConditionListScreen": true,
+    "com.sal_fish.visual_set_edit.gui.ConditionEditScreen": true,
+    "com.sal_fish.visual_set_edit.gui.EffectListScreen": true,
+    "com.sal_fish.visual_set_edit.gui.EffectEditScreen": true,
+    "com.sal_fish.visual_set_edit.gui.DimensionListScreen": true,
+    "com.sal_fish.visual_set_edit.gui.ItemListScreen": true,
+    "com.sal_fish.visual_set_edit.gui.SlotSelectionScreen": true,
+    "com.sal_fish.visual_set_edit.gui.MobEffectListScreen": true,
+    "com.sal_fish.visual_set_edit.gui.TagListScreen": true,
+    "com.sal_fish.visual_set_edit.gui.FullNbtEditScreen": true,
+    "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
+    "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
@@ -256,6 +272,8 @@
     "com.github.tartaricacid.touhoulittlemaid.client.gui.entity.maid.backpack.EmptyBackpackContainerScreen": true,
     "com.simibubi.create.content.trains.station.StationScreen": true,
     "com.simibubi.create.content.trains.station.AssemblyScreen": true,
-    "com.mcg.questborne.client.screen.JournalScreen": true
+    "com.mcg.questborne.client.screen.JournalScreen": true,
+    "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
+    "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true
   }
 }
