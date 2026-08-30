@@ -170,11 +170,18 @@
 
     "jei.goety.craftType.star":"星尘",
     "jei.goety.craftType.infect":"寄染",
+    "jei.goety.craftType.research":"识文解字",
 
     "zone_buff.civil.tc.str": "斗志",
     "zone_buff.civil.tc.sstr": "游击队之歌",
     "zone_buff.civil.tc.sregeneration": "活力迸发",
     "zone_buff.civil.tc.trade": "村庄英雄",
     "zone_buff.civil.tc.su": "恒温",
-    "zone_buff.civil.tc.sresistance": "纯化抗性"
+    "zone_buff.civil.tc.sresistance": "纯化抗性",
+
+    "item.fib.soul_research_scroll":"初等灵魂知识卷轴",
+    "item.fib.soul_research_scroll.tip.granted": "由黑暗秘典识文解字而来,记录了使用灵魂能量的相关工艺",
+    "item.fib.soul_research_scroll.tip.learned": "你已洞悉这份卷轴的奥秘",
+
+    "info.goety.research.fib:soul_research": "你已初步了解灵魂力的使用方法"
 }

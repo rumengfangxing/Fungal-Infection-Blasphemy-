@@ -35,6 +35,8 @@
 	hookBellBlackList = []
 	#Whether enchanting through Rituals are enabled, Default: true
 	ritualEnchants = true
+	#Whether sleeping in a non-cushioned Sarcophagus would give debuffs to non-undead players when waking up the next day, Default: true
+	sarcophagusUndead = true
 	#How many seconds the Soul Menderer repairs 1 durability from an item, Default: 0.5
 	#Range: 0.0 ~ 1.7976931348623157E308
 	soulMenderSeconds = 0.01
@@ -73,6 +75,8 @@
 	#The amount of Soul Energy used to power the Shrieking Obelisk, Default: 100
 	#Range: > 0
 	shriekObeliskCost = 100
+	#Whether Sarcophagus can be sleep in, Default: true
+	sarcophagusSleep = true
 	#How much Soul Energy is required for the Dark Anvil to repair itself, Default: 1000
 	#Range: > 0
 	darkAnvilSoulCost = 1000
@@ -81,6 +85,9 @@
 	sculkGrowerCost = 20
 	#Whether Dark Anvils ignores enchantment max levels when combining same enchantments, Default: true
 	darkAnvilIgnoreMaxLevels = true
+	#The amount of Soul Energy Black Crystal gives when draining a mob, Default: 1
+	#Range: > 0
+	blackCrystalSouls = 1
 	#Whether Dark Anvils have a cap that prevents items from being repaired or enchanted if repair cost is exceeded, Default: false
 	darkAnvilCap = false
 	#Whether creating items through Rituals will transfer damage from the original item, Default: false

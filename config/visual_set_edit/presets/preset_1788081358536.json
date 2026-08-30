@@ -1,0 +1,237 @@
+{
+  "id": "preset_1788081358536",
+  "fallbackName": "✝天启十二使徒✝",
+  "tooltipColor": 16755200,
+  "phases": [
+    {
+      "fallbackName": "The_Risen不灭重生",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [
+        {
+          "attributeId": "newnew_attributes:percentage_natural_healing",
+          "operation": "ADDITION",
+          "variableType": "HEALTH_PERCENT",
+          "formulaType": "LINEAR",
+          "coefficients": [
+            3.0E-4,
+            0.0
+          ],
+          "base": 2.0,
+          "clipMinX": 34.0,
+          "clipMaxX": NaN,
+          "uniqueId": "13a0037c-9bb3-475b-a810-3282280a8417",
+          "sourceAttributeId": "",
+          "scoreboardObjective": "",
+          "type": "dynamic_attribute",
+          "customDisplayText": "满血时带有3%百分比回血效果,生命值越少百分比回血越少,直到血量低至34%时不再百分比回血",
+          "customColor": "#F8005C",
+          "showPointer": true
+        },
+        {
+          "attributeId": "goety_revelation:resistance",
+          "operation": "ADDITION",
+          "variableType": "HEALTH_PERCENT",
+          "formulaType": "LINEAR",
+          "coefficients": [
+            -0.01,
+            0.5
+          ],
+          "base": 2.0,
+          "clipMinX": NaN,
+          "clipMaxX": 50.0,
+          "uniqueId": "8813a2fc-4f11-469f-bd7b-1c160e0a43d6",
+          "sourceAttributeId": "",
+          "scoreboardObjective": "",
+          "type": "dynamic_attribute",
+          "customDisplayText": "生命值低于50%时,血量越低减伤越高,最高50%",
+          "customColor": "#C0C0C0",
+          "showPointer": true
+        }
+      ],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Risen",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Abhorrent憎恶本质",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Abhorrent",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Defiler毒蝎之尾",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Defiler",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Dark漆黑暗影",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Dark",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Great_Shadow",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Great_Shadow",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Witch_King女巫之王",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Witch_King",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Pyre_Lord爆燃领主",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Pyre_Lord",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Profane天启饥荒",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Profane",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Cruel冷酷寒冬",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Cruel",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Terrible可怖之物",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Terrible",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Glorious荣耀之名",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Glorious",
+          "type": "player_state"
+        }
+      ]
+    },
+    {
+      "fallbackName": "The_Atrocious十恶不赦",
+      "requiredCount": 0,
+      "slotConditions": [],
+      "effects": [],
+      "additionalConditions": []
+    },
+    {
+      "fallbackName": "第十三位使徒",
+      "requiredCount": 1,
+      "slotConditions": [
+        {
+          "slot": "curios:any",
+          "itemId": "goety_revelation:ascension_halo",
+          "nbtRule": "IGNORE",
+          "durabilityMinPercent": 0,
+          "durabilityMaxPercent": 100,
+          "minCount": 1,
+          "customDisplayText": ""
+        }
+      ],
+      "effects": [
+        {
+          "abilityId": "FLIGHT",
+          "type": "ability",
+          "customDisplayText": "天启的力量加诸汝身,你可以自由飞行",
+          "customColor": "#CC3333",
+          "showPointer": true
+        }
+      ],
+      "additionalConditions": []
+    }
+  ],
+  "showTooltip": true,
+  "customTooltipLines": [],
+  "backgroundStoryLines": []
+}

@@ -42,6 +42,7 @@ StartupEvents.registry('item', event => {
 	event.create('fib:napalm_lump')
 	event.create('fib:c4_explosive')
 	event.create('fib:injection_pen')
+	// 自定义研究卷轴已挪到 register/scroll.js(独立自包含文件)
 
 
 
