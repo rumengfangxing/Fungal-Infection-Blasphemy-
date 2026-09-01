@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "spore:living_core"
         },
         "craftType": "infect",
+        "research": "fib:soul_research",
         "soulCost": 100,
         "duration": 10,
         "ingredients": [

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:blasting",
+  "research": "fib:soul_research",
   "cookingtime": 100,
   "experience": 1.0,
   "ingredient": {

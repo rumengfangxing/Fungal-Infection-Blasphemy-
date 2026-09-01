@@ -5,6 +5,7 @@
     "item": "minecraft:bow"
   },
   "craftType": "forge",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

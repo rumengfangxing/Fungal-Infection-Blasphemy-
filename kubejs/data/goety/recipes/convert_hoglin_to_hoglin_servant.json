@@ -5,6 +5,7 @@
     "item": "minecraft:crimson_fungus"
   },
   "craftType": "adept_nether",
+  "research": "fib:soul_research",
   "entity_to_convert": {
     "tag": "goety:hoglins",
     "display_name": "entity.minecraft.hoglin"

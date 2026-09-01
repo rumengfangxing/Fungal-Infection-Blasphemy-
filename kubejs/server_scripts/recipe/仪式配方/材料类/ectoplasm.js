@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "goety:ice_cube"
         },
         "craftType": "magic",
+        "research": "fib:soul_research",
         "soulCost": 20,  //每秒灵魂消耗
         "duration": 5,  //持续时间
         "ingredients": [

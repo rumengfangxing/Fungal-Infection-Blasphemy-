@@ -5,6 +5,7 @@
     "item": "goety:aging_cream"
   },
   "craftType": "deep",
+  "research": "fib:soul_research",
   "entity_to_convert": {
     "tag": "goety:guardians",
     "display_name": "entity.minecraft.guardian"

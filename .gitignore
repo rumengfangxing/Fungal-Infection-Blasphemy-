@@ -61,3 +61,5 @@ config/RuOK.toml
 kubejs/CLAUDE.md
 kubejs/skill.md
 /config/zstdnet
+/.dsh
+*.py

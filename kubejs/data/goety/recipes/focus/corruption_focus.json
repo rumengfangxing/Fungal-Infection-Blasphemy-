@@ -5,6 +5,7 @@
     "item": "goety:night_beacon"
   },
   "craftType": "magic",
+  "research": "fib:soul_research",
   "soulCost": 10,
   "duration": 10,
   "ingredients": [

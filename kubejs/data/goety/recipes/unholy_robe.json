@@ -5,6 +5,7 @@
     "item": "goety:nether_robe"
   },
   "craftType": "expert_nether",
+  "research": "fib:soul_research",
   "soulCost": 5,
   "duration": 10,
   "ingredients": [

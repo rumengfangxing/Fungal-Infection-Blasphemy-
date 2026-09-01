@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "create:experience_block"
         },
         "craftType": "magic",
+        "research": "fib:soul_research",
         "soulCost": 1,
         "duration": 10,
         "ingredients": [

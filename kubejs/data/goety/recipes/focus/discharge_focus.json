@@ -5,6 +5,7 @@
     "item": "goety:charge_focus"
   },
   "craftType": "storm",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

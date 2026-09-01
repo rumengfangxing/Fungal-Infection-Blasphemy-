@@ -59,9 +59,11 @@
           "field": "HAS_EFFECT",
           "comparator": "EQ",
           "value": "minecraft:saturation",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": ""
         }
-      ]
+      ],
+      "showTooltip": true
     }
   ],
   "showTooltip": true,

@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "goety:philosophers_stone"
         },
         "craftType": "magic",
+        "research": "fib:soul_research",
         "entity_to_sacrifice":{
             "tag":"goety:villagers",       //请替换实体tag
             "display_name":"entity.minecraft.villager"  //请替换实体ID

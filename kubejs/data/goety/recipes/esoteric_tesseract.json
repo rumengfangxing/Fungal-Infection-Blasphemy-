@@ -5,6 +5,7 @@
     "item": "goety:flame_capture"
   },
   "craftType": "forge",
+  "research": "fib:soul_research",
   "soulCost": 10,
   "duration": 10,
   "ingredients": [

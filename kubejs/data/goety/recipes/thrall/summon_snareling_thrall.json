@@ -5,6 +5,7 @@
     "item": "goety:spider_egg"
   },
   "craftType": "end",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:snareling_servant",
   "soulCost": 1,
   "duration": 10,

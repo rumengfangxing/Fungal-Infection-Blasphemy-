@@ -1,5 +1,6 @@
 {
   "type": "goety:brazier",
+  "research": "fib:soul_research",
   "soulCost": 250,
   "ingredients": [
     {

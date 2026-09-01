@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "create_biotech:bionic_mechanism"
         },
         "craftType": "animation",
+        "research": "fib:soul_research",
         "entity_to_sacrifice":{
             "tag": "goety:spiders",
             "display_name": "entity.minecraft.spider"

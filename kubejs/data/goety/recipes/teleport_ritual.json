@@ -5,6 +5,7 @@
     "item": "goety:waystone"
   },
   "craftType": "magic",
+  "research": "fib:soul_research",
   "soulCost": 10,
   "duration": 10,
   "ingredients": [

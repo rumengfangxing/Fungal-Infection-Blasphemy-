@@ -5,6 +5,7 @@
     "item": "goety:wind_robe"
   },
   "craftType": "storm",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

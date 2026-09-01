@@ -5,6 +5,7 @@
     "item": "goety:mystic_core"
   },
   "craftType": "storm",
+  "research": "fib:soul_research",
   "entity_to_convert": {
     "tag": "goety:non_trader_villagers",
     "display_name": "entity.minecraft.villager"

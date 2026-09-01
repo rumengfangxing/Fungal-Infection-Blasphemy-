@@ -5,6 +5,7 @@
     "item": "goety:mystic_core"
   },
   "craftType": "adept_nether",
+  "research": "fib:soul_research",
   "entity_to_convert": {
     "tag": "goety:villagers",
     "display_name": "entity.minecraft.villager"

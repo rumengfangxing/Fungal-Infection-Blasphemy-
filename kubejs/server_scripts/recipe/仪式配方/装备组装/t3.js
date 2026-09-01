@@ -22,6 +22,6 @@ ServerEvents.recipes(event => {
     ['goety:dark_boots', 'feet', [['armor', 8], ['tough', 6], ['kb', 0.5], ['thermal', 1], ['soulDec', 0.2, 2], ['soulInc', 0.2, 2], ['soulSteal', 0.2, 2], ['spellPow', 1], ['spellMul', 0.1], ['castDur', 0.15], ['spellCd', 0.15]], null, 'goety:dark_boots', 1000, 10],
   ]
   for (const [item, slot, attrs, extra, activation, soulCost, duration] of TABLE) {
-    event.custom({ type: 'goety:ritual', ritual_type: 'goety:craft', activation_item: { item: activation }, craftType: 'magic', soulCost: soulCost, duration: duration, ingredients: [{ item: 'fib:echo_equipment_module' }], result: Item.of(item, extra ? mods(slot, attrs, extra) : mods(slot, attrs)) })
+    event.custom({ type: 'goety:ritual', ritual_type: 'goety:craft', activation_item: { item: activation }, craftType: 'magic', research: 'fib:soul_research', soulCost: soulCost, duration: duration, ingredients: [{ item: 'fib:echo_equipment_module' }], result: Item.of(item, extra ? mods(slot, attrs, extra) : mods(slot, attrs)) })
   }
 })

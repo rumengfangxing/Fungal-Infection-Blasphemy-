@@ -5,6 +5,7 @@
     "item": "goety:shocking_focus"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:bound_storm_caster",
   "soulCost": 5,
   "duration": 30,

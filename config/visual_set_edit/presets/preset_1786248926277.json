@@ -50,13 +50,16 @@
           "amount": 0.1,
           "operation": "ADDITION",
           "uniqueId": "256c114b-d64f-46e3-8548-435c2d76f4e9",
+          "durationSeconds": -1,
+          "cooldownSeconds": 0,
           "type": "attribute",
           "customDisplayText": "造成伤害的10%会变为额外生命值",
           "customColor": "yellow",
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     },
     {
       "fallbackName": "[狂暴]高度兴奋",
@@ -114,7 +117,8 @@
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     },
     {
       "fallbackName": "[强壮]骑士精神",
@@ -172,7 +176,8 @@
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     },
     {
       "fallbackName": "[钙化]排斥反击",
@@ -230,7 +235,8 @@
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     },
     {
       "fallbackName": "[焦化]纵火狂人",
@@ -301,7 +307,8 @@
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     },
     {
       "fallbackName": "[渊流]如鱼得水",
@@ -385,7 +392,8 @@
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     },
     {
       "fallbackName": "[脊髓]活力迸发",
@@ -456,7 +464,8 @@
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     }
   ],
   "showTooltip": true,

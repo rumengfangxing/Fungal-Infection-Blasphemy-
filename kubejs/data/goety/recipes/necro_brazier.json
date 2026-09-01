@@ -5,6 +5,7 @@
     "item": "goety:shade_brazier"
   },
   "craftType": "forge",
+  "research": "fib:soul_research",
   "soulCost": 5,
   "duration": 30,
   "ingredients": [

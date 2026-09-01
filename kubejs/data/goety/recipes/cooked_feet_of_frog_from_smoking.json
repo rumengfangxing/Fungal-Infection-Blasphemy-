@@ -1,5 +1,6 @@
 {
   "type": "minecraft:smoking",
+  "research": "fib:soul_research",
   "cookingtime": 100,
   "experience": 0.35,
   "ingredient": {

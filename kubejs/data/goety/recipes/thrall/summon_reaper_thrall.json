@@ -5,6 +5,7 @@
     "item": "goety:grave_dust"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:reaper_servant",
   "soulCost": 5,
   "duration": 30,

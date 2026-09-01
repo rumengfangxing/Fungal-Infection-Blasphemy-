@@ -5,6 +5,7 @@
     "item": "goety:ominous_orb"
   },
   "craftType": "magic",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

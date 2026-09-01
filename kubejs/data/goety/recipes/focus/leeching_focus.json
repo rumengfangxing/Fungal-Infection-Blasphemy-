@@ -5,6 +5,7 @@
     "item": "goety:hunger_core"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

@@ -5,6 +5,7 @@
     "item": "goety:animation_core"
   },
   "craftType": "overgrown",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

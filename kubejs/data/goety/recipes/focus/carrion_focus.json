@@ -5,6 +5,7 @@
     "item": "goety:swarm_focus"
   },
   "craftType": "overgrown",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

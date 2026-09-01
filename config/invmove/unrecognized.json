@@ -168,7 +168,9 @@
     "com.sal_fish.visual_set_edit.gui.TagListScreen": true,
     "com.sal_fish.visual_set_edit.gui.FullNbtEditScreen": true,
     "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
-    "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true
+    "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true,
+    "com.kuzhi.youtwofightforme.client.FactionControlScreen": true,
+    "com.sighs.apricityui.instance.ApricityContainerScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
@@ -274,6 +276,7 @@
     "com.simibubi.create.content.trains.station.AssemblyScreen": true,
     "com.mcg.questborne.client.screen.JournalScreen": true,
     "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
-    "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true
+    "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true,
+    "com.kuzhi.youtwofightforme.client.FactionControlScreen": true
   }
 }

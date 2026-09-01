@@ -5,6 +5,7 @@
     "item": "goety:tunnel_focus"
   },
   "craftType": "end",
+  "research": "fib:soul_research",
   "soulCost": 5,
   "duration": 30,
   "ingredients": [

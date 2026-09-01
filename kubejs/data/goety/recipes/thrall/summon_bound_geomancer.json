@@ -5,6 +5,7 @@
     "item": "minecraft:amethyst_block"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:bound_geomancer",
   "soulCost": 5,
   "duration": 30,

@@ -5,6 +5,7 @@
     "item": "minecraft:mycelium"
   },
   "craftType": "overgrown",
+  "research": "fib:soul_research",
   "entity_to_convert": {
     "tag": "forge:cows",
     "display_name": "entity.minecraft.cow"

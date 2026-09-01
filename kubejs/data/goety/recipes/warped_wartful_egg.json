@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "research": "fib:soul_research",
   "ingredients": [
     {
       "item": "minecraft:warped_wart_block"

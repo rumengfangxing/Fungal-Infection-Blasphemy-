@@ -1,5 +1,6 @@
 {
   "type": "minecraft:stonecutting",
+  "research": "fib:soul_research",
   "count": 1,
   "ingredient": {
     "item": "goety:snowy_jade_tiles"

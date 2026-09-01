@@ -5,6 +5,7 @@
     "item": "goety:black_iron_leggings"
   },
   "craftType": "forge",
+  "research": "fib:soul_research",
   "soulCost": 5,
   "duration": 30,
   "ingredients": [

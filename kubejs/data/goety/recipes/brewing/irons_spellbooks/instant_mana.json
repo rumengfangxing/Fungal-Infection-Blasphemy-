@@ -1,5 +1,6 @@
 {
   "type": "goety:brewing",
+  "research": "fib:soul_research",
   "ingredient": {
     "item": "irons_spellbooks:arcane_essence"
   },

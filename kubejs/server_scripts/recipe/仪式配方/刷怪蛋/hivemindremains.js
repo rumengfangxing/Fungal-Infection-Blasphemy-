@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "spore:brain_remnants"
         },
         "craftType": "infect",
+        "research": "fib:soul_research",
         "soulCost": 10000,
         "duration": 10,
         "ingredients": [

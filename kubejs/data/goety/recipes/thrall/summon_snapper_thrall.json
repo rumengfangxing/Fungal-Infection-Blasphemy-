@@ -5,6 +5,7 @@
     "tag": "minecraft:fishes"
   },
   "craftType": "deep",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:snapper",
   "soulCost": 1,
   "duration": 10,

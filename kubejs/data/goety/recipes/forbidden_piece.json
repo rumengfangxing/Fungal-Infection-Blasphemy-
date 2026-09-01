@@ -5,6 +5,7 @@
     "item": "minecraft:paper"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "soulCost": 5,
   "duration": 10,
   "ingredients": [

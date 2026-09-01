@@ -5,6 +5,7 @@
     "item": "minecraft:map"
   },
   "craftType": "divination",
+  "research": "fib:soul_research",
   "structure_to_locate": {
     "tag": "minecraft:eye_of_ender_located",
     "display_name": "filled_map.goety.stronghold"

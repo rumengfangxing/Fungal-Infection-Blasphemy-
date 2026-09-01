@@ -5,6 +5,7 @@
     "item": "minecraft:crimson_fungus"
   },
   "craftType": "adept_nether",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:hoglin_servant",
   "soulCost": 1,
   "duration": 10,

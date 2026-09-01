@@ -5,6 +5,7 @@
     "tag": "forge:bones"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "entity_to_convert": {
     "tag": "forge:horses",
     "display_name": "entity.minecraft.horse"

@@ -2031,8 +2031,8 @@
         "value": 0
       },
       "max": {
-        "default": 2,
-        "value": 2
+        "default": 1.9,
+        "value": 1.9
       }
     },
     "attributeslib:dodge_chance": {
@@ -2350,8 +2350,8 @@
         "value": 0
       },
       "max": {
-        "default": 1024,
-        "value": 1024
+        "default": 0.3,
+        "value": 0.3
       }
     },
     "betterstealth:stealth": {

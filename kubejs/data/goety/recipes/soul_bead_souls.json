@@ -1,5 +1,6 @@
 {
   "type": "goety:soul_absorber_recipes",
+  "research": "fib:soul_research",
   "ingredient": {
     "item": "quark:soul_bead"
   },

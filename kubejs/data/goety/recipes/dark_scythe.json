@@ -5,6 +5,7 @@
     "item": "minecraft:iron_hoe"
   },
   "craftType": "forge",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

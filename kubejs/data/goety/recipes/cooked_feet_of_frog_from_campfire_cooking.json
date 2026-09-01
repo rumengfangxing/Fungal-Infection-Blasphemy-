@@ -1,5 +1,6 @@
 {
   "type": "minecraft:campfire_cooking",
+  "research": "fib:soul_research",
   "cookingtime": 600,
   "experience": 0.35,
   "ingredient": {

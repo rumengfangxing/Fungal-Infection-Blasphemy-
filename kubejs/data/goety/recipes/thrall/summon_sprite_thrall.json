@@ -5,6 +5,7 @@
     "tag": "forge:glass"
   },
   "craftType": "storm",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:sprite",
   "soulCost": 1,
   "duration": 10,

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "research": "fib:soul_research",
   "category": "misc",
   "group": "chest_boat",
   "ingredients": [

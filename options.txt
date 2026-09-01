@@ -131,7 +131,6 @@ key_key.reccomplex.undo:key.keyboard.unknown
 key_iris.keybind.reload:key.keyboard.unknown
 key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.unknown
-key_key.visual_set_edit.cast_spell:key.keyboard.v
 key_key.searchonmcmod.search_on_mcmod:key.keyboard.r:CONTROL
 key_key.searchonmcmod.copy_item_name:key.keyboard.c:CONTROL
 key_key.powerful_dummy.cleardps:key.keyboard.grave.accent
@@ -151,6 +150,7 @@ key_key.yes_steve_model.extra_animation.7.desc:key.keyboard.unknown
 key_key.lightmanscurrency.open_wallet:key.keyboard.semicolon
 key_key.lightmanscurrency.portable_terminal:key.keyboard.unknown
 key_key.lightmanscurrency.portable_atm:key.keyboard.unknown
+key_tooltipoverhaul.binds.compare_bind:key.keyboard.left.shift
 key_key.push_to_talk:key.keyboard.unknown
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.unknown
@@ -209,7 +209,7 @@ key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
 key_key.showcaseitem.showcaseitem:key.keyboard.x:SHIFT
 key_key.modernui.openCenter:key.keyboard.unknown
 key_key.modernui.zoom:key.keyboard.unknown
-key_gnetum.config.keyMapping:key.keyboard.unknown
+key_gnetum.config.keyMapping:key.keyboard.end
 key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_key.trashslot.toggle:key.keyboard.unknown
 key_key.trashslot.toggle_lock:key.keyboard.unknown
@@ -241,11 +241,11 @@ key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.relics.ability_list:key.keyboard.left.alt
 key_key.relics.research_relic:key.keyboard.left.shift
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
@@ -304,6 +304,7 @@ key_key.ezactions.bundle.______________:key.keyboard.backslash
 key_key.ezactions.bundle.______:key.keyboard.y
 key_key.ezactions.bundle.gui_______gui_:key.keyboard.q
 key_key.ezactions.bundle.____:key.keyboard.p
+key_key.you_two_fight_for_me.open:key.keyboard.o
 key_key.damage_number.show_config:key.keyboard.unknown
 key_key.raws_visual_keybinder.open_screen:key.keyboard.f10
 key_key.raws_visual_keybinder.switch_to_preset_1:key.keyboard.unknown
@@ -360,6 +361,7 @@ key_key.inventoryhud.openconfig:key.keyboard.unknown
 key_key.inventoryhud.togglepot:key.keyboard.unknown
 key_key.inventoryhud.togglearm:key.keyboard.unknown
 key_key.inventoryhud.toggleall:key.keyboard.unknown
+key_key.itemzoomer.toggle_zoom:key.keyboard.z
 key_key.ponder.ponder:key.keyboard.w
 key_key.ponderer.open_function_page:key.keyboard.o:ALT
 key_key.ponderer.trigger_ponder:key.keyboard.g:ALT

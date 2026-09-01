@@ -5,6 +5,7 @@
     "item": "goety:cursed_cage"
   },
   "craftType": "forge",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 30,
   "ingredients": [

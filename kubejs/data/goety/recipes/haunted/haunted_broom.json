@@ -5,6 +5,7 @@
     "item": "goety:dark_wand"
   },
   "craftType": "sky",
+  "research": "fib:soul_research",
   "soulCost": 25,
   "duration": 10,
   "ingredients": [

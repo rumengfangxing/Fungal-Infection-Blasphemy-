@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "fib:skill_potent"
         },
         "craftType": "magic",
+        "research": "fib:soul_research",
         "soulCost": 5000,
         "duration": 10,
         "ingredients": [

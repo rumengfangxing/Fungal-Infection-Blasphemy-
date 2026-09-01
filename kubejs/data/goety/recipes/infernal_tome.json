@@ -5,6 +5,7 @@
     "item": "minecraft:book"
   },
   "craftType": "adept_nether",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

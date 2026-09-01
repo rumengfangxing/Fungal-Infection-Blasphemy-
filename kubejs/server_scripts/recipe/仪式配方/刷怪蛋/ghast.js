@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "goety:flame_capture"
         },
         "craftType": "animation",
+        "research": "fib:soul_research",
         "soulCost": 1000,
         "duration": 10,
         "ingredients": [

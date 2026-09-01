@@ -5,6 +5,7 @@
     "item": "minecraft:phantom_membrane"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:phantom_servant",
   "soulCost": 5,
   "duration": 10,

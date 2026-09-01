@@ -5,6 +5,7 @@
     "item": "goety:empty_focus"
   },
   "craftType": "animation",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

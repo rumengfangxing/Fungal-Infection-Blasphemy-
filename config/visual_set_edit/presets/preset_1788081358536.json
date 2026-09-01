@@ -20,7 +20,7 @@
           "base": 2.0,
           "clipMinX": 34.0,
           "clipMaxX": NaN,
-          "uniqueId": "13a0037c-9bb3-475b-a810-3282280a8417",
+          "uniqueId": "c22c0f76-a697-4d95-8561-c2eccd992b77",
           "sourceAttributeId": "",
           "scoreboardObjective": "",
           "type": "dynamic_attribute",
@@ -54,156 +54,382 @@
           "field": "TAG",
           "comparator": "",
           "value": "The_Risen",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "获得不灭重生者的认可"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Abhorrent憎恶本质",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "attributeId": "attributeslib:arrow_damage",
+          "operation": "MULTIPLY_TOTAL",
+          "variableType": "KILL_COUNT_SINCE_EQUIP",
+          "formulaType": "LINEAR",
+          "coefficients": [
+            1.0E-4,
+            0.3
+          ],
+          "base": 2.0,
+          "clipMinX": NaN,
+          "clipMaxX": NaN,
+          "uniqueId": "9aa4fc77-c7b6-48c0-a94b-34fb97a1ac78",
+          "sourceAttributeId": "",
+          "scoreboardObjective": "",
+          "type": "dynamic_attribute",
+          "customDisplayText": "初始拥有30%弹射物伤害加成,承载的杀孽至多可使加成提升至200%",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Abhorrent",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "接受憎恶本质的洗礼"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Defiler毒蝎之尾",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "goety:illague",
+          "amplifier": 4,
+          "durationSeconds": 10,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "ebc7aa5f-321c-450c-be1f-eceef1c8e8c6",
+          "type": "potion",
+          "customDisplayText": "你的攻击携带致命的瘟疫",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Defiler",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "接受毒蝎之尾的洗礼"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Dark漆黑暗影",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "torchesbecomesunlight:collapsal",
+          "amplifier": 0,
+          "durationSeconds": 5,
+          "showParticles": true,
+          "cooldownSeconds": 30,
+          "uniqueId": "df3f5c8a-97e1-4c93-8b2e-4475affd94c4",
+          "type": "potion",
+          "customDisplayText": "至深的黑暗每30秒可以帮你裹挟住目标一段时间",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Dark",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "融入漆黑暗影之中"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
-      "fallbackName": "The_Great_Shadow",
+      "fallbackName": "The_Great_Shadow黑天鹅之影",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "minecraft:darkness",
+          "amplifier": 0,
+          "durationSeconds": 10,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "5ba93008-05b7-440f-9080-4ef4523cf494",
+          "type": "potion",
+          "customDisplayText": "你的攻击会掠去目标的感官",
+          "customColor": "#F8005C",
+          "showPointer": true
+        },
+        {
+          "activateCommands": [
+            "effect give @e[distance\u003d8] goety:nyctophobia 30 5"
+          ],
+          "mode": "IMPULSE",
+          "repeatIntervalSeconds": 0,
+          "uniqueId": "7b882b18-dbbe-464b-9f74-8a5a7181d356",
+          "trigger": "ACTIVATE",
+          "commands": [
+            "effect give @e[distance\u003d8] goety:nyctophobia 30 5"
+          ],
+          "probability": 1.0,
+          "targetFilter": {
+            "entityTags": []
+          },
+          "cooldownSeconds": 5,
+          "type": "command",
+          "customDisplayText": "周围的生物都会陷入对黑暗的恐惧之中",
+          "customColor": "#F8005C",
+          "showPointer": true
+        },
+        {
+          "target": "IMMUNE",
+          "mobEffectId": "goety:nyctophobia",
+          "amplifier": 0,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "38eb0033-d7dd-49e5-8e7d-42fa9c16fa4c",
+          "type": "potion",
+          "customDisplayText": "你不会惧怕黑暗",
+          "customColor": "gold",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Great_Shadow",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "与黑天鹅之影共舞"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Witch_King女巫之王",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "goety:wane",
+          "amplifier": 4,
+          "durationSeconds": 10,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "e7ff4abb-dc4e-4d01-a135-919055a27e23",
+          "type": "potion",
+          "customDisplayText": "你的攻击会附带强效的衰弱效果",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Witch_King",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "接受女巫之王的洗礼"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Pyre_Lord爆燃领主",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "goety:fiery_aura",
+          "amplifier": 29,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "4ba4cfe1-0539-44f3-ba0a-76169251e369",
+          "type": "potion",
+          "customDisplayText": "炽热的气场从你周身荡开",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Pyre_Lord",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "接受爆燃领主的洗礼"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Profane天启饥荒",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "goety:soul_hunger",
+          "amplifier": 2,
+          "durationSeconds": 10,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "a2e13805-5013-42b3-a32c-b6c8863f7c48",
+          "type": "potion",
+          "customDisplayText": "你的攻击将吞噬目标的灵魂",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Profane",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "接受天启饥荒的洗礼"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Cruel冷酷寒冬",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "goety:frosty_aura",
+          "amplifier": 19,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "1fb8ae35-35a0-4a9d-b263-e8c95f2ee1e3",
+          "type": "potion",
+          "customDisplayText": "极寒的气场从你周身向外荡开",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Cruel",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "接受冷酷寒冬的洗礼"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Terrible可怖之物",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "goety:arrowmantic",
+          "amplifier": 4,
+          "durationSeconds": 20,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "aa8dda3a-2ff6-4204-93ad-083ec5b489a0",
+          "type": "potion",
+          "customDisplayText": "一旦命中目标,此后你的箭矢几乎箭无虚发",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Terrible",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "直面可怖之物"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Glorious荣耀之名",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
+      "effects": [
+        {
+          "target": "SELF",
+          "mobEffectId": "goety:deflective",
+          "amplifier": 49,
+          "durationSeconds": -1,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "472b918a-700f-4f6a-9a54-dd26cb49af47",
+          "type": "potion",
+          "customDisplayText": "亵渎荣耀之名的箭矢将被原路弹回",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
       "additionalConditions": [
         {
           "field": "TAG",
           "comparator": "",
           "value": "The_Glorious",
-          "type": "player_state"
+          "type": "player_state",
+          "customDisplayText": "继承荣耀之名"
         }
-      ]
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "The_Atrocious十恶不赦",
       "requiredCount": 0,
       "slotConditions": [],
-      "effects": [],
-      "additionalConditions": []
+      "effects": [
+        {
+          "target": "ATTACK_TARGET",
+          "mobEffectId": "goety:cursed",
+          "amplifier": 0,
+          "durationSeconds": 20,
+          "showParticles": true,
+          "cooldownSeconds": 0,
+          "uniqueId": "8df861ac-785b-4de5-bab0-d4b95a55d922",
+          "type": "potion",
+          "customDisplayText": "你的攻击将裹挟致命的诅咒",
+          "customColor": "#F8005C",
+          "showPointer": true
+        }
+      ],
+      "additionalConditions": [
+        {
+          "field": "TAG",
+          "comparator": "",
+          "value": "The_Atrocious",
+          "type": "player_state",
+          "customDisplayText": "践行十恶不赦之举"
+        }
+      ],
+      "showTooltip": true
     },
     {
       "fallbackName": "第十三位使徒",
@@ -228,7 +454,8 @@
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     }
   ],
   "showTooltip": true,

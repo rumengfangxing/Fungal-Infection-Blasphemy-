@@ -5,6 +5,7 @@
     "item": "minecraft:map"
   },
   "craftType": "divination",
+  "research": "fib:soul_research",
   "structure_to_locate": {
     "tag": "goety:explorer_maps/desert_pyramid",
     "display_name": "filled_map.goety.desert_pyramid"

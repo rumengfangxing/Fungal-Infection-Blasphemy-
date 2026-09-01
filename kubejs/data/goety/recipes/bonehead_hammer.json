@@ -5,6 +5,7 @@
     "item": "goety:great_hammer"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

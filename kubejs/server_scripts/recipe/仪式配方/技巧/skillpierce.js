@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "enigmaticlegacy:thicc_scroll"
         },
         "craftType": "forge",
+        "research": "fib:soul_research",
         "soulCost": 1000,
         "duration": 10,
         "ingredients": [

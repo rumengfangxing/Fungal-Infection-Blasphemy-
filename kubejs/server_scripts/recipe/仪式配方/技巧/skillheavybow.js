@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "fib:skill_powerful_shooting"
         },
         "craftType": "forge",
+        "research": "fib:soul_research",
         "soulCost": 1000,
         "duration": 10,
         "ingredients": [

@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "enigmaticlegacy:the_acknowledgment"
         },
         "craftType": "end",
+        "research": "fib:soul_research",
         "soulCost": 8,
         "duration": 30,
         "ingredients": [

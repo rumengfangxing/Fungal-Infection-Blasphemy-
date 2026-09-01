@@ -5,6 +5,7 @@
     "item": "goety:dark_metal_scythe"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 30,
   "ingredients": [

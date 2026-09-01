@@ -5,6 +5,7 @@
     "item": "minecraft:sweet_berries"
   },
   "craftType": "overgrown",
+  "research": "fib:soul_research",
   "entity_to_convert": {
     "tag": "goety:polar_bears",
     "display_name": "entity.minecraft.polar_bear"

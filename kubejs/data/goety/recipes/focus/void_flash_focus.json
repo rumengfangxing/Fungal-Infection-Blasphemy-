@@ -5,6 +5,7 @@
     "item": "goety:stellar_focus"
   },
   "craftType": "end",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

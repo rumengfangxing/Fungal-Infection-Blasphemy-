@@ -5,6 +5,7 @@
     "item": "goety:wild_robe"
   },
   "craftType": "deep",
+  "research": "fib:soul_research",
   "soulCost": 5,
   "duration": 10,
   "ingredients": [

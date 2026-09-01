@@ -5,6 +5,7 @@
     "item": "minecraft:book"
   },
   "craftType": "magic",
+  "research": "fib:soul_research",
   "soulCost": 10,
   "duration": 10,
   "enchantment": "minecraft:smite",

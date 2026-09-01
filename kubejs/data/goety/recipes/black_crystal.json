@@ -5,6 +5,7 @@
     "tag": "forge:storage_blocks/amethyst"
   },
   "craftType": "forge",
+  "research": "fib:soul_research",
   "soulCost": 5,
   "duration": 30,
   "ingredients": [

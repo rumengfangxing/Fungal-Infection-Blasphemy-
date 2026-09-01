@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "minecraft:egg"
         },
         "craftType": "animation",
+        "research": "fib:soul_research",
         "soulCost": 10000,
         "duration": 10,
         "ingredients": [

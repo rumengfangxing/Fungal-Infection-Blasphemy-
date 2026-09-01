@@ -5,6 +5,7 @@
     "item": "minecraft:map"
   },
   "craftType": "divination",
+  "research": "fib:soul_research",
   "entity_to_sacrifice": {
     "tag": "goety:chickens",
     "display_name": "entity.minecraft.chicken"

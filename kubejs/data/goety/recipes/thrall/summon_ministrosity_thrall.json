@@ -5,6 +5,7 @@
     "tag": "forge:stone"
   },
   "craftType": "geoturgy",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:stone_ministrosity",
   "soulCost": 1,
   "duration": 10,

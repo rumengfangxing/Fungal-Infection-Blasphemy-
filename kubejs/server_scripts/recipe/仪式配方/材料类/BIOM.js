@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "create:brass_sheet"
         },
         "craftType": "animation",
+        "research": "fib:soul_research",
         "soulCost": 10,  //每秒灵魂消耗
         "duration": 10,  //持续时间
         "ingredients": [

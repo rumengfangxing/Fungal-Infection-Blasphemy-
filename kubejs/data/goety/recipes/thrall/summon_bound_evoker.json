@@ -5,6 +5,7 @@
     "item": "minecraft:totem_of_undying"
   },
   "craftType": "necroturgy",
+  "research": "fib:soul_research",
   "entity_to_summon": "goety:bound_evoker",
   "soulCost": 5,
   "duration": 30,

@@ -5,6 +5,7 @@
     "tag": "goety:haunted_logs"
   },
   "craftType": "animation",
+  "research": "fib:soul_research",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

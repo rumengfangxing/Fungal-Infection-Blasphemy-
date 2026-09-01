@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
             "item": "geodes:quartz_crystal_block"
         },
         "craftType": "geoturgy",
+        "research": "fib:soul_research",
         "soulCost": 1,
         "duration": 10,
         "ingredients": [

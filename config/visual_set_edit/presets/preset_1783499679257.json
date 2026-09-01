@@ -41,7 +41,8 @@
           "showPointer": true
         }
       ],
-      "additionalConditions": []
+      "additionalConditions": [],
+      "showTooltip": true
     }
   ],
   "showTooltip": false,
