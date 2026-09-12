@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "lightmanscurrency:coinblock_chocolate_emerald",
+    "lightmanscurrency:coinblock_copper",
+    "lightmanscurrency:coinblock_diamond",
+    "lightmanscurrency:coinblock_emerald",
+    "lightmanscurrency:coinblock_gold",
+    "lightmanscurrency:coinblock_iron",
+    "lightmanscurrency:coinblock_netherite",
+    "lightmanscurrency:coinblock_chocolate_copper",
+    "lightmanscurrency:coinblock_chocolate_diamond",
+    "lightmanscurrency:coinblock_chocolate_gold",
+    "lightmanscurrency:coinblock_chocolate_iron",
+    "lightmanscurrency:coinblock_chocolate_netherite"
+  ]
+}

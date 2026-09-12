@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "minecraft:sword_efficient",
+  "tag": "minecraft:sword_efficient",
+  "enabled": true,
+  "name": "可被剑高效破坏的植物"
+}

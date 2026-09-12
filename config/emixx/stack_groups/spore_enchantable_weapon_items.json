@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "spore:enchantable_weapon_items",
+  "tag": "spore:enchantable_weapon_items",
+  "enabled": true,
+  "name": "可附魔武器"
+}

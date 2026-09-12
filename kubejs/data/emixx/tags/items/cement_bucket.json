@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "createdieselgenerators:black_cement_bucket",
+    "createdieselgenerators:blue_cement_bucket",
+    "createdieselgenerators:brown_cement_bucket",
+    "createdieselgenerators:cyan_cement_bucket",
+    "createdieselgenerators:gray_cement_bucket",
+    "createdieselgenerators:green_cement_bucket",
+    "createdieselgenerators:light_blue_cement_bucket",
+    "createdieselgenerators:light_gray_cement_bucket",
+    "createdieselgenerators:lime_cement_bucket",
+    "createdieselgenerators:magenta_cement_bucket",
+    "createdieselgenerators:orange_cement_bucket",
+    "createdieselgenerators:pink_cement_bucket",
+    "createdieselgenerators:purple_cement_bucket",
+    "createdieselgenerators:red_cement_bucket",
+    "createdieselgenerators:white_cement_bucket",
+    "createdieselgenerators:yellow_cement_bucket"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "majruszsdifficulty:angler_treasure_bag",
+    "majruszsdifficulty:elder_guardian_treasure_bag",
+    "majruszsdifficulty:ender_dragon_treasure_bag",
+    "majruszsdifficulty:pillager_treasure_bag",
+    "majruszsdifficulty:undead_army_treasure_bag",
+    "majruszsdifficulty:warden_treasure_bag",
+    "majruszsdifficulty:wither_treasure_bag"
+  ]
+}

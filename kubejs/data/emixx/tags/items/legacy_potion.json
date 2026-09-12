@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "enigmaticaddons:bless_potion",
+    "enigmaticlegacy:common_potion",
+    "enigmaticlegacy:common_potion_lingering",
+    "enigmaticlegacy:common_potion_splash",
+    "enigmaticlegacy:recall_potion",
+    "enigmaticlegacy:redemption_potion",
+    "enigmaticlegacy:twisted_potion",
+    "enigmaticlegacy:ultimate_potion",
+    "enigmaticlegacy:ultimate_potion_lingering",
+    "enigmaticlegacy:ultimate_potion_splash"
+  ]
+}

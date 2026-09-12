@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "refinedstorage:disk_manipulator",
+  "tag": "refinedstorage:disk_manipulator",
+  "enabled": true,
+  "name": "磁盘操纵器"
+}

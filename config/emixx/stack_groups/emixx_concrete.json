@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "emixx:concrete",
+  "tag": "emixx:concrete",
+  "enabled": true,
+  "name": "混凝土方块"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "emixx:pilot",
+  "tag": "emixx:pilot",
+  "enabled": true,
+  "name": "排障器"
+}

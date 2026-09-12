@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "refinedstorage:crafting_monitor",
+  "tag": "refinedstorage:crafting_monitor",
+  "enabled": true,
+  "name": "合成监视器"
+}

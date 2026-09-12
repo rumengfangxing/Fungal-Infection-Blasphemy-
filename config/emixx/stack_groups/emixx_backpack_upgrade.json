@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "emixx:backpack_upgrade",
+  "tag": "emixx:backpack_upgrade",
+  "enabled": true,
+  "name": "背包升级"
+}

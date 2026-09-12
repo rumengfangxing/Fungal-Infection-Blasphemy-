@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "emixx:coinblock",
+  "tag": "emixx:coinblock",
+  "enabled": true,
+  "name": "币块"
+}

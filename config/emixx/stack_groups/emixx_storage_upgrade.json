@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "emixx:storage_upgrade",
+  "tag": "emixx:storage_upgrade",
+  "enabled": true,
+  "name": "存储升级"
+}

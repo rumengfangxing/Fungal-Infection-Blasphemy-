@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "forge:ores",
+  "tag": "forge:ores",
+  "enabled": true,
+  "name": "矿石"
+}

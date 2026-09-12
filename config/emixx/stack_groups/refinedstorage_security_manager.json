@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "refinedstorage:security_manager",
+  "tag": "refinedstorage:security_manager",
+  "enabled": true,
+  "name": "安全管理器"
+}

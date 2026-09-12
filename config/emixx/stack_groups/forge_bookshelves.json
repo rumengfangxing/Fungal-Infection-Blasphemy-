@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "forge:bookshelves",
+  "tag": "forge:bookshelves",
+  "enabled": true,
+  "name": "书架"
+}

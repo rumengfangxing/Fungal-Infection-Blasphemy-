@@ -45,3 +45,18 @@
 	#Range: 1 ~ 100
 	recalc_cooldown_ticks = 10
 
+#冒险区压制方块
+[suppressor]
+	#每次压制削减的百分比（0.01 = 1%）
+	#Range: 0.0 ~ 1.0
+	percent = 0.01
+	#每次压制削减的固定分数
+	#Range: 0.0 ~ 1000.0
+	fixed = 3.0
+	#压制动作间隔（tick），20 tick = 1 秒
+	#Range: 10 ~ 12000
+	interval_ticks = 100
+	#压制影响半径（区块）
+	#Range: 1 ~ 32
+	radius_chunks = 4
+

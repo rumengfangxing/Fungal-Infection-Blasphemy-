@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "refinedstorage:network_transmitter",
+  "tag": "refinedstorage:network_transmitter",
+  "enabled": true,
+  "name": "网络发送器"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "emixx:ammo",
+  "tag": "emixx:ammo",
+  "enabled": true,
+  "name": "枪械弹药"
+}

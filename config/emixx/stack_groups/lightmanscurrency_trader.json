@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "lightmanscurrency:trader",
+  "tag": "lightmanscurrency:trader",
+  "enabled": true,
+  "name": "交易机方块"
+}

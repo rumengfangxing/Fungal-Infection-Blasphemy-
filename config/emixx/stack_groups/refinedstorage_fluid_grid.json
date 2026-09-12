@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "refinedstorage:fluid_grid",
+  "tag": "refinedstorage:fluid_grid",
+  "enabled": true,
+  "name": "流体网格"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "forge:chests/trapped",
+  "tag": "forge:chests/trapped",
+  "enabled": true,
+  "name": "陷阱箱"
+}

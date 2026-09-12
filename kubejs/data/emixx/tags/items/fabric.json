@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "goety:chill_fabric",
+    "goety:dark_fabric",
+    "goety:gale_fabric",
+    "goety:magic_fabric",
+    "goety:occult_fabric",
+    "goety:spirit_fabric",
+    "goety:unholy_fabric"
+  ]
+}

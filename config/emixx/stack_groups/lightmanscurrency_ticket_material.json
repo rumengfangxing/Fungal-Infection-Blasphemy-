@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "lightmanscurrency:ticket_material",
+  "tag": "lightmanscurrency:ticket_material",
+  "enabled": true,
+  "name": "票据材料"
+}

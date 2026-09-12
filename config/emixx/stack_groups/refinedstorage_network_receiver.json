@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "refinedstorage:network_receiver",
+  "tag": "refinedstorage:network_receiver",
+  "enabled": true,
+  "name": "网络接收器"
+}

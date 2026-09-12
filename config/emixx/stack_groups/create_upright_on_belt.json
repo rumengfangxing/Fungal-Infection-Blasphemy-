@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "create:upright_on_belt",
+  "tag": "create:upright_on_belt",
+  "enabled": true,
+  "name": "直立传送带物品"
+}

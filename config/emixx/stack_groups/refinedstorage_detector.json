@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "refinedstorage:detector",
+  "tag": "refinedstorage:detector",
+  "enabled": true,
+  "name": "探测器"
+}

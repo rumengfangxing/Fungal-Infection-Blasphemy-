@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "refinedstorage:crafter_manager",
+  "tag": "refinedstorage:crafter_manager",
+  "enabled": true,
+  "name": "合成管理器"
+}

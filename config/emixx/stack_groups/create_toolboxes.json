@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "create:toolboxes",
+  "tag": "create:toolboxes",
+  "enabled": true,
+  "name": "工具箱"
+}

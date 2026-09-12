@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create_biotech:large_cardboard_box",
+    "create_biotech:cardboard_box"
+  ]
+}

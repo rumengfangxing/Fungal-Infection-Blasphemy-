@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "forge:dyes",
+  "tag": "forge:dyes",
+  "enabled": true,
+  "name": "染料"
+}

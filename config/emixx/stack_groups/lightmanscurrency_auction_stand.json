@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "lightmanscurrency:auction_stand",
+  "tag": "lightmanscurrency:auction_stand",
+  "enabled": true,
+  "name": "拍卖台"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "forge:mob_buckets",
+  "tag": "forge:mob_buckets",
+  "enabled": true,
+  "name": "生物桶"
+}

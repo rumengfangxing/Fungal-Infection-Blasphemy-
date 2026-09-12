@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "emixx:automobile",
+  "tag": "emixx:automobile",
+  "enabled": true,
+  "name": "机动车"
+}

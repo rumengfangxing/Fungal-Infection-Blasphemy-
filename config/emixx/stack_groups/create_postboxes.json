@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "create:postboxes",
+  "tag": "create:postboxes",
+  "enabled": true,
+  "name": "邮筒"
+}

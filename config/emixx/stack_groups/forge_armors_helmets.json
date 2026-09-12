@@ -1,0 +1,7 @@
+{
+  "type": "emixx:tag",
+  "id": "forge:armors/helmets",
+  "tag": "forge:armors/helmets",
+  "enabled": true,
+  "name": "头盔"
+}
