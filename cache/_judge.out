@@ -1,0 +1,115 @@
+日志中实际加载的模组: 263 个
+
+=== 归属明确 (246) — 仅列非精确匹配,供复核 ===
+   QuantifiedAPI/                                 ~ 2.2.0                    [前缀]
+   create_central_kitchen-common.toml             ~ 6.0.8                    [前缀]
+   damage_number_type.toml                        ~ damagenumber             [前缀]
+   embeddium-fingerprint.json                     ~ 0.3.31+mc1.20.1          [前缀]
+   embeddium-mixins.properties                    ~ 0.3.31+mc1.20.1          [前缀]
+   embeddium-options.json                         ~ 0.3.31+mc1.20.1          [前缀]
+   endinglib/                                     ~ endinglibrary            [被前缀]
+   ferritecore-mixin.toml                         ~ 6.0.1                    [前缀]
+   ibeeditor-vault.dat                            ~ 2.2.8                    [前缀]
+   lcompat-nodes.txt                              ~ 1.20-0.1.2a              [前缀]
+   lcompat_waystones.txt                          ~ 1.20-0.1.2a              [前缀]
+   modernfix-mixins.properties                    ~ 5.27.77+mc1.20.1         [前缀]
+   polymorph-integrations.toml                    ~ 0.49.10+1.20.1           [前缀]
+   ponder-client.toml                             ~ 1.10.4                   [被前缀]
+   resourceful-config-web.json                    ~ 2.1.3                    [前缀]
+   sporeconfig.toml                               ~ 2.2.0j                   [前缀]
+   sporedata.toml                                 ~ 2.2.0j                   [前缀]
+   tacz_optimization-client.toml                  ~ 1.1.8-hotfix             [前缀]
+   taczaddon-client.toml                          ~ 1.1.8-hotfix             [前缀]
+   touhou_little_maid_spell-common.toml           ~ touhoulittlemaid         [前缀]
+   travelerstitles-forge-1_20.toml                ~ 1.20-Forge-4.0.2         [前缀]
+   watut-item-arm-adjustments.json                ~ 1.20.1-1.2.3             [前缀]
+   xaero/                                         ~ 26.4.2                   [被前缀]
+   you_two_fight_for_me_factions.dat              ~ youtwofightforme         [前缀]
+   zfastnoise.mixin.properties                    ~ 1.0.13                   [前缀]
+
+=== 找不到对应模组 (85) —— 疑似冗余 ===
+   [DIR ] OED                                            0 files
+   [FILE] RuOK.toml                                        5243 B
+   [FILE] baublesreforked-common.toml                     23142 B
+   [FILE] bridgingmod.json                                  547 B
+   [FILE] cerulean-client.toml                              170 B
+   [FILE] cerulean-common.toml                               51 B
+   [FILE] cerulean.yml                                     2514 B
+   [FILE] chloride-client.json                             1925 B
+   [FILE] chunksending.json                                 310 B
+   [FILE] confluence-client.toml                            184 B
+   [FILE] confluence-common.toml                          10573 B
+   [FILE] despawntweaks-common.toml                         577 B
+   [FILE] dimdungeons-client.toml                           290 B
+   [FILE] dimdungeons-common-r190.toml                    58901 B
+   [FILE] dimdungeons-common-r207.toml                    58913 B
+   [FILE] dlc_update_test.txt                                22 B
+   [FILE] dummmmmmy-client.toml                            1616 B
+   [FILE] dummmmmmy-common.toml                            1278 B
+   [FILE] emi_loot_config.toml                              968 B
+   [FILE] entity_model_features.json                       1145 B
+   [FILE] entity_texture_features.json                     1459 B
+   [FILE] etf_warnings.json                                  30 B
+   [DIR ] fabric                                         1 files
+   [FILE] farsight.json                                     941 B
+   [FILE] fastbench.cfg                                     542 B
+   [FILE] flywheel-client.toml                              623 B
+   [FILE] fml.toml                                         1148 B
+   [FILE] guideme.toml                                      563 B
+   [FILE] imblocker.json                                    981 B
+   [DIR ] incontrol                                      13 files
+   [FILE] ironfurnaces-client.toml                         7308 B
+   [FILE] ironfurnaces.toml                                   0 B
+   [FILE] ixeris.toml                                      2141 B
+   [DIR ] jei                                            8 files
+   [FILE] jeresources-common.toml                           236 B
+   [FILE] jeresources.toml                                  236 B
+   [FILE] krypton_fnp.yaml                                  468 B
+   [DIR ] l2_configs                                     6 files
+   [DIR ] latiaocraft2-ltc2                              7 files
+   [FILE] lazyyyyy.general.json                              55 B
+   [FILE] lazyyyyy.mixins.json                              443 B
+   [DIR ] lc2h                                           0 files
+   [FILE] letmedespawn.json                                  72 B
+   [FILE] lithium.properties                                349 B
+   [DIR ] lostcities                                     0 files
+   [FILE] lsp.json                                          235 B
+   [FILE] mcreator_mem_fix.json                              46 B
+   [FILE] midnightlib.json                                   36 B
+   [FILE] moonlight-client.toml                            1027 B
+   [FILE] moonlight-common.toml                            1023 B
+   [FILE] mtsconfig.json                                  13371 B
+   [FILE] mtsconfigclient.json                            21727 B
+   [FILE] nvidium-config.json                               248 B
+   [FILE] optileaves.json                                    57 B
+   [FILE] packetfixer.properties                            488 B
+   [FILE] packmaster.toml                                  2730 B
+   [FILE] particle_core_config.toml                         317 B
+   [FILE] particle_core_disabled_optimizations_v2.json     1574 B
+   [FILE] quick boot.properties                            1126 B
+   [FILE] recipeessentials.json                            1418 B
+   [DIR ] registerhelper                                 2 files
+   [FILE] renderscale.json5                                  38 B
+   [DIR ] revelationfix                                  7 files
+   [FILE] rhenium-common.toml                               259 B
+   [FILE] rrls.toml                                         901 B
+   [FILE] shirium-client.toml                              2426 B
+   [FILE] sidebar_buttons.json                              297 B
+   [FILE] smoothboot.json                                   211 B
+   [FILE] smoothchunk.json                                  602 B
+   [FILE] sodium-extra-options.json                        1565 B
+   [FILE] sodium-extra.properties                           360 B
+   [FILE] sodiumextras-client.toml                         4968 B
+   [FILE] taa-attributes.toml                              1077 B
+   [FILE] tmrv_plugins.json5                               1371 B
+   [FILE] trade_cycling-client.toml                         131 B
+   [DIR ] trades                                         3 files
+   [FILE] transition.json                                    65 B
+   [FILE] trender.json                                       44 B
+   [FILE] village_mod-common.toml                           316 B
+   [FILE] vmp.properties                                    592 B
+   [FILE] wizard_terra_cuiros-common.toml                 17943 B
+   [FILE] xaerohud.txt                                      122 B
+   [FILE] xaeropatreon.txt                                    0 B
+   [DIR ] xray                                           0 files
+   [FILE] yacl.json5                                         37 B
