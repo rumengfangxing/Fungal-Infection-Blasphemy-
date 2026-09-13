@@ -17,7 +17,6 @@ create.compacting(
    Item.of('minecraft:blaze_powder',2)]).heated()
 
 
-
 //石磨
 create.milling([Item.of('fib:saltpeter').withChance(0.65),
   Item.of('fib:saltpeter').withChance(0.2)],
@@ -119,6 +118,24 @@ create.mixing("fib:c4_explosive",
   'fib:unopened_cooling_unit')
 
 
+
+//太阳能组件
+const TYNZJ = 'refinedstorage:quartz_enriched_iron'
+    create.sequenced_assembly([
+      Item.of('fib:solar_module',4),
+    ],
+      'refinedstorage:quartz_enriched_iron',
+    [
+      create.cutting(TYNZJ,TYNZJ),
+      create.deploying(TYNZJ,[TYNZJ,'refinedstorage:silicon']),
+      create.deploying(TYNZJ,[TYNZJ,'refinedstorage:silicon']),
+      create.deploying(TYNZJ,[TYNZJ,'minecraft:redstone']),
+      create.deploying(TYNZJ,[TYNZJ,'refinedstorage:silicon']),
+      create.pressing(TYNZJ,TYNZJ),
+      create.cutting(TYNZJ,TYNZJ),
+    ])
+    .transitionalItem('refinedstorage:quartz_enriched_iron')
+    .loops(1);
 //注射笔
 const ZSB = 'spore:syringe'
     create.sequenced_assembly([

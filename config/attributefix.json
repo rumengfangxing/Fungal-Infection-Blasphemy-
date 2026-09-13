@@ -374,6 +374,28 @@
         "value": 2
       }
     },
+    "taa:heat_overheat_time": {
+      "enabled": false,
+      "min": {
+        "default": 0.01,
+        "value": 0.01
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "goeticlegacy:servant_aoe_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:generic.flying_speed": {
       "enabled": true,
       "min": {
@@ -1584,6 +1606,17 @@
         "value": 1024
       }
     },
+    "taa:heat_cooling": {
+      "enabled": false,
+      "min": {
+        "default": 0.01,
+        "value": 0.01
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "legendarysurvivaloverhaul:cold_resistance": {
       "enabled": false,
       "min": {
@@ -1615,6 +1648,17 @@
       "max": {
         "default": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
         "value": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      }
+    },
+    "taa:heat_max": {
+      "enabled": false,
+      "min": {
+        "default": 0.01,
+        "value": 0.01
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "taa:bullet_gundamage_pistol": {
@@ -1890,6 +1934,17 @@
       "max": {
         "default": 32767,
         "value": 32767
+      }
+    },
+    "taa:heat_cooling_delay": {
+      "enabled": false,
+      "min": {
+        "default": 0.01,
+        "value": 0.01
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "spore:rejuvenation": {

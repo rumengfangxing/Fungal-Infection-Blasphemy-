@@ -157,4 +157,7 @@ tenThousandPoisonFeastMinItemCount = 4
 #合成万毒盛宴所需的最少debuff种类数（所有材料提供的不同debuff种类之和）
 #Range: 1 ~ 100
 tenThousandPoisonFeastMinDebuffCount = 8
+#Whether to enable the skeleton red-eye effect (red eye flash when a skeleton targets a low-health player)
+#是否启用骷髅红眼特效（骷髅锁定低血量玩家时触发的红眼闪光特效）
+skeletonRedEyeEffectEnabled = true
 

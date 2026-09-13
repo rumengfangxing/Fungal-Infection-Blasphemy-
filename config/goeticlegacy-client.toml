@@ -19,3 +19,35 @@
 	#设为 false 仅隐藏护甲条金色边框，不影响 DOT 信息面板 [默认: true]
 	holyDotHealthBorderEnabled = true
 
+[prefab_visuals]
+	#兼容旧版视觉开关：0=关闭，1~3 任意值=完整特效 [默认: 2]
+	#Range: 0 ~ 3
+	quality = 2
+	#最多缓存/渲染的未建造方块幽灵数 [默认: 1024，范围: 0 ~ 4096]
+	#Range: 0 ~ 4096
+	maxGhostBlocks = 1024
+	#同时进行的实体化覆盖动画数量上限 [默认: 768，范围: 0 ~ 2048]
+	#Range: 0 ~ 2048
+	maxAnimatedBlocks = 768
+	domainEnabled = true
+	musicEnabled = true
+	#迁移期间保留旧的 Z/X/C 预制法杖快捷键 [默认: true]
+	legacyKeyFlowEnabled = true
+
+[tooltips]
+	#钥匙之书（心灵之庭钥匙）的 tooltips 总开关
+	#设为 false 时完全不显示该物品的任何 tooltip（默认）
+	#设为 true 时恢复显示（含 F3+H 高级提示的字体矩阵回归块）
+	#[默认: false]
+	mindCourtKeyTooltips = false
+
+[debug_diagnostics]
+	#创造模式「遗响分类筛选」的诊断日志开关
+	#开启后，每次筛选/重建分类按钮栏都会输出条目数量与槽位状态明细
+	#仅用于排查蓝图分类显示问题，默认关闭 [默认: false]
+	blueprintCategoryDiagnostics = false
+	#镜面反射渲染的诊断日志开关
+	#开启后输出镜面请求/清除/表面扫描/捕获状态等明细
+	#仅用于排查镜面(如幽匿脉络镜像)渲染问题，默认关闭 [默认: false]
+	mirrorReflectionDiagnostics = false
+

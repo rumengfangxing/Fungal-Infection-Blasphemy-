@@ -90,6 +90,9 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "goeticlegacy": {
+    "projection_state": true
+  },
   "yes_steve_model": {
     "model_info": true
   },

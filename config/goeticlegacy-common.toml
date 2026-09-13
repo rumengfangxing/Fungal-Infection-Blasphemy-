@@ -854,24 +854,24 @@
 #
 #[重做说明]
 #移除原版即死级伤害取消和免死效果。
+#移除每 tick 自动清除负面效果（F-02 删除，玩家不再免疫负面）。
 #新增效果：全局内容物属性增强——所有其他暗夜立方内容物提供的
 #属性加成（如魔法伤害、仆从伤害、护甲等）乘以该系数。
-#清除负面效果保留不变。
+#该系数同时对「额外槽位加成」（VoidTome/CosmicScroll 等内容物
+#通过 getBonusSlots() 累加得到的槽位数）生效，向下取整。
 #
 #配置值说明：
 #  1.20 = 所有内容物属性 +20%
-#  1.50 = 所有内容物属性 +50%
+#  1.75 = 所有内容物属性 +75%（默认）
 #  2.00 = 所有内容物属性翻倍
-#  1.00 = 关闭增强效果（仅保留清负面）
+#  1.00 = 关闭增强效果
 [the_cube]
-	#全局内容物属性增强倍率 [默认: 1.50 = +50%]
+	#全局内容物属性增强倍率 [默认: 1.75 = +75%]
 	#所有其他内容物的 applyAttributes() 提供的属性值乘以该系数。
+	#该系数同样作用于额外槽位加成的累加结果（向下取整）。
 	#Range: 1.0 ~ 5.0
 	contentBoostMultiplier = 1.5
-	#非欧立方「不清除」的负面效果黑名单（ResourceLocation 格式）。
-	#列在此处的效果即使被游戏标记为负面（!isBeneficial），也不会被自动清除。
-	#默认包含不祥之兆（bad_omen）和灾厄的两个幻灵效果。
-	#如需恢复清除某个效果，将其从此列表中移除即可。
+	#[已弃用] 非欧立方不再自动清除负面效果，此列表保留以兼容旧配置文件。
 	#格式示例: ["minecraft:bad_omen", "cataclysm:ghost_sickness"]
 	effectBypassList = ["minecraft:bad_omen", "cataclysm:ghost_sickness", "cataclysm:ghost_form"]
 
@@ -1011,6 +1011,15 @@
 	#设为 0 表示放行但不消耗破损值
 	#Range: 0 ~ 100
 	blessCompatBetrayalCost = 0
+	#════════════════════════════════════
+	# 召唤生物上限（防卡死）
+	#════════════════════════════════════
+	#
+	#暗夜立方内容物召唤的 LivingEntity（仆从/烈焰人形等）
+	#在玩家周围（64 格半径）同时存在的最大数量。
+	#超过后停止召唤，避免递归/堆积导致 TPS 崩。 [默认: 16, 0=无限]
+	#Range: 0 ~ 1024
+	maxSummonedLivingsPerPlayer = 16
 
 #---- 时间加速 ----
 [night_cube_active]
@@ -1158,25 +1167,47 @@
 	#每级附魔提供的仆从无敌帧削减加成 [默认: 0.5]
 	#Range: 0.0 ~ 100.0
 	bonusPerLevel = 0.5
+	#单件装备计入的附魔等级上限（多件仍会累加）。
+	#Goety 暗砧默认允许超过 getMaxLevel()（3）继续叠级，但成本随等级指数增长，
+	#单件实际可达约 6~7。此处设 15 以兼容合法超限，同时挡住命令行/其它模组刷出的异常高等级。
+	#
+	#范围: 1 ~ 255  [默认: 15]
+	#Range: 1 ~ 255
+	maxPerItemLevel = 15
 
 #---- 戍卫 ----
 [bulwark]
-	#戍卫减伤公式的基数。减伤比例 = level / (base + level)。
-	#类似原版护甲递减曲线，低级收益高，高级自然衰减，永不触及 100%。
+	#戍卫减伤公式的渐近上限。减伤比例 = maxReduction * level / (halfLevel + level)。
+	#多件装备的等级会累加后再代入曲线；低等级段接近线性，高等级段被压平，
+	#无论等级总和叠到多高都只会无限接近上限，不会触发 100%（仆从无敌）。
 	#
-	#示例 (base=20):
-	#  1 级 ≈ 4.8%    5 级 = 20%
-	#  10 级 ≈ 33.3%  20 级 = 50%
+	#示例 (maxReduction=0.6, halfLevel=10):
+	#  3 级 ≈ 13.8%   5 级 = 20%    10 级 = 30%
+	#  50 级 = 50%    200 级 ≈ 57.1%   ∞ 级 = 60%
 	#
-	#范围: 1.0 ~ 1000.0  [默认: 20.0]
+	#范围: 0.05 ~ 0.95  [默认: 0.6]
+	#Range: 0.05 ~ 0.95
+	bulwarkMaxReduction = 0.6
+	#达到渐近上限一半时所需的戍卫等级总和。
+	#数值越大曲线越平缓（饱和越晚），数值越小越早进入饱和。
+	#10.0 时低等级段与旧公式几乎一致（5 级仍为 20%）。
+	#
+	#范围: 1.0 ~ 1000.0  [默认: 10.0]
 	#Range: 1.0 ~ 1000.0
-	bulwarkBaseArmor = 20.0
+	bulwarkHalfLevel = 10.0
 
 #---- 咒术增幅 ----
 [wand_power]
 	#每级附魔提供的魔法伤害乘数加成 [默认: 0.05]
 	#Range: 0.0 ~ 10.0
 	magicDamageBonusPerLevel = 0.05
+	#单件装备计入的附魔等级上限（多件仍会累加）。
+	#Goety 暗砧默认允许超过 getMaxLevel()（3）继续叠级，但成本随等级指数增长，
+	#单件实际可达约 6~7。此处设 15 以兼容合法超限，同时挡住命令行/其它模组刷出的异常高等级。
+	#
+	#范围: 1 ~ 255  [默认: 15]
+	#Range: 1 ~ 255
+	maxPerItemLevel = 15
 
 #════════════════════════════════════
 # 战斗机制
@@ -1232,6 +1263,42 @@
 	#启用后将阻止 Prisoner 将以太矿纳入采矿列表
 	#[默认: false]（不禁止）
 	disablePrisonerMiningEtheriumOre = false
+
+	#仆从 AOE 抗性行为识别参数。系统只统计真实受击事件，不扫描附近实体。
+	#修改时间参数后，已有短期 Wave 会继续按创建时的减伤执行。
+	[servant_config.aoe_resistance]
+		#输出 [ServantAOE] Wave 匹配与结算日志 [默认: false]
+		debugServantAoeResistance = false
+		#Range: 0.0 ~ 1.0
+		maxReduction = 0.6
+		#Range: 0.0 ~ 10.0
+		growthRate = 0.25
+		#Range: 2 ~ 128
+		trustedCount = 3
+		#Range: 2 ~ 128
+		lowConfidenceTrustedCount = 4
+		#Range: 1.0 ~ 128.0
+		clusterRadius = 12.0
+		#Range: 1.0 ~ 256.0
+		maxAnchorDistance = 16.0
+		#Range: 1.0 ~ 128.0
+		lowConfidenceClusterRadius = 8.0
+		#Range: 1.0 ~ 256.0
+		lowConfidenceMaxAnchorDistance = 12.0
+		#Range: 0 ~ 100
+		mergeGap = 5
+		#Range: 1 ~ 200
+		maxWaveDuration = 20
+		#Range: 1 ~ 1200
+		snapshotTtl = 100
+		#Range: 1 ~ 1200
+		lowConfidenceSnapshotTtl = 60
+		#Range: 1.0 ~ 256.0
+		predictionRadius = 16.0
+		#Range: 0.0 ~ 1.0
+		lowConfidenceMaxReduction = 0.4
+		#Range: 1 ~ 200
+		cleanupInterval = 20
 
 #════════════════════════════════════
 # 预制建筑
@@ -1329,12 +1396,6 @@
 	#[默认: 6000] [范围: 600 ~ 24000]
 	#Range: 600 ~ 24000
 	targetJobTicks = 6000
-	#预览包切换为外轮廓模式的方块数阈值。
-	#当非空气方块数超过此值时，预览只发送建筑表面方块以减小包体积。
-	#设为 0 强制始终外轮廓；设为极大值禁用外轮廓。
-	#[默认: 5000] [范围: 0 ~ 1000000]
-	#Range: 0 ~ 1000000
-	previewOutlineThreshold = 5000
 	#单次部署的灵魂消耗占方舟最大灵魂能量的比例上限。
 	#以 Goety 配置中方舟的最大灵魂容量（maxArcaSouls，默认 100000）为基准，
 	#而非玩家当前容器（图腾/方舟）的实际上限，确保跨容器类型的上限一致。
@@ -1366,6 +1427,65 @@
 	#仅供开发和管理员诊断使用；失败原因不受此项影响，始终向玩家显示。
 	#[默认: false]
 	debugJobMessages = false
+	#非 CREATE/COPY 来源的遗响首次部署时，是否保留模板内的容器战利品。
+	#关闭后只净化该次部署的箱子/容器 NBT；不会修改模板或玩家创建、回收的建筑。
+	#Shift 建筑查看器会显示首次部署战利品已被禁用。
+	#[默认: true]
+	generateLootOnFirstPrefabDeployment = true
+	#自适应降速前，每个服务端 tick 最多应用的清单方块数 [默认: 64，范围: 1 ~ 4096]
+	#Range: 1 ~ 4096
+	manifestMaxBlocksPerTick = 64
+	#自适应降速前，每个服务端 tick 用于清单构建的墙钟时间上限（微秒） [默认: 1500，范围: 100 ~ 50000]
+	#Range: 100 ~ 50000
+	manifestMaxMicrosPerTick = 1500
+	#系统托管的个人维度平台部署的目标时长（tick） [默认: 300，范围: 40 ~ 6000]
+	#Range: 40 ~ 6000
+	platformTargetTicks = 300
+	#系统托管的个人维度平台部署的每 tick 方块硬上限 [默认: 512，范围: 16 ~ 4096]
+	#Range: 16 ~ 4096
+	platformMaxBlocksPerTick = 512
+	#平滑 MSPT 高于此值时暂停清单构建 [默认: 47.0，范围: 20.0 ~ 200.0]
+	#Range: 20.0 ~ 200.0
+	manifestPauseMspt = 47.0
+	#平滑 MSPT 低于此值时恢复清单构建 [默认: 40.0，范围: 10.0 ~ 199.0]
+	#Range: 10.0 ~ 199.0
+	manifestResumeMspt = 40.0
+	#启用连续的预制建筑瞄准/调整/确认会话 [默认: true]
+	continuousInteractionEnabled = true
+	#启用受限的预制建筑观察相机 [默认: true]
+	observationEnabled = true
+	#观察相机的最小水平半径；大型预制会按需自动扩大 [默认: 48，范围: 8 ~ 128]
+	#Range: 8 ~ 128
+	observationRadius = 48
+	#观察相机的最小垂直半径；高预制会按需自动扩大 [默认: 32，范围: 4 ~ 96]
+	#Range: 4 ~ 96
+	observationVerticalRadius = 32
+	#retract_placeholder 被替换后，重发该位置的权威方块状态。
+	#针对客户端残留“隐形但可碰撞占位方块”的定向修复。
+	placeholderFinalStateResync = true
+	#每个替换 retract_placeholder 的 Job 输出一条精简汇总日志 [默认: true]
+	placeholderTransitionDiagnostics = true
+	#定向权威状态重发前的延迟（tick，20 tick = 1 秒） [默认: 20，范围: 1 ~ 200]
+	#Range: 1 ~ 200
+	placeholderResyncDelayTicks = 20
+	#每个服务端 tick 最多重发的占位替换状态数 [默认: 256，范围: 1 ~ 4096]
+	#Range: 1 ~ 4096
+	placeholderResyncBlocksPerTick = 256
+	#部署落定后，强制客户端重建受影响渲染区段。
+	#即使客户端方块状态已正确，也能覆盖陈旧的不透明方块网格。
+	finalSectionRebuild = true
+	#最终客户端区段重建前的延迟，让普通方块包先落定 [默认: 2，范围: 0 ~ 200]
+	#Range: 0 ~ 200
+	finalSectionRebuildDelayTicks = 2
+	#每个 tick 重建渲染区段的已完成部署区块数上限 [默认: 8，范围: 1 ~ 256]
+	#Range: 1 ~ 256
+	finalSectionRebuildChunksPerTick = 8
+	#部署后重发完整权威区块与光照数据，确保客户端最终状态与服务端收敛。
+	#用于修复大量占位方块转换后，客户端偶发保留空气或过期方块状态的问题。
+	finalAuthoritativeChunkResync = true
+	#启用回退时，每个 tick 最多重发的完整权威区块数 [默认: 1，范围: 1 ~ 16]
+	#Range: 1 ~ 16
+	finalAuthoritativeChunksPerTick = 1
 
 #════════════════════════════════════
 # 初始建筑（Starter）
@@ -1666,4 +1786,181 @@
 	#烈风弹每次最多生成数量 [默认: 11]
 	#Range: 1 ~ 64
 	galeChargeMaxCount = 11
+
+#---- 阴阳玉佩 ----
+[jade_attunement]
+	#阳玉：每 1 点幸运值提供的仆从攻击伤害加成百分比 [默认: 4.0]
+	#Range: 0.0 ~ 100.0
+	luckDamagePercentPerPoint = 4.0
+	#阴玉：每 1 点诅咒数提供的仆从攻击伤害加成百分比 [默认: 4.0]
+	#Range: 0.0 ~ 100.0
+	curseDamagePercentPerCurse = 4.0
+	#阴阳玉：同时继承阴玉阳玉能力时的数值系数 [默认: 0.5 = 减半]
+	#Range: 0.0 ~ 10.0
+	confluentMultiplier = 0.5
+	#阴阳玉：饰品攻击伤害加成转化为仆从攻击伤害的继承比例 [默认: 1.0]
+	#Range: 0.0 ~ 100.0
+	attackDamageToServantRatio = 1.0
+	#阴阳玉：饰品最大生命值加成转化为仆从最大生命值的继承比例 [默认: 1.0]
+	#Range: 0.0 ~ 100.0
+	maxHealthToServantRatio = 1.0
+	#属性同步节流间隔（tick） [默认: 20]
+	#Range: 1 ~ 200
+	syncIntervalTicks = 20
+
+#---- 世界之枢轴（地系二级法杖）逐聚晶增强 ----
+#
+#总开关与各项增强均默认开启；关闭某项即完全恢复原版行为。
+#仅适用于已实现的增强（小兽/撼地/地震），其余项为规划占位，后续逐个落地。
+[axis_mundi]
+	#总开关 [默认: true]
+	enableEnhance = true
+	#小兽聚晶：固定召唤 7 只并排成队列（替代随机 2~3 只） [默认: true]
+	ministrousFixedSquad = true
+	#撼地聚晶：单体目标改为错时三连贯拳 [默认: true]
+	earthFistTriplePunch = true
+	#地震聚晶：双子震颤（非潜行叠加内圈共振环；潜行双环致密） [默认: true]
+	quakingTwinTremor = true
+	#猛石聚晶：命中后二次地面溅射（规划占位，需 goety 2.5.57+） [默认: true]
+	smackStoneShatter = true
+	#分散聚晶：环形布雷（规划占位） [默认: true]
+	scatterRingMines = true
+	#爆发聚晶：火山列阵（规划占位） [默认: true]
+	eruptionVolcanoArray = true
+	#障碍聚晶：枢轴方阵（规划占位） [默认: true]
+	barricadePivotFort = true
+	#瓦解聚晶：5x5x5 有序连锁（规划占位） [默认: true]
+	pulverizeDeepChain = true
+	#穿凿聚晶：矿工向（主目标保留时运/精准，连锁过滤矿石，规划占位） [默认: true]
+	burrowingMinerFocus = true
+	#感应聚晶：等级+1、持续x1.5（规划占位） [默认: true]
+	sensingBoost = true
+
+#════════════════════════════════════
+# 圣甲（Holy Armor）
+#════════════════════════════════════
+#════════════════════════════════════
+# 圣甲（Holy Armor）
+#════════════════════════════════════
+[holy_armor]
+	#魔法无敌帧削减（每件，ADDITION） [默认: 2.0]
+	#Range: 0.0 ~ 20.0
+	magicInvulReduction = 2.0
+	#每件圣甲提供的灵魂折扣（%） [默认: 8]
+	#Range: 0 ~ 100
+	soulDiscountPerPiece = 8
+
+	#伤害延缓（DOT）占比来源。单件 delay / 100 为 DOT 池占比，
+	#四件合计后由代码封顶 100。数值越大，受伤后即时扣除越少、转成 DOT 越多。
+	[holy_armor.damage_delay]
+		#Range: 0 ~ 100
+		helmet = 15
+		#Range: 0 ~ 100
+		chestplate = 30
+		#Range: 0 ~ 100
+		leggings = 22
+		#Range: 0 ~ 100
+		boots = 18
+
+	#False Justice 伤害减免（百分比）。仅当安装 enigmaticaddons 时生效，
+	#全部减免按单件值相加，代码内封顶 50%。
+	[holy_armor.false_justice]
+		#Range: 0 ~ 100
+		helmet = 10
+		#Range: 0 ~ 100
+		chestplate = 20
+		#Range: 0 ~ 100
+		leggings = 12
+		#Range: 0 ~ 100
+		boots = 8
+
+	#Goety 法术伤害乘数加成（每件，ADDITION）。
+	#作用于 goeticlegacy 的 magic_damage_multiplier（默认 1.0）。
+	[holy_armor.magic_damage_bonus]
+		#Range: 0.0 ~ 5.0
+		helmet = 0.15
+		#Range: 0.0 ~ 5.0
+		chestplate = 0.25
+		#Range: 0.0 ~ 5.0
+		leggings = 0.2
+		#Range: 0.0 ~ 5.0
+		boots = 0.15
+
+	#Iron's Spells 'n Spellbooks 联动（仅当安装 irons_spellbooks 时生效）。
+	#spell_power 默认值 = 1.0 且直接乘在法术伤害公式上，
+	#默认每件 +0.0625（MULTIPLY_BASE）→ 满套 +0.25，即 +25% 法术强度。
+	[holy_armor.ironspells]
+		#是否给圣甲附加铁魔法属性（最大法力/法术强度/法力恢复） [默认: true]
+		enableBonus = true
+		#每件最大法力加成 [默认: 100]
+		#Range: 0 ~ 10000
+		maxManaPerPiece = 100
+		#每件法术强度加成（spell_power，MULTIPLY_BASE） [默认: 0.0625]
+		#每件 0.0625 → 四件乘区内合计 +0.25（即满套 +25% 法术强度）。
+		#与铁魔法自身一致：百分比在乘区内相加，不被其它百分比重复放大。
+		#Range: 0.0 ~ 1.0
+		spellPowerPerPiece = 0.0625
+		#每件法力恢复加成（mana_regen，ADDITION） [默认: 0.25]
+		#Range: 0.0 ~ 2.0
+		manaRegenPerPiece = 0.25
+
+#════════════════════════════════════
+# 圣甲伤害延缓（DOT）机制
+#════════════════════════════════════
+#受击时按伤害延缓占比把最终伤害的一部分转入 DOT 池，后续分批扣血。
+[holy_armor_dot]
+	#DOT 机制总开关。设为 false 后圣甲的伤害延缓完全失效，
+	#所有伤害即时结算（玩家按键/状态不受影响） [默认: true]
+	enabled = true
+	#周期校准间隔（tick）；入池和结算会额外立即同步 [默认: 5]
+	#Range: 1 ~ 200
+	syncInterval = 5
+	#伤害批次释放间隔（tick），降低高频 hurt 的屏幕抖动 [默认: 30]
+	#Range: 1 ~ 200
+	batchInterval = 30
+	#单次释放的最低伤害阈值，低于此值继续攒到下次 [默认: 0.5]
+	#Range: 0.0 ~ 100.0
+	minHurtThreshold = 0.5
+	#脱战宽限期（tick）：最后一次有伤害入池后的这段时间内
+	#池子只释放不衰减 [默认: 200]
+	#Range: 0 ~ 72000
+	idleGraceTicks = 200
+	#脱战衰减系数：超过宽限期后每 tick pool *= 该值 [默认: 0.985]
+	#Range: 0.0 ~ 1.0
+	idleDecay = 0.985
+
+#万象方匣：庇护、休养、出征的可替换平衡参数
+[myriad_tesseract]
+	#Range: 0 ~ 720000
+	sanctuaryCooldownTicks = 1200
+	#Range: 0 ~ 64
+	sanctuaryUsesPerWindow = 4
+	#Range: 1 ~ 720000
+	sanctuaryWindowTicks = 12000
+	#Range: 0 ~ 720000
+	normalRecoveryTicks = 600
+	#Range: 0 ~ 720000
+	woundedRecoveryTicks = 6000
+	#Range: 0.0 ~ 1024.0
+	recoveryHealthPerSecond = 1.0
+	#Range: 0 ~ 72000
+	expeditionDurationTicks = 200
+	#Range: 0 ~ 10
+	expeditionStrengthAmplifier = 0
+	#Range: 1 ~ 200
+	deploymentChargeTicks = 20
+	#整组出征的一次性蓄力时长，不随人数线性增长
+	#Range: 1 ~ 400
+	groupDeploymentChargeTicks = 30
+	#Range: 0 ~ 1200
+	groupDeploymentCooldownTicks = 40
+	#Range: 1 ~ 8
+	groupDeploymentMaxUnits = 8
+	#Range: 1.0 ~ 8.0
+	groupDeploymentSpacing = 2.0
+	#Range: 0 ~ 24
+	groupDeploymentSearchRadius = 6
+	#觉醒战利品仓的槽位容量；GUI 始终使用滚动窗口，不依赖此值布局
+	#Range: 9 ~ 4095
+	lootStorageSlots = 180
 
