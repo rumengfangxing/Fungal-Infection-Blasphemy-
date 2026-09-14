@@ -24,4 +24,11 @@ GoetyEvents.registerRitual(event => {
         ritual.setRequirement(global.lecternBookRequirement(32));
         ritual.setJeiIcon('minecraft:writable_book');  //识文解字
     });
+    event.create('basic', ritual => {
+        ritual.range = 32;
+        ritual.blocks = [
+            'goety:cursed_cage'
+        ];
+        ritual.setJeiIcon('goety:cursed_cage');  //基础仪式
+    });
 })

@@ -94,7 +94,7 @@ key_key.right:key.keyboard.d
 key_key.jump:key.keyboard.space
 key_key.sneak:key.keyboard.left.shift
 key_key.sprint:key.keyboard.left.control
-key_key.drop:key.keyboard.u
+key_key.drop:key.keyboard.unknown
 key_key.inventory:key.keyboard.e
 key_key.chat:key.keyboard.t
 key_key.playerlist:key.keyboard.tab
@@ -241,11 +241,11 @@ key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.relics.ability_list:key.keyboard.left.alt
 key_key.relics.research_relic:key.keyboard.left.shift
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
@@ -297,6 +297,7 @@ key_key.tacz.open_config.desc:key.keyboard.unknown
 key_key.tacz_unidict.wheel_menu:key.keyboard.c
 key_key.lrtactical.normal_attack.desc:key.mouse.left
 key_key.lrtactical.sp_attack.desc:key.mouse.right
+key_key.tag.open:key.keyboard.t:SHIFT
 key_key.configured.open_mod_list:key.keyboard.unknown
 key_key.ezactions.open:key.keyboard.g:CONTROL
 key_key.ezactions.open_editor:key.keyboard.unknown
@@ -373,6 +374,7 @@ key_key.goeticlegacy.night_cube_active:key.keyboard.j
 key_key.goeticlegacy.unholy_scroll_cast:key.keyboard.r
 key_key.goeticlegacy.unholy_scroll_focus:key.keyboard.unknown
 key_key.goeticlegacy.holy_dot_toggle:key.keyboard.h
+key_key.goeticlegacy.phylactery_projection:key.keyboard.g
 key_key.goeticlegacy.sculk_heart_active:key.keyboard.k
 key_key.refinedstorageaddons.openWirelessCraftingGrid:key.keyboard.unknown
 key_ibeeditor.key.editor:key.keyboard.i:CONTROL
