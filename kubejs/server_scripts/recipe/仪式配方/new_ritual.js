@@ -20,8 +20,10 @@ GoetyEvents.registerRitual(event => {
         ritual.setJeiIcon('enigmaticlegacy:star_fabric');  //星辰仪式
     });
     event.create('research', ritual => {
-        ritual.range = 32;  // 与讲台搜索半径一致
-        ritual.setRequirement(global.lecternBookRequirement(32));
+        ritual.range = 32;
+        ritual.blocks = [
+            'minecraft:lectern'
+        ];
         ritual.setJeiIcon('minecraft:writable_book');  //识文解字
     });
     event.create('basic', ritual => {
