@@ -141,6 +141,9 @@
 	#每个客户端 Tick 最多请求重建多少个含目标方块的区段；越大更新越快，但瞬时压力越高。
 	#Range: 1 ~ 64
 	fungalDecorationSectionRebuildsPerTick = 8
+	#指挥模式使用实际摄像机为中心时的真菌装饰显示距离（格）；高空镜头默认扩大到128格。
+	#Range: 8 ~ 512
+	fungalDecorationCommandCameraRenderDistance = 128
 
 [compat]
 

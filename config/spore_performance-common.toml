@@ -39,6 +39,11 @@
 		groupCoordination = true
 		#启用即时、感知、导航和后台四阶段 Tick 诊断与过载保护。
 		tickPipeline = true
+		#空闲且无目标的 Basic、Evolved、Hyper 感染体错峰执行非运行 Goal 的启动检查；运行中的 Goal 仍逐 Tick。
+		idleSelectorStagger = true
+		#空闲感染体完整 GoalSelector 启动和清理检查的最短间隔（Tick）。
+		#Range: 2 ~ 40
+		idleSelectorInterval = 4
 
 	[refactor.navigation]
 		#启用 Spore 共享导航服务；移动、碰撞和攻击仍逐 Tick。
@@ -53,7 +58,7 @@
 		#异步路径工作线程数量；线程只允许读取不可变快照。
 		#Range: 1 ~ 4
 		workerThreads = 2
-		#每个维度每 Tick 最多复制的路径快照数量。
+		#每个维度每 Tick 最多复制的路径快照数量；单个快照最多约 64×64×7 次方块读取。
 		#Range: 1 ~ 256
 		snapshotBudgetPerTick = 32
 		#每个维度每 Tick 最多接收并缓存的异步路径结果数量。
@@ -71,6 +76,9 @@
 		#目标移动超过此距离后重新请求路径（格）。
 		#Range: 0.5 ~ 16.0
 		targetMoveInvalidation = 2.0
+		#路径快照提交循环每 Tick 的耗时预算（微秒）；达到后不再启动下一个快照。
+		#Range: 100 ~ 50000
+		snapshotTimeBudgetMicros = 750
 
 	[refactor.compat]
 		#AI重构在检测到 exhuashan_sporeai_fix 时避开其灾厄专属技能覆盖。
@@ -103,6 +111,17 @@
 		maxRetryTicks = 80
 		#完全排除朽翼魔龙（Verfalldrachen），不改变其盘旋、寻路或技能逻辑。
 		excludeVerfalldrachen = true
+		#复用仍有效的灾厄追击路径，并合并同 Tick由多个 Goal 提交的重复寻路请求。
+		pathRequestReuse = true
+		#灾厄成功寻路后的最短重算间隔（Tick）；每只实体会在最短和最长值之间稳定错峰。
+		#Range: 1 ~ 200
+		repathMinTicks = 10
+		#灾厄成功寻路后的最长重算间隔（Tick）；目标突变、受击和卡住会立即解除。
+		#Range: 1 ~ 400
+		repathMaxTicks = 20
+		#目标相对上次路径请求移动超过此距离时立即允许灾厄重算路径（格）。
+		#Range: 0.5 ~ 32.0
+		repathTargetMoveDistance = 4.0
 
 	[refactor.multipart]
 		#为 HohlMultipart 使用轻量服务端 Tick；保留命中箱、伤害转发、父实体同步和死亡逻辑。
@@ -155,6 +174,24 @@
 		#感染卷须重构的全局 Tick耗时预算（微秒）。
 		#Range: 100 ~ 50000
 		tendrilTimeBudgetMicros = 350
+		#菌丘侵蚀和卷须搜索合计每 Tick 的硬耗时预算（微秒）；两个队列会轮换优先级。
+		#Range: 100 ~ 50000
+		schedulerTimeBudgetMicros = 900
+
+	[refactor.howitzer]
+		#将 Howitzer 每 200 Tick 的约 3.8 万格矿物搜索拆分到多个 Tick，并且只读取已加载区块。
+		incrementalOreScan = true
+		#单个 Howitzer 矿物搜索任务每 Tick 最多检查的方块数。
+		#Range: 16 ~ 65536
+		orePositionsPerTaskTick = 1024
+		#所有 Howitzer 矿物搜索任务每 Tick 共享的方块检查上限。
+		#Range: 64 ~ 262144
+		orePositionsPerTick = 4096
+		#所有 Howitzer 矿物搜索任务每 Tick 共享的硬耗时预算（微秒）。
+		#Range: 50 ~ 50000
+		oreTimeBudgetMicros = 500
+		#Howitzer 开火时用无列表分配、仅已加载区块的循环统计目标附近可燃方块。
+		burnableFastScan = true
 
 [limits]
 	#单个维度内已加载的全部 Spore 生物单位上限。0 为不限；已有存档实体永远允许读档。
@@ -194,6 +231,33 @@
 		#单个维度内同一种灾厄实体上限；-1 表示不限制；存档已有灾厄仍允许加载。
 		#Range: -1 ~ 100000
 		maxPerType = -1
+
+	[limits.fallingBlocks]
+		#限制 FallingBlockEntity 的生成、同区块密度和寿命，防止真菌地形转换积压数千实体。
+		enabled = true
+		#单个维度允许同时存在的 FallingBlockEntity 总数硬上限。
+		#Range: 16 ~ 100000
+		maxGlobal = 512
+		#单个区块允许同时存在的 FallingBlockEntity 硬上限。
+		#Range: 4 ~ 10000
+		maxPerChunk = 96
+		#同一来源（菌丘转换、灾厄、投射物等）允许同时存在的 FallingBlockEntity 硬上限。
+		#Range: 4 ~ 100000
+		maxPerSource = 256
+		#附属运行时追踪的 FallingBlockEntity 最大寿命（Tick）；到期后直接清理而不落地方块。
+		#Range: 20 ~ 12000
+		ttlTicks = 200
+		#限制 Stahl 落地特效的 rising block 实体数量和寿命。
+		risingEnabled = true
+		#单个维度允许同时存在的 Stahl rising block 实体总数硬上限。
+		#Range: 16 ~ 100000
+		risingMaxGlobal = 256
+		#单个区块允许同时存在的 Stahl rising block 实体硬上限。
+		#Range: 4 ~ 10000
+		risingMaxPerChunk = 64
+		#Stahl rising block 实体的最大寿命（Tick）；不延长原有特效寿命。
+		#Range: 10 ~ 1200
+		risingTtlTicks = 60
 
 [items]
 
@@ -447,6 +511,12 @@
 		#内存中保留的最近调试事件数量，供管理员命令查看。
 		#Range: 64 ~ 32768
 		ringEntries = 1024
+		#普通调试 JSONL 单个文件的最大大小（MiB）；超过后自动轮转。
+		#Range: 1 ~ 1024
+		maxFileMegabytes = 16
+		#普通调试 JSONL 保留的轮转备份数量。
+		#Range: 1 ~ 16
+		backupFiles = 3
 
 	[diagnostics.calamityTrace]
 		#启用只记录附近灾厄生物的独立追踪日志；不会混入普通实体调试日志。
@@ -465,4 +535,10 @@
 		maxEventsPerSecond = 240
 		#在灾厄追踪记录中写入坐标、速度和身体/头部朝向。
 		includeCoordinates = true
+		#灾厄追踪 JSONL 单个文件的最大大小（MiB）；超过后自动轮转。
+		#Range: 1 ~ 1024
+		maxFileMegabytes = 32
+		#灾厄追踪 JSONL 保留的轮转备份数量。
+		#Range: 1 ~ 16
+		backupFiles = 3
 

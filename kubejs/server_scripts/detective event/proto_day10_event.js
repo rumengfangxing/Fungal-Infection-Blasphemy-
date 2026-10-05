@@ -6,7 +6,7 @@
 //      - 成功生成后仅触发一次(persistentData 持久化,重启不重复)
 // 倒计时: 起点 3 分钟后开始,每 60 秒给全体玩家发送红色加粗动作栏,
 //         只显示剩余时间,格式 分:秒
-// 剧情文本: 红色加粗,每段间隔 3 秒
+// 剧情文本: 红色加粗,每段间隔 5 秒
 // 无冒险区时: 不生成,聊天框输出绿色文本"很好,继续这样下去,不要吵醒祂.....",
 //       然后重新开始整个事件(不写入完成标记,可再次触发)
 // 触发后: 分段发送剧情文本,最后一句播放音效 spore:calamity_incoming
@@ -16,15 +16,15 @@
     var TRIGGER_DAY         = 10;    // 第几天触发
     var TRIGGER_TIME        = 12000; // 触发时刻(当天正午)
     var COUNTDOWN_AFTER     = 3600;  // 倒计时起点: 世界创建后 3 真实分钟(tick)
-    var COUNTDOWN_INTERVAL  = 1200;   // 倒计时刷新间隔(tick, 1200 = 60秒)
+    var COUNTDOWN_INTERVAL  = 1200;  // 倒计时刷新间隔(tick, 1200 = 60秒)
     var EXCLUDE_RADIUS      = 300;   // 出生点排除半径(格)
-    var LINE_DELAY          = 100;    // 剧情文本每段间隔(tick, 60 = 3秒)
+    var LINE_DELAY          = 100;   // 剧情文本每段间隔(tick, 100 = 5秒)
+    var SPAWN_Y             = 180;   // 生成的绝对高度(Y=150)
     var EVENT_KEY           = "proto_day10_done";
     var START_KEY           = "proto_day10_start";
 
     var BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries');
     var ResourceLocation  = Java.loadClass('net.minecraft.resources.ResourceLocation');
-    var Heightmap         = Java.loadClass('net.minecraft.world.level.levelgen.Heightmap');
 
     // ==================== 剧情文本(每段一条) ====================
     var STORY = [
@@ -100,13 +100,14 @@
             if (!level) return;
             var lev = level.minecraftLevel || level;
 
-            var y = lev.getHeight(Heightmap.Types.MOTION_BLOCKING, x, zc);
+            // 固定在绝对高度 Y=150 生成
+            var y = SPAWN_Y;
             var type = BuiltInRegistries.ENTITY_TYPE.get(new ResourceLocation("spore", "proto"));
             if (type == null) return;
             var entity = type.create(lev);
             if (entity == null) return;
 
-            entity.setPos(x, y + 1, zc);
+            entity.setPos(x, y, zc);
             entity.setPersistenceRequired();                            // 防止自然消失
             entity.getPersistentData().putBoolean("protoDay10", true);  // 标记来源
             lev.addFreshEntity(entity);
@@ -172,8 +173,6 @@
     });
 
     // ==================== 倒计时动作栏(每位玩家) ====================
-    // 写法同 block_right.js:PlayerEvents.tick + player.setStatusMessage
-    // (server.players 是原生 ServerPlayer,对其调 sendStatusMessage 会报错,不能用)
     PlayerEvents.tick(function(event) {
         var player = event.player;
         if (player.isFake()) return;
@@ -219,6 +218,7 @@
         if (!event.server.persistentData[EVENT_KEY]) {
             console.log("[第10天事件] 就绪:倒计时于起点后 " + (COUNTDOWN_AFTER / 1200)
                 + " 分钟开始,起点后第 " + TRIGGER_DAY + " 天正午触发,"
+                + "生成高度为绝对 Y=" + SPAWN_Y + ";"
                 + "无冒险区则自动重新开始;测试指令 /protoevent_test");
         }
     });
