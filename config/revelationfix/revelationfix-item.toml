@@ -63,7 +63,7 @@
 	cooldown = 2.5
 
 ["Gold Feather"]
-	#Speed multiplier when using items (relative to original state), default 4.0.
+	#Speed multiplier when using items (relative to original state), default 3.0.
 	#Range: 1.0 ~ 32.0
 	speedMultiplier = 8.0
 

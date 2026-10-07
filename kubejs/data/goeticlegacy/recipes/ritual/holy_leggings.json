@@ -1,0 +1,34 @@
+{
+  "type": "goety:ritual",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "enigmaticlegacy"
+    }
+  ],
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "item": "goety:dark_leggings"
+  },
+"craftType": "forge",
+"research": "fib:forging_arts",
+  "soulCost": 50,
+  "duration": 30,
+  "ingredients": [
+    { "item": "enigmaticlegacy:etherium_ingot" },
+    { "item": "enigmaticlegacy:etherium_ingot" },
+    { "item": "enigmaticlegacy:etherium_ingot" },
+    { "item": "minecraft:gold_ingot" },
+    { "item": "minecraft:gold_ingot" },
+    { "item": "goety:magic_fabric" },
+    { "item": "goety:magic_fabric" },
+    { "item": "goety:magic_fabric" },
+    { "item": "enigmaticlegacy:astral_dust" },
+    { "item": "enigmaticlegacy:astral_dust" },
+    { "item": "goety:spirit_fabric" },
+    { "item": "goety:spirit_fabric" }
+  ],
+  "result": {
+    "item": "goeticlegacy:holy_leggings"
+  }
+}

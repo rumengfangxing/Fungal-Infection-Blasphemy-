@@ -5,7 +5,7 @@
     "item": "minecraft:netherite_sword"
   },
   "craftType": "end",
-  "research": "fib:soul_research",
+  "research": "fib:forging_arts",
   "soulCost": 10,
   "duration": 30,
   "ingredients": [

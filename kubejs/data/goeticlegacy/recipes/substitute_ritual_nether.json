@@ -1,0 +1,24 @@
+{
+  "conditions": [{
+    "type": "goeticlegacy:has_substitutes"
+  }],
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "tag": "goeticlegacy:research_scrolls"
+  },
+  "craftType": "expert_nether",
+  "research": "fib:soul_research",
+  "soulCost": 64,
+  "duration": 5,
+  "ingredients": [
+    { "item": "minecraft:glowstone_dust" },
+    { "item": "minecraft:quartz" },
+    { "item": "minecraft:nether_wart" },
+    { "item": "goety:snap_warts" }
+  ],
+  "result": {
+    "item": "goety:jei_dummy/none",
+    "nbt": "{GoeticLegacySubPending:true}"
+  }
+}

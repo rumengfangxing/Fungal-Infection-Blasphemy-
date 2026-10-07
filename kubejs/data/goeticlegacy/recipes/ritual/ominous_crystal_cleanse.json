@@ -1,0 +1,26 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "item": "enigmaticlegacy:mending_mixture"
+  },
+  "craftType": "magic",
+  "research": "fib:soul_research",
+  "soulCost": 15,
+  "duration": 5,
+  "ingredients": [
+    {
+      "item": "goeticlegacy:ominous_crystal"
+    },
+    {
+      "item": "goeticlegacy:ominous_crystal"
+    },
+    {
+      "item": "goeticlegacy:ominous_crystal"
+    }
+  ],
+  "result": {
+    "item": "goeticlegacy:ominous_crystal",
+    "count": 3
+  }
+}

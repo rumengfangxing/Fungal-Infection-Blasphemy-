@@ -632,6 +632,23 @@
 			#Range: 1.0 ~ 1.7976931348623157E308
 			iceGolemDamage = 12.0
 
+		[Attributes."Summoned Mobs"."Royal Guard Servant"]
+			#How much natural armor toughness points Royal Guard Servants have, Default: 4.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			royalGuardServantToughness = 4.0
+			#Initially, how many hits until Shield is broken, Default: 1
+			#Range: > 1
+			royalGuardServantShield = 1
+			#How much Max Health Royal Guard Servants have, Default: 48.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			royalGuardServantHealth = 48.0
+			#How much damage Royal Guard Servants deals, Default: 9.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			royalGuardServantDamage = 9.0
+			#How much natural armor points Royal Guard Servants have, Default: 10.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			royalGuardServantArmor = 10.0
+
 		[Attributes."Summoned Mobs"."Black Wolf"]
 			#How much natural Armor Black Wolves have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
@@ -734,10 +751,13 @@
 			boundEvokerArmor = 0.0
 
 		[Attributes."Summoned Mobs"."Vanguard Servant"]
-			#How much Max Health Vanguard Servants have, Default: 20.0
+			#How much Max Health Vanguard Servants have, Default: 24.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			vanguardServantHealth = 40.0
-			#How much Armor Vanguard Servants have, Default: 9.0
+			#Initially, how many hits until Shield is broken, Default: 1
+			#Range: > 1
+			vanguardServantShield = 1
+			#How much Armor Vanguard Servants have, Default: 6.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			vanguardServantArmor = 13.5
 			#How much damage Vanguard Servants deals, Default: 7.0
@@ -789,16 +809,19 @@
 			jungleZombieServantHealth = 40.0
 
 		[Attributes."Summoned Mobs"."Blackguard Servant"]
-			#How much natural armor toughness points Blackguard Servants have, Default: 8.0
+			#How much natural armor toughness points Blackguard Servants have, Default: 4.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			blackguardServantToughness = 12.0
-			#How much damage Blackguard Servants deals, Default: 9.0
+			#How much damage Blackguard Servants deals, Default: 7.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			blackguardServantDamage = 13.5
-			#How much natural armor points Blackguard Servants have, Default: 20.0
+			#Initially, how many hits until Shield is broken, Default: 1
+			#Range: > 1
+			blackguardServantShield = 1
+			#How much natural armor points Blackguard Servants have, Default: 12.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			blackguardServantArmor = 30.0
-			#How much Max Health Blackguard Servants have, Default: 20.0
+			#How much Max Health Blackguard Servants have, Default: 40.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			blackguardServantHealth = 40.0
 
@@ -983,6 +1006,23 @@
 			#How much natural Armor Poison-Quill Vines have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			poisonQuillVineArmor = 0.0
+
+		[Attributes."Summoned Mobs"."Imperial Guard Servant"]
+			#How much natural armor toughness points Imperial Guard Servants have, Default: 2.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			imperialGuardServantToughness = 2.0
+			#How much Max Health Imperial Guard Servants have, Default: 40.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			imperialGuardServantHealth = 40.0
+			#Initially, how many hits until Shield is broken, Default: 1
+			#Range: > 1
+			imperialGuardServantShield = 1
+			#How much natural Armor Imperial Guard Servants have, Default: 8.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			imperialGuardServantArmor = 8.0
+			#How much damage Imperial Guard Servants range attack deals, Default: 8.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			imperialGuardServantRangeDamage = 8.0
 
 		[Attributes."Summoned Mobs"."Rattled Servant"]
 			#How much extra damage Rattled Servants range attack deals, Default: 0.0

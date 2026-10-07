@@ -5,7 +5,7 @@
     "tag": "minecraft:soul_fire_base_blocks"
   },
   "craftType": "geoturgy",
-  "research": "fib:soul_research",
+  "research": "fib:forging_arts",
   "entity_to_sacrifice": {
     "tag": "goety:cats",
     "display_name": "entity.minecraft.cat"

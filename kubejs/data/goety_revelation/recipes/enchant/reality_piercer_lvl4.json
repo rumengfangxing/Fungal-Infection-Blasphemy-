@@ -1,0 +1,41 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:enchant",
+  "activation_item": {
+    "type" : "goety_revelation:enchantment",
+    "enchantment" : "goety_revelation:reality_piercer",
+    "level": 3
+  },
+  "enchant": {
+    "level": 3
+  },
+  "craftType": "magic",
+  "research": "fib:soul_research",
+  "soulCost": 150,
+  "duration": 30,
+  "enchantment": "goety_revelation:reality_piercer",
+  "xpLevelCost": 10,
+  "ingredients": [
+    {
+      "item": "goety:refuse_bottle"
+    },
+    {
+      "item": "goety:shadow_essence"
+    },
+    {
+      "item": "goety:forbidden_piece"
+    },
+    {
+      "item": "goety:forbidden_piece"
+    },
+    {
+      "item": "goety:forbidden_piece"
+    },
+    {
+      "item": "minecraft:feather"
+    }
+  ],
+  "result": {
+    "item": "minecraft:enchanted_book"
+  }
+}

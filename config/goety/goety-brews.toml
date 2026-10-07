@@ -399,15 +399,21 @@
 	#How much Capacity is given for third level, Default: 2
 	#Range: > 0
 	level3Capacity = 2
-	#How much Capacity is given for sixth level, Default: 8
+	#How much Capacity is given for sixth level, Default: 6
 	#Range: > 0
 	level6Capacity = 8
+	#How much Capacity is given for ninth level, Default: 8
+	#Range: > 0
+	level9Capacity = 8
 	#How much Capacity is given initially, Default: 1
 	#Range: > 1
 	initialCapacity = 4
 	#How much Capacity is given for fourth level, Default: 2
 	#Range: > 0
 	level4Capacity = 2
+	#How much Capacity is given for eighth level, Default: 8
+	#Range: > 0
+	level8Capacity = 8
 	#How much Capacity is given for fifth level, Default: 4
 	#Range: > 0
 	level5Capacity = 4

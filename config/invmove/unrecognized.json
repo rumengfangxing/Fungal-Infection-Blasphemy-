@@ -170,7 +170,8 @@
     "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
     "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true,
     "com.kuzhi.youtwofightforme.client.FactionControlScreen": true,
-    "com.sighs.apricityui.instance.ApricityContainerScreen": true
+    "com.sighs.apricityui.instance.ApricityContainerScreen": true,
+    "com.arxyt.sporeperformance.client.gui.OptimizationProfileScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
@@ -277,6 +278,7 @@
     "com.mcg.questborne.client.screen.JournalScreen": true,
     "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
     "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true,
-    "com.kuzhi.youtwofightforme.client.FactionControlScreen": true
+    "com.kuzhi.youtwofightforme.client.FactionControlScreen": true,
+    "com.arxyt.sporeperformance.client.gui.OptimizationProfileScreen": true
   }
 }

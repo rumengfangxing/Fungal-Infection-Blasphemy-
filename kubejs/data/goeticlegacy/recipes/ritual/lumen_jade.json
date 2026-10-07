@@ -1,0 +1,20 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "item": "goeticlegacy:jade_amulet"
+  },
+  "craftType": "sky",
+  "research": "fib:soul_research",
+  "soulCost": 5,
+  "duration": 20,
+  "ingredients": [
+    { "item": "goety:pale_steel_ingot" },
+    { "item": "minecraft:glowstone_dust" },
+    { "item": "goety:magic_emerald" },
+    { "item": "minecraft:nether_star" }
+  ],
+  "result": {
+    "item": "goeticlegacy:lumen_jade"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "item": "minecraft:nether_star"
+  },
+"craftType": "magic",
+"research": "fib:soul_research",
+  "soulCost": 50,
+  "duration": 10,
+  "ingredients": [
+    { "item": "goeticlegacy:geomancy_core" },
+    { "item": "goeticlegacy:geomancy_core" },
+    { "item": "goeticlegacy:geomancy_core" },
+    { "item": "goeticlegacy:geomancy_core" }
+  ],
+  "result": {
+    "item": "goeticlegacy:old_world_echo",
+    "count": 3
+  }
+}

@@ -5,7 +5,7 @@
     "item": "goety:empty_focus"
   },
   "craftType": "deep",
-  "research": "fib:soul_research",
+  "research": "fib:elemental_magic",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

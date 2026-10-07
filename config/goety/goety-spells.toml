@@ -491,24 +491,12 @@
 		meteorShowerShots = 20
 
 	[Spells."Quaking Spell"]
-		#Earth Fist Spell Cooldown, Default: 60
-		#Range: > 0
-		earthFistCoolDown = 60
-		#How much base damage Earth Fists deals, Default: 6.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		earthFistDamage = 6.0
-		#Earth Fist Spell Cost, Default: 8
-		#Range: > 0
-		earthFistCost = 8
 		#Time to cast Quaking Spell, Default: 20
 		#Range: 0 ~ 72000
 		quakingTime = 20
 		#How much base damage Quaking Spell deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		quakingDamage = 4.0
-		#Time to cast Earth Fist Spell, Default: 0
-		#Range: 0 ~ 72000
-		earthFistTime = 0
 		#Quaking Spell Cost, Default: 8
 		#Range: > 0
 		quakingCost = 8
@@ -878,6 +866,20 @@
 		#Range: > 0
 		cushionCost = 8
 
+	[Spells."Earth Fist Spell"]
+		#Earth Fist Spell Cooldown, Default: 60
+		#Range: > 0
+		earthFistCoolDown = 60
+		#How much base damage Earth Fists deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		earthFistDamage = 6.0
+		#Earth Fist Spell Cost, Default: 8
+		#Range: > 0
+		earthFistCost = 8
+		#Time to cast Earth Fist Spell, Default: 0
+		#Range: 0 ~ 72000
+		earthFistTime = 0
+
 	[Spells."Cyclone Spell"]
 		#Cyclone Spell Cooldown, Default: 300
 		#Range: > 0
@@ -1072,6 +1074,23 @@
 		#Initial velocity power for the Flight Spell, Default: 0.5D
 		#Range: 0.1 ~ 1.7976931348623157E308
 		flightPower = 0.5
+
+	[Spells."Temblor Clap Spell"]
+		#Time to cast Temblor Clap Spell, Default: 0
+		#Range: 0 ~ 72000
+		temblorClapTime = 0
+		#Temblor Clap Spell Cooldown, Default: 140
+		#Range: > 0
+		temblorClapCoolDown = 140
+		#How much base minimum damage Temblor Clap Spell deals, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		temblorClapMinDamage = 3.0
+		#Temblor Clap Spell Cost, Default: 40
+		#Range: > 0
+		temblorClapCost = 40
+		#How much base maximum damage Temblor Clap Spell deals, Default: 9.0
+		#Range: 2.0 ~ 1.7976931348623157E308
+		temblorClapMaxDamage = 9.0
 
 	[Spells."Leeching Spell"]
 		#How long the Leeching Spell can be casted, setting it to 0 will allow the spell to be cast indefinitely, Default: 0

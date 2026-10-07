@@ -236,6 +236,9 @@
 		apostleQuickerRegen = true
 		#Whether Apostles causes entities within 32 blocks of themselves to take damage when in water. Default: true
 		apostleBoilsWater = true
+		#How much damage caused by Smite enchantment is reduced, by percentage, on the Apostle, setting to 100 will make them immune to Smite enchanted attacks, Default: 25
+		#Range: 0 ~ 100
+		apostleSmiteDamageReduction = 25
 		#Whether Apostles are persistent and do not naturally despawn. Default: false
 		apostlePersistent = true
 		#Whether Apostles play their special death animation when in Nether, Default: true
@@ -273,6 +276,8 @@
 	necroSetDebuff = false
 	#Whether Servants would naturally attack Witches or Warlocks if owner wears a full a robe that renders the former two neutral, Default: false
 	variousRobeWitch = false
+	#Whether Ravager Servants when summoned as hostile will convert into their hostile counterpart, Default: true
+	ravagerHostileConvert = true
 	#Whether armored Ravagers owned by players will drop their armor, Default: true
 	playerRavagerArmorDrop = true
 	#Whether mobs owned by player outside of Goety Servants can heal while wearing appropriate robes, Default: true
@@ -303,9 +308,13 @@
 	servantRideAutonomous = false
 	#Whether Servants or their owner are immune to attacks made by other servants that are summoned by the same owner, Default: true
 	servantsMasterImmune = true
+	#Whether Redstone Golems when summoned as hostile will convert into their hostile counterpart, Default: true
+	redstoneGolemHostileConvert = true
 	#Maximum size Slime and Magma Cube Servants can obtain through Slime/Magma Block, Default: 4
 	#Range: 1 ~ 127
 	maxSlimeSize = 4
+	#Whether Redstone Monstrosities when summoned as hostile will convert into their hostile counterpart, Default: true
+	redstoneMonstrosityHostileConvert = true
 	#Whether armor wearing Raider Servants can be equipped with Armor, Default: true
 	raiderServantWearArmor = true
 	#Servants, when on guarding mode, will load chunks around it, Default: true
@@ -321,6 +330,8 @@
 	namelessSetDebuff = false
 	#Whether Servants be equipped with Carved Pumpkins, which would allow Servants to not be affected by sunlight, Default: false
 	servantsCanWearPumpkin = false
+	#Whether Trampler Servants when summoned as hostile will convert into their hostile counterpart, Default: true
+	tramplerHostileConvert = true
 
 	[Servants."Geo Servants"]
 		#How much Soul Energy it cost per second for a Geo Servant to heal, Default: 1
@@ -386,28 +397,31 @@
 		blackBeastHowlingSoul = true
 		#Whether Natural Servants can heal if summoned while wearing Wild Robe, Default: true
 		naturalMinionHeal = true
-		#Whether Redstone Golems when summoned as hostile will convert into their hostile counterpart, Default: true
-		redstoneGolemHostileConvert = true
 		#How much Soul Energy it cost per second for a Natural Servant to heal, Default: 1
 		#Range: > 0
 		naturalMinionHealCost = 1
-		#Whether Trampler Servants when summoned as hostile will convert into their hostile counterpart, Default: true
-		tramplerHostileConvert = true
-		#Whether Redstone Monstrosities when summoned as hostile will convert into their hostile counterpart, Default: true
-		redstoneMonstrosityHostileConvert = true
-		#Whether Ravager Servants when summoned as hostile will convert into their hostile counterpart, Default: true
-		ravagerHostileConvert = true
 		#Whether Black Beasts chunk load areas around themselves and their target when hunting down with Taglock Kit, Default: true
 		blackBeastChunkLoad = true
 
 	[Servants."Undead Servants"]
 		#Whether Undead Servants burn in Sunlight if not wearing helmet, Default: true
 		undeadServantSunlightBurn = true
-		#Whether owned Necromancers fills Empty Soul Jars, Default: true
-		necromancerSoulJar = true
+		#Whether Zombie Vindicators, when summoned as hostile and without owner, will convert into their hostile counterpart, Default: true
+		zombieVindicatorHostileConvert = true
+		#Whether Skeleton Pillagers, when summoned as hostile and without owner, will convert into their hostile counterpart, Default: true
+		skeletonPillagerHostileConvert = true
 		#How frequent Undead Servants heal, count seconds, Default: 1
 		#Range: > 0
 		undeadServantsHealTime = 1
+		#Whether Undead Servants' helmet take damage when in Sunlight. Only takes effect if undeadServantSunlightBurn is enabled, Default: true
+		undeadServantSunlightHelmet = true
+		#Whether Undead Servants can heal if summoned while wearing Necro Cape, Default: true
+		undeadServantsHeal = true
+		#How much Health Undead Servants heal, numerically, Default: 1.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		undeadServantsHealAmount = 1.0
+		#Whether owned Necromancers fills Empty Soul Jars, Default: true
+		necromancerSoulJar = true
 		#Chance that a baby zombie servant is summoned as a Chicken Jokey, Default: 0.05
 		#Range: 0.0 ~ 1.0
 		zombieServantChickenJockeyChance = 0.05
@@ -418,16 +432,9 @@
 		necroRobeUndead = false
 		#Whether Necromancer's summons have limited lifespans, can be affected by servantOwnedServantPlayerBenefit config, Default: true
 		necromancerSummonsLife = true
-		#Whether Undead Servants' helmet take damage when in Sunlight. Only takes effect if undeadServantSunlightBurn is enabled, Default: true
-		undeadServantSunlightHelmet = true
 		#How much Soul Energy it cost per second for an Undead Servant to heal, Default: 1
 		#Range: > 0
 		undeadServantsHealCost = 1
-		#Whether Undead Servants can heal if summoned while wearing Necro Cape, Default: true
-		undeadServantsHeal = true
-		#How much Health Undead Servants heal, numerically, Default: 1.0
-		#Range: 0.0 ~ 1.7976931348623157E308
-		undeadServantsHealAmount = 1.0
 
 	[Servants."Storm Servants"]
 		#How much Soul Energy it cost per second for a Storm Servant to heal, Default: 1

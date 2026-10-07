@@ -1,3 +1,4 @@
+
 [tag]
 
 	[tag."minecraft:is_lightning"]
@@ -1704,6 +1705,20 @@
 			format = ""
 			append = ""
 
+	[type.spear]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[type.spear.icon]
+			item = ""
+			tex = ""
+
+		[type.spear.format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[type.calamity_damage1]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "#C0C0C0"
@@ -2926,6 +2941,22 @@
 			format = ""
 			append = ""
 
+	[type.goeticlegacy]
+
+		[type.goeticlegacy.meteor]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.goeticlegacy.meteor.icon]
+				item = ""
+				tex = ""
+
+			[type.goeticlegacy.meteor.format]
+				prepend = ""
+				format = ""
+				append = ""
+
 	[type."Critical Damage"]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "#DC143C"
@@ -2997,3 +3028,4 @@
 				prepend = ""
 				format = ""
 				append = ""
+

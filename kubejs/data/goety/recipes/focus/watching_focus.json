@@ -5,7 +5,7 @@
     "item": "goety:rotting_focus"
   },
   "craftType": "end",
-  "research": "fib:soul_research",
+  "research": "fib:elemental_creation",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

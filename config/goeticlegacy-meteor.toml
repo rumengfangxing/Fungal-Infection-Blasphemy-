@@ -1,0 +1,52 @@
+#Range: 0 ~ 10000
+soulCost = 16
+#0 = 瞬发：Goety 的 IWand#isNotInstant 只看 castDuration > 0，为 0 时改走 DarkWand#MagicResults 立即施放。
+#Range: 0 ~ 200
+castTicks = 0
+#瞬发后总循环 = 冷却，维持 10 tick (0.5s) 每发的节奏。
+#Range: 1 ~ 1200
+cooldownTicks = 10
+#Range: 1 ~ 200
+lifetimeTicks = 40
+#基础直击伤害；法杖伤害倍率和聚晶档位倍率在此基础上结算。
+#Range: 0.0 ~ 10000.0
+directDamage = 6.0
+#命中后的范围伤害半径，单位：格。
+#Range: 0.0 ~ 8.0
+splashRadius = 1.5
+#范围伤害相对直击伤害的比例；随距离线性衰减。
+#Range: 0.0 ~ 1.0
+splashDamageRatio = 0.5
+#2 级（世界之枢轴）的直击伤害倍率，不叠加 1 级倍率。
+#Range: 1.0 ~ 4.0
+axisDamageMultiplier = 1.5
+#Range: 1.0 ~ 4.0
+axisRadiusMultiplier = 2.0
+#1 级（匹配地系法杖）的直击倍率。
+#Range: 1.0 ~ 4.0
+staffDamageMultiplier = 1.15
+#1 级（匹配地系法杖）在 splashRadius 之上追加的范围半径。
+#Range: 0.0 ~ 4.0
+staffRadiusBonus = 0.5
+axisEnhanced = true
+homing = true
+#Range: 1 ~ 64
+targetRange = 32
+#准星未直接命中实体时，起手索敌的半角（度）。
+#Range: 0.0 ~ 30.0
+aimAssistAngleDegrees = 10.0
+#未锁定的流星在飞行途中搜索前方目标的距离（格）。
+#Range: 1 ~ 48
+flightSeekRange = 24
+#未锁定流星的索敌间隔（tick）；不同弹体错开扫描。
+#Range: 1 ~ 20
+flightSeekIntervalTicks = 5
+#Blocks per tick. Homing preserves speed. No terrain destruction.
+#Range: 0.1 ~ 8.0
+speed = 1.8
+#A = Goety 弹射物语汇 + 紫水晶点缀（cast_spell + projectile_spell / bolt_impact + amethyst）
+#B = 星芒晶体语汇（shock_cast + projectile_spell / ice_spike_hit + bolt_impact）
+#两套都是实机试听的候选，音效由服务端广播，因此这是服务端权威设置。
+#Allowed Values: A, B
+soundSet = "A"
+

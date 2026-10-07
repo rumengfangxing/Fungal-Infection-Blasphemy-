@@ -1,0 +1,24 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "item": "goety:call_focus"
+  },
+  "craftType": "magic",
+  "research": "fib:soul_research",
+  "soulCost": 3,
+  "duration": 30,
+  "ingredients": [
+    { "item": "goety:cursed_metal_block" },
+    { "item": "goety:ectoplasm" },
+    { "item": "goety:ectoplasm" },
+    { "item": "goety:cursed_cage" },
+    { "item": "goety:forbidden_fragment" },
+    { "item": "goety:forbidden_piece" },
+    { "item": "goety:magic_emerald" },
+    { "item": "goety:forbidden_piece" }
+  ],
+  "result": {
+    "item": "goeticlegacy:phylactery"
+  }
+}

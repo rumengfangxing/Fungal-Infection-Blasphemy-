@@ -1,0 +1,41 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "item": "goety:mystic_core"
+  },
+  "craftType": "culinary",
+  "research": "fib:elemental_creation",
+  "soulCost": 100,
+  "duration": 10,
+  "ingredients": [
+    {
+      "item": "goetydelight:roast_laowang"
+    },
+    {
+      "item": "goetydelight:roast_laowang"
+    },
+    {
+      "item": "goetydelight:roast_laowang"
+    },
+    {
+      "item": "goetydelight:roast_laowang"
+    },
+    {
+      "item": "goetydelight:roast_laowang"
+    },
+    {
+      "item": "goetydelight:roast_laowang"
+    },
+    {
+      "item": "goetydelight:roast_laowang"
+    },
+    {
+      "item": "goetydelight:roast_laowang"
+    }
+  ],
+  "result": {
+    "item": "goetydelight:laowang_focus",
+    "count": 1
+  }
+}

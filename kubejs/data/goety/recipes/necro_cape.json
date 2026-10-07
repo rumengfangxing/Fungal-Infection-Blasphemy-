@@ -5,7 +5,7 @@
     "item": "goety:magic_fabric"
   },
   "craftType": "necroturgy",
-  "research": "fib:soul_research",
+  "research": "fib:forging_arts",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

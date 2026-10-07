@@ -10,6 +10,7 @@ PlayerEvents.loggedIn(event => {
 		
 		if (!player.persistentData.getBoolean('first_join')) {
 			player.inventory.clear()
+			player.give(Item.of('goety:iron_ice_axe'))
 			player.give(Item.of('enigmaticlegacy:unwitnessed_amulet'))
 			player.give(Item.of('goety:totem_of_roots'))
 			player.give(Item.of('touhou_little_maid:smart_slab_init', '{InitMaidOwner:[]}'))

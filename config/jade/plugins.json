@@ -78,6 +78,7 @@
     "mod_name": true
   },
   "goetydelight": {
+    "doll_block": true,
     "doll_entity": true
   },
   "balm": {

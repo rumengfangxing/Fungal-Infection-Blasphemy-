@@ -5,7 +5,7 @@
     "item": "goety:osseous_focus"
   },
   "craftType": "necroturgy",
-  "research": "fib:soul_research",
+  "research": "fib:summoning",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [

@@ -1,0 +1,32 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:enchant",
+  "activation_item": {
+    "type" : "goety_revelation:enchantment",
+    "enchantment" : "goety_revelation:reality_piercer",
+    "level": 4
+  },
+  "enchant": {
+    "level": 4
+  },
+  "craftType": "magic",
+  "research": "fib:soul_research",
+  "soulCost": 200,
+  "duration": 30,
+  "enchantment": "goety_revelation:reality_piercer",
+  "xpLevelCost": 10,
+  "ingredients": [
+    {
+      "item": "goety:fanged_dagger"
+    },
+    {
+      "item": "goety:unholy_blood"
+    },
+    {
+      "item": "goety:forbidden_fragment"
+    }
+  ],
+  "result": {
+    "item": "minecraft:enchanted_book"
+  }
+}

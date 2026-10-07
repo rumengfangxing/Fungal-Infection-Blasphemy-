@@ -1,0 +1,16 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": { "type": "forge:partial_nbt", "item": "goeticlegacy:old_world_echo", "nbt": "{State:1}" },
+  "craftType": "geoturgy",
+  "research": "fib:soul_research",
+  "soulCost": 5,
+  "duration": 3,
+  "ingredients": [
+    { "item": "goety:magic_emerald" }
+  ],
+  "result": {
+    "item": "goeticlegacy:old_world_echo",
+    "nbt": "{State:0}"
+  }
+}

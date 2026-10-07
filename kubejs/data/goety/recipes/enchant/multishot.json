@@ -8,14 +8,11 @@
   "research": "fib:soul_research",
   "soulCost": 10,
   "duration": 10,
-  "enchantment": "minecraft:multishot",
+  "enchantment": "cyclic:multishot",
   "xpLevelCost": 5,
   "ingredients": [
     {
-      "item": "minecraft:tripwire_hook"
-    },
-    {
-      "item": "minecraft:tripwire_hook"
+      "tag": "forge:tools/bows"
     },
     {
       "tag": "forge:string"
@@ -26,5 +23,11 @@
   ],
   "result": {
     "item": "minecraft:enchanted_book"
-  }
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "cyclic"
+    }
+  ]
 }

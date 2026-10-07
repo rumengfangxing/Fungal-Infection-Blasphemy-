@@ -5,7 +5,7 @@
     "item": "goety:animation_core"
   },
   "craftType": "adept_nether",
-  "research": "fib:soul_research",
+  "research": "fib:elemental_magic",
   "soulCost": 5,
   "duration": 10,
   "ingredients": [

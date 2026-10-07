@@ -1,3 +1,7 @@
+#Development-only Surging preparation sample: halve the resolved castUp when holding a clock offhand.
+debugSurgingPreparation = false
+#Development-only Surging cadence sample: keep the first interval, halve later intervals when holding a clock offhand.
+debugSurgingCadence = false
 
 #════════════════════════════════════
 # 暗夜立方内容物被动效果
@@ -97,9 +101,6 @@
 	#每 tick 同步效果时消耗的灵魂能量 [默认: 5]
 	#Range: 0 ~ 10000
 	soulCostPerTick = 5
-	#共享效果的持续时间（ticks） [默认: 200 = 10秒]
-	#Range: 20 ~ 72000
-	sharedDuration = 200
 	#时长减半后最短保留的时间（ticks） [默认: 20 = 1秒]
 	#Range: 1 ~ 72000
 	minDuration = 20
@@ -179,9 +180,6 @@
 	#攻击使目标着火的秒数 [默认: 5]
 	#Range: 0 ~ 100
 	fireSeconds = 5
-	#仆从受到的伤害系数（1.0 = 无减伤，0.95 = 减伤 5%） [默认: 0.95]
-	#Range: 0.0 ~ 1.0
-	servantDamageReduction = 0.95
 	#「启示之审判」每级伤害放大系数。
 	#公式：damage *= 1 + (amplifier + 1) × 此值
 	#原 SAPPED 效果每级 +20%，此处默认 0.20 ≈ SAPPED 的 1/4
@@ -191,13 +189,10 @@
 
 #---- 恩惠之典 ----
 [the_bless]
-	#攻击使目标着火的秒数 [默认: 8]
-	#Range: 0 ~ 100
-	fireSeconds = 8
-	#腐蚀概率分母（1/x，默认 6 = 16.7%） [默认: 6]
+	#EA 减益「灵液腐蚀」概率分母（1/x，默认 6 = 16.7%） [默认: 6]
 	#Range: 1 ~ 100
 	corrosionChanceDenominator = 6
-	#腐蚀效果时长（ticks） [默认: 80]
+	#灵液腐蚀时长（ticks） [默认: 80]
 	#Range: 1 ~ 72000
 	corrosionDuration = 80
 	#玩家额外无敌帧 [默认: 15]
@@ -326,13 +321,6 @@
 	#looting = floor(luck / divisor) [默认: 2.5]
 	#Range: 0.5 ~ 100.0
 	luckToLootingDivisor = 2.5
-	#与 enigmaticaddons:avarice_ring 联动时仆从伤害加成倍率（相对于原版玩家伤害加成）。
-	#原版公式：damage *= 1 + getDamageBoost(player)
-	#仆从公式：damage *= 1 + getDamageBoost(player) × servantDamageMultiplier
-	#默认 0.5 表示仆从获得原版玩家伤害加成的一半效果。设为 1.0 则与原版一致。
-	#[默认: 0.5]
-	#Range: 0.0 ~ 10.0
-	servantDamageMultiplier = 0.5
 	#囚犯仆从获得的急迫效果等级（0=急迫I, 1=IE, 2=III级, ...）
 	#[默认: 2 = III级]
 	#Range: 0 ~ 255
@@ -362,25 +350,25 @@
 	#闪避率：每幸运值增加的比例 [默认: 0.015]
 	#Range: 0.0 ~ 1.0
 	dodgeLuckFactor = 0.015
-	#触发概率基础部分 [默认: 0.20]
+	#触发概率基础部分 [默认: 0.25]
 	#Range: 0.0 ~ 1.0
 	triggerChanceBase = 0.2
-	#触发概率增益幅度 [默认: 0.4]
+	#触发概率增益幅度 [默认: 0.5]
 	#Range: 0.0 ~ 1.0
 	triggerChanceScale = 0.4
-	#触发概率增益分母（指数衰减） [默认: 40.0]
+	#触发概率增益分母（指数衰减） [默认: 35.0]
 	#Range: 1.0 ~ 1000.0
 	triggerChanceDivisor = 40.0
-	#效果等级第一档幸运门槛 [默认: 18]
+	#效果等级第一档幸运门槛 [默认: 15]
 	#Range: 0 ~ 1000
 	effectLevelThreshold1 = 18
-	#效果等级第二档幸运门槛 [默认: 42]
+	#效果等级第二档幸运门槛 [默认: 35]
 	#Range: 0 ~ 1000
 	effectLevelThreshold2 = 42
-	#效果等级第三档幸运门槛 [默认: 72]
+	#效果等级第三档幸运门槛 [默认: 60]
 	#Range: 0 ~ 1000
 	effectLevelThreshold3 = 72
-	#触发冷却（毫秒） [默认: 600 = 0.6秒]
+	#触发冷却（毫秒） [默认: 500 = 0.5秒]
 	#Range: 0 ~ 100000
 	cooldownMillis = 600
 
@@ -702,12 +690,6 @@
 	#Range: 0.0 ~ 1.0
 	spellProcChance = 0.3
 
-#---- 创造之心 ----
-[enigmatic_item]
-	#飞行时挖掘速度倍率 [默认: 5.0]
-	#Range: 1.0 ~ 100.0
-	digSpeedBoost = 5.0
-
 #---- 以太核心 ----
 [etherium_core]
 	#以太护盾阈值倍率 [默认: 1.35]
@@ -880,18 +862,6 @@
 	#免死触发概率（虚空传送） [默认: 0.35]
 	#Range: 0.0 ~ 1.0
 	undeadProbability = 0.35
-	#免死后凋零时长（ticks） [默认: 240]
-	#Range: 1 ~ 72000
-	immortalWitherDuration = 240
-	#免死后凋零等级 [默认: 2]
-	#Range: 0 ~ 255
-	immortalWitherAmplifier = 2
-	#免死后缓慢时长（ticks） [默认: 240]
-	#Range: 1 ~ 72000
-	immortalSlowDuration = 240
-	#免死后缓慢等级 [默认: 2]
-	#Range: 0 ~ 255
-	immortalSlowAmplifier = 2
 	#虚空传送距离（格） [默认: 32]
 	#Range: 8 ~ 128
 	blinkRange = 32
@@ -943,15 +913,18 @@
 	#════════════════════════════════════
 	# 容器系统配置
 	#════════════════════════════════════
-	#暗夜立方最大页数（每页3个槽位） [默认: 3，范围: 1-30]
-	#支持旧存档兼容，但是如果改小，之前存档超出当前最大页数的暗夜立方仍然保留
-	#Range: 1 ~ 30
+	#暗夜立方最大页数（每页3个槽位，容量 = 页数 × 3） [默认: 3，范围: 1-20]
+	#解锁状态按槽位索引存储（不再是 32 位掩码），因此 1-20 页均可正常生效
+	#改动后新打开的暗夜立方界面立即使用新容量，无需重启游戏
+	#调小容量时，超出范围的物品会被暂存并在下次打开界面时返还玩家，不会丢失
+	#联机时以服务端配置为准，客户端会自动采用服务端容量
+	#Range: 1 ~ 20
 	maxPages = 3
-	#新创建的暗夜立方初始解锁的槽位数 [默认: 0，范围: 0-10]
+	#新创建的暗夜立方初始解锁的槽位数 [默认: 0，范围: 0-60]
 	#0 = 无初始槽位（需要通过献祭解锁第一个槽位）
-	#最好不要把初始槽位设置的比MAX_PAGE*3还要大
+	#超过当前容量（maxPages × 3）的部分会被自动忽略
 	#注意：此配置仅影响新创建的暗夜立方，已有存档不受影响
-	#Range: 0 ~ 10
+	#Range: 0 ~ 60
 	initialUnlockedSlots = 0
 	#════════════════════════════════════
 	# 巫妖额外槽位配置
@@ -1012,14 +985,32 @@
 	#Range: 0 ~ 100
 	blessCompatBetrayalCost = 0
 	#════════════════════════════════════
-	# 召唤生物上限（防卡死）
+	# 召唤上限（防递归 / 防卡死）
 	#════════════════════════════════════
 	#
-	#暗夜立方内容物召唤的 LivingEntity（仆从/烈焰人形等）
-	#在玩家周围（64 格半径）同时存在的最大数量。
-	#超过后停止召唤，避免递归/堆积导致 TPS 崩。 [默认: 16, 0=无限]
+	#暗夜立方内容物召唤的实体，每玩家跨维度已加载实体的最大数量（区块重载重新计入）；
+	#超限时内容物直接放弃本次召唤（含经由 Goety 法术生成的投射物）。
+	#生物 = 仆从 / 烈焰人形 / 监守者等；投射物 = 火球 / 冲击波 / 旋风等法术实体。
+	#生物按实体、主投射物按顶层施法限制每 tick 次数；二级产物有独立硬上限。
+	# [默认: 生物 16, 0=无限]
 	#Range: 0 ~ 1024
 	maxSummonedLivingsPerPlayer = 16
+	#旧无版本暗夜立方的原容量页数；0 假定升级时未改 maxPages。仅用于旧格式迁移，不由解锁数猜容量。
+	#升级同时改容量时必须填写旧值；不同历史容量需分批迁移。范围 0-30。
+	#Range: 0 ~ 30
+	legacyMigrationPages = 0
+	#暗夜立方主投射物数量上限（每玩家、所有维度已加载；二级产物独立计数） [默认: 24, 0=无限]
+	#Range: 0 ~ 4096
+	maxSummonedProjectilesPerPlayer = 24
+	#每 tick 每玩家可新生成的生物数量上限（防单 tick 递归爆发） [默认: 5, 0=不限制]
+	#Range: 0 ~ 64
+	maxSummonsPerTickLiving = 5
+	#每玩家已加载二级投射物硬上限，同时限制每 tick 二级新增数；不占主投射物额度。默认192，不能禁用。
+	#Range: 16 ~ 4096
+	maxSummonedSecondaryProjectilesPerPlayer = 192
+	#每 tick 每玩家顶层投射物施法次数上限（同次施法的三连发只计一次；二级产物独立限流） [默认: 6, 0=不限制]
+	#Range: 0 ~ 128
+	maxSummonsPerTickProjectile = 6
 
 #---- 时间加速 ----
 [night_cube_active]
@@ -1081,9 +1072,6 @@
 	#推荐值：0.7(前期快) / 1.0(线性) / 1.3(后期快)
 	#Range: 0.1 ~ 3.0
 	luckBonusExponent = 1.3
-	#幸运/巫术伤害公式分母（已废弃，改用幂函数曲线） [默认: 80.0]
-	#Range: 1.0 ~ 10000.0
-	luckBonusDivisor = 80.0
 	#法术流派 Potency 增益公式系数（饱和曲线，上限3级） [默认: 3.0]
 	#Range: 0.0 ~ 10.0
 	potencyCoefficient = 3.0
@@ -1141,10 +1129,7 @@
 	#每次击杀获得的最大灵魂能量百分比 [默认: 1.0]
 	#Range: 0.0 ~ 100.0
 	soulGainPercent = 1.0
-	#幽匿脉络最大扩散量 [默认: 1]
-	#Range: 0 ~ 10
-	sculkSpreadAmount = 1
-	#经验值转化为扩散量的除数，扩散量 = 经验 / 除数（向上取整，不超过上限） [默认: 7]
+	#经验值转化为扩散量的除数，扩散量 = 经验 / 除数（向下取整，最少 1） [默认: 7]
 	#Range: 1 ~ 1000
 	sculkXpDivisor = 7
 	#死后是否召唤监守者 [默认: true]
@@ -1241,6 +1226,11 @@
 	#[默认: 0.7]
 	#Range: 0.0 ~ 1.0
 	preferenceWeight = 0.7
+	#抽取仪式不会产出的暗夜立方内容物物品 ID。
+	#填写完整 ID（modid:item_id）；也兼容仅填写 item_id。
+	#留空列表 [] 可允许所有缺失物品进入抽取池。
+	#已有打标卷轴仍可正常使用，不受此名单影响。
+	contentBlacklist = ["enigmaticlegacy:enigmatic_item", "enigmaticaddons:sanguinary_handbook"]
 
 #════════════════════════════════════
 # 仆从配置
@@ -1353,17 +1343,6 @@
 	#
 	treasurePouchIds = ["goety:gameplay/treasure_pouch"]
 
-#控制哪些实体类型可以被预制建筑系统捕获（创建蓝图/收回建筑时）。
-#格式: modid:entity_type，例如 minecraft:painting
-#
-#支持的实体必须是不依赖运行时状态的纯装饰实体。
-#白名单外的实体在快照时将被忽略，避免 NBT 残留导致崩溃。
-[prefab_entity]
-	#可被预制建筑蓝图捕获的实体列表。
-	#默认包含：原版画/物品展示框/荧光展示框/盔甲架 + Goety 的 haunted 版本
-	#添加其他模组实体前请确认其 NBT 不包含动态引用（UUID、Passengers 等）
-	capturableEntities = ["minecraft:item_frame", "minecraft:glow_item_frame", "minecraft:painting", "minecraft:armor_stand", "goety:haunted_painting", "goety:haunted_armor_stand"]
-
 #---- 预制建筑通用配置 ----
 #控制 CREATE 捕获模式、动画速度、灵魂消耗等。
 #
@@ -1410,19 +1389,6 @@
 	#关闭后还原旧行为，不作任何维度检查。
 	#[默认: true]
 	enableDimensionFilter = true
-	#分段部署每段的最大方块数。
-	#超大模板（NBT 压缩 > 1MB）自动按 Y 轴切片，每段不超过这个值。
-	#增大此值可减少分段数但增加单段内存。20000 ≈ 2MB PendingBlock。
-	#[默认: 20000] [范围: 1000 ~ 200000]
-	#Range: 1000 ~ 200000
-	maxBlocksPerChunk = 20000
-	#可部署的模板文件最大压缩大小（MB）。
-	#超过此值的模板拒绝部署，防止解压后过大导致 OOM。
-	#对于 2GB JVM 堆，5MB 压缩 ≈ 200MB 对象图，是安全上限。
-	#已调至 10MB 以配合 -Xmx4G 测试超大文件。
-	#[默认: 10] [范围: 1 ~ 100]
-	#Range: 1 ~ 100
-	maxDeployFileSize = 10
 	#在聊天框显示预制建筑事务的启动信息和 Job UUID。
 	#仅供开发和管理员诊断使用；失败原因不受此项影响，始终向玩家显示。
 	#[默认: false]
@@ -1486,6 +1452,14 @@
 	#启用回退时，每个 tick 最多重发的完整权威区块数 [默认: 1，范围: 1 ~ 16]
 	#Range: 1 ~ 16
 	finalAuthoritativeChunksPerTick = 1
+	#Allow players to upload standard structure NBT designs. Writing a blueprint still costs an empty echo.
+	allowBlueprintImport = true
+	#Automatically export captured READY buildings up to this block count (0 disables). Also limited to 64 per axis and 8 MiB decoded NBT; larger designs remain exportable on demand.
+	#Range: 0 ~ 50000
+	namedExportMaxBlocks = 32768
+	#Warn when deployment journal cursors stop advancing. Does not automatically cancel or refund partial builds.
+	#Range: 30 ~ 3600
+	deploymentStallWarningSeconds = 60
 
 #════════════════════════════════════
 # 初始建筑（Starter）
@@ -1708,9 +1682,6 @@
 	#Smash 攻击每格摔落距离的额外伤害 [默认: 3.0]
 	#Range: 0.0 ~ 50.0
 	smashDamagePerBlock = 3.0
-	#Smash 有效摔落上限（格），超过此值不再增加伤害和 AoE 增长 [默认: 60.0]
-	#Range: 1.0 ~ 256.0
-	maxEffectiveFall = 60.0
 	#AoE 牵引基础半径（格） [默认: 4.0]
 	#Range: 0.0 ~ 16.0
 	aoeRadiusBase = 4.0
@@ -1810,31 +1781,110 @@
 
 #---- 世界之枢轴（地系二级法杖）逐聚晶增强 ----
 #
-#总开关与各项增强均默认开启；关闭某项即完全恢复原版行为。
-#仅适用于已实现的增强（小兽/撼地/地震），其余项为规划占位，后续逐个落地。
+#总开关与各项开关均默认开启；关闭某项即完全恢复原版行为。
+#各法术段下只保留数量、作用面积、伤害、无敌帧等直接影响战斗的数值；
+#音效、寿命、速度、弹道与生成高度等表现项已固化为代码常量。
 [axis_mundi]
 	#总开关 [默认: true]
 	enableEnhance = true
-	#小兽聚晶：固定召唤 7 只并排成队列（替代随机 2~3 只） [默认: true]
-	ministrousFixedSquad = true
-	#撼地聚晶：单体目标改为错时三连贯拳 [默认: true]
-	earthFistTriplePunch = true
-	#地震聚晶：双子震颤（非潜行叠加内圈共振环；潜行双环致密） [默认: true]
-	quakingTwinTremor = true
-	#猛石聚晶：命中后二次地面溅射（规划占位，需 goety 2.5.57+） [默认: true]
-	smackStoneShatter = true
-	#分散聚晶：环形布雷（规划占位） [默认: true]
-	scatterRingMines = true
-	#爆发聚晶：火山列阵（规划占位） [默认: true]
-	eruptionVolcanoArray = true
-	#障碍聚晶：枢轴方阵（规划占位） [默认: true]
-	barricadePivotFort = true
-	#瓦解聚晶：5x5x5 有序连锁（规划占位） [默认: true]
-	pulverizeDeepChain = true
-	#穿凿聚晶：矿工向（主目标保留时运/精准，连锁过滤矿石，规划占位） [默认: true]
-	burrowingMinerFocus = true
-	#感应聚晶：等级+1、持续x1.5（规划占位） [默认: true]
-	sensingBoost = true
+
+	[axis_mundi.ministrous]
+		#分三批召唤 10 只小兽 [默认: true]
+		fixedSquad = true
+
+	[axis_mundi.earth_fist]
+		#投掷引力内核并聚合地爆天星 [默认: true]
+		triplePunch = true
+		#真实移除并吸附可破坏方块；关闭时仅作视觉采样 [默认: false]
+		breakBlocks = false
+
+	[axis_mundi.quaking]
+		#两道椭圆环波后留下持续地裂 [默认: true]
+		twinTremor = true
+
+	[axis_mundi.smack_stone]
+		#三发霰弹进行两级三向分裂 [默认: true]
+		shatter = true
+		#命中后目标无敌帧的倍率（0.5 = 减半） [默认: 0.5]
+		#Range: 0.0 ~ 1.0
+		invulMultiplier = 0.5
+
+	[axis_mundi.scatter]
+		#地雷变为紫水晶母弹（触发时大范围爆炸并散开 8 枚紫水晶子弹） [默认: true]
+		ringMines = true
+		#母弹爆炸伤害倍率（基准为一级地雷基础伤害） [默认: 1.5]
+		#Range: 0.0 ~ 10.0
+		motherDamageMultiplier = 1.5
+		#紫水晶子弹伤害倍率（相对母弹爆炸伤害） [默认: 0.5]
+		#Range: 0.0 ~ 10.0
+		childDamageMultiplier = 0.5
+		#母弹爆炸的 AOE 半径（格） [默认: 3.0]
+		#Range: 0.0 ~ 16.0
+		motherRadius = 3.0
+		#紫水晶子弹的小 AOE 半径（格） [默认: 1.5]
+		#Range: 0.0 ~ 16.0
+		childRadius = 1.5
+		#母弹的感应半径（格；一级为 0.6，仍叠加聚晶 Radius 附魔） [默认: 1.2]
+		#Range: 0.0 ~ 8.0
+		sensitiveRadius = 1.2
+
+	[axis_mundi.eruption]
+		#召唤中长时间保留的导弹炮台 [默认: true]
+		volcanoArray = true
+
+	[axis_mundi.barricade]
+		#黑曜石巨柱圆弧；潜行分散图腾炸弹 [默认: true]
+		pivotFort = true
+
+	[axis_mundi.pulverize]
+		#3×3×3 同配方连锁（潜行仅主目标 1 格，魂耗见 sneakSoulCost） [默认: true]
+		deepChain = true
+		#潜行单格的灵魂消耗（非潜行仍按原版 16 魂结算） [默认: 2]
+		#Range: 0 ~ 64
+		sneakSoulCost = 2
+
+	[axis_mundi.burrowing]
+		#3×3 截面隧道钻探 + 同类矿石连锁采掘（潜行仍为单格精确挖掘） [默认: true]
+		minerFocus = true
+		#单次施法最多推进的隧道层数（每层 3×3 一次性结算） [默认: 12]
+		#Range: 1 ~ 64
+		baseTunnelDepth = 12
+		#隧道层数硬上限；实际 = min(基础层数 + Range 超出部分, 本值) [默认: 32]
+		#Range: 1 ~ 64
+		maxTunnelDepth = 32
+		#矿脉连锁：单次结算破坏的矿石数（含主目标，一批即结束） [默认: 9]
+		#Range: 1 ~ 64
+		veinBatchSize = 9
+		#矿脉连锁：从主目标起算的最大搜索距离硬上限（切比雪夫，实际取 min(Range, 本值)） [默认: 32]
+		#Range: 1 ~ 32
+		veinMaxDistance = 32
+
+	[axis_mundi.corruption]
+		#命中判定宽度与魂耗增强 [默认: true]
+		beam = true
+		#服务端光束命中宽度倍率，同时作用于光束的视觉粗度 [默认: 3.0]
+		#Range: 1.0 ~ 8.0
+		beamWidthMultiplier = 3.0
+		#该法术魂耗的折扣倍率（0.25 = 只花原耗的 25%，即降低 75%） [默认: 0.25]
+		#Range: 0.0 ~ 1.0
+		soulCostMultiplier = 0.25
+		#光束每次判定的伤害倍率（1.0 = 与 Goety 原版一致，留作后续增强用） [默认: 1.0]
+		#Range: 0.0 ~ 10.0
+		damageMultiplier = 1.0
+
+	[axis_mundi.meteor]
+		#雷暴：把竖直落雷替换为从天极速坠落的流星（落点白圈保留） [默认: true]
+		thunderstorm = true
+		#星辰：把本体特效替换为流星系列 [默认: true]
+		stellar = true
+		#流星雨：把火流星替换为紫水晶母弹/紫水晶导弹 [默认: true]
+		showerAmethyst = true
+		#流星雨：紫水晶导弹的出现概率（其余为能裂开的紫水晶母弹） [默认: 0.25]
+		#Range: 0.0 ~ 1.0
+		showerMissileChance = 0.25
+		#雷暴/星辰/流星雨：枢轴档的伤害倍率（以一级法杖加强档为基准再乘） [默认: 1.25]
+		#Range: 0.5 ~ 4.0
+		tier2DamageMultiplier = 1.25
 
 #════════════════════════════════════
 # 圣甲（Holy Armor）
@@ -1963,4 +2013,45 @@
 	#觉醒战利品仓的槽位容量；GUI 始终使用滚动窗口，不依赖此值布局
 	#Range: 9 ~ 4095
 	lootStorageSlots = 180
+
+#---- 世界之枢轴法杖本体属性 ----
+#
+#持有法杖时生效，与 [axis_mundi] 的逐聚晶增强互不影响。
+[axis_mundi_staff]
+	#主手近战攻击力（1.0 = 空手基准） [默认: 8.0]
+	#Range: 1.0 ~ 64.0
+	meleeDamage = 8.0
+	#附加的地系法术强效点数（加法计入全部地卜法术） [默认: 2.0]
+	#Range: 0.0 ~ 32.0
+	geomancyPotencyBonus = 2.0
+	#法术伤害倍率加成（0.25 = +25%） [默认: 0.25]
+	#Range: 0.0 ~ 10.0
+	magicDamageMultiplier = 0.25
+	#聚晶冷却速度加成（0.5 = 冷却时长 ÷1.5，约 -33%） [默认: 0.5]
+	#Range: 0.0 ~ 10.0
+	focusCooldownSpeed = 0.5
+	#法杖等级显示（RevelationFix 的 Lv.N tooltip） [默认: 2]
+	#Range: 1 ~ 10
+	staffLevel = 2
+
+#---- 火山法术 ----
+[volcano]
+	#Range: 1 ~ 128
+	playerLimit = 2
+	#Range: 1.0 ~ 100000.0
+	health = 100.0
+	#Range: 0.0 ~ 30.0
+	armor = 6.0
+	#Range: 0.0 ~ 100000.0
+	baseDamage = 6.0
+	#Range: 0.0 ~ 100.0
+	childDamage = 0.45
+	#Range: 0.0 ~ 8.0
+	childRadius = 0.95
+	#Range: 0.0 ~ 100.0
+	defenseDamage = 0.75
+	#Range: 1 ~ 64
+	targetRange = 32
+	#Range: 1 ~ 64
+	retargetRange = 24
 

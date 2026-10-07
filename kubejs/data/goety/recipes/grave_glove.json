@@ -2,10 +2,10 @@
   "type": "goety:ritual",
   "ritual_type": "goety:craft",
   "activation_item": {
-    "item": "minecraft:rotten_flesh"
+    "tag": "forge:leather"
   },
   "craftType": "necroturgy",
-  "research": "fib:soul_research",
+  "research": "fib:forging_arts",
   "soulCost": 1,
   "duration": 10,
   "ingredients": [
@@ -13,13 +13,7 @@
       "tag": "forge:leather"
     },
     {
-      "tag": "forge:leather"
-    },
-    {
-      "item": "minecraft:sculk"
-    },
-    {
-      "item": "goety:grave_dust"
+      "item": "goety:grave_soil"
     },
     {
       "item": "goety:spirit_fabric"

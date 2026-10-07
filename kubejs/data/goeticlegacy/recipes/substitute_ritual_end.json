@@ -1,0 +1,24 @@
+{
+  "conditions": [{
+    "type": "goeticlegacy:has_substitutes"
+  }],
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "tag": "goeticlegacy:research_scrolls"
+  },
+  "craftType": "end",
+  "research": "fib:soul_research",
+  "soulCost": 128,
+  "duration": 5,
+  "ingredients": [
+    { "item": "minecraft:ender_pearl" },
+    { "item": "minecraft:chorus_fruit" },
+    { "item": "goety:void_bottle" },
+    { "item": "minecraft:dragon_breath" }
+  ],
+  "result": {
+    "item": "goety:jei_dummy/none",
+    "nbt": "{GoeticLegacySubPending:true}"
+  }
+}

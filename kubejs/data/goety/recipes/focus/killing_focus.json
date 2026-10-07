@@ -5,7 +5,7 @@
     "item": "goety:thunderbolt_focus"
   },
   "craftType": "necroturgy",
-  "research": "fib:soul_research",
+  "research": "fib:advanced_soul_knowledge",
   "soulCost": 50,
   "duration": 30,
   "ingredients": [

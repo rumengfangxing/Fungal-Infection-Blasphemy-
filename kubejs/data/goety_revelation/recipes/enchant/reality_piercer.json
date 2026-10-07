@@ -1,0 +1,45 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:enchant",
+  "activation_item": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "type" : "goety_revelation:enchantment",
+      "enchantment" : "goety_revelation:reality_piercer",
+      "level": {
+        "min": 0,
+        "max": 2
+      }
+    }
+  ],
+  "enchant": {
+    "level": {
+      "min": 0,
+      "max": 2
+    }
+  },
+  "craftType": "magic",
+  "research": "fib:soul_research",
+  "soulCost": 100,
+  "duration": 30,
+  "enchantment": "goety_revelation:reality_piercer",
+  "xpLevelCost": 10,
+  "ingredients": [
+    {
+      "item": "goety:occult_fabric"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"revelationfix:strong_counterspell\"}"
+    },
+    {
+      "item": "goety:fanged_dagger"
+    }
+  ],
+  "result": {
+    "item": "minecraft:enchanted_book"
+  }
+}

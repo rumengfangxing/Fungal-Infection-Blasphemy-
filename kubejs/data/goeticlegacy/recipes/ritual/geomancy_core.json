@@ -1,0 +1,22 @@
+{
+  "type": "goety:ritual",
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "item": "goety:empty_focus"
+  },
+  "craftType": "geoturgy",
+  "research": "fib:soul_research",
+  "soulCost": 10,
+  "duration": 20,
+  "ingredients": [
+    { "item": "minecraft:amethyst_shard" },
+    { "item": "minecraft:amethyst_shard" },
+    { "item": "minecraft:quartz" },
+    { "item": "minecraft:diamond" },
+    { "item": "minecraft:redstone" }
+  ],
+  "result": {
+    "item": "goeticlegacy:geomancy_core",
+    "count": 2
+  }
+}

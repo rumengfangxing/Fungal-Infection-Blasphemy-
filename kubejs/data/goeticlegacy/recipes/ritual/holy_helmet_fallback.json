@@ -1,0 +1,33 @@
+{
+  "type": "goety:ritual",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "enigmaticlegacy"
+      }
+    }
+  ],
+  "ritual_type": "goety:craft",
+  "activation_item": {
+    "item": "goety:dark_helmet"
+  },
+  "craftType": "forge",
+  "research": "fib:forging_arts",
+  "soulCost": 50,
+  "duration": 30,
+  "ingredients": [
+    { "item": "goety:void_shard" },
+    { "item": "goety:void_shard" },
+    { "item": "minecraft:gold_ingot" },
+    { "item": "goety:magic_fabric" },
+    { "item": "goety:magic_fabric" },
+    { "item": "goety:mystic_core" },
+    { "item": "goety:mystic_core" },
+    { "item": "goety:spirit_fabric" }
+  ],
+  "result": {
+    "item": "goeticlegacy:holy_helmet"
+  }
+}

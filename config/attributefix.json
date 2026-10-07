@@ -1221,6 +1221,17 @@
         "value": 1
       }
     },
+    "goeticlegacy:casting_rate": {
+      "enabled": false,
+      "min": {
+        "default": 0.25,
+        "value": 0.25
+      },
+      "max": {
+        "default": 4,
+        "value": 4
+      }
+    },
     "taa:explosion_radius": {
       "enabled": false,
       "min": {
@@ -1593,6 +1604,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "goeticlegacy:focus_cooldown_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0.25,
+        "value": 0.25
+      },
+      "max": {
+        "default": 4,
+        "value": 4
       }
     },
     "minecraft:generic.attack_speed": {
