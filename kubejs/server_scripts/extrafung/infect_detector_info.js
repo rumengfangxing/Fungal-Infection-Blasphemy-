@@ -1,38 +1,37 @@
-// 使用文明探测器时在聊天栏输出冒险区信息
-ItemEvents.rightClicked('civil:civil_detector', event => {
-  const { player, level } = event;
-  if (!player || player.level.isClientSide()) return;
+(function () {
+    const $AdventureAPI = Java.loadClass('civil_adventure.api.AdventureAPI');
 
-  try {
-    var api = Java.loadClass('civil_adventure.api.AdventureAPI');
-    var pos = player.blockPosition();
+    ItemEvents.rightClicked('civil:civil_detector', event => {
+        const { player, level } = event;
+        if (!player || player.isFake() || level.isClientSide()) return;
 
-    var intensity = api.getScoreAt(level, pos);
-    var pct = Math.round(intensity * 100);
-    var isAdventure = intensity >= 0.5;
-    player.tell(`§e强度: ${isAdventure ? '§c■ 感染区' : '§7□ 非感染区'} §f${pct}%`);
+        try {
+            let pos = player.blockPosition();
+            let intensity = $AdventureAPI.getScoreAt(level, pos);
+            let pct = Math.round(intensity * 100);
+            let isAdventure = intensity >= 0.5;
 
-    var buffedCount = api.getBuffedEntityUUIDs().size();
-    player.tell(`§e全局受危险区影响的生物总数: §f${buffedCount} 个`);
+            let domFaction = $AdventureAPI.getDominantFaction(level, pos);
+            let factionText = '§7[荒野/无统治]';
+            if (domFaction != null) {
+                let translatedName = Text.translate(domFaction.nameTranslationKey()).string;
+                let colorPrefix = domFaction.isCivilization() ? '§9' : (domFaction.id().getPath() === 'fungal' ? '§c' : '§6');
+                factionText = `${colorPrefix}[${translatedName}]`;
+            }
 
-    console.log(`[detector] calling getZoneSize...`);
-    var zoneSize = api.getZoneSize(level, pos);
-    console.log(`[detector] getZoneSize = ${zoneSize}`);
+            let buffedCount = $AdventureAPI.getBuffedEntityUUIDs().size();
+            let zoneSize = $AdventureAPI.getZoneSize(level, pos);
+            let rawScore = Math.round($AdventureAPI.getRawScoreAt(level, pos));
+            let center = $AdventureAPI.getZoneCenter(level, pos);
 
-    console.log(`[detector] calling getRawScoreAt...`);
-    var rawScore = Math.round(api.getRawScoreAt(level, pos));
-    console.log(`[detector] getRawScoreAt = ${rawScore}`);
-
-    console.log(`[detector] calling getZoneCenter...`);
-    var center = api.getZoneCenter(level, pos);
-    console.log(`[detector] getZoneCenter = ${center.getX()}, ${center.getY()}, ${center.getZ()}`);
-
-    player.tell(`§c危险评估分: §f${rawScore}`);
-    player.tell(`§e参考区域中心坐标: §f${center.getX()}, ${center.getY()}, ${center.getZ()}`);
-    player.tell(`§6========================`);
-
-  } catch(err) {
-    player.tell(`§c错误: ${err}`);
-    console.log(`[detector] error: ${err}`);
-  }
-});
+            player.tell(`§e领地派系: ${factionText}`);
+            player.tell(`§e威胁强度: ${isAdventure ? '§c■ 危险区' : '§7□ 安全区'} §f${pct}%`);
+            player.tell(`§c危险评估分: §f${rawScore} §7(覆盖 ${zoneSize} 个区块)`);
+            player.tell(`§e参考区域中心坐标: §f${center.getX()}, ${center.getY()}, ${center.getZ()}`);
+            player.tell(`§e全局受危险区影响的生物总数: §f${buffedCount} 个`);
+            player.tell('§6========================');
+        } catch (err) {
+            player.tell(`§c探测器异常: ${err}`);
+        }
+    });
+})();

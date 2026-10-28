@@ -73,7 +73,7 @@ tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
-skipMultiplayerWarning:false
+skipMultiplayerWarning:true
 skipRealms32bitWarning:false
 hideMatchedNames:true
 joinedFirstServer:true
@@ -150,6 +150,9 @@ key_key.yes_steve_model.extra_animation.7.desc:key.keyboard.unknown
 key_key.lightmanscurrency.open_wallet:key.keyboard.semicolon
 key_key.lightmanscurrency.portable_terminal:key.keyboard.unknown
 key_key.lightmanscurrency.portable_atm:key.keyboard.unknown
+key_key.fib_mod.hook_mode_switch:key.keyboard.r
+key_key.fib_mod.hook_mining_toggle:key.keyboard.g
+key_key.fib_mod.hook_climb:key.keyboard.z
 key_tooltipoverhaul.binds.compare_bind:key.keyboard.left.shift
 key_key.push_to_talk:key.keyboard.unknown
 key_key.whisper:key.keyboard.unknown

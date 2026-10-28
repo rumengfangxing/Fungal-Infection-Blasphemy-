@@ -1,10 +1,10 @@
-#Whether to log the dirt block on common setup
-logDirtBlock = true
-#A magic number
-#Range: > 0
-magicNumber = 42
-#What you want the introduction message to be for the magic number
-magicNumberIntroduction = "The magic number is... "
-#A list of items to log on common setup.
-items = ["minecraft:iron_ingot"]
+
+[IceMaker]
+	#制冰机每 tick 基础消耗的能量 (FE/tick)，默认为 20
+	#Range: 1 ~ 10000
+	baseEnergyUsage = 20
+
+[Visuals]
+	#是否启用维度裂缝的粒子与光效
+	enableCrackVisuals = true
 

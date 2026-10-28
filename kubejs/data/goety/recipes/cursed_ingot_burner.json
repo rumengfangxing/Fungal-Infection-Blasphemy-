@@ -1,5 +1,6 @@
 {
   "type": "goety:cursed_infuser_recipes",
+  "research": "fib:soul_research",
   "ingredient": {
     "tag": "forge:ingots/iron"
   },

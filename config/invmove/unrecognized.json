@@ -171,7 +171,13 @@
     "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true,
     "com.kuzhi.youtwofightforme.client.FactionControlScreen": true,
     "com.sighs.apricityui.instance.ApricityContainerScreen": true,
-    "com.arxyt.sporeperformance.client.gui.OptimizationProfileScreen": true
+    "com.arxyt.sporeperformance.client.gui.OptimizationProfileScreen": true,
+    "com.mcg.questborne.client.screen.DialogueScreen": true,
+    "com.fib.fib.gui.container.screen.TrashCanScreen": true,
+    "com.fib.fib.gui.container.screen.corpse.Corpse1Screen": true,
+    "com.fib.fib.gui.container.screen.corpse.Corpse2Screen": true,
+    "sfiomn.legendarysurvivaloverhaul.client.screens.ThermalScreen": true,
+    "com.fib.fib.gui.container.screen.GrapplingHookScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
@@ -279,6 +285,11 @@
     "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
     "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true,
     "com.kuzhi.youtwofightforme.client.FactionControlScreen": true,
-    "com.arxyt.sporeperformance.client.gui.OptimizationProfileScreen": true
+    "com.arxyt.sporeperformance.client.gui.OptimizationProfileScreen": true,
+    "com.fib.fib.gui.container.screen.TrashCanScreen": true,
+    "com.fib.fib.gui.container.screen.corpse.Corpse1Screen": true,
+    "com.fib.fib.gui.container.screen.corpse.Corpse2Screen": true,
+    "sfiomn.legendarysurvivaloverhaul.client.screens.ThermalScreen": true,
+    "com.fib.fib.gui.container.screen.GrapplingHookScreen": true
   }
 }

@@ -22,11 +22,14 @@
 	#冒险区色 (hex RGB)
 	color = "CC1111"
 
-#Xaeros 透明度
+#Xaeros 透明度与大地图遮罩
 [xaeros_alpha]
-	#冒险区不透明度 (0-255, 255=完全不透明)
+	#冒险区小地图不透明度 (0-255, 255=完全不透明，消去地表可视性)
 	#Range: 0 ~ 255
 	alpha = 180
+	#战术大地图 CoreShader 遮罩不透明度 (0.0-1.0, 1.0=完全实心不透明消去地形可视性)
+	#Range: 0.0 ~ 1.0
+	map_overlay_opacity = 1.0
 
 #界面提示
 [hud]
@@ -44,4 +47,28 @@
 	#方块变化批量重算冷却（tick），冷却期内收集变化、到期一次性算完
 	#Range: 1 ~ 100
 	recalc_cooldown_ticks = 10
+
+#冒险区压制方块
+[suppressor]
+	#每次压制削减的百分比（0.01 = 1%）
+	#Range: 0.0 ~ 1.0
+	percent = 0.01
+	#每次压制削减的固定分数
+	#Range: 0.0 ~ 1000.0
+	fixed = 3.0
+	#压制动作间隔（tick），20 tick = 1 秒
+	#Range: 10 ~ 12000
+	interval_ticks = 100
+	#压制影响半径（区块）
+	#Range: 1 ~ 32
+	radius_chunks = 4
+	#压制方块忽略的派系白名单（不压制这些派系，如特定友好生态）
+	ignored_factions = []
+
+#大地图 CoreShader 战术覆层
+[map_overlay]
+	#是否启用 Xaero 大地图 GPU 着色器覆层
+	enabled = true
+	#默认覆层主题预设 ID (如 civil_adventure:cyber_warning)
+	default_profile = "civil_adventure:cyber_warning"
 

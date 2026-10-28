@@ -63,3 +63,7 @@ kubejs/skill.md
 /config/zstdnet
 /.dsh
 *.py
+/魔改工具
+/config/goeticlegacy
+/.cache
+/cache

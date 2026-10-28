@@ -1,0 +1,34 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    "item:minecraft:potion{Potion:\"fib_mod:freezing\"}",
+    {
+      "type": "fluid",
+      "id": "create:potion",
+      "nbt": "{Bottle:\"REGULAR\",Potion:\"fib_mod:freezing\"}",
+      "amount": 1000
+    },
+    {
+      "type": "fluid",
+      "id": "create:potion",
+      "nbt": "{Bottle:\"SPLASH\",Potion:\"fib_mod:freezing\"}",
+      "amount": 250
+    },
+    {
+      "type": "item",
+      "id": "minecraft:splash_potion",
+      "nbt": "{Potion:\"fib_mod:freezing\"}",
+      "amount": 16
+    },
+    "item:goety_revelation:ice_charm",
+    "item:fib_mod:bowl_block"
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}

@@ -490,10 +490,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"14BBDDDAF0CA4BB0"
-				"24EEFE5FFD067646"
-			]
+			dependencies: ["24EEFE5FFD067646"]
 			dependency_requirement: "one_completed"
 			description: [
 				"如何制作黄铜机壳?"
