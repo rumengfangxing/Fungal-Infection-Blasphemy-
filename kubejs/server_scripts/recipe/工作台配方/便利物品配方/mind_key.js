@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     event.shaped(
-        Item.of('goeticlegacy:mind_court_key'),
+        Item.of('goeticlegacy:key_book'),
         [
             'AAA',
             'BCD',

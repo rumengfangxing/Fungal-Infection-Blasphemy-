@@ -384,19 +384,6 @@
         }
       },
       {
-        "id": "key_1a0470f306e",
-        "title": {
-          "text": "打开NPC任务日志"
-        },
-        "icon": "create:clipboard",
-        "action": {
-          "type": "KEY",
-          "name": "key.questborne.open_journal",
-          "toggle": false,
-          "mode": "AUTO"
-        }
-      },
-      {
         "id": "key_1a047104dc5",
         "title": {
           "text": "打开RTS俯视角建造"

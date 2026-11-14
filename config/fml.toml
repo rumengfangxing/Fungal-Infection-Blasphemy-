@@ -6,10 +6,10 @@ versionCheck = false
 earlyWindowControl = true
 #Early window framebuffer scale
 earlyWindowFBScale = 1
-#Early window provider
-earlyWindowProvider = "SimpleCustomEarlyLoading"
 #Early window width
 earlyWindowWidth = 854
+#Early window provider
+earlyWindowProvider = "fmlearlywindow"
 #Early window starts maximized
 earlyWindowMaximized = false
 #Default config path for servers

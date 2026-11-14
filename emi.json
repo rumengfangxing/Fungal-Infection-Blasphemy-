@@ -1,6 +1,18 @@
 {
   "favorites": [],
   "lookup_history": [
+    "#item:goeticlegacy:nihil_blocks",
+    "item:goeticlegacy:nihil_block",
+    "item:goeticlegacy:nihil_bottle",
+    "item:goeticlegacy:nihil_spear{Damage:0}",
+    "item:goeticlegacy:pale_steel_spear{Damage:0}",
+    "item:goeticlegacy:gales_spear{Damage:0}",
+    {
+      "type": "item",
+      "id": "goeticlegacy:gale_charge",
+      "amount": 4
+    },
+    "item:goeticlegacy:key_book",
     "item:minecraft:potion{Potion:\"fib_mod:freezing\"}",
     {
       "type": "fluid",

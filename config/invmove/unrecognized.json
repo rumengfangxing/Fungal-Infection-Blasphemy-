@@ -150,7 +150,6 @@
     "com.rtsbuilding.rtsbuilding.client.screen.standalone.RtsHomeScreen": true,
     "org.z2six.ezactions.gui.RadialMenuScreen": true,
     "dlovin.inventoryhud.gui.config.InventoryConfigScreen": true,
-    "com.mcg.questborne.client.screen.JournalScreen": true,
     "com.blamejared.controlling.client.NewKeyBindsScreen": true,
     "com.sal_fish.visual_set_edit.gui.PresetListScreen": true,
     "net.irisshaders.iris.gui.screen.ShaderPackScreen": true,
@@ -172,12 +171,12 @@
     "com.kuzhi.youtwofightforme.client.FactionControlScreen": true,
     "com.sighs.apricityui.instance.ApricityContainerScreen": true,
     "com.arxyt.sporeperformance.client.gui.OptimizationProfileScreen": true,
-    "com.mcg.questborne.client.screen.DialogueScreen": true,
     "com.fib.fib.gui.container.screen.TrashCanScreen": true,
     "com.fib.fib.gui.container.screen.corpse.Corpse1Screen": true,
     "com.fib.fib.gui.container.screen.corpse.Corpse2Screen": true,
     "sfiomn.legendarysurvivaloverhaul.client.screens.ThermalScreen": true,
-    "com.fib.fib.gui.container.screen.GrapplingHookScreen": true
+    "com.fib.fib.gui.container.screen.GrapplingHookScreen": true,
+    "com.qoocies.goeticlegacy.client.gui.settings.ClientSettingsScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
@@ -281,7 +280,6 @@
     "com.github.tartaricacid.touhoulittlemaid.client.gui.entity.maid.backpack.EmptyBackpackContainerScreen": true,
     "com.simibubi.create.content.trains.station.StationScreen": true,
     "com.simibubi.create.content.trains.station.AssemblyScreen": true,
-    "com.mcg.questborne.client.screen.JournalScreen": true,
     "vectorwing.farmersdelight.client.gui.CookingPotScreen": true,
     "com.freefish.torchesbecomesunlight.client.render.gui.screen.stewpot.StewPotScreen": true,
     "com.kuzhi.youtwofightforme.client.FactionControlScreen": true,
