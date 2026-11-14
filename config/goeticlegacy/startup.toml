@@ -1,0 +1,5 @@
+# Register servant school attributes at startup; restart and keep both sides consistent.
+# Internal accessory effects remain active. Back up worlds with permanent school attributes before disabling.
+# 启动时注册仆从流派属性；修改须重启，两端一致。
+# 内部饰品效果始终保留；停用前备份使用永久流派属性的世界。
+registerSchoolAttributes = false

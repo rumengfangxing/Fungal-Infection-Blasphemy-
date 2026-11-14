@@ -187,6 +187,17 @@
         "value": 255
       }
     },
+    "goeticlegacy:necromancy_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
+      }
+    },
     "taa:explosion_destroy_blocknew": {
       "enabled": false,
       "min": {
@@ -295,6 +306,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "goeticlegacy:frost_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
       }
     },
     "goeticlegacy:final_damage_multiplier": {
@@ -715,6 +737,17 @@
         "value": 128
       }
     },
+    "goeticlegacy:storm_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
+      }
+    },
     "confluence:pickup_range": {
       "enabled": false,
       "min": {
@@ -1111,6 +1144,17 @@
         "value": 1000000
       }
     },
+    "goeticlegacy:void_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
+      }
+    },
     "attributeslib:arrow_damage": {
       "enabled": false,
       "min": {
@@ -1485,6 +1529,17 @@
         "value": 2048
       }
     },
+    "goeticlegacy:wild_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
+      }
+    },
     "minecraft:zombie.spawn_reinforcements": {
       "enabled": true,
       "min": {
@@ -1848,6 +1903,17 @@
         "value": 32767
       }
     },
+    "goeticlegacy:ill_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
+      }
+    },
     "confluence:ranged_velocity": {
       "enabled": false,
       "min": {
@@ -1890,6 +1956,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "goeticlegacy:abyss_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
       }
     },
     "newnew_attributes:percentage_natural_healing": {
@@ -2002,6 +2079,17 @@
         "value": 1000000
       }
     },
+    "goeticlegacy:geomancy_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
+      }
+    },
     "newnew_attributes:damage_scale": {
       "enabled": false,
       "min": {
@@ -2077,6 +2165,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "goeticlegacy:wind_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
       }
     },
     "goety:necromancy_discount": {
@@ -2363,6 +2462,17 @@
       "max": {
         "default": 64,
         "value": 64
+      }
+    },
+    "goeticlegacy:nether_spell_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 255,
+        "value": 255
       }
     },
     "goety_revelation:armor_penetration": {

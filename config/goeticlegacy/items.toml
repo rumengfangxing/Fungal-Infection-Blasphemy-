@@ -1,0 +1,2056 @@
+
+[books]
+
+	#Seer Almanack
+	#枯黄历
+	[books.seer_almanack]
+		#--- Base / shared effects ---
+		#Extra incoming-damage fraction per Voodoo Curse level.
+		#--- 基础／共用效果 ---
+		#巫毒之咒每级增加的承伤比例。
+		#Range: 0.0 ~ 100.0
+		seerMarkDamagePerLevel = 0.25
+		#Make this Voodoo Curse vulnerability mutually exclusive with Erosion; false allows stacking.
+		#巫毒之咒的此项易伤与侵蚀互斥；false允许叠加。
+		seerMarkSuppressedByErosion = true
+		#--- Night Cube corrections ---
+		#Seer Almanack: soul energy cost per successful effect-sharing operation.
+		#--- 暗夜立方修正 ---
+		#枯黄历：每次成功共享效果消耗的灵魂能量。
+		#Range: 0 ~ 1000000
+		seerShareSoulCost = 5
+		#Seer Almanack: effect-sharing cooldown per target, in game ticks.
+		#枯黄历：对每个目标共享效果的冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		seerShareCooldownTicks = 100
+		#Effect IDs excluded from sharing, in namespace:path format; an empty list adds no exclusions.
+		#禁止共享的效果ID，格式为命名空间:路径；空列表不额外排除效果。
+		seerEffectBlacklist = ["minecraft:invisibility", "minecraft:speed", "minecraft:jump_boost", "minecraft:slow_falling"]
+		#Sharing sources: unrestricted = all; minecraft = vanilla; goety = Goety; vanilla = minecraft + goety.
+		#共享来源：unrestricted为全部，minecraft为原版，goety为Goety，vanilla为原版加Goety。
+		seerEffectSourceFilter = "unrestricted"
+
+	#Unholy Writ
+	#秽经
+	[books.unholy_writ]
+		#--- Base / shared effects ---
+		#Unholy Writ incoming hellfire damage multiplier.
+		#--- 基础／共用效果 ---
+		#秽经受到的狱炎伤害倍率。
+		#Range: 0.0 ~ 1.0
+		patriarchHellfireTaken = 0.5
+		#Unholy Writ assault cooldown after at least one successful summon, in game ticks.
+		#秽经突袭至少成功召唤一名单位后的冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		patriarchAssaultCooldownTicks = 400
+		#Lifetime of newly summoned Unholy Writ assault units, in game ticks.
+		#秽经新召唤突袭单位的寿命，单位游戏刻。
+		#Range: 1 ~ 1200
+		patriarchAssaultLifetimeTicks = 100
+		#Unholy Writ assault aiming and target-search distance, in blocks.
+		#秽经突袭的瞄准与自动寻敌距离，单位格。
+		#Range: 1.0 ~ 32.0
+		patriarchAssaultTargetRange = 24.0
+		#--- Night Cube corrections ---
+		#Corrected Unholy Writ hellfire damage added as a fraction of target maximum health.
+		#--- 暗夜立方修正 ---
+		#秽经修正：狱炎附加的目标最大生命伤害比例。
+		#Range: 0.0 ~ 1.0
+		patriarchMaxHealthDamage = 0.015
+		#Corrected Unholy Writ outgoing hellfire damage multiplier, including max-health damage.
+		#秽经修正：造成的狱炎伤害倍率，包含最大生命附加伤害。
+		#Range: 0.0 ~ 100.0
+		patriarchHellfireMultiplier = 2.0
+
+	#Gale Book.
+	#烈风之书
+	[books.wind_book]
+		#--- Base / shared effects ---
+		#Wind Book active flight limit, in game ticks.
+		#--- 基础／共用效果 ---
+		#风书主动飞行最长时间，单位游戏刻。
+		#Range: 1 ~ 100
+		galeFlightDurationTicks = 100
+		#Wind Book active flight cooldown, in game ticks.
+		#风书主动飞行冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		galeFlightCooldownTicks = 200
+		#--- Night Cube corrections ---
+		#Chance to spawn a cyclone when a servant is hurt.
+		#--- 暗夜立方修正 ---
+		#烈风之书：仆从受伤时生成龙卷风的概率。
+		#Range: 0.0 ~ 1.0
+		galeCycloneChance = 0.2
+		#Lifetime of new Wind Book cyclone entities, in game ticks.
+		#烈风之书：新龙卷风实体的持续时间，单位游戏刻。
+		#Range: 1 ~ 72000
+		galeCycloneDuration = 350
+		#Wind Book: cyclone base damage.
+		#风书：龙卷风基础伤害。
+		#Range: 0 ~ 10000
+		galeCyclonePotency = 2
+		#Chance for player attacks to trigger a wind razor.
+		#烈风之书：玩家攻击触发风刃的概率。
+		#Range: 0.0 ~ 1.0
+		galePlayerRazorChance = 0.3
+		#Player wind razor damage as a fraction of attack damage.
+		#烈风之书：玩家风刃相对攻击伤害的比例。
+		#Range: 0.0 ~ 100.0
+		galePlayerRazorDamageRatio = 0.35
+		#Chance for servant attacks to trigger a wind razor.
+		#烈风之书：仆从攻击触发风刃的概率。
+		#Range: 0.0 ~ 1.0
+		galeServantRazorChance = 0.4
+		#Servant wind razor damage as a fraction of attack damage.
+		#烈风之书：仆从风刃相对攻击伤害的比例。
+		#Range: 0.0 ~ 100.0
+		galeServantRazorDamageRatio = 0.7
+		#Wind Book effect multiplier while holding a Wind Staff.
+		#手持风之法杖时，烈风之书适用效果的加成倍率。
+		#Range: 0.0 ~ 10.0
+		galeStaffBonusMultiplier = 1.2
+		#Chance to blast nearby enemies away when a servant is hurt.
+		#烈风之书：仆从受伤时吹飞周围敌人的概率。
+		#Range: 0.0 ~ 1.0
+		galeWindBlastChance = 0.08
+		#Base damage of the Wind Book passive death wind blast.
+		#烈风之书：被动死亡风爆的基础伤害。
+		#Range: 0 ~ 10000
+		galeWindHornPotency = 1
+		#Wind Book chance used by external data packs with the legacy chest-loot rule.
+		#外部数据包使用旧箱子掉落规则时的烈风之书概率。
+		#Range: 0.0 ~ 1.0
+		lootChance = 0.15
+		#Wind Book chance in Gale Shrine treasure chests.
+		#烈风神祠宝藏箱中出现烈风之书的概率。
+		#Range: 0.0 ~ 1.0
+		treasureChance = 0.5
+
+	#Ill Will
+	#恶意之书
+	[books.ill_will]
+		#--- Base / shared effects ---
+		#Ill Will speech duration, in game ticks.
+		#--- 基础／共用效果 ---
+		#恶意之书的演说时间，单位游戏刻。
+		#Range: 1 ~ 72000
+		illWillSpeechDurationTicks = 100
+		#Ill Will cooldown after a successful speech, in game ticks.
+		#恶意之书成功演说后的冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		illWillSpeechCooldownTicks = 600
+		#Ill Will speech participant radius, in blocks.
+		#恶意之书演说参与者半径，单位格。
+		#Range: 1.0 ~ 64.0
+		illWillSpeechRadius = 16.0
+		#Extra purple-robed enhancement chance after the native spawn roll; this is not the combined probability.
+		#原生出生判定后额外进行的紫袍增强概率，并非最终总概率。
+		#Range: 0.0 ~ 1.0
+		illWillMagicChance = 0.6
+		#Ill Will illager-servant training-speed multiplier.
+		#恶意之书：刌民仆从的训练速度倍率。
+		#Range: 1 ~ 100
+		illWillTrainSpeedMultiplier = 3
+		#--- Shared Inspiration settings ---
+		#Inspiration I attack-damage bonus fraction.
+		#--- 鼓舞共用参数 ---
+		#鼓舞Ⅰ的攻击伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		inspirationDamageI = 0.2
+		#Inspiration II attack-damage bonus fraction.
+		#鼓舞Ⅱ的攻击伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		inspirationDamageII = 0.25
+		#Inspiration I/II movement-speed bonus fraction.
+		#鼓舞Ⅰ/Ⅱ的移动速度加成比例。
+		#Range: 0.0 ~ 100.0
+		inspirationMovement = 0.4
+		#Inspiration I/II attack-speed bonus fraction.
+		#鼓舞Ⅰ/Ⅱ的攻击速度加成比例。
+		#Range: 0.0 ~ 100.0
+		inspirationAttackSpeed = 0.1
+		#Inspiration I incoming-damage multiplier.
+		#鼓舞Ⅰ的承伤倍率。
+		#Range: 0.0 ~ 1.0
+		inspirationTakenI = 0.9
+		#Inspiration II incoming-damage multiplier.
+		#鼓舞Ⅱ的承伤倍率。
+		#Range: 0.0 ~ 1.0
+		inspirationTakenII = 0.8
+		#--- Night Cube corrections ---
+		#Ill Will permanent Inspiration aura radius, in blocks.
+		#--- 暗夜立方修正 ---
+		#恶意之书常驻鼓舞光环的半径，单位格。
+		#Range: 0.0 ~ 32.0
+		illWillAuraRadius = 32.0
+
+	#One Thousand and One Nights
+	#一千零一夜
+	[books.one_thousand_and_one_nights]
+		#--- Base / shared effects ---
+		#Tormentor count replacing Vex Focus summons with One Thousand and One Nights.
+		#--- 基础／共用效果 ---
+		#一千零一夜：恼鬼聚晶替换为折磨仆从时的基础数量。
+		#Range: 1 ~ 16
+		vizierTormentorBaseCount = 3
+		#Maximum extra Tormentors with a matching staff; uniformly chosen from zero to this value.
+		#一千零一夜：持对应法杖时，额外数量在0至此上限间均匀随机。
+		#Range: 0 ~ 16
+		vizierTormentorStaffExtraMax = 2
+		#Vizier Shadow maximum active time, in game ticks.
+		#宰相之影的主动持续时间上限，单位游戏刻。
+		#Range: 1 ~ 100
+		vizierShadowDurationTicks = 100
+		#Vizier Shadow base cooldown, in game ticks.
+		#宰相之影的基础冷却，单位游戏刻。
+		#Range: 0 ~ 72000
+		vizierShadowCooldownTicks = 400
+		#Vizier Book: enable replacing Vex Focus summons with Tormentor servants.
+		#一千零一夜：启用将恼鬼聚晶召唤替换为折磨仆从。
+		vizierTormentorEnabled = true
+		#--- Night Cube corrections ---
+		#Corrected Vizier Shadow maximum active time, in game ticks.
+		#--- 暗夜立方修正 ---
+		#宰相之影修正形态的主动持续时间上限，单位游戏刻。
+		#Range: 1 ~ 600
+		vizierCorrectedShadowDurationTicks = 600
+		#Corrected Vizier Book: cooldown ticks charged per active tick of Vizier Shadow.
+		#一千零一夜修正：每使用1 tick宰相之影计入的冷却tick数；激活时确定。
+		#Range: 0 ~ 120
+		vizierCorrectedShadowCooldownPerTick = 2
+
+	#Peeping Book
+	#窥探之书
+	[books.peeping_book]
+		#--- Base / shared effects ---
+		#Peeping Book damage multiplier for supported Ender servants.
+		#--- 基础／共用效果 ---
+		#窥探之书普通形态：适用的末地仆从伤害倍率。
+		#Range: 0.0 ~ 100.0
+		peeperServantDamageMultiplier = 1.5
+		#Peeping Book incoming-damage multiplier for supported Ender servants.
+		#窥探之书普通形态：适用的末地仆从承伤倍率。
+		#Range: 0.0 ~ 1.0
+		peeperServantTakenMultiplier = 0.5
+		#--- Night Cube corrections ---
+		#Peeping Book chance to trigger a void shock bomb on attack.
+		#--- 暗夜立方修正 ---
+		#窥探之书：攻击触发虚空震荡弹的概率。
+		#Range: 0.0 ~ 1.0
+		peeperVoidBombChance = 0.12
+		#Peeping Book chance to trigger a void shockwave on attack.
+		#窥探之书：攻击触发虚空震荡波的概率。
+		#Range: 0.0 ~ 1.0
+		peeperVoidShockChance = 0.3
+		#Peeper: additional void shockwave radius, in blocks.
+		#窥探之书：虚空震荡波额外半径，单位格。
+		#Range: 0.0 ~ 100.0
+		peeperVoidShockExtraRadius = 0.4
+
+	#Spider Specimen Book.
+	#蜘蛛标本册
+	[books.spider_specimen_book]
+		#--- Base / shared effects ---
+		#Spider neutrality threshold: spider maximum health divided by player maximum health.
+		#--- 基础／共用效果 ---
+		#蜘蛛标本册：蜘蛛保持中立时，其最大生命相对玩家最大生命的上限倍数。
+		#Range: 0.0 ~ 100.0
+		spiderNeutralHealthThreshold = 2.5
+		#--- Night Cube corrections ---
+		#Corrected Spider Specimen Book player Wild-spell damage bonus fraction.
+		#--- 暗夜立方修正 ---
+		#蜘蛛标本册修正：玩家荒野法术伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		spiderSpellDamage = 0.5
+		#Corrected Spider Specimen Book Wild-servant damage bonus fraction.
+		#蜘蛛标本册修正：荒野仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		spiderServantDamage = 0.5
+		#Corrected Spider Specimen Book Wild-servant damage-reduction fraction.
+		#蜘蛛标本册修正：荒野仆从减伤比例。
+		#Range: 0.0 ~ 1.0
+		spiderServantResistance = 0.25
+		#Probability of a Brood Mother dropping the Spider Specimen Book, from 0 to 1.
+		#击杀育母蜘蛛掉落蜘蛛标本册的概率（0.0~1.0）
+		#Range: 0.0 ~ 1.0
+		lootChance = 0.5
+
+	#Black Book
+	#黑暗秘典
+	[books.black_book]
+		#--- Base / shared effects ---
+		#Black Book: enable the inventory passive that restores soul energy each second while carrying the book.
+		#--- 基础／共用效果 ---
+		#黑暗秘典：启用携带本书时每秒回复灵魂的物品栏被动。
+		blackBookEnablePassive = true
+		#Black Book: fixed soul energy restored per second by the inventory passive.
+		#黑暗秘典：物品栏被动每秒回复的固定灵魂能量。
+		#Range: 0.0 ~ 10000.0
+		blackBookPassiveSoulRegen = 10.0
+		#--- Night Cube corrections ---
+		#Corrected Black Grimoire maximum soul energy restored per second, in percent.
+		#--- 暗夜立方修正 ---
+		#黑暗秘典修正：每秒回复的最大灵魂能量百分数。
+		#Range: 0.0 ~ 100.0
+		blackBookSoulRegenRatio = 0.05
+
+	#Antiquity Folio
+	#过往之书
+	[books.antiquity_folio]
+		#--- Base / shared effects ---
+		#Antiquity Folio: fractional addition to the spell damage multiplier.
+		#--- 基础／共用效果 ---
+		#过往之书：法术伤害倍率的比例加值。
+		#Range: 0.0 ~ 10.0
+		antiquityMagicDamageBonus = 0.15
+		#Antiquity Folio: eligible hostile Nether mobs are neutral when their maximum health is at most the player's maximum health times this
+		#value.
+		#过往之书：适用的下界敌对生物最大生命不超过玩家最大生命乘此倍率时中立。
+		#Range: 0.0 ~ 100.0
+		antiquityNeutralHealthThreshold = 2.5
+
+[scrolls]
+
+	#Rampaging Scroll
+	#狂暴秘卷
+	[scrolls.rampaging_scroll]
+		#--- Base / shared effects ---
+		#Ordinary servant damage addition.
+		#--- 基础／共用效果 ---
+		#普通形态的仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		rampagingDamage = 0.6
+		#Fraction removed from servant armor.
+		#从仆从护甲中扣除的比例。
+		#Range: 0.0 ~ 1.0
+		rampagingArmorPenalty = 0.6
+		#--- Night Cube corrections ---
+		#Corrected Leeching activates below this health fraction.
+		#--- 暗夜立方修正 ---
+		#修正吸血在生命低于此比例时激活。
+		#Range: 0.0 ~ 1.0
+		rampagingLeechHealth = 0.2
+		#Corrected Rampaging Scroll damage bonus per missing-health fraction.
+		#狂暴秘卷修正：每单位缺失生命比例增加的伤害比例。
+		#Range: 0.0 ~ 100.0
+		rampagingMissingHealthDamage = 1.0
+
+	#Golem Scroll
+	#魔像秘卷
+	[scrolls.golem_scroll]
+		#--- Base / shared effects ---
+		#Ordinary armor addition.
+		#--- 基础／共用效果 ---
+		#普通形态的固定护甲加值。
+		#Range: 0.0 ~ 10000.0
+		golemArmor = 8.0
+		#Ordinary armor toughness addition.
+		#普通形态的固定护甲韧性加值。
+		#Range: 0.0 ~ 10000.0
+		golemToughness = 6.0
+		#--- Night Cube corrections ---
+		#Corrected armor multiplier addition.
+		#--- 暗夜立方修正 ---
+		#修正形态的护甲倍率加成比例。
+		#Range: 0.0 ~ 100.0
+		golemCorrectedArmor = 0.25
+		#Corrected toughness multiplier addition.
+		#修正形态的韧性倍率加成比例。
+		#Range: 0.0 ~ 100.0
+		golemCorrectedToughness = 0.2
+		#Corrected damage addition per goety:buff level, excluding other beneficial effects.
+		#修正形态每级goety:buff效果的伤害加成比例，不统计其它正面效果。
+		#Range: 0.0 ~ 100.0
+		golemDamagePerBuffLevel = 0.25
+		#Maximum contributing displayed level of goety:buff.
+		#计入伤害的goety:buff效果等级上限。
+		#Range: 1 ~ 255
+		golemMaxBuffLevels = 10
+
+	#Golden Scroll
+	#黄金秘卷
+	[scrolls.golden_scroll]
+		#--- Base / shared effects ---
+		#Ordinary luck multiplier addition.
+		#--- 基础／共用效果 ---
+		#普通形态的幸运倍率加成比例。
+		#Range: 0.0 ~ 100.0
+		goldenLuck = 0.15
+		#Base probability of each extra chest roll.
+		#每次额外箱子抽取的基础概率。
+		#Range: 0.0 ~ 1.0
+		goldenRollBaseChance = 0.2
+		#Additional probability per nonnegative luck point.
+		#每点非负幸运增加的概率。
+		#Range: 0.0 ~ 1.0
+		goldenRollChancePerLuck = 0.05
+		#Probability ceiling, also limits base chance.
+		#概率上限，同时限制基础概率。
+		#Range: 0.0 ~ 1.0
+		goldenRollMaxChance = 0.75
+		#Maximum extra chest rolls; extra rolls cannot recursively reroll.
+		#额外箱子抽取的次数上限；额外抽取不再递归触发。
+		#Range: 0 ~ 64
+		goldenMaxExtraRolls = 5
+		#--- Night Cube corrections ---
+		#Corrected luck points required per extra Looting level.
+		#--- 暗夜立方修正 ---
+		#修正形态每增加一级抢夺所需的幸运点数。
+		#Range: 0.001 ~ 1000000.0
+		goldenLuckPerLooting = 2.5
+
+	#Gales Scroll
+	#烈风秘卷
+	[scrolls.gales_scroll]
+		#--- Base / shared effects ---
+		#gales ordinary spell damage addition.
+		#--- 基础／共用效果 ---
+		#烈风秘卷普通形态的法术伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		galesSpellDamage = 0.5
+		#gales ordinary school servant damage addition.
+		#烈风秘卷普通形态的对应流派仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		galesServantDamage = 0.75
+		#gales ordinary school servant damage resistance.
+		#烈风秘卷普通形态的对应流派仆从减伤比例。
+		#Range: 0.0 ~ 1.0
+		galesServantResistance = 0.25
+		#--- Night Cube corrections ---
+		#Height difference yielding +100% corrected damage.
+		#--- 暗夜立方修正 ---
+		#修正伤害增加100%所需的高度差，单位格。
+		#Range: 0.001 ~ 1024.0
+		galesHeightPerBonus = 12.0
+		#Maximum corrected height damage addition.
+		#修正高度伤害加成的比例上限。
+		#Range: 0.0 ~ 100.0
+		galesMaxHeightBonus = 2.0
+
+	#Frost Scroll
+	#霜冻秘卷
+	[scrolls.frost_scroll]
+		#--- Base / shared effects ---
+		#frost ordinary spell damage addition.
+		#--- 基础／共用效果 ---
+		#霜冻秘卷普通形态的法术伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		frostSpellDamage = 0.5
+		#frost ordinary school servant damage addition.
+		#霜冻秘卷普通形态的对应流派仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		frostServantDamage = 0.75
+		#frost ordinary school servant damage resistance.
+		#霜冻秘卷普通形态的对应流派仆从减伤比例。
+		#Range: 0.0 ~ 1.0
+		frostServantResistance = 0.25
+		#--- Night Cube corrections ---
+		#Corrected Frost Scroll hard-freeze chance.
+		#--- 暗夜立方修正 ---
+		#霜冻秘卷修正形态的硬冻结触发概率。
+		#Range: 0.0 ~ 1.0
+		frostCorrectionHardFreezeChance = 0.1
+		#Corrected Frost Scroll hard-freeze amplifier; 0 means level I.
+		#霜冻秘卷修正形态的硬冻结强度；0表示一级。
+		#Range: 0 ~ 255
+		frostCorrectionHardFreezeAmplifier = 1
+
+	#Ocean Scroll
+	#海洋秘卷
+	[scrolls.ocean_scroll]
+		#--- Base / shared effects ---
+		#ocean ordinary spell damage addition.
+		#--- 基础／共用效果 ---
+		#海洋秘卷普通形态的法术伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		oceanSpellDamage = 0.5
+		#ocean ordinary school servant damage addition.
+		#海洋秘卷普通形态的对应流派仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		oceanServantDamage = 0.75
+		#ocean ordinary school servant damage resistance.
+		#海洋秘卷普通形态的对应流派仆从减伤比例。
+		#Range: 0.0 ~ 1.0
+		oceanServantResistance = 0.25
+		#--- Night Cube corrections ---
+		#Ocean Scroll maximum incoming hit as a maximum-health fraction.
+		#--- 暗夜立方修正 ---
+		#海洋秘卷单次受击伤害的最大生命比例上限。
+		#Range: 0.001 ~ 1.0
+		oceanMaxHitHealthFraction = 0.49
+
+	#Storm Scroll
+	#暴风秘卷
+	[scrolls.thunder_scroll]
+		#--- Base / shared effects ---
+		#thunder ordinary spell damage addition.
+		#--- 基础／共用效果 ---
+		#暴风秘卷普通形态的法术伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		thunderSpellDamage = 0.5
+		#thunder ordinary school servant damage addition.
+		#暴风秘卷普通形态的对应流派仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		thunderServantDamage = 0.75
+		#thunder ordinary school servant damage resistance.
+		#暴风秘卷普通形态的对应流派仆从减伤比例。
+		#Range: 0.0 ~ 1.0
+		thunderServantResistance = 0.25
+		#--- Night Cube corrections ---
+		#Base lightning-chain jump count.
+		#--- 暗夜立方修正 ---
+		#闪电链基础跳跃次数
+		#Range: 1 ~ 100
+		thunderChainBaseJumps = 4
+		#Base lightning-chain target radius in blocks.
+		#闪电链基础索敌半径
+		#Range: 1.0 ~ 128.0
+		thunderChainBaseRadius = 6.0
+		#Base lightning-chain damage multiplier.
+		#闪电链基础伤害倍率
+		#Range: 0.0 ~ 100.0
+		thunderChainBaseDamageMultiplier = 0.8
+		#Target radius addition during thunderstorms, in blocks.
+		#雷雨天半径额外增加量
+		#Range: 0.0 ~ 64.0
+		thunderChainThunderRadiusBonus = 1.5
+		#Jump-count multiplier during thunderstorms.
+		#雷雨天跳跃次数乘数
+		#Range: 1.0 ~ 10.0
+		thunderChainThunderJumpsMultiplier = 1.5
+		#Damage multiplier during thunderstorms.
+		#雷雨天伤害倍率乘数
+		#Range: 0.0 ~ 10.0
+		thunderChainThunderDamageMultiplier = 1.25
+		#Lightning-chain damage retention multiplier when either endpoint entity is in water; replaces the ordinary decay.
+		#闪电链传递两端至少一实体在水中时的伤害保留倍率，与普通衰减择一使用。
+		#Range: 0.0 ~ 1.0
+		thunderChainWaterDecay = 0.9
+		#Lightning-chain damage retention multiplier when neither endpoint entity is in water; does not multiply the water decay.
+		#闪电链传递两端均不在水中时的伤害保留倍率，不与水中衰减叠乘。
+		#Range: 0.0 ~ 1.0
+		thunderChainChainDecay = 0.7
+
+	#Nether Scroll
+	#下界秘卷
+	[scrolls.nether_scroll]
+		#--- Base / shared effects ---
+		#nether ordinary spell damage addition.
+		#--- 基础／共用效果 ---
+		#下界秘卷普通形态的法术伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		netherSpellDamage = 0.5
+		#nether ordinary school servant damage addition.
+		#下界秘卷普通形态的对应流派仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		netherServantDamage = 0.5
+		#nether ordinary school servant damage resistance.
+		#下界秘卷普通形态的对应流派仆从减伤比例。
+		#Range: 0.0 ~ 1.0
+		netherServantResistance = 0.25
+		#--- Night Cube corrections ---
+		#Flat armor granted by the Nether Scroll.
+		#--- 暗夜立方修正 ---
+		#下界秘卷提供的固定护甲。
+		#Range: 0.0 ~ 10000.0
+		netherArmor = 6.0
+		#Flat armor toughness granted by the Nether Scroll.
+		#下界秘卷提供的固定护甲韧性。
+		#Range: 0.0 ~ 10000.0
+		netherToughness = 6.0
+
+	#Knot Scroll
+	#死结秘卷
+	[scrolls.knot_scroll]
+		#--- Base / shared effects ---
+		#knot ordinary spell damage addition.
+		#--- 基础／共用效果 ---
+		#死结秘卷普通形态的法术伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		knotSpellDamage = 0.75
+		#--- Night Cube corrections ---
+		#Knot Scroll weakening proc probability from 0 to 1.
+		#--- 暗夜立方修正 ---
+		#死结秘卷虚弱触发概率，0至1。
+		#Range: 0.0 ~ 1.0
+		knotWeakeningChance = 0.6
+		#Knot Scroll weakening fraction added per proc to attack damage, movement speed, armor and toughness.
+		#死结秘卷每次触发对攻击伤害、移动速度、护甲和韧性增加的削弱比例。
+		#Range: 0.0 ~ 1.0
+		knotWeakeningStep = 0.01
+		#Knot Scroll accumulated weakening fraction cap for attack damage, movement speed, armor and toughness.
+		#死结秘卷对攻击伤害、移动速度、护甲和韧性的累计削弱比例上限。
+		#Range: 0.0 ~ 1.0
+		knotWeakeningCap = 0.12
+		#Knot Scroll vital weakening fraction added per proc to attack speed and maximum health.
+		#死结秘卷每次触发对攻击速度和最大生命增加的削弱比例。
+		#Range: 0.0 ~ 1.0
+		knotVitalWeakeningStep = 0.005
+		#Knot Scroll accumulated vital weakening fraction cap for attack speed and maximum health.
+		#死结秘卷对攻击速度和最大生命的累计削弱比例上限。
+		#Range: 0.0 ~ 1.0
+		knotVitalWeakeningCap = 0.06
+
+	#Briar Scroll
+	#蔷薇秘卷
+	[scrolls.briar_scroll]
+		#--- Base / shared effects ---
+		#Briar Scroll maximum-health bonus fraction; grants no healing.
+		#--- 基础／共用效果 ---
+		#蔷薇秘卷的最大生命加成比例；不回复生命。
+		#Range: 0.0 ~ 100.0
+		briarMaxHealth = 0.2
+		#Briar Scroll healing-received multiplier.
+		#蔷薇秘卷的受到治疗倍率。
+		#Range: 0.0 ~ 100.0
+		briarHealingMultiplier = 1.5
+		#--- Night Cube corrections ---
+		#Corrected regeneration requires health strictly below this fraction.
+		#--- 暗夜立方修正 ---
+		#修正再生仅在生命严格低于此比例时生效。
+		#Range: 0.0 ~ 1.0
+		briarLowHealthThreshold = 0.25
+		#Corrected Briar Scroll player maximum-health fraction healed every half second.
+		#蔷薇秘卷修正：每半秒回复的玩家最大生命比例。
+		#Range: 0.0 ~ 1.0
+		briarPlayerHealFraction = 0.03
+		#Corrected Briar Scroll servant maximum-health fraction healed every half second.
+		#蔷薇秘卷修正：每半秒回复的仆从最大生命比例。
+		#Range: 0.0 ~ 1.0
+		briarServantHealFraction = 0.08
+		#Briar Scroll Photosynthesis amplifier; 0 means level I.
+		#蔷薇秘卷光合作用强度，0表示一级。
+		#Range: 0 ~ 255
+		briarPhotosynthesisAmplifier = 3
+		#World day at which the first Briar beast bonus tier begins; not ticks.
+		#蔷薇秘卷野兽首档增益开始的世界天数，不是tick。
+		#Range: 0 ~ 72000
+		briarBeastFirstDay = 50
+		#World day at which the high Briar beast bonus tier begins; not ticks.
+		#蔷薇秘卷野兽高档增益开始的世界天数，不是tick。
+		#Range: 0 ~ 72000
+		briarBeastHighDay = 100
+		#First-tier Briar beast Strength amplifier; 0 means level I.
+		#蔷薇秘卷野兽首档力量强度，0表示一级。
+		#Range: 0 ~ 255
+		briarBeastStrengthAmplifier = 2
+		#High-tier Briar beast Strength amplifier; 0 means level I.
+		#蔷薇秘卷野兽高档力量强度，0表示一级。
+		#Range: 0 ~ 255
+		briarBeastHighStrengthAmplifier = 3
+		#First-tier Briar beast Resistance amplifier; 0 means level I.
+		#蔷薇秘卷野兽首档抗性强度，0表示一级。
+		#Range: 0 ~ 3
+		briarBeastResistanceAmplifier = 1
+		#High-tier Briar beast Resistance amplifier; 0 means level I.
+		#蔷薇秘卷野兽高档抗性强度，0表示一级。
+		#Range: 0 ~ 3
+		briarBeastHighResistanceAmplifier = 2
+		#First-tier Briar beast Regeneration amplifier; 0 means level I.
+		#蔷薇秘卷野兽首档再生强度，0表示一级。
+		#Range: 0 ~ 255
+		briarBeastRegenerationAmplifier = 1
+		#High-tier Briar beast Regeneration amplifier; 0 means level I.
+		#蔷薇秘卷野兽高档再生强度，0表示一级。
+		#Range: 0 ~ 255
+		briarBeastHighRegenerationAmplifier = 2
+
+	#Illager Scroll
+	#灾厄秘卷
+	[scrolls.illager_scroll]
+		#--- Night Cube corrections ---
+		#Illager Scroll training base attack damage bonus fraction; no bonus before training.
+		#--- 暗夜立方修正 ---
+		#灾厄秘卷训练带来的本人攻击伤害基础加成比例；未训练时无加成。
+		#Range: 0.0 ~ 100.0
+		illagerTrainingBaseDamage = 0.1
+		#Illager Scroll attack damage bonus per weighted trained type; each ten-type group contributes half as much.
+		#灾厄秘卷每个加权训练类型增加的本人攻击伤害比例；每十类一组，贡献逐组减半。
+		#Range: 0.0 ~ 100.0
+		illagerTrainingDamagePerWeight = 0.04
+		#Illager Scroll training base maximum health bonus fraction; no bonus before training.
+		#灾厄秘卷训练带来的最大生命基础加成比例；未训练时无加成。
+		#Range: 0.0 ~ 100.0
+		illagerTrainingBaseHealth = 0.1
+		#Illager Scroll maximum health bonus per weighted trained type; each ten-type group contributes half as much.
+		#灾厄秘卷每个加权训练类型增加的最大生命比例；每十类一组，贡献逐组减半。
+		#Range: 0.0 ~ 100.0
+		illagerTrainingHealthPerWeight = 0.05
+		#Illager Scroll training base spell damage bonus fraction; no bonus before training.
+		#灾厄秘卷训练带来的法术伤害基础加成比例；未训练时无加成。
+		#Range: 0.0 ~ 100.0
+		illagerTrainingBaseSpellDamage = 0.2
+		#Illager Scroll spell damage bonus per weighted trained type; each ten-type group contributes half as much.
+		#灾厄秘卷每个加权训练类型增加的法术伤害比例；每十类一组，贡献逐组减半。
+		#Range: 0.0 ~ 100.0
+		illagerTrainingSpellDamagePerWeight = 0.08
+		#Illager Scroll training base servant damage bonus fraction; no bonus before training.
+		#灾厄秘卷训练带来的仆从伤害基础加成比例；未训练时无加成。
+		#Range: 0.0 ~ 100.0
+		illagerTrainingBaseServantDamage = 0.2
+		#Illager Scroll servant damage bonus per weighted trained type; each ten-type group contributes half as much.
+		#灾厄秘卷每个加权训练类型增加的仆从伤害比例；每十类一组，贡献逐组减半。
+		#Range: 0.0 ~ 100.0
+		illagerTrainingServantDamagePerWeight = 0.08
+		#Damage addition for the existing 3-member squad tier.
+		#现有3人小队档位的伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		illagerSquadDamage3 = 0.15
+		#Damage resistance for the existing 3-member squad tier.
+		#现有3人小队档位的减伤比例。
+		#Range: 0.0 ~ 1.0
+		illagerSquadResistance3 = 0.1
+		#Damage addition for the existing 6-member squad tier.
+		#现有6人小队档位的伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		illagerSquadDamage6 = 0.3
+		#Damage resistance for the existing 6-member squad tier.
+		#现有6人小队档位的减伤比例。
+		#Range: 0.0 ~ 1.0
+		illagerSquadResistance6 = 0.2
+		#Damage addition for the existing 10-member squad tier.
+		#现有10人小队档位的伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		illagerSquadDamage10 = 0.5
+		#Damage resistance for the existing 10-member squad tier.
+		#现有10人小队档位的减伤比例。
+		#Range: 0.0 ~ 1.0
+		illagerSquadResistance10 = 0.3
+		#Illager Scroll squad-member distance, in blocks.
+		#灾厄秘卷的小队成员距离，单位格。
+		#Range: 0.0 ~ 32.0
+		illagerSquadRadius = 32.0
+
+	#Nameless Scroll
+	#无名秘卷
+	[scrolls.nameless_scroll]
+		#--- Base / shared effects ---
+		#Nameless Scroll neutrality maximum undead-to-player health ratio; excludes bosses and retaliation.
+		#--- 基础／共用效果 ---
+		#无名秘卷中立判定：敌对亡灵最大生命相对玩家最大生命的上限倍数；不含Boss和还击。
+		#Range: 0.0 ~ 100.0
+		namelessNeutralityHealthRatio = 2.5
+		#Nameless Scroll spell damage addition as a fraction.
+		#无名秘卷法术伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		namelessSpellDamage = 0.5
+		#Ordinary Nameless Scroll servant damage addition as a fraction.
+		#无名秘卷普通形态的仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		namelessServantDamage = 0.5
+		#Ordinary Nameless Scroll servant damage resistance fraction.
+		#无名秘卷普通形态的仆从减伤比例。
+		#Range: 0.0 ~ 1.0
+		namelessServantResistance = 0.25
+		#--- Night Cube corrections ---
+		#Corrected Nameless Scroll servant damage addition as a fraction.
+		#--- 暗夜立方修正 ---
+		#无名秘卷修正形态的仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		namelessCorrectedServantDamage = 0.75
+		#Corrected Nameless Scroll servant damage resistance fraction.
+		#无名秘卷修正形态的仆从减伤比例。
+		#Range: 0.0 ~ 1.0
+		namelessCorrectedServantResistance = 0.3
+		#Nameless Scroll soul energy spent per equipment piece.
+		#无名秘卷每件装备消耗的灵魂能量。
+		#Range: 1 ~ 10000
+		namelessArmorCost = 6
+
+	#Transfix Scroll
+	#贯穿秘卷
+	[scrolls.transfix_scroll]
+		#--- Base / shared effects ---
+		#Ordinary Transfix Scroll servant outgoing damage share bypassing defenses.
+		#--- 基础／共用效果 ---
+		#贯穿秘卷普通形态仆从攻击绕过防御的伤害比例。
+		#Range: 0.0 ~ 1.0
+		transfixOutgoing = 0.5
+		#Ordinary Transfix Scroll servant incoming damage share bypassing defenses.
+		#贯穿秘卷普通形态仆从受击绕过防御的伤害比例。
+		#Range: 0.0 ~ 1.0
+		transfixIncoming = 0.5
+		#Transfix Scroll share of False Justice damage converted to pure damage.
+		#贯穿秘卷将虚伪审判伤害转为纯粹伤害的比例。
+		#Range: 0.0 ~ 1.0
+		transfixFalseJusticePureFraction = 0.2
+		#--- Night Cube corrections ---
+		#Corrected Transfix Scroll servant outgoing damage share bypassing defenses.
+		#--- 暗夜立方修正 ---
+		#贯穿秘卷修正形态仆从攻击绕过防御的伤害比例。
+		#Range: 0.0 ~ 1.0
+		transfixCorrectedOutgoing = 0.6
+		#Corrected Transfix Scroll servant incoming damage share bypassing defenses.
+		#贯穿秘卷修正形态仆从受击绕过防御的伤害比例。
+		#Range: 0.0 ~ 1.0
+		transfixCorrectedIncoming = 0.25
+
+	#Forbidden Scroll
+	#禁书秘卷
+	[scrolls.forbidden_scroll]
+		#--- Base / shared effects ---
+		#Ordinary Forbidden Scroll extra functional scroll slots; accessory rules handle overflow on shrink.
+		#--- 基础／共用效果 ---
+		#禁书秘卷普通形态额外提供的功能秘卷槽数；缩容时按饰品槽规则处理溢出。
+		#Range: 0 ~ 8
+		forbiddenExtraSlots = 1
+		#--- Night Cube corrections ---
+		#Corrected Forbidden Scroll extra functional scroll slots; accessory rules handle overflow on shrink.
+		#--- 暗夜立方修正 ---
+		#禁书秘卷修正形态额外提供的功能秘卷槽数；缩容时按饰品槽规则处理溢出。
+		#Range: 0 ~ 8
+		forbiddenCorrectedExtraSlots = 2
+
+	#Unholy Scroll.
+	#不洁秘卷
+	[scrolls.unholy_scroll]
+		#--- Night Cube corrections ---
+		#Unholy Scroll coefficient of the servant damage bonus relative to base damage.
+		#--- 暗夜立方修正 ---
+		#不洁秘卷的仆从伤害加成系数，相对基础伤害计算。
+		#Range: 0.0 ~ 100.0
+		unholyServantDamageCoefficient = 2.5
+		#Unholy Scroll coefficient of servant invulnerability-frame reduction relative to its base value.
+		#不洁秘卷的仆从无敌帧削减加成系数，相对基础值计算。
+		#Range: 0.0 ~ 100.0
+		unholyServantInvulCoefficient = 0.85
+		#Use the installed spell count as capacity; ignores the manual limit when enabled.
+		#自动以已安装法术数量作为可记录上限；开启后忽略手动上限。
+		enableAutoMaxSpells = true
+		#Maximum recorded spells with automatic capacity disabled.
+		#关闭自动上限后，秘卷可记录的最大法术数量。
+		#Range: 1 ~ 10000
+		maxSpells = 300
+		#Maximum luck/magic damage gain coefficient; 1.4 means 140%.
+		#幸运/魔法伤害最大增益系数
+		#Range: 0.0 ~ 100.0
+		luckBonusCoefficient = 1.4
+		#Spell-school Potency saturation limit.
+		#法术流派强效增益的饱和值。
+		#Range: 0.0 ~ 10.0
+		potencyCoefficient = 3.0
+		#Spell-school soul-cost discount saturation limit.
+		#法术流派灵魂消耗折扣的饱和值。
+		#Range: 0.0 ~ 1.0
+		discountCoefficient = 0.5
+		#Maximum total soul-cost discount fraction.
+		#总灵魂消耗的最大折扣比例。
+		#Range: 0.0 ~ 1.0
+		soulDiscountCoefficient = 0.3
+		#Maximum total cast-time discount fraction.
+		#总施法时长的最大折扣比例。
+		#Range: 0.0 ~ 1.0
+		castTimeDiscountCoefficient = 0.2
+
+[lantern_souls]
+
+	#Minister Soul
+	#灾厄教父之魂
+	[lantern_souls.minister]
+		#--- Base / shared effects ---
+		#Available guard charges for the minister soul active ability.
+		#--- 基础／共用效果 ---
+		#灾厄教父魂主动护卫的可用次数。
+		#Range: 0 ~ 64
+		ministerGuardCharges = 5
+		#Minister soul active guard window in ticks.
+		#灾厄教父魂主动护卫窗口，单位游戏刻。
+		#Range: 1 ~ 72000
+		ministerGuardWindowTicks = 1200
+		#Minister soul active summon cooldown in ticks.
+		#灾厄教父魂主动召唤冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		ministerCooldownTicks = 1800
+		#Minister soul new summon lifetime in ticks.
+		#灾厄教父魂新召唤物寿命，单位游戏刻。
+		#Range: 1 ~ 1200
+		ministerSummonLifetimeTicks = 800
+		#Pillager count for the minister soul active summon.
+		#灾厄教父魂主动召唤掠夺者的数量。
+		#Range: 0 ~ 8
+		ministerPillagerCount = 3
+		#Vindicator count for the minister soul active summon.
+		#灾厄教父魂主动召唤卫道士的数量。
+		#Range: 0 ~ 8
+		ministerVindicatorCount = 3
+		#Piker count for the minister soul active summon.
+		#灾厄教父魂主动召唤长枪兵的数量。
+		#Range: 0 ~ 8
+		ministerPikerCount = 2
+		#Cryologer count for the minister soul active summon.
+		#灾厄教父魂主动召唤冰术士的数量。
+		#Range: 0 ~ 8
+		ministerCryologerCount = 1
+		#Ripper count for the minister soul active summon.
+		#灾厄教父魂主动召唤撕裂者的数量。
+		#Range: 0 ~ 8
+		ministerRipperCount = 2
+		#Ravager count for the minister soul active summon.
+		#灾厄教父魂主动召唤劫掠兽的数量。
+		#Range: 0 ~ 8
+		ministerRavagerCount = 1
+		#Minister soul aura radius in blocks.
+		#灾厄教父魂光环半径，单位格。
+		#Range: 0.0 ~ 16.0
+		ministerAuraRadius = 16.0
+
+	#Heresiarch Soul
+	#异教牧首之魂
+	[lantern_souls.heresiarch]
+		#--- Base / shared effects ---
+		#Heresiarch soul active cooldown in ticks.
+		#--- 基础／共用效果 ---
+		#异教牧首魂主动技能冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		heresiarchCooldownTicks = 1200
+		#Ordinary heresiarch soul new summon lifetime in ticks.
+		#异教牧首魂普通形态新召唤物寿命，单位游戏刻。
+		#Range: 1 ~ 800
+		heresiarchSummonLifetimeTicks = 400
+		#Summon copy count for the ordinary heresiarch soul.
+		#异教牧首魂普通形态召唤的副本数量。
+		#Range: 0 ~ 2
+		heresiarchSummonCopies = 1
+		#Heresiarch soul low-health threshold as a maximum-health fraction.
+		#异教牧首魂低生命阈值，按最大生命比例。
+		#Range: 0.0 ~ 1.0
+		heresiarchLowHealthThreshold = 0.5
+		#Heresiarch soul critical-health threshold as a maximum-health fraction.
+		#异教牧首魂濒危生命阈值，按最大生命比例。
+		#Range: 0.0 ~ 1.0
+		heresiarchCriticalHealthThreshold = 0.3
+		#Heresiarch soul Rage amplifier; 0 means level I.
+		#异教牧首魂狂怒效果强度，0表示一级。
+		#Range: 0 ~ 255
+		heresiarchRageAmplifier = 4
+		#Heresiarch soul Rage aura radius in blocks.
+		#异教牧首魂狂怒光环半径，单位格。
+		#Range: 0.0 ~ 24.0
+		heresiarchRageRadius = 24.0
+		#--- Night Cube corrections ---
+		#Corrected heresiarch soul new summon lifetime in ticks.
+		#--- 暗夜立方修正 ---
+		#异教牧首魂修正形态新召唤物寿命，单位游戏刻。
+		#Range: 1 ~ 800
+		heresiarchCorrectedSummonLifetimeTicks = 800
+		#Summon copy count for the corrected heresiarch soul.
+		#异教牧首魂修正形态召唤的副本数量。
+		#Range: 0 ~ 2
+		heresiarchCorrectedSummonCopies = 2
+
+	#Redstone Golem Soul
+	#红石傀儡之魂
+	[lantern_souls.redstone]
+		#--- Base / shared effects ---
+		#Ordinary Redstone Golem soul maximum-health bonus fraction.
+		#--- 基础／共用效果 ---
+		#红石傀儡之魂普通形态的生命加成比例。
+		#Range: 0.0 ~ 100.0
+		redstoneHealth = 0.4
+		#Redstone soul ordinary damage addition as a fraction.
+		#红石魂普通形态的伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		redstoneDamage = 0.25
+		#Flat armor granted by the ordinary redstone soul.
+		#红石魂普通形态提供的固定护甲。
+		#Range: 0.0 ~ 10000.0
+		redstoneArmor = 6.0
+		#Flat armor toughness granted by the ordinary redstone soul.
+		#红石魂普通形态提供的固定护甲韧性。
+		#Range: 0.0 ~ 10000.0
+		redstoneToughness = 4.0
+		#Redstone soul active summon cooldown in ticks.
+		#红石魂主动召唤冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		redstoneCooldownTicks = 2400
+		#Ordinary redstone soul new summon lifetime in ticks.
+		#红石魂普通形态新召唤物寿命，单位游戏刻。
+		#Range: 1 ~ 1200
+		redstoneSummonLifetimeTicks = 900
+		#--- Night Cube corrections ---
+		#Redstone soul corrected health multiplier addition.
+		#--- 暗夜立方修正 ---
+		#红石魂修正形态的生命加成比例。
+		#Range: 0.0 ~ 100.0
+		redstoneCorrectedHealth = 0.8
+		#Redstone soul corrected damage addition as a fraction.
+		#红石魂修正形态的伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		redstoneCorrectedDamage = 0.4
+		#Flat armor granted by the corrected redstone soul.
+		#红石魂修正形态提供的固定护甲。
+		#Range: 0.0 ~ 10000.0
+		redstoneCorrectedArmor = 12.0
+		#Flat armor toughness granted by the corrected redstone soul.
+		#红石魂修正形态提供的固定护甲韧性。
+		#Range: 0.0 ~ 10000.0
+		redstoneCorrectedToughness = 8.0
+		#Corrected redstone soul new summon lifetime in ticks.
+		#红石魂修正形态新召唤物寿命，单位游戏刻。
+		#Range: 1 ~ 1200
+		redstoneCorrectedSummonLifetimeTicks = 1200
+
+	#Redstone Monstrosity Soul
+	#红石巨兽之魂
+	[lantern_souls.monstrosity]
+		#--- Base / shared effects ---
+		#Monstrosity soul armor multiplier addition as a fraction.
+		#--- 基础／共用效果 ---
+		#巨兽魂提供的护甲倍率加成比例。
+		#Range: 0.0 ~ 100.0
+		monstrosityArmor = 0.25
+		#Monstrosity soul armor toughness multiplier addition as a fraction.
+		#巨兽魂提供的护甲韧性倍率加成比例。
+		#Range: 0.0 ~ 100.0
+		monstrosityToughness = 0.25
+		#Monstrosity soul outgoing explosion-damage multiplier.
+		#巨兽之魂造成的爆炸伤害倍率。
+		#Range: 0.0 ~ 100.0
+		monstrosityExplosionDamage = 2.0
+		#Monstrosity soul incoming explosion-damage multiplier.
+		#巨兽之魂受到的爆炸伤害倍率。
+		#Range: 0.0 ~ 1.0
+		monstrosityExplosionTaken = 0.25
+		#Monstrosity soul active cooldown in game ticks.
+		#巨兽魂主动技能冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		monstrosityCooldownTicks = 1200
+		#Bomb count for the ordinary monstrosity soul active ability.
+		#巨兽魂普通形态主动生成的炸弹数量。
+		#Range: 1 ~ 16
+		monstrosityBombCount = 3
+		#--- Night Cube corrections ---
+		#Bomb count for the corrected monstrosity soul active ability.
+		#--- 暗夜立方修正 ---
+		#巨兽魂修正形态主动生成的炸弹数量。
+		#Range: 1 ~ 16
+		monstrosityCorrectedBombCount = 5
+
+	#Ender Keeper Soul
+	#末影守望者之魂
+	[lantern_souls.watcher]
+		#--- Base / shared effects ---
+		#Watcher soul healing as a fraction of damage dealt.
+		#--- 基础／共用效果 ---
+		#守望者魂按造成伤害回复生命的比例。
+		#Range: 0.0 ~ 1.0
+		watcherHealFraction = 0.05
+		#Ender Keeper soul chance to apply or stack Void Erosion on hit.
+		#末影守望者之魂命中时附加或叠加虚空之蚀的概率。
+		#Range: 0.0 ~ 1.0
+		watcherSappedChance = 0.5
+		#Watcher soul additional damage as a fraction of target maximum health.
+		#守望者魂按目标最大生命追加的伤害比例。
+		#Range: 0.0 ~ 1.0
+		watcherMaxHealthDamage = 0.02
+		#Watcher soul active storm window in ticks.
+		#守望者魂主动风暴窗口，单位游戏刻。
+		#Range: 1 ~ 160
+		watcherStormDurationTicks = 160
+		#Ordinary watcher soul active storm radius in blocks.
+		#守望者魂普通形态主动风暴半径，单位格。
+		#Range: 1 ~ 16
+		watcherStormRadius = 12
+		#Watcher soul active storm cooldown in ticks.
+		#守望者魂主动风暴冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		watcherStormCooldownTicks = 1200
+		#Watcher soul base bolt damage.
+		#守望者魂雷击基础伤害。
+		#Range: 0.0 ~ 10000.0
+		watcherBoltDamage = 6.0
+		#--- Night Cube corrections ---
+		#Corrected watcher soul active storm radius in blocks.
+		#--- 暗夜立方修正 ---
+		#守望者魂修正形态主动风暴半径，单位格。
+		#Range: 1 ~ 16
+		watcherCorrectedStormRadius = 16
+
+	#Brood Mother Soul
+	#育母蜘蛛之魂
+	[lantern_souls.brood]
+		#--- Base / shared effects ---
+		#Brood mother ordinary servant damage addition.
+		#--- 基础／共用效果 ---
+		#育母蜘蛛魂普通形态的仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		broodDamage = 0.75
+		#Brood mother ordinary servant health addition.
+		#育母蜘蛛魂普通形态的仆从生命加成比例。
+		#Range: 0.0 ~ 100.0
+		broodHealth = 0.25
+		#Brood mother soul active summon cooldown in ticks.
+		#育母蜘蛛魂主动召唤冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		broodCooldownTicks = 1800
+		#Brood mother soul new summon lifetime in ticks.
+		#育母蜘蛛魂新召唤物寿命，单位游戏刻。
+		#Range: 1 ~ 1200
+		broodSummonLifetimeTicks = 800
+		#--- Night Cube corrections ---
+		#Brood mother corrected servant damage addition.
+		#--- 暗夜立方修正 ---
+		#育母蜘蛛魂修正形态的仆从伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		broodCorrectedDamage = 1.0
+		#Brood mother corrected servant health addition.
+		#育母蜘蛛魂修正形态的仆从生命加成比例。
+		#Range: 0.0 ~ 100.0
+		broodCorrectedHealth = 0.5
+
+	#Wither Soul
+	#凋灵之魂
+	[lantern_souls.wither]
+		#--- Base / shared effects ---
+		#Ordinary wither soul incoming ranged damage multiplier during the active shield; replaces rather than multiplies the passive ranged multiplier.
+		#--- 基础／共用效果 ---
+		#凋灵魂普通形态主动护盾期间的远程承伤倍率；替代被动远程倍率，不叠乘。
+		#Range: 0.0 ~ 1.0
+		witherTaken = 0.4
+		#Ordinary wither soul passive incoming ranged damage multiplier; the active value replaces it while the shield is active.
+		#凋灵魂普通形态被动远程承伤倍率；主动护盾生效时改用主动值。
+		#Range: 0.0 ~ 1.0
+		witherRangedTaken = 0.6
+		#Wither soul active shield cooldown in ticks.
+		#凋灵魂主动护盾冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		witherShieldCooldownTicks = 600
+		#Ordinary wither soul active shield window in ticks.
+		#凋灵魂普通形态主动护盾窗口，单位游戏刻。
+		#Range: 1 ~ 200
+		witherShieldDurationTicks = 100
+		#--- Night Cube corrections ---
+		#Corrected wither soul active shield ranged damage multiplier; replaces the passive multiplier.
+		#--- 暗夜立方修正 ---
+		#凋灵魂修正形态主动护盾期间的远程承伤倍率；替代被动远程倍率，不叠乘。
+		#Range: 0.0 ~ 1.0
+		witherCorrectedTaken = 0.2
+		#Corrected wither soul passive incoming ranged damage multiplier; the active value replaces it while the shield is active.
+		#凋灵魂修正形态被动远程承伤倍率；主动护盾生效时改用主动值。
+		#Range: 0.0 ~ 1.0
+		witherCorrectedRangedTaken = 0.4
+		#Corrected wither soul active shield window in ticks.
+		#凋灵魂修正形态主动护盾窗口，单位游戏刻。
+		#Range: 1 ~ 200
+		witherCorrectedShieldDurationTicks = 200
+
+	#Ender Dragon Soul
+	#末影龙之魂
+	[lantern_souls.dragon]
+		#--- Base / shared effects ---
+		#Ordinary dragon soul breath damage multiplier.
+		#--- 基础／共用效果 ---
+		#龙魂普通形态的龙息伤害倍率。
+		#Range: 0.0 ~ 16.0
+		dragonBreathMultiplier = 1.5
+		#Dragon soul active flight window in game ticks.
+		#龙魂主动飞行窗口，单位游戏刻。
+		#Range: 1 ~ 400
+		dragonFlightDurationTicks = 400
+		#Dragon soul flight cooldown in ticks.
+		#龙魂主动飞行冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		dragonCooldownTicks = 1200
+		#Dragon soul dash cooldown in ticks.
+		#龙魂冲刺冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		dragonDashCooldownTicks = 40
+		#--- Night Cube corrections ---
+		#Corrected dragon soul breath damage multiplier.
+		#--- 暗夜立方修正 ---
+		#龙魂修正形态的龙息伤害倍率。
+		#Range: 0.0 ~ 16.0
+		dragonCorrectedBreathMultiplier = 2.0
+
+	#Apostle Soul
+	#使徒之魂
+	[lantern_souls.apostle]
+		#--- Base / shared effects ---
+		#Apostle soul incoming damage multiplier in the Nether.
+		#--- 基础／共用效果 ---
+		#使徒魂在下界的承伤倍率。
+		#Range: 0.0 ~ 1.0
+		apostleNetherTaken = 0.5
+		#Apostle soul arrow damage multiplier.
+		#使徒魂箭矢伤害倍率。
+		#Range: 0.0 ~ 100.0
+		apostleArrowMultiplier = 2.0
+		#Apostle soul incoming damage multiplier during the active title.
+		#使徒魂主动称号期间的承伤倍率。
+		#Range: 0.0 ~ 1.0
+		apostleTitleTaken = 0.85
+		#Apostle soul active title cooldown in ticks.
+		#使徒魂主动称号冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		apostleCooldownTicks = 1200
+		#Apostle soul active title window in ticks.
+		#使徒魂主动称号窗口，单位游戏刻。
+		#Range: 1 ~ 400
+		apostleTitleDurationTicks = 400
+		#Apostle soul passive healing as a maximum-health fraction.
+		#使徒魂被动治疗的最大生命比例。
+		#Range: 0.0 ~ 1.0
+		apostlePassiveHealFraction = 0.01
+		#Apostle soul active title healing as a maximum-health fraction.
+		#使徒魂主动称号治疗的最大生命比例。
+		#Range: 0.0 ~ 1.0
+		apostleTitleHealFraction = 0.03
+		#Apostle soul Nether/Void school damage addition as a fraction.
+		#使徒魂下界/虚空流派伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		apostleNetherVoidSchoolDamage = 0.5
+		#Apostle soul other-school damage addition as a fraction.
+		#使徒魂其它流派的伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		apostleOtherSchoolDamage = 0.75
+		#Apostle soul Glory armor multiplier addition as a fraction.
+		#使徒魂荣光提供的护甲倍率加成比例。
+		#Range: 0.0 ~ 100.0
+		apostleGloryArmor = 0.5
+		#Apostle soul Glory toughness multiplier addition as a fraction.
+		#使徒魂荣光提供的韧性倍率加成比例。
+		#Range: 0.0 ~ 100.0
+		apostleGloryToughness = 0.5
+		#Apostle soul active title life-leech fraction.
+		#使徒魂主动称号的吸血比例。
+		#Range: 0.0 ~ 1.0
+		apostleTitleLeechFraction = 0.15
+		#Apostle soul Void Touched proc probability from 0 to 1.
+		#使徒魂虚空之触触发概率，0至1。
+		#Range: 0.0 ~ 1.0
+		apostleVoidTouchedChance = 0.3
+
+	#Vizier Soul
+	#灾厄宰相之魂
+	[lantern_souls.vizier]
+		#--- Base / shared effects ---
+		#Ordinary Vizier soul incoming damage multiplier while casting.
+		#--- 基础／共用效果 ---
+		#灾厄宰相魂普通形态施法期间的承伤倍率。
+		#Range: 0.0 ~ 1.0
+		vizierCastTaken = 0.5
+		#Lifetime in ticks of new Vizier soul tormentors and ordinary shadows; corrected shadows use a separate setting.
+		#灾厄宰相魂新折磨者及普通阴影的寿命，单位游戏刻；修正阴影另设。
+		#Range: 1 ~ 600
+		vizierLifetimeTicks = 600
+		#Vizier soul passive summon cooldown in ticks.
+		#灾厄宰相魂被动召唤冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		vizierPassiveCooldownTicks = 200
+		#Vizier soul active cooldown in ticks.
+		#灾厄宰相魂主动技能冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		vizierCooldownTicks = 1200
+		#Maximum tormentors for the ordinary Vizier soul.
+		#灾厄宰相魂普通形态的折磨者数量上限。
+		#Range: 1 ~ 16
+		vizierMaxTormentors = 4
+		#Owner healing fraction of recorded tormentor health when a Vizier soul summon dies in combat.
+		#灾厄宰相魂召唤物战死时，按记录的折磨者生命基数治疗主人的比例。
+		#Range: 0.0 ~ 1.0
+		vizierDeathHealFraction = 0.25
+		#--- Night Cube corrections ---
+		#Corrected Vizier soul shadow incoming-damage multiplier.
+		#--- 暗夜立方修正 ---
+		#灾厄宰相之魂修正形态的阴影承伤倍率。
+		#Range: 0.0 ~ 1.0
+		vizierCorrectedShadowTaken = 0.75
+		#Corrected Vizier soul incoming damage multiplier while casting.
+		#灾厄宰相魂修正形态施法期间的承伤倍率。
+		#Range: 0.0 ~ 1.0
+		vizierCorrectedCastTaken = 0.4
+		#Lifetime in ticks of new shadows from the corrected Vizier soul.
+		#灾厄宰相魂修正形态新阴影的寿命，单位游戏刻。
+		#Range: 1 ~ 900
+		vizierCorrectedShadowLifetimeTicks = 900
+		#Maximum tormentors for the corrected Vizier soul.
+		#灾厄宰相魂修正形态的折磨者数量上限。
+		#Range: 1 ~ 16
+		vizierCorrectedMaxTormentors = 6
+		#Corrected Vizier soul attack damage multiplier.
+		#灾厄宰相魂修正形态的攻击伤害倍率。
+		#Range: 0.0 ~ 100.0
+		vizierCorrectedAttackMultiplier = 1.25
+
+	#Crone Soul
+	#巫婆之魂
+	[lantern_souls.crone]
+		#--- Base / shared effects ---
+		#Lantern item cooldown in ticks set by successful Crone active use.
+		#--- 基础／共用效果 ---
+		#巫婆魂主动成功使用时设置的提灯物品冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		croneCooldownTicks = 1800
+		#Crone soul incoming magic damage multiplier.
+		#巫婆魂的魔法承伤倍率。
+		#Range: 0.0 ~ 1.0
+		croneMagicTaken = 0.15
+		#Crone soul incoming magic damage multiplier with the witch robe.
+		#穿戴女巫长袍时巫婆魂的魔法承伤倍率。
+		#Range: 0.0 ~ 1.0
+		croneRobeMagicTaken = 0.5
+		#Crone soul reflection probability from 0 to 1.
+		#巫婆魂反射概率，0至1。
+		#Range: 0.0 ~ 1.0
+		croneReflectChance = 0.5
+		#Crone soul reflection cooldown in ticks.
+		#巫婆魂反射冷却，单位游戏刻。
+		#Range: 1 ~ 72000
+		croneReflectCooldownTicks = 100
+		#Crone soul throwing speed multiplier.
+		#巫婆魂投掷速度倍率。
+		#Range: 0.0 ~ 100.0
+		croneThrowSpeedMultiplier = 1.5
+		#Crone soul curse radius in blocks.
+		#巫婆魂诅咒作用半径，单位格。
+		#Range: 0.0 ~ 6.0
+		croneCurseRadius = 6.0
+		#Crone soul brew effect amplifier level addition.
+		#巫婆魂酿造效果强度的等级加值。
+		#Range: 0 ~ 255
+		croneBrewAmplifierBonus = 1
+		#--- Night Cube corrections ---
+		#Crone soul brew retention probability from 0 to 1.
+		#--- 暗夜立方修正 ---
+		#巫婆魂保留酿造物的概率，0至1。
+		#Range: 0.0 ~ 1.0
+		croneBrewRetentionChance = 0.5
+		#Crone soul drinking speed multiplier.
+		#巫婆魂饮用速度倍率。
+		#Range: 0.01 ~ 100.0
+		croneDrinkSpeedMultiplier = 1.5
+
+	#School Souls
+	#流派魂共用
+	[lantern_souls.school]
+		#--- Base / shared effects ---
+		#Five school souls: ordinary matching servant and player spell damage addition.
+		#--- 基础／共用效果 ---
+		#五流派魂普通形态：对应仆从和玩家法术的伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		schoolDamage = 0.5
+		#Five school souls: ordinary matching servant resistance.
+		#五流派魂普通形态：对应仆从的减伤比例。
+		#Range: 0.0 ~ 1.0
+		schoolResistance = 0.25
+		#--- Night Cube corrections ---
+		#Five school souls: corrected matching damage addition.
+		#--- 暗夜立方修正 ---
+		#五流派魂修正形态：对应伤害加成比例。
+		#Range: 0.0 ~ 100.0
+		schoolCorrectedDamage = 0.75
+		#Five school souls: corrected matching servant resistance.
+		#五流派魂修正形态：对应仆从的减伤比例。
+		#Range: 0.0 ~ 1.0
+		schoolCorrectedResistance = 0.5
+
+	#Generic Soul
+	#通用魂继承
+	[lantern_souls.generic]
+		#--- Base / shared effects ---
+		#Generic soul ordinary captured base-health inheritance.
+		#--- 基础／共用效果 ---
+		#通用魂普通形态继承捕获时基础生命的比例。
+		#Range: 0.0 ~ 100.0
+		genericHealthRatio = 0.05
+		#Generic soul ordinary captured combat inheritance.
+		#通用魂普通形态继承捕获时战斗属性的比例。
+		#Range: 0.0 ~ 100.0
+		genericCombatRatio = 0.25
+		#--- Night Cube corrections ---
+		#Generic soul corrected captured base-health inheritance.
+		#--- 暗夜立方修正 ---
+		#通用魂修正形态继承捕获时基础生命的比例。
+		#Range: 0.0 ~ 100.0
+		genericCorrectedHealthRatio = 0.1
+		#Generic soul corrected captured combat inheritance.
+		#通用魂修正形态继承捕获时战斗属性的比例。
+		#Range: 0.0 ~ 100.0
+		genericCorrectedCombatRatio = 0.5
+
+	#Soul Contract
+	#魂契约
+	[lantern_souls.contract]
+		#--- Base / shared effects ---
+		#Ordinary contract projection inheritance ratio.
+		#--- 基础／共用效果 ---
+		#契约普通形态投影继承比例。
+		#Range: 0.01 ~ 1.0
+		contractProjectionRatio = 0.75
+		#Lantern contract maximum-health healing fraction per second.
+		#提灯契约每秒治疗的最大生命比例。
+		#Range: 0.0 ~ 1.0
+		contractHealingPerSecond = 0.01
+		#Health fraction captured by a new death rescue; minimum one health remains. Existing wounded snapshots are retained.
+		#新死亡救援捕获的生命比例，至少保留1点生命；保留已有受伤快照。
+		#Range: 0.0 ~ 1.0
+		contractRescueHealthFraction = 0.05
+		#--- Night Cube corrections ---
+		#Corrected contract projection inheritance ratio.
+		#--- 暗夜立方修正 ---
+		#契约修正形态投影继承比例。
+		#Range: 0.01 ~ 1.0
+		contractCorrectedProjectionRatio = 1.0
+
+	#Soul Projection
+	#魂投影
+	[lantern_souls.projection]
+		#--- Base / shared effects ---
+		#Item cooldown in ticks triggered by a new projection summon; existing longer remaining cooldown is preserved.
+		#--- 基础／共用效果 ---
+		#新投影召唤触发的物品冷却，单位游戏刻；按原有规则保留更长的当前剩余冷却。
+		#Range: 0 ~ 72000
+		projectionSummonCooldownTicks = 3600
+		#Extra cooldown on projection false death, in game ticks.
+		#投影假死时，在基础冷却上额外增加的游戏刻数。
+		#Range: 0 ~ 72000
+		projectionDeathExtraTicks = 1200
+		#Extra projection cooldown on contracted-body near-death protection, in game ticks.
+		#契约本体濒死保护时，在投影基础冷却上额外增加的游戏刻数。
+		#Range: 0 ~ 72000
+		projectionBodyDeathExtraTicks = 12000
+		#Cooldown after this contract blocks a lethal hit, in game ticks.
+		#此契约抵挡致命一击后的护主冷却，单位游戏刻。
+		#Range: 0 ~ 72000
+		projectionGuardCooldownTicks = 2400
+		#Maximum fraction removed from the actual remaining item cooldown on active recall; reduction = projection health fraction * this value,
+		#with at least 1 tick remaining.
+		#主动召回时对当前实际剩余物品冷却的最大减免比例；实际减免=投影生命比例×此值，至少剩1 tick。
+		#Range: 0.0 ~ 1.0
+		projectionRecallMaxReduction = 0.95
+
+	#Support Summons
+	#支援召唤
+	[lantern_souls.support]
+		#--- Base / shared effects ---
+		#Lantern support healing as a maximum-health fraction.
+		#--- 基础／共用效果 ---
+		#提灯支援治疗的最大生命比例。
+		#Range: 0.0 ~ 1.0
+		supportHealFraction = 0.02
+
+	#Lantern Offhand
+	#提灯副手
+	[lantern_souls.offhand]
+		#--- Base / shared effects ---
+		#Apply Wane on attacks while holding the lantern in the offhand.
+		#--- 基础／共用效果 ---
+		#副手持有提灯时，攻击附加衰弱效果。
+		offhandWaneEnabled = true
+		#Lantern offhand attack damage bonus fraction; 0 disables.
+		#提灯副手攻击伤害加成比例；0关闭。
+		#Range: 0.0 ~ 100.0
+		offhandAttackDamageBonus = 0.25
+		#Soul-energy harvest multiplier while held in the offhand.
+		#副手时灵魂能量收获倍率
+		#Range: 1.0 ~ 100.0
+		offhandSoulMultiplier = 2.0
+
+	#Lantern Base
+	#提灯本体
+	[lantern_souls.base]
+		#--- Base / shared effects ---
+		#Enable lantern passives: sun protection, healing and soul buffering.
+		#--- 基础／共用效果 ---
+		#开启亡灵提灯被动效果（防晒/回血/灵魂缓冲）
+		passiveEnabled = true
+		#Health restored per healing pulse, in health points (1 is half a heart).
+		#每次治疗回血量（半颗心为单位，1=0.5❤）
+		#Range: 1 ~ 100
+		passiveHealAmount = 2
+		#Fixed soul-buffer capacity without a bound Soul Arca.
+		#未绑定灵魂方舟时的固定缓冲容量。
+		#Range: 100 ~ 1000000
+		bufferCapacity = 10000
+		#Soul-buffer capacity with a bound Soul Arca, as a fraction of maximum soul energy.
+		#绑定灵魂方舟时，缓冲容量占最大灵魂能量的比例。
+		#Range: 0.0 ~ 1.0
+		bufferCapacityRatio = 0.25
+		#Soul-energy fraction above which newly gained souls enter the lantern buffer.
+		#灵魂能量高于此比例时，将新增灵魂存入提灯缓冲。
+		#Range: 0.0 ~ 1.0
+		bufferThresholdHigh = 0.6
+		#Soul-energy fraction below which souls are withdrawn from the lantern buffer.
+		#灵魂能量低于此比例时，从提灯缓冲提取灵魂补充。
+		#Range: 0.0 ~ 1.0
+		bufferThresholdLow = 0.4
+
+[items]
+
+	#Void armor; armor points also determine elemental resistance.
+	#虚无套装；护甲值也参与元素减伤计算。
+	[items.nihil_armor]
+		#Helmet armor points.
+		#头盔护甲值。
+		#Range: > 0
+		armorHelmet = 4
+		#Chestplate armor points.
+		#胸甲护甲值。
+		#Range: > 0
+		armorChestplate = 9
+		#Leggings armor points.
+		#护腿护甲值。
+		#Range: > 0
+		armorLeggings = 7
+		#Boots armor points.
+		#靴子护甲值。
+		#Range: > 0
+		armorBoots = 4
+		#Armor toughness per piece.
+		#每件护甲韧性。
+		#Range: 0.0 ~ 3.4028234663852886E38
+		toughnessPerPiece = 3.5
+		#Knockback resistance per piece, as a fraction.
+		#每件击退抗性，比例。
+		#Range: 0.0 ~ 1.0
+		knockbackResistancePerPiece = 0.4
+		#Soul discount per piece, in percent.
+		#每件灵魂减耗，百分数。
+		#Range: 0 ~ 100
+		soulDiscountPercentPerPiece = 6
+		#Evasion chance per piece, as a fraction; total capped at one.
+		#每件闪避概率，比例；合计不超过一。
+		#Range: 0.0 ~ 1.0
+		evasionChancePerPiece = 0.1
+		#Falling-out-of-world damage reduction per piece, as a fraction.
+		#每件坠入虚空伤害减免，比例。
+		#Range: 0.0 ~ 1.0
+		voidDamageReductionPerPiece = 0.25
+		#Full-set additional melee damage, as a fraction.
+		#全套近战伤害额外加成，比例。
+		#Range: 0.0 ~ 100.0
+		fullSetMeleeDamageBonus = 0.15
+		#Health restored by the full set every two seconds; zero disables recovery.
+		#全套每两秒回复的生命值；零关闭恢复。
+		#Range: 0.0 ~ 3.4028234663852886E38
+		regenerationAmount = 1.0
+
+	#Void domain shared by armor and sword; cooldown begins at activation.
+	#护甲与剑共用的虚无领域；冷却从启动时计算。
+	[items.nihil_domain]
+		#Enable both armor and sword domain activation.
+		#启用护甲与剑的领域触发。
+		enabled = true
+		#Armor activation requires health strictly below this fraction after damage.
+		#护甲触发要求受击后生命比例严格低于此值。
+		#Range: 0.0 ~ 1.0
+		armorHealthThreshold = 0.75
+		#Armor activation chance after qualifying damage; zero leaves sword activation available.
+		#符合条件的护甲受击触发概率；零仍允许剑触发。
+		#Range: 0.0 ~ 1.0
+		armorTriggerChance = 0.25
+		#Shared cooldown in ticks; zero disables the timer, not active-domain reentry protection.
+		#共享冷却，游戏刻；零关闭计时，活动领域仍禁止重入。
+		#Range: 0 ~ 72000
+		cooldownTicks = 160
+		#Domain lifetime in ticks, including its opening and closing.
+		#领域持续时间，游戏刻，包含展开与收束。
+		#Range: 25 ~ 72000
+		durationTicks = 80
+		#Maximum horizontal domain radius, in blocks.
+		#领域最大水平半径，格。
+		#Range: 0.1 ~ 64.0
+		radius = 10.0
+		#Domain height above and below its center, in blocks.
+		#领域中心上方和下方各自的高度，格。
+		#Range: 0.1 ~ 32.0
+		halfHeight = 3.0
+		#Multiplier to armor evasion while its owner has an active domain.
+		#持有者领域活动时的护甲闪避概率倍率。
+		#Range: 0.0 ~ 100.0
+		evasionMultiplier = 1.5
+
+	#Ruby Ring.
+	#红宝石戒指
+	[items.ruby_ring]
+		#Magic invulnerability-frame reduction in ticks.
+		#魔法攻击无敌帧削减量，单位游戏刻。
+		#Range: 0.0 ~ 100.0
+		magicInvulReduction = 5.0
+
+	#Crystal rolls: multiply:x adds a fractional bonus; add:x adds a flat bonus. One operation per stat per crystal.
+	#水晶词条：multiply:x为比例加成，add:x为固定加值；单颗水晶的同一属性只采用一种运算。
+	[items.ominous_crystal]
+		#Random attack-damage option list; multiply:x is a multiplier addition and add:x is a flat addition.
+		#攻击伤害加成可选值列表，随机从中选取一个
+		attackDamageOptions = ["multiply:0.05", "multiply:0.10", "add:1.0", "add:1.5"]
+		#Random attack-speed options use the same format; mutually exclusive with attack damage on one crystal.
+		#攻击速度加成可选值列表，格式同攻击伤害。与攻击伤害互斥，同一水晶二选一
+		attackSpeedOptions = ["multiply:0.05", "multiply:0.10", "add:0.1", "add:0.2"]
+		#Random durability reduction fractions; 0.05 means a 5% reduction.
+		#耐久度削减百分比可选值列表（小数，如 0.05 = -5%），随机从中选取一个
+		durabilityReductionOptions = ["0.15", "0.20", "0.25"]
+		#Random spell-damage multiplier additions; wand weapons only.
+		#随机选取的法术伤害倍率加值，仅法杖类武器生效。
+		magicDamageOptions = ["0.15", "0.10", "0.05"]
+		#Random Potency additions for wand weapons; mutually exclusive with spell damage on one crystal.
+		#法杖类武器随机选取的强效加值；单颗水晶内与法术伤害词条互斥。
+		potencyOptions = ["0.5", "1.0"]
+
+	#Jade Pendant.
+	#玉佩
+	[items.jade_amulet]
+		#Magic damage multiplier addition.
+		#魔法伤害乘数加成
+		#Range: 0.0 ~ 10.0
+		magicDamageMultiplier = 0.15
+		#Jade pendant probability in tomb loot chests, from 0 to 1.
+		#墓穴战利品箱中出现玉佩的概率（0.0~1.0）
+		#Range: 0.0 ~ 1.0
+		lootChance = 0.05
+
+	#Yin/Yang jade pendants.
+	#阴阳玉佩
+	[items.jade_attunement]
+		#Yang pendant servant attack damage bonus in percent per luck point.
+		#阳玉：每 1 点幸运值提供的仆从攻击伤害加成百分比
+		#Range: 0.0 ~ 100.0
+		luckDamagePercentPerPoint = 4.0
+		#Yin pendant servant attack damage bonus in percent per curse.
+		#阴玉：每 1 点诅咒数提供的仆从攻击伤害加成百分比
+		#Range: 0.0 ~ 100.0
+		curseDamagePercentPerCurse = 4.0
+		#Scale when inheriting both Yin and Yang abilities; 0.5 halves them.
+		#阴阳玉：同时继承阴玉阳玉能力时的数值系数
+		#Range: 0.0 ~ 10.0
+		confluentMultiplier = 0.5
+		#Fraction of accessory attack damage bonuses inherited as servant attack damage.
+		#阴阳玉：饰品攻击伤害加成转化为仆从攻击伤害的继承比例
+		#Range: 0.0 ~ 100.0
+		attackDamageToServantRatio = 1.0
+		#Fraction of accessory maximum-health bonuses inherited as servant maximum health.
+		#阴阳玉：饰品最大生命值加成转化为仆从最大生命值的继承比例
+		#Range: 0.0 ~ 100.0
+		maxHealthToServantRatio = 1.0
+
+	#Gale Plume Fan.
+	#烈风羽扇
+	[items.gale_plume_fan]
+		#Cyclone Potency addition above the base of 0.
+		#龙卷风强效 增益（基础为 0）
+		#Range: 0 ~ 100
+		cyclonePotency = 4
+		#Cyclone active lifetime addition in ticks above the base of 600.
+		#龙卷风持续时间 增益（tick，基础 600）
+		#Range: 0 ~ 72000
+		cycloneDuration = 300
+		#Initial upward Y velocity when casting in midair.
+		#悬空施法时的上升初速度 Y 分量
+		#Range: 0.0 ~ 10.0
+		riseVelocity = 2.2
+		#Ability cooldown in game ticks.
+		#施法冷却时间（tick，20 tick = 1 秒）
+		#Range: 0 ~ 72000
+		cooldownTicks = 100
+
+	#Gale Mace.
+	#烈风重锤
+	[items.gale_mace]
+		#Additional smash damage per block fallen.
+		#重击时，每格摔落距离增加的伤害。
+		#Range: 0.0 ~ 50.0
+		smashDamagePerBlock = 3.0
+		#Base area-pull radius, in blocks.
+		#范围牵引的基础半径，单位格。
+		#Range: 0.0 ~ 16.0
+		aoeRadiusBase = 4.0
+		#Maximum area-pull radius, in blocks.
+		#范围牵引的半径上限，单位格。
+		#Range: 0.0 ~ 32.0
+		aoeRadiusMax = 8.0
+		#Base area-pull strength.
+		#范围牵引的基础力度。
+		#Range: 0.0 ~ 5.0
+		aoeKnockbackBase = 0.45
+		#Upward rebound-speed coefficient after a smash, scaled by fall distance.
+		#重击后的向上弹起速度系数，随摔落距离增大。
+		#Range: 0.0 ~ 3.0
+		bounceFactor = 0.25
+
+	#Gale's Wake.
+	#玉影凌风
+	[items.gales_wake]
+		#True-damage fraction added to ultimate slashes, finisher and rift pulses, based on each segment's original damage; zero disables it.
+		#大招连斩、终结斩和裂隙脉冲追加的真实伤害比例，基于该段原始伤害；0关闭
+		#Range: 0.0 ~ 1.0
+		ultimateTrueDamageRatio = 0.25
+
+	#Gale Charge.
+	#烈风弹
+	[items.gale_charge]
+		#Left-click pulling radius in blocks.
+		#左键吸引聚怪半径（格）
+		#Range: 1.0 ~ 32.0
+		pullRadius = 5.0
+		#Left-click pull strength.
+		#左键吸引力度
+		#Range: 0.1 ~ 5.0
+		pullStrength = 0.8
+		#Right-click wind-burst knockback radius in blocks.
+		#右键风爆击退半径（格）
+		#Range: 1.0 ~ 32.0
+		blastRadius = 6.0
+		#Right-click knockback strength.
+		#右键击退力度
+		#Range: 0.1 ~ 10.0
+		blastStrength = 1.5
+		#Additional upward velocity applied to the thrower by the right-click burst.
+		#右键风爆对投掷者自身的额外上推速度
+		#Range: 0.0 ~ 3.0
+		selfPushY = 1.2
+		#Throw cooldown in game ticks.
+		#投掷冷却时间（tick，20 tick = 1 秒）
+		#Range: 0 ~ 72000
+		cooldownTicks = 20
+
+	#Sculk Heart.
+	#幽匿之心
+	[items.sculk_heart]
+		#Base sonic damage.
+		#音波基础伤害
+		#Range: 0.0 ~ 100.0
+		sonicBoomBaseDamage = 10.0
+		#Base sonic damage added per Potency level.
+		#每级 Potency 增加的基础伤害
+		#Range: 0.0 ~ 50.0
+		sonicBoomPotencyPerLevel = 2.0
+		#Sonic range in blocks.
+		#音波射程（格）
+		#Range: 1 ~ 64
+		sonicBoomRange = 15
+		#Flat unarmed damage addition.
+		#空手伤害加成（固定值）
+		#Range: 0.0 ~ 50.0
+		unarmedDamageBonus = 8.0
+		#Maximum soul-energy percentage gained per kill.
+		#每次击杀获得的最大灵魂能量百分比
+		#Range: 0.0 ~ 100.0
+		soulGainPercent = 1.0
+		#Experience-to-spread divisor; spread = floor(experience / divisor), with a minimum of 1.
+		#经验值转化为扩散量的除数，扩散量 = 经验 / 除数（向下取整，最少 1）
+		#Range: 1 ~ 1000
+		sculkXpDivisor = 7
+		#Summon a Warden on death.
+		#死后是否召唤监守者
+		summonWardenOnDeath = true
+		#Sculk Heart probability in ancient-city loot chests, from 0 to 1.
+		#远古城市战利品箱中出现幽匿之心的概率（0.0~1.0）
+		#Range: 0.0 ~ 1.0
+		lootChance = 0.05
+		#Summoned Warden lifetime in game ticks.
+		#召唤的监守者消失时间（tick）
+		#Range: 100 ~ 72000
+		wardenDespawnTicks = 2400
+
+[combat]
+
+	#Flawless Set configuration.
+	#无瑕套装（Flawless Set）
+	[combat.holy_armor]
+		#Per-piece Focus cooldown speed bonus; stacks with the Sage crown and Axis Mundi.
+		#每件无瑕套装的聚晶冷却速率加成，可与贤者桂冠及几何之轴叠加。
+		#Range: 0.0 ~ 1.0
+		focusCooldownSpeedPerPiece = 0.1
+		#Magic invulnerability-frame reduction per piece, in ticks.
+		#每件无瑕套装的魔法无敌帧削减，单位游戏刻。
+		#Range: 0.0 ~ 20.0
+		magicInvulReduction = 2.0
+		#Soul discount per Flawless Set piece, in percent.
+		#每件无瑕套装提供的灵魂折扣（%）
+		#Range: 0 ~ 100
+		soulDiscountPerPiece = 8
+
+		#Damage delayed per piece, in percent; the full-set total is capped at 100%.
+		#各部位延缓伤害的百分数；全套合计不超过100%。
+		[combat.holy_armor.damage_delay]
+			#Damage-delay percent from the crown.
+			#头冠延缓伤害的百分数。
+			#Range: 0 ~ 100
+			helmet = 15
+			#Damage-delay percent from the chestplate.
+			#胸甲延缓伤害的百分数。
+			#Range: 0 ~ 100
+			chestplate = 30
+			#Damage-delay percent from the leggings.
+			#护腿延缓伤害的百分数。
+			#Range: 0 ~ 100
+			leggings = 22
+			#Damage-delay percent from the boots.
+			#靴子延缓伤害的百分数。
+			#Range: 0 ~ 100
+			boots = 18
+
+		#False Justice resistance, in percent; requires enigmaticaddons, full-set total capped at 50%.
+		#虚伪审判伤害抗性的百分数；须安装enigmaticaddons，全套合计不超过50%。
+		[combat.holy_armor.false_justice]
+			#False Justice resistance percent from the crown.
+			#头冠对虚伪审判伤害的抗性百分数。
+			#Range: 0 ~ 100
+			helmet = 10
+			#False Justice resistance percent from the chestplate.
+			#胸甲对虚伪审判伤害的抗性百分数。
+			#Range: 0 ~ 100
+			chestplate = 20
+			#False Justice resistance percent from the leggings.
+			#护腿对虚伪审判伤害的抗性百分数。
+			#Range: 0 ~ 100
+			leggings = 12
+			#False Justice resistance percent from the boots.
+			#靴子对虚伪审判伤害的抗性百分数。
+			#Range: 0 ~ 100
+			boots = 8
+
+		#Per-piece additions to the Goety magic damage multiplier.
+		#各部位对Goety魔法伤害倍率的加值。
+		[combat.holy_armor.magic_damage_bonus]
+			#Magic-damage multiplier addition from the crown.
+			#头冠的魔法伤害倍率加值。
+			#Range: 0.0 ~ 5.0
+			helmet = 0.15
+			#Magic-damage multiplier addition from the chestplate.
+			#胸甲的魔法伤害倍率加值。
+			#Range: 0.0 ~ 5.0
+			chestplate = 0.25
+			#Magic-damage multiplier addition from the leggings.
+			#护腿的魔法伤害倍率加值。
+			#Range: 0.0 ~ 5.0
+			leggings = 0.2
+			#Magic-damage multiplier addition from the boots.
+			#靴子的魔法伤害倍率加值。
+			#Range: 0.0 ~ 5.0
+			boots = 0.15
+
+		#Optional armor bonuses requiring irons_spellbooks.
+		#需安装irons_spellbooks的护甲联动加成。
+		[combat.holy_armor.ironspells]
+			#Enable Flawless Set's Iron's Spells attributes: maximum mana, spell power and mana regeneration.
+			#是否给无瑕套装附加铁魔法属性（最大法力/法术强度/法力恢复）
+			enableBonus = true
+			#Maximum mana addition per piece.
+			#每件最大法力加成
+			#Range: 0 ~ 10000
+			maxManaPerPiece = 100
+			#Spell-power bonus per piece, as a fraction; bonuses in this multiplier add together.
+			#每件无瑕套装的法术强度加成比例；同一乘区内的加成相加。
+			#Range: 0.0 ~ 1.0
+			spellPowerPerPiece = 0.0625
+			#Flat mana-regeneration bonus per piece.
+			#每件无瑕套装的法力恢复固定加值。
+			#Range: 0.0 ~ 2.0
+			manaRegenPerPiece = 0.25
+
+	#Flawless Set damage delay: moves part of final incoming damage into a DOT pool for later settlement.
+	#受击时按伤害延缓占比把最终伤害的一部分转入 DOT 池，后续分批扣血。
+	[combat.holy_armor_dot]
+		#Enable Flawless Set damage delay; false applies all damage immediately.
+		#启用无瑕套装的伤害延缓；false使所有伤害即时结算。
+		enabled = true
+
+#Night Cube.
+#暗夜立方
+[night_cube]
+	#Extra functional slots for lich players; 0 disables.
+	#巫妖玩家额外功能槽位；0关闭。
+	#Range: 0 ~ 10
+	lichExtraSlots = 1
+	#Passive magic damage multiplier addition.
+	#常驻魔法伤害乘数加成
+	#Range: 0.0 ~ 10.0
+	magicDamageBonus = 0.05
+	#Night final-damage bonus at full moon, applied to players and servants and scaled by moon phase.
+	#满月时的最终伤害加成比例；按月相缩放，对玩家和仆从生效。
+	#Range: 0.0 ~ 10.0
+	finalDamageMultiplier = 0.1
+	#Active false-night window outside the overworld, in game ticks.
+	#非主世界激活「假夜晚」状态时长（ticks）
+	#Range: 1 ~ 72000
+	fakeNightDurationTicks = 1200
+	#Active ability cooldown in game ticks.
+	#主动技能冷却时间（ticks）
+	#Range: > 0
+	cooldownTicks = 3600
+	#Night Cube pages (3 functional slots per page); shrinking returns overflow items when the menu next opens.
+	#暗夜立方页数，每页3个功能槽；缩容后的越界物品在下次打开界面时返还。
+	#Range: 1 ~ 6
+	maxPages = 3
+	#Initially unlocked slots for new Night Cubes; 0 requires sacrifice first. Slots beyond total capacity are ignored.
+	#新建暗夜立方的初始解锁槽数；0表示须先献祭解锁。超过总容量的部分忽略，已有立方不受影响。
+	#Range: 0 ~ 60
+	initialUnlockedSlots = 0
+	#Grant invisibility during a new moon; disabling prevents equipment flicker from this effect.
+	#新月时给予隐身效果；关闭可避免此效果引起的装备闪烁。
+	enableMoonInvisibility = true
+	#Recipes: modid:item_id;maxTimes;slotsPerSacrifice (0 times = unlimited; slots >= 1).
+	#Apply with /reload or restart; rule mismatches fail running rituals without refunds.
+	#配方格式：modid:item_id;maxTimes;slotsPerSacrifice；次数0为无限，槽位至少1。
+	#修改后/reload或重启；进行中的仪式规则不匹配时失败且不退款。
+	sacrificeRecipes = ["goety:void_echo;1;1", "goety:night_beacon;1;1", "goety:ominous_orb;1;1", "enigmaticlegacy:ichor_bottle;1;1", "enigmaticlegacy:forbidden_fruit;1;1"]
+
+	#Time acceleration.
+	#时间加速
+	[night_cube.time_acceleration]
+		#Extra world time advanced per game tick.
+		#每游戏刻额外推进的世界时间。
+		#Range: 1 ~ 100000
+		overworldTimeFactor = 80
+		#Random-tick acceleration radius in blocks.
+		#随机刻加速的作用半径（方块）
+		#Range: 1 ~ 64
+		randTickRadius = 4
+		#Extra block random ticks per acceleration round.
+		#每轮额外触发的方块随机刻次数。
+		#Range: 1 ~ 100
+		randTickBonus = 4
+		#Enable entity acceleration for training and mining.
+		#是否启用实体加速（训练 + 挖矿）
+		enableEntityAccel = true
+		#Entity acceleration search radius in blocks, covering training entities and Prisoners.
+		#实体加速的搜索半径（方块），影响范围内的训练实体和囚犯
+		#Range: 1 ~ 64
+		entityAccelRadius = 16
+		#Extra entity ticks per acceleration round.
+		#每轮加速额外执行的实体刻数。
+		#Range: 1 ~ 20
+		entityAccelBonus = 1
+
+#Myriad Tesseract balance for shelter, rest and deployment.
+#万象方匣的庇护、休养与出征。
+[myriad_tesseract]
+	#Sanctuary ability cooldown in game ticks.
+	#庇护技能冷却，单位游戏刻。
+	#Range: 0 ~ 720000
+	sanctuaryCooldownTicks = 1200
+	#Sanctuary uses allowed per window.
+	#每个庇护窗口内可使用的次数。
+	#Range: 0 ~ 64
+	sanctuaryUsesPerWindow = 4
+	#Sanctuary usage-count window in ticks.
+	#庇护次数统计窗口，单位游戏刻。
+	#Range: 1 ~ 720000
+	sanctuaryWindowTicks = 12000
+	#Normal servant recovery time in ticks.
+	#普通仆从休养所需时间，单位游戏刻。
+	#Range: 0 ~ 720000
+	normalRecoveryTicks = 600
+	#Wounded servant recovery time in ticks.
+	#受伤仆从休养所需时间，单位游戏刻。
+	#Range: 0 ~ 720000
+	woundedRecoveryTicks = 6000
+	#Health points restored per second during recovery; 1 point is half a heart.
+	#休养时每秒回复的生命点数，1点为半颗心。
+	#Range: 0.0 ~ 1024.0
+	recoveryHealthPerSecond = 1.0
+	#Expedition Strength amplifier; 0 means level I.
+	#出征力量效果强度，0表示一级。
+	#Range: 0 ~ 10
+	expeditionStrengthAmplifier = 0
+	#Single-unit deployment charge time in ticks.
+	#单体出征蓄力时间，单位游戏刻。
+	#Range: 1 ~ 200
+	deploymentChargeTicks = 20
+	#One charge window for a whole deployment group, in ticks; does not grow linearly with group size.
+	#整组出征的蓄力时间，单位游戏刻。
+	#Range: 1 ~ 400
+	groupDeploymentChargeTicks = 30
+	#Group deployment cooldown in ticks.
+	#整组出征冷却，单位游戏刻。
+	#Range: 0 ~ 1200
+	groupDeploymentCooldownTicks = 40
+	#Maximum servants per group deployment.
+	#每组出征的仆从数量上限。
+	#Range: 1 ~ 8
+	groupDeploymentMaxUnits = 8
+	#Legacy loot-store withdrawal capacity; storage is retired and accepts no deposits. Lowering this never deletes existing items.
+	#旧战利品仓取回兼容容量；仓库已退役，只取不存，已有物品不会因容量减小而删除
+	#Range: 9 ~ 4095
+	lootStorageSlots = 180
+
+[tools]
+
+	#Axis Mundi staff attributes while held; independent of per-Focus enhancement switches.
+	#持有法杖时生效，与 [spells.geomancy.axis_mundi_enhancements] 互不影响。
+	[tools.axis_mundi_staff]
+		#Main-hand melee attack damage; 1.0 is the unarmed baseline.
+		#主手近战攻击力（1.0 = 空手基准）
+		#Range: 1.0 ~ 64.0
+		meleeDamage = 8.0
+		#Additional Potency points for all geomancy spells.
+		#附加的地系法术强效点数（加法计入全部地卜法术）
+		#Range: 0.0 ~ 32.0
+		geomancyPotencyBonus = 2.0
+		#Spell damage multiplier addition; 0.25 means +25%.
+		#法术伤害倍率加成（0.25 = +25%）
+		#Range: 0.0 ~ 10.0
+		magicDamageMultiplier = 0.25
+		#Focus cooldown-speed bonus.
+		#聚晶冷却速率加成。
+		#Range: 0.0 ~ 10.0
+		focusCooldownSpeed = 0.5
+		#Magic invulnerability-frame reduction in ticks.
+		#魔法攻击无敌帧削减量，单位游戏刻。
+		#Range: 0.0 ~ 100.0
+		magicInvulReduction = 4.0
+		#Staff level; statue-summoning Focus items use levels 0, 1 and 2.
+		#法杖等级；石像召唤类聚晶使用0、1、2级规则。
+		#Range: 0 ~ 10
+		staffLevel = 2
+
+	#Wildlands Staff.
+	#荒域之杖
+	[tools.wild_biome_staff]
+		#Soul cost in RECORD mode.
+		#RECORD 模式消耗灵魂能量
+		#Range: 0 ~ 10000
+		recordSoulCost = 50
+		#Soul cost in CONVERT mode.
+		#CONVERT 模式消耗灵魂能量
+		#Range: 0 ~ 10000
+		convertSoulCost = 500
+
+[sageAccessory]
+	#Sage Laurel magic-damage bonus, as a fraction.
+	#贤者桂冠的魔法伤害加成比例。
+	#Range: 0.0 ~ 4.0
+	magicDamageBonus = 0.25
+	#Sage Laurel Focus cooldown-speed bonus.
+	#贤者桂冠的聚晶冷却速率加成。
+	#Range: 0.0 ~ 3.0
+	cooldownSpeedBonus = 0.2
+	#Sage Robe servant damage-reduction fraction.
+	#贤者长袍提供的仆从减伤比例。
+	#Range: 0.0 ~ 1.0
+	servantDamageReduction = 0.15
+	#Sage Robe share of inferred servant area-damage reduction.
+	#贤者长袍对仆从范围伤害推断减免的分摊比例。
+	#Range: 0.0 ~ 1.0
+	servantAoeResistance = 0.15
+	#Sage Laurel defense and magic-damage bonus coefficient for Amethyst Skin, Crystallization and Arcanization.
+	#贤者桂冠对紫晶之皮、晶化和奥术化的防御与魔法伤害增益系数。
+	#Range: 0.0 ~ 4.0
+	buffCurveShare = 0.25
+
+[dionysus_goblet]
+	#Maximum potion effect level granted by the Amethyst Goblet; stronger existing effects are preserved.
+	#紫晶杯可提升的药水效果等级上限；保留已有更高等级效果。
+	#Range: 1 ~ 16
+	maxEffectLevel = 4
+	#Maximum Drunkenness level from drinking the Amethyst Goblet; each proc adds one level and preserves stronger effects.
+	#紫晶杯饮用触发的醉酒等级上限；每次触发增加一级，保留已有更高等级效果。
+	#Range: 1 ~ 128
+	maxDrunkennessLevel = 8
+	#Extra Drunkenness chance when drinking; added to the equipment-based chance, up to 100%.
+	#饮用触发醉酒的额外概率；与装备决定的基础概率合计不超过100%。
+	#Range: 0.0 ~ 1.0
+	drunkennessChanceBonus = 0.25
+	#Additional fraction of damage taken per level of drunkenness.
+	#每级醉酒额外增加的承伤比例。
+	#Range: 0.0 ~ 10.0
+	vulnerabilityPerLevel = 0.2
+
+[amethyst_brews]
+	#Goety brew potion-effect whitelist (modid:id); empty disables upgrades. Bounded by maxEffectLevel.
+	#Excludes vanilla/advanced potions and block effects; unknown IDs take effect when installed.
+	#Goety酿造药水效果白名单（modid:id）；空列表禁用，等级受紫晶杯的效果等级上限限制。
+	#不含原版/高级药水和方块酿造效果；未知ID在对应效果安装后生效。
+	upgradeEffects = ["goety:arrowmantic", "goety:bottling", "goety:corpse_eater", "goety:cursed", "goety:deflective", "goety:ender_flux", "goety:evil_eye", "goety:explosive", "goety:fiery_aura", "goety:fire_trail", "goety:flame_hands", "goety:flammable", "goety:flimsy", "goety:fortunate", "goety:freezing", "goety:frog_leg", "goety:frosty_aura", "goety:gold_touched", "goety:gravity_pulse", "goety:insect_bane", "goety:insight", "goety:leeching", "goety:necrosis", "goety:nyctophobia", "goety:photosynthesis", "goety:plunge", "goety:pressure", "goety:radiance", "goety:rallying", "goety:repulsive", "goety:sapped", "goety:save_effects", "goety:shielding", "goety:smiting", "goety:snow_skin", "goety:storms_wrath", "goety:sun_allergy", "goety:swift_swim", "goety:swirling", "goety:tripping", "goety:venomous_hands", "goety:void_touched", "goety:wild_rage", "minecraft:absorption", "minecraft:haste", "minecraft:health_boost", "minecraft:hunger", "minecraft:instant_damage", "minecraft:instant_health", "minecraft:jump_boost", "minecraft:levitation", "minecraft:luck", "minecraft:mining_fatigue", "minecraft:poison", "minecraft:regeneration", "minecraft:resistance", "minecraft:slowness", "minecraft:speed", "minecraft:strength", "minecraft:unluck", "minecraft:weakness", "minecraft:wither"]
+

@@ -1,0 +1,25 @@
+{
+  "elements": {
+    "goeticlegacy:holy_dot": {
+      "reference": "SCREEN",
+      "referenceX": 0.0,
+      "referenceY": 1.0,
+      "offsetX": 4.0,
+      "offsetY": -13.0,
+      "elementAnchor": "BOTTOM_LEFT",
+      "scale": 1.0,
+      "enabled": true
+    },
+    "goeticlegacy:scroll_focus": {
+      "reference": "SCREEN",
+      "referenceX": 0.0,
+      "referenceY": 0.5,
+      "offsetX": 4.0,
+      "offsetY": 2.0,
+      "elementAnchor": "CENTER_LEFT",
+      "scale": 1.0,
+      "enabled": true
+    }
+  },
+  "schemaVersion": 1
+}

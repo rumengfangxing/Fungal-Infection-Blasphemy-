@@ -1,0 +1,150 @@
+
+[geomancy_screen]
+	#Crystallization/arcanization screen-edge coverage; 0 hides this layer without changing boundary pressure.
+	#晶化和奥术化屏幕效果的边缘覆盖范围；0关闭此层，不影响越界压力。
+	#Range: 0 ~ 100
+	buffCoverage = 40
+	#Texture preset: HD (original), PIXELS_4, PIXELS_8 or PIXELS_12.
+	#晶化和奥术化纹理预设：HD为原分辨率，PIXELS_4、PIXELS_8、PIXELS_12为对应像素尺寸。
+	#Allowed Values: HD, PIXELS_4, PIXELS_8, PIXELS_12
+	buffPixels = "PIXELS_4"
+
+[holy_dot]
+	#Show the gold armor border independently of the damage-delay panel.
+	#显示护甲条金色边框；不影响伤害延缓信息面板。
+	holyDotHealthBorderEnabled = true
+	#Damage-delay panel position: 0 bottom-left, 1 bottom-right, 2 top-left, 3 top-right, 4/5 left/right of hotbar.
+	#伤害延缓面板位置：0左下、1右下、2左上、3右上、4快捷栏左、5快捷栏右。
+	#Range: 0 ~ 5
+	holyDotPreset = 0
+	#Show the Flawless Set damage-delay panel and gold armor border.
+	#显示无瑕套装的伤害延缓信息面板和护甲条金色边框。
+	holyDotEnabled = true
+
+[debug_diagnostics]
+	#Mirror compatibility: AUTO uses backend policy; SAFE disables planar reflection; FULL enables legacy capture; OFF disables both
+	#镜面兼容：AUTO遵循后端策略；SAFE关闭平面反射；FULL启用旧捕获；OFF同时关闭两者。
+	#Allowed Values: AUTO, FULL, SAFE, OFF
+	mirrorCompatibilityMode = "AUTO"
+	#Independent scene copy override. TEXTURE_COPY is experimental and only for manual backend testing
+	#独立场景复制覆盖；TEXTURE_COPY为实验选项，仅供手工测试后端。
+	#Allowed Values: AUTO, FRAMEBUFFER_BLIT, TEXTURE_COPY, DISABLED
+	mirrorSceneCopyMode = "AUTO"
+	#Local VFX preview commands, development environment only.
+	vfxDebugEnabled = true
+	#Planar reflection override; FULL may hang unverified laptop GPU drivers.
+	#平面反射模式覆盖；FULL可能导致尚未验证的笔记本显卡驱动挂起。
+	#Allowed Values: AUTO, FULL, DISABLED
+	mirrorPlanarMode = "AUTO"
+	#镜面反射渲染的诊断日志开关
+	#开启后输出镜面请求/清除/表面扫描/捕获状态等明细
+	#仅用于排查镜面(如幽匿脉络镜像)渲染问题，默认关闭 [默认: false]
+	mirrorReflectionDiagnostics = false
+	#创造模式「遗响分类筛选」的诊断日志开关
+	#开启后，每次筛选/重建分类按钮栏都会输出条目数量与槽位状态明细
+	#仅用于排查蓝图分类显示问题，默认关闭 [默认: false]
+	blueprintCategoryDiagnostics = false
+
+[unholy_scroll]
+	#Spells per page when browsing the full spell list with Alt.
+	#按 Alt 翻页查看法术总表时每页的条数
+	#Range: 1 ~ 100
+	altPageSize = 12
+	#Number of recent entries shown while holding Shift.
+	#按住 Shift 时显示最近记录的条数
+	#Range: 1 ~ 50
+	recentDefaultCount = 5
+	#Enable the Unholy Scroll Focus-slot menu entry.
+	#启用不洁秘卷的聚晶槽菜单入口。
+	enableFocusMenu = true
+
+[nihil_sword]
+	#Show blade-following Void Sword slash trails in first and third person.
+	#显示第一与第三人称挥剑时跟随虚无之剑剑锋的刀光。
+	bladeTrail = true
+	#Fire Void Sword waves with the attack key and disable right-click waves.
+	#使用攻击键发射虚无剑气，并关闭右键剑气。
+	leftClickWave = false
+
+[client]
+	#Fallback HUD layout: 0/3 middle-left, 1 middle-right, 2 bottom-left, 4 right of center, 5/6 left/right of hotbar.
+	#未保存HUD布局时的位置：0/3左中、1右中、2左下、4中央偏右、5快捷栏左、6快捷栏右。
+	#Range: 0 ~ 6
+	focusOverlayPreset = 3
+	#Focus card orientation: VERTICAL or HORIZONTAL.
+	#聚晶卡列方向：VERTICAL为纵向，HORIZONTAL为横向。
+	#Allowed Values: VERTICAL, HORIZONTAL
+	focusHudOrientation = "VERTICAL"
+	#Active Focus position: CENTER, LEADING or TRAILING along the card row/column.
+	#当前聚晶在卡列中的位置：CENTER居中，LEADING首端，TRAILING末端。
+	#Allowed Values: CENTER, LEADING, TRAILING
+	focusHudActivePlacement = "CENTER"
+
+[prefab_visuals]
+	#Maximum concurrent materialization overlay animations.
+	#同时进行的实体化覆盖动画数量上限
+	#Range: 0 ~ 2048
+	maxAnimatedBlocks = 768
+	#Maximum pending building blocks shown in the preview.
+	#待建方块预览的数量上限。
+	#Range: 0 ~ 4096
+	maxGhostBlocks = 1024
+	#Enable local prefab music.
+	#启用本地预制建筑音乐。
+	musicEnabled = true
+	#Enable local prefab domain visuals.
+	#启用本地预制建筑领域视觉。
+	domainEnabled = true
+	#Legacy visual switch: 0 off; any value from 1 to 3 enables full effects.
+	#兼容旧版视觉开关：0=关闭，1~3 任意值=完整特效
+	#Range: 0 ~ 3
+	quality = 2
+
+[spell_visuals]
+	#Local projectile visual budget; does not limit server entities.
+	#本地投射物视觉数量预算，不限制服务端实体。
+	#Range: 8 ~ 256
+	maxProjectiles = 128
+	#Local spark visual budget; 0 disables sparks.
+	#本地火花视觉数量预算，0禁用。
+	#Range: 0 ~ 512
+	maxSparks = 192
+	#Enable local spell sparks.
+	#启用本地法术火花。
+	sparks = true
+	#Starfall landing camera impulse strength in percent. 0 disables it; also scaled by vanilla Screen Effects.
+	#星落落地镜头冲击强度，单位百分数；0关闭，同时受原版屏幕效果设置缩放。
+	#Range: 0 ~ 100
+	starfallImpactShake = 100
+	#Enable local spell bloom.
+	#启用本地法术泛光。
+	bloom = true
+	#Animated portal detail for local geomancy buffs and boundary screen pressure; false keeps flat edge coverage.
+	#本地晶化/奥术化及越界压力的动态传送门细节；关闭后保留平面边缘覆盖。
+	geomancyScreenDetail = true
+	#Local background distortion; safely skipped when depth cannot be resolved.
+	#本地背景扭曲；无法解析深度时安全跳过。
+	localWarp = true
+	#Boundary screen pressure percent; 0 disables the filter without changing server traction.
+	#越界屏幕压力强度，单位百分数；0关闭滤镜，不改变服务端牵引。
+	#Range: 0 ~ 100
+	starfallBoundaryIntensity = 100
+
+[lantern]
+	#Enable client-side moving light from held lanterns without a shader pack
+	#未使用光影包时，启用手持提灯的本地移动光源。
+	nativeDynamicLightEnabled = true
+
+[gales_wake]
+	#Whether remote wind blades from an enchanted Gale's Wake show the enchantment glint palette Only affects local rendering; damage and
+	#enchantment state are unchanged
+	#附魔玉影凌风远程风刃使用附魔闪光配色；仅影响本地绘制，不改伤害或附魔状态。
+	remoteBladeGlint = true
+
+[tooltips]
+	#钥匙之书（心灵之庭钥匙）的 tooltips 总开关
+	#设为 false 时完全不显示该物品的任何 tooltip（默认）
+	#设为 true 时恢复显示（含 F3+H 高级提示的字体矩阵回归块）
+	#[默认: false]
+	mindCourtKeyTooltips = false
+

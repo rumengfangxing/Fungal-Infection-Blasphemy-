@@ -1,0 +1,355 @@
+
+#Starter blueprints automatically granted on a new player's first login.
+#新玩家首次登录时自动获得的预制建筑蓝图。
+[starter_config]
+	#Starter template directory relative to config/, accepting .nbt and .schematic files.
+	#初始建筑模板目录，相对config/，支持.nbt和.schematic文件。
+	starterPath = "goeticlegacy/starters"
+	#Starter grants: all = every template, random = one template, none = disabled.
+	#初始建筑发放：all为全部模板，random为随机一个，none为禁用。
+	starterMode = "random"
+
+[combat]
+
+	#Breach enchantment.
+	#破势
+	[combat.breaking_stance]
+		#Servant invulnerability-frame reduction per enchantment level, in game ticks.
+		#每级附魔提供的仆从无敌帧削减加成，单位游戏刻。
+		#Range: 0.0 ~ 100.0
+		bonusPerLevel = 0.5
+		#Maximum enchantment level counted per equipment piece; levels from multiple pieces still add.
+		#单件装备计入的附魔等级上限；多件装备等级仍相加。
+		#Range: 1 ~ 255
+		maxPerItemLevel = 15
+
+	#Garrison enchantment.
+	#戍卫
+	[combat.bulwark]
+		#Maximum Bulwark damage-reduction fraction.
+		#戍卫减伤比例上限。
+		#Range: 0.05 ~ 0.95
+		bulwarkMaxReduction = 0.6
+		#Total Garrison level needed for half the damage-reduction ceiling; higher values delay saturation.
+		#达到戍卫减伤上限一半所需的总等级；越大越晚饱和。
+		#Range: 1.0 ~ 1000.0
+		bulwarkHalfLevel = 10.0
+
+	#Spell Amplification enchantment.
+	#咒术增幅
+	[combat.wand_power]
+		#Magic damage multiplier addition per enchantment level.
+		#每级附魔提供的魔法伤害乘数加成
+		#Range: 0.0 ~ 10.0
+		magicDamageBonusPerLevel = 0.05
+		#Maximum enchantment level counted per equipment piece; levels from multiple pieces still add.
+		#单件装备计入的附魔等级上限；多件装备等级仍相加。
+		#Range: 1 ~ 255
+		maxPerItemLevel = 15
+
+	#Conditions for skipping invulnerability-frame reduction.
+	#无敌帧削减跳过条件
+	[combat.invul_reduction]
+		#Skip servant invulnerability-frame reduction when either held weapon has goety_revelation:reality_piercer. Spell-frame reduction still applies.
+		#任一手武器带有破妄附魔时，跳过仆从攻击无敌帧削减；须安装goety_revelation。不影响法术无敌帧削减。
+		skipWhenRealityPiercer = true
+
+#Loot acquisition probabilities; 0 disables and 1 guarantees the applicable drop.
+#战利品获取概率；0禁用，1保证对应掉落。
+[shrine_loot]
+	#Chance to find Wind Umbrella in shrine supply chests or secret urns.
+	#神祠普通箱或隐秘之瓮中出现烈风之伞的概率。
+	#Range: 0.0 ~ 1.0
+	windUmbrellaChance = 0.1
+	#Chance to find Gale Plume Fan in shrine supply chests or secret urns.
+	#神祠普通箱或隐秘之瓮中出现烈风羽扇的概率。
+	#Range: 0.0 ~ 1.0
+	galePlumeFanSupplyChance = 0.05
+	#Chance to find Gale Plume Fan in shrine treasure chests.
+	#神祠宝藏箱中出现烈风羽扇的概率。
+	#Range: 0.0 ~ 1.0
+	galePlumeFanTreasureChance = 0.25
+	#Chance to find Gale Charge in shrine supply chests or secret urns.
+	#神祠普通箱或隐秘之瓮中出现烈风弹的概率。
+	#Range: 0.0 ~ 1.0
+	galeChargeChance = 0.7
+	#Gale Charge minimum count; reversed endpoints are sorted.
+	#烈风弹数量下限，含本数；上下限逆序时按升序使用。
+	#Range: 1 ~ 64
+	galeChargeMinCount = 3
+	#Inclusive upper Gale Charge count endpoint; sorted with min if reversed.
+	#烈风弹数量上端点，含本数；与min逆序时按升序使用。
+	#Range: 1 ~ 64
+	galeChargeMaxCount = 11
+	#Chance to find Soaring Focus in shrine supply chests or secret urns.
+	#神祠普通箱或隐秘之瓮中出现腾跃聚晶的概率。
+	#Range: 0.0 ~ 1.0
+	soaringSupplyChance = 0.05
+	#Chance to find Soaring Focus in shrine treasure chests.
+	#神祠宝藏箱中出现腾跃聚晶的概率。
+	#Range: 0.0 ~ 1.0
+	soaringTreasureChance = 0.25
+
+#Other loot acquisition probabilities and weights.
+#其它战利品获取概率及权重。
+[loot_acquisition]
+	#Chance to find Geomancy Scroll in Overworld containers below the configured height.
+	#主世界满足下方高度限制的容器战利品中出现大地卷轴的概率。
+	#Range: 0.0 ~ 1.0
+	geomancyChance = 0.1
+	#Geomancy Scroll loot requires container Y strictly below this height; includes chest minecarts.
+	#大地卷轴掉落要求容器方块Y坐标严格低于此值；包含矿车箱。
+	#Range: -2032 ~ 2032
+	geomancyMaxYExclusive = 32
+	#Chance to find Amethyst Pages in vanilla chest loot.
+	#原版箱子战利品中出现紫沁残篇的概率。
+	#Range: 0.0 ~ 1.0
+	amethystChance = 0.005
+	#Chance to find Golden Book in vanilla chest loot.
+	#原版箱子战利品中出现黄金之书的概率。
+	#Range: 0.0 ~ 1.0
+	goldenBookChance = 0.02
+	#Chance to find Tear's End in Nether fortress and bastion ordinary chests.
+	#下界要塞和堡垒普通箱中出现泣尽之石的概率。
+	#Range: 0.0 ~ 1.0
+	tearsEndChance = 0.01
+	#Chance to find Tear's End in bastion treasure chests.
+	#堡垒宝藏箱中出现泣尽之石的概率。
+	#Range: 0.0 ~ 1.0
+	tearsEndTreasureChance = 0.04
+	#Chance to find Fruit of Nihil in End city chests.
+	#末地城箱中出现虚无之果的概率。
+	#Range: 0.0 ~ 1.0
+	nihilAppleChance = 0.01
+	#Chance to find Bottle of Nihil in End City chests and ordinary Void Vaults outside the Final Terminal.
+	#末地城箱和终末永狱以外的普通虚空宝库中出现虚无之瓶的概率。
+	#Range: 0.0 ~ 1.0
+	nihilBottleChance = 0.25
+	#Final chance to find Bottle of Nihil in ordinary Void Vaults within the Final Terminal, determined by vault loot origin.
+	#终末永狱内普通虚空宝库中出现虚无之瓶的最终概率，按宝库战利品生成位置判断。
+	#Range: 0.0 ~ 1.0
+	nihilBottleTerminalChance = 0.4
+	#Chance to find Spell Amplification book in ancient city chests.
+	#远古城市箱中出现咒术增幅附魔书的概率。
+	#Range: 0.0 ~ 1.0
+	wandPowerChance = 0.2
+	#Relative weights for Spell Amplification I/II/III; nonnegative, with all zero explicitly disabling this book drop.
+	#咒术增幅 I/II/III 的相对权重；非负，全零明确禁用该书的掉落。
+	#Range: 0 ~ 1000000
+	wandWeightI = 70
+	#Relative Spell Amplification II drop weight; all three zero disables the drop.
+	#咒术增幅II的相对掉落权重；三级全零时禁用掉落。
+	#Range: 0 ~ 1000000
+	wandWeightII = 25
+	#Relative Spell Amplification III drop weight; all three zero disables the drop.
+	#咒术增幅III的相对掉落权重；三级全零时禁用掉落。
+	#Range: 0 ~ 1000000
+	wandWeightIII = 5
+	#Chance to find Ill Will in direct player kills of the Minister.
+	#玩家直接击杀灾厄教父的掉落中出现恶意之书的概率。
+	#Range: 0.0 ~ 1.0
+	illWillChance = 0.4
+
+#Chance of obtaining any blueprint; selection is weighted by each blueprint's dropWeight.
+#获得任意蓝图的概率；具体蓝图按各自dropWeight加权抽取。
+[prefab_loot]
+	#Blueprint chance for chests/ tables outside Goety namespaces; 0 disables, 1 guarantees.
+	#非Goety命名空间下chests/箱表的蓝图概率；0禁用，1必出。
+	#Range: 0.0 ~ 1.0
+	vanillaChestChance = 0.05
+	#Blueprint chance for chests/ tables whose namespace contains goety; 0 disables, 1 guarantees.
+	#命名空间含goety的chests/箱表蓝图概率；0禁用，1必出。
+	#Range: 0.0 ~ 1.0
+	goetyChestChance = 0.1
+	#Blueprint chance for treasurePouchIds tables; 0 disables, 1 guarantees.
+	#treasurePouchIds所列战利品表的蓝图概率；0禁用，1必出。
+	#Range: 0.0 ~ 1.0
+	treasurePouchChance = 0.45
+	#Loot-table IDs using treasurePouchChance, in modid:path format.
+	#使用treasurePouchChance概率的战利品表ID，格式为modid:path。
+	treasurePouchIds = ["goety:gameplay/treasure_pouch"]
+
+#Controls new prefab operations; existing jobs, paid deliveries and rollback may finish.
+#控制新发起的预制建筑操作；已有任务、已付款交付和回滚允许收尾。
+[prefab_config]
+	#Allow players to start new prefab operations.
+	#允许玩家发起新的预制建筑操作。
+	enabled = true
+	#Allow retraction and CREATE capture that removes world blocks; ordinary built-in construction remains available.
+	#允许回收及移除世界方块的CREATE捕获；普通内置遗响建造仍可使用。
+	allowRetraction = true
+	#Allow new design capture/writes, including archive imports and exact creative copies; construction has its own switch.
+	#允许新的拓印采集及写入，含档案导入和创造模式原样复制；已有拓印建造由独立开关控制。
+	allowDesignCapture = true
+	#Allow material construction from captured designs; ordinary built-in construction remains available.
+	#允许使用拓印遗响发起材料建造；普通内置遗响建造仍可使用。
+	allowConstruction = true
+	#Check installed FTB Chunks/Open Parties and Claims permissions; disabling does not bypass vanilla or other mods' protection.
+	#查询已安装的FTB Chunks/Open Parties and Claims领地权限；关闭不绕过原版或其它模组保护。
+	checkClaimPermissions = true
+	#Allow container items in new captures, design manufacturing and creative copies; included items must be paid in full.
+	#允许新拓印、拓印制造和创造复制包含容器物品；包含的物品须完整支付。
+	allowContainerContents = true
+	#Allow clearing/overwriting for new construction; otherwise require no overlap. Cleared blocks give no drops or refunds.
+	#允许新建造清场或覆盖，否则须无重叠；清除的方块无掉落、无返还。
+	allowClearingAndOverwrite = true
+	#Retraction start distance from the building's bounding-box edge, in blocks; same dimension only. Players may leave after acceptance.
+	#发起回收到原建筑包围盒边缘的距离，单位格，仅限同维度；任务接纳后玩家可离开。
+	#Range: 1 ~ 4096
+	retractionStartRange = 128
+	#Allow players to upload standard structure NBT designs. Writing a blueprint still costs an empty echo.
+	#允许上传标准结构NBT设计；写入蓝图仍消耗空白遗响。
+	allowBlueprintImport = true
+	#Automatically export captured READY buildings up to this block count (0 disables). Also limited to 64 per axis and 8 MiB decoded NBT;
+	#larger designs remain exportable on demand.
+	#自动导出不超过此方块数的已捕获READY建筑；0禁用。另受每轴64格、解码NBT 8MiB限制；更大设计仍可按需导出。
+	#Range: 0 ~ 50000
+	namedExportMaxBlocks = 32768
+	#Seconds without deployment progress before warning; does not cancel or refund partial builds.
+	#部署无进展至告警的秒数；不自动取消或退还部分建造。
+	#Range: 30 ~ 3600
+	deploymentStallWarningSeconds = 60
+	#Capture limit per axis, in blocks; the soul-cost cap also limits block count.
+	#捕获建筑的每轴尺寸上限，单位格；实际方块数还受灵魂费用上限限制。
+	#Range: 16 ~ 256
+	maxCreateSize = 128
+	#Survival capture limit per axis, in blocks; creative mode uses the general capture limit.
+	#生存模式捕获建筑的每轴尺寸上限，单位格；创造模式使用通用捕获上限。
+	#Range: 8 ~ 128
+	survivalMaxCreateSize = 48
+	#Base deployment/retraction block budget per tick; speed presets also affect throughput.
+	#部署或收回每tick的基础方块处理量；吞吐量也受速度预设影响。
+	#Range: 20 ~ 2000
+	maxBlocksPerTick = 120
+	#Soul cost per non-air block, rounded up and bounded by the soul-cost cap.
+	#每个非空气方块消耗的灵魂能量；总费用向上取整，受灵魂费用上限限制。
+	#Range: 0.01 ~ 10.0
+	soulCostPerBlock = 0.5
+	#Target animation duration in ticks; small builds finish faster and large builds approach this duration.
+	#动画目标时长，单位游戏刻；小建筑较快完成，大建筑逐渐接近此时长。
+	#Range: 600 ~ 24000
+	targetJobTicks = 6000
+	#Soul-cost cap as a fraction of Goety maximum Soul Arca capacity.
+	#灵魂费用上限占Goety最大灵魂方舟容量的比例。
+	#Range: 0.1 ~ 1.0
+	soulCostRatioCap = 1.0
+	#Filter water sources and bubble columns in dimensions where water evaporates.
+	#在会蒸发水的维度部署时，过滤水源及气泡柱。
+	enableDimensionFilter = true
+	#Show job-start messages and identifiers in chat; failures remain visible when disabled.
+	#在聊天框显示建筑任务启动信息和标识；关闭后仍显示失败原因。
+	debugJobMessages = false
+	#Keep template container loot on the first deployment, excluding player captures/copies; false clears only that deployment, not templates.
+	#遗响首次部署时保留模板容器战利品，玩家捕获或复制的建筑除外；关闭仅清理该次部署，不修改模板。
+	generateLootOnFirstPrefabDeployment = true
+	#Maximum manifest blocks applied per server tick before adaptive throttling.
+	#自适应降速前，每个服务端 tick 最多应用的清单方块数
+	#Range: 1 ~ 4096
+	manifestMaxBlocksPerTick = 64
+	#Manifest construction wall-clock budget per server tick in microseconds, before adaptive throttling.
+	#自适应降速前，每个服务端 tick 用于清单构建的墙钟时间上限（微秒）
+	#Range: 100 ~ 50000
+	manifestMaxMicrosPerTick = 1500
+	#Target deployment duration in ticks for system-managed personal-dimension platforms.
+	#系统托管的个人维度平台部署的目标时长（tick）
+	#Range: 40 ~ 6000
+	platformTargetTicks = 300
+	#Hard block budget per tick for system-managed platform deployment.
+	#系统托管的个人维度平台部署的每 tick 方块硬上限
+	#Range: 16 ~ 4096
+	platformMaxBlocksPerTick = 512
+	#Pause manifest construction above this smoothed MSPT.
+	#平滑 MSPT 高于此值时暂停清单构建
+	#Range: 20.0 ~ 200.0
+	manifestPauseMspt = 47.0
+	#Resume manifest construction below this smoothed MSPT.
+	#平滑 MSPT 低于此值时恢复清单构建
+	#Range: 10.0 ~ 199.0
+	manifestResumeMspt = 40.0
+	#Enable continuous prefab aim/adjust/confirm sessions.
+	#启用连续的预制建筑瞄准/调整/确认会话
+	continuousInteractionEnabled = true
+	#Enable the bounded prefab observation camera.
+	#启用受限的预制建筑观察相机
+	observationEnabled = true
+	#Minimum horizontal camera radius in blocks; large prefabs expand it as needed.
+	#观察相机的最小水平半径；大型预制会按需自动扩大
+	#Range: 8 ~ 128
+	observationRadius = 48
+	#Minimum vertical camera radius in blocks; tall prefabs expand it as needed.
+	#观察相机的最小垂直半径；高预制会按需自动扩大
+	#Range: 4 ~ 96
+	observationVerticalRadius = 32
+	#Resend block states after replacing retraction placeholders.
+	#回收占位方块被替换后，重发对应方块状态。
+	placeholderFinalStateResync = true
+	#Log one replacement summary per retraction-placeholder job.
+	#每个替换回收占位方块的任务输出一条汇总日志。
+	placeholderTransitionDiagnostics = true
+	#Delay before targeted authoritative-state resend, in game ticks.
+	#定向权威状态重发前的延迟（tick，20 tick = 1 秒）
+	#Range: 1 ~ 200
+	placeholderResyncDelayTicks = 20
+	#Maximum placeholder replacement states resent per server tick.
+	#每个服务端 tick 最多重发的占位替换状态数
+	#Range: 1 ~ 4096
+	placeholderResyncBlocksPerTick = 256
+	#Rebuild affected client render sections after deployment.
+	#部署完成后，重建受影响的客户端渲染区段。
+	finalSectionRebuild = true
+	#Delay before final client section rebuild, in ticks, allowing ordinary block packets to settle first.
+	#最终客户端区段重建前的延迟，让普通方块包先落定
+	#Range: 0 ~ 200
+	finalSectionRebuildDelayTicks = 2
+	#Maximum completed deployment chunks whose render sections are rebuilt per tick.
+	#每个 tick 重建渲染区段的已完成部署区块数上限
+	#Range: 1 ~ 256
+	finalSectionRebuildChunksPerTick = 8
+	#Resend complete server chunks and lighting after deployment.
+	#部署完成后，重发完整的服务端区块与光照数据。
+	finalAuthoritativeChunkResync = true
+	#Maximum complete authoritative chunks resent per tick when this fallback is enabled.
+	#启用回退时，每个 tick 最多重发的完整权威区块数
+	#Range: 1 ~ 16
+	finalAuthoritativeChunksPerTick = 1
+
+[blocks]
+
+	#--- Statue core ---
+	#Prices are fixed; spell equipment discounts do not apply.
+	#--- 石像核心 ---
+	#价格为固定灵魂消耗，不受法术装备折扣影响。
+	[blocks.statue_core]
+		#Wake an infantry statue.
+		#唤醒步兵石像的灵魂消耗。
+		#Range: 0 ~ 1000000
+		wakeInfantry = 10
+		#Wake a cavalry statue.
+		#唤醒骑兵石像的灵魂消耗。
+		#Range: 0 ~ 1000000
+		wakeCavalry = 20
+		#Wake a stone golem statue.
+		#唤醒石傀儡石像的灵魂消耗。
+		#Range: 0 ~ 1000000
+		wakeGolem = 30
+		#Rebuild an infantry statue.
+		#重建步兵石像的灵魂消耗。
+		#Range: 0 ~ 1000000
+		rebuildInfantry = 50
+		#Rebuild a cavalry statue.
+		#重建骑兵石像的灵魂消耗。
+		#Range: 0 ~ 1000000
+		rebuildCavalry = 100
+		#Rebuild a stone golem statue.
+		#重建石傀儡石像的灵魂消耗。
+		#Range: 0 ~ 1000000
+		rebuildGolem = 150
+		#Repair a stone horse.
+		#修复石马的灵魂消耗。
+		#Range: 0 ~ 1000000
+		repairHorse = 50
+		#Healing pulses bought per soul; each heals one member by up to 1% max HP. Unused paid pulses remain.
+		#每灵魂购买的治疗脉冲数；每次最多治疗一名成员1%最大生命，已付未用脉冲保留。
+		#Range: 1 ~ 100
+		healPulsesPerSoul = 2
+

@@ -1,0 +1,730 @@
+
+[entities]
+
+	#--- Player Crystal Spirit ---
+	#--- 玩家晶灵 ---
+	[entities.crystal_spirit]
+		#Maximum health of newly summoned player crystal spirits.
+		#玩家新召唤晶灵的最大生命。
+		#Range: 1.0 ~ 3.4028234663852886E38
+		health = 6.0
+		#Maximum loaded, living crystal spirits owned by one player in the current dimension; 0 disables new summons.
+		#单名玩家在当前维度已加载存活晶灵的上限；0禁用玩家晶灵的新召唤。
+		#Range: > 0
+		summonLimit = 8
+
+	#--- Player statues ---
+	#--- 玩家石像 ---
+	[entities.player_statues]
+		#Maximum combined spearmen, archers and shield guards owned by one player, counting loaded living entities in the current dimension and excluding core guards, cavalry and golems; 0 disables new summons.
+		#单名玩家在当前维度已加载存活的长矛兵、弓兵与盾卫合计上限，不含核心岗位守卫、骑兵和石傀儡；0禁用新增召唤。
+		#Range: > 0
+		regularSummonLimit = 18
+
+		#--- Player Statue Spearman ---
+		#--- 玩家长矛兵石像 ---
+		[entities.player_statues.spearman]
+			#Spearman statue health.
+			#长矛兵石像生命。
+			#Range: 1.0 ~ 3.4028234663852886E38
+			health = 20.0
+			#Enhanced spearman base attack damage.
+			#强化长矛兵石像基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			enhancedDamage = 27.0
+			#spearman statue armor
+			#长矛兵石像的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			spearmanArmor = 15.0
+			#spearman statue toughness
+			#长矛兵石像的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			spearmanToughness = 5.0
+			#Spearman base attack damage.
+			#长矛兵石像基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			damage = 13.5
+
+		#--- Player Statue Archer ---
+		#--- 玩家弓兵石像 ---
+		[entities.player_statues.archer]
+			#Archer statue health.
+			#弓兵石像生命。
+			#Range: 1.0 ~ 3.4028234663852886E38
+			health = 20.0
+			#archer statue armor
+			#弓兵石像的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			archerArmor = 10.0
+			#archer statue toughness
+			#弓兵石像的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			archerToughness = 5.0
+			#Base arrow damage.
+			#弓兵石像的基础箭伤。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			arrowDamage = 5.0
+
+		#--- Player Statue Shield Guard ---
+		#--- 玩家盾卫石像 ---
+		[entities.player_statues.shield_guard]
+			#Shield guard statue health.
+			#盾卫石像生命。
+			#Range: 1.0 ~ 3.4028234663852886E38
+			health = 20.0
+			#Shield guard base attack damage.
+			#盾卫石像基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			damage = 9.0
+			#Enhanced shield guard health
+			#强化盾卫生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			enhancedGuardHealth = 30.0
+			#guard statue armor
+			#盾卫石像的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			guardArmor = 16.0
+			#enhancedGuard statue armor
+			#强化盾卫石像的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enhancedGuardArmor = 20.0
+			#guard statue toughness
+			#盾卫石像的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			guardToughness = 6.0
+			#enhancedGuard statue toughness
+			#强化盾卫石像的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enhancedGuardToughness = 10.0
+
+		#--- Player Stone Golem ---
+		#--- 玩家石傀儡 ---
+		[entities.player_statues.golem]
+			#Maximum stone golems owned by one player, counting loaded living entities in the current dimension and excluding core guards; 0 disables new summons.
+			#单名玩家在当前维度已加载存活的石傀儡上限，不含核心岗位守卫；0禁用新增召唤。
+			#Range: > 0
+			summonLimit = 4
+			#Regular stone golem health
+			#普通石傀儡生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			golemHealth = 80.0
+			#Enhanced stone golem health
+			#强化石傀儡生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			enhancedGolemHealth = 100.0
+			#golem statue armor
+			#石傀儡的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			golemArmor = 16.0
+			#enhancedGolem statue armor
+			#强化石傀儡的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enhancedGolemArmor = 18.0
+			#golem statue toughness
+			#石傀儡的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			golemToughness = 8.0
+			#enhancedGolem statue toughness
+			#强化石傀儡的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enhancedGolemToughness = 12.0
+			#Stone golem base attack damage.
+			#石傀儡基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			damage = 10.0
+			#Enhanced stone golem base attack damage.
+			#强化石傀儡基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			enhancedDamage = 13.0
+			#Golem heavy attack damage multiplier
+			#石傀儡重击伤害倍率
+			#Range: 0.0 ~ 2048.0
+			golemHeavyDamageMultiplier = 1.5
+			#Golem spin attack damage multiplier
+			#石傀儡旋转攻击伤害倍率
+			#Range: 0.0 ~ 2048.0
+			golemSpinDamageMultiplier = 0.6
+			#Regular golem laser damage per hit
+			#普通石傀儡激光每次命中伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			golemLaserPhaseOneDamage = 5.0
+			#Enhanced golem laser damage per hit
+			#强化石傀儡激光每次命中伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			golemLaserPhaseTwoDamage = 7.5
+
+		#--- Player cavalry ---
+		#--- 玩家骑兵 ---
+		[entities.player_statues.cavalry]
+			#Maximum cavalry owned by one player, counting loaded living mounted and dismounted forms together in the current dimension and excluding core guards; 0 disables new summons.
+			#单名玩家在当前维度已加载存活的骑兵上限，骑乘与步战形态合计，不含核心岗位守卫；0禁用新增召唤。
+			#Range: > 0
+			summonLimit = 8
+			#Normal cavalry rider health
+			#普通骑兵骑手生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			riderHealth = 32.0
+			#Enhanced cavalry rider health
+			#强化骑兵骑手生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			riderPhaseTwoHealth = 40.0
+			#Normal cavalry rider attack damage
+			#普通骑兵骑手攻击伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			riderDamage = 10.0
+			#Enhanced cavalry rider attack damage
+			#强化骑兵骑手攻击伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			riderPhaseTwoDamage = 14.0
+			#Normal cavalry rider armor
+			#普通骑兵骑手护甲
+			#Range: 0.0 ~ 1.7976931348623157E308
+			riderArmor = 12.0
+			#Enhanced cavalry rider armor
+			#强化骑兵骑手护甲
+			#Range: 0.0 ~ 1.7976931348623157E308
+			riderPhaseTwoArmor = 16.0
+			#Normal cavalry rider armor toughness
+			#普通骑兵骑手护甲韧性
+			#Range: 0.0 ~ 1.7976931348623157E308
+			riderToughness = 6.0
+			#Enhanced cavalry rider armor toughness
+			#强化骑兵骑手护甲韧性
+			#Range: 0.0 ~ 1.7976931348623157E308
+			riderPhaseTwoToughness = 8.0
+			#Normal cavalry mount health
+			#普通骑兵坐骑生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			horseHealth = 32.0
+			#Enhanced cavalry mount health
+			#强化骑兵坐骑生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			horsePhaseTwoHealth = 40.0
+			#Normal cavalry mount armor
+			#普通骑兵坐骑护甲
+			#Range: 0.0 ~ 1.7976931348623157E308
+			horseArmor = 10.0
+			#Enhanced cavalry mount armor
+			#强化骑兵坐骑护甲
+			#Range: 0.0 ~ 1.7976931348623157E308
+			horsePhaseTwoArmor = 14.0
+			#Normal cavalry mount armor toughness
+			#普通骑兵坐骑护甲韧性
+			#Range: 0.0 ~ 1.7976931348623157E308
+			horseToughness = 6.0
+			#Enhanced cavalry mount armor toughness
+			#强化骑兵坐骑护甲韧性
+			#Range: 0.0 ~ 1.7976931348623157E308
+			horsePhaseTwoToughness = 8.0
+			#Cavalry incoming damage multiplier from the front while guarding
+			#骑兵举盾时正面承伤倍率
+			#Range: 0.0 ~ 1.0
+			shieldFrontMultiplier = 0.4
+
+	#--- sage ---
+	#--- 大贤者 ---
+	[entities.sage]
+		#Phase-two small meteor base damage
+		#二阶段小流星基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		phaseTwoMeteorDamage = 11.0
+		#Phase-two corruption ray damage per hit
+		#二阶段侵蚀射线每次命中伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		phaseTwoCorruptionDamage = 9.0
+		#Crystal slam field damage multiplier
+		#晶击区域伤害倍率
+		#Range: 0.0 ~ 2048.0
+		slamFieldDamageMultiplier = 1.35
+		#Directed crystal core damage multiplier
+		#定向晶核伤害倍率
+		#Range: 0.0 ~ 2048.0
+		slamDirectedDamageMultiplier = 0.075
+		#Stellar projectile base damage
+		#星列投射物基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		stellarDamage = 11.0
+		#Sixfold ray damage per hit
+		#六重射线每次命中伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		rayArrayDamage = 12.0
+		#Crystal slam main damage multiplier
+		#晶击主体伤害倍率
+		#Range: 0.0 ~ 2048.0
+		crystalSlamDamageMultiplier = 1.35
+		#Crystal slam fragment base damage
+		#晶击碎片基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		crystalSlamSplashDamage = 10.0
+		#Phase-one amethyst mother projectile base damage
+		#一阶段紫晶母弹基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		basicDamage = 18.0
+		#Phase-one amethyst child projectile base damage
+		#一阶段紫晶子弹基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		basicAmethystChildDamage = 16.0
+		#Phase-one amethyst fragment base damage
+		#一阶段紫晶碎片基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		basicAmethystFragmentDamage = 12.0
+		#Phase-one amethyst missile base damage
+		#一阶段紫晶飞弹基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		basicAmethystMissileDamage = 20.0
+		#Phase-two basic attack base damage
+		#二阶段普通攻击基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		phaseTwoBasicDamage = 15.0
+		#Smack-stone mother projectile base damage
+		#落石母弹基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		basicMotherDamage = 12.0
+		#Smack-stone child projectile base damage
+		#落石子弹基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		basicChildDamage = 5.7
+		#Thunderstorm base damage per hit
+		#雷暴每次命中基础伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		thunderstormDamage = 8.0
+		#Initial health of Archsage-summoned crystal spirits.
+		#大贤者召唤的晶灵初始生命。
+		#Range: 1.0 ~ 3.4028234663852886E38
+		bossSpiritHealth = 12.0
+		#Maximum active Archsage-owned crystal spirits, including unloaded and reserved leases; 0 disables new summons.
+		#大贤者拥有的活动晶灵上限，包含未加载与已预留名额；0禁用新召唤。
+		#Range: 0 ~ 64
+		spiritMaxActive = 12
+		#Archsage maximum-health fraction restored on crystal spirit absorption.
+		#大贤者吸收晶灵时，按自身最大生命回复的比例。
+		#Range: 0.0 ~ 1.0
+		spiritAbsorptionHealFraction = 0.07
+		#Chance to raise enhancement level on earth spirit absorption
+		#吸收晶灵提升强化等级的概率
+		#Range: 0.0 ~ 1.0
+		spiritAbsorptionLevelChance = 0.25
+		#Chance to cleanse on earth spirit absorption
+		#吸收晶灵触发净化的概率
+		#Range: 0.0 ~ 1.0
+		spiritAbsorptionCleanseChance = 0.5
+		#Additional proc chance for applicable geomancy states
+		#适用大地状态的额外触发概率
+		#Range: 0.0 ~ 1.0
+		statusProcChance = 0.5
+		#Incoming Boss damage multiplier per active guard
+		#每名护卫为大贤者提供的承伤倍率
+		#Range: 0.0 ~ 1.0
+		golemDamageMultiplier = 0.5
+		#Earth spirit portals per summon.
+		#每次晶灵召唤的传送门数量。
+		#Range: 1 ~ 3
+		spiritPortalCount = 3
+		#Crystal spirits summoned per portal.
+		#每个传送门召唤的晶灵数量。
+		#Range: 1 ~ 2
+		spiritPerPortal = 2
+		#Maximum newly admitted Boss arcane towers.
+		#大贤者新建奥术之塔数量上限。
+		#Range: 1 ~ 3
+		bossTowerMaxActive = 3
+		#Maximum active regular statues owned by the Archsage, including unloaded and reserved leases; 0 disables new regular statues.
+		#大贤者普通石像活动上限，包含未加载与已预留名额；0禁用新增普通石像。
+		#Range: 0 ~ 60
+		statueMaxRegular = 20
+		#Total Archsage statue admission limit, including golem guards and unloaded or reserved leases; 0 disables all new statues.
+		#大贤者石像总召唤上限，含石傀儡、未加载与已预留名额；0禁用所有新增石像。
+		#Range: 0 ~ 60
+		statueMaxActive = 23
+		#Maximum active Archsage cavalry; each scheduled cast summons up to two within this limit, and 0 disables new cavalry.
+		#大贤者活动骑兵上限；每次既有施法最多召唤两名且不超上限，0禁用新增。
+		#Range: 0 ~ 60
+		cavalryMaxActive = 4
+		#Maximum active Archsage stone golem guards, including unloaded and reserved leases; 0 disables new golems.
+		#大贤者活动石傀儡护卫上限，包含未加载与已预留名额；0禁用新召唤。
+		#Range: 0 ~ 60
+		golemHalfHealthCount = 3
+		#Newborn Sage base health.
+		#大贤者新出生基础生命。
+		#Range: 1.0 ~ 3.4028234663852886E38
+		maxHealth = 300.0
+		#Newborn Sage base armor.
+		#大贤者新出生基础护甲。
+		#Range: 0.0 ~ 1.7976931348623157E308
+		armor = 12.0
+		#Newborn Sage base armor toughness.
+		#大贤者新出生基础护甲韧性。
+		#Range: 0.0 ~ 1.7976931348623157E308
+		toughness = 8.0
+		#Newborn Sage base attack damage.
+		#大贤者新出生基础攻击伤害。
+		#Range: 0.0 ~ 3.4028234663852886E38
+		attackDamage = 8.0
+		#Maximum health lost per hit in phase one, in health points.
+		#一阶段每次最终生命损失上限
+		#Range: 0.0 ~ 3.4028234663852886E38
+		phaseOneDamageCap = 30.0
+		#Maximum health lost per hit in phase two, in health points.
+		#二阶段每次最终生命损失上限
+		#Range: 0.0 ~ 3.4028234663852886E38
+		phaseTwoDamageCap = 20.0
+		#Sage adaptive max bonus; reduction values are fractions.
+		#二阶段自适应额外减伤上限
+		#Range: 0.0 ~ 1.0
+		adaptiveMaxBonus = 0.15
+		#Sage adaptive pressure cap; reduction values are fractions.
+		#自适应压力池上限（最大生命比例）
+		#Range: 0.001 ~ 1.0
+		adaptivePressureCap = 0.2
+		#Sage phase one reduction base; reduction values are fractions.
+		#一阶段强化后的基础减伤比例
+		#Range: 0.0 ~ 1.0
+		phaseOneReductionBase = 0.15
+		#Sage phase one reduction growth; reduction values are fractions.
+		#一阶段等级1至5额外减伤增量
+		#Range: 0.0 ~ 1.0
+		phaseOneReductionGrowth = 0.15
+		#Sage phase two reduction base; reduction values are fractions.
+		#二阶段基础减伤比例
+		#Range: 0.0 ~ 1.0
+		phaseTwoReductionBase = 0.2
+		#Sage phase two reduction growth; reduction values are fractions.
+		#二阶段等级1至5额外减伤增量
+		#Range: 0.0 ~ 1.0
+		phaseTwoReductionGrowth = 0.2
+		#Archsage projections summoned per formation.
+		#大贤者每次召唤的分身数量。
+		#Range: 1 ~ 3
+		projectionCount = 3
+		#Hits a new Archsage projection can withstand.
+		#大贤者新召唤分身可承受的命中次数。
+		#Range: 1 ~ 3
+		projectionHits = 3
+		#Archsage projection damage multiplier.
+		#大贤者分身的伤害倍率。
+		#Range: 0.001 ~ 1.0
+		projectionDamageScale = 0.5
+		#Boss Starfall main true damage maximum-health fraction
+		#大贤者星落主击真实伤害最大生命比例
+		#Range: 0.0 ~ 1.0
+		starfallTrueFraction = 0.25
+		#Boss Starfall main true damage fixed addition
+		#大贤者星落主击真实伤害固定值
+		#Range: 0.0 ~ 3.4028234663852886E38
+		starfallTrueBase = 8.0
+		#Boss Starfall pool true damage maximum-health fraction
+		#大贤者星落腐蚀池真实伤害最大生命比例
+		#Range: 0.0 ~ 1.0
+		starfallPoolFraction = 0.05
+		#Boss Starfall pool true damage fixed addition
+		#大贤者星落腐蚀池真实伤害固定值
+		#Range: 0.0 ~ 3.4028234663852886E38
+		starfallPoolBase = 1.0
+		#Phase-one ray damage per hit
+		#一阶段射线每次命中伤害
+		#Range: 0.0 ~ 3.4028234663852886E38
+		beamDamage = 8.0
+
+	[entities.statues]
+
+		#--- Statue Spearman ---
+		#--- 长矛兵石像 ---
+		[entities.statues.spearman]
+			#Spearman statue health.
+			#长矛兵石像生命。
+			#Range: 1.0 ~ 3.4028234663852886E38
+			health = 20.0
+			#Enhanced spearman base attack damage.
+			#强化长矛兵石像基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			enhancedDamage = 40.5
+			#spearman statue armor
+			#长矛兵石像的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			spearmanArmor = 15.0
+			#spearman statue toughness
+			#长矛兵石像的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			spearmanToughness = 5.0
+			#Spearman base attack damage.
+			#长矛兵石像基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			damage = 20.25
+
+		#--- Statue Archer ---
+		#--- 弓兵石像 ---
+		[entities.statues.archer]
+			#Archer statue health.
+			#弓兵石像生命。
+			#Range: 1.0 ~ 3.4028234663852886E38
+			health = 20.0
+			#archer statue armor
+			#弓兵石像的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			archerArmor = 10.0
+			#archer statue toughness
+			#弓兵石像的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			archerToughness = 5.0
+			#Base arrow damage.
+			#弓兵石像的基础箭伤。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			arrowDamage = 5.0
+
+		#--- Statue Shield Guard ---
+		#--- 盾卫石像 ---
+		[entities.statues.shield_guard]
+			#Shield guard statue health.
+			#盾卫石像生命。
+			#Range: 1.0 ~ 3.4028234663852886E38
+			health = 20.0
+			#Shield guard base attack damage.
+			#盾卫石像基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			damage = 13.5
+			#Enhanced shield guard health
+			#强化盾卫生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			enhancedGuardHealth = 30.0
+			#guard statue armor
+			#盾卫石像的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			guardArmor = 16.0
+			#enhancedGuard statue armor
+			#强化盾卫石像的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enhancedGuardArmor = 20.0
+			#guard statue toughness
+			#盾卫石像的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			guardToughness = 6.0
+			#enhancedGuard statue toughness
+			#强化盾卫石像的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enhancedGuardToughness = 10.0
+
+		#--- Stone Golem ---
+		#--- 石傀儡 ---
+		[entities.statues.golem]
+			#Regular stone golem health
+			#普通石傀儡生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			golemHealth = 80.0
+			#Enhanced stone golem health
+			#强化石傀儡生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			enhancedGolemHealth = 100.0
+			#golem statue armor
+			#石傀儡的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			golemArmor = 16.0
+			#enhancedGolem statue armor
+			#强化石傀儡的护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enhancedGolemArmor = 18.0
+			#golem statue toughness
+			#石傀儡的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			golemToughness = 8.0
+			#enhancedGolem statue toughness
+			#强化石傀儡的护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enhancedGolemToughness = 12.0
+			#Stone golem base attack damage.
+			#石傀儡基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			damage = 16.0
+			#Enhanced stone golem base attack damage.
+			#强化石傀儡基础攻击伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			enhancedDamage = 20.8
+			#Golem heavy attack damage multiplier
+			#石傀儡重击伤害倍率
+			#Range: 0.0 ~ 2048.0
+			golemHeavyDamageMultiplier = 1.5
+			#Golem spin attack damage multiplier
+			#石傀儡旋转攻击伤害倍率
+			#Range: 0.0 ~ 2048.0
+			golemSpinDamageMultiplier = 0.6
+			#Regular golem laser damage per hit
+			#普通石傀儡激光每次命中伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			golemLaserPhaseOneDamage = 5.0
+			#Enhanced golem laser damage per hit
+			#强化石傀儡激光每次命中伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			golemLaserPhaseTwoDamage = 7.5
+
+		#--- cavalry ---
+		#--- 骑兵（大贤者与无主） ---
+		[entities.statues.cavalry]
+			#Normal cavalry rider health
+			#普通骑兵骑手生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			riderHealth = 32.0
+			#Enhanced cavalry rider health
+			#强化骑兵骑手生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			riderPhaseTwoHealth = 40.0
+			#Normal cavalry rider attack damage
+			#普通骑兵骑手攻击伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			riderDamage = 10.0
+			#Enhanced cavalry rider attack damage
+			#强化骑兵骑手攻击伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			riderPhaseTwoDamage = 14.0
+			#Normal cavalry rider armor
+			#普通骑兵骑手护甲
+			#Range: 0.0 ~ 1.7976931348623157E308
+			riderArmor = 12.0
+			#Enhanced cavalry rider armor
+			#强化骑兵骑手护甲
+			#Range: 0.0 ~ 1.7976931348623157E308
+			riderPhaseTwoArmor = 16.0
+			#Normal cavalry rider armor toughness
+			#普通骑兵骑手护甲韧性
+			#Range: 0.0 ~ 1.7976931348623157E308
+			riderToughness = 6.0
+			#Enhanced cavalry rider armor toughness
+			#强化骑兵骑手护甲韧性
+			#Range: 0.0 ~ 1.7976931348623157E308
+			riderPhaseTwoToughness = 8.0
+			#Normal cavalry mount health
+			#普通骑兵坐骑生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			horseHealth = 32.0
+			#Enhanced cavalry mount health
+			#强化骑兵坐骑生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			horsePhaseTwoHealth = 40.0
+			#Normal cavalry mount armor
+			#普通骑兵坐骑护甲
+			#Range: 0.0 ~ 1.7976931348623157E308
+			horseArmor = 10.0
+			#Enhanced cavalry mount armor
+			#强化骑兵坐骑护甲
+			#Range: 0.0 ~ 1.7976931348623157E308
+			horsePhaseTwoArmor = 14.0
+			#Normal cavalry mount armor toughness
+			#普通骑兵坐骑护甲韧性
+			#Range: 0.0 ~ 1.7976931348623157E308
+			horseToughness = 6.0
+			#Enhanced cavalry mount armor toughness
+			#强化骑兵坐骑护甲韧性
+			#Range: 0.0 ~ 1.7976931348623157E308
+			horsePhaseTwoToughness = 8.0
+			#Cavalry incoming damage multiplier from the front while guarding
+			#骑兵举盾时正面承伤倍率
+			#Range: 0.0 ~ 1.0
+			shieldFrontMultiplier = 0.4
+
+	[entities.tower]
+
+		#--- Player arcane tower ---
+		#--- 玩家奥术之塔 ---
+		[entities.tower.player]
+			#Maximum active player-owned arcane towers; 0 disables new towers.
+			#玩家拥有的活动奥术之塔上限；0禁用新建奥术之塔。
+			#Range: > 0
+			summonLimit = 4
+			#Player arcane tower armor.
+			#玩家奥术之塔护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			armor = 12.0
+			#Player arcane tower armor toughness.
+			#玩家奥术之塔护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			toughness = 4.0
+			#Player Arcane Tower core health when summoned.
+			#玩家奥术之塔召唤时的核心生命。
+			#Range: 1.0 ~ 3.4028234663852886E38
+			health = 100.0
+			#Player Arcane Tower damage per laser hit.
+			#玩家奥术之塔每次激光命中的伤害。
+			#Range: 0.0 ~ 3.4028234663852886E38
+			attackDamage = 9.0
+			#Player Arcane Tower healing per pulse as a fraction of owner maximum health.
+			#玩家奥术之塔每次治疗，占主人最大生命的比例。
+			#Range: 0.0 ~ 1.0
+			healFraction = 0.015
+			#Owner incoming-damage multiplier per active protection tower; multiple towers multiply.
+			#每座生效保护塔使主人承受伤害的倍率；多座相乘。
+			#Range: 0.0 ~ 1.0
+			guardMultiplier = 0.5
+
+		#--- Archsage arcane tower ---
+		#--- 大贤者奥术之塔 ---
+		[entities.tower.sage]
+			#Boss arcane tower core health
+			#大贤者奥术之塔核心生命
+			#Range: 1.0 ~ 3.4028234663852886E38
+			health = 100.0
+			#Maximum Boss health fraction restored per healing-tower pulse
+			#大贤者治疗塔每次治疗的最大生命比例
+			#Range: 0.0 ~ 1.0
+			healFraction = 0.015
+			#Boss arcane tower laser damage per hit
+			#大贤者奥术之塔激光每次命中伤害
+			#Range: 0.0 ~ 3.4028234663852886E38
+			attackDamage = 9.0
+			#Archsage arcane tower armor.
+			#大贤者奥术之塔护甲。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			armor = 12.0
+			#Archsage arcane tower armor toughness.
+			#大贤者奥术之塔护甲韧性。
+			#Range: 0.0 ~ 1.7976931348623157E308
+			toughness = 4.0
+
+#Cross-mod servant compatibility; the corresponding mod must be installed.
+#仆从跨模组兼容；须安装对应模组。
+[servant_config]
+	#Treat Iron's Spells and Spellbooks summons as servants; requires irons_spellbooks.
+	#将Iron's Spells and Spellbooks的召唤物视作仆从；须安装irons_spellbooks。
+	enableIronSpellsServants = true
+	#Treat Modular Golems as servants; requires modulargolems.
+	#将Modular Golems的傀儡视作仆从；须安装modulargolems。
+	enableModularGolemsServants = true
+	#Treat vanilla tameable animals, including Touhou Little Maids, as servants.
+	#将原版可驯服动物（含车万女仆）视作仆从。
+	enableVanillaTameableServants = true
+	#Prevent Goety prisoners from selecting etherium ore for automatic mining; false allows it.
+	#禁止Goety囚犯选择以太矿石进行自动采矿；false允许开采。
+	disablePrisonerMiningEtheriumOre = false
+
+	#Servant area-damage reduction inferred from actual damage events.
+	#根据实际受击记录推断的仆从范围伤害减免。
+	[servant_config.aoe_resistance]
+		#Maximum inferred AOE reduction fraction at high confidence.
+		#高可信AOE推断的减伤比例上限。
+		#Range: 0.0 ~ 1.0
+		maxReduction = 0.6
+		#Growth coefficient of inferred AOE reduction with same-wave hit count.
+		#同波受击数量对AOE减伤的增长系数。
+		#Range: 0.0 ~ 10.0
+		growthRate = 0.25
+
+#--- Sage finale repulsion soft boundary ---
+#--- 大贤者尾杀的排斥软结界 ---
+[finale_soft_boundary]
+	#Enable finale arena screen feedback and gradual return pressure. Creative and spectator players are excluded.
+	#启用终幕场地屏幕反馈及渐进回场牵引；不影响创造和旁观玩家。
+	enabled = true
+	#Horizontal radius where return pressure begins, in blocks.
+	#开始施加回场压力的水平半径，单位格。
+	#Range: 8.0 ~ 256.0
+	horizontalStart = 52.0
+	#Horizontal radius for full return pressure, at least 1 block above the start.
+	#回场压力达到全强度的水平半径，至少比起始值大1格。
+	#Range: 9.0 ~ 320.0
+	horizontalFull = 64.0
+	#Height above the arena where downward pressure begins, in blocks.
+	#开始施加下压的场地相对高度，单位格。
+	#Range: 8.0 ~ 128.0
+	heightStart = 16.0
+	#Height above the arena for full downward pressure, at least 1 block above the start.
+	#下压达到全强度的场地相对高度，至少比起始值大1格。
+	#Range: 9.0 ~ 192.0
+	heightFull = 22.0
+

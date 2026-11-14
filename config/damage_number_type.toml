@@ -197,6 +197,20 @@
 			format = ""
 			append = ""
 
+	[tag."goeticlegacy:ranged_attack"]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[tag."goeticlegacy:ranged_attack".icon]
+			item = ""
+			tex = ""
+
+		[tag."goeticlegacy:ranged_attack".format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[tag."minecraft:bypasses_armor"]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "#DC143C"
@@ -669,6 +683,20 @@
 			tex = ""
 
 		[tag."dummmmmmy:is_thorn".format]
+			prepend = ""
+			format = ""
+			append = ""
+
+	[tag."goeticlegacy:not_ranged_attack"]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[tag."goeticlegacy:not_ranged_attack".icon]
+			item = ""
+			tex = ""
+
+		[tag."goeticlegacy:not_ranged_attack".format]
 			prepend = ""
 			format = ""
 			append = ""
@@ -1535,6 +1563,20 @@
 			format = ""
 			append = ""
 
+	[type.transfix]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[type.transfix.icon]
+			item = ""
+			tex = ""
+
+		[type.transfix.format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[type.star_cloak]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "#C0C0C0"
@@ -1951,6 +1993,20 @@
 				format = ""
 				append = ""
 
+	[type.meteor]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[type.meteor.icon]
+			item = ""
+			tex = ""
+
+		[type.meteor.format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[type.sting]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "#32CD32"
@@ -2289,6 +2345,20 @@
 			tex = ""
 
 		[type.knight_damage.format]
+			prepend = ""
+			format = ""
+			append = ""
+
+	[type.starfall_impact]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[type.starfall_impact.icon]
+			item = ""
+			tex = ""
+
+		[type.starfall_impact.format]
 			prepend = ""
 			format = ""
 			append = ""
@@ -2843,6 +2913,20 @@
 			format = ""
 			append = ""
 
+	[type.starfall_true]
+		#Color of the damage number. [NO-VALUE] to use default color.
+		color = "[NO-VALUE]"
+		priority = 0
+
+		[type.starfall_true.icon]
+			item = ""
+			tex = ""
+
+		[type.starfall_true.format]
+			prepend = ""
+			format = ""
+			append = ""
+
 	[type.inWall]
 		#Color of the damage number. [NO-VALUE] to use default color.
 		color = "#A9A9A9"
@@ -2943,6 +3027,76 @@
 
 	[type.goeticlegacy]
 
+		[type.goeticlegacy.burrowing_construct]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.goeticlegacy.burrowing_construct.icon]
+				item = ""
+				tex = ""
+
+			[type.goeticlegacy.burrowing_construct.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.goeticlegacy.geomancy_meteor]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.goeticlegacy.geomancy_meteor.icon]
+				item = ""
+				tex = ""
+
+			[type.goeticlegacy.geomancy_meteor.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.goeticlegacy.geomancy_ground]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.goeticlegacy.geomancy_ground.icon]
+				item = ""
+				tex = ""
+
+			[type.goeticlegacy.geomancy_ground.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.goeticlegacy.geomancy_construct]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.goeticlegacy.geomancy_construct.icon]
+				item = ""
+				tex = ""
+
+			[type.goeticlegacy.geomancy_construct.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.goeticlegacy.geomancy_beam]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.goeticlegacy.geomancy_beam.icon]
+				item = ""
+				tex = ""
+
+			[type.goeticlegacy.geomancy_beam.format]
+				prepend = ""
+				format = ""
+				append = ""
+
 		[type.goeticlegacy.meteor]
 			#Color of the damage number. [NO-VALUE] to use default color.
 			color = "[NO-VALUE]"
@@ -2953,6 +3107,34 @@
 				tex = ""
 
 			[type.goeticlegacy.meteor.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.goeticlegacy.geomancy_projectile]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.goeticlegacy.geomancy_projectile.icon]
+				item = ""
+				tex = ""
+
+			[type.goeticlegacy.geomancy_projectile.format]
+				prepend = ""
+				format = ""
+				append = ""
+
+		[type.goeticlegacy.gales_wake]
+			#Color of the damage number. [NO-VALUE] to use default color.
+			color = "[NO-VALUE]"
+			priority = 0
+
+			[type.goeticlegacy.gales_wake.icon]
+				item = ""
+				tex = ""
+
+			[type.goeticlegacy.gales_wake.format]
 				prepend = ""
 				format = ""
 				append = ""

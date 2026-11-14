@@ -55,7 +55,6 @@ Fungal Infection Blasphemy.json
 Fungal Infection Blasphemy.jar
 /Fungal Infection Blasphemy-natives
 config/RuOK.toml
-/config/goeticlegacy/blueprints
 /modernfix/structureCacheV1
 /screenshots
 kubejs/CLAUDE.md
@@ -64,6 +63,8 @@ kubejs/skill.md
 /.dsh
 *.py
 /魔改工具
-/config/goeticlegacy
 /.cache
 /cache
+/config/goeticlegacy/blueprints
+/config/goeticlegacy/template-system
+quantified-api.log

@@ -1,0 +1,448 @@
+
+[spells]
+
+	#Geomancy Spells
+	#地卜法术
+	[spells.geomancy]
+
+		#Crystallization Focus
+		#晶化聚晶
+		[spells.geomancy.crystallization]
+			#Crystallization Focus soul cost.
+			#晶化聚晶的灵魂消耗。
+			#Range: 0 ~ 100000000
+			soulCost = 256
+			#Crystallization Focus preparation time, in ticks.
+			#晶化聚晶的准备时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			castTicks = 40
+			#Crystallization Focus cooldown, in ticks.
+			#晶化聚晶的冷却时间，单位游戏刻。
+			#Range: 2 ~ 72000
+			cooldownTicks = 2400
+
+		#Crystal Spirit Focus
+		#晶灵聚晶
+		[spells.geomancy.crystal_spirit]
+			#Crystal Spirit Focus soul cost.
+			#晶灵聚晶的灵魂消耗。
+			#Range: 0 ~ 100000000
+			soulCost = 256
+			#Crystal Spirit Focus preparation time, in ticks.
+			#晶灵聚晶的准备时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			castTicks = 40
+			#Crystal Spirit Focus cooldown, in ticks.
+			#晶灵聚晶的冷却时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			cooldownTicks = 1200
+			#Staff level 0: lower summon count (50% chance).
+			#法杖0级时，较少一组的晶灵召唤数量（50%概率）。
+			#Range: 1 ~ 7
+			tier0LowCount = 1
+			#Staff level 0: higher summon count (50% chance).
+			#法杖0级时，较多一组的晶灵召唤数量（50%概率）。
+			#Range: 1 ~ 7
+			tier0HighCount = 2
+			#Staff level 1: lower summon count (50% chance).
+			#法杖1级时，较少一组的晶灵召唤数量（50%概率）。
+			#Range: 1 ~ 7
+			tier1LowCount = 3
+			#Staff level 1: higher summon count (50% chance).
+			#法杖1级时，较多一组的晶灵召唤数量（50%概率）。
+			#Range: 1 ~ 7
+			tier1HighCount = 4
+			#Summon count at staff level 2 or higher.
+			#法杖2级及以上时的晶灵召唤数量。
+			#Range: 1 ~ 7
+			tier2Count = 7
+			#Base level of newly summoned crystal spirits.
+			#玩家新召唤晶灵的基础等级。
+			#Range: 1 ~ 10
+			baseLevel = 1
+			#Crystal spirit levels added per Potency level.
+			#每级强效增加的晶灵等级。
+			#Range: 0 ~ 9
+			levelPerPotency = 1
+			#Maximum level of newly summoned crystal spirits.
+			#新召唤晶灵的等级上限。
+			#Range: 1 ~ 10
+			maxLevel = 10
+			#Lifetime of newly summoned crystal spirits, in loaded game ticks.
+			#新召唤晶灵的寿命，按实体加载期间的游戏刻计。
+			#Range: 1 ~ 900
+			lifetimeTicks = 900
+			#Health restored on absorption, as a fraction of the owner's maximum health.
+			#成功吸收时，按主人当前最大生命回复的比例。
+			#Range: 0.0 ~ 1.0
+			absorptionHealFraction = 0.2
+			#Maximum number of harmful effects removed on absorption.
+			#吸收时最多移除的负面效果种类数。
+			#Range: 0 ~ 64
+			cleanseCount = 3
+			#Crystal spirit incoming-damage multiplier with a Geomancer Set or both Sage Laurel and Sage Robe equipped by the owner.
+			#主人穿戴地卜套装，或同时装备贤者桂冠与贤者长袍时，晶灵的承伤倍率。
+			#Range: 0.0 ~ 1.0
+			protectedDamageMultiplier = 0.25
+
+		#Arcane Tower Focus
+		#奥术之塔聚晶
+		[spells.geomancy.arcane_tower]
+			#Arcane Tower Focus soul cost.
+			#奥术之塔聚晶的灵魂消耗。
+			#Range: 0 ~ 100000000
+			soulCost = 256
+			#Arcane Tower Focus preparation time, in ticks.
+			#奥术之塔聚晶的准备时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			castTicks = 10
+			#Arcane Tower Focus cooldown, in ticks.
+			#奥术之塔聚晶的冷却时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			cooldownTicks = 1800
+
+		#Starfall Focus
+		#星落聚晶
+		[spells.geomancy.starfall]
+			#Starfall Focus soul cost.
+			#星落聚晶的灵魂消耗。
+			#Range: 0 ~ 100000000
+			soulCost = 25000
+			#Starfall Focus preparation time, in ticks.
+			#星落聚晶的准备时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			castTicks = 120
+			#Starfall Focus cooldown, in ticks.
+			#星落聚晶的冷却时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			cooldownTicks = 2400
+			#Player Starfall small-meteor damage.
+			#玩家星落的小流星伤害。
+			#Range: 0.0 ~ 2048.0
+			smallMeteorDamage = 8.0
+			#Starfall main-hit true damage as a fraction of target maximum health.
+			#星落主击真实伤害，占目标最大生命的比例。
+			#Range: 0.0 ~ 1.0
+			trueFraction = 0.08
+			#Additional Starfall true-damage multiplier per potency level.
+			#星落每级强效增加的真实伤害倍率。
+			#Range: 0.0 ~ 10.0
+			truePerPotency = 0.1
+			#Starfall main-hit ordinary base damage.
+			#星落主击普通伤害基础值。
+			#Range: 0.0 ~ 2048.0
+			ordinaryBase = 24.0
+			#Starfall main-hit ordinary damage as a fraction of target maximum health.
+			#星落主击普通伤害，占目标最大生命的比例。
+			#Range: 0.0 ~ 1.0
+			ordinaryFraction = 0.18
+			#Starfall pool true damage per pulse as a fraction of target maximum health.
+			#星落腐蚀池每次真实伤害，占目标最大生命的比例。
+			#Range: 0.0 ~ 1.0
+			poolTrueFraction = 0.02
+			#Starfall pool ordinary damage per pulse as a fraction of target maximum health.
+			#星落腐蚀池每次普通伤害，占目标最大生命的比例。
+			#Range: 0.0 ~ 1.0
+			poolOrdinaryFraction = 0.02
+
+		#--- Guard Focus ---
+		#--- 禁卫聚晶 ---
+		[spells.geomancy.statue_guard]
+			#Guard Focus soul cost.
+			#禁卫聚晶的灵魂消耗。
+			#Range: 0 ~ 100000000
+			soulCost = 96
+			#Preparation time, in ticks.
+			#准备时间，单位游戏刻。
+			#Range: 1 ~ 72000
+			castDurationTicks = 180
+			#Cooldown, in ticks.
+			#冷却时间，单位游戏刻。
+			#Range: > 0
+			cooldownTicks = 200
+
+		#--- Break Formation Focus ---
+		#--- 破阵聚晶 ---
+		[spells.geomancy.statue_cavalry]
+			#Break Formation Focus soul cost.
+			#破阵聚晶的灵魂消耗。
+			#Range: 0 ~ 100000000
+			soulCost = 96
+			#Preparation time, in ticks.
+			#准备时间，单位游戏刻。
+			#Range: 1 ~ 72000
+			castDurationTicks = 180
+			#Cooldown, in ticks.
+			#冷却时间，单位游戏刻。
+			#Range: > 0
+			cooldownTicks = 400
+
+		#--- Golem Focus ---
+		#--- 魔像聚晶 ---
+		[spells.geomancy.statue_golem]
+			#Golem Focus soul cost.
+			#魔像聚晶的灵魂消耗。
+			#Range: 0 ~ 100000000
+			soulCost = 256
+			#Preparation time, in ticks.
+			#准备时间，单位游戏刻。
+			#Range: 1 ~ 72000
+			castDurationTicks = 180
+			#Cooldown, in ticks.
+			#冷却时间，单位游戏刻。
+			#Range: > 0
+			cooldownTicks = 400
+
+		#Otherworld Focus
+		#彼界聚晶
+		[spells.geomancy.otherworld]
+			#Otherworld Focus soul cost.
+			#彼界聚晶的灵魂消耗。
+			#Range: 0 ~ 100000000
+			soulCost = 50
+			#Otherworld Focus preparation time, in ticks.
+			#彼界聚晶的准备时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			castTicks = 16
+			#Otherworld Focus cooldown, in ticks.
+			#彼界聚晶的冷却时间，单位游戏刻。
+			#Range: 0 ~ 72000
+			cooldownTicks = 10
+
+		#Smack Stone
+		#落石
+		[spells.geomancy.smack_stone]
+			#Smack Stone base damage.
+			#落石基础伤害。
+			#Range: 0.0 ~ 1000000.0
+			baseDamage = 4.0
+
+		#Thunderstorm
+		#雷暴
+		[spells.geomancy.thunderstorm]
+			#Axis Thunderstorm base damage.
+			#枢轴雷暴基础伤害。
+			#Range: 0.0 ~ 1000000.0
+			baseDamage = 5.0
+
+		#Earth Fist
+		#大地之拳
+		[spells.geomancy.earth_fist]
+			#Earth Fist base damage.
+			#大地之拳基础伤害。
+			#Range: 0.0 ~ 1000000.0
+			baseDamage = 6.0
+
+		#Scatter
+		#散射
+		[spells.geomancy.scatter]
+			#Scatter base damage.
+			#散射基础伤害。
+			#Range: 0.0 ~ 1000000.0
+			baseDamage = 6.0
+
+		#Quaking
+		#震荡
+		[spells.geomancy.quaking]
+			#Quaking base damage.
+			#震荡基础伤害。
+			#Range: 0.0 ~ 1000000.0
+			baseDamage = 4.0
+
+		#Burrowing
+		#穿凿
+		[spells.geomancy.burrowing]
+			#Burrowing base damage to creatures.
+			#穿凿对生物的基础伤害。
+			#Range: 0.0 ~ 1000000.0
+			baseDamage = 4.0
+
+		#--- Meteor Focus ---
+		#--- 流星聚晶 ---
+		[spells.geomancy.meteor]
+			#Direct damage without a matching staff (tier 0).
+			#未使用对应法杖时的直击伤害（0档）。
+			#Range: 0.0 ~ 10000.0
+			tier0Damage = 6.0
+			#Tier 1 direct damage with the matching Geomancy Staff.
+			#装备对应大地法杖时的1档直击伤害。
+			#Range: 0.0 ~ 40000.0
+			tier1Damage = 6.9
+			#Direct damage with Axis Mundi enhancement (tier 2).
+			#使用几何之轴强化时的直击伤害（2档）。
+			#Range: 0.0 ~ 40000.0
+			tier2Damage = 9.0
+			#Cast cooldown, in ticks.
+			#施法冷却，单位游戏刻。
+			#Range: 1 ~ 1200
+			cooldownTicks = 10
+			#Soul energy cost.
+			#灵魂消耗。
+			#Range: 0 ~ 10000
+			soulCost = 16
+
+		#--- Volcano ---
+		#--- 火山 ---
+		[spells.geomancy.volcano]
+			#Volcano turret limit per player.
+			#每名玩家的火山炮台数量上限。
+			#Range: 1 ~ 128
+			playerLimit = 2
+			#New volcano turret base maximum health.
+			#新火山炮台的基础最大生命。
+			#Range: 1.0 ~ 100000.0
+			health = 100.0
+			#Volcano turret base armor points.
+			#火山炮台基础护甲点数。
+			#Range: 0.0 ~ 30.0
+			armor = 6.0
+			#Volcano primary projectile base damage.
+			#火山主弹基础伤害。
+			#Range: 0.0 ~ 100000.0
+			baseDamage = 6.0
+			#Volcano child projectile damage multiplier relative to the primary.
+			#火山子弹伤害相对主弹的倍率。
+			#Range: 0.0 ~ 100.0
+			childDamage = 0.45
+			#Volcano defensive attack damage multiplier.
+			#火山防卫攻击的伤害倍率。
+			#Range: 0.0 ~ 100.0
+			defenseDamage = 0.75
+
+		#--- Geomancy status effects ---
+		#--- 大地状态效果 ---
+		[spells.geomancy.status_effects]
+			#Amethyst Skin armor and armor-toughness addition at level 5.
+			#5级紫晶之皮的护甲与护甲韧性加值。
+			#Range: 0.0 ~ 1024.0
+			skinDefenseAtReference = 10.0
+			#Crystallization armor and armor-toughness addition at level 5.
+			#5级晶化的护甲与护甲韧性加值。
+			#Range: 0.0 ~ 1024.0
+			crystalDefenseAtReference = 7.5
+			#Crystallization magic-damage bonus at level 5, as a fraction.
+			#5级晶化的魔法伤害加成比例。
+			#Range: 0.0 ~ 100.0
+			crystalMagicAtReference = 0.75
+			#Arcanization armor and armor-toughness gain fraction at level 5.
+			#5级奥术化的护甲与护甲韧性增益比例。
+			#Range: 0.0 ~ 100.0
+			arcaneDefenseAtReference = 0.5
+			#Arcanization magic-damage bonus at level 5, as a fraction.
+			#5级奥术化的魔法伤害加成比例。
+			#Range: 0.0 ~ 100.0
+			arcaneMagicAtReference = 1.5
+			#Scale the extra attack gain of arcanized servants; players and Sage are unaffected.
+			#缩放奥术化仆从的额外攻击增益，不影响玩家和大贤者。
+			#Range: 0.0 ~ 1.0
+			servantArcaneGainMultiplier = 0.5
+
+		#Axis Mundi Enhancements
+		#几何之轴增强
+		[spells.geomancy.axis_mundi_enhancements]
+			#Master switch for all Axis Mundi enhancements.
+			#几何之轴增强总开关。
+			axisEnhancementsEnabled = true
+			#Ministrous: summon 10 minions in three batches.
+			#小兽：分三批召唤10只小兽。
+			ministrousFixedSquad = true
+			#Earth Fist: throw a gravity core and form the gathering earth sphere.
+			#大地之拳：投掷引力内核并聚合地爆天星。
+			earthFistTriplePunch = true
+			#Earth Fist: remove and attract breakable blocks.
+			#大地之拳：真实移除并吸附可破坏方块。
+			earthFistBreakBlocks = false
+			#Quaking: two elliptical waves leave persistent fissures.
+			#震荡：两道椭圆环波后留下持续地裂。
+			quakingTwinTremor = true
+			#Smack Stone: three projectiles split twice in three directions.
+			#落石：三发霰弹进行两级三向分裂。
+			smackStoneShatter = true
+			#Smack Stone target invulnerability-frame multiplier after impact.
+			#落石命中后目标无敌帧倍率。
+			#Range: 0.0 ~ 1.0
+			smackStoneInvulMultiplier = 0.5
+			#Scatter: replace mines with amethyst parent bombs and child projectiles.
+			#散射：将地雷替换为紫水晶母弹和子弹。
+			scatterRingMines = true
+			#Scatter parent explosion damage multiplier.
+			#散射母弹爆炸伤害倍率。
+			#Range: 0.0 ~ 10.0
+			scatterMotherDamageMultiplier = 1.5
+			#Scatter child projectile damage multiplier.
+			#散射紫水晶子弹伤害倍率。
+			#Range: 0.0 ~ 10.0
+			scatterChildDamageMultiplier = 0.5
+			#Scatter parent explosion radius in blocks.
+			#散射母弹爆炸半径，单位格。
+			#Range: 0.0 ~ 16.0
+			scatterMotherRadius = 3.0
+			#Scatter child projectile radius in blocks.
+			#散射紫水晶子弹范围半径，单位格。
+			#Range: 0.0 ~ 16.0
+			scatterChildRadius = 1.5
+			#Scatter parent detection radius in blocks.
+			#散射母弹感应半径，单位格。
+			#Range: 0.0 ~ 8.0
+			scatterSensitiveRadius = 1.2
+			#Volcano: summon a missile turret.
+			#火山：召唤导弹炮台。
+			eruptionVolcanoArray = true
+			#Barricade: create an arc of obsidian pillars.
+			#障壁：生成黑曜石巨柱圆弧。
+			barricadePivotFort = true
+			#Pulverize: chain a 3 by 3 by 3 region.
+			#粉碎：对3×3×3区域进行同配方连锁。
+			pulverizeDeepChain = true
+			#Pulverize sneaking single-block soul cost.
+			#粉碎潜行单格灵魂消耗。
+			#Range: 0 ~ 64
+			pulverizeSneakSoulCost = 2
+			#Burrowing: drill a 3 by 3 tunnel and chain matching ore.
+			#穿凿：钻探3×3隧道并连锁采掘同类矿石。
+			burrowingMinerFocus = true
+			#Burrowing maximum tunnel layers per cast.
+			#穿凿单次施法最多推进的隧道层数。
+			#Range: 1 ~ 64
+			burrowingBaseTunnelDepth = 12
+			#Corruption: enable beam hit-width and soul-cost enhancements.
+			#腐化：启用光束命中宽度与魂耗增强。
+			corruptionBeam = true
+			#Corruption server beam hit-width multiplier.
+			#腐化服务端光束命中宽度倍率。
+			#Range: 1.0 ~ 8.0
+			corruptionBeamWidthMultiplier = 3.0
+			#Corruption soul-cost multiplier.
+			#腐化魂耗倍率。
+			#Range: 0.0 ~ 1.0
+			corruptionSoulCostMultiplier = 0.25
+			#Corruption beam damage multiplier per hit check.
+			#腐化光束每次判定的伤害倍率。
+			#Range: 0.0 ~ 10.0
+			corruptionDamageMultiplier = 1.0
+			#Thunderstorm: replace vertical lightning with descending meteors.
+			#雷暴：把竖直落雷替换为从天坠落的流星。
+			thunderstormMeteor = true
+			#Stellar: replace the main visual with meteor effects.
+			#星辰：把本体特效替换为流星系列。
+			stellarMeteor = true
+			#Meteor Shower: replace fire meteors with amethyst projectiles.
+			#流星雨：把火流星替换为紫水晶弹体。
+			meteorShowerAmethyst = true
+
+	#--- Soaring Focus ---
+	#--- 腾跃聚晶 ---
+	[spells.soaring]
+		#Base soul energy cost.
+		#基础灵魂消耗。
+		#Range: > 0
+		soulCost = 4
+		#Base preparation time in ticks; 0 is instant.
+		#准备时间，单位游戏刻；0为瞬发。
+		#Range: > 0
+		castDurationTicks = 0
+		#Cooldown, in game ticks.
+		#冷却时间，单位游戏刻。
+		#Range: > 0
+		cooldownTicks = 20
+

@@ -5,8 +5,8 @@
     "harvest_tool.show_unbreakable": true,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -91,11 +91,15 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
-  "goeticlegacy": {
-    "projection_state": true
-  },
   "yes_steve_model": {
     "model_info": true
+  },
+  "goeticlegacy": {
+    "tower_health": true,
+    "core_post": true,
+    "projection_state": true,
+    "tower_behavior": true,
+    "statue_core": true
   },
   "jadeaddons.lootr": {
     "info": true

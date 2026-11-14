@@ -3,12 +3,12 @@ __cfg_version = 0
 ## Default: 0.8
 ## Range: 0.0 ~ 10.0
 #
-scale = 0.8
+scale = 0.6000000000000001
 ##标识ID黑名单
 blacklist = ["jei_skp", "emi_skp"]
 ##显示位置
 ## Default: 1
 ## Range: 1 ~ 8
 #
-position = 4
+position = 8
 
