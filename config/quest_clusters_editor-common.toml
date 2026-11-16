@@ -1,0 +1,3 @@
+#Write FTB Quests team progress files on a background thread (the data is still captured on the server thread; pending writes finish before the server stops)
+async_team_save = true
+

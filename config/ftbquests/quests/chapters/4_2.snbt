@@ -9,6 +9,7 @@
 		click: "#4A9008353B1A2BCD"
 		height: 3.0d
 		hover: ["感染生物与感染环境"]
+		id: "70A55841F09E9665"
 		image: "spore:block/growth_mycelium3"
 		rotation: 0.0d
 		width: 3.0d
@@ -16,9 +17,6 @@
 		y: 0.0d
 	}]
 	order_index: 0
-	quest_enhance_chapter_background: "emxarms:textures/attachment/slot/ammo_2.png"
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [{
 		description: [

@@ -176,7 +176,9 @@
     "com.fib.fib.gui.container.screen.corpse.Corpse2Screen": true,
     "sfiomn.legendarysurvivaloverhaul.client.screens.ThermalScreen": true,
     "com.fib.fib.gui.container.screen.GrapplingHookScreen": true,
-    "com.qoocies.goeticlegacy.client.gui.settings.ClientSettingsScreen": true
+    "com.qoocies.goeticlegacy.client.gui.settings.ClientSettingsScreen": true,
+    "civil_adventure.client.gui.TownHallScreen": true,
+    "civil_adventure.client.gui.TravelerScreen": true
   },
   "hideBackground": {
     "top.theillusivec4.curios.client.gui.CuriosScreenV2": true,
@@ -288,6 +290,8 @@
     "com.fib.fib.gui.container.screen.corpse.Corpse1Screen": true,
     "com.fib.fib.gui.container.screen.corpse.Corpse2Screen": true,
     "sfiomn.legendarysurvivaloverhaul.client.screens.ThermalScreen": true,
-    "com.fib.fib.gui.container.screen.GrapplingHookScreen": true
+    "com.fib.fib.gui.container.screen.GrapplingHookScreen": true,
+    "civil_adventure.client.gui.TownHallScreen": true,
+    "civil_adventure.client.gui.TravelerScreen": true
   }
 }

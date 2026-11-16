@@ -10,6 +10,7 @@
 		{
 			dependency: "56A8DBCAD360212D"
 			height: 8.0d
+			id: "4214E77CBE260EE7"
 			image: "enigmaticlegacy:textures/unused/cursed_ring_iron.png"
 			order: 1
 			rotation: 0.0d
@@ -20,6 +21,7 @@
 		{
 			dependency: "1980502AB09D99A2"
 			height: 8.0d
+			id: "1AA828BB750115AA"
 			image: "enigmaticaddons:item/bless_ring"
 			order: 2
 			rotation: 0.0d
@@ -30,6 +32,7 @@
 		{
 			dependency: "56A8DBCAD360212D"
 			height: 32.0d
+			id: "4489B1F36D67A229"
 			image: "goety:block/haunted_glass_tinted/haunted_glass_solo"
 			order: -2
 			rotation: 0.0d
@@ -40,6 +43,7 @@
 		{
 			dependency: "1980502AB09D99A2"
 			height: 32.0d
+			id: "41BDD2CAA72B4ED8"
 			image: "goety:block/marble_wind_blower_top"
 			order: -1
 			rotation: 0.0d
@@ -49,8 +53,6 @@
 		}
 	]
 	order_index: 3
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

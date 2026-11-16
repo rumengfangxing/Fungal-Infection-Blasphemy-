@@ -9,6 +9,7 @@
 	images: [
 		{
 			height: 3.0d
+			id: "01DA09126FBFA5A3"
 			image: "enigmaticlegacy:item/enigmatic_eye_dormant"
 			rotation: 0.0d
 			width: 3.0d
@@ -18,6 +19,7 @@
 		{
 			dependency: "215D3703A213D335"
 			height: 3.0d
+			id: "3587238218E6702A"
 			image: "enigmaticlegacy:item/enigmatic_eye"
 			order: 5
 			rotation: 0.0d
@@ -28,6 +30,7 @@
 		{
 			dependency: "23EF250B8502B51E"
 			height: 10.0d
+			id: "0EC0F1826A6CFA76"
 			image: "goetydelight:item/false_proverbs"
 			order: 1
 			rotation: 135.0d
@@ -37,9 +40,6 @@
 		}
 	]
 	order_index: 0
-	quest_enhance_chapter_background: "enigmaticlegacy:block/star_fabric"
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

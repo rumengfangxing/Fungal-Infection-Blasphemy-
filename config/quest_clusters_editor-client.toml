@@ -1,0 +1,15 @@
+#Show the entity model instead of the spawn egg for kill tasks (and quests whose only task is one)
+render_kill_task_entity_models = true
+#Left-clicking an advancement task opens the advancements screen
+open_advancement_tasks = true
+#Description line markup (dividers, side bars, spoilers, code, gaps, headings, callouts, lists, centring)
+description_markup = true
+#Centre every description line
+center_all_description_text = false
+#Cache quest visibility for one tick in the quest book (performance)
+quest_visibility_cache = true
+#Skip drawing dependency lines that are entirely off screen (performance)
+cull_offscreen_dependency_lines = true
+#Set once Quest Enhance's client options were copied (internal)
+imported_quest_enhance = true
+

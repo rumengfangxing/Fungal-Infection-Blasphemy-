@@ -9,6 +9,7 @@
 	id: "0711EE96038FBD44"
 	images: [{
 		height: 1.0d
+		id: "361ECC444C524758"
 		image: "minecraft:block/command_block_back"
 		rotation: 0.0d
 		width: 1.0d
@@ -16,8 +17,6 @@
 		y: -3.0d
 	}]
 	order_index: 2
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

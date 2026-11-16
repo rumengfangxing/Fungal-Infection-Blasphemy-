@@ -7,9 +7,6 @@
 	icon: "spore:rotten_grass"
 	id: "378966E0F18A5EE2"
 	order_index: 1
-	quest_enhance_chapter_background: "spore:block/mycelium_growths_big_underwater"
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

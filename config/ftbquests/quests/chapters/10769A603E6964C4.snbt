@@ -11,6 +11,7 @@
 			click: "command:/maidvoice"
 			dependency: "410B27941DF07BCD"
 			height: 1.0d
+			id: "60C45C2F1D948FF9"
 			image: "touhou_little_maid:textures/chat_bubble/maid_emoji/emoji_07.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -20,6 +21,7 @@
 		{
 			dependency: "7B549B769BCD29F3"
 			height: 1.0d
+			id: "4A2CCBE39C95E74D"
 			image: "lightmanscurrency:textures/gui/icons/arrow_right.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -30,6 +32,7 @@
 			click: "command:/playsound minecraft:entity.blaze.ambient voice @s"
 			dependency: "7B549B769BCD29F3"
 			height: 1.5d
+			id: "2A12F7D47408966B"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 1.5d
@@ -39,6 +42,7 @@
 		{
 			dependency: "439DBFE4FB670440"
 			height: 1.0d
+			id: "44C58329CA46ED30"
 			image: "lightmanscurrency:textures/gui/icons/arrow_right.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -49,6 +53,7 @@
 			click: "command:/playsound create:sanding_long voice @s"
 			dependency: "439DBFE4FB670440"
 			height: 3.0d
+			id: "778B63CB5AC74B9C"
 			image: "create:item/sand_paper"
 			rotation: 0.0d
 			width: 3.0d
@@ -60,6 +65,7 @@
 			dependency: "52EC79AB825467F3"
 			height: 3.0d
 			hover: ["点击进入思索目录"]
+			id: "5A1CC874B703AC3E"
 			image: "goety:block/pine_bookshelf"
 			rotation: 0.0d
 			width: 3.0d
@@ -71,6 +77,7 @@
 			dependency: "52EC79AB825467F3"
 			height: 3.0d
 			hover: ["点击查看所有思索"]
+			id: "229E17EC740BD126"
 			image: "goety:block/windswept_bookshelf"
 			rotation: 0.0d
 			width: 3.0d
@@ -79,9 +86,6 @@
 		}
 	]
 	order_index: 0
-	quest_enhance_chapter_background: "emxarms:textures/attachment/slot/ammo_3.png"
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

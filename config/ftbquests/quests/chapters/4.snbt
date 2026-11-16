@@ -11,6 +11,7 @@
 			click: "#20DC23526C216C66"
 			height: 1.0d
 			hover: ["初级感染体"]
+			id: "55AE16B45AB81BD8"
 			image: "minecraft:item/light_01"
 			rotation: 0.0d
 			width: 1.0d
@@ -20,6 +21,7 @@
 		{
 			click: "#3ED059FC7DD31728"
 			height: 3.0d
+			id: "3C819C682F17B720"
 			image: "spore:textures/gui/creatures/infected_human_2.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -29,6 +31,7 @@
 		{
 			click: "#4DD0B93CD0BC1A90"
 			height: 3.0d
+			id: "57E501F0C4713A88"
 			image: "spore:textures/gui/creatures/infected_husk.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -38,6 +41,7 @@
 		{
 			click: "#120D67E806A46982"
 			height: 3.0d
+			id: "3F08276A894C00F0"
 			image: "spore:textures/gui/creatures/infected_drowned.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -48,6 +52,7 @@
 			click: "#7778F75E6438FA4D"
 			height: 1.0d
 			hover: ["进化体"]
+			id: "771E33D321C2C8CC"
 			image: "minecraft:item/light_02"
 			rotation: 0.0d
 			width: 1.0d
@@ -58,6 +63,7 @@
 			click: "#702FAB67ACBA14D9"
 			height: 1.0d
 			hover: ["实验体"]
+			id: "30F4D2C4C6769F82"
 			image: "minecraft:item/light_03"
 			rotation: 0.0d
 			width: 1.0d
@@ -67,6 +73,7 @@
 		{
 			click: "#71137828580DA929"
 			height: 3.0d
+			id: "26F542B9B1613693"
 			image: "spore:textures/gui/creatures/knight.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -76,6 +83,7 @@
 		{
 			click: "#15EDC17CEFDA62A8"
 			height: 3.0d
+			id: "2797BDE54F77F4DC"
 			image: "spore:textures/gui/creatures/griefer.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -85,6 +93,7 @@
 		{
 			click: "#21C18302E4855938"
 			height: 3.0d
+			id: "0F82C8F421D3507B"
 			image: "spore:textures/gui/creatures/braio.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -94,6 +103,7 @@
 		{
 			click: "#03BA165BA4B9DF2D"
 			height: 3.0d
+			id: "754D48E80E5B43DF"
 			image: "spore:textures/gui/creatures/infected_villager.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -103,6 +113,7 @@
 		{
 			click: "#303489D05F73C24E"
 			height: 3.0d
+			id: "1A4BCDE51A520DB8"
 			image: "spore:textures/gui/creatures/infected_diseased_villager.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -112,6 +123,7 @@
 		{
 			click: "#5E66CDEA3E718429"
 			height: 3.0d
+			id: "2B57169AA2EC976E"
 			image: "spore:textures/gui/creatures/infected_wandering_trader.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -121,6 +133,7 @@
 		{
 			click: "#44772647380AAAA4"
 			height: 3.0d
+			id: "53D4DCD6ADABCFE5"
 			image: "spore:textures/gui/creatures/busser.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -130,6 +143,7 @@
 		{
 			click: "#46C51DA4D572201E"
 			height: 3.0d
+			id: "02579DCED5658A35"
 			image: "spore:textures/gui/creatures/infected_witch.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -139,6 +153,7 @@
 		{
 			click: "#6A653FB96099BC18"
 			height: 3.0d
+			id: "527F17D03B998513"
 			image: "spore:textures/gui/creatures/infected_pillager.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -149,6 +164,7 @@
 			click: "#1DD8F1D883A7286C"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "67EE976EBD73D2A4"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -159,6 +175,7 @@
 			click: "#0461DCB29A6D4A5C"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "4EFA48D08986E295"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -168,6 +185,7 @@
 		{
 			click: "#205ABA889BEB2CB6"
 			height: 3.0d
+			id: "771FCFD89FF63B27"
 			image: "spore:textures/gui/creatures/spitter.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -178,6 +196,7 @@
 			click: "#552CE817452F4853"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "5123F12C8DF89E78"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -188,6 +207,7 @@
 			click: "#6CA75C105F9E00A0"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "54059285170CB2F5"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -197,6 +217,7 @@
 		{
 			click: "#79F9D503CECC0CF7"
 			height: 3.0d
+			id: "183567ACF40B5900"
 			image: "spore:textures/gui/creatures/infected_scientist.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -207,6 +228,7 @@
 			click: "#668289628F1EAA2D"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "6ED8172CA6B48717"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -217,6 +239,7 @@
 			click: "#27FF6D2C9C896074"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "0D88C2C6520D10B7"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -227,6 +250,7 @@
 			click: "#01BC84E6D7B66CB6"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "0DEDB89AF13AEF3A"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -237,6 +261,7 @@
 			click: "#55EA16EE01C33595"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "535188FC79FD2D83"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -246,6 +271,7 @@
 		{
 			click: "#124354C43CB39CC2"
 			height: 3.0d
+			id: "365CA4BD3E22B0A9"
 			image: "spore:textures/gui/creatures/inebriator.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -256,6 +282,7 @@
 			click: "#27E06BDD502C0D36"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "350AC776CEE77F0B"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -266,6 +293,7 @@
 			click: "#59B09317C0E1E9A4"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "40DFA6E1E00E9954"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -276,6 +304,7 @@
 			click: "#38B7A082F5BD615A"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "3FEC637C3EC425DE"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -286,6 +315,7 @@
 			click: "#46E3166B529E8BF1"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "36D8B2677C72EF13"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -296,6 +326,7 @@
 			click: "#6795E71F98EB667A"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "78BA0208C0A87928"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -306,6 +337,7 @@
 			click: "#4F6DE2028AE4986F"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "60908020FDA10888"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -316,6 +348,7 @@
 			click: "#7219E1A18B3188F7"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "02E475997F2DE21E"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -326,6 +359,7 @@
 			click: "#2CDFB97CD2DF9674"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "2AF2262EA26C2715"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -336,6 +370,7 @@
 			click: "#3C77FC7084756248"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "2F4822FAEDD6AE9C"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -346,6 +381,7 @@
 			click: "#12481A7F0AB7A78D"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "764B5E9A1F8A136E"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -356,6 +392,7 @@
 			click: "#2BE2DD070614F8B4"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "3911AD4A467D500C"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -366,6 +403,7 @@
 			click: "#677E32EBD2D397E9"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "7E2B700AD3B0DDBD"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -376,6 +414,7 @@
 			click: "#2BA3D8570D4D942D"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "124E2C4593246790"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -386,6 +425,7 @@
 			click: "#7DA44B9FE6FAA345"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "18AC97887F9ED2C7"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -396,6 +436,7 @@
 			click: "#2A81BDE9BEF047E5"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "44E16C42E19A018F"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -406,6 +447,7 @@
 			click: "#2F026AB65C4BD9EF"
 			height: 1.0d
 			hover: ["超进化"]
+			id: "0CE1E5B65B615408"
 			image: "minecraft:item/light_04"
 			rotation: 0.0d
 			width: 1.0d
@@ -416,6 +458,7 @@
 			click: "#5FC1D28759F90EA8"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "0536F1C466ED561A"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -426,6 +469,7 @@
 			click: "#18953BC7A627A52F"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "1637F0A23EE6A02F"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -436,6 +480,7 @@
 			click: "#7C7144EF7F99FDBE"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "5E0E25B02D646E41"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -446,6 +491,7 @@
 			click: "#2533F78383A69B82"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "5677A2423300D134"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -456,6 +502,7 @@
 			click: "#359D27EED45A823C"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "0D40FFC4DA5B1A21"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -466,6 +513,7 @@
 			click: "#19DBB91362E1E597"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "1FB277D6C1936CB9"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -476,6 +524,7 @@
 			click: "#719B4AF0BF39BFCD"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "261983FEEA43A85A"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -486,6 +535,7 @@
 			click: "#7B3DACEE52BDDF2D"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "7173C731D2071B13"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -495,6 +545,7 @@
 		{
 			click: "#570B05FF2BE49F49"
 			height: 3.0d
+			id: "3F9D479A979C54A4"
 			image: "spore:textures/gui/creatures/infected_vindicator.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -504,6 +555,7 @@
 		{
 			click: "#48E7F311D1E186D3"
 			height: 3.0d
+			id: "5B1A191D91E29B24"
 			image: "spore:textures/gui/creatures/infected_evoker.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -514,6 +566,7 @@
 			click: "#5C569FE84AFBD6CE"
 			height: 1.0d
 			hover: ["类器官体"]
+			id: "69EDDB232575CF06"
 			image: "minecraft:item/light_05"
 			rotation: 0.0d
 			width: 1.0d
@@ -524,6 +577,7 @@
 			click: "#387568DBB70EE040"
 			height: 1.0d
 			hover: ["未知"]
+			id: "1D6C36294EEE209E"
 			image: "minecraft:item/light_06"
 			rotation: 0.0d
 			width: 1.0d
@@ -534,6 +588,7 @@
 			click: "#60FE505BE02A63F4"
 			height: 1.0d
 			hover: ["灾厄级造物"]
+			id: "6B672A2D65734600"
 			image: "minecraft:item/light_07"
 			rotation: 0.0d
 			width: 1.0d
@@ -543,6 +598,7 @@
 		{
 			click: "#4F0BFEB87A3CF662"
 			height: 3.0d
+			id: "4F23B0365BEE8732"
 			image: "spore:textures/gui/creatures/mound.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -552,6 +608,7 @@
 		{
 			click: "#4F3F6DBFFC3D2212"
 			height: 3.0d
+			id: "3A10455138A2A085"
 			image: "spore:textures/gui/creatures/vigil.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -561,6 +618,7 @@
 		{
 			click: "#76468478F8C3E45E"
 			height: 3.0d
+			id: "365CFFC515793BA3"
 			image: "spore:textures/gui/creatures/umarmer.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -570,6 +628,7 @@
 		{
 			click: "#0F9DB9D9089D5387"
 			height: 3.0d
+			id: "354C6C9F35D9B78F"
 			image: "spore:textures/gui/creatures/usurper.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -579,6 +638,7 @@
 		{
 			click: "#10E7F351B265E927"
 			height: 3.0d
+			id: "53D02E382A5D89C2"
 			image: "spore:textures/gui/creatures/verwahrung.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -588,6 +648,7 @@
 		{
 			click: "#137D087D93FF17E8"
 			height: 6.0d
+			id: "70C1DCD2CEED235C"
 			image: "spore:textures/gui/creatures/proto_hivemind.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -597,6 +658,7 @@
 		{
 			click: "#0474C1CC84DDC03C"
 			height: 3.0d
+			id: "369FE905CEF7FAF8"
 			image: "spore:textures/gui/creatures/womb.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -607,6 +669,7 @@
 			click: "#3A2E7B14EE05821B"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "38D1DE6E901BDAA0"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -617,6 +680,7 @@
 			click: "#6841AD95CDA59BC6"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "777280B5C72A6271"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -627,6 +691,7 @@
 			click: "#00E031AD91584621"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "2C0D5DDAE2C4D237"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -636,6 +701,7 @@
 		{
 			height: 1.0d
 			hover: ["氛围组(属于未知)"]
+			id: "64F75EAA76AFEB49"
 			image: "minecraft:item/light_00"
 			rotation: 0.0d
 			width: 1.0d
@@ -646,6 +712,7 @@
 			click: "#26AD9FDECCCEAFD8"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "1611F67343682920"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -656,6 +723,7 @@
 			click: "#3172A314E8C1E53F"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "11F19DA855D8C741"
 			image: "spore:textures/gui/creatures/scamper.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -666,6 +734,7 @@
 			click: "#24B9A01F1D0FEC89"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "2E4963AEA5B06307"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -676,6 +745,7 @@
 			click: "#2DC28E0DA848F68C"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "15DBC64E7AFC80E0"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -686,6 +756,7 @@
 			click: "#5EF29C6B3CADA684"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "0B17A424D9E3D2CE"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -696,6 +767,7 @@
 			click: "#037B894D768094F3"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "43C6D17494CE1E84"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -706,6 +778,7 @@
 			click: "#7CA8D8002F4B431F"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "03FFCAAD09CFF24F"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -715,6 +788,7 @@
 		{
 			click: "#198706E5988758F2"
 			height: 2.0d
+			id: "2ADBD898A533CE7E"
 			image: "spore:item/illusion"
 			rotation: 0.0d
 			width: 2.0d
@@ -724,6 +798,7 @@
 		{
 			click: "#480B5609288ED647"
 			height: 2.0d
+			id: "588F4022261423BC"
 			image: "spore:item/bottle_scent"
 			rotation: 0.0d
 			width: 2.0d
@@ -733,6 +808,7 @@
 		{
 			click: "#261E297B5D53D62F"
 			height: 3.0d
+			id: "248E542868A00C0E"
 			image: "spore:textures/gui/creatures/howitzer.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -742,6 +818,7 @@
 		{
 			click: "#1D3D7A66A94B94FF"
 			height: 3.0d
+			id: "38CFC2664F6EFC89"
 			image: "spore:textures/gui/creatures/hindenburg.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -751,6 +828,7 @@
 		{
 			click: "#747E747A10836F4D"
 			height: 3.0d
+			id: "17600E38F696409A"
 			image: "spore:textures/gui/creatures/hohlfresser.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -760,6 +838,7 @@
 		{
 			click: "#239A6E91C88D7845"
 			height: 3.0d
+			id: "64750CAD449E3AD4"
 			image: "spore:textures/gui/creatures/sieger_border.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -770,6 +849,7 @@
 			click: "#186CC1829F130E0B"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "6941533034184563"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -780,6 +860,7 @@
 			click: "#249504C731CCFBE0"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "02239AA4A8CEADCC"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -790,6 +871,7 @@
 			click: "#3C5D4F5E7A2C0026"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "6946E3A009AB6021"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -800,6 +882,7 @@
 			click: "#14C206048602E82D"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "591CB9D43728EFAF"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -810,6 +893,7 @@
 			click: "#25DFDEB898AD932A"
 			height: 3.0d
 			hover: ["图像未记录在案..."]
+			id: "58429E8F810D4EE6"
 			image: "fzzy_config:textures/gui/sprites/widget/decoration/question.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -818,8 +902,6 @@
 		}
 	]
 	order_index: 1
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{

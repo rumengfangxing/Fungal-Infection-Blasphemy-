@@ -14,6 +14,7 @@
 		{
 			height: 2.0d
 			hover: ["村民结构"]
+			id: "7317AE6067168E39"
 			image: "ftbchunks:textures/faces/minecraft/villager.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -23,6 +24,7 @@
 		{
 			height: 2.0d
 			hover: ["灾厄结构"]
+			id: "24193DA21349AA8F"
 			image: "ftbchunks:textures/faces/minecraft/pillager.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -32,6 +34,7 @@
 		{
 			height: 2.0d
 			hover: ["探索结构"]
+			id: "5CF62C908B382BC0"
 			image: "goety:block/animator_side"
 			rotation: 0.0d
 			width: 2.0d
@@ -41,6 +44,7 @@
 		{
 			height: 2.0d
 			hover: ["巫法结构"]
+			id: "0CC49D2F097BDA04"
 			image: "minecraft:block/soul_campfire_log_lit"
 			rotation: 0.0d
 			width: 2.0d
@@ -50,6 +54,7 @@
 		{
 			height: 2.0d
 			hover: ["下界结构"]
+			id: "1B03E72D7FF7A53A"
 			image: "minecraft:block/nether_portal"
 			rotation: 0.0d
 			width: 2.0d
@@ -59,6 +64,7 @@
 		{
 			height: 2.0d
 			hover: ["末地结构"]
+			id: "24FA1E322C982472"
 			image: "minecraft:block/end_portal_frame_top"
 			rotation: 0.0d
 			width: 2.0d
@@ -68,6 +74,7 @@
 		{
 			height: 2.0d
 			hover: ["人类结构"]
+			id: "7810C867D93AC886"
 			image: "refinedstorage:block/controller/cutouts/light_blue"
 			rotation: 0.0d
 			width: 2.0d
@@ -77,6 +84,7 @@
 		{
 			height: 2.0d
 			hover: ["神迹"]
+			id: "7618E6783D8B31C8"
 			image: "goetydelight:textures/mob_effect/the_pale_messenger.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -86,6 +94,7 @@
 		{
 			height: 2.0d
 			hover: ["感染"]
+			id: "566C79087DB138B6"
 			image: "spore:block/fleshy_fungus"
 			rotation: 0.0d
 			width: 2.0d
@@ -94,9 +103,6 @@
 		}
 	]
 	order_index: 0
-	quest_enhance_chapter_background: "relics:textures/gui/description/relic/small_card_frame_outline.png"
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
